@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "code": "M12201",
+  "title": "網宇實體系統 CPS 與數位雙生",
+  "candidateSha256": "29788b0d08878e92302b795de798f8190833139020eebe77c0aff7779d230190",
+  "nodes": [
+    {
+      "id": "connection",
+      "label": "Connection 連接",
+      "detail": "採集、傳輸與對時",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "conversion",
+      "label": "Conversion 轉換",
+      "detail": "清理、特徵與健康指標",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "cyber",
+      "label": "Cyber 虛實整合",
+      "detail": "模型、機群與履歷關聯",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "cognition",
+      "label": "Cognition 認知",
+      "detail": "診斷、風險與建議",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "config",
+      "label": "Configuration 配置",
+      "detail": "核准界限、互鎖與回退",
+      "kind": "條件與防護"
+    },
+    {
+      "id": "credibility",
+      "label": "可信模型與虛擬除錯",
+      "detail": "校準／獨立驗證／SiL／HiL",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "types",
+      "label": "資料互動型態",
+      "detail": "模型／影子／雙生",
+      "kind": "核心概念與活動"
+    }
+  ],
+  "relations": [
+    {
+      "from": "connection",
+      "to": "conversion",
+      "label": "資料轉資訊"
+    },
+    {
+      "from": "conversion",
+      "to": "cyber",
+      "label": "關聯與比較"
+    },
+    {
+      "from": "cyber",
+      "to": "cognition",
+      "label": "形成決策"
+    },
+    {
+      "from": "cognition",
+      "to": "config",
+      "label": "核准範圍內執行"
+    },
+    {
+      "from": "credibility",
+      "to": "cyber",
+      "label": "校驗模型誤差"
+    },
+    {
+      "from": "cyber",
+      "to": "types",
+      "label": "依資料流辨識"
+    },
+    {
+      "from": "config",
+      "to": "connection",
+      "label": "限幅核准後回饋"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "5C 依序為 Connection→Conversion→Cyber→Cognition→Configuration；採集與傳輸不同於把資料轉成健康資訊。",
+        "數位模型無直接自動交換；影子自動單向更新；本教材以自動同步與受控雙向互動區分雙生。3D 外觀本身不足以證明雙生。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "校準用於估參數，驗證須用未參與校準的資料。用途、負載、模型版次與資料新鮮度皆影響可信範圍。",
+        "SiL 用虛擬控制器，HiL 用實體控制器連虛擬產線；兩者仍需現場驗收。自主回饋須有界限、互鎖、失聯處理與回退。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "建議值雖在允許範圍內，但資料已過期時，為何仍不能執行自動回寫？"
+      ]
+    }
+  ]
+}

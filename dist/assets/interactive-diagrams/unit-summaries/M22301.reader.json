@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "code": "M22301",
+  "title": "智慧設備操作與效率指標辨識",
+  "candidateSha256": "7c3448b899293556cab43e1c22aca4ccbfa96f381693c0ceb1bc97f3eec4a2f1",
+  "nodes": [
+    {
+      "id": "recipe",
+      "label": "工單與核准配方",
+      "detail": "產品／料號／版本／資格",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "operation",
+      "label": "首件與量產監控",
+      "detail": "首件合格／趨勢／換型",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "recovery",
+      "label": "異常隔離與復歸",
+      "detail": "停機／可疑品／驗證重啟",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "performance",
+      "label": "OEE 與產能改善",
+      "detail": "損失／瓶頸／可交付量",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "version",
+      "label": "版本與設備回覆",
+      "detail": "工單版＝設備實際執行版",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "maintain",
+      "label": "點檢與保養",
+      "detail": "依計畫／紀錄／CMMS",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "safe",
+      "label": "安全與變更控制",
+      "detail": "Reset 與 Start 分開",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "scope",
+      "label": "時間／數量／權重",
+      "detail": "理想 CT／首次良品／同範圍",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "version",
+      "to": "recipe",
+      "label": "一致才啟動"
+    },
+    {
+      "from": "recipe",
+      "to": "operation",
+      "label": "核准後首件確認"
+    },
+    {
+      "from": "maintain",
+      "to": "operation",
+      "label": "維持可用條件"
+    },
+    {
+      "from": "operation",
+      "to": "recovery",
+      "label": "異常才進處置"
+    },
+    {
+      "from": "safe",
+      "to": "recovery",
+      "label": "驗證後再啟動"
+    },
+    {
+      "from": "recovery",
+      "to": "performance",
+      "label": "完整損失與產出"
+    },
+    {
+      "from": "scope",
+      "to": "performance",
+      "label": "統一口徑再比較"
+    },
+    {
+      "from": "performance",
+      "to": "recipe",
+      "label": "改善與重排計畫"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "操作依啟機核對、首件、監控、異常、換線再首件與保養；配方變更保留修改、時間、核准及設備確認。",
+        "OEE＝A×P×Q；A 對停機／換型，P 對慢速／短停，Q 對不良／暖機。依損失規模及風險選 TPM、SMED、SPC 或防呆。",
+        "利用率以設計產能、效率以有效產能為分母；FPY 不包含重工後合格。混產品須保存逐段時間與理想 CT 並說明加權方式。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "設備高 OEE 不保證整線準時；查瓶頸負荷及工序限制。P 大於 100% 先查基準、模穴、產量與時間分類。",
+        "85% 等門檻是教學示例；減排產不等於消除損失。人分、經過時間與出件間隔不同，效率已含平衡損失時勿重複扣除。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十三／L22301–L22302，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

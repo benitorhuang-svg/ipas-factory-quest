@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "code": "M13101",
+  "title": "生產管理與流程實作",
+  "candidateSha256": "0690eec4f1f74c925278d337ff7a5e45845a2e7688ac11a226ecb3630c808f18",
+  "nodes": [
+    {
+      "id": "event",
+      "label": "定義觀測事件",
+      "detail": "產品、站別、起訖與單位",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "observe",
+      "label": "多次現場測時",
+      "detail": "保留原值與異常原因",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "vsm",
+      "label": "VSM 時間口徑",
+      "detail": "操作、等待、移送與加值",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "ct",
+      "label": "CT、TT 與瓶頸",
+      "detail": "出件間隔、需求節拍分開",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "identity",
+      "label": "WIP 識別與履歷",
+      "detail": "工單、批號、序號與載具",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "mes-event",
+      "label": "Move In／Out 事件",
+      "detail": "進出站歷時不等於淨加工",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "improve",
+      "label": "比較改善方案",
+      "detail": "消除、移轉與先行關係",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "capacity",
+      "label": "含損失的良品能力",
+      "detail": "停機、重工、良率與負荷",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "verify",
+      "label": "試跑與交付驗證",
+      "detail": "CT 分布、品質、WIP 與準交",
+      "kind": "目標、輸入與結果"
+    }
+  ],
+  "relations": [
+    {
+      "from": "event",
+      "to": "observe",
+      "label": "統一起訖"
+    },
+    {
+      "from": "observe",
+      "to": "vsm",
+      "label": "分離時間內容"
+    },
+    {
+      "from": "vsm",
+      "to": "ct",
+      "label": "比較需求限制"
+    },
+    {
+      "from": "identity",
+      "to": "mes-event",
+      "label": "關聯正確對象"
+    },
+    {
+      "from": "mes-event",
+      "to": "vsm",
+      "label": "辨識事件歷時"
+    },
+    {
+      "from": "ct",
+      "to": "capacity",
+      "label": "納入實際損失"
+    },
+    {
+      "from": "capacity",
+      "to": "improve",
+      "label": "針對限制改善"
+    },
+    {
+      "from": "improve",
+      "to": "verify",
+      "label": "確認品質產能"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "操作歷時、單件流程歷時、連續出件間隔與加值時間各有邊界。TT＝淨可用時間÷需求；可重疊串聯線的理想 CT 由限制站決定。",
+        "工單、生產批、品質放行與結案是不同層級。依同一時間與產品邊界核對投入＝良品＋報廢＋仍在製。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "CT 小於 TT 僅是初步檢查；停機與品質損失仍可能導致欠交。同一損失不可在工時與效率中重複折減。",
+        "樣題 ±10 秒是該樣題評分條件。平衡率較高不保證能力較大；原始量測、流程圖、計算與建議須使用相同口徑。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "能否用限制站、需求缺口、可實作改善與試跑條件，說明一個真正可交付的產能方案？"
+      ]
+    }
+  ]
+}

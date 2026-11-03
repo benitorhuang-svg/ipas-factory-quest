@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "code": "M12102",
+  "title": "工業物聯網 IIoT 與通訊協定",
+  "candidateSha256": "6838a09b6cf7f4a9029e322629c3173a0fb71e0ae4f012c9e0c52f2622a43dfa",
+  "nodes": [
+    {
+      "id": "device",
+      "label": "感測器與控制器",
+      "detail": "量程、採樣與工程單位",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "edge",
+      "label": "邊緣閘道器",
+      "detail": "轉換、特徵與本地推論",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "mqtt",
+      "label": "MQTT 訊息傳遞",
+      "detail": "Broker 與主題發布訂閱",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "app",
+      "label": "MES 與分析應用",
+      "detail": "趨勢、追溯與決策",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "model",
+      "label": "設備資料介面",
+      "detail": "Modbus 暫存器／OPC UA 語意",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "buffer",
+      "label": "斷線緩衝與補送",
+      "detail": "容量、持久化、補送頻寬",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "qos",
+      "label": "QoS 交付語意",
+      "detail": "0 最多／1 至少／2 精確一次",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "quality",
+      "label": "資料品質與去重",
+      "detail": "來源時間、品質旗標、事件 ID",
+      "kind": "資料與證據"
+    }
+  ],
+  "relations": [
+    {
+      "from": "device",
+      "to": "edge",
+      "label": "採樣工程值"
+    },
+    {
+      "from": "edge",
+      "to": "mqtt",
+      "label": "特徵與事件"
+    },
+    {
+      "from": "mqtt",
+      "to": "app",
+      "label": "發布與訂閱"
+    },
+    {
+      "from": "model",
+      "to": "device",
+      "label": "定義資料意義"
+    },
+    {
+      "from": "edge",
+      "to": "buffer",
+      "label": "斷線保存"
+    },
+    {
+      "from": "buffer",
+      "to": "edge",
+      "label": "限速補送"
+    },
+    {
+      "from": "mqtt",
+      "to": "qos",
+      "label": "區分交付承諾"
+    },
+    {
+      "from": "app",
+      "to": "quality",
+      "label": "核對完整性"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "感測器量測，致動器改變製程。依現象、頻帶、量程、校正與干擾條件選型；畫面更新頻率不等於原始採樣率。",
+        "Modbus 著重暫存器交換，OPC UA 提供資訊模型及安全機制，MQTT 解耦發布者與訂閱者；三者可分層搭配。 主圖上傳以 MQTT 路徑示例；實際也可透過 OPC UA 等方式直接介接上層，依資料需求選擇。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "MQTT QoS 不保證校準正確或跨資料庫唯一交易；QoS 1 可能重複，接收端仍須事件去重與數量對帳。",
+        "Store-and-Forward 受容量、持久化與補送頻寬限制。來源時間與接收時間不同；未對時不能直接把兩者差值當網路延遲。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "資料固定、跳值或缺漏時，能否逐段檢查量測、映射、連線、轉換、時間與上層儲存？"
+      ]
+    }
+  ]
+}

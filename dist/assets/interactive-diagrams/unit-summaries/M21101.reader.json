@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "code": "M21101",
+  "title": "生產管理實務與精實管理",
+  "candidateSha256": "a651cb9f29e906add09424f348f162460ca81a4bb1bb1527b12ecd1ee815619e",
+  "nodes": [
+    {
+      "id": "plan",
+      "label": "訂單與生產計畫",
+      "detail": "S&OP／MPS／供需平衡",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "resources",
+      "label": "物料與產能檢核",
+      "detail": "MRP／CRP／可行性",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "execution",
+      "label": "工單執行與實績",
+      "detail": "工時／耗用／不良／交期",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "lean",
+      "label": "價值流與精實改善",
+      "detail": "VSM／浪費／工具選擇",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "promise",
+      "label": "ATP 與 PAB",
+      "detail": "供給時間／未承諾量",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "master",
+      "label": "BOM／途程／日曆",
+      "detail": "同版本／已放行物料",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "pull",
+      "label": "看板與標準作業",
+      "detail": "需求消耗／節拍／WIP",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "promise",
+      "to": "plan",
+      "label": "接單前核對"
+    },
+    {
+      "from": "plan",
+      "to": "resources",
+      "label": "品項／數量／日期"
+    },
+    {
+      "from": "master",
+      "to": "resources",
+      "label": "一致的規劃依據"
+    },
+    {
+      "from": "resources",
+      "to": "execution",
+      "label": "可行才釋出"
+    },
+    {
+      "from": "execution",
+      "to": "lean",
+      "label": "辨認績效落差"
+    },
+    {
+      "from": "lean",
+      "to": "pull",
+      "label": "依損失選工具"
+    },
+    {
+      "from": "lean",
+      "to": "plan",
+      "label": "以實績修正計畫"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "MPS 訂產品完工量與日期；MRP 展開子件淨需求與投料日期；CRP 檢查工作中心負荷。MPS 調整後須同步重算物料。",
+        "ATP 是指定供給點尚未承諾的量；PAB 是逐期供給減需求的餘額。接單須同時檢查時間、物料、品質與產能。",
+        "VSM 先量測加工與等待，VAR＝增值時間／總前置時間；看板量依耗用、補充時間、容器量及明示安全餘裕向上取整。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "後週的 ATP 不能承諾前週交貨，同一份庫存與產能也不能重複承諾。",
+        "拉動仍需可靠供料與必要緩衝；多餘產能不等於已過量生產。工具應對應實際損失。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元五／L21101–L21102，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

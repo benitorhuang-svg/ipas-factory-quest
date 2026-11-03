@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "code": "M22101",
+  "title": "物聯網與 CPS 基本原理",
+  "candidateSha256": "0b20ec42717769be7f2f2cb8e35087a5087d5c3168e40081cc4c52c073e70a36",
+  "nodes": [
+    {
+      "id": "sense",
+      "label": "Connection 連線",
+      "detail": "採樣／身分／校正",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "convert",
+      "label": "Conversion 轉換",
+      "detail": "特徵／標準化／緩衝",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "cyber",
+      "label": "Cyber 數位模型",
+      "detail": "設備／產線／工廠雙生",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "cognition",
+      "label": "Cognition 認知",
+      "detail": "建議／可信與適用條件",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "configure",
+      "label": "Configuration 回饋",
+      "detail": "核准執行／結果驗證",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "task",
+      "label": "任務與風險",
+      "detail": "反應期限／頻寬／事件",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "buffer",
+      "label": "吞吐與儲存預算",
+      "detail": "產生率／服務率／對帳",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "version",
+      "label": "資料與模型版本",
+      "detail": "單位／缺值／校正／基線",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "task",
+      "to": "sense",
+      "label": "按任務採樣"
+    },
+    {
+      "from": "sense",
+      "to": "convert",
+      "label": "原始資料"
+    },
+    {
+      "from": "buffer",
+      "to": "convert",
+      "label": "斷線與追補能力"
+    },
+    {
+      "from": "convert",
+      "to": "cyber",
+      "label": "可信特徵"
+    },
+    {
+      "from": "cyber",
+      "to": "cognition",
+      "label": "狀態與預測"
+    },
+    {
+      "from": "version",
+      "to": "cognition",
+      "label": "適用性檢查"
+    },
+    {
+      "from": "cognition",
+      "to": "configure",
+      "label": "核准且條件有效"
+    },
+    {
+      "from": "configure",
+      "to": "sense",
+      "label": "效果回饋"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "IoT 三層為感知、網路、應用；邊緣可轉協定、提特徵、做本地處理及斷線緩衝，部署依期限、保真與風險選擇。",
+        "5C 串起連線、轉換、數位模型、認知與配置；CPS 是運算、通訊與實體的回饋互動，3D 並非必要條件。",
+        "緩衝容量約為資料產生率×斷線時間再加餘裕；恢復後清積壓能力是服務率減持續產生率，還需封裝與對帳。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "採樣端漏掉的短脈衝無法靠加快網路補回；降採樣須先確保任務現象與抗混疊。",
+        "資料缺漏、校正或模型版本不匹配時，禁止直接依模型閉迴路調參；5G、QoS 或雲端名稱不保證期限與完整性。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元九／L22101–L22102，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

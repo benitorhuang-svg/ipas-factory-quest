@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "code": "M22202",
+  "title": "通訊建構、智慧控制與介面管理",
+  "candidateSha256": "fd8e6d07ae50ff190715d23707c6a8e36fe81919e1bf57fc4f3136d77d59594f",
+  "nodes": [
+    {
+      "id": "contract",
+      "label": "通訊與資料契約",
+      "detail": "實體／IP／服務／資料",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "control",
+      "label": "有效資料與控制",
+      "detail": "心跳／狀態／期限",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "hmi",
+      "label": "HMI 與警報處置",
+      "detail": "確認／解除／結案分開",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "verify",
+      "label": "交付與執行驗證",
+      "detail": "事件 ID／交易／設備回覆",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "network",
+      "label": "風險分區與入口",
+      "detail": "DMZ／核准／最小權限",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "method",
+      "label": "控制方法與限制",
+      "detail": "PID／MPC／Fuzzy／RL／R2R",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "alarm",
+      "label": "警報條件與責任",
+      "detail": "遲滯／持續時間／分級",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "delivery",
+      "label": "QoS 0／1／2",
+      "detail": "協定交付語意的範圍",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "network",
+      "to": "contract",
+      "label": "受控跨區"
+    },
+    {
+      "from": "contract",
+      "to": "control",
+      "label": "合法且持續更新"
+    },
+    {
+      "from": "method",
+      "to": "control",
+      "label": "模型與限制適用"
+    },
+    {
+      "from": "control",
+      "to": "hmi",
+      "label": "可信狀態與趨勢"
+    },
+    {
+      "from": "alarm",
+      "to": "hmi",
+      "label": "有效資料才判斷"
+    },
+    {
+      "from": "hmi",
+      "to": "verify",
+      "label": "核准操作與紀錄"
+    },
+    {
+      "from": "delivery",
+      "to": "verify",
+      "label": "交付另核對業務"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "排障依供電／線材、IP／路由／埠、服務／憑證／權限，再查型別、位元序、單位及更新契約；Ping 不證明資料有效。",
+        "P 反映當前誤差，I 累積誤差且需防飽和，D 對雜訊敏感；智慧控制仍須驗證模型、約束與失效行為。",
+        "HMI 顯示層級、異常與行動；警報確認只表知悉，條件解除與結案另需證據。服務模型另分 IaaS／PaaS／SaaS 管理責任。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "最後數值 Good 不保證仍更新；來源時間若為最後變更時間，須另用明確心跳或序號驗證。失聯不能當條件解除。",
+        "QoS 1 可能重複；QoS 2 不保證資料庫入帳或設備執行恰好一次。需持久事件 ID、交易邊界、重試及對帳。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十二／L22204–L22206，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

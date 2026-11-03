@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "code": "M12101",
+  "title": "智慧製造概論與 ISA-95 架構",
+  "candidateSha256": "e5eead4dabadbd4bfc043369d30583fb516ddd885268f6f943caf5eb556a2bf6",
+  "nodes": [
+    {
+      "id": "goal",
+      "label": "營運改善目標",
+      "detail": "交期、品質、追溯與停機",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "vertical",
+      "label": "垂直整合",
+      "detail": "廠內資料形成營運資訊",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "levels",
+      "label": "ISA-95 功能分層",
+      "detail": "L0 製程至 L4 企業規劃",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "control",
+      "label": "現場控制界線",
+      "detail": "L1 直接控制與互鎖",
+      "kind": "條件與防護"
+    },
+    {
+      "id": "horizontal",
+      "label": "水平價值鏈",
+      "detail": "供應商、物流與客戶",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "contract",
+      "label": "資料契約與權威來源",
+      "detail": "識別、單位、時間與版次",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "engineering",
+      "label": "端到端工程整合",
+      "detail": "設計、製造到服務",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "verify",
+      "label": "對帳與追溯驗證",
+      "detail": "需求、投入、良品與報廢",
+      "kind": "核心概念與活動"
+    }
+  ],
+  "relations": [
+    {
+      "from": "goal",
+      "to": "vertical",
+      "label": "界定問題"
+    },
+    {
+      "from": "vertical",
+      "to": "levels",
+      "label": "依功能分工"
+    },
+    {
+      "from": "levels",
+      "to": "control",
+      "label": "保留控制責任"
+    },
+    {
+      "from": "vertical",
+      "to": "contract",
+      "label": "定義欄位權責"
+    },
+    {
+      "from": "horizontal",
+      "to": "contract",
+      "label": "交換供應資訊"
+    },
+    {
+      "from": "engineering",
+      "to": "contract",
+      "label": "延續核准版次"
+    },
+    {
+      "from": "contract",
+      "to": "verify",
+      "label": "核對交易事實"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "工業演進由機械化、大量生產、自動化走向資料連結與彈性決策；智慧化須對應可驗證的營運問題。",
+        "ERP 核准訂單需求與交期；MES 關聯工序、在製及品質；SCADA／控制器保留設備事件；工程／PLM 管理產品圖面與版次。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "Level 分的是功能；物理製程在 L0，感測、致動及直接控制在 L1，同一台設備可包含多層功能。",
+        "雙向交換不等於任意雙方改寫；投入量不等於可交付良品。上位分析不能取代現場安全與互鎖。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "能否沿一筆工單說明：誰核准、誰執行、誰產生事件，以及如何核對品質放行與數量？"
+      ]
+    }
+  ]
+}

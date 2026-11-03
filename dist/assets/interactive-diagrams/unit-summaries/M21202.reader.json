@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "code": "M21202",
+  "title": "線平衡、品質要因分析與即時資訊",
+  "candidateSha256": "47eb2b0873238368a3863d9cddfe804a0a83897c81730a6d76ff3e2a51b13c7c",
+  "nodes": [
+    {
+      "id": "scope",
+      "label": "需求與時間口徑",
+      "detail": "淨可用時間／需求／TT",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "balance",
+      "label": "線平衡與瓶頸",
+      "detail": "CT／LBR／站數下限",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "quality",
+      "label": "品質原因與風險",
+      "detail": "SPC／Cp／Cpk／FMEA",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "decision",
+      "label": "資訊與改善決策",
+      "detail": "KPI／責任／對策與驗證",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "precedence",
+      "label": "先行與人機時序",
+      "detail": "不可分割作業／設備資格",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "evidence",
+      "label": "量測與分析前提",
+      "detail": "穩定性／分布／樣本／DOE",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "loss",
+      "label": "OEE 六大損失",
+      "detail": "A 停機／P 速度／Q 品質",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "scope",
+      "to": "balance",
+      "label": "定需求節奏"
+    },
+    {
+      "from": "precedence",
+      "to": "balance",
+      "label": "驗證合法配置"
+    },
+    {
+      "from": "balance",
+      "to": "quality",
+      "label": "改善仍守品質"
+    },
+    {
+      "from": "evidence",
+      "to": "quality",
+      "label": "先確認適用性"
+    },
+    {
+      "from": "quality",
+      "to": "decision",
+      "label": "驗證原因與效果"
+    },
+    {
+      "from": "loss",
+      "to": "decision",
+      "label": "以損失選工具"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "TT＝淨可用時間／需求；LBR＝ΣCT／(站數×最大 CT)。理論站數向上取整只給下限，還要驗先行、資格及不可分割作業。",
+        "雙邊規格且同變異估計下，Cp 大於 Cpk 表示偏心；能力分析先確認製程穩定與量測品質。",
+        "OEE＝A×P×Q，對應停機、慢速／短停與品質損失。看板需呈現口徑、警戒、鑽取與處置責任。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "瓶頸 CT 已反映線平衡損失，不能再把理論產量乘一次 LBR；人員負荷總量也不能代替人機時序。",
+        "RPN＝S×O×D 不可蓋過高嚴重度風險；魚骨與散佈提出假設，須驗證。官方 OEE 算題差異依教材保留假設與公告答案。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元八／L21205–L21207，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

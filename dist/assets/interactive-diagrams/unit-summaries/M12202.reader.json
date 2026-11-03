@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "code": "M12202",
+  "title": "智動化生產設備與傳送系統",
+  "candidateSha256": "251aa528d56877c03bb47c9e8c047048c55cdd4016201bd7206209bc63d7286c",
+  "nodes": [
+    {
+      "id": "need",
+      "label": "任務與風險需求",
+      "detail": "負載、速度、精度與動線",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "selection",
+      "label": "設備與工作站選型",
+      "detail": "工作範圍、姿態與能力",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "plc",
+      "label": "PLC 循環控制",
+      "detail": "輸入、程式、輸出",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "action",
+      "label": "受控設備動作",
+      "detail": "互鎖、到位與故障處置",
+      "kind": "條件與防護"
+    },
+    {
+      "id": "fleet",
+      "label": "AGV／AMR 與車隊",
+      "detail": "導航、循環、電量與派車",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "station",
+      "label": "機器人與接駁站",
+      "detail": "TCP、座標與逾時握手",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "spec",
+      "label": "介面與配方版次",
+      "detail": "Tag、單位、權限與回讀",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "maintenance",
+      "label": "點檢、維護與復歸",
+      "detail": "趨勢、資格與恢復條件",
+      "kind": "條件與防護"
+    }
+  ],
+  "relations": [
+    {
+      "from": "need",
+      "to": "selection",
+      "label": "核對適用條件"
+    },
+    {
+      "from": "selection",
+      "to": "plc",
+      "label": "定義控制功能"
+    },
+    {
+      "from": "plc",
+      "to": "action",
+      "label": "依邏輯與互鎖"
+    },
+    {
+      "from": "need",
+      "to": "fleet",
+      "label": "配送節拍需求"
+    },
+    {
+      "from": "fleet",
+      "to": "station",
+      "label": "到站與交接"
+    },
+    {
+      "from": "selection",
+      "to": "station",
+      "label": "配置治具座標"
+    },
+    {
+      "from": "station",
+      "to": "plc",
+      "label": "狀態與握手"
+    },
+    {
+      "from": "spec",
+      "to": "plc",
+      "label": "核准後回讀"
+    },
+    {
+      "from": "maintenance",
+      "to": "action",
+      "label": "驗證後重啟"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "PLC 掃描時間不是整機響應時間；需計入濾波、取樣等待、輸出及機構延遲。短脈衝可能需鎖存或高速擷取。",
+        "機器人依負載、姿態、速度與工作範圍選型；AGV 常依預設導引，AMR 可依環境規劃，實際能力仍受場域及調度限制。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "協作型不表示工作站自然安全；工具、工件、速度與周邊設備都需評估。故障復歸、回原點、重新啟動是不同動作。",
+        "配方下載須確認設備回讀正確版次。參數漂移先查原因；調高警戒值不等於修復。車輛到站不代表交接完成或庫存已入帳。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "每小時物流需求大於有效可派車時間÷循環時間時，為何只增加線邊庫存不能消除長期缺料？"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "code": "M11101",
+  "title": "生產管理基本概念",
+  "candidateSha256": "dfc4ec7aa4453abaf5776d8096b40d3fde36f0746c795ad79897c9832c2e382d",
+  "nodes": [
+    {
+      "id": "sop",
+      "label": "S&OP 供需協調",
+      "detail": "產品族、資源與財務",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "mps",
+      "label": "MPS 主生產排程",
+      "detail": "品項、數量與時段",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "atp",
+      "label": "ATP 可再承諾量",
+      "detail": "供給扣除既有訂單",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "codp",
+      "label": "履約策略與解耦點",
+      "detail": "MTS／ATO／MTO／ETO",
+      "kind": "輸入條件與基準"
+    },
+    {
+      "id": "rccp",
+      "label": "關鍵產能檢核",
+      "detail": "RCCP：瓶頸可用工時",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "mrp",
+      "label": "MRP 物料需求",
+      "detail": "BOM、庫存、前置時間",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "dispatch",
+      "label": "依目標選派工法",
+      "detail": "FCFS／SPT／EDD／CR",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "pac",
+      "label": "PAC 現場管制",
+      "detail": "已釋放工單與狀態",
+      "kind": "核心方法與決策"
+    }
+  ],
+  "relations": [
+    {
+      "from": "codp",
+      "to": "sop",
+      "label": "履約條件"
+    },
+    {
+      "from": "sop",
+      "to": "mps",
+      "label": "品項細化"
+    },
+    {
+      "from": "mps",
+      "to": "atp",
+      "label": "供給區間"
+    },
+    {
+      "from": "mps",
+      "to": "rccp",
+      "label": "需求工時"
+    },
+    {
+      "from": "rccp",
+      "to": "mps",
+      "label": "超載修正"
+    },
+    {
+      "from": "mps",
+      "to": "mrp",
+      "label": "時段需求"
+    },
+    {
+      "from": "mrp",
+      "to": "pac",
+      "label": "核准後釋放"
+    },
+    {
+      "from": "pac",
+      "to": "dispatch",
+      "label": "派工目標"
+    }
+  ],
+  "notes": [
+    {
+      "title": "一條主線",
+      "items": [
+        "S&OP 平衡產品族供需，MPS 指定品項與時點；RCCP 驗證關鍵能力，MRP 展料，PAC 追蹤現場。ATP 須按供給可用日期扣既有承諾。",
+        "CODP 前後分別由預測與訂單驅動；佈置依設備分組、產品族與流動方式判讀，不能只看產業名稱。"
+      ]
+    },
+    {
+      "title": "考點與限制",
+      "items": [
+        "SPT 最小化單機平均流程時間、EDD 最小化最大延遲的結論，須符合工作同時可用、不可中斷等題設；CR 越小越緊迫，CR＜1 是風險訊號。",
+        "正 ATP 不保證物料、品質與瓶頸時段可行；PAB 的預測供需平衡與 ATP 的既有訂單承諾是不同問題。凍結區變更需依權責核准。"
+      ]
+    },
+    {
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11101｜生產管理基本概念；來源：科目一／01_生產管理基本概念.md。",
+        "急單數量小於總剩餘工時，為何仍不能承諾？請檢查正確日期、換線連續性、物料可用狀態及既有保留量。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "code": "M11203",
+  "title": "精實生產與現場績效管理",
+  "candidateSha256": "626247decb0e04511aef31a6f287bef9ba4f060121478fb41c2821b431dd4db0",
+  "nodes": [
+    {
+      "id": "value",
+      "label": "客戶價值與系統邊界",
+      "detail": "交期、需求及品質要求",
+      "kind": "輸入條件與基準"
+    },
+    {
+      "id": "waste",
+      "label": "觀察價值流與浪費",
+      "detail": "過量、等待、搬運等七項",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "baseline",
+      "label": "建立一致績效基線",
+      "detail": "時間、產品與良品口徑",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "quality",
+      "label": "5S／防呆／自働化",
+      "detail": "定位、異常辨識與阻止",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "pull",
+      "label": "JIT 拉動與看板",
+      "detail": "依消耗授權生產／搬運",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "oee",
+      "label": "拆解 OEE 三因素",
+      "detail": "A 時間、P 性能、Q 品質",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "verify",
+      "label": "整體成效與標準化",
+      "detail": "需求、瓶頸、WIP 與安全",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "tpm",
+      "label": "TPM／SMED 損失改善",
+      "detail": "故障、換線與微停分流",
+      "kind": "核心方法與決策"
+    }
+  ],
+  "relations": [
+    {
+      "from": "value",
+      "to": "waste",
+      "label": "定義改善目標"
+    },
+    {
+      "from": "waste",
+      "to": "baseline",
+      "label": "量測現況"
+    },
+    {
+      "from": "waste",
+      "to": "quality",
+      "label": "動作與不良"
+    },
+    {
+      "from": "waste",
+      "to": "pull",
+      "label": "庫存與等待"
+    },
+    {
+      "from": "baseline",
+      "to": "oee",
+      "label": "固定計算口徑"
+    },
+    {
+      "from": "oee",
+      "to": "tpm",
+      "label": "定位六大損失"
+    },
+    {
+      "from": "quality",
+      "to": "verify",
+      "label": "驗證有效性"
+    },
+    {
+      "from": "pull",
+      "to": "verify",
+      "label": "流動與缺料"
+    },
+    {
+      "from": "tpm",
+      "to": "verify",
+      "label": "瓶頸有效能力"
+    }
+  ],
+  "notes": [
+    {
+      "title": "工具連回問題",
+      "items": [
+        "TPS 以 JIT 與自働化支撐流動與源頭品質；5S 維持標準環境，防呆阻止錯誤或異常流出。看板是授權訊號，減卡前先穩定補充、品質與設備。",
+        "看板數 N＝ceil(D×L×(1＋α)÷C)，D 與 L 時間單位須一致。相同邊界及穩態平均下，WIP＝通過量×流程時間；砍庫存不保證通過量維持。"
+      ]
+    },
+    {
+      "title": "績效分母與損失",
+      "items": [
+        "OEE＝A×P×Q；A 看故障／換線，P 看微停／降速，Q 看啟動／製程不良。先說明計畫時間、理想週期與首次合格口徑，不能重扣同一損失。",
+        "非瓶頸省時不一定增加整線銷售；新增產出受需求與其他資源限制。MTBF、MTTR 分別看故障間隔與修復時間；改善還須確認品質、安全與維持。"
+      ]
+    },
+    {
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11203｜精實生產與現場績效管理；來源：科目一／06_精實生產與現場績效管理.md。",
+        "OEE 變高但出貨沒有增加，請先檢查瓶頸是否改變、客戶需求、WIP 邊界及損失是否轉移。"
+      ]
+    }
+  ]
+}

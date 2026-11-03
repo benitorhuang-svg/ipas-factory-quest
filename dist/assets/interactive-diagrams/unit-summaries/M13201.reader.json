@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "code": "M13201",
+  "title": "智慧製造現場管理實作",
+  "candidateSha256": "057ca96a52351586608a12cab5cac8464e460c822cd65b96b09ccc84c804c42f",
+  "nodes": [
+    {
+      "id": "target",
+      "label": "指定對象與前置狀態",
+      "detail": "工單、批號、工序與使用者",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "act",
+      "label": "依權限與程序操作",
+      "detail": "排程、過站、處置與結案",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "query",
+      "label": "重新查詢同一對象",
+      "detail": "狀態、數量與關聯核對",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "evidence",
+      "label": "答卷證據保存",
+      "detail": "整桌面、題號與 Word 存檔",
+      "kind": "目標、輸入與結果"
+    },
+    {
+      "id": "resources",
+      "label": "合格資源與排程",
+      "detail": "人機料法、能力與交期",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "quantity",
+      "label": "批次數量與品質",
+      "detail": "良品、報廢、在製與放行",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "ledger",
+      "label": "事件帳與去重",
+      "detail": "來源時間、識別與交易結果",
+      "kind": "資料與證據"
+    },
+    {
+      "id": "analysis",
+      "label": "柏拉圖與 4M1E",
+      "detail": "分母、候選原因與驗證",
+      "kind": "核心概念與活動"
+    },
+    {
+      "id": "tools",
+      "label": "模具壽命與保養",
+      "detail": "終身累計與週期計數分開",
+      "kind": "資料與證據"
+    }
+  ],
+  "relations": [
+    {
+      "from": "target",
+      "to": "act",
+      "label": "前置條件成立"
+    },
+    {
+      "from": "act",
+      "to": "query",
+      "label": "操作後再查"
+    },
+    {
+      "from": "query",
+      "to": "evidence",
+      "label": "核對指定狀態"
+    },
+    {
+      "from": "resources",
+      "to": "target",
+      "label": "確認適用資源"
+    },
+    {
+      "from": "quantity",
+      "to": "act",
+      "label": "依規則核對"
+    },
+    {
+      "from": "ledger",
+      "to": "query",
+      "label": "對帳交易事實"
+    },
+    {
+      "from": "tools",
+      "to": "resources",
+      "label": "核對剩餘能力"
+    },
+    {
+      "from": "query",
+      "to": "analysis",
+      "label": "分層比較資料"
+    },
+    {
+      "from": "analysis",
+      "to": "evidence",
+      "label": "以證據作答"
+    }
+  ],
+  "notes": [
+    {
+      "title": "核心複習",
+      "items": [
+        "完成操作、重新查到正確工單 Close、把指定畫面貼進 Word 並存檔，是不同結果；前題狀態可能成為後題輸入。",
+        "投入＝完成良品＋核准報廢＋未完在製，須固定邊界。數量平衡仍不能替代品質放行、末站完成與未結交易檢查。"
+      ]
+    },
+    {
+      "title": "容易誤判的條件",
+      "items": [
+        "成功訊息、另一張工單的 Close 或舊截圖，都不足以證明本題完成。超時先查交易，避免重複報工；依當次檔名與保存指示作答。",
+        "保養只重設保養週期，不使模具終身累計歸零。柏拉圖占比高是調查優先順序，不是根因證明；事件接收順序也不等於實際作業順序。"
+      ]
+    },
+    {
+      "title": "複習自問與教材",
+      "items": [
+        "當數量正確但某批尚未放行時，能否說明結案、出貨與答案畫面各自還缺哪些條件？"
+      ]
+    }
+  ]
+}

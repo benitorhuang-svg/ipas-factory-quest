@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "code": "M11201",
+  "title": "工業工程概論與標準工時",
+  "candidateSha256": "42a450ef6b408b480bc087946463ca2c9c8a8fe691fa4fb4318a41b8294ba9ac",
+  "nodes": [
+    {
+      "id": "method",
+      "label": "方法與動作改善",
+      "detail": "ECRS、動作經濟與安全",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "observe",
+      "label": "代表性觀測時間 OT",
+      "detail": "固定方法、多週期測時",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "normal",
+      "label": "評比後正常時間 NT",
+      "detail": "NT＝OT×評比係數",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "demand",
+      "label": "可用時間與需求",
+      "detail": "時間單位及損失口徑",
+      "kind": "輸入條件與基準"
+    },
+    {
+      "id": "assign",
+      "label": "可行的工作站分派",
+      "detail": "工序先行與資源限制",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "standard",
+      "label": "含合理寬放的 ST",
+      "detail": "先辨認寬放分母",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "takt",
+      "label": "需求節拍 TT",
+      "detail": "可用時間÷需求量",
+      "kind": "核心方法與決策"
+    },
+    {
+      "id": "balance",
+      "label": "CT／TT 與線平衡",
+      "detail": "瓶頸、站數及品質檢核",
+      "kind": "核心方法與決策"
+    }
+  ],
+  "relations": [
+    {
+      "from": "method",
+      "to": "observe",
+      "label": "固定作業條件"
+    },
+    {
+      "from": "observe",
+      "to": "normal",
+      "label": "平均後評比"
+    },
+    {
+      "from": "normal",
+      "to": "standard",
+      "label": "依定義加寬放"
+    },
+    {
+      "from": "standard",
+      "to": "assign",
+      "label": "標準作業時間"
+    },
+    {
+      "from": "assign",
+      "to": "balance",
+      "label": "瓶頸 CT"
+    },
+    {
+      "from": "demand",
+      "to": "takt",
+      "label": "同一時間口徑"
+    },
+    {
+      "from": "takt",
+      "to": "balance",
+      "label": "需求比較"
+    }
+  ],
+  "notes": [
+    {
+      "title": "三種時間與兩種寬放",
+      "items": [
+        "ST 描述標準作業時間；TT 由客戶需求決定；CT 是完工間隔，在題設的穩態串聯單資源模型中受最慢站限制。",
+        "寬放以 NT 為基底：ST＝NT×(1＋A)；以 ST 為分母：ST＝NT÷(1－A)。同一百分比不可直接互換，已從可用時間扣掉的損失也不要重複扣計。"
+      ]
+    },
+    {
+      "title": "瓶頸與方法改善",
+      "items": [
+        "理論最少站數＝ceil(總作業時間÷目標 CT)，實際還受不可分作業與先行關係限制。線平衡率＝總作業時間÷(站數×CT)。",
+        "平均工時低於 TT 不代表最慢站達標；改善後重新找瓶頸，並驗證品質、安全、人因與可維持性。工作抽樣估狀態比例，測時建立作業時間，不能把等待率直接當寬放率。"
+      ]
+    },
+    {
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11201｜工業工程概論與標準工時；來源：科目一／04_工業工程概論與標準工時.md。",
+        "若理論兩站足夠，但不可分工序無法分配到目標 CT 內，應如何設計可執行的改善方案？"
+      ]
+    }
+  ]
+}

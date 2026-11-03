@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "code": "M22102",
+  "title": "智慧設備管理維護與製程大數據",
+  "candidateSha256": "53f9188c409e46553417f4238147f8fbab22745c03c9a46405782d32da5818cb",
+  "nodes": [
+    {
+      "id": "failure",
+      "label": "失效模式與後果",
+      "detail": "風險／前兆／備品／修復",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "strategy",
+      "label": "維護策略選擇",
+      "detail": "RCM／BM／PM／CBM／PdM",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "work",
+      "label": "CMMS／MES 處置",
+      "detail": "工單／人員／備品／紀錄",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "effect",
+      "label": "可靠度與成本驗證",
+      "detail": "停機／品質／安全／效益",
+      "kind": "核心概念與決策主線"
+    },
+    {
+      "id": "data",
+      "label": "資料品質與標記",
+      "detail": "缺值／對時／單位／洩漏",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "model",
+      "label": "EHI 與預測分析",
+      "detail": "衰退／良率／視窗／能耗",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "history",
+      "label": "維護與執行歷史",
+      "detail": "變更／換件／故障原因",
+      "kind": "判斷依據與支援條件"
+    },
+    {
+      "id": "metric",
+      "label": "MTBF／MTTR",
+      "detail": "運作與修復時間先定義",
+      "kind": "判斷依據與支援條件"
+    }
+  ],
+  "relations": [
+    {
+      "from": "data",
+      "to": "failure",
+      "label": "可信診斷證據"
+    },
+    {
+      "from": "failure",
+      "to": "strategy",
+      "label": "依後果選組合"
+    },
+    {
+      "from": "model",
+      "to": "strategy",
+      "label": "可處置前兆"
+    },
+    {
+      "from": "strategy",
+      "to": "work",
+      "label": "達條件才開單"
+    },
+    {
+      "from": "history",
+      "to": "work",
+      "label": "備品與過往證據"
+    },
+    {
+      "from": "work",
+      "to": "effect",
+      "label": "修復與損失紀錄"
+    },
+    {
+      "from": "metric",
+      "to": "effect",
+      "label": "同口徑比較"
+    }
+  ],
+  "notes": [
+    {
+      "title": "重點回顧",
+      "items": [
+        "BM 故障後修；PM 依固定時間或次數；CBM 依有效狀態；PdM 預估衰退或維護時點。RCM 依失效模式選策略組合。",
+        "MTBF＝運作時間／故障次數；MTTR＝定義內修復時間／故障次數。可用度 MTBF／(MTBF＋MTTR) 必須配合一致時間範圍。",
+        "EHI 加權平均須同尺度且權重和為 1；預測資料只用當時已知特徵，保留未知／截尾與版本，另評估精確率、召回率及提前量。"
+      ]
+    },
+    {
+      "title": "考點與常見誤判",
+      "items": [
+        "離群可能是真實故障；缺值不能跨故障補成正常，維修後資訊不得洩漏到先前預測。",
+        "MTBF 不是保證壽命，固定故障率模型也不描述磨耗加速；比較策略需證明檢修可移除何種缺陷及殘餘風險。"
+      ]
+    },
+    {
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十／L22103–L22105，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-24T04:18:08.279Z",
+  "artifactRoot": ".archify/architecture-unit-summaries-20261024-120610",
+  "diagrams": [
+    {
+      "code": "M11101",
+      "title": "生產管理基本概念",
+      "source": "docs/科目一_生產與作業管理基礎/01_生產管理基本概念.md",
+      "sourceSha256": "2222b2fd7a4e1b8fd912d75d1685b4699f222d9b1d5395155150102b98d167b9",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11101/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11101/m11101-summary.finalize-summary.json",
+      "assetSha256": "21fbbc25188e8ad2d197699b92cc95ae402d1d2116cbc5359d176b86a7bf8c04",
+      "bytes": 819566
+    },
+    {
+      "code": "M11102",
+      "title": "製造流程管理概念",
+      "source": "docs/科目一_生產與作業管理基礎/02_製造流程管理概念.md",
+      "sourceSha256": "ff813624bdac86071bcf362d87cc90c1a00bad34e40e8f533b46de362cba04b4",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11102/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11102/m11102-summary.finalize-summary.json",
+      "assetSha256": "d496546260f2e6d7fa5fe3e74a80f4b0bc469ae81fd01730ed306ac73b5e5b2d",
+      "bytes": 820959
+    },
+    {
+      "code": "M11103",
+      "title": "物料管理概論",
+      "source": "docs/科目一_生產與作業管理基礎/03_物料管理概論.md",
+      "sourceSha256": "520c51d6e77b2c2d7994ca56e4ab8153f7e955ccef8c460c5f6ce950e9971ebb",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11103/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11103/m11103-summary.finalize-summary.json",
+      "assetSha256": "0fdc0d292508e116c3cc24fdbf52a20c57120474dd85974e3d87b19a04478d28",
+      "bytes": 820049
+    },
+    {
+      "code": "M11201",
+      "title": "工業工程概論與標準工時",
+      "source": "docs/科目一_生產與作業管理基礎/04_工業工程概論與標準工時.md",
+      "sourceSha256": "e7b966f234f5ac360c5ec4ea824c9af1232ee771f87b6a30565461a980ac989c",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11201/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11201/m11201-summary.finalize-summary.json",
+      "assetSha256": "c51632d0062cdf4ac24520e77353a4c6abe7dfb38614a5ae35ec79b0735a32e2",
+      "bytes": 818947
+    },
+    {
+      "code": "M11202",
+      "title": "品質管理與統計製程管制",
+      "source": "docs/科目一_生產與作業管理基礎/05_品質管理與統計製程管制.md",
+      "sourceSha256": "d25fbf70328bc14a876e51c31c9cfab2d4d854b98c8570b8ec54e0c52cec2d47",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11202/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11202/m11202-summary.finalize-summary.json",
+      "assetSha256": "59274d740e462119f065c1cbe9ea647a916170153a809d361ffb3e5e37489ab4",
+      "bytes": 820101
+    },
+    {
+      "code": "M11203",
+      "title": "精實生產與現場績效管理",
+      "source": "docs/科目一_生產與作業管理基礎/06_精實生產與現場績效管理.md",
+      "sourceSha256": "58ab87bad0b845adb626dfd37691386574ed6d6542935e0d702f3998b05b76fc",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M11203/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M11203/m11203-summary.finalize-summary.json",
+      "assetSha256": "1a06b122962ee3365ea1f45e6222e83665685f182393b7b4e86ec422198f2f68",
+      "bytes": 821351
+    },
+    {
+      "code": "M12101",
+      "title": "智慧製造概論與 ISA-95 架構",
+      "source": "docs/科目二_智慧製造生產線管理基礎/01_智慧製造概論與ISA95架構.md",
+      "sourceSha256": "cd4dbf5d2c18ae1a3bc3f2b9fd9f210f18dc596d19592bedda195b7cd578d008",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12101/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12101/m12101-summary.finalize-summary.json",
+      "assetSha256": "36abad7c3c28f51ded69575766e0db986737a659f1ce0b2073b0f191b56c8b26",
+      "bytes": 819600
+    },
+    {
+      "code": "M12102",
+      "title": "工業物聯網 IIoT 與通訊協定",
+      "source": "docs/科目二_智慧製造生產線管理基礎/02_工業物聯網IIoT與通訊協定.md",
+      "sourceSha256": "b7735268e9157bbc63279ebd04ed58198939a8ff30644cf0810883c6cbbf19eb",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12102/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12102/content-review/m12102-summary.finalize-summary.json",
+      "assetSha256": "ec78607749f83c1298de4be95744d09cdd01ef2b6b217172741e110749b4816f",
+      "bytes": 820280
+    },
+    {
+      "code": "M12103",
+      "title": "人工智慧 AI 與機器視覺檢測",
+      "source": "docs/科目二_智慧製造生產線管理基礎/03_人工智慧AI與機器視覺檢測.md",
+      "sourceSha256": "8de9184951af5e17f2572ea05d0658cd2572f1a2fccbec41fa2f787e142d8f14",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12103/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12103/m12103-summary.finalize-summary.json",
+      "assetSha256": "798e0b329bf96e8cb971be0fd149b4d48b9e35bcdf5103358fe5154a3c2308de",
+      "bytes": 819135
+    },
+    {
+      "code": "M12201",
+      "title": "網宇實體系統 CPS 與數位雙生",
+      "source": "docs/科目二_智慧製造生產線管理基礎/04_網宇實體系統CPS與數位雙生.md",
+      "sourceSha256": "eb0abbc28b9f93dd64719a77592310b4843fda21bb96d4dc5866c443cfb79555",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12201/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12201/m12201-summary.finalize-summary.json",
+      "assetSha256": "7ca5308ff24c0bfb9d237e713df0abed65e4d3be1723f3b7fa9c86d7a7e474cb",
+      "bytes": 817989
+    },
+    {
+      "code": "M12202",
+      "title": "智動化生產設備與傳送系統",
+      "source": "docs/科目二_智慧製造生產線管理基礎/05_智動化生產設備與傳送系統.md",
+      "sourceSha256": "0e68ef8685cf91879cc47834016a3049953d1877cf84b20ff00ef6d4ac8d3d78",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12202/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12202/m12202-summary.finalize-summary.json",
+      "assetSha256": "360d3a8587fd7f4ab7c0186800bf624787612586e2069ab223ad9c5a9e4bf49e",
+      "bytes": 821903
+    },
+    {
+      "code": "M12203",
+      "title": "智慧工廠生產模式與 MES 整合",
+      "source": "docs/科目二_智慧製造生產線管理基礎/06_智慧工廠生產模式與MES系統整合.md",
+      "sourceSha256": "a7d8d9b274705e4263e19a862aa5c24fec098fd5ee955f91ba5bf3b98e2108d4",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12203/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12203/content-review/m12203-summary.finalize-summary.json",
+      "assetSha256": "2537d6824909c3e42724f3e0ede74d9a648d6dd912c8a9cfa373b1088cdf8d41",
+      "bytes": 825865
+    },
+    {
+      "code": "M13101",
+      "title": "生產管理與流程實作",
+      "source": "docs/科目三_術科實作準備/01_生產管理與流程實作.md",
+      "sourceSha256": "1a45a21ef252183806e668f7d155982a7a189c0a5cff868cbe61dfcccafcd9b5",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M13101/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M13101/m13101-summary.finalize-summary.json",
+      "assetSha256": "3262cd2358d112cb23a457eeed5f1ebd1d31f727a72a8fac3be95511f2e59122",
+      "bytes": 821451
+    },
+    {
+      "code": "M13201",
+      "title": "智慧製造現場管理實作",
+      "source": "docs/科目三_術科實作準備/02_智慧製造現場管理實作.md",
+      "sourceSha256": "22642928310b883d19cca14b6bd3140c82ad00935edfe4b3ef2cbd0a70b56b24",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M13201/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M13201/m13201-summary.finalize-summary.json",
+      "assetSha256": "e55a4a1d38bbe6b3f27c5740aabd1e314d748234063c91a8c4434695da1351f6",
+      "bytes": 822654
+    },
+    {
+      "code": "M21101",
+      "title": "生產管理實務與精實管理",
+      "source": "docs/中級_智慧製造工程師/05_生產管理實務與精實管理.md",
+      "sourceSha256": "1825389a88cddc58f2881e6a5b7d6a0127b7c97539c88daac35bcb6fb10e15b3",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M21101/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M21101/m21101-summary.finalize-summary.json",
+      "assetSha256": "d4e32a0c67087fcdd588ca28543d1b6320bc47002648bcd9fb58456fface9053",
+      "bytes": 817664
+    },
+    {
+      "code": "M21102",
+      "title": "智慧工廠技術綜觀、現場管理與 MES 實務",
+      "source": "docs/中級_智慧製造工程師/06_智慧工廠技術現場管理與MES實務.md",
+      "sourceSha256": "0357a53d408f773ef9f1749ed60848ef83909afb5b23ff5439af066a7a897b6f",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M21102/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M21102/m21102-summary.finalize-summary.json",
+      "assetSha256": "93bedbd894bf1f537048bef11ebbe06301537db4cf82edbe2b0d5ecdfe25fcc0",
+      "bytes": 817992
+    },
+    {
+      "code": "M21201",
+      "title": "MES 全廠管控與生產排程優化",
+      "source": "docs/中級_智慧製造工程師/07_MES全廠管控與生產排程優化.md",
+      "sourceSha256": "bf75b5732e60f5d5a655ea9166470a20238c214eae586f2834c4b7bfa5071891",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M21201/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M21201/m21201-summary.finalize-summary.json",
+      "assetSha256": "2c0c2950a7afd7b28e45471f77c3b6c257f5a00df6d15a8898e2d6ed40ad56b7",
+      "bytes": 819121
+    },
+    {
+      "code": "M21202",
+      "title": "線平衡、品質要因分析與即時資訊",
+      "source": "docs/中級_智慧製造工程師/08_線平衡品質要因與即時資訊.md",
+      "sourceSha256": "70a0ed84b943c858d3c355645a19a386d4e11c7709bde0d446260dcce559fa0c",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M21202/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M21202/m21202-summary.finalize-summary.json",
+      "assetSha256": "44be4b0203bc1b23fa5ea30b16b61acb66e990349696af25f0bf1358055cc548",
+      "bytes": 816969
+    },
+    {
+      "code": "M22101",
+      "title": "物聯網與 CPS 基本原理",
+      "source": "docs/中級_智慧製造工程師/09_物聯網與CPS基本原理.md",
+      "sourceSha256": "5110c3b38a0dda19d998a7275128e56b27cbc5bcb71bc66193a48aa5ee089f62",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M22101/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M22101/m22101-summary.finalize-summary.json",
+      "assetSha256": "be4f4157e8f78a1a93ec7df48951a804bdc9410e9c008b825b574f955c9a55da",
+      "bytes": 819678
+    },
+    {
+      "code": "M22102",
+      "title": "智慧設備管理維護與製程大數據",
+      "source": "docs/中級_智慧製造工程師/10_智慧設備管理維護與製程大數據.md",
+      "sourceSha256": "f00a55db3278192a77e2d5e5ee60aa70ace4a69f8d710a56441e91f126381afb",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M22102/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M22102/m22102-summary.finalize-summary.json",
+      "assetSha256": "cdbb49937fac17085b20eb7000153b9323716829312fb0c87b8b236db508591f",
+      "bytes": 819029
+    },
+    {
+      "code": "M22201",
+      "title": "感測器、機器視覺與機器人整合",
+      "source": "docs/中級_智慧製造工程師/11_感測器機器視覺與機器人整合.md",
+      "sourceSha256": "045950f6a626f128f2903e5d19bdd09134cde82b444251892afab541861d6468",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M22201/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M22201/review-2/m22201-summary.finalize-summary.json",
+      "assetSha256": "07fa1bf2664ffda8e7fa40d93dc2ce985410fe3bee3a5171d18e82f70eab24f8",
+      "bytes": 820134
+    },
+    {
+      "code": "M22202",
+      "title": "通訊建構、智慧控制與介面管理",
+      "source": "docs/中級_智慧製造工程師/12_通訊建構智慧控制與介面管理.md",
+      "sourceSha256": "1582788ec8e1a929366c387f92f20881fcc932c513388453be9eae699eb75bb0",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M22202/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M22202/m22202-summary.finalize-summary.json",
+      "assetSha256": "e23cf836bc1907e8e752807ab558dbf1d6f09cd1eed2180dc4608dfc98fcdf28",
+      "bytes": 819053
+    },
+    {
+      "code": "M22301",
+      "title": "智慧設備操作與效率指標辨識",
+      "source": "docs/中級_智慧製造工程師/13_智慧設備操作與效率指標辨識.md",
+      "sourceSha256": "4cf70d981a81986bee76551947ee3e669ed4cfd45eb2c158caa3ab04e0b843fa",
+      "candidate": ".archify/architecture-unit-summaries-20261024-120610/M22301/candidate.json",
+      "receipt": ".archify/architecture-unit-summaries-20261024-120610/M22301/m22301-summary.finalize-summary.json",
+      "assetSha256": "f0f1fe6153c2e2d9e182611815a75173c94e2f0a3d0c0cdee54d15d84e40141d",
+      "bytes": 820075
+    }
+  ]
+}

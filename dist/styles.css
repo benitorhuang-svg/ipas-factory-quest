@@ -49,3 +49,52 @@ dialog{border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 70px #1
 @media(max-width:900px){.glossary-grid{grid-template-columns:repeat(2,1fr)}.pdf-grid{grid-template-columns:1fr}.doc-link-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.glossary-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* --- Study Materials & Visual Hub Enhancements --- */
+.material-selector{display:flex;gap:8px;overflow-x:auto;padding-bottom:12px;margin-bottom:20px;-webkit-overflow-scrolling:touch}
+.material-btn{padding:8px 14px;border-radius:10px;background:white;border:1px solid var(--line);font-size:11px;font-weight:600;white-space:nowrap;color:var(--muted);transition:all .15s}
+.material-btn:hover{background:#f4f7f0;color:var(--green)}
+.material-btn.active{background:var(--green);color:white;border-color:var(--green)}
+.material-hero{background:#e8efdf;border-radius:18px;padding:24px;margin-bottom:20px;display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center}
+.material-hero h2{font-size:24px;margin:4px 0 10px}
+.material-hero p{font-size:12px;color:#6d7f6b;line-height:1.8}
+.material-hero-img{background:#fff;border-radius:14px;padding:8px;border:1px solid var(--line);box-shadow:var(--shadow);cursor:pointer;overflow:hidden;max-height:220px;display:flex;align-items:center;justify-content:center}
+.material-hero-img img{width:100%;height:100%;object-fit:cover;border-radius:8px;transition:transform .2s}
+.material-hero-img:hover img{transform:scale(1.03)}
+.concept-tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 16px}
+.concept-tag{background:white;border:1px solid #c8d8c2;color:#3d5e3c;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600}
+.material-content{background:white;border:1px solid var(--line);border-radius:18px;padding:32px;margin-bottom:24px;font-size:14px;line-height:2;color:#283e39}
+.material-content h1{font-size:22px;border-bottom:2px solid var(--soft);padding-bottom:10px;margin-bottom:16px}
+.material-content h2{font-size:18px;margin:24px 0 12px;color:var(--green);display:flex;align-items:center;gap:8px}
+.material-content h3{font-size:15px;margin:18px 0 8px;font-weight:700}
+.material-content table{width:100%;border-collapse:collapse;margin:16px 0;font-size:12px}
+.material-content th,.material-content td{border:1px solid var(--line);padding:10px 14px;text-align:left}
+.material-content th{background:#f3f7f0;font-weight:700}
+.material-content ul,.material-content ol{padding-left:22px;margin:12px 0}
+.material-content li{margin-bottom:6px}
+.material-content figure{margin:20px 0;text-align:center}
+.material-content figure img{margin:auto;max-height:350px;border-radius:10px;box-shadow:0 4px 14px #00000010}
+.material-content figcaption{font-size:11px;color:var(--muted);margin-top:8px}
+.diagram-hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-bottom:24px}
+.diagram-hub-card{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.diagram-hub-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.diagram-hub-thumb{height:200px;background:#eaefe7;overflow:hidden;position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.diagram-hub-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.diagram-hub-thumb:hover img{transform:scale(1.04)}
+.diagram-hub-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.diagram-hub-body h3{font-size:16px;margin-bottom:6px}
+.diagram-hub-body p{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.diagram-hub-body .button-row{margin-top:auto}
+.iframe-dialog{max-width:1200px;width:calc(100% - 24px);height:92dvh;max-height:92dvh;padding:0;overflow:hidden;border-radius:16px;display:flex;flex-direction:column}
+.iframe-toolbar{padding:12px 20px;display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+.iframe-toolbar strong{font-size:13px;color:var(--ink)}
+.iframe-frame{width:100%;flex:1;border:0;background:#18181b}
+.lightbox-dialog{max-width:1200px;width:calc(100% - 20px);max-height:94dvh;padding:14px;overflow:auto}
+.lightbox-dialog img{width:100%;height:auto;max-height:85vh;object-fit:contain;border-radius:8px}
+.lightbox-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;padding:0 4px}
+.quiz-helper-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:8px;background:var(--soft);color:var(--green);font-size:11px;font-weight:700;border:1px solid #c9dec6;cursor:pointer}
+.quiz-helper-btn:hover{background:#dbead6}
+@media(max-width:900px){
+  .material-hero{grid-template-columns:1fr;padding:20px}
+  .diagram-hub-grid{grid-template-columns:1fr}
+}
