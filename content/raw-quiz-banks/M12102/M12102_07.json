@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12102-7-v2",
+  "subjectCode": "M12",
+  "topicCode": "M12102",
+  "prompt": "MQTT 的通訊模式為何？",
+  "options": {
+    "A": "發布／訂閱 Pub/Sub",
+    "B": "點對點檔案複製",
+    "C": "只能輪詢資料庫",
+    "D": "紙本簽核"
+  },
+  "answer": "A",
+  "explanation": "MQTT 透過 broker 協調發布者與訂閱者。",
+  "source": "自編練習題"
+}

@@ -1,0 +1,1 @@
+{"id":"M12-M12201-17-v1","subjectCode":"M12","topicCode":"M12201","prompt":"CPS 5C 架構中，將原始感測資料轉換為有意義的健康指標，最接近哪一層？","options":{"A":"Connection","B":"Conversion","C":"Cognition","D":"Configuration"},"answer":"B","explanation":"Conversion 層著重將原始資料轉成可用資訊或特徵，例如健康指標。Cognition 會進一步形成較高層的理解與決策支援。","source":"智慧生產工程師職能基準 MPM3117-001v3（2024/12/31）；原創練習題"}

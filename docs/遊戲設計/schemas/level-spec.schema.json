@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ipas.spe.internal/schemas/level-spec.schema.json",
+  "title": "LevelSpec",
+  "description": "iPAS 智慧生產工程師教育遊戲關卡資料規格 (Level Specification Schema)",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "chapterId",
+    "topicCodes",
+    "conceptIds",
+    "prerequisites",
+    "mode",
+    "scenario",
+    "assumptions",
+    "initialState",
+    "seed",
+    "horizon",
+    "cardPool",
+    "startingHand",
+    "rules",
+    "scriptedEvents",
+    "objectives",
+    "constraints",
+    "knowledgeChecks",
+    "feedback",
+    "referenceSolutions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(T|C0[1-9]|C1[0-2]|X)-(L0[1-8]|T0[1-4]|X0[1-8])|^(T0[1-4]|X0[1-8]|C(0[1-9]|1[0-2])-L0[1-8])$",
+      "description": "唯一關卡編號，如 T01, C01-L01, X01"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$",
+      "description": "關卡內容語義版本號"
+    },
+    "chapterId": {
+      "type": "string",
+      "enum": ["T", "C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "X"]
+    },
+    "topicCodes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "conceptIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["tutorial", "guide", "challenge"]
+    },
+    "scenario": {
+      "type": "object",
+      "required": ["title", "brief", "background"],
+      "properties": {
+        "title": { "type": "string" },
+        "brief": { "type": "string" },
+        "background": { "type": "string" }
+      }
+    },
+    "assumptions": {
+      "type": "object",
+      "required": ["timeUnit", "currency", "modelType", "parameters"],
+      "properties": {
+        "timeUnit": {
+          "type": "string",
+          "enum": ["second", "minute", "hour", "shift", "day", "week"]
+        },
+        "currency": { "type": "string" },
+        "modelType": {
+          "type": "string",
+          "enum": ["discrete-line", "mrp-grid", "spc-chart", "network-flow", "state-machine"]
+        },
+        "parameters": { "type": "object" }
+      }
+    },
+    "initialState": {
+      "type": "object",
+      "required": ["resources"],
+      "properties": {
+        "resources": {
+          "type": "object",
+          "required": ["budget", "actionPoints"],
+          "properties": {
+            "budget": { "type": "number", "minimum": 0 },
+            "actionPoints": { "type": "integer", "minimum": 0 },
+            "workforce": { "type": "number", "minimum": 0 }
+          }
+        },
+        "stations": { "type": "array" },
+        "inventory": { "type": "object" },
+        "orders": { "type": "array" }
+      }
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "horizon": {
+      "type": "number",
+      "minimum": 1
+    },
+    "cardPool": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "startingHand": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rules": {
+      "type": "object"
+    },
+    "scriptedEvents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["triggerTime", "eventType", "payload", "visibleToPlayer"],
+        "properties": {
+          "triggerTime": { "type": "number" },
+          "eventType": { "type": "string" },
+          "payload": { "type": "object" },
+          "visibleToPlayer": { "type": "boolean" },
+          "announcement": { "type": "string" }
+        }
+      }
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "metric", "operator", "target", "mandatory", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "metric": { "type": "string" },
+          "operator": { "type": "string", "enum": ["<=", ">=", "==", "!=", "<", ">"] },
+          "target": { "type": "number" },
+          "unit": { "type": "string" },
+          "mandatory": { "type": "boolean" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "metric", "operator", "limit", "violationMessage"],
+        "properties": {
+          "id": { "type": "string" },
+          "metric": { "type": "string" },
+          "operator": { "type": "string", "enum": ["<=", ">=", "==", "!=", "<", ">"] },
+          "limit": { "type": "number" },
+          "unit": { "type": "string" },
+          "violationMessage": { "type": "string" }
+        }
+      }
+    },
+    "knowledgeChecks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "type", "options", "answer", "explanation"],
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "type": "string" },
+          "type": { "type": "string", "enum": ["single-choice", "multi-choice", "sort", "evidence-match"] },
+          "options": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+          "answer": {},
+          "misconceptionId": { "type": "string" },
+          "explanation": { "type": "string" }
+        }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "required": ["successSummary", "failureHints"],
+      "properties": {
+        "successSummary": { "type": "string" },
+        "failureHints": { "type": "object" }
+      }
+    },
+    "referenceSolutions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "targetStars", "actions", "expectedKpis"],
+        "properties": {
+          "name": { "type": "string" },
+          "targetStars": { "type": "integer", "enum": [1, 2, 3] },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["round", "time", "cardId"],
+              "properties": {
+                "round": { "type": "integer" },
+                "time": { "type": "number" },
+                "cardId": { "type": "string" },
+                "targetId": { "type": "string" },
+                "parameters": { "type": "object" }
+              }
+            }
+          },
+          "expectedKpis": { "type": "object" }
+        }
+      }
+    }
+  }
+}

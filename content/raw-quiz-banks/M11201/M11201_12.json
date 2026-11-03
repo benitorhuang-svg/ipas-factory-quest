@@ -1,0 +1,1 @@
+{"id":"M11-M11201-12-v3","subjectCode":"M11","topicCode":"M11201","prompt":"依 Little 定律，在系統穩定且單位一致時，在製品 WIP 與何者相關？","options":{"A":"產出率與流動時間","B":"產品顏色與售價","C":"員工年齡與職稱","D":"廠房面積與電費"},"answer":"A","explanation":"Little 定律為 WIP = Throughput × Flow Time，可用於檢視在製品、產出率與流動時間的關係。","source":"115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"}

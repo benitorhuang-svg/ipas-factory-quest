@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11201-1-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11201",
+  "prompt": "觀測時間乘以評比係數後得到什麼？",
+  "options": {
+    "A": "正常時間 NT",
+    "B": "標準工時 ST",
+    "C": "節拍時間 TT",
+    "D": "前置時間 MLT"
+  },
+  "answer": "A",
+  "explanation": "NT = 觀測時間 × Rating。",
+  "source": "自編練習題"
+}

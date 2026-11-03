@@ -1,0 +1,1 @@
+{"id":"M12-M12101-11-v1","subjectCode":"M12","topicCode":"M12101","prompt":"在 ISA-95 常見分層中，直接與感測器、致動器等實體製程互動的是哪一層？","options":{"A":"Level 0","B":"Level 2","C":"Level 3","D":"Level 4"},"answer":"A","explanation":"Level 0 為實體製程本身；Level 1 通常是感測與致動的基本控制，Level 2 為監控控制。","source":"115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"}

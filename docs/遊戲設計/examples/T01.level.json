@@ -1,0 +1,119 @@
+{
+  "id": "T01",
+  "version": "1.0.0",
+  "chapterId": "T",
+  "topicCodes": ["M11101", "M11201"],
+  "conceptIds": ["CP-T01-CARD-SELECTION", "CP-T01-BOTTLENECK-BASICS"],
+  "prerequisites": [],
+  "mode": "tutorial",
+  "scenario": {
+    "title": "第一張改善卡",
+    "brief": "辨認目標、資源與作用對象，學習選卡、設定目標並確認提交。",
+    "background": "工廠生產線上的工站 A 單件加工時間為 30 秒，玩家手上有改善預算 2 點。請利用工程措施縮短加工時間。"
+  },
+  "assumptions": {
+    "timeUnit": "second",
+    "currency": "點",
+    "modelType": "discrete-line",
+    "parameters": {
+      "steadyState": true,
+      "allowInfiniteRetries": true
+    }
+  },
+  "initialState": {
+    "resources": {
+      "budget": 2,
+      "actionPoints": 1,
+      "workforce": 1
+    },
+    "stations": [
+      {
+        "id": "station-a",
+        "name": "工站 A",
+        "serviceRate": 30,
+        "state": "idle",
+        "bufferCapacity": 10
+      }
+    ]
+  },
+  "seed": 42,
+  "horizon": 300,
+  "cardPool": ["fixture-station-a", "replenish-mat-test", "sensor-diag-test"],
+  "startingHand": ["fixture-station-a", "replenish-mat-test", "sensor-diag-test"],
+  "rules": {
+    "maxActionsPerRound": 1,
+    "allowUndo": true,
+    "costOverrides": {}
+  },
+  "scriptedEvents": [],
+  "objectives": [
+    {
+      "id": "obj-station-a-rate",
+      "metric": "station.station-a.serviceRate",
+      "operator": "==",
+      "target": 20,
+      "unit": "s",
+      "mandatory": true,
+      "description": "工站 A 單件加工時間降低至 20 秒"
+    },
+    {
+      "id": "obj-budget-spent",
+      "metric": "resources.budget",
+      "operator": "==",
+      "target": 0,
+      "unit": "點",
+      "mandatory": true,
+      "description": "預算剛好消耗完畢，無超支"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "const-budget-non-negative",
+      "metric": "resources.budget",
+      "operator": ">=",
+      "limit": 0,
+      "unit": "點",
+      "violationMessage": "改善預算不足，無法執行此項操作"
+    }
+  ],
+  "knowledgeChecks": [
+    {
+      "id": "check-t01-01",
+      "question": "打出「治具改善卡」之後，現場發生了什麼改變？",
+      "type": "single-choice",
+      "options": [
+        "直接增加了客戶的訂單數量",
+        "縮短了工站 A 的單件加工時間",
+        "改變了工廠的期初庫存量",
+        "提升了工站感測器的連線頻率"
+      ],
+      "answer": 1,
+      "explanation": "治具改善屬於產線改善卡（F05），其物理效果是縮短指定工站的標準服務時間，並非直接增加需求或庫存。"
+    }
+  ],
+  "feedback": {
+    "successSummary": "太棒了！你成功為工站 A 安裝治具，使其加工時間從 30 秒縮短至 20 秒，並理解了工程措施改變物理機制的因果關係。",
+    "failureHints": {
+      "obj-station-a-rate": "請確認手牌中哪一張卡牌的作用對象是工站 A 且具備縮短工時的效果。",
+      "const-budget-non-negative": "預算點數不足，請撤銷不必要的操作後再重試。"
+    }
+  },
+  "referenceSolutions": [
+    {
+      "name": "標準治具安裝解法",
+      "targetStars": 1,
+      "actions": [
+        {
+          "round": 1,
+          "time": 0,
+          "cardId": "fixture-station-a",
+          "targetId": "station-a"
+        }
+      ],
+      "expectedKpis": {
+        "station-a-serviceRate": 20,
+        "remainingBudget": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11202-6-v2",
+  "subjectCode": "M11",
+  "topicCode": "M11202",
+  "prompt": "PAF 品質成本中的 Prevention 是指？",
+  "options": {
+    "A": "預防成本",
+    "B": "鑑定成本",
+    "C": "內部失敗成本",
+    "D": "外部失敗成本"
+  },
+  "answer": "A",
+  "explanation": "PAF 為 Prevention、Appraisal、Failure。",
+  "source": "自編練習題"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11102-1-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11102",
+  "prompt": "MBOM 相較 EBOM，最主要的觀點差異為何？",
+  "options": {
+    "A": "MBOM 只列 CAD 零件",
+    "B": "MBOM 反映製造與組裝所需用料",
+    "C": "EBOM 才有版本管理",
+    "D": "兩者必然完全相同"
+  },
+  "answer": "B",
+  "explanation": "EBOM 偏設計結構，MBOM 納入製程、包裝與輔料等製造需求。",
+  "source": "自編練習題"
+}

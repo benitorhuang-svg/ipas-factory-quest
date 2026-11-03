@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12102-6-v2",
+  "subjectCode": "M12",
+  "topicCode": "M12102",
+  "prompt": "Modbus Holding Register 的典型特性是？",
+  "options": {
+    "A": "1 位元且唯讀",
+    "B": "16 位元且可讀可寫",
+    "C": "只用於影像檔",
+    "D": "只能傳送文字"
+  },
+  "answer": "B",
+  "explanation": "Holding Register 常用於可讀寫的設定值。",
+  "source": "自編練習題"
+}

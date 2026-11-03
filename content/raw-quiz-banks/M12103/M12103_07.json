@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12103-7-v2",
+  "subjectCode": "M12",
+  "topicCode": "M12103",
+  "prompt": "將不良品判為良品流入客戶端稱為？",
+  "options": {
+    "A": "漏檢 Underkill／假陰性",
+    "B": "過檢 Overkill",
+    "C": "正確檢出",
+    "D": "校正"
+  },
+  "answer": "A",
+  "explanation": "漏檢是把實際不良錯放為良品，外部風險高。",
+  "source": "自編練習題"
+}

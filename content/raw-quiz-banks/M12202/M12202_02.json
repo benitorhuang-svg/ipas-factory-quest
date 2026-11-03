@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12202-2-v1",
+  "subjectCode": "M12",
+  "topicCode": "M12202",
+  "prompt": "AMR 與固定路徑 AGV 最大差異為何？",
+  "options": {
+    "A": "AMR 可用 SLAM 自主定位與避障",
+    "B": "AMR 完全不需感測器",
+    "C": "AGV 必定比 AMR 快",
+    "D": "兩者只能人工搬運"
+  },
+  "answer": "A",
+  "explanation": "AMR 具備較高的導航與繞障自主性。",
+  "source": "自編練習題"
+}

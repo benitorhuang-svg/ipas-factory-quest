@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11101-7-v2",
+  "subjectCode": "M11",
+  "topicCode": "M11101",
+  "prompt": "若要確認 MPS 是否超過關鍵工作中心能力，應進行何種規劃？",
+  "options": {
+    "A": "RCCP 粗略產能規劃",
+    "B": "MRP 物料需求規劃",
+    "C": "PAC 生產活動管制",
+    "D": "FAI 首件檢驗"
+  },
+  "answer": "A",
+  "explanation": "RCCP 用於在主生產排程層級驗證關鍵資源能力。",
+  "source": "自編練習題"
+}

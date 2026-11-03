@@ -1,0 +1,54 @@
+{
+  "id": "fixture-b-v1",
+  "version": "1.0.0",
+  "family": "F05",
+  "name": "工站 B 治具改善卡",
+  "description": "為工站 B 安裝專用快速定位治具，消除夾持微調動作，使單件標準服務時間從 40 秒縮減至 30 秒。",
+  "topicCodes": ["M11201"],
+  "conceptIds": ["CP-M11201-FIXTURE", "CP-M11201-BOTTLENECK-RESOLVE"],
+  "targetType": "station",
+  "parameters": [],
+  "prerequisites": [
+    {
+      "type": "resource",
+      "targetKey": "budget",
+      "expectedValue": 3,
+      "failureMessage": "改善預算不足 3 點，無法購置定位治具"
+    },
+    {
+      "type": "station-state",
+      "targetKey": "station-b.installedFixtures",
+      "expectedValue": 0,
+      "failureMessage": "工站 B 已安裝相同型號治具，無法重複累加"
+    }
+  ],
+  "cost": {
+    "budget": 3,
+    "actionPoints": 1,
+    "leadTime": 0
+  },
+  "effectiveAt": "immediate",
+  "duration": 0,
+  "effects": [
+    {
+      "target": "station",
+      "action": "modify-parameter",
+      "params": {
+        "stationId": "station-b",
+        "parameter": "serviceRate",
+        "newValue": 30
+      }
+    }
+  ],
+  "stacking": false,
+  "maxUsesPerGame": 1,
+  "evidence": ["EVI-M11201-BOTTLENECK-TIME-REDUCED"],
+  "feedback": {
+    "onApplied": "工站 B 專用治具安裝完畢，單件加工時間成功縮短至 30 秒，瓶頸產能自 90 件/小時提升至 120 件/小時。",
+    "onRejected": "操作被拒絕：對象並非工站 B，或預算點數不足。"
+  },
+  "sourceRefs": [
+    "科目一_生產與作業管理基礎/04_工業工程概論與標準工時.md",
+    "遊戲設計/02_卡牌與模擬規則.md"
+  ]
+}

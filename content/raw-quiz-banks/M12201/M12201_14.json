@@ -1,0 +1,1 @@
+{"id":"M12-M12201-14-v2","subjectCode":"M12","topicCode":"M12201","prompt":"數位影子（Digital Shadow）通常指什麼？","options":{"A":"實體資料單向更新到數位模型","B":"完全沒有資料連結的 3D 圖","C":"只用來備份文件","D":"取代所有實體設備"},"answer":"A","explanation":"常見定義中，Digital Shadow 由實體自動更新數位表示；Digital Twin 則更強調可能的雙向互動與閉環控制。","source":"115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"}

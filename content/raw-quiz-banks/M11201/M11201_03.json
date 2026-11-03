@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11201-3-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11201",
+  "prompt": "Takt Time 主要由何者決定？",
+  "options": {
+    "A": "單一員工速度",
+    "B": "倉庫容量",
+    "C": "可用生產時間與客戶需求量",
+    "D": "不良品數量"
+  },
+  "answer": "C",
+  "explanation": "節拍時間是市場需求拉動的產出節奏。",
+  "source": "自編練習題"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11203-6-v2",
+  "subjectCode": "M11",
+  "topicCode": "M11203",
+  "prompt": "TIMWOOD 中哪一項通常被視為最根本的浪費？",
+  "options": {
+    "A": "運輸",
+    "B": "過度生產",
+    "C": "等待",
+    "D": "動作"
+  },
+  "answer": "B",
+  "explanation": "過度生產會掩蓋其他浪費並增加庫存。",
+  "source": "自編練習題"
+}

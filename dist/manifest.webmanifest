@@ -1,0 +1,19 @@
+{
+  "name": "智造闖關 Factory Quest — iPAS 智慧生產工程師",
+  "short_name": "智造闖關",
+  "description": "iPAS 智慧生產工程師初級兩科學科備考闖關遊戲與題庫",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#174b3e",
+  "theme_color": "#174b3e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "C01-L01",
+  "version": "1.0.0",
+  "chapterId": "C01",
+  "topicCodes": ["M11101"],
+  "conceptIds": ["CP-M11101-CODP", "CP-M11101-MTS-ATO-MTO-ETO"],
+  "prerequisites": ["T04"],
+  "mode": "guide",
+  "scenario": {
+    "title": "訂單從哪裡進工廠",
+    "brief": "依據四種不同的客戶訂單特性，正確設定客戶訂單解耦點 (CODP)，區分推式與拉式生產邊界。",
+    "background": "營運指揮室收到四筆訂單：標準品 100 件翌日交、選配品 20 件三日交、特殊加工品 5 件十日交、全新客製設備 1 件二十日交。現有途程完工時間分別為 MTS 1 日、ATO 3 日、MTO 10 日、ETO 20 日。"
+  },
+  "assumptions": {
+    "timeUnit": "day",
+    "currency": "元",
+    "modelType": "discrete-line",
+    "parameters": {
+      "inventorySufficient": true,
+      "strictDeliveryDeadline": true
+    }
+  },
+  "initialState": {
+    "resources": {
+      "budget": 100,
+      "actionPoints": 4,
+      "workforce": 10
+    },
+    "orders": [
+      { "id": "ORD-01", "quantity": 100, "dueDate": 1, "priority": 1 },
+      { "id": "ORD-02", "quantity": 20, "dueDate": 3, "priority": 2 },
+      { "id": "ORD-03", "quantity": 5, "dueDate": 10, "priority": 3 },
+      { "id": "ORD-04", "quantity": 1, "dueDate": 20, "priority": 4 }
+    ]
+  },
+  "seed": 101,
+  "horizon": 20,
+  "cardPool": [
+    "set-codp-mts",
+    "set-codp-ato",
+    "set-codp-mto",
+    "set-codp-eto",
+    "stock-finished-goods",
+    "stock-modules",
+    "make-to-order-exec",
+    "engineer-to-order-exec"
+  ],
+  "startingHand": [
+    "set-codp-mts",
+    "set-codp-ato",
+    "set-codp-mto",
+    "set-codp-eto"
+  ],
+  "rules": {
+    "maxActionsPerRound": 4,
+    "allowUndo": true,
+    "costOverrides": {}
+  },
+  "scriptedEvents": [],
+  "objectives": [
+    {
+      "id": "obj-codp-assignment",
+      "metric": "codp.matchedOrdersRatio",
+      "operator": "==",
+      "target": 1.0,
+      "unit": "ratio",
+      "mandatory": true,
+      "description": "四張訂單均正確匹配對應的生產型態 (MTS/ATO/MTO/ETO)"
+    },
+    {
+      "id": "obj-on-time-delivery",
+      "metric": "delivery.onTimeRatio",
+      "operator": "==",
+      "target": 1.0,
+      "unit": "ratio",
+      "mandatory": true,
+      "description": "四張訂單全部於承諾交期內如期交付"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "const-no-incompatible-module",
+      "metric": "orders.incompatibleSubstitutions",
+      "operator": "==",
+      "limit": 0,
+      "violationMessage": "客製產品不得強行以既有不相容模組替代"
+    }
+  ],
+  "knowledgeChecks": [
+    {
+      "id": "check-c01-01",
+      "question": "客戶訂單解耦點 (Customer Order Decoupling Point, CODP) 的核心物理意涵為何？",
+      "type": "single-choice",
+      "options": [
+        "區分廠內哪些工序是由預測驅動（推式），哪些是由確定訂單驅動（拉式）的緩衝位置",
+        "代表機台故障時操作員手動接管的維護點",
+        "代表所有成品進入貨櫃裝箱的出口位置",
+        "代表每期 MRP 展開後安全庫存的最低警戒線"
+      ],
+      "answer": 0,
+      "explanation": "CODP 是推式（依預測備貨）與拉式（依實際訂單生產）的關鍵分界點。在解耦點上游依預測維持庫存，在解耦點下游則由確定訂單觸發各項作業。"
+    }
+  ],
+  "feedback": {
+    "successSummary": "恭喜通關！你準確辨識了四種生產型態的交期與庫存策略：標準品配置 MTS（現貨庫存）、選配品配置 ATO（模組庫存）、特殊加工品配置 MTO（原料庫存）以及客製設備配置 ETO（從設計開始）。",
+    "failureHints": {
+      "obj-codp-assignment": "請比對各訂單的交期要求與生產路徑提前期，例如 1 日交期必須依賴成品現貨 (MTS)。",
+      "obj-on-time-delivery": "若將 20 日的客製設備誤設為 MTO，將因缺少前期工程設計時間而發生嚴重逾期。"
+    }
+  },
+  "referenceSolutions": [
+    {
+      "name": "標準四階 CODP 配對解法",
+      "targetStars": 1,
+      "actions": [
+        { "round": 1, "time": 0, "cardId": "set-codp-mts", "targetId": "ORD-01" },
+        { "round": 1, "time": 0, "cardId": "set-codp-ato", "targetId": "ORD-02" },
+        { "round": 1, "time": 0, "cardId": "set-codp-mto", "targetId": "ORD-03" },
+        { "round": 1, "time": 0, "cardId": "set-codp-eto", "targetId": "ORD-04" }
+      ],
+      "expectedKpis": {
+        "matchedOrdersRatio": 1.0,
+        "onTimeRatio": 1.0
+      }
+    }
+  ]
+}

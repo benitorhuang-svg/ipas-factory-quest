@@ -1,0 +1,1 @@
+{"id":"M12-M12101-25-v3","subjectCode":"M12","topicCode":"M12101","prompt":"ISA-95 的 Level 2 最典型的用途為何？","options":{"A":"企業財務與銷售預測","B":"SCADA/HMI 監控製程與呈現警報趨勢","C":"直接執行物理加工","D":"長期產品研發管理"},"answer":"B","explanation":"Level 2 屬製程監控與圖控層，常見 SCADA、HMI、警報與趨勢監視；Level 1 多為直接控制，Level 3 為製造營運管理。","source":"智慧生產工程師職能基準 MPM3117-001v3（2024/12/31）；原創練習題"}

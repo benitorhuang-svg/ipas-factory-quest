@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11102-2-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11102",
+  "prompt": "途程表 Routing 最直接定義的是什麼？",
+  "options": {
+    "A": "工序順序與工作中心",
+    "B": "財務成本中心",
+    "C": "產品售價",
+    "D": "客戶付款條件"
+  },
+  "answer": "A",
+  "explanation": "Routing 指明產品經過哪些工序、設備或工作中心。",
+  "source": "自編練習題"
+}

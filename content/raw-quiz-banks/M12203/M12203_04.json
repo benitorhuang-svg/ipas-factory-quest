@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12203-4-v2",
+  "subjectCode": "M12",
+  "topicCode": "M12203",
+  "prompt": "ERP 下達至 MES 的典型資訊是？",
+  "options": {
+    "A": "工單、BOM 與排程",
+    "B": "即時感測器電壓",
+    "C": "單一螺絲扭力波形",
+    "D": "攝影機曝光值"
+  },
+  "answer": "A",
+  "explanation": "ERP 提供計畫與主檔，MES 執行並回傳實績。",
+  "source": "自編練習題"
+}

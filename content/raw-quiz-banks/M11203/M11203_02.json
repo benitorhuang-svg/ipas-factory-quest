@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11203-2-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11203",
+  "prompt": "看板 Kanban 的核心控制邏輯是？",
+  "options": {
+    "A": "後工程拉動前工程",
+    "B": "依預測大量推式生產",
+    "C": "每站無限制累積 WIP",
+    "D": "只用於財務核銷"
+  },
+  "answer": "A",
+  "explanation": "看板以需求拉動與 WIP 限制控制流程。",
+  "source": "自編練習題"
+}

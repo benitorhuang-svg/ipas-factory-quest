@@ -1,0 +1,6 @@
+{
+  "id": "M12-M12102-13-v2", "subjectCode": "M12", "topicCode": "M12102",
+  "prompt": "工廠要讓多台設備將狀態發布給訂閱者，並由 Broker 協調訊息傳遞，最符合哪一種通訊模式？",
+  "options": { "A": "MQTT 發布／訂閱", "B": "USB 點對點", "C": "紙本巡檢", "D": "單向類比訊號" },
+  "answer": "A", "explanation": "MQTT 採 Broker 與 Topic 的發布／訂閱模式，適合資源受限裝置與大量狀態訊息分發。", "source": "115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"
+}

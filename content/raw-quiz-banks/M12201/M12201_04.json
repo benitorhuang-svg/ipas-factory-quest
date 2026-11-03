@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12201-4-v2",
+  "subjectCode": "M12",
+  "topicCode": "M12201",
+  "prompt": "CPS 5C 架構的第一層是？",
+  "options": {
+    "A": "Connection 連結",
+    "B": "Cognition 認知",
+    "C": "Configuration 配置",
+    "D": "Cyber 網宇"
+  },
+  "answer": "A",
+  "explanation": "5C 從感測連結開始，再轉換、網宇、認知、配置。",
+  "source": "自編練習題"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11101-5-v2",
+  "subjectCode": "M11",
+  "topicCode": "M11101",
+  "prompt": "客戶訂單解耦點位於成品倉，最符合哪一種生產型態？",
+  "options": {
+    "A": "MTS 存貨生產",
+    "B": "MTO 訂單生產",
+    "C": "ATO 裝配生產",
+    "D": "ETO 研發訂購"
+  },
+  "answer": "A",
+  "explanation": "MTS 先依預測完成生產，訂單在成品倉後才切入。",
+  "source": "自編練習題"
+}

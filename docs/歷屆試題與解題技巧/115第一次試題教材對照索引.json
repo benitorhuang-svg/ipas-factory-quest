@@ -1,0 +1,1562 @@
+{
+  "scope": "115 年第一次四科共 200 題之教材研讀對照；不代表未來命題比例或唯一分類。",
+  "subjects": [
+    {
+      "subject": "L11",
+      "source": "docs/歷屆試題與解題技巧/115年第一次初級智慧生產_L11_生產與作業管理基礎_公告試題.pdf",
+      "sha256": "b89a737c31245de4cec15fea2cc974992f1ecc538b1c7621b5cf8ba1cd8509b4",
+      "questions": [
+        {
+          "question": 1,
+          "topicCode": "M11103",
+          "concept": "EPQ總成本與隨批量變動成本的區別",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項"
+        },
+        {
+          "question": 2,
+          "topicCode": "M11101",
+          "concept": "MPS的品項、時點與數量決策",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 3,
+          "topicCode": "M11101",
+          "concept": "客製需求下的接單生產策略",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 4,
+          "topicCode": "M11101",
+          "concept": "MTS依預測預製成品",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 5,
+          "topicCode": "M11103",
+          "concept": "批量與年持有、訂購成本的反向關係",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+          "note": "保留公告A；正比關係限持有成本，原題總庫存成本用語不可擴張為總相關成本正比。"
+        },
+        {
+          "question": 6,
+          "topicCode": "M11101",
+          "concept": "低成本策略與標準化、流程效率",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 7,
+          "topicCode": "M11201",
+          "concept": "需求節拍與時間單位換算",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 8,
+          "topicCode": "M11201",
+          "concept": "觀測時間評比後加寬放時間",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 9,
+          "topicCode": "M11101",
+          "concept": "排程工作順序與既定製程順序的區別",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+          "relatedTopics": [
+            "M11102"
+          ]
+        },
+        {
+          "question": 10,
+          "topicCode": "M11101",
+          "concept": "彈性競爭優先與產品及產線切換能力",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 11,
+          "topicCode": "M11101",
+          "concept": "甘特圖用途與SPT、EDD績效目標",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 12,
+          "topicCode": "M11101",
+          "concept": "醫院功能分科與床邊固定位置混合佈置",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 13,
+          "topicCode": "M11101",
+          "concept": "製程別路徑彈性與產品別連鎖停線風險",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 14,
+          "topicCode": "M11101",
+          "concept": "混線生產節拍及工序同步",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+          "relatedTopics": [
+            "M11201"
+          ]
+        },
+        {
+          "question": 15,
+          "topicCode": "M11101",
+          "concept": "製造可存貨產出與服務即時消費特性",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 16,
+          "topicCode": "M11103",
+          "concept": "低階編碼決定多階MRP計算順序",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+          "relatedTopics": [
+            "M11102"
+          ]
+        },
+        {
+          "question": 17,
+          "topicCode": "M11102",
+          "concept": "MBOM多階母子件需求與結構關係",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題"
+        },
+        {
+          "question": 18,
+          "topicCode": "M11103",
+          "concept": "需求來源追溯、前置時間與批量設定",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項"
+        },
+        {
+          "question": 19,
+          "topicCode": "M11102",
+          "concept": "MBOM與實際製造裝配工序的關聯",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題"
+        },
+        {
+          "question": 20,
+          "topicCode": "M11102",
+          "concept": "自製採購屬性與BOM製程關聯修正",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題"
+        },
+        {
+          "question": 21,
+          "topicCode": "M11201",
+          "concept": "ECRS先刪除再合併、重排及簡化",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 22,
+          "topicCode": "M11201",
+          "concept": "速率統一後比較瓶頸改善的整線效益",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+          "relatedTopics": [
+            "M11203"
+          ]
+        },
+        {
+          "question": 23,
+          "topicCode": "M11201",
+          "concept": "最長不可分作業為最短CT下限",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 24,
+          "topicCode": "M11102",
+          "concept": "SOP須符合設備能力與需求節拍",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+          "relatedTopics": [
+            "M11201"
+          ]
+        },
+        {
+          "question": 25,
+          "topicCode": "M11102",
+          "concept": "SOP核心步驟、工具及安全內容",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題"
+        },
+        {
+          "question": 26,
+          "topicCode": "M11103",
+          "concept": "先扣母項庫存再合併子件淨需求",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項"
+        },
+        {
+          "question": 27,
+          "topicCode": "M11103",
+          "concept": "MPS未及時更新導致MRP需求時間錯置",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+          "relatedTopics": [
+            "M11101"
+          ]
+        },
+        {
+          "question": 28,
+          "topicCode": "M11101",
+          "concept": "時間欄柵控制近期主排程變更",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 29,
+          "topicCode": "M11101",
+          "concept": "排程方向與容量限制是不同維度",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 30,
+          "topicCode": "M11101",
+          "concept": "DRP成品補充與配送節點協調",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級"
+        },
+        {
+          "question": 31,
+          "topicCode": "M11201",
+          "concept": "工具及物料置於正常伸及範圍",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 32,
+          "topicCode": "M11201",
+          "concept": "工作研究以觀察分析改善方法合理性",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 33,
+          "topicCode": "M11203",
+          "concept": "JIT停機情境中的預防保養與換線診斷",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+          "note": "保留公告A；題中未拆分正常換線和故障損失，不能推成所有頻繁換線都優先保養。"
+        },
+        {
+          "question": 34,
+          "topicCode": "M11203",
+          "concept": "工時損失階層與一次、最終良率區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+          "note": "原卷工時層級命名不得未經定義就套用到不同工廠或OEE軟體欄位。"
+        },
+        {
+          "question": 35,
+          "topicCode": "M11201",
+          "concept": "正常時間經寬放後形成標準工時",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸"
+        },
+        {
+          "question": 36,
+          "topicCode": "M11201",
+          "concept": "五次觀測平均、105%評比及15%外加寬放",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+          "note": "公告選項對應外加法；不得推定所有未註明分母的寬放率都採外加法。"
+        },
+        {
+          "question": 37,
+          "topicCode": "M11203",
+          "concept": "實際量逐層回推有效與設計產能",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+          "relatedTopics": [
+            "M11201"
+          ]
+        },
+        {
+          "question": 38,
+          "topicCode": "M11102",
+          "concept": "流程時間、CT與增值時間占比的單位",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+          "relatedTopics": [
+            "M11201",
+            "M11203"
+          ],
+          "note": "原卷流程速度採增值時間／流程時間之無量綱比例，與件／時間的產出速率不同。"
+        },
+        {
+          "question": 39,
+          "topicCode": "M11201",
+          "concept": "找最慢站並重算改善後下一瓶頸",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+          "relatedTopics": [
+            "M11203"
+          ]
+        },
+        {
+          "question": 40,
+          "topicCode": "M11203",
+          "concept": "WIP週轉與相同邊界下的流程改善",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加"
+        },
+        {
+          "question": 41,
+          "topicCode": "M11202",
+          "concept": "p圖樣本數增加使界限半寬縮小",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 42,
+          "topicCode": "M11202",
+          "concept": "SPC受控仍有共同原因隨機變異",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 43,
+          "topicCode": "M11202",
+          "concept": "品管工具用於現場製程與品質問題",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 44,
+          "topicCode": "M11202",
+          "concept": "初始管制界限須有代表性合理分組資料",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 45,
+          "topicCode": "M11202",
+          "concept": "監控對象、圖種、樣本大小與頻率的規劃",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+          "note": "PDF第9頁確認公告A；題面未說品項已指定，不能解讀成實務無需定義品項或品質特性。"
+        },
+        {
+          "question": 46,
+          "topicCode": "M11202",
+          "concept": "散佈圖檢查兩連續變數相關趨勢",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 47,
+          "topicCode": "M11202",
+          "concept": "魚骨圖展開待驗證的潛在原因",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        },
+        {
+          "question": 48,
+          "topicCode": "M11202",
+          "concept": "品質成本依活動目的及交付前後分類",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+          "note": "PDF第9頁確認公告A；檢查及測試本身仍可屬鑑定，品管程序、蒐集分析或問題解決須依實際目的分類。"
+        },
+        {
+          "question": 49,
+          "topicCode": "M11202",
+          "concept": "TQM全員參與與依事實決策並行",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+          "note": "PDF第9頁確認公告C；ASQ同時列全員參與及依事實決策，不可推成禁止團隊參與。"
+        },
+        {
+          "question": 50,
+          "topicCode": "M11202",
+          "concept": "訓練及品質制度建置屬預防成本",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線"
+        }
+      ]
+    },
+    {
+      "subject": "L12",
+      "source": "docs/歷屆試題與解題技巧/115年第一次初級智慧生產_L12_智慧製造生產線管理基礎_公告試題.pdf",
+      "sha256": "4e83ec175c7694e67190d81ae9c773152a3c9e87b4b3d473734ab0b52c5f673a",
+      "questions": [
+        {
+          "question": 1,
+          "topicCode": "M12101",
+          "concept": "ERP 整合管理與設備自動化的責任",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎"
+        },
+        {
+          "question": 2,
+          "topicCode": "M12101",
+          "concept": "IIoT 作為 IT／OT 資料連結基礎",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+          "relatedTopics": [
+            "M12102"
+          ]
+        },
+        {
+          "question": 3,
+          "topicCode": "M12101",
+          "concept": "OT 將製程知識轉成可執行邏輯",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎"
+        },
+        {
+          "question": 4,
+          "topicCode": "M12102",
+          "concept": "感測器提供控制輸入而非致動",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "relatedTopics": [
+            "M12202"
+          ]
+        },
+        {
+          "question": 5,
+          "topicCode": "M12202",
+          "concept": "AGV／AMR 的物料領用轉運任務",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 6,
+          "topicCode": "M12202",
+          "concept": "異常振動優先檢查機械結構",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 7,
+          "topicCode": "M12203",
+          "concept": "MES 的 OEE 模組及工單績效",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 8,
+          "topicCode": "M12202",
+          "concept": "故障前監測及預防措施",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 9,
+          "topicCode": "M12202",
+          "concept": "漏警的模型、通訊及操作原因",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12102",
+            "M12103"
+          ]
+        },
+        {
+          "question": 10,
+          "topicCode": "M12202",
+          "concept": "參數偏移的品質與維護影響",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 11,
+          "topicCode": "M12102",
+          "concept": "系統記錄支援分析追溯及改善",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "relatedTopics": [
+            "M12202"
+          ]
+        },
+        {
+          "question": 12,
+          "topicCode": "M12202",
+          "concept": "HMI 的人機監控與操作目的",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 13,
+          "topicCode": "M12103",
+          "concept": "工業相機介面的概括線長排序",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+          "relatedTopics": [
+            "M12102"
+          ],
+          "note": "公告採 GigE、Camera Link、USB 3.0；線材、模式、版本及延伸方案影響實際距離，非固定線長定律。"
+        },
+        {
+          "question": 14,
+          "topicCode": "M12202",
+          "concept": "設備介面需求、格式及版本規格",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 15,
+          "topicCode": "M12101",
+          "concept": "MES 彙整設備資料供營運管理",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+          "relatedTopics": [
+            "M12203"
+          ],
+          "note": "題意包含彙整供上層管理；不表示所有高頻原始波形必須直接寫入 MES。"
+        },
+        {
+          "question": 16,
+          "topicCode": "M12203",
+          "concept": "電子看板效益與稽核仍須保留",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 17,
+          "topicCode": "M12202",
+          "concept": "IMS 的 Predict and Prevent 策略",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 18,
+          "topicCode": "M12102",
+          "concept": "IoT 典型組成與特定辨識應用",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "note": "聲音辨識為特定應用；題內雲端為典型平台選項，實務亦可用地端，非所有 IoT 都強制使用雲端。"
+        },
+        {
+          "question": 19,
+          "topicCode": "M12102",
+          "concept": "IoT 分層語境及排除混用模型",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "note": "題內採含應用、網路、商務層的語境；IoT 可有不同分層，不與 OSI 名稱任意混接。"
+        },
+        {
+          "question": 20,
+          "topicCode": "M12102",
+          "concept": "Wi-Fi、Bluetooth、NFC 概括速率排序",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "note": "題內未指定版本，採常見概括排序；工程選型仍須比較實際版本、距離、干擾與資料量。"
+        },
+        {
+          "question": 21,
+          "topicCode": "M12102",
+          "concept": "邊緣 AI 降低延遲及傳輸負擔",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 22,
+          "topicCode": "M12102",
+          "concept": "感知層執行資料採集",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件"
+        },
+        {
+          "question": 23,
+          "topicCode": "M12103",
+          "concept": "迴歸的監督式學習與過度擬合",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務"
+        },
+        {
+          "question": 24,
+          "topicCode": "M12103",
+          "concept": "強化學習的獎勵函數",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務"
+        },
+        {
+          "question": 25,
+          "topicCode": "M12103",
+          "concept": "本地訓練前提下的網路影響",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+          "note": "以資料與運算在本地、無需遠端取數為前提；雲端訓練或線上取數須重判。"
+        },
+        {
+          "question": 26,
+          "topicCode": "M12202",
+          "concept": "工業多關節多自由度機器人分類",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 27,
+          "topicCode": "M12103",
+          "concept": "電腦視覺的場景理解目的",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務"
+        },
+        {
+          "question": 28,
+          "topicCode": "M12201",
+          "concept": "CPS 連接採集與資訊轉換分工",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界"
+        },
+        {
+          "question": 29,
+          "topicCode": "M12201",
+          "concept": "CPS 5C 由連接到配置的順序",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界"
+        },
+        {
+          "question": 30,
+          "topicCode": "M12201",
+          "concept": "CPS 的實體量測與計算回饋互動",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+          "note": "區塊鏈可支援 CPS 應用，但帳本技術本身不構成實體閉環。"
+        },
+        {
+          "question": 31,
+          "topicCode": "M12201",
+          "concept": "CPS 的自主補救與受控回饋",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+          "note": "自主性限於已定義目標、允許範圍與已驗證控制條件；不保證任意未知失控均可自動最佳化。"
+        },
+        {
+          "question": 32,
+          "topicCode": "M12103",
+          "concept": "決策樹可使用多個輸入特徵",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+          "note": "單節點測一特徵不等於整棵樹只能處理一維；耗時及可解釋性仍受資料量、樹深與演算法影響。"
+        },
+        {
+          "question": 33,
+          "topicCode": "M12202",
+          "concept": "IMS 持續監測與性能預測",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 34,
+          "topicCode": "M12203",
+          "concept": "MES 執行管理與產品研發分工",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "relatedTopics": [
+            "M12101"
+          ]
+        },
+        {
+          "question": 35,
+          "topicCode": "M12202",
+          "concept": "資料探勘支持智慧維護",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+          "relatedTopics": [
+            "M12103"
+          ]
+        },
+        {
+          "question": 36,
+          "topicCode": "M12203",
+          "concept": "稼動、能率及預防保養支持生產力",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "relatedTopics": [
+            "M12202"
+          ],
+          "note": "題內方法均可能改善；實際全線交付仍受瓶頸與需求限制。"
+        },
+        {
+          "question": 37,
+          "topicCode": "M12203",
+          "concept": "換模換線改善減少停機損失",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "relatedTopics": [
+            "M12202"
+          ]
+        },
+        {
+          "question": 38,
+          "topicCode": "M12203",
+          "concept": "生產日報的人員、工序與產品欄位",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "note": "按題內欄位語境辨認；企業特有工號定義應依資料字典，不將名稱當普遍標準。"
+        },
+        {
+          "question": 39,
+          "topicCode": "M12202",
+          "concept": "Homing 建立定位參考點",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 40,
+          "topicCode": "M12202",
+          "concept": "六軸關節型機器人的空間姿態協調",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面"
+        },
+        {
+          "question": 41,
+          "topicCode": "M12203",
+          "concept": "拉式以實際需求觸發補充",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 42,
+          "topicCode": "M12203",
+          "concept": "OEE 的時間、性能與品質三要素",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 43,
+          "topicCode": "M12203",
+          "concept": "性能稼動率比較實際與理想速度",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 44,
+          "topicCode": "M12203",
+          "concept": "時間稼動率的運轉／負荷時間分母",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 45,
+          "topicCode": "M12203",
+          "concept": "設備效率差異與生產方法策略",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "note": "保留公告答案；僅知效率不同仍不足以證明唯一根因，需對齊口徑並調查 A、P、Q 損失。"
+        },
+        {
+          "question": 46,
+          "topicCode": "M12203",
+          "concept": "最終良品率與首次直行率",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "note": "100 件全數重工回收為最終良率 100%、直行率 90%；不可無條件搬入採首次合格率的 OEE。"
+        },
+        {
+          "question": 47,
+          "topicCode": "M12203",
+          "concept": "單件順序加工總時間與流水節拍",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "note": "題內三作業時間相加為 9 分鐘；4 分鐘僅在獨立工站可重疊、無其他損失時為理想穩態節拍。"
+        },
+        {
+          "question": 48,
+          "topicCode": "M12203",
+          "concept": "OEE 為 A、P、Q 比率相乘",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        },
+        {
+          "question": 49,
+          "topicCode": "M12203",
+          "concept": "高良率低稼動提示停機或待機",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+          "note": "題意指向時間損失；單靠比率不能進一步識別故障、待料或換線的個別原因。"
+        },
+        {
+          "question": 50,
+          "topicCode": "M12203",
+          "concept": "即時可視及異常快速反應",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向"
+        }
+      ]
+    },
+    {
+      "subject": "L21",
+      "source": "docs/歷屆試題與解題技巧/115年第一次中級智慧生產_L21製造生產與作業管理之實務應用_公告試題.pdf",
+      "sha256": "6cd934d2920951691f7497003764cf7133e8f53cc830b04aef45084f792e62c2",
+      "questions": [
+        {
+          "question": 1,
+          "topicCode": "M21102",
+          "concept": "MES 與 ERP 的分工，不互相全面取代",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 2,
+          "topicCode": "M21102",
+          "concept": "MES 的生產執行及資料處理職責",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 3,
+          "topicCode": "M21102",
+          "concept": "單次感測與資料探勘的區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 4,
+          "topicCode": "M21102",
+          "concept": "SQDCM 現場活動優先順序",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 5,
+          "topicCode": "M21102",
+          "concept": "CSV 資料格式與工具／平台區別",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 6,
+          "topicCode": "M21202",
+          "concept": "七站線平衡率須重找最大 CT 並核對近似值",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "90 秒代回 LBR 約 84.92%，85% 為四捨五入近似，並非精確可解等式。"
+        },
+        {
+          "question": 7,
+          "topicCode": "M21101",
+          "concept": "JIT 減少重工及需求彈性的前提",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 8,
+          "topicCode": "M21101",
+          "concept": "精實供應商數量與推拉式用語疑義",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告 A；C 的推式生產亦與典型精實拉動衝突，供應商數量是否減少有情境差異。"
+        },
+        {
+          "question": 9,
+          "topicCode": "M21101",
+          "concept": "標準作業的節拍、順序、標準在製量三要素",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 10,
+          "topicCode": "M21102",
+          "concept": "PDCA 檢查原因與再發防止，不限可見表象",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 11,
+          "topicCode": "M21102",
+          "concept": "智慧製造監控能力不保證立即提高良率",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 12,
+          "topicCode": "M22101",
+          "concept": "CPS 的感知、計算、控制與通訊整合",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 13,
+          "topicCode": "M22101",
+          "concept": "IoT 三層模型及 Zigbee／RFID 功能區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "雲端是運算部署方式，並非所有三層 IoT 另需固定雲端層。"
+        },
+        {
+          "question": 14,
+          "topicCode": "M21102",
+          "concept": "智慧工廠常用技術的相對分類與區塊鏈邊界",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告 C 為常用技術相對分類，不代表區塊鏈不可用於製造追溯。"
+        },
+        {
+          "question": 15,
+          "topicCode": "M21101",
+          "concept": "MTS／ATO／MTO／ETO 的訂單觸發及設計階段",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 16,
+          "topicCode": "M21201",
+          "concept": "資料驅動、可靠性、混合模型與物件建模區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 17,
+          "topicCode": "M21102",
+          "concept": "人員、RFID、條碼等 MES 現場資料來源",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 18,
+          "topicCode": "M21201",
+          "concept": "TOC 由瓶頸限制整體產出及非瓶頸配合",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "非瓶頸若避免瓶頸缺料仍可能提升系統產出，不能把無影響概括所有改善。"
+        },
+        {
+          "question": 19,
+          "topicCode": "M21201",
+          "concept": "晶圓小排程的小時粒度與情境限制",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "小時粒度是本題情境，不是半導體業的固定最小工程單位。"
+        },
+        {
+          "question": 20,
+          "topicCode": "M21102",
+          "concept": "自省預測等進階能力與基礎性能品質控制比較",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告 B 比較進階屬性，不能由此否定智慧製造中的品質控制。"
+        },
+        {
+          "question": 21,
+          "topicCode": "M21102",
+          "concept": "資源短缺時的例外管理與工單管理",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 22,
+          "topicCode": "M21101",
+          "concept": "看板訊號、前置耗用、安全量與箱數",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 23,
+          "topicCode": "M21101",
+          "concept": "Q 固定訂量與 P 固定檢查期間",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 24,
+          "topicCode": "M21101",
+          "concept": "基本 EOQ 的穩定需求、固定單價與前置假設",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "固定且均勻宜讀為確定穩定耗用率，並非需求服從均勻機率分布。"
+        },
+        {
+          "question": 25,
+          "topicCode": "M21201",
+          "concept": "鍛造併批、換線及日粒度的情境判讀",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "日粒度為本題併批情境，不排除詳細派工採更細時間。"
+        },
+        {
+          "question": 26,
+          "topicCode": "M21202",
+          "concept": "OEE 改善仍需標準操作程序",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 27,
+          "topicCode": "M21102",
+          "concept": "工作站排程、工單優先序、物料搬運與閥門控制",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 28,
+          "topicCode": "M21202",
+          "concept": "OEE 計畫時間與理想 CT 的口徑驗算差異",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告 C 約67%；假設100秒為理想CT，計畫時間1200分得62.5%，1230分得60.98%，均無法重現67%。"
+        },
+        {
+          "question": 29,
+          "topicCode": "M21202",
+          "concept": "人機服務窗、人工負荷及向上取整",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "30分服務窗的人工負荷可重現3人，仍須釐清上機10分是否在循環內並驗人機時序。"
+        },
+        {
+          "question": 30,
+          "topicCode": "M21202",
+          "concept": "兩班每班人數、淨工時與每週產量 7380 件",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "7380件估算採每班5人；若5人是兩班總編制需另算。"
+        },
+        {
+          "question": 31,
+          "topicCode": "M21202",
+          "concept": "FMEA 的 S、O、D 與檢出度方向",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 32,
+          "topicCode": "M21102",
+          "concept": "目視化顯示製造狀態而非單純位置或人員 KPI",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 33,
+          "topicCode": "M21202",
+          "concept": "瓶頸 50 秒限制每日理論產出 576 件",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 34,
+          "topicCode": "M21201",
+          "concept": "描述統計與主動避免顯性／隱性問題的方向",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 35,
+          "topicCode": "M21202",
+          "concept": "相同口徑下 OEE 與良品產出關係",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "需求下降時調整排產，不是故意增加設備損失來降低OEE。"
+        },
+        {
+          "question": 36,
+          "topicCode": "M21101",
+          "concept": "精實供應鏈涵蓋供應、採購、製造、物流與顧客",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 37,
+          "topicCode": "M21201",
+          "concept": "交期、流程時間及閒置等排程目標的取捨",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 38,
+          "topicCode": "M21101",
+          "concept": "SMRT 題幹與 SMART 目標要素的用語區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "題幹寫SMRT；教材另說明通行SMART縮寫，保留原題字母。"
+        },
+        {
+          "question": 39,
+          "topicCode": "M21201",
+          "concept": "增加投資是手段而非排程效能指標",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 40,
+          "topicCode": "M21101",
+          "concept": "多餘產能與實際過量生產的區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 41,
+          "topicCode": "M21202",
+          "concept": "TT 連結需求與計畫，CT 不必自然小於 TT",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告A；LEI以TT連結需求與生產，故不能泛化為TT不可作為計畫依據。CT≤TT是設計條件，非所有現況必然成立。"
+        },
+        {
+          "question": 42,
+          "topicCode": "M21102",
+          "concept": "MES 生產監控與 WMS 跨系統整合的邊界",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告A不代表MES不可與WMS整合。"
+        },
+        {
+          "question": 43,
+          "topicCode": "M21101",
+          "concept": "OEM／ODM／OBM 及共同設計 JDM 的責任",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "題目JBM與通常共同設計製造縮寫JDM不同，需辨詞義及責任。"
+        },
+        {
+          "question": 44,
+          "topicCode": "M21102",
+          "concept": "固定自動供料與有感知回饋的智慧供料區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告C；固定自動供料可能只是自動化，有感知回饋的供料也可屬智慧應用。"
+        },
+        {
+          "question": 45,
+          "topicCode": "M21202",
+          "concept": "需求工時除每班有效週工時並向上取整為 3 人",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 46,
+          "topicCode": "M21202",
+          "concept": "末端全檢不能保證品質，需源頭及過程控制",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 47,
+          "topicCode": "M21202",
+          "concept": "4M 材料、主管點檢目的及管制圖同側連串",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "管制圖同側連串門檻依採用規則而異，界限內不代表可忽略非隨機偏移。"
+        },
+        {
+          "question": 48,
+          "topicCode": "M21102",
+          "concept": "AGV、電子看板與機器手臂的設備應用",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 49,
+          "topicCode": "M21102",
+          "concept": "生產量、準時供料與異常停線的現場閉迴路",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 50,
+          "topicCode": "M21201",
+          "concept": "檢查碼、狀態合法性及資料完整性的多道校驗",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        }
+      ]
+    },
+    {
+      "subject": "L22",
+      "source": "docs/歷屆試題與解題技巧/115年第一次中級智慧生產_L22智慧製造之設備與製程管理之實務應用_公告試題.pdf",
+      "sha256": "44d2f5a27a0ec9e5c8c592a130651d87a4c18d028bc9cc04c2dd484ba1d628ea",
+      "questions": [
+        {
+          "question": 1,
+          "topicCode": "M22201",
+          "concept": "偏振取像利用反射差異辨認液體",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "偏振僅在適當光源、材質及背景下支援辨認，不保證所有液體有效。"
+        },
+        {
+          "question": 2,
+          "topicCode": "M22201",
+          "concept": "FOV、WD、焦距、光圈與景深判讀",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 3,
+          "topicCode": "M22201",
+          "concept": "常見 24 V 控制電壓仍須核對設備規格",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "24V是題設常見控制電壓，實際仍以設備額定與端子規格確認。"
+        },
+        {
+          "question": 4,
+          "topicCode": "M22101",
+          "concept": "IoT 平台的政府與企業服務驅動敘事",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "政府與企業是題設平台驅動敘事，不排除個人或消費者IoT應用。"
+        },
+        {
+          "question": 5,
+          "topicCode": "M22202",
+          "concept": "INI／JSON／XML 與 BMP 影像格式區別",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 6,
+          "topicCode": "M22201",
+          "concept": "點光源與平行、環形、同軸照明區別",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 7,
+          "topicCode": "M22201",
+          "concept": "工業手臂速度、精度、重複動作及急停條件",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 8,
+          "topicCode": "M22201",
+          "concept": "熱動繼電器的過載保護不等於短路保護",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 9,
+          "topicCode": "M22102",
+          "concept": "PdM 分析預測與固定 PM 計畫的觸發區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告A；若只按歷史平均訂固定週期，實務仍可能屬PM，PdM須檢查狀態與失效預測。"
+        },
+        {
+          "question": 10,
+          "topicCode": "M22102",
+          "concept": "感測器、網路、資料庫構成資料採集鏈",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 11,
+          "topicCode": "M21101",
+          "concept": "GT 按零件族與機器群歸併組織生產",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 12,
+          "topicCode": "M21101",
+          "concept": "CAD 基礎任務為建立幾何模型",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 13,
+          "topicCode": "M22201",
+          "concept": "工廠典型視覺應用與車流辨識領域分類",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "車流辨識仍屬視覺應用，題目採工廠典型場域分類。"
+        },
+        {
+          "question": 14,
+          "topicCode": "M22201",
+          "concept": "安裝姿態誤差與本體線性度、解析度、重複性",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 15,
+          "topicCode": "M22101",
+          "concept": "IoT、邊緣與大數據分析互補",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 16,
+          "topicCode": "M22101",
+          "concept": "設備連網增加資安風險且不免除現場維護",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 17,
+          "topicCode": "M22301",
+          "concept": "實際產出除利用率反推 1500 件滿負荷能力",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 18,
+          "topicCode": "M22301",
+          "concept": "輸送間距除線速為出件週期，線長給通過時間",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 19,
+          "topicCode": "M22301",
+          "concept": "8 站人分、效率、平衡及完全修復重工量",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "假設效率與平衡損失分開，1975.31人分加10重工人分=1985.31，近似選1990；效率已含其他損失時不可再重複除。"
+        },
+        {
+          "question": 20,
+          "topicCode": "M22101",
+          "concept": "IoT 感知、網路、應用三層模型",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 21,
+          "topicCode": "M22101",
+          "concept": "CPS 整合運算通訊控制，不限健康照護",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 22,
+          "topicCode": "M22102",
+          "concept": "設備管理不佳連帶影響品質、交期、安全與成本",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 23,
+          "topicCode": "M22202",
+          "concept": "MQTT QoS 0／1／2 與業務去重邊界",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 24,
+          "topicCode": "M22102",
+          "concept": "預防性維護支持連續生產與維修效率",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 25,
+          "topicCode": "M22102",
+          "concept": "清理、整合、轉換及概念一般化區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 26,
+          "topicCode": "M22102",
+          "concept": "資料探勘效益與電子商務業務模式區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 27,
+          "topicCode": "M22201",
+          "concept": "一般機器視覺分類與紅外熱像測溫邊界",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告D為一般工業視覺分類，紅外熱像可測溫。"
+        },
+        {
+          "question": 28,
+          "topicCode": "M22201",
+          "concept": "ToF、立體三角測量及結構光的深度原理",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 29,
+          "topicCode": "M22201",
+          "concept": "少量多樣下程式治具與換線成本限制",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 30,
+          "topicCode": "M22201",
+          "concept": "噴塗大範圍與姿態需求對應關節型手臂",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 31,
+          "topicCode": "M22202",
+          "concept": "分散控制分配現場控制與整合責任",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 32,
+          "topicCode": "M22201",
+          "concept": "結構式環境、固定程式及位置精度依賴",
+          "officialAnswer": "D",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 33,
+          "topicCode": "M22202",
+          "concept": "智慧控制適應性受模型、資料及限制影響",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 34,
+          "topicCode": "M22202",
+          "concept": "基因演算法可搜尋非線性解但不保證全域最佳",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "能搜尋大型非線性問題不代表有限時間保證全域最佳。"
+        },
+        {
+          "question": 35,
+          "topicCode": "M22202",
+          "concept": "IaaS 客戶仍管理作業系統及部署應用",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 36,
+          "topicCode": "M22102",
+          "concept": "網路監控、診斷、衰退預測與維護處置",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 37,
+          "topicCode": "M22202",
+          "concept": "公告封閉式 MES 說法與現代整合架構邊界",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告A；MES職能無法推出所有產品必須封閉，實際看API、資料模型與整合設計。"
+        },
+        {
+          "question": 38,
+          "topicCode": "M22101",
+          "concept": "分層邊緣與串流處理分攤高資料負載",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 39,
+          "topicCode": "M21101",
+          "concept": "單一產品、固定途程適合流線型工廠",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 40,
+          "topicCode": "M22301",
+          "concept": "效率以有效產能為分母，利用率以設計產能為分母",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 41,
+          "topicCode": "M22301",
+          "concept": "TT 9.6 分鐘與理論最少站數 8 站",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 42,
+          "topicCode": "M22301",
+          "concept": "串聯線穩態週期由最慢工作站限制",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 43,
+          "topicCode": "M22102",
+          "concept": "點檢計畫的標準、工具、職責及五感界線",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 44,
+          "topicCode": "M22201",
+          "concept": "工業相機包含感測器，保留公告分類疑義",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "公告A；相機包含影像感測元件，不能泛化為工業相機不是感測設備。"
+        },
+        {
+          "question": 45,
+          "topicCode": "M22202",
+          "concept": "同網段不等於同 IP，RS-232 與 TCP/IP 分層",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "同網段位址須不同；不同子網亦可依路由及受控規則通訊。"
+        },
+        {
+          "question": 46,
+          "topicCode": "M22101",
+          "concept": "AI／ML 與 UID 連網物件的 IoT 描述區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "監督、非監督並非ML僅有類型；C實為IoT描述。"
+        },
+        {
+          "question": 47,
+          "topicCode": "M22101",
+          "concept": "ERP 企業資源整合與 CPS 5C 回饋架構區別",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 48,
+          "topicCode": "M22301",
+          "concept": "TPS 可動率與需求下稼動率的區別",
+          "officialAnswer": "A",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 49,
+          "topicCode": "M22301",
+          "concept": "由 8 小時與 480 件需求求 TT 60 秒",
+          "officialAnswer": "C",
+          "evidenceHeading": "試題判讀與選項辨析"
+        },
+        {
+          "question": 50,
+          "topicCode": "M22102",
+          "concept": "反應性維護故障後恢復功能與成本比較邊界",
+          "officialAnswer": "B",
+          "evidenceHeading": "試題判讀與選項辨析",
+          "note": "原題成本3至4倍不能跨設備直接套用，應實算停機、修復、備品與監測成本。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M12-M12102-9-v3",
+  "subjectCode": "M12",
+  "topicCode": "M12102",
+  "prompt": "Modbus RTU 常見的實體通訊介面為何？",
+  "options": {
+    "A": "RS-485",
+    "B": "HDMI",
+    "C": "USB 音訊",
+    "D": "藍牙耳機"
+  },
+  "answer": "A",
+  "explanation": "Modbus RTU 常以 RS-485 串列通訊實作。",
+  "source": "自編練習題"
+}

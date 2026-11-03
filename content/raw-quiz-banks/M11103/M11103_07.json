@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11103-7-v3",
+  "subjectCode": "M11",
+  "topicCode": "M11103",
+  "prompt": "MRP 的三大典型輸入不包括下列何者？",
+  "options": {
+    "A": "物料清單 BOM",
+    "B": "庫存紀錄",
+    "C": "員工績效表",
+    "D": "主生產排程 MPS"
+  },
+  "answer": "D",
+  "explanation": "MRP 以 MPS、BOM、庫存紀錄推算淨需求。",
+  "source": "自編練習題"
+}

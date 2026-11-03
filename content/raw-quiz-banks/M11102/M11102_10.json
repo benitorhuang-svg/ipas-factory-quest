@@ -1,0 +1,6 @@
+{
+  "id": "M11-M11102-10-v2", "subjectCode": "M11", "topicCode": "M11102",
+  "prompt": "設計部門的 EBOM 要交給工廠排程與現場領料使用時，通常還需要轉換成哪一種 BOM？",
+  "options": { "A": "服務 BOM", "B": "MBOM", "C": "銷售 BOM", "D": "維修 BOM" },
+  "answer": "B", "explanation": "MBOM 以製造觀點組織料件與組裝關係，可配合製程、工作站及實際生產領料。", "source": "115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"
+}

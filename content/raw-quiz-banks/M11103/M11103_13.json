@@ -1,0 +1,1 @@
+{"id":"M11-M11103-13-v3","subjectCode":"M11","topicCode":"M11103","prompt":"MRP 展開料件需求時，最直接依賴哪兩份主檔？","options":{"A":"MPS 與 BOM","B":"組織圖與人事名冊","C":"客訴清單與廣告預算","D":"設備照片與廠區地圖"},"answer":"A","explanation":"MRP 依 MPS 的獨立需求，透過 BOM 展開各階料件的相依需求，並結合庫存與交期形成計畫。","source":"115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"}

@@ -1,0 +1,6 @@
+{
+  "id": "M12-M12101-10-v2", "subjectCode": "M12", "topicCode": "M12101",
+  "prompt": "依 ISA-95 常見分層，負責連結企業規劃與現場控制、執行生產作業的層級為何？",
+  "options": { "A": "Level 0", "B": "Level 1", "C": "Level 3", "D": "Level 4" },
+  "answer": "C", "explanation": "Level 3 是製造作業管理層，常由 MES 支援，銜接 Level 4 的企業規劃與較低層現場控制。", "source": "115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"
+}

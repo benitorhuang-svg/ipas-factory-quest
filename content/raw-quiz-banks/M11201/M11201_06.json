@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11201-6-v2",
+  "subjectCode": "M11",
+  "topicCode": "M11201",
+  "prompt": "以內含法、寬放率 20% 計算標準工時，正確關係為何？",
+  "options": {
+    "A": "ST = NT ÷ 0.8",
+    "B": "ST = NT × 0.8",
+    "C": "ST = NT ÷ 1.2",
+    "D": "ST = NT + 0.2"
+  },
+  "answer": "A",
+  "explanation": "內含法把寬放視為標準工時的一部分。",
+  "source": "自編練習題"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11101-4-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11101",
+  "prompt": "哪一種派工法則最能降低平均流程時間與平均 WIP？",
+  "options": {
+    "A": "FCFS 先到先服務",
+    "B": "EDD 最早交期優先",
+    "C": "SPT 最短加工時間優先",
+    "D": "CR 臨界比"
+  },
+  "answer": "C",
+  "explanation": "SPT 的典型目標是降低平均流程時間與在製品。",
+  "source": "自編練習題"
+}

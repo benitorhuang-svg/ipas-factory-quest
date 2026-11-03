@@ -1,0 +1,1 @@
+{"id":"M11-M11102-13-v3","subjectCode":"M11","topicCode":"M11102","prompt":"換線前調整治具與參數所花的時間，最接近哪一項資料？","options":{"A":"Setup Time","B":"Run Time per Unit","C":"Move Time","D":"Customer Lead Time"},"answer":"A","explanation":"Setup Time 是作業由一批或一產品切換至可開始生產所需的準備時間；Run Time 則是實際加工單位產品的時間。","source":"115 年 iPAS 智慧生產工程師初級能力範圍；原創練習題"}

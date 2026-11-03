@@ -1,0 +1,15 @@
+{
+  "id": "M11-M11203-1-v1",
+  "subjectCode": "M11",
+  "topicCode": "M11203",
+  "prompt": "OEE 的正確構成為何？",
+  "options": {
+    "A": "稼動率 × 性能效率 × 良率",
+    "B": "良率 × 庫存率 × 交期",
+    "C": "速度 × 人數 × 面積",
+    "D": "需求 × 產能 × 售價"
+  },
+  "answer": "A",
+  "explanation": "OEE 拆為 Availability、Performance、Quality。",
+  "source": "自編練習題"
+}
