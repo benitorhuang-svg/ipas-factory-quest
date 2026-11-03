@@ -44,6 +44,15 @@
   const byUnit = id => units.find(u => u.id === id);
   const fmt = n => new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 3 }).format(n);
 
+  const topicList = [
+    'M11101', 'M11102', 'M11103', 'M11201', 'M11202', 'M11203',
+    'M12101', 'M12102', 'M12103', 'M12201', 'M12202', 'M12203',
+    'M13101', 'M13201',
+    'M21101', 'M21102', 'M21201', 'M21202',
+    'M22101', 'M22102', 'M22201', 'M22202', 'M22301',
+    'APPX01', 'APPX02', 'APPX03', 'APPX04', 'APPX05'
+  ];
+
   let storageFailed = false, toastTimer, filter = 'all', lastReport = null, guideSearch = '', currentMaterialTopic = 'M11101';
   let state;
   try { state = E.restore(JSON.parse(localStorage.getItem(KEY)), bank); } catch { state = E.emptyState(); }
@@ -192,6 +201,114 @@
     `);
   }
 
+  function renderGuideSelectOptions(currentVal) {
+    return `
+      <optgroup label="── 快速切換寶典專區 ──">
+        <option value="tab:materials" ${currentVal === 'tab:materials' ? 'selected' : ''}>📖 單元精讀講義與 3D 圖解</option>
+        <option value="tab:diagrams" ${currentVal === 'tab:diagrams' ? 'selected' : ''}>🗺️ 互動架構與職能全景</option>
+        <option value="tab:glossary" ${currentVal === 'tab:glossary' ? 'selected' : ''}>📖 專有名詞辭典 (165 詞條)</option>
+        <option value="tab:formulas" ${currentVal === 'tab:formulas' ? 'selected' : ''}>📐 核心公式速查 (8 大題型)</option>
+        <option value="tab:traps" ${currentVal === 'tab:traps' ? 'selected' : ''}>⚠️ 考古題避坑手冊 (10 大盲點)</option>
+        <option value="tab:pdfs" ${currentVal === 'tab:pdfs' ? 'selected' : ''}>📄 官方公告試題與簡章 PDF</option>
+      </optgroup>
+      <optgroup label="── 初級科目一：生產與作業管理基礎 (6單元) ──">
+        <option value="topic:M11101" ${currentVal === 'topic:M11101' ? 'selected' : ''}>L111 生產管理基本概念</option>
+        <option value="topic:M11102" ${currentVal === 'topic:M11102' ? 'selected' : ''}>L112 製造流程管理概念</option>
+        <option value="topic:M11103" ${currentVal === 'topic:M11103' ? 'selected' : ''}>L113 物料管理概論</option>
+        <option value="topic:M11201" ${currentVal === 'topic:M11201' ? 'selected' : ''}>L114 工業工程概論與標準工時</option>
+        <option value="topic:M11202" ${currentVal === 'topic:M11202' ? 'selected' : ''}>L115 品質管理與統計製程管制</option>
+        <option value="topic:M11203" ${currentVal === 'topic:M11203' ? 'selected' : ''}>L116 精實生產與現場績效管理</option>
+      </optgroup>
+      <optgroup label="── 初級科目二：智慧製造生產線管理基礎 (6單元) ──">
+        <option value="topic:M12101" ${currentVal === 'topic:M12101' ? 'selected' : ''}>L121 智慧製造概論與 ISA-95 架構</option>
+        <option value="topic:M12102" ${currentVal === 'topic:M12102' ? 'selected' : ''}>L122 工業物聯網 IIoT 與通訊協定</option>
+        <option value="topic:M12103" ${currentVal === 'topic:M12103' ? 'selected' : ''}>L123 人工智慧 AI 與機器視覺檢測</option>
+        <option value="topic:M12201" ${currentVal === 'topic:M12201' ? 'selected' : ''}>L124 網宇實體系統 CPS 與數位雙生</option>
+        <option value="topic:M12202" ${currentVal === 'topic:M12202' ? 'selected' : ''}>L125 智動化生產設備與傳送系統</option>
+        <option value="topic:M12203" ${currentVal === 'topic:M12203' ? 'selected' : ''}>L126 智慧工廠生產模式與 MES 整合</option>
+      </optgroup>
+      <optgroup label="── 科目三：現場實作與評分標準 ──">
+        <option value="topic:M13101" ${currentVal === 'topic:M13101' ? 'selected' : ''}>M13101 生產管理與流程實作</option>
+        <option value="topic:M13201" ${currentVal === 'topic:M13201' ? 'selected' : ''}>M13201 智慧製造現場管理實作</option>
+      </optgroup>
+      <optgroup label="── 中級智慧製造工程師教材 (全9章) ──">
+        <option value="topic:M21101" ${currentVal === 'topic:M21101' ? 'selected' : ''}>M21101 生產管理實務與精實管理</option>
+        <option value="topic:M21102" ${currentVal === 'topic:M21102' ? 'selected' : ''}>M21102 智慧工廠技術綜觀與 MES 實務</option>
+        <option value="topic:M21201" ${currentVal === 'topic:M21201' ? 'selected' : ''}>M21201 MES 全廠管控與排程優化</option>
+        <option value="topic:M21202" ${currentVal === 'topic:M21202' ? 'selected' : ''}>M21202 線平衡與品質要因分析</option>
+        <option value="topic:M22101" ${currentVal === 'topic:M22101' ? 'selected' : ''}>M22101 物聯網與 CPS 基本原理</option>
+        <option value="topic:M22102" ${currentVal === 'topic:M22102' ? 'selected' : ''}>M22102 智慧設備維護與製程大數據</option>
+        <option value="topic:M22201" ${currentVal === 'topic:M22201' ? 'selected' : ''}>M22201 感測器、機器視覺與機器人</option>
+        <option value="topic:M22202" ${currentVal === 'topic:M22202' ? 'selected' : ''}>M22202 通訊建構、智慧控制與介面</option>
+        <option value="topic:M22301" ${currentVal === 'topic:M22301' ? 'selected' : ''}>M22301 設備操作與效率指標辨識</option>
+      </optgroup>
+      <optgroup label="── 考綱對照與實戰附錄 ──">
+        <option value="topic:APPX01" ${currentVal === 'topic:APPX01' ? 'selected' : ''}>APPX01 核心公式與計算題彙整</option>
+        <option value="topic:APPX02" ${currentVal === 'topic:APPX02' ? 'selected' : ''}>APPX02 考古題盲點與常見陷阱</option>
+        <option value="topic:APPX03" ${currentVal === 'topic:APPX03' ? 'selected' : ''}>APPX03 官方學習資源與參考書目導引</option>
+        <option value="topic:APPX04" ${currentVal === 'topic:APPX04' ? 'selected' : ''}>APPX04 官方考綱對照與複習補充</option>
+        <option value="topic:APPX05" ${currentVal === 'topic:APPX05' ? 'selected' : ''}>APPX05 115 年試題導向實戰練習</option>
+      </optgroup>
+    `;
+  }
+
+  let mermaidSeq = 0;
+  async function renderMermaidDiagrams() {
+    if (!window.mermaid) return;
+    try {
+      if (!window.__mermaid_inited) {
+        window.mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: 'loose',
+          theme: 'base',
+          htmlLabels: true,
+          themeVariables: {
+            fontFamily: '"Noto Sans TC", system-ui, sans-serif',
+            fontSize: '13px',
+            primaryColor: '#eef5e6',
+            primaryTextColor: '#174b3e',
+            primaryBorderColor: '#88a96f',
+            lineColor: '#527c50',
+            secondaryColor: '#f7f8f3',
+            tertiaryColor: '#ffffff',
+            actorBkg: '#eef5e6',
+            actorBorder: '#88a96f',
+            actorTextColor: '#174b3e',
+            noteBkgColor: '#fff9e6',
+            noteTextColor: '#7c5e10',
+            noteBorderColor: '#e2ca70'
+          },
+          flowchart: { curve: 'linear', nodeSpacing: 35, rankSpacing: 40 }
+        });
+        window.__mermaid_inited = true;
+      }
+
+      const blocks = document.querySelectorAll('.mermaid:not([data-processed="true"]), pre.mermaid:not([data-processed="true"])');
+      for (const block of blocks) {
+        block.setAttribute('data-processed', 'true');
+        const decoder = document.createElement('textarea');
+        decoder.innerHTML = block.innerHTML.trim();
+        const code = decoder.value.trim();
+        if (!code) continue;
+        const id = 'mermaid-chart-' + (++mermaidSeq);
+        try {
+          const { svg } = await window.mermaid.render(id, code);
+          const container = document.createElement('div');
+          container.className = 'mermaid-rendered';
+          container.innerHTML = svg;
+          const parent = block.closest('.mermaid-block') || block;
+          parent.replaceWith(container);
+        } catch (err) {
+          console.warn('Mermaid render error:', err);
+          document.getElementById(id)?.remove();
+          document.getElementById('d' + id)?.remove();
+        }
+      }
+    } catch (e) {
+      console.warn('Mermaid initialization error:', e);
+    }
+  }
+
   const navItems = [
     ['home', 'home', '工廠總覽', '總覽'],
     ['repair', 'wrench', '返修中心', '返修'],
@@ -206,6 +323,15 @@
   }
 
   function shell(body, view) {
+    const r = route();
+    let currentSelectVal = 'tab:materials';
+    if (view === 'guide') {
+      if (r.arg === 'materials' || !r.arg) {
+        currentSelectVal = 'topic:' + currentMaterialTopic;
+      } else {
+        currentSelectVal = 'tab:' + r.arg;
+      }
+    }
     return `
       <a class="skip" data-action="skip" href="#content">跳到主要內容</a>
       <aside class="sidebar">
@@ -223,8 +349,16 @@
       </aside>
       <div class="workspace">
         <header class="topbar">
-          <div class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</div>
-          <div class="breadcrumb">學習中心<span>／</span><strong>${({ home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[view] || '工廠總覽'}</strong></div>
+          <div class="topbar-left">
+            <div class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</div>
+            <div class="breadcrumb">學習中心<span>／</span><strong>${({ home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[view] || '工廠總覽'}</strong></div>
+          </div>
+          <div class="topbar-guide-selector">
+            <label for="topbar-guide-select" class="topbar-select-label">${icon('bulb')} 備考寶典：</label>
+            <select id="topbar-guide-select" class="topbar-select" aria-label="切換備考寶典章節">
+              ${renderGuideSelectOptions(currentSelectVal)}
+            </select>
+          </div>
           <div class="profile"><span>${E.level(state.xp)}</span><div class="avatar" aria-hidden="true">廠</div></div>
         </header>
         <main id="content" class="page ${view === 'quiz' ? 'quiz-page' : ''}" tabindex="-1">${body}</main>
@@ -448,13 +582,24 @@
       const current = materials.find(m => m.topicCode === currentMaterialTopic) || materials[0] || {};
       const u = units.find(x => x.topicCode === current.topicCode || x.id === current.unitId);
 
+      const curIdx = topicList.indexOf(currentMaterialTopic);
+      const prevTopic = curIdx > 0 ? topicList[curIdx - 1] : null;
+      const nextTopic = curIdx < topicList.length - 1 ? topicList[curIdx + 1] : null;
+
       content = `
-        <div class="material-selector" role="tablist" aria-label="講義章節選擇">
-          ${materials.map(m => `
-            <button type="button" class="material-btn ${m.topicCode === currentMaterialTopic ? 'active' : ''}" data-action="select-material" data-topic="${m.topicCode}">
-              ${m.unitId ? m.unitId + ' ' : ''}${esc(m.title)}
-            </button>
-          `).join('')}
+        <div class="chapter-nav-bar">
+          <button type="button" class="btn btn-small" data-action="prev-material" ${prevTopic ? '' : 'disabled'}>
+            ${icon('back')} 上一單元
+          </button>
+          <div class="chapter-select-wrap">
+            <label for="material-page-select" class="sr-only">選擇講義單元</label>
+            <select id="material-page-select" class="material-page-select" aria-label="選擇講義單元">
+              ${renderGuideSelectOptions('topic:' + currentMaterialTopic)}
+            </select>
+          </div>
+          <button type="button" class="btn btn-small" data-action="next-material" ${nextTopic ? '' : 'disabled'}>
+            下一單元 ${icon('arrow')}
+          </button>
         </div>
 
         <section class="material-hero">
@@ -928,6 +1073,7 @@
     app.innerHTML = shell(body, r.view);
     document.title = `${({ home: '學習工廠', unit: byUnit(r.arg)?.room, quiz: '任務挑戰', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[r.view] || '智造闖關'}｜智造闖關 Factory Quest`;
     if (r.view === 'quiz') { updateQuizStatus(); tick(); }
+    setTimeout(renderMermaidDiagrams, 50);
   }
 
   function start(mode, unitId = null, subject = null, force = false) {
@@ -1095,10 +1241,22 @@
       case 'guide-tab':
         go('guide', b.dataset.tab, b.dataset.subtab || '');
         break;
-      case 'select-material':
-        currentMaterialTopic = b.dataset.topic;
-        render();
+      case 'prev-material': {
+        const curIdx = topicList.indexOf(currentMaterialTopic);
+        if (curIdx > 0) {
+          currentMaterialTopic = topicList[curIdx - 1];
+          go('guide', 'materials', currentMaterialTopic);
+        }
         break;
+      }
+      case 'next-material': {
+        const curIdx = topicList.indexOf(currentMaterialTopic);
+        if (curIdx < topicList.length - 1) {
+          currentMaterialTopic = topicList[curIdx + 1];
+          go('guide', 'materials', currentMaterialTopic);
+        }
+        break;
+      }
       case 'close':
         closeModal();
         break;
@@ -1149,6 +1307,20 @@
     }
   });
 
+  document.addEventListener('change', e => {
+    if (e.target.id === 'topbar-guide-select' || e.target.id === 'material-page-select') {
+      const val = e.target.value;
+      if (val.startsWith('tab:')) {
+        const tab = val.replace('tab:', '');
+        go('guide', tab);
+      } else if (val.startsWith('topic:')) {
+        const topic = val.replace('topic:', '');
+        currentMaterialTopic = topic;
+        go('guide', 'materials', topic);
+      }
+    }
+  });
+
   document.addEventListener('input', e => {
     if (e.target.id === 'glossary-input') {
       guideSearch = e.target.value;
@@ -1190,6 +1362,7 @@
   });
 
   window.addEventListener('hashchange', render);
+  window.addEventListener('load', () => setTimeout(renderMermaidDiagrams, 100));
   window.addEventListener('storage', e => {
     if (e.key === KEY && e.newValue) {
       try {

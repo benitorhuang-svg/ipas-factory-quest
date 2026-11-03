@@ -1,4 +1,4 @@
-const CACHE_NAME = 'factory-quest-pwa-v2';
+const CACHE_NAME = 'factory-quest-pwa-v3';
 const PRECACHE_ASSETS = [
   './',
   'index.html',
@@ -7,7 +7,8 @@ const PRECACHE_ASSETS = [
   'engine.js',
   'data.js',
   'favicon.svg',
-  'manifest.webmanifest'
+  'manifest.webmanifest',
+  'assets/mermaid.min.js'
 ];
 
 self.addEventListener('install', (event) => {
