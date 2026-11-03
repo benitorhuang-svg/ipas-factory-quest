@@ -257,6 +257,10 @@
     }
     mermaidRetryCount = 0;
     try {
+      if (document.fonts && document.fonts.ready) {
+        try { await document.fonts.ready; } catch (_) {}
+      }
+
       if (!window.__mermaid_inited) {
         window.mermaid.initialize({
           startOnLoad: false,
@@ -264,7 +268,7 @@
           theme: 'base',
           htmlLabels: true,
           themeVariables: {
-            fontFamily: '"Noto Sans TC", system-ui, -apple-system, sans-serif',
+            fontFamily: '"Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             fontSize: '13px',
             primaryColor: '#eef5e6',
             primaryTextColor: '#174b3e',
@@ -279,7 +283,15 @@
             noteTextColor: '#7c5e10',
             noteBorderColor: '#e2ca70'
           },
-          flowchart: { curve: 'linear', nodeSpacing: 35, rankSpacing: 40 }
+          flowchart: {
+            curve: 'linear',
+            nodeSpacing: 45,
+            rankSpacing: 45,
+            padding: 24,
+            wrappingWidth: 800,
+            useMaxWidth: true,
+            htmlLabels: true
+          }
         });
         window.__mermaid_inited = true;
       }
@@ -303,6 +315,18 @@
           const container = document.createElement('div');
           container.className = 'mermaid-rendered';
           container.innerHTML = svg;
+
+          // Prevent SVG foreignObject text clipping
+          container.querySelectorAll('foreignObject').forEach(fo => {
+            fo.style.overflow = 'visible';
+            const div = fo.querySelector('div');
+            if (div) {
+              div.style.overflow = 'visible';
+              div.style.maxWidth = 'none';
+              div.style.width = 'max-content';
+            }
+          });
+
           const parent = block.closest('.mermaid-block') || block;
           parent.replaceWith(container);
         } catch (err) {
