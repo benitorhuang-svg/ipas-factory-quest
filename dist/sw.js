@@ -1,4 +1,4 @@
-const CACHE_NAME = 'factory-quest-pwa-v3';
+const CACHE_NAME = 'factory-quest-pwa-v10';
 const PRECACHE_ASSETS = [
   './',
   'index.html',

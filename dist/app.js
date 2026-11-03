@@ -38,6 +38,10 @@
     badge: '<path d="m12 2 8 4-1 11-7 5-7-5L4 6l8-4Z"/><path d="m8 11 3 3 5-6"/>',
     spark: '<path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/>',
     arrowup: '<path d="m5 15 7-7 7 7M12 8v13"/>',
+    chevrondown: '<path d="m6 9 6 6 6-6"/>',
+    chevronup: '<path d="m18 15-6-6-6 6"/>',
+    chevronright: '<path d="m9 18 6-6-6-6"/>',
+    grid: '<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>',
     trash: '<path d="M3 6h18M8 6V3h8v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/>'
   };
   const icon = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.factory}</svg>`;
@@ -146,6 +150,83 @@
         <iframe class="iframe-frame" src="${fullUrl}" allowfullscreen></iframe>
       </div>
     `, 'iframe-dialog-wrap');
+  }
+
+  function openTocDrawer() {
+    const materials = DATA.studyMaterials || [];
+    modal(`
+      <div class="toc-drawer-dialog">
+        <div class="toc-drawer-header">
+          <div>
+            <div class="eyebrow">TABLE OF CONTENTS</div>
+            <h2>${icon('book')} 備考寶典 · 單元精讀目錄 (28)</h2>
+          </div>
+          <button class="modal-close" data-action="close" aria-label="關閉目錄">${icon('cross')}</button>
+        </div>
+        <div class="toc-drawer-list">
+          <div class="toc-group-title">初級科目一：生產與作業管理基礎 (L111～L116)</div>
+          ${topicList.slice(0, 6).map((code) => {
+            const m = materials.find(x => x.topicCode === code) || {};
+            const isCur = currentMaterialTopic === code;
+            return `
+              <button type="button" class="toc-item ${isCur ? 'active' : ''}" data-action="select-topic" data-topic="${code}">
+                <span class="toc-badge">${code}</span>
+                <span class="toc-title">${esc(m.title || code)}</span>
+                ${isCur ? `<span class="toc-cur-tag">當前閱讀</span>` : ''}
+              </button>
+            `;
+          }).join('')}
+          <div class="toc-group-title">初級科目二：智慧製造生產線管理基礎 (L121～L126)</div>
+          ${topicList.slice(6, 12).map((code) => {
+            const m = materials.find(x => x.topicCode === code) || {};
+            const isCur = currentMaterialTopic === code;
+            return `
+              <button type="button" class="toc-item ${isCur ? 'active' : ''}" data-action="select-topic" data-topic="${code}">
+                <span class="toc-badge">${code}</span>
+                <span class="toc-title">${esc(m.title || code)}</span>
+                ${isCur ? `<span class="toc-cur-tag">當前閱讀</span>` : ''}
+              </button>
+            `;
+          }).join('')}
+          <div class="toc-group-title">科目三：現場實作與評分標準</div>
+          ${topicList.slice(12, 14).map((code) => {
+            const m = materials.find(x => x.topicCode === code) || {};
+            const isCur = currentMaterialTopic === code;
+            return `
+              <button type="button" class="toc-item ${isCur ? 'active' : ''}" data-action="select-topic" data-topic="${code}">
+                <span class="toc-badge">${code}</span>
+                <span class="toc-title">${esc(m.title || code)}</span>
+                ${isCur ? `<span class="toc-cur-tag">當前閱讀</span>` : ''}
+              </button>
+            `;
+          }).join('')}
+          <div class="toc-group-title">中級智慧製造工程師教材 (全 9 章)</div>
+          ${topicList.slice(14, 23).map((code) => {
+            const m = materials.find(x => x.topicCode === code) || {};
+            const isCur = currentMaterialTopic === code;
+            return `
+              <button type="button" class="toc-item ${isCur ? 'active' : ''}" data-action="select-topic" data-topic="${code}">
+                <span class="toc-badge">${code}</span>
+                <span class="toc-title">${esc(m.title || code)}</span>
+                ${isCur ? `<span class="toc-cur-tag">當前閱讀</span>` : ''}
+              </button>
+            `;
+          }).join('')}
+          <div class="toc-group-title">考綱對照與實戰附錄 (全 5 篇)</div>
+          ${topicList.slice(23).map((code) => {
+            const m = materials.find(x => x.topicCode === code) || {};
+            const isCur = currentMaterialTopic === code;
+            return `
+              <button type="button" class="toc-item ${isCur ? 'active' : ''}" data-action="select-topic" data-topic="${code}">
+                <span class="toc-badge">${code}</span>
+                <span class="toc-title">${esc(m.title || code)}</span>
+                ${isCur ? `<span class="toc-cur-tag">當前閱讀</span>` : ''}
+              </button>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `, 'toc-modal');
   }
 
   function poster(id) {
@@ -340,6 +421,148 @@
     }
   }
 
+  /* --- Math Formula Renderer (KaTeX with built-in fallback) --- */
+  function cleanMathTex(str) {
+    if (!str) return '';
+    return str
+      .replace(/^\$\$([\s\S]*)\$\$$/, '$1')
+      .replace(/^\$([\s\S]*)\$$/, '$1')
+      .replace(/\\\\([a-zA-Z]+)/g, '\\$1')
+      .replace(/\\\\/g, '\\')
+      .trim();
+  }
+
+  function formatMathFallback(tex) {
+    let s = cleanMathTex(tex);
+
+    // Escape HTML special characters
+    s = s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    // Text tags: \text{...}
+    s = s.replace(/\\text\{([^{}]+)\}/g, '$1');
+    s = s.replace(/\\text\{([^{}]+)\}/g, '$1');
+
+    // Fractions: \frac{A}{B} or \dfrac{A}{B}
+    s = s.replace(/\\(?:d?frac)\{([^{}]+)\}\{([^{}]+)\}/g, '<span class="math-frac"><span class="math-num">$1</span><span class="math-denom">$2</span></span>');
+
+    // Square roots: \sqrt{A}
+    s = s.replace(/\\sqrt\{([^{}]+)\}/g, '<span class="math-sqrt">&radic;<span class="math-radicand">$1</span></span>');
+
+    // Overline / bar: \bar{X}
+    s = s.replace(/\\bar\{([^{}]+)\}/g, '<span style="text-decoration:overline">$1</span>');
+
+    // Math symbols & operators
+    s = s.replace(/\\times/g, ' &times; ')
+         .replace(/\\pm/g, '&plusmn;')
+         .replace(/\\approx/g, '&asymp;')
+         .replace(/\\le\b/g, '&le;')
+         .replace(/\\ge\b/g, '&ge;')
+         .replace(/\\cdot/g, '&middot;')
+         .replace(/\\alpha/g, '&alpha;')
+         .replace(/\\sigma/g, '&sigma;')
+         .replace(/\\mu/g, '&mu;')
+         .replace(/\\tau/g, '&tau;')
+         .replace(/\\Delta/g, '&Delta;')
+         .replace(/\\sum_\{([^{}]+)\}\^\{([^{}]+)\}/g, '<span class="math-op">&sum;<sub class="math-sub">$1</sub><sup class="math-sup">$2</sup></span>')
+         .replace(/\\sum_\{([^{}]+)\}/g, '<span class="math-op">&sum;<sub class="math-sub">$1</sub></span>')
+         .replace(/\\sum/g, '&sum; ')
+         .replace(/\\int_\{([^{}]+)\}\^\{([^{}]+)\}/g, '<span class="math-op">&int;<sub class="math-sub">$1</sub><sup class="math-sup">$2</sup></span>')
+         .replace(/\\int/g, '&int; ')
+         .replace(/\\min\b/g, 'min')
+         .replace(/\\max\b/g, 'max')
+         .replace(/\\lceil/g, '&lceil;')
+         .replace(/\\rceil/g, '&rceil;')
+         .replace(/\\lfloor/g, '&lfloor;')
+         .replace(/\\rfloor/g, '&rfloor;')
+         .replace(/\\left[([|.]/g, '(')
+         .replace(/\\right[)\]|.]/g, ')')
+         .replace(/\\quad/g, '&emsp;')
+         .replace(/\\qquad/g, '&emsp;&emsp;')
+         .replace(/\\displaystyle/g, '')
+         .replace(/\\%/g, '%')
+         .replace(/\\!/g, '')
+         .replace(/\\,/g, ' ')
+         .replace(/\\ /g, ' ');
+
+    // Subscripts: _{...} or _x
+    s = s.replace(/_\{([^{}]+)\}/g, '<sub>$1</sub>');
+    s = s.replace(/_([a-zA-Z0-9])/g, '<sub>$1</sub>');
+
+    // Superscripts: ^{...} or ^x
+    s = s.replace(/\^\{([^{}]+)\}/g, '<sup>$1</sup>');
+    s = s.replace(/\^([a-zA-Z0-9])/g, '<sup>$1</sup>');
+
+    // Clean remaining backslashes
+    s = s.replace(/\\([a-zA-Z]+)/g, '$1');
+
+    return s;
+  }
+
+  function renderMathFormulas(forceReRender = false) {
+    const hasKaTeX = !!(window.katex && typeof window.katex.render === 'function');
+    const blockSelector = hasKaTeX 
+      ? '.math-block:not([data-math-done="katex"])' 
+      : '.math-block:not([data-math-done])';
+    const inlineSelector = hasKaTeX 
+      ? '.math-inline:not([data-math-done="katex"])' 
+      : '.math-inline:not([data-math-done])';
+
+    const mathBlocks = document.querySelectorAll(blockSelector);
+    const mathInlines = document.querySelectorAll(inlineSelector);
+
+    if (mathBlocks.length === 0 && mathInlines.length === 0) return;
+
+    mathBlocks.forEach(el => {
+      let raw = el.getAttribute('data-raw-math');
+      if (!raw) {
+        raw = el.textContent.trim();
+        el.setAttribute('data-raw-math', raw);
+      }
+      const tex = cleanMathTex(raw);
+      if (hasKaTeX) {
+        try {
+          window.katex.render(tex, el, { displayMode: true, throwOnError: false });
+          el.setAttribute('data-math-done', 'katex');
+          return;
+        } catch (_) {}
+      }
+      el.innerHTML = formatMathFallback(tex);
+      el.setAttribute('data-math-done', 'fallback');
+    });
+
+    mathInlines.forEach(el => {
+      let raw = el.getAttribute('data-raw-math');
+      if (!raw) {
+        raw = el.textContent.trim();
+        el.setAttribute('data-raw-math', raw);
+      }
+      const tex = cleanMathTex(raw);
+      if (hasKaTeX) {
+        try {
+          window.katex.render(tex, el, { displayMode: false, throwOnError: false });
+          el.setAttribute('data-math-done', 'katex');
+          return;
+        } catch (_) {}
+      }
+      el.innerHTML = formatMathFallback(tex);
+      el.setAttribute('data-math-done', 'fallback');
+    });
+  }
+
+  if (typeof window !== 'undefined' && !window.__katex_watcher_inited) {
+    window.__katex_watcher_inited = true;
+    let katexChecks = 0;
+    const katexWatcher = setInterval(() => {
+      katexChecks++;
+      if (window.katex && typeof window.katex.render === 'function') {
+        renderMathFormulas(true);
+        clearInterval(katexWatcher);
+      } else if (katexChecks > 30) {
+        clearInterval(katexWatcher);
+      }
+    }, 200);
+  }
+
   const navItems = [
     ['home', 'home', '工廠總覽', '總覽'],
     ['repair', 'wrench', '返修中心', '返修'],
@@ -350,12 +573,132 @@
   ];
 
   function navHTML(view, mobile = false) {
-    return navItems.map(([id, ic, text, short]) => `<button type="button" class="${mobile ? '' : 'nav-button '}${view === id || (id === 'home' && ['unit', 'quiz', 'result'].includes(view)) ? 'active' : ''}" data-action="nav" data-view="${id}" ${view === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${mobile ? short : text}</span>${!mobile && id === 'repair' && E.wrongIds(state).length ? `<span class="nav-count">${E.wrongIds(state).length}</span>` : ''}</button>`).join('');
+    const r = route();
+    const isGuide = (view === 'guide');
+    const guideSub = isGuide ? (r.arg || 'materials') : '';
+    const isExam = (view === 'exam');
+    const examSub = isExam ? (r.arg || 'quiz') : '';
+
+    return navItems.map(([id, ic, text, short]) => {
+      if (mobile) {
+        return `<button type="button" class="${view === id || (id === 'home' && ['unit', 'quiz', 'result'].includes(view)) ? 'active' : ''}" data-action="nav" data-view="${id}" ${view === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${short}</span></button>`;
+      }
+
+      if (id === 'guide') {
+        return `
+          <div class="nav-group ${isGuide ? 'expanded' : ''}">
+            <button type="button" class="nav-button nav-group-btn ${isGuide ? 'active' : ''}" data-action="nav-toggle-guide" data-view="guide" ${isGuide ? 'aria-current="page"' : ''}>
+              ${icon(ic)}
+              <span>${text}</span>
+              <span class="nav-expand-icon" aria-hidden="true">${icon('chevrondown')}</span>
+            </button>
+            <div class="nav-sub-list">
+              <button type="button" class="nav-sub-item ${isGuide && guideSub === 'materials' ? 'active' : ''}" data-action="guide-tab" data-tab="materials">
+                ${icon('book')}<span>精讀講義與3D</span><small class="nav-sub-badge">${DATA.studyMaterials?.length || 28}</small>
+              </button>
+              <button type="button" class="nav-sub-item ${isGuide && guideSub === 'glossary' ? 'active' : ''}" data-action="guide-tab" data-tab="glossary">
+                ${icon('grid')}<span>專有名詞辭典</span>
+              </button>
+              <button type="button" class="nav-sub-item ${isGuide && guideSub === 'formulas' ? 'active' : ''}" data-action="guide-tab" data-tab="formulas">
+                ${icon('gauge')}<span>核心公式速查</span>
+              </button>
+              <button type="button" class="nav-sub-item ${isGuide && guideSub === 'traps' ? 'active' : ''}" data-action="guide-tab" data-tab="traps">
+                ${icon('cross')}<span>常考避坑盲點</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      if (id === 'exam') {
+        return `
+          <div class="nav-group ${isExam ? 'expanded' : ''}">
+            <button type="button" class="nav-button nav-group-btn ${isExam ? 'active' : ''}" data-action="nav-toggle-exam" data-view="exam" ${isExam ? 'aria-current="page"' : ''}>
+              ${icon(ic)}
+              <span>${text}</span>
+              <span class="nav-expand-icon" aria-hidden="true">${icon('chevrondown')}</span>
+            </button>
+            <div class="nav-sub-list">
+              <button type="button" class="nav-sub-item ${isExam && examSub !== 'pdfs' ? 'active' : ''}" data-action="exam-tab" data-tab="quiz">
+                ${icon('flag')}<span>全真模擬測驗</span>
+              </button>
+              <button type="button" class="nav-sub-item ${isExam && examSub === 'pdfs' ? 'active' : ''}" data-action="exam-tab" data-tab="pdfs">
+                ${icon('shield')}<span>歷屆試題下載</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      return `<button type="button" class="nav-button ${view === id || (id === 'home' && ['unit', 'quiz', 'result'].includes(view)) ? 'active' : ''}" data-action="nav" data-view="${id}" ${view === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${text}</span>${id === 'repair' && E.wrongIds(state).length ? `<span class="nav-count">${E.wrongIds(state).length}</span>` : ''}</button>`;
+    }).join('');
   }
 
   function shell(body, view) {
     const r = route();
-    const currentSubView = (view === 'guide' ? (r.arg || 'materials') : 'materials');
+    let breadcrumbCurrent = ({ home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[view] || '工廠總覽';
+    let breadcrumbExtra = '';
+    let topbarChapterNav = '';
+
+    if (view === 'atlas') {
+      const filter = r.arg || 'all';
+      const filterNames = {
+        s1: '科目一：生產作業管理',
+        s2: '科目二：智慧製造產線',
+        overview: '全廠宏觀與跨層級全景'
+      };
+      if (filterNames[filter]) {
+        breadcrumbExtra = `<span>／</span><strong class="breadcrumb-current">${filterNames[filter]}</strong>`;
+      }
+    } else if (view === 'exam') {
+      const sub = r.arg || 'quiz';
+      if (sub === 'pdfs') {
+        breadcrumbExtra = `<span>／</span><strong class="breadcrumb-current">歷屆試題下載</strong>`;
+      } else {
+        breadcrumbExtra = `<span>／</span><strong class="breadcrumb-current">全真模擬測驗</strong>`;
+      }
+    } else if (view === 'guide') {
+      const sub = r.arg || 'materials';
+      const subNames = {
+        materials: '單元精讀講義',
+        glossary: '專有名詞辭典',
+        formulas: '核心公式速查',
+        traps: '常考避坑盲點'
+      };
+      if (sub === 'materials') {
+        const mat = (DATA.studyMaterials || []).find(m => m.topicCode === currentMaterialTopic);
+        const chapterName = mat ? (mat.topicCode + ' ' + mat.title) : '單元精讀講義';
+        breadcrumbExtra = `<span>／</span><a href="#/guide/materials" class="breadcrumb-link">精讀講義</a><span>／</span><strong class="breadcrumb-current">${esc(chapterName)}</strong>`;
+
+        const curIdx = topicList.indexOf(currentMaterialTopic);
+        const prevTopic = curIdx > 0 ? topicList[curIdx - 1] : null;
+        const nextTopic = curIdx < topicList.length - 1 ? topicList[curIdx + 1] : null;
+
+        topbarChapterNav = `
+          <div class="topbar-chapter-nav">
+            <button type="button" class="topbar-nav-arrow" data-action="prev-material" title="上一單元" ${prevTopic ? '' : 'disabled'}>
+              ${icon('back')}
+            </button>
+            <div class="topbar-chapter-select-wrap">
+              <label for="topbar-material-select" class="sr-only">選擇講義單元</label>
+              <select id="topbar-material-select" class="topbar-material-select" aria-label="選擇講義單元">
+                ${renderChapterSelectOptions(currentMaterialTopic)}
+              </select>
+            </div>
+            <span class="topbar-chapter-counter">${curIdx >= 0 ? `${curIdx + 1}/${topicList.length}` : ''}</span>
+            <button type="button" class="topbar-nav-arrow" data-action="next-material" title="下一單元" ${nextTopic ? '' : 'disabled'}>
+              ${icon('arrow')}
+            </button>
+            <button type="button" class="topbar-toc-btn" data-action="open-toc-drawer" title="展開章節完整目錄">
+              ${icon('book')} <span>目錄</span>
+            </button>
+          </div>
+        `;
+      } else {
+        breadcrumbExtra = `<span>／</span><strong class="breadcrumb-current">${subNames[sub] || '精讀講義'}</strong>`;
+      }
+    }
+
     return `
       <a class="skip" data-action="skip" href="#content">跳到主要內容</a>
       <aside class="sidebar">
@@ -365,39 +708,14 @@
         </a>
         <div class="nav-label">你的學習工廠</div>
         <nav class="side-nav" aria-label="主要導覽">${navHTML(view)}</nav>
-        <div class="sidebar-tip">
-          <div class="tip-label">${icon('bulb')}一點一滴，變成實力</div>
-          <p>12大單元、476題題庫。<br>28篇精讀講義、3D圖解與試題全收錄。</p>
-        </div>
-        <div class="sidebar-footer">iPAS 智慧生產工程師・初級<br>兩科十二單元・全題庫備考專用</div>
       </aside>
       <div class="workspace">
         <header class="topbar">
           <div class="topbar-left">
             <div class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</div>
-            <div class="breadcrumb">學習中心<span>／</span><strong>${({ home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[view] || '工廠總覽'}</strong></div>
+            <div class="breadcrumb">學習中心<span>／</span>${breadcrumbExtra ? `<a href="#/${view}" class="breadcrumb-link">${breadcrumbCurrent}</a>${breadcrumbExtra}` : `<strong>${breadcrumbCurrent}</strong>`}</div>
           </div>
-          <div class="topbar-guide-nav">
-            <div class="topbar-selector-box">
-              <label for="topbar-section-select" class="topbar-select-label">${icon('bulb')} 備考寶典：</label>
-              <select id="topbar-section-select" class="topbar-select" aria-label="選擇備考寶典分區">
-                <option value="materials" ${currentSubView === 'materials' ? 'selected' : ''}>📖 單元精讀講義與3D圖解 (28)</option>
-                <option value="diagrams" ${currentSubView === 'diagrams' ? 'selected' : ''}>🗺️ 互動架構與職能全景</option>
-                <option value="glossary" ${currentSubView === 'glossary' ? 'selected' : ''}>📖 專有名詞辭典 (165)</option>
-                <option value="formulas" ${currentSubView === 'formulas' ? 'selected' : ''}>📐 核心公式速查 (8大題型)</option>
-                <option value="traps" ${currentSubView === 'traps' ? 'selected' : ''}>⚠️ 常考陷阱避坑 (10大盲點)</option>
-                <option value="pdfs" ${currentSubView === 'pdfs' ? 'selected' : ''}>📄 官方試題與簡章 PDF (7)</option>
-              </select>
-            </div>
-            ${(view === 'guide' && currentSubView === 'materials') ? `
-              <div class="topbar-selector-box topbar-chapter-box">
-                <label for="topbar-chapter-select" class="topbar-select-label">${icon('book')} 章節：</label>
-                <select id="topbar-chapter-select" class="topbar-select" aria-label="切換單元章節">
-                  ${renderChapterSelectOptions(currentMaterialTopic)}
-                </select>
-              </div>
-            ` : ''}
-          </div>
+          ${topbarChapterNav}
           <div class="profile"><span>${E.level(state.xp)}</span><div class="avatar" aria-hidden="true">廠</div></div>
         </header>
         <main id="content" class="page ${view === 'quiz' ? 'quiz-page' : ''}" tabindex="-1">${body}</main>
@@ -529,38 +847,181 @@
     `;
   }
 
-  function atlas() {
-    return `
-      ${intro('KNOWLEDGE ATLAS', '單元架構分解圖鑑', '12 個章節高解析分解結構圖與兩大全科總覽，隨時放大或新視窗開啟。')}
-      <div class="gallery-grid">
-        ${units.map(u => `
-          <button class="poster-card" data-action="poster" data-unit="${u.id}">
-            <div class="poster-thumb"><img loading="lazy" src="assets/${u.id}.png" alt="${u.id} 複習圖預覽"></div>
-            <div class="poster-info">
-              <span class="unit-code">${u.id} · 科目${u.subject === 1 ? '一' : '二'}</span>
-              <h3>${esc(u.title)}</h3>
-              <small>展開高解析架構圖</small>
-            </div>
-          </button>
-        `).join('')}
-        <button class="poster-card" data-action="poster-file" data-file="assets/S1_Overview.png" data-title="科目一：生產與作業管理基礎 全科架構">
-          <div class="poster-thumb"><img loading="lazy" src="assets/S1_Overview.png" alt="科目一架構圖"></div>
-          <div class="poster-info">
-            <span class="unit-code">SUBJECT 01 · 總覽</span>
-            <h3>科目一全科分解結構圖</h3>
-            <small>展開全科架構圖</small>
-          </div>
+  function atlas(filter = 'all') {
+    const r = route();
+    const curFilter = filter || r.arg || 'all';
+    const va = DATA.visualAssets || {};
+
+    const isOverviewOnly = (curFilter === 'overview');
+    const isS1Only = (curFilter === 's1');
+    const isS2Only = (curFilter === 's2');
+
+    let displayedUnits = units;
+    if (isS1Only) displayedUnits = units.filter(u => u.subject === 1);
+    else if (isS2Only) displayedUnits = units.filter(u => u.subject === 2);
+
+    const filterTabsHTML = `
+      <nav class="guide-tabs atlas-filter-tabs" aria-label="圖鑑單元分類">
+        <button type="button" class="guide-tab ${curFilter === 'all' ? 'active' : ''}" data-action="atlas-filter" data-filter="all">
+          <span class="guide-tab-icon">${icon('grid')}</span>
+          <span class="guide-tab-text">全部單元與總覽</span>
+          <span class="guide-tab-badge">12單元+宏觀</span>
         </button>
-        <button class="poster-card" data-action="poster-file" data-file="assets/S2_Overview.png" data-title="科目二：智慧製造生產線管理基礎 全科架構">
-          <div class="poster-thumb"><img loading="lazy" src="assets/S2_Overview.png" alt="科目二架構圖"></div>
-          <div class="poster-info">
-            <span class="unit-code">SUBJECT 02 · 總覽</span>
-            <h3>科目二全科分解結構圖</h3>
-            <small>展開全科架構圖</small>
-          </div>
+        <button type="button" class="guide-tab ${curFilter === 's1' ? 'active' : ''}" data-action="atlas-filter" data-filter="s1">
+          <span class="guide-tab-icon">${icon('calendar')}</span>
+          <span class="guide-tab-text">科目一：生產作業管理</span>
+          <span class="guide-tab-badge">6單元</span>
         </button>
+        <button type="button" class="guide-tab ${curFilter === 's2' ? 'active' : ''}" data-action="atlas-filter" data-filter="s2">
+          <span class="guide-tab-icon">${icon('network')}</span>
+          <span class="guide-tab-text">科目二：智慧製造產線</span>
+          <span class="guide-tab-badge">6單元</span>
+        </button>
+        <button type="button" class="guide-tab ${curFilter === 'overview' ? 'active' : ''}" data-action="atlas-filter" data-filter="overview">
+          <span class="guide-tab-icon">${icon('eye')}</span>
+          <span class="guide-tab-text">全廠宏觀與跨層級全景</span>
+          <span class="guide-tab-badge">5大總覽</span>
+        </button>
+      </nav>
+    `;
+
+    const overviewSectionHTML = `
+      <div class="atlas-section-title">
+        <div class="section-heading">
+          <h2>${icon('network')} 全廠宏觀與跨層級全景架構</h2>
+          <span class="muted" style="font-size:12px">涵蓋 ISA-95 五層工廠、官方職能基準 3D 爆炸圖與全科分解結構圖</span>
+        </div>
       </div>
-      <p class="gallery-note">高解析結構圖依據官方大綱編製；點擊可放大預覽，或點選「原尺寸」在新分頁檢視。</p>
+      <div class="diagram-hub-grid">
+        <article class="diagram-hub-card">
+          <div class="diagram-hub-thumb" data-action="open-interactive" data-url="${va.isa95Interactive || 'assets/interactive-diagrams/isa95-smart-factory.html'}" data-title="ISA-95 智慧工廠五層架構全景互動圖">
+            <img src="assets/learning-units/07_智慧製造概論與ISA95架構_3D.png" alt="ISA-95 互動圖解">
+          </div>
+          <div class="diagram-hub-body">
+            <div class="unit-code">ENTERPRISE-CONTROL · 跨層級架構</div>
+            <h3>ISA-95 智慧工廠五層架構 (全螢幕互動)</h3>
+            <p>貫穿 Enterprise (ERP)、Operations (MES)、Control (SCADA/PLC) 到現場設備層的垂直與水平整合模型。</p>
+            <div class="button-row">
+              <button class="btn btn-primary btn-small" data-action="open-interactive" data-url="${va.isa95Interactive || 'assets/interactive-diagrams/isa95-smart-factory.html'}" data-title="ISA-95 智慧工廠五層架構全景互動圖">${icon('network')}開啟互動架構圖</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="diagram-hub-card">
+          <div class="diagram-hub-thumb" data-action="open-interactive" data-url="assets/interactive-diagrams/unit-summaries/index.html" data-title="23 單元架構互動總覽中心">
+            <img src="assets/S1_Overview.png" alt="單元架構互動總覽">
+          </div>
+          <div class="diagram-hub-body">
+            <div class="unit-code">SUMMARY READER · 互動閱讀器</div>
+            <h3>23 單元互動架構圖總覽中心</h3>
+            <p>涵蓋初級兩科 12 單元、實作 2 單元與中級 9 單元的專屬互動架構閱讀器。</p>
+            <div class="button-row">
+              <button class="btn btn-small" data-action="open-interactive" data-url="assets/interactive-diagrams/unit-summaries/index.html" data-title="23 單元架構互動總覽中心">${icon('network')}開啟總覽閱讀器</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="diagram-hub-card">
+          <div class="diagram-hub-thumb" data-action="lightbox" data-src="assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D-v2.png" data-title="智慧生產工程師職能 3D 分解爆炸圖">
+            <img src="assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D-v2.png" alt="職能 3D 爆炸圖">
+          </div>
+          <div class="diagram-hub-body">
+            <div class="unit-code">COMPETENCY MAP · 3D 全景</div>
+            <h3>智慧生產工程師職能 3D 分解爆炸圖</h3>
+            <p>立體剖析生產管理與智動化現場兩大軸心職能基準能力分佈與映射關係。</p>
+            <div class="button-row">
+              <button class="btn btn-small" data-action="lightbox" data-src="assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D-v2.png" data-title="智慧生產工程師職能 3D 分解爆炸圖">${icon('eye')}展開 3D 職能圖</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="diagram-hub-card">
+          <div class="diagram-hub-thumb" data-action="poster-file" data-file="assets/S1_Overview.png" data-title="科目一：生產與作業管理基礎 全科架構">
+            <img src="assets/S1_Overview.png" alt="科目一架構圖">
+          </div>
+          <div class="diagram-hub-body">
+            <div class="unit-code">SUBJECT 01 · 全科分解圖</div>
+            <h3>科目一：生產與作業管理基礎 全科架構圖</h3>
+            <p>生產排程 (MPS/MRP)、製造途程與BOM、物料庫存、標準工時 (ST)、品質SPC與精實TPM。</p>
+            <div class="button-row">
+              <button class="btn btn-small" data-action="poster-file" data-file="assets/S1_Overview.png" data-title="科目一全科架構圖">${icon('book')}展開全科架構圖</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="diagram-hub-card">
+          <div class="diagram-hub-thumb" data-action="poster-file" data-file="assets/S2_Overview.png" data-title="科目二：智慧製造生產線管理基礎 全科架構">
+            <img src="assets/S2_Overview.png" alt="科目二架構圖">
+          </div>
+          <div class="diagram-hub-body">
+            <div class="unit-code">SUBJECT 02 · 全科分解圖</div>
+            <h3>科目二：智慧製造生產線管理基礎 全科架構圖</h3>
+            <p>智慧製造架構 (ISA-95)、IIoT與通訊協定、AI/機器視覺、CPS數位雙生、智動化設備與MES現場整合。</p>
+            <div class="button-row">
+              <button class="btn btn-small" data-action="poster-file" data-file="assets/S2_Overview.png" data-title="科目二全科架構圖">${icon('book')}展開全科架構圖</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    `;
+
+    const unitCardsHTML = `
+      ${!isOverviewOnly ? `
+        <div class="atlas-section-title">
+          <div class="section-heading">
+            <h2>${icon('book')} 12 大單元圖鑑矩陣（依單元整合分解圖、3D 圖與互動模型）</h2>
+            <span class="muted" style="font-size:12px">每個單元完整整合高解析分解結構圖、3D 重點立體圖解與全景互動閱讀器</span>
+          </div>
+        </div>
+        <div class="unit-atlas-grid">
+          ${displayedUnits.map(u => `
+            <article class="unit-atlas-card">
+              <div class="unit-atlas-header">
+                <span class="room-icon ${u.color}">${icon(u.icon)}</span>
+                <div class="unit-atlas-title-group">
+                  <div class="unit-atlas-badge-row">
+                    <span class="unit-code">${u.id} · 科目${u.subject === 1 ? '一' : '二'}</span>
+                    <span class="unit-room-tag">${esc(u.room)}</span>
+                  </div>
+                  <h3>${esc(u.title)}</h3>
+                  <p class="unit-atlas-takeaway">${esc(u.takeaway)}</p>
+                </div>
+              </div>
+
+              <div class="unit-atlas-previews">
+                <div class="unit-atlas-preview-item" data-action="poster" data-unit="${u.id}" title="點擊展開 ${u.id} 高解析架構分解圖">
+                  <div class="unit-atlas-img-wrap">
+                    <img loading="lazy" src="assets/${u.id}.png" alt="${u.id} 架構分解圖">
+                    <span class="unit-atlas-img-label">${icon('book')} 架構分解圖</span>
+                  </div>
+                </div>
+                <div class="unit-atlas-preview-item" data-action="lightbox" data-src="${u.diagram3D || `assets/${u.id}.png`}" data-title="${esc(u.title)} 3D重點圖解" title="點擊展開 3D 重點圖解">
+                  <div class="unit-atlas-img-wrap">
+                    <img loading="lazy" src="${u.diagram3D || `assets/${u.id}.png`}" alt="${u.id} 3D重點圖解">
+                    <span class="unit-atlas-img-label">${icon('eye')} 3D 重點圖解</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="unit-atlas-actions">
+                <button type="button" class="btn btn-small" data-action="poster" data-unit="${u.id}">${icon('book')}架構分解圖</button>
+                ${u.diagram3D ? `<button type="button" class="btn btn-small" data-action="lightbox" data-src="${u.diagram3D}" data-title="${esc(u.title)} 3D重點圖解">${icon('eye')}3D立體圖解</button>` : ''}
+                ${u.interactiveUrl ? `<button type="button" class="btn btn-small btn-primary" data-action="open-interactive" data-url="${u.interactiveUrl}" data-title="${esc(u.title)} 互動架構圖">${icon('network')}全景互動閱讀器</button>` : ''}
+                <button type="button" class="btn btn-small" data-action="guide-tab" data-tab="materials" data-subtab="${u.topicCode}">${icon('bulb')}精讀講義</button>
+                <button type="button" class="btn btn-small" data-action="unit" data-unit="${u.id}">${icon('flag')}單元闖關</button>
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      ` : ''}
+    `;
+
+    return `
+      ${intro('KNOWLEDGE ATLAS', '單元架構與視覺圖鑑', '依據 12 大單元內容整合高解析分解結構圖、3D 重點圖解與全景互動模型，支援依單元完整查閱。')}
+      ${filterTabsHTML}
+      ${(curFilter === 'all' || curFilter === 'overview') ? overviewSectionHTML : ''}
+      ${unitCardsHTML}
+      <p class="gallery-note">高解析結構圖與 3D 渲染圖依據官方大綱與職能基準編製；點擊可放大預覽，或開啟獨立全景互動閱讀器。</p>
       ${footer()}
     `;
   }
@@ -605,12 +1066,10 @@
 
   function guideView(subView = 'materials', selectedTopic = '') {
     const tabs = [
-      ['materials', '📖 單元精讀講義與3D圖解 (' + (DATA.studyMaterials?.length || 28) + ')'],
-      ['diagrams', '🗺️ 互動架構與職能全景'],
-      ['glossary', '專有名詞辭典 (' + (DATA.glossary?.length || 165) + ')'],
-      ['formulas', '核心公式速查 (8大題型)'],
-      ['traps', '常考陷阱避坑 (10大盲點)'],
-      ['pdfs', '官方試題與簡章 PDF (' + (DATA.pdfs?.length || 7) + ')']
+      { id: 'materials', label: '單元精讀講義與3D', icon: 'book', badge: (DATA.studyMaterials?.length || 28) },
+      { id: 'glossary', label: '專有名詞辭典', icon: 'grid' },
+      { id: 'formulas', label: '核心公式速查', icon: 'gauge' },
+      { id: 'traps', label: '常考避坑盲點', icon: 'cross' }
     ];
 
     if (selectedTopic) currentMaterialTopic = selectedTopic;
@@ -626,21 +1085,6 @@
       const nextTopic = curIdx < topicList.length - 1 ? topicList[curIdx + 1] : null;
 
       content = `
-        <div class="chapter-nav-bar">
-          <button type="button" class="btn btn-small" data-action="prev-material" ${prevTopic ? '' : 'disabled'}>
-            ${icon('back')} 上一單元
-          </button>
-          <div class="chapter-select-wrap">
-            <label for="material-page-select" class="sr-only">選擇講義單元</label>
-            <select id="material-page-select" class="material-page-select" aria-label="選擇講義單元">
-              ${renderChapterSelectOptions(currentMaterialTopic)}
-            </select>
-          </div>
-          <button type="button" class="btn btn-small" data-action="next-material" ${nextTopic ? '' : 'disabled'}>
-            下一單元 ${icon('arrow')}
-          </button>
-        </div>
-
         <section class="material-hero">
           <div>
             <div class="eyebrow">${current.topicCode} ${u ? '· ' + u.room : ''}</div>
@@ -655,6 +1099,7 @@
               ${u ? `<button class="btn btn-primary btn-small" data-action="unit" data-unit="${u.id}">${icon('flag')}進入 ${u.id} 單元刷題</button>` : ''}
               ${current.interactiveUrl ? `<button class="btn btn-small" data-action="open-interactive" data-url="${current.interactiveUrl}" data-title="${esc(current.title)} 互動架構圖">${icon('network')}開啟全螢幕互動架構圖</button>` : ''}
               ${current.diagram3D ? `<button class="btn btn-small" data-action="lightbox" data-src="${current.diagram3D}" data-title="${esc(current.title)} 3D渲染圖">${icon('eye')}查看 3D 全景圖</button>` : ''}
+              <button class="btn btn-small" data-action="open-toc-drawer" title="查看 28 單元目錄">${icon('book')}單元目錄</button>
             </div>
           </div>
           ${current.diagram3D || current.explainerImg ? `
@@ -667,57 +1112,37 @@
         <article class="material-content">
           ${current.details || '<p class="muted">講義內容準備中...</p>'}
         </article>
-      `;
-    } else if (subView === 'diagrams') {
-      const va = DATA.visualAssets || {};
-      const infographics = va.infographics || [];
-      content = `
-        <div class="diagram-hub-grid">
-          <article class="diagram-hub-card">
-            <div class="diagram-hub-thumb" data-action="open-interactive" data-url="${va.isa95Interactive || 'assets/interactive-diagrams/isa95-smart-factory.html'}" data-title="ISA-95 智慧工廠五層架構全景互動圖">
-              <img src="assets/learning-units/07_智慧製造概論與ISA95架構_3D.png" alt="ISA-95 互動圖解">
-            </div>
-            <div class="diagram-hub-body">
-              <h3>ISA-95 智慧工廠五層架構 (互動式)</h3>
-              <p>貫穿 Enterprise (ERP)、Operations (MES)、Control (SCADA/PLC) 到現場設備層的垂直與水平整合模型。</p>
-              <div class="button-row">
-                <button class="btn btn-primary btn-small" data-action="open-interactive" data-url="${va.isa95Interactive || 'assets/interactive-diagrams/isa95-smart-factory.html'}" data-title="ISA-95 智慧工廠五層架構全景互動圖">${icon('network')}開啟互動架構圖</button>
-              </div>
-            </div>
-          </article>
 
-          ${infographics.map(info => `
-            <article class="diagram-hub-card">
-              <div class="diagram-hub-thumb" data-action="lightbox" data-src="${info.path}" data-title="${esc(info.title)}">
-                <img src="${info.path}" alt="${esc(info.title)}">
+        <nav class="material-bottom-nav" aria-label="文章篇章導航">
+          ${prevTopic ? `
+            <button type="button" class="btn btn-bottom-nav prev" data-action="prev-material">
+              ${icon('back')}
+              <div>
+                <small>上一篇講義</small>
+                <strong>${prevTopic}</strong>
               </div>
-              <div class="diagram-hub-body">
-                <h3>${esc(info.title)}</h3>
-                <p>${esc(info.desc || '官方核心職能基準與單元對應關係。')}</p>
-                <div class="button-row">
-                  <button class="btn btn-small" data-action="lightbox" data-src="${info.path}" data-title="${esc(info.title)}">${icon('eye')}展開檢視原圖</button>
-                </div>
+            </button>
+          ` : '<div></div>'}
+          <button type="button" class="btn btn-bottom-nav center" data-action="open-toc-drawer">
+            ${icon('book')} <strong>28 單元目錄速查</strong>
+          </button>
+          ${nextTopic ? `
+            <button type="button" class="btn btn-bottom-nav next" data-action="next-material">
+              <div>
+                <small>下一篇講義</small>
+                <strong>${nextTopic}</strong>
               </div>
-            </article>
-          `).join('')}
-
-          <article class="diagram-hub-card">
-            <div class="diagram-hub-thumb" data-action="open-interactive" data-url="assets/interactive-diagrams/unit-summaries/index.html" data-title="23 單元架構互動總覽">
-              <img src="assets/S1_Overview.png" alt="單元架構互動總覽">
-            </div>
-            <div class="diagram-hub-body">
-              <h3>23 單元互動架構圖總覽中心</h3>
-              <p>涵蓋初級兩科 12 單元、實作 2 單元與中級 9 單元的專屬互動架構閱讀器。</p>
-              <div class="button-row">
-                <button class="btn btn-small" data-action="open-interactive" data-url="assets/interactive-diagrams/unit-summaries/index.html" data-title="23 單元架構互動總覽">${icon('network')}開啟總覽閱讀器</button>
-              </div>
-            </div>
-          </article>
-        </div>
+              ${icon('arrow')}
+            </button>
+          ` : '<div></div>'}
+        </nav>
       `;
     } else if (subView === 'glossary') {
       const q = guideSearch.trim().toLowerCase();
-      const list = (DATA.glossary || []).filter(item => {
+      const sorted = [...(DATA.glossary || [])].sort((a, b) =>
+        (a.abbreviation || '').localeCompare(b.abbreviation || '', 'en', { sensitivity: 'base', numeric: true })
+      );
+      const list = sorted.filter(item => {
         if (!q) return true;
         return (item.abbreviation && item.abbreviation.toLowerCase().includes(q)) ||
                (item.chinese && item.chinese.toLowerCase().includes(q)) ||
@@ -728,15 +1153,26 @@
           <span class="search-icon">${icon('wrench')}</span>
           <input type="text" id="glossary-input" placeholder="輸入縮寫或關鍵字搜尋（例：MES, MRP, OEE, CPS, 庫存, 機器人）..." value="${esc(guideSearch)}">
         </div>
-        <p class="muted" style="margin-bottom:14px;font-size:12px">共收錄 ${DATA.glossary?.length || 0} 條標準術語，目前篩選顯示 ${list.length} 條結果。</p>
-        <div class="glossary-grid">
-          ${list.map(t => `
-            <article class="glossary-card">
-              <span class="glossary-abbr">${esc(t.abbreviation)}</span>
-              <div class="glossary-zh">${esc(t.chinese)}</div>
-              <div class="glossary-en">${esc(t.english)}</div>
-            </article>
-          `).join('')}
+        <p class="muted" style="margin-bottom:14px;font-size:12px">共收錄 ${DATA.glossary?.length || 0} 條標準術語，依英文字母順序排列，目前篩選顯示 ${list.length} 條結果。</p>
+        <div class="table-container glossary-table-wrap">
+          <table class="data-table glossary-table">
+            <thead>
+              <tr>
+                <th style="width:20%">英文簡寫</th>
+                <th style="width:45%">全寫</th>
+                <th style="width:35%">中文</th>
+              </tr>
+            </thead>
+            <tbody id="glossary-tbody">
+              ${list.length ? list.map(t => `
+                <tr>
+                  <td class="glossary-td-abbr"><span class="glossary-abbr">${esc(t.abbreviation)}</span></td>
+                  <td class="glossary-td-en">${esc(t.english)}</td>
+                  <td class="glossary-td-zh">${esc(t.chinese)}</td>
+                </tr>
+              `).join('') : `<tr><td colspan="3" style="text-align:center;padding:28px 16px;color:var(--muted)">無符合的專有名詞</td></tr>`}
+            </tbody>
+          </table>
         </div>
       `;
     } else if (subView === 'formulas') {
@@ -821,8 +1257,53 @@
           <p class="muted">Modbus 沒有內建語意模型且無法主動推送事件；MQTT 適合低頻寬不穩定網路事件通知；OPC UA 則提供完整物件語意資訊模型。</p>
         </article>
       `;
-    } else if (subView === 'pdfs') {
-      content = `
+    }
+
+    const sectionHeaders = {
+      materials: '',
+      glossary: intro('GLOSSARY & TERMS', '專有名詞核心辭典', '精選 165 組中英對照專有名詞，支援即時關鍵字模糊搜尋。'),
+      formulas: intro('FORMULA HANDBOOK', '核心公式速查手冊', '涵蓋產能規劃、EOQ/EPQ、線平衡、OEE、SPC 與排程八大計算題型。'),
+      traps: intro('EXAM TRAPS', '常考陷阱避坑指南', '精析 10 大易混淆概念與歷屆經典誘答盲點。')
+    };
+
+    return `
+      ${sectionHeaders[subView] || ''}
+      <nav class="guide-tabs" aria-label="備考寶典分區">
+        ${tabs.map(t => `
+          <button type="button" class="guide-tab ${subView === t.id ? 'active' : ''}" data-action="guide-tab" data-tab="${t.id}">
+            <span class="guide-tab-icon">${icon(t.icon)}</span>
+            <span class="guide-tab-text">${t.label}</span>
+            ${t.badge ? `<span class="guide-tab-badge">${t.badge}</span>` : ''}
+          </button>
+        `).join('')}
+      </nav>
+      <div id="guide-tab-content">
+        ${content}
+      </div>
+      ${footer()}
+    `;
+  }
+
+  function examView(subTab = 'quiz') {
+    const isPdfs = (subTab === 'pdfs');
+    const tabsHTML = `
+      <nav class="guide-tabs" style="margin-bottom:24px" aria-label="考前模擬分區">
+        <button type="button" class="guide-tab ${!isPdfs ? 'active' : ''}" data-action="exam-tab" data-tab="quiz">
+          <span class="guide-tab-icon">${icon('flag')}</span>
+          <span class="guide-tab-text">全真模擬測驗</span>
+        </button>
+        <button type="button" class="guide-tab ${isPdfs ? 'active' : ''}" data-action="exam-tab" data-tab="pdfs">
+          <span class="guide-tab-icon">${icon('shield')}</span>
+          <span class="guide-tab-text">歷屆試題下載</span>
+          <span class="guide-tab-badge">${DATA.pdfs?.length || 7}份</span>
+        </button>
+      </nav>
+    `;
+
+    if (isPdfs) {
+      return `
+        ${intro('OFFICIAL EXAMS', '官方試題與簡章下載', '收錄經濟部 iPAS 官方樣題、歷屆試題解答與最新鑑定指引 PDF。')}
+        ${tabsHTML}
         <div class="pdf-grid">
           ${(DATA.pdfs || []).map(p => `
             <article class="pdf-card">
@@ -840,21 +1321,13 @@
             </article>
           `).join('')}
         </div>
+        ${footer()}
       `;
     }
 
     return `
-      ${intro('STUDY GUIDE & RESOURCES', '備考寶典與核心資源庫', '28 篇單元精讀講義、3D 渲染圖解、互動架構圖、名詞辭典與官方歷屆試題下載。')}
-      <div id="guide-tab-content">
-        ${content}
-      </div>
-      ${footer()}
-    `;
-  }
-
-  function examView() {
-    return `
       ${intro('FINAL CHALLENGE', '考前，來一場完整演練。', '切換到單選題與計時作答，練習取捨、速度與穩定度。')}
+      ${tabsHTML}
       <div class="exam-grid">
         ${[1, 2].map(s => `
           <section class="exam-card">
@@ -877,6 +1350,7 @@
         <div class="source-links">
           <a href="https://ipd.nat.gov.tw/ipas/certification/SPE/exam-info" target="_blank" rel="noopener">官方考試資訊 ↗</a>
           <a href="https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources" target="_blank" rel="noopener">官方歷屆試題 ↗</a>
+          <button class="text-link" data-action="exam-tab" data-tab="pdfs" style="margin-left:12px;font-size:13px;color:var(--green)">查看站內官方試題與簡章下載 (${DATA.pdfs?.length || 7}份) →</button>
         </div>
       </div>
       ${footer()}
@@ -1095,10 +1569,14 @@
     let body;
     if (r.view === 'home') body = home();
     else if (r.view === 'unit') body = unitView(r.arg);
-    else if (r.view === 'atlas') body = atlas();
+    else if (r.view === 'atlas') body = atlas(r.arg);
     else if (r.view === 'repair') body = repair();
-    else if (r.view === 'guide') body = guideView(r.arg || 'materials', r.subArg);
-    else if (r.view === 'exam') body = examView();
+    else if (r.view === 'guide') {
+      if (r.arg === 'diagrams' || r.arg === 'interactive') { go('atlas', 'diagrams'); return; }
+      if (r.arg === 'pdfs') { go('exam', 'pdfs'); return; }
+      body = guideView(r.arg || 'materials', r.subArg);
+    }
+    else if (r.view === 'exam') body = examView(r.arg);
     else if (r.view === 'progress') body = progressView();
     else if (r.view === 'quiz') body = quizView();
     else if (r.view === 'result') body = resultView(r.arg);
@@ -1108,6 +1586,8 @@
     document.title = `${({ home: '學習工廠', unit: byUnit(r.arg)?.room, quiz: '任務挑戰', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[r.view] || '智造闖關'}｜智造闖關 Factory Quest`;
     if (r.view === 'quiz') { updateQuizStatus(); tick(); }
     setTimeout(renderMermaidDiagrams, 50);
+    renderMathFormulas();
+    setTimeout(renderMathFormulas, 60);
   }
 
   function start(mode, unitId = null, subject = null, force = false) {
@@ -1272,9 +1752,38 @@
       case 'quiz-helper':
         openQuizHelper(b.dataset.unit);
         break;
+      case 'atlas-filter':
+        go('atlas', b.dataset.filter || 'all');
+        break;
+      case 'atlas-tab':
+        go('atlas', b.dataset.tab || 'all');
+        break;
+      case 'exam-tab':
+        go('exam', b.dataset.tab || 'quiz');
+        break;
       case 'guide-tab':
         go('guide', b.dataset.tab, b.dataset.subtab || '');
         break;
+      case 'open-toc-drawer':
+        openTocDrawer();
+        break;
+      case 'select-topic':
+        closeModal();
+        currentMaterialTopic = b.dataset.topic;
+        go('guide', 'materials', currentMaterialTopic);
+        break;
+      case 'nav-toggle-guide': {
+        const group = b.closest('.nav-group');
+        if (group) group.classList.toggle('expanded');
+        if (route().view !== 'guide') go('guide');
+        break;
+      }
+      case 'nav-toggle-exam': {
+        const group = b.closest('.nav-group');
+        if (group) group.classList.toggle('expanded');
+        if (route().view !== 'exam') go('exam');
+        break;
+      }
       case 'prev-material': {
         const curIdx = topicList.indexOf(currentMaterialTopic);
         if (curIdx > 0) {
@@ -1342,10 +1851,7 @@
   });
 
   document.addEventListener('change', e => {
-    if (e.target.id === 'topbar-section-select') {
-      const section = e.target.value;
-      go('guide', section);
-    } else if (e.target.id === 'topbar-chapter-select' || e.target.id === 'material-page-select') {
+    if (e.target.id === 'material-page-select' || e.target.id === 'topbar-material-select') {
       const topic = e.target.value.replace('topic:', '');
       currentMaterialTopic = topic;
       go('guide', 'materials', topic);
@@ -1356,21 +1862,24 @@
     if (e.target.id === 'glossary-input') {
       guideSearch = e.target.value;
       const q = guideSearch.trim().toLowerCase();
-      const list = (DATA.glossary || []).filter(item => {
+      const sorted = [...(DATA.glossary || [])].sort((a, b) =>
+        (a.abbreviation || '').localeCompare(b.abbreviation || '', 'en', { sensitivity: 'base', numeric: true })
+      );
+      const list = sorted.filter(item => {
         if (!q) return true;
         return (item.abbreviation && item.abbreviation.toLowerCase().includes(q)) ||
                (item.chinese && item.chinese.toLowerCase().includes(q)) ||
                (item.english && item.english.toLowerCase().includes(q));
       });
-      const grid = document.querySelector('.glossary-grid');
-      if (grid) {
-        grid.innerHTML = list.map(t => `
-          <article class="glossary-card">
-            <span class="glossary-abbr">${esc(t.abbreviation)}</span>
-            <div class="glossary-zh">${esc(t.chinese)}</div>
-            <div class="glossary-en">${esc(t.english)}</div>
-          </article>
-        `).join('');
+      const tbody = document.getElementById('glossary-tbody');
+      if (tbody) {
+        tbody.innerHTML = list.length ? list.map(t => `
+          <tr>
+            <td class="glossary-td-abbr"><span class="glossary-abbr">${esc(t.abbreviation)}</span></td>
+            <td class="glossary-td-en">${esc(t.english)}</td>
+            <td class="glossary-td-zh">${esc(t.chinese)}</td>
+          </tr>
+        `).join('') : `<tr><td colspan="3" style="text-align:center;padding:28px 16px;color:var(--muted)">無符合的專有名詞</td></tr>`;
       }
       return;
     }
@@ -1393,7 +1902,11 @@
   });
 
   window.addEventListener('hashchange', render);
-  window.addEventListener('load', () => setTimeout(renderMermaidDiagrams, 100));
+  window.addEventListener('load', () => {
+    setTimeout(renderMermaidDiagrams, 100);
+    renderMathFormulas();
+    setTimeout(renderMathFormulas, 120);
+  });
   window.addEventListener('storage', e => {
     if (e.key === KEY && e.newValue) {
       try {

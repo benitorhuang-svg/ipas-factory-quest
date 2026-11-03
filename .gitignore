@@ -2,3 +2,5 @@
 node_modules/
 *.tgz
 *.tar.gz
+scripts/*.cjs
+!scripts/build-materials.cjs
