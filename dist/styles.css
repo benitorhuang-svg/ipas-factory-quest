@@ -100,11 +100,13 @@ dialog{border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 70px #1
 }
 
 /* --- Topbar Guide Dropdown & Chapter Navigation --- */
-.topbar-guide-selector{display:inline-flex;align-items:center;gap:8px;background:white;border:1px solid #c8d9c2;border-radius:12px;padding:6px 14px;box-shadow:0 2px 8px #173d340d;transition:border-color .15s}
-.topbar-guide-selector:hover,.topbar-guide-selector:focus-within{border-color:var(--green)}
+.topbar-guide-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.topbar-selector-box{display:inline-flex;align-items:center;gap:8px;background:white;border:1px solid #c8d9c2;border-radius:12px;padding:6px 14px;box-shadow:0 2px 8px #173d340d;transition:border-color .15s,box-shadow .15s}
+.topbar-chapter-box{background:#f8fbf5;border-color:#b2cea9}
+.topbar-selector-box:hover,.topbar-selector-box:focus-within{border-color:var(--green);box-shadow:0 3px 12px #173d3415}
 .topbar-select-label{font-size:11px;font-weight:700;color:var(--green);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .topbar-select-label svg{width:15px;height:15px}
-.topbar-select{border:0;background:transparent;font-size:13px;font-weight:600;color:var(--ink);outline:none;cursor:pointer;max-width:320px}
+.topbar-select{border:0;background:transparent;font-size:13px;font-weight:600;color:var(--ink);outline:none;cursor:pointer;max-width:310px}
 .topbar-select optgroup{font-weight:700;color:var(--green);background:#f6f9f3}
 .topbar-select option{font-weight:500;color:var(--ink);background:white;padding:5px}
 
@@ -122,7 +124,8 @@ pre.mermaid{background:#f8faf6;border:1px dashed #c8d9c2;border-radius:12px;padd
 
 @media(max-width:850px){
   .topbar{height:auto;padding:12px 20px;flex-wrap:wrap;gap:10px}
-  .topbar-guide-selector{width:100%;justify-content:space-between}
+  .topbar-guide-nav{width:100%;gap:8px}
+  .topbar-selector-box{width:100%;justify-content:space-between}
   .topbar-select{max-width:none;flex:1}
   .chapter-nav-bar{flex-wrap:wrap;padding:12px}
   .chapter-select-wrap{order:-1;width:100%;max-width:none;flex-basis:100%}

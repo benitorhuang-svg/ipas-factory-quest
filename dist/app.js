@@ -201,60 +201,61 @@
     `);
   }
 
-  function renderGuideSelectOptions(currentVal) {
+  function renderChapterSelectOptions(rawVal) {
+    const currentVal = (rawVal || '').replace('topic:', '');
     return `
-      <optgroup label="── 快速切換寶典專區 ──">
-        <option value="tab:materials" ${currentVal === 'tab:materials' ? 'selected' : ''}>📖 單元精讀講義與 3D 圖解</option>
-        <option value="tab:diagrams" ${currentVal === 'tab:diagrams' ? 'selected' : ''}>🗺️ 互動架構與職能全景</option>
-        <option value="tab:glossary" ${currentVal === 'tab:glossary' ? 'selected' : ''}>📖 專有名詞辭典 (165 詞條)</option>
-        <option value="tab:formulas" ${currentVal === 'tab:formulas' ? 'selected' : ''}>📐 核心公式速查 (8 大題型)</option>
-        <option value="tab:traps" ${currentVal === 'tab:traps' ? 'selected' : ''}>⚠️ 考古題避坑手冊 (10 大盲點)</option>
-        <option value="tab:pdfs" ${currentVal === 'tab:pdfs' ? 'selected' : ''}>📄 官方公告試題與簡章 PDF</option>
-      </optgroup>
       <optgroup label="── 初級科目一：生產與作業管理基礎 (6單元) ──">
-        <option value="topic:M11101" ${currentVal === 'topic:M11101' ? 'selected' : ''}>L111 生產管理基本概念</option>
-        <option value="topic:M11102" ${currentVal === 'topic:M11102' ? 'selected' : ''}>L112 製造流程管理概念</option>
-        <option value="topic:M11103" ${currentVal === 'topic:M11103' ? 'selected' : ''}>L113 物料管理概論</option>
-        <option value="topic:M11201" ${currentVal === 'topic:M11201' ? 'selected' : ''}>L114 工業工程概論與標準工時</option>
-        <option value="topic:M11202" ${currentVal === 'topic:M11202' ? 'selected' : ''}>L115 品質管理與統計製程管制</option>
-        <option value="topic:M11203" ${currentVal === 'topic:M11203' ? 'selected' : ''}>L116 精實生產與現場績效管理</option>
+        <option value="M11101" ${currentVal === 'M11101' ? 'selected' : ''}>L111 生產管理基本概念</option>
+        <option value="M11102" ${currentVal === 'M11102' ? 'selected' : ''}>L112 製造流程管理概念</option>
+        <option value="M11103" ${currentVal === 'M11103' ? 'selected' : ''}>L113 物料管理概論</option>
+        <option value="M11201" ${currentVal === 'M11201' ? 'selected' : ''}>L114 工業工程概論與標準工時</option>
+        <option value="M11202" ${currentVal === 'M11202' ? 'selected' : ''}>L115 品質管理與統計製程管制</option>
+        <option value="M11203" ${currentVal === 'M11203' ? 'selected' : ''}>L116 精實生產與現場績效管理</option>
       </optgroup>
       <optgroup label="── 初級科目二：智慧製造生產線管理基礎 (6單元) ──">
-        <option value="topic:M12101" ${currentVal === 'topic:M12101' ? 'selected' : ''}>L121 智慧製造概論與 ISA-95 架構</option>
-        <option value="topic:M12102" ${currentVal === 'topic:M12102' ? 'selected' : ''}>L122 工業物聯網 IIoT 與通訊協定</option>
-        <option value="topic:M12103" ${currentVal === 'topic:M12103' ? 'selected' : ''}>L123 人工智慧 AI 與機器視覺檢測</option>
-        <option value="topic:M12201" ${currentVal === 'topic:M12201' ? 'selected' : ''}>L124 網宇實體系統 CPS 與數位雙生</option>
-        <option value="topic:M12202" ${currentVal === 'topic:M12202' ? 'selected' : ''}>L125 智動化生產設備與傳送系統</option>
-        <option value="topic:M12203" ${currentVal === 'topic:M12203' ? 'selected' : ''}>L126 智慧工廠生產模式與 MES 整合</option>
+        <option value="M12101" ${currentVal === 'M12101' ? 'selected' : ''}>L121 智慧製造概論與 ISA-95 架構</option>
+        <option value="M12102" ${currentVal === 'M12102' ? 'selected' : ''}>L122 工業物聯網 IIoT 與通訊協定</option>
+        <option value="M12103" ${currentVal === 'M12103' ? 'selected' : ''}>L123 人工智慧 AI 與機器視覺檢測</option>
+        <option value="M12201" ${currentVal === 'M12201' ? 'selected' : ''}>L124 網宇實體系統 CPS 與數位雙生</option>
+        <option value="M12202" ${currentVal === 'M12202' ? 'selected' : ''}>L125 智動化生產設備與傳送系統</option>
+        <option value="M12203" ${currentVal === 'M12203' ? 'selected' : ''}>L126 智慧工廠生產模式與 MES 整合</option>
       </optgroup>
       <optgroup label="── 科目三：現場實作與評分標準 ──">
-        <option value="topic:M13101" ${currentVal === 'topic:M13101' ? 'selected' : ''}>M13101 生產管理與流程實作</option>
-        <option value="topic:M13201" ${currentVal === 'topic:M13201' ? 'selected' : ''}>M13201 智慧製造現場管理實作</option>
+        <option value="M13101" ${currentVal === 'M13101' ? 'selected' : ''}>M13101 生產管理與流程實作</option>
+        <option value="M13201" ${currentVal === 'M13201' ? 'selected' : ''}>M13201 智慧製造現場管理實作</option>
       </optgroup>
       <optgroup label="── 中級智慧製造工程師教材 (全9章) ──">
-        <option value="topic:M21101" ${currentVal === 'topic:M21101' ? 'selected' : ''}>M21101 生產管理實務與精實管理</option>
-        <option value="topic:M21102" ${currentVal === 'topic:M21102' ? 'selected' : ''}>M21102 智慧工廠技術綜觀與 MES 實務</option>
-        <option value="topic:M21201" ${currentVal === 'topic:M21201' ? 'selected' : ''}>M21201 MES 全廠管控與排程優化</option>
-        <option value="topic:M21202" ${currentVal === 'topic:M21202' ? 'selected' : ''}>M21202 線平衡與品質要因分析</option>
-        <option value="topic:M22101" ${currentVal === 'topic:M22101' ? 'selected' : ''}>M22101 物聯網與 CPS 基本原理</option>
-        <option value="topic:M22102" ${currentVal === 'topic:M22102' ? 'selected' : ''}>M22102 智慧設備維護與製程大數據</option>
-        <option value="topic:M22201" ${currentVal === 'topic:M22201' ? 'selected' : ''}>M22201 感測器、機器視覺與機器人</option>
-        <option value="topic:M22202" ${currentVal === 'topic:M22202' ? 'selected' : ''}>M22202 通訊建構、智慧控制與介面</option>
-        <option value="topic:M22301" ${currentVal === 'topic:M22301' ? 'selected' : ''}>M22301 設備操作與效率指標辨識</option>
+        <option value="M21101" ${currentVal === 'M21101' ? 'selected' : ''}>M21101 生產管理實務與精實管理</option>
+        <option value="M21102" ${currentVal === 'M21102' ? 'selected' : ''}>M21102 智慧工廠技術綜觀與 MES 實務</option>
+        <option value="M21201" ${currentVal === 'M21201' ? 'selected' : ''}>M21201 MES 全廠管控與排程優化</option>
+        <option value="M21202" ${currentVal === 'M21202' ? 'selected' : ''}>M21202 線平衡與品質要因分析</option>
+        <option value="M22101" ${currentVal === 'M22101' ? 'selected' : ''}>M22101 物聯網與 CPS 基本原理</option>
+        <option value="M22102" ${currentVal === 'M22102' ? 'selected' : ''}>M22102 智慧設備維護與製程大數據</option>
+        <option value="M22201" ${currentVal === 'M22201' ? 'selected' : ''}>M22201 感測器、機器視覺與機器人</option>
+        <option value="M22202" ${currentVal === 'M22202' ? 'selected' : ''}>M22202 通訊建構、智慧控制與介面</option>
+        <option value="M22301" ${currentVal === 'M22301' ? 'selected' : ''}>M22301 設備操作與效率指標辨識</option>
       </optgroup>
       <optgroup label="── 考綱對照與實戰附錄 ──">
-        <option value="topic:APPX01" ${currentVal === 'topic:APPX01' ? 'selected' : ''}>APPX01 核心公式與計算題彙整</option>
-        <option value="topic:APPX02" ${currentVal === 'topic:APPX02' ? 'selected' : ''}>APPX02 考古題盲點與常見陷阱</option>
-        <option value="topic:APPX03" ${currentVal === 'topic:APPX03' ? 'selected' : ''}>APPX03 官方學習資源與參考書目導引</option>
-        <option value="topic:APPX04" ${currentVal === 'topic:APPX04' ? 'selected' : ''}>APPX04 官方考綱對照與複習補充</option>
-        <option value="topic:APPX05" ${currentVal === 'topic:APPX05' ? 'selected' : ''}>APPX05 115 年試題導向實戰練習</option>
+        <option value="APPX01" ${currentVal === 'APPX01' ? 'selected' : ''}>APPX01 核心公式與計算題彙整</option>
+        <option value="APPX02" ${currentVal === 'APPX02' ? 'selected' : ''}>APPX02 考古題盲點與常見陷阱</option>
+        <option value="APPX03" ${currentVal === 'APPX03' ? 'selected' : ''}>APPX03 官方學習資源與參考書目導引</option>
+        <option value="APPX04" ${currentVal === 'APPX04' ? 'selected' : ''}>APPX04 官方考綱對照與複習補充</option>
+        <option value="APPX05" ${currentVal === 'APPX05' ? 'selected' : ''}>APPX05 115 年試題導向實戰練習</option>
       </optgroup>
     `;
   }
 
   let mermaidSeq = 0;
+  let mermaidRetryCount = 0;
   async function renderMermaidDiagrams() {
-    if (!window.mermaid) return;
+    if (!window.mermaid) {
+      if (mermaidRetryCount < 30) {
+        mermaidRetryCount++;
+        setTimeout(renderMermaidDiagrams, 150);
+      }
+      return;
+    }
+    mermaidRetryCount = 0;
     try {
       if (!window.__mermaid_inited) {
         window.mermaid.initialize({
@@ -263,7 +264,7 @@
           theme: 'base',
           htmlLabels: true,
           themeVariables: {
-            fontFamily: '"Noto Sans TC", system-ui, sans-serif',
+            fontFamily: '"Noto Sans TC", system-ui, -apple-system, sans-serif',
             fontSize: '13px',
             primaryColor: '#eef5e6',
             primaryTextColor: '#174b3e',
@@ -288,8 +289,14 @@
         block.setAttribute('data-processed', 'true');
         const decoder = document.createElement('textarea');
         decoder.innerHTML = block.innerHTML.trim();
-        const code = decoder.value.trim();
+        let code = decoder.value.trim();
         if (!code) continue;
+
+        // Auto-fix any legacy dotted link syntax: -. "label" .-> or -. label .-> into -.->|label|
+        code = code
+          .replace(/-\.\s*(?:["']([^"']+)["']|([^.\->\r\n|]+))\s*\.->/g, (m, p1, p2) => `-.->|${(p1 || p2 || '').trim()}|`)
+          .replace(/--\s*["']([^"']+)["']\s*-->/g, '-->|$1|');
+
         const id = 'mermaid-chart-' + (++mermaidSeq);
         try {
           const { svg } = await window.mermaid.render(id, code);
@@ -299,7 +306,7 @@
           const parent = block.closest('.mermaid-block') || block;
           parent.replaceWith(container);
         } catch (err) {
-          console.warn('Mermaid render error:', err);
+          console.warn('Mermaid render error for chart ' + id + ':', err);
           document.getElementById(id)?.remove();
           document.getElementById('d' + id)?.remove();
         }
@@ -324,14 +331,7 @@
 
   function shell(body, view) {
     const r = route();
-    let currentSelectVal = 'tab:materials';
-    if (view === 'guide') {
-      if (r.arg === 'materials' || !r.arg) {
-        currentSelectVal = 'topic:' + currentMaterialTopic;
-      } else {
-        currentSelectVal = 'tab:' + r.arg;
-      }
-    }
+    const currentSubView = (view === 'guide' ? (r.arg || 'materials') : 'materials');
     return `
       <a class="skip" data-action="skip" href="#content">跳到主要內容</a>
       <aside class="sidebar">
@@ -353,11 +353,26 @@
             <div class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</div>
             <div class="breadcrumb">學習中心<span>／</span><strong>${({ home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' })[view] || '工廠總覽'}</strong></div>
           </div>
-          <div class="topbar-guide-selector">
-            <label for="topbar-guide-select" class="topbar-select-label">${icon('bulb')} 備考寶典：</label>
-            <select id="topbar-guide-select" class="topbar-select" aria-label="切換備考寶典章節">
-              ${renderGuideSelectOptions(currentSelectVal)}
-            </select>
+          <div class="topbar-guide-nav">
+            <div class="topbar-selector-box">
+              <label for="topbar-section-select" class="topbar-select-label">${icon('bulb')} 備考寶典：</label>
+              <select id="topbar-section-select" class="topbar-select" aria-label="選擇備考寶典分區">
+                <option value="materials" ${currentSubView === 'materials' ? 'selected' : ''}>📖 單元精讀講義與3D圖解 (28)</option>
+                <option value="diagrams" ${currentSubView === 'diagrams' ? 'selected' : ''}>🗺️ 互動架構與職能全景</option>
+                <option value="glossary" ${currentSubView === 'glossary' ? 'selected' : ''}>📖 專有名詞辭典 (165)</option>
+                <option value="formulas" ${currentSubView === 'formulas' ? 'selected' : ''}>📐 核心公式速查 (8大題型)</option>
+                <option value="traps" ${currentSubView === 'traps' ? 'selected' : ''}>⚠️ 常考陷阱避坑 (10大盲點)</option>
+                <option value="pdfs" ${currentSubView === 'pdfs' ? 'selected' : ''}>📄 官方試題與簡章 PDF (7)</option>
+              </select>
+            </div>
+            ${(view === 'guide' && currentSubView === 'materials') ? `
+              <div class="topbar-selector-box topbar-chapter-box">
+                <label for="topbar-chapter-select" class="topbar-select-label">${icon('book')} 章節：</label>
+                <select id="topbar-chapter-select" class="topbar-select" aria-label="切換單元章節">
+                  ${renderChapterSelectOptions(currentMaterialTopic)}
+                </select>
+              </div>
+            ` : ''}
           </div>
           <div class="profile"><span>${E.level(state.xp)}</span><div class="avatar" aria-hidden="true">廠</div></div>
         </header>
@@ -594,7 +609,7 @@
           <div class="chapter-select-wrap">
             <label for="material-page-select" class="sr-only">選擇講義單元</label>
             <select id="material-page-select" class="material-page-select" aria-label="選擇講義單元">
-              ${renderGuideSelectOptions('topic:' + currentMaterialTopic)}
+              ${renderChapterSelectOptions(currentMaterialTopic)}
             </select>
           </div>
           <button type="button" class="btn btn-small" data-action="next-material" ${nextTopic ? '' : 'disabled'}>
@@ -806,11 +821,6 @@
 
     return `
       ${intro('STUDY GUIDE & RESOURCES', '備考寶典與核心資源庫', '28 篇單元精讀講義、3D 渲染圖解、互動架構圖、名詞辭典與官方歷屆試題下載。')}
-      <div class="guide-tabs" role="tablist">
-        ${tabs.map(([key, label]) => `
-          <button type="button" class="guide-tab ${subView === key ? 'active' : ''}" data-action="guide-tab" data-tab="${key}">${label}</button>
-        `).join('')}
-      </div>
       <div id="guide-tab-content">
         ${content}
       </div>
@@ -1308,16 +1318,13 @@
   });
 
   document.addEventListener('change', e => {
-    if (e.target.id === 'topbar-guide-select' || e.target.id === 'material-page-select') {
-      const val = e.target.value;
-      if (val.startsWith('tab:')) {
-        const tab = val.replace('tab:', '');
-        go('guide', tab);
-      } else if (val.startsWith('topic:')) {
-        const topic = val.replace('topic:', '');
-        currentMaterialTopic = topic;
-        go('guide', 'materials', topic);
-      }
+    if (e.target.id === 'topbar-section-select') {
+      const section = e.target.value;
+      go('guide', section);
+    } else if (e.target.id === 'topbar-chapter-select' || e.target.id === 'material-page-select') {
+      const topic = e.target.value.replace('topic:', '');
+      currentMaterialTopic = topic;
+      go('guide', 'materials', topic);
     }
   });
 
