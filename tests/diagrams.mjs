@@ -18,7 +18,8 @@ function load(file) {
   const script = window.document.createElement('script');
   script.textContent = fs.readFileSync(file, 'utf8'); window.document.body.append(script);
 }
-load('dist/assets/mermaid.min.js'); load('dist/data.js'); load('dist/diagrams.js');
+// Match the reader's lazy loading order: the host exists before Mermaid arrives.
+load('dist/data.js'); load('dist/diagrams.js'); load('dist/assets/mermaid.min.js');
 hydrate(window.FACTORY_QUEST_DATA);
 assert.ok(window.mermaid?.parse, 'Bundled Mermaid API must load as a classic script');
 const host = window.document.querySelector('main');
@@ -41,7 +42,16 @@ window.mermaid.render = async () => {
   return { svg: '<svg viewBox="0 0 840 360"><text>良品與瑕疵判定</text></svg>' };
 };
 host.innerHTML = '<div class="mermaid-block"><pre class="mermaid">flowchart LR\n A --> B</pre></div>';
-await Promise.all([window.FactoryDiagrams.render(host), window.FactoryDiagrams.render(host)]);
+let releaseFonts, automaticRuns = 0;
+Object.defineProperty(window.document, 'fonts', { value: { ready: new Promise(resolve => { releaseFonts = resolve; }) } });
+window.mermaid.run = async () => { automaticRuns++; };
+const rendering = Promise.all([window.FactoryDiagrams.render(host), window.FactoryDiagrams.render(host)]);
+await new Promise(resolve => setTimeout(resolve, 0));
+// A local page can finish loading while the renderer is still waiting for fonts.
+window.mermaid.contentLoaded();
+assert.equal(automaticRuns, 0, 'Disable Mermaid auto-start before waiting for fonts so it cannot overwrite diagram sources');
+releaseFonts();
+await rendering;
 assert.equal(calls, 1, 'Concurrent jobs must not render the same block twice');
 assert.equal(peak, 1, 'Mermaid parser must stay serialized');
 assert.equal(host.querySelectorAll('.study-diagram svg').length, 1);

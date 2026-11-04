@@ -53,9 +53,16 @@ test('one writer protects two tabs and transfers ownership', async ({ page, cont
   expect((await state(other)).active.answers).toEqual(before.active.answers);
 });
 test('local file entry loads split materials without an HTTP server', async ({ page }) => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.text().startsWith('Study diagram')) errors.push(message.text()); });
   await page.goto(pathToFileURL(path.resolve('dist/index.html')).href + '#/guide/materials/M11101');
   await expect(page.locator('.reader-article')).toBeVisible();
+  await expect(page.locator('.study-diagram svg')).toHaveCount(5);
   await expect(page.locator('.study-diagram svg').first()).toBeVisible();
+  await expect(page.locator('.diagram-error')).toHaveCount(0);
+  await expect(page.locator('.katex').first()).toBeVisible();
+  expect(errors).toEqual([]);
 });
 test('answered questions return when due and resolve after review', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('factory-quest-ipas-v1', JSON.stringify({

@@ -77,8 +77,10 @@
       for (const block of blocks) showError(block, '圖解引擎尚未載入，請重新整理頁面。');
       return;
     }
-    await document.fonts?.ready;
+    // Lazy Mermaid may receive window.load while fonts are pending. Disable its
+    // automatic DOM scan before yielding so only this reader consumes sources.
     initialize();
+    await document.fonts?.ready;
     for (const block of blocks) {
       if (!block.isConnected || !root.contains(block)) continue;
       block.dataset.diagramState = 'rendering';
