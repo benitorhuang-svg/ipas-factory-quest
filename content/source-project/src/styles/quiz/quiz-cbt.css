@@ -1,0 +1,111 @@
+/* ── CBT Flagging & Header ── */
+.cbt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+  background: var(--color-bg-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  font-weight: 800;
+  font-size: var(--text-sm);
+}
+
+.cbt-flag-btn {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cbt-flag-btn--active {
+  background: var(--color-rose-50);
+  color: var(--color-rose-600);
+  border-color: var(--color-rose-200);
+  box-shadow: 0 0 0 2px var(--color-rose-100);
+}
+
+/* ── CBT Grid ── */
+.cbt-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.cbt-grid-box {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  background: var(--color-bg-primary);
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cbt-grid-box--active {
+  border-color: var(--color-indigo-500);
+  background: var(--color-indigo-50);
+  color: var(--color-indigo-600);
+  box-shadow: 0 0 0 2px var(--color-indigo-100);
+}
+
+.cbt-grid-box--answered {
+  background: var(--color-indigo-500);
+  color: #fff;
+  border-color: var(--color-indigo-500);
+}
+
+.cbt-grid-box--correct {
+  background: var(--color-emerald-500);
+  color: #fff;
+  border-color: var(--color-emerald-500);
+}
+
+.cbt-grid-box--wrong {
+  background: var(--color-rose-500);
+  color: #fff;
+  border-color: var(--color-rose-500);
+}
+
+.cbt-grid-box--unanswered-result {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-tertiary);
+}
+
+.cbt-grid-box--flagged {
+  border: 2.5px solid var(--color-rose-400) !important;
+  background: var(--color-rose-50) !important;
+  color: var(--color-rose-600) !important;
+  position: relative;
+}
+
+.cbt-grid-box--flagged::after {
+  content: '🚩';
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 10px;
+}
+
+.cbt-grid-box:active {
+  transform: scale(0.95);
+}
+
+@keyframes anim-pop {
+  from { opacity: 0; transform: translateY(4px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}

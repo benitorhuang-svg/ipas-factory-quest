@@ -1,0 +1,88 @@
+{
+  "visualAssets": {
+    "isa95Interactive": "assets/interactive-diagrams/isa95-smart-factory.html",
+    "unitSummariesIndex": "assets/interactive-diagrams/unit-summaries/index.html",
+    "infographics": [
+      {
+        "id": "competency-3d",
+        "title": "智慧生產工程師職能 3D 分解爆炸圖",
+        "path": "assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D-v2.png",
+        "desc": "立體剖析生產管理與智動化現場兩大軸心職能能力分佈"
+      },
+      {
+        "id": "competency-flat",
+        "title": "智慧生產工程師職能架構圖 (平面版)",
+        "path": "assets/infographics/智慧生產工程師職能-分解爆炸圖.png",
+        "desc": "經濟部官方職能基準 10 大關鍵能力與單元映射"
+      },
+      {
+        "id": "bom-hierarchy",
+        "title": "BOM 產品用料結構與多階展開圖",
+        "path": "assets/learning-diagrams/bom-hierarchy-v1.png",
+        "desc": "解析低階編碼 (Low-Level Code) 與 MRP 邏輯展開關係"
+      },
+      {
+        "id": "hero-dashboard",
+        "title": "智慧工廠戰情中心全景圖",
+        "path": "assets/smart-factory-dashboard-hero.png",
+        "desc": "MES、SCADA、IIoT 與 ERP 整合戰情總覽"
+      }
+    ]
+  },
+  "pdfs": [
+    {
+      "name": "115年第一次初級智慧生產_L11_生產與作業管理基礎_公告試題.pdf",
+      "title": "115年第一次初級・科目一公告試題",
+      "subject": 1,
+      "size": "414 KB"
+    },
+    {
+      "name": "115年第一次初級智慧生產_L12_智慧製造生產線管理基礎_公告試題.pdf",
+      "title": "115年第一次初級・科目二公告試題",
+      "subject": 2,
+      "size": "417 KB"
+    },
+    {
+      "name": "115年第一次中級智慧生產_L21製造生產與作業管理之實務應用_公告試題.pdf",
+      "title": "115年第一次中級・L21實務應用公告試題",
+      "subject": 1,
+      "size": "443 KB"
+    },
+    {
+      "name": "115年第一次中級智慧生產_L22智慧製造之設備與製程管理之實務應用_公告試題.pdf",
+      "title": "115年第一次中級・L22實務應用公告試題",
+      "subject": 2,
+      "size": "389 KB"
+    },
+    {
+      "name": "官方樣題_考科3_智慧生產與管理實務_實作器材及評分標準與答題參考.pdf",
+      "title": "考科3 術科實作・器材與評分答題參考",
+      "subject": 3,
+      "size": "904 KB"
+    },
+    {
+      "name": "115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+      "title": "115年度能力鑑定官方簡章 (初級／中級)",
+      "subject": 0,
+      "size": "785 KB"
+    },
+    {
+      "name": "智慧生產工程師職能基準.pdf",
+      "title": "經濟部智慧生產工程師職能基準標準",
+      "subject": 0,
+      "size": "369 KB"
+    },
+    {
+      "name": "115年度智慧生產工程師能力鑑定簡章(初、中級)_20251229140907.pdf",
+      "title": "115年度能力鑑定簡章・歷史版本 20251229",
+      "subject": 0,
+      "size": "748 KB"
+    },
+    {
+      "name": "115年度智慧生產工程師能力鑑定簡章(初、中級)_20260309152224.pdf",
+      "title": "115年度能力鑑定簡章・歷史版本 20260309",
+      "subject": 0,
+      "size": "760 KB"
+    }
+  ]
+}

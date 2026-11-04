@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "物料管理：先淨算母項，再展料與決定下單時點",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11103/M11103-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "mps",
+      "type": "external",
+      "label": "MPS 時段需求",
+      "sublabel": "最終品項、數量與日期",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "bom",
+      "type": "external",
+      "label": "多階 BOM 與用量",
+      "sublabel": "母子件、低階碼與投料",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "stock",
+      "type": "external",
+      "label": "有效庫存與到貨",
+      "sublabel": "可用狀態、SR 與交期",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "net",
+      "type": "backend",
+      "label": "MRP 逐期淨算",
+      "sublabel": "彙總毛需求後扣可用量",
+      "pos": [
+        430,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "buffer",
+      "type": "backend",
+      "label": "安全庫存與 ROP",
+      "sublabel": "波動、服務水準與 LT",
+      "pos": [
+        820,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "lot",
+      "type": "backend",
+      "label": "依條件選批量",
+      "sublabel": "L4L／FOQ／EOQ／EPQ",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "release",
+      "type": "backend",
+      "label": "收貨量與發出期",
+      "sublabel": "批量取整、提前期平移",
+      "pos": [
+        430,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "execute",
+      "type": "backend",
+      "label": "採購／工單與例外",
+      "sublabel": "核准、催料及交易追溯",
+      "pos": [
+        820,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "mps-to-net",
+      "from": "mps",
+      "to": "net",
+      "label": "需求時點"
+    },
+    {
+      "id": "bom-to-net",
+      "from": "bom",
+      "to": "net",
+      "label": "展開並彙總"
+    },
+    {
+      "id": "stock-to-net",
+      "from": "stock",
+      "to": "net",
+      "label": "可用量抵減"
+    },
+    {
+      "id": "stock-to-buffer",
+      "from": "stock",
+      "to": "buffer",
+      "label": "需求與交期"
+    },
+    {
+      "id": "buffer-to-net",
+      "from": "buffer",
+      "to": "net",
+      "label": "庫存底線"
+    },
+    {
+      "id": "net-to-lot",
+      "from": "net",
+      "to": "lot",
+      "label": "淨需求 NR"
+    },
+    {
+      "id": "lot-to-release",
+      "from": "lot",
+      "to": "release",
+      "label": "計畫收貨量"
+    },
+    {
+      "id": "release-to-execute",
+      "from": "release",
+      "to": "execute",
+      "label": "發出與改期"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "量與時間分開算",
+      "items": [
+        "NR＝max(0, GR＋SS－前期庫存－已排程到貨)；POH＝前期庫存＋SR＋計畫收貨－GR。先淨算母項，再依母項發出量與投料日展開子件。",
+        "批量規則可令收貨量大於 NR；發出期＝收貨期－LT。低階碼取最深層，pegging 追需求來源，同一庫存不可在多條 BOM 路徑重複抵扣。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "補貨模型與現場限制",
+      "items": [
+        "EOQ 平衡年訂購與持有成本；EPQ 為生產且同步消耗，需 p＞d 且時間單位一致。ROP 決定時機、批量決定數量，SS 模型需符合需求與交期變異假設。",
+        "ABC 依年耗用金額分級，不直接決定安全庫存。待驗、隔離、保留或錯版不能當可用量；計畫訂單不是已核准供給，過期發出建議須確認供應可行性。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11103｜物料管理概論；來源：科目一／03_物料管理概論.md。",
+        "已庫存母件內的子件需要再採購嗎？請依實際需生產母件量展開，並檢查不同週別的可用日期。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M22102｜智慧設備維護與製程大數據：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M22102/M22102-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "failure",
+      "label": "失效模式與後果",
+      "sublabel": "風險／前兆／備品／修復",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "維護策略選擇",
+      "sublabel": "RCM／BM／PM／CBM／PdM",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "work",
+      "label": "CMMS／MES 處置",
+      "sublabel": "工單／人員／備品／紀錄",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "effect",
+      "label": "可靠度與成本驗證",
+      "sublabel": "停機／品質／安全／效益",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "data",
+      "label": "資料品質與標記",
+      "sublabel": "缺值／對時／單位／洩漏",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "model",
+      "label": "EHI 與預測分析",
+      "sublabel": "衰退／良率／視窗／能耗",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "history",
+      "label": "維護與執行歷史",
+      "sublabel": "變更／換件／故障原因",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "metric",
+      "label": "MTBF／MTTR",
+      "sublabel": "運作與修復時間先定義",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "data-to-failure",
+      "from": "data",
+      "to": "failure",
+      "label": "可信診斷證據"
+    },
+    {
+      "id": "failure-to-strategy",
+      "from": "failure",
+      "to": "strategy",
+      "label": "依後果選組合"
+    },
+    {
+      "id": "model-to-strategy",
+      "from": "model",
+      "to": "strategy",
+      "label": "可處置前兆"
+    },
+    {
+      "id": "strategy-to-work",
+      "from": "strategy",
+      "to": "work",
+      "label": "達條件才開單"
+    },
+    {
+      "id": "history-to-work",
+      "from": "history",
+      "to": "work",
+      "label": "備品與過往證據"
+    },
+    {
+      "id": "work-to-effect",
+      "from": "work",
+      "to": "effect",
+      "label": "修復與損失紀錄"
+    },
+    {
+      "id": "metric-to-effect",
+      "from": "metric",
+      "to": "effect",
+      "label": "同口徑比較"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "BM 故障後修；PM 依固定時間或次數；CBM 依有效狀態；PdM 預估衰退或維護時點。RCM 依失效模式選策略組合。",
+        "MTBF＝運作時間／故障次數；MTTR＝定義內修復時間／故障次數。可用度 MTBF／(MTBF＋MTTR) 必須配合一致時間範圍。",
+        "EHI 加權平均須同尺度且權重和為 1；預測資料只用當時已知特徵，保留未知／截尾與版本，另評估精確率、召回率及提前量。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "離群可能是真實故障；缺值不能跨故障補成正常，維修後資訊不得洩漏到先前預測。",
+        "MTBF 不是保證壽命，固定故障率模型也不描述磨耗加速；比較策略需證明檢修可移除何種缺陷及殘餘風險。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十／L22103–L22105，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

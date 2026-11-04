@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "品質管理：量測可信、製程受控，再談能力與放行",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11202/M11202-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "msa",
+      "type": "backend",
+      "label": "MSA 量測可信度",
+      "sublabel": "解析度、偏倚與 Gage R&R",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "spc",
+      "type": "backend",
+      "label": "SPC 合理抽樣建圖",
+      "sublabel": "計量／計數與分組條件",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "stable",
+      "type": "backend",
+      "label": "製程穩定性判斷",
+      "sublabel": "管制界限與非隨機訊號",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "react",
+      "type": "backend",
+      "label": "特殊原因反應計畫",
+      "sublabel": "確認量測、保全影響品",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "spec",
+      "type": "external",
+      "label": "產品規格界限",
+      "sublabel": "USL／LSL：客戶與工程",
+      "pos": [
+        430,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "cap",
+      "type": "backend",
+      "label": "Cp／Cpk 能力分析",
+      "sublabel": "散布、置中及模型前提",
+      "pos": [
+        820,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "fai",
+      "type": "backend",
+      "label": "首件與恢復確認",
+      "sublabel": "變更後依規範核准",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "improve",
+      "type": "backend",
+      "label": "對策驗證與標準化",
+      "sublabel": "品質成本、責任及追蹤",
+      "pos": [
+        430,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "msa-to-spc",
+      "from": "msa",
+      "to": "spc",
+      "label": "資料可用"
+    },
+    {
+      "id": "spc-to-stable",
+      "from": "spc",
+      "to": "stable",
+      "label": "時間序列"
+    },
+    {
+      "id": "spc-to-react",
+      "from": "spc",
+      "to": "react",
+      "label": "出現失控訊號"
+    },
+    {
+      "id": "stable-to-cap",
+      "from": "stable",
+      "to": "cap",
+      "label": "受控且模型適用"
+    },
+    {
+      "id": "spec-to-cap",
+      "from": "spec",
+      "to": "cap",
+      "label": "比較規格"
+    },
+    {
+      "id": "react-to-fai",
+      "from": "react",
+      "to": "fai",
+      "label": "修正後再驗證"
+    },
+    {
+      "id": "fai-to-improve",
+      "from": "fai",
+      "to": "improve",
+      "label": "依程序放行"
+    },
+    {
+      "id": "cap-to-improve",
+      "from": "cap",
+      "to": "improve",
+      "label": "改善散布或偏移"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "穩定與合格分開判斷",
+      "items": [
+        "管制界限由製程資料估計；規格界限由客戶／工程訂定。受控不等於符合規格，每件在規格內也不保證製程受控。",
+        "Cp＝(USL－LSL)÷6σ；Cpk 取兩側距離÷3σ的較小值。先確認 MSA、穩定性、分布與 σ 口徑，再解讀能力；Cp 高仍可能因中心偏移而 Cpk 低。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "選圖、反應與成本",
+      "items": [
+        "計量依分組選 I-MR／X-bar-R／X-bar-s；計數先分不良品與缺點，再核對樣本量或檢驗單位：p／np／c／u。",
+        "不為隱藏超界而刪點或放寬界限。PAF 依活動目的及交付前後分類；魚骨圖列假設、散佈圖顯示關聯，均不能單獨證明根因。公告答案須保留題設適用界線。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11202｜品質管理與統計製程管制；來源：科目一／05_品質管理與統計製程管制.md。",
+        "五件都在規格內，子組平均卻超過管制上限，應先做什麼？請依反應計畫確認資料、保全批次並查特殊原因。"
+      ]
+    }
+  ]
+}

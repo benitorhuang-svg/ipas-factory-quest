@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<title>生產規劃層級圖版面驗證</title>
+<style>
+  html, body { margin: 0; width: max-content; background: #f8fafc; }
+  iframe { display: block; border: 0; }
+</style>
+<iframe id="planning-preview" title="生產管理教材" src="/#/topic/M11101"></iframe>
+<script>
+  const requested = Number(new URLSearchParams(location.search).get('width'));
+  const width = requested >= 320 && requested <= 1920 ? requested : 1440;
+  const frame = document.querySelector('iframe');
+  frame.style.width = `${width}px`;
+  frame.style.height = `${width < 700 ? 844 : 900}px`;
+</script>
+</html>

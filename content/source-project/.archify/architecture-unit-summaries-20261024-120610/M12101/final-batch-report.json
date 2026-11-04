@@ -1,0 +1,203 @@
+[
+  {
+    "code": "M12101",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12101/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12101/M12101-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12101.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12101/m12101-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "36abad7c3c28f51ded69575766e0db986737a659f1ce0b2073b0f191b56c8b26",
+    "bytes": 819600,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  },
+  {
+    "code": "M12102",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12102/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12102/M12102-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12102.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12102/content-review/m12102-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "ec78607749f83c1298de4be95744d09cdd01ef2b6b217172741e110749b4816f",
+    "bytes": 820280,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  },
+  {
+    "code": "M12103",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12103/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12103/M12103-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12103.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12103/m12103-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "798e0b329bf96e8cb971be0fd149b4d48b9e35bcdf5103358fe5154a3c2308de",
+    "bytes": 819135,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  },
+  {
+    "code": "M12201",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12201/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12201/M12201-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12201.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12201/m12201-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "7ca5308ff24c0bfb9d237e713df0abed65e4d3be1723f3b7fa9c86d7a7e474cb",
+    "bytes": 817989,
+    "diagnostics": [],
+    "visualReviewRecommendation": {
+      "action": "inspect-route-readability",
+      "signals": {
+        "routesOverSuggestedStretch": 1
+      },
+      "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+      "affectedRoutes": {
+        "crossings": [],
+        "detours": [
+          {
+            "relationship": {
+              "id": "relation-7",
+              "from": "config",
+              "to": "connection",
+              "label": "限幅核准後回饋",
+              "collectionIndex": 6,
+              "artifactIndex": 7
+            },
+            "bends": 2,
+            "stretch": 1.613,
+            "directCorridorBlockers": [
+              {
+                "id": "conversion",
+                "label": "Conversion 轉換",
+                "box": [
+                  350,
+                  40,
+                  210,
+                  90
+                ]
+              },
+              {
+                "id": "cyber",
+                "label": "Cyber 虛實整合",
+                "box": [
+                  660,
+                  40,
+                  210,
+                  90
+                ]
+              },
+              {
+                "id": "cognition",
+                "label": "Cognition 認知",
+                "box": [
+                  970,
+                  40,
+                  210,
+                  90
+                ]
+              }
+            ]
+          }
+        ],
+        "truncated": false
+      },
+      "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+    },
+    "perceptualReview": "Current 1440x900 light screenshot inspected; no overlap or ambiguous crossing observed"
+  },
+  {
+    "code": "M12202",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12202/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12202/M12202-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12202.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12202/m12202-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "360d3a8587fd7f4ab7c0186800bf624787612586e2069ab223ad9c5a9e4bf49e",
+    "bytes": 821903,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  },
+  {
+    "code": "M12203",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M12203/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M12203/M12203-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M12203.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M12203/content-review/m12203-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "2537d6824909c3e42724f3e0ede74d9a648d6dd912c8a9cfa373b1088cdf8d41",
+    "bytes": 825865,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Current 1440x900 light screenshot inspected; no overlap or ambiguous crossing observed"
+  },
+  {
+    "code": "M13101",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M13101/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M13101/M13101-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M13101.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M13101/m13101-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "3262cd2358d112cb23a457eeed5f1ebd1d31f727a72a8fac3be95511f2e59122",
+    "bytes": 821451,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  },
+  {
+    "code": "M13201",
+    "candidate": ".archify/architecture-unit-summaries-20261024-120610/M13201/candidate.json",
+    "artifact": ".archify/architecture-unit-summaries-20261024-120610/M13201/M13201-summary.html",
+    "publicAsset": "public/assets/interactive-diagrams/unit-summaries/M13201.html",
+    "receipt": ".archify/architecture-unit-summaries-20261024-120610/M13201/m13201-summary.finalize-summary.json",
+    "gates": {
+      "validate": "pass",
+      "deliver": "pass",
+      "check": "pass",
+      "browser-check": "pass"
+    },
+    "sha256": "e55a4a1d38bbe6b3f27c5740aabd1e314d748234063c91a8c4434695da1351f6",
+    "bytes": 822654,
+    "diagnostics": [],
+    "visualReviewRecommendation": null,
+    "perceptualReview": "Automated browser checks only"
+  }
+]

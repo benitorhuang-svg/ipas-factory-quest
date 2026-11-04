@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "f9dd1e01-27ae-46ce-858d-565d24e29e0d",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M11201\\candidate.json",
+  "output": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M11201\\M11201-summary.html",
+  "specification": {
+    "sha256": "42a450ef6b408b480bc087946463ca2c9c8a8fe691fa4fb4318a41b8294ba9ac",
+    "bytes": 4910
+  },
+  "artifact": {
+    "sha256": "c51632d0062cdf4ac24520e77353a4c6abe7dfb38614a5ae35ec79b0735a32e2",
+    "bytes": 818947
+  }
+}

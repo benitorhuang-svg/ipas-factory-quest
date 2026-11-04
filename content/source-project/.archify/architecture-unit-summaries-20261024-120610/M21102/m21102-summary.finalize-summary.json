@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M21102\\candidate.json",
+    "sha256": "fb6954e2b016c1b4a6f0d67bbd8b150396950a6d1a1ca1fcdd581ccba680f9ff",
+    "bytes": 4579
+  },
+  "artifact": {
+    "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M21102\\M21102-summary.html",
+    "sha256": "93bedbd894bf1f537048bef11ebbe06301537db4cf82edbe2b0d5ecdfe25fcc0",
+    "bytes": 817992
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M21102\\m21102-summary.finalize.json",
+    "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M21102\\m21102-summary.finalize-summary.json",
+    "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M21102\\m21102-summary.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-24T03:48:04.899Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 8216,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

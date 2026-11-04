@@ -1,0 +1,190 @@
+.diagnostic-unit-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 8px;
+  align-items: center;
+  padding: 12px;
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.diagnostic-unit-card:hover,
+.diagnostic-question-row:hover {
+  border-color: rgba(99, 102, 241, 0.38);
+  background: rgba(238, 242, 255, 0.82);
+}
+
+.diagnostic-unit-card.active,
+.diagnostic-question-row.active {
+  border-color: rgba(99, 102, 241, 0.52);
+  background: rgba(238, 242, 255, 0.96);
+  box-shadow: inset 3px 0 0 var(--color-indigo-500);
+}
+
+.diagnostic-unit-card strong {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 900;
+  font-family: var(--font-mono);
+}
+
+.diagnostic-unit-card__name {
+  grid-column: 1 / -1;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.diagnostic-unit-card__meta {
+  grid-column: 1 / -1;
+  color: var(--color-text-tertiary);
+  font-size: 11px;
+  line-height: 1.4;
+  font-family: var(--font-mono);
+}
+
+.diagnostic-unit-card__bar {
+  grid-column: 1 / -1;
+  height: 6px;
+  overflow: hidden;
+  background: rgba(226, 232, 240, 0.9);
+  border-radius: 8px;
+}
+
+.diagnostic-unit-card__bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-emerald-500), var(--color-indigo-500));
+  border-radius: 8px;
+}
+
+.diagnostic-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-height: 24px;
+  padding: 4px 7px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.diagnostic-status--weakness {
+  color: var(--color-rose-700);
+  background: rgba(244, 63, 94, 0.12);
+  border: 1px solid var(--color-rose-500);
+}
+
+.diagnostic-status--beginner {
+  color: var(--color-amber-700);
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid var(--color-amber-500);
+}
+
+.diagnostic-status--developing {
+  color: var(--color-cyan-700);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid var(--color-cyan-500);
+}
+
+.diagnostic-status--mastered {
+  color: var(--color-emerald-700);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid var(--color-emerald-500);
+}
+
+.diagnostic-status--not-started {
+  color: var(--color-text-secondary);
+  background: rgba(148, 163, 184, 0.14);
+  border: 1px dashed var(--color-border);
+}
+
+.diagnostic-question-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.diagnostic-question-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  padding: 12px 14px;
+  color: var(--color-text-secondary);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.diagnostic-question-row__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.diagnostic-question-row__id {
+  color: var(--color-indigo-600);
+  font-weight: 900;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.diagnostic-question-row__stem {
+  min-width: 0;
+  color: var(--color-text-primary);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.diagnostic-question-row__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.diagnostic-question-row__metric {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 52px;
+  padding: 8px 10px;
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 12px;
+}
+
+.diagnostic-question-row__metric em {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-text-tertiary);
+}
+
+.diagnostic-question-row__metric strong {
+  color: var(--color-text-primary);
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 900;
+  font-family: var(--font-mono);
+}
+
+.diagnostic-empty {
+  padding: 24px;
+  color: var(--color-text-secondary);
+  text-align: center;
+  font-size: 13px;
+}

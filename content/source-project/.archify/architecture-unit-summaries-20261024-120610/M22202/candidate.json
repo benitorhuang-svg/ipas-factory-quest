@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M22202｜通訊建構、智慧控制與介面管理：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M22202/M22202-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "contract",
+      "label": "通訊與資料契約",
+      "sublabel": "實體／IP／服務／資料",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "control",
+      "label": "有效資料與控制",
+      "sublabel": "心跳／狀態／期限",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "hmi",
+      "label": "HMI 與警報處置",
+      "sublabel": "確認／解除／結案分開",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "verify",
+      "label": "交付與執行驗證",
+      "sublabel": "事件 ID／交易／設備回覆",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "network",
+      "label": "風險分區與入口",
+      "sublabel": "DMZ／核准／最小權限",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "method",
+      "label": "控制方法與限制",
+      "sublabel": "PID／MPC／Fuzzy／RL／R2R",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "alarm",
+      "label": "警報條件與責任",
+      "sublabel": "遲滯／持續時間／分級",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "QoS 0／1／2",
+      "sublabel": "協定交付語意的範圍",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "network-to-contract",
+      "from": "network",
+      "to": "contract",
+      "label": "受控跨區"
+    },
+    {
+      "id": "contract-to-control",
+      "from": "contract",
+      "to": "control",
+      "label": "合法且持續更新"
+    },
+    {
+      "id": "method-to-control",
+      "from": "method",
+      "to": "control",
+      "label": "模型與限制適用"
+    },
+    {
+      "id": "control-to-hmi",
+      "from": "control",
+      "to": "hmi",
+      "label": "可信狀態與趨勢"
+    },
+    {
+      "id": "alarm-to-hmi",
+      "from": "alarm",
+      "to": "hmi",
+      "label": "有效資料才判斷"
+    },
+    {
+      "id": "hmi-to-verify",
+      "from": "hmi",
+      "to": "verify",
+      "label": "核准操作與紀錄"
+    },
+    {
+      "id": "delivery-to-verify",
+      "from": "delivery",
+      "to": "verify",
+      "label": "交付另核對業務"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "排障依供電／線材、IP／路由／埠、服務／憑證／權限，再查型別、位元序、單位及更新契約；Ping 不證明資料有效。",
+        "P 反映當前誤差，I 累積誤差且需防飽和，D 對雜訊敏感；智慧控制仍須驗證模型、約束與失效行為。",
+        "HMI 顯示層級、異常與行動；警報確認只表知悉，條件解除與結案另需證據。服務模型另分 IaaS／PaaS／SaaS 管理責任。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "最後數值 Good 不保證仍更新；來源時間若為最後變更時間，須另用明確心跳或序號驗證。失聯不能當條件解除。",
+        "QoS 1 可能重複；QoS 2 不保證資料庫入帳或設備執行恰好一次。需持久事件 ID、交易邊界、重試及對帳。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十二／L22204–L22206，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

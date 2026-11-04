@@ -1,0 +1,3 @@
+# Source receipts and PWA releases verify exact bytes on every platform.
+# Disable newline conversion so a checkout preserves their SHA-256 hashes.
+* -text

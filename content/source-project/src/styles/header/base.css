@@ -1,0 +1,210 @@
+/* ── Header ── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 var(--space-5);
+  background: var(--color-bg-glass);
+  backdrop-filter: var(--glass-blur-heavy);
+  border-bottom: 1px solid var(--color-border);
+  padding-top: var(--safe-top);
+  transition: all var(--duration-normal);
+}
+
+.header--compact {
+  height: 56px;
+  padding: 0 var(--space-4);
+}
+
+.header--compact .header__brand {
+  gap: var(--space-3);
+}
+
+.header--compact .header__subtitle {
+  display: none;
+}
+
+.header--compact .header__title {
+  font-size: 0.98rem;
+}
+
+.header--compact .header__actions {
+  gap: var(--space-2);
+  margin-left: var(--space-2);
+  margin-right: 0;
+}
+
+.header--compact .header__icon-btn {
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.44);
+}
+
+.header--compact .header__home-btn {
+  font-size: var(--text-xs);
+  padding: 3px 10px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-width: 0;
+  flex: 1;
+}
+
+.header__logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.header__title {
+  font-size: var(--text-base);
+  font-weight: var(--weight-extrabold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.header__subtitle {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  padding-left: var(--space-4);
+  margin-left: 0;
+  border-left: 1.5px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
+}
+
+.header__subtitle:hover {
+  color: var(--color-indigo-500);
+  text-decoration: underline;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+  margin-left: var(--space-4);
+  margin-right: var(--space-3);
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 60px;
+    padding: 0 var(--space-4);
+  }
+  .header__brand {
+    gap: var(--space-3);
+  }
+  .header__subtitle {
+    max-width: 240px;
+    padding-left: var(--space-3);
+    margin-left: 0;
+  }
+  .header__actions {
+    gap: var(--space-3);
+    margin-left: var(--space-3);
+    margin-right: var(--space-2);
+  }
+
+  .header--compact {
+    height: 54px;
+    padding: 0 var(--space-3);
+  }
+
+  .header--compact .header__title {
+    font-size: 0.94rem;
+  }
+
+  .header--compact .header__icon-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__subtitle {
+    display: none;
+  }
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  position: absolute;
+  left: 46%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.header__home-btn {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--color-indigo-600);
+  background: transparent;
+  border: 1px solid var(--color-indigo-200);
+  border-radius: var(--radius-md);
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  white-space: nowrap;
+}
+
+.header__home-btn:hover {
+  background: var(--color-indigo-50);
+  color: var(--color-indigo-700);
+  border-color: var(--color-indigo-300);
+}
+
+.dark .header__home-btn {
+  color: var(--color-indigo-400);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.dark .header__home-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-indigo-300);
+  border-color: var(--color-indigo-400);
+}
+
+@media (max-width: 500px) {
+  .header__center {
+    gap: var(--space-2);
+  }
+  .header__home-btn {
+    font-size: var(--text-xs);
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__brand {
+    gap: var(--space-2);
+  }
+  .header__title {
+    font-size: var(--text-sm);
+  }
+  .header__actions {
+    gap: var(--space-2);
+    margin-left: var(--space-2);
+    margin-right: var(--space-2);
+  }
+}

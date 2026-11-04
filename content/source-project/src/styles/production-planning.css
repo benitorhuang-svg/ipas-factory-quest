@@ -1,0 +1,98 @@
+.planning-map {
+  --planning-line: #6366f1;
+  --planning-feedback: #b45309;
+  margin: 1.5rem 0;
+  padding: clamp(16px, 2.2vw, 28px);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-bg-primary);
+}
+.planning-map__canvas { position: relative; padding-bottom: 34px; }
+.planning-map__lane {
+  --planning-accent: #2563eb;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+.planning-map__lane + .planning-map__lane { margin-top: 40px; }
+.planning-map__lane--2 { --planning-accent: #6d28d9; }
+.planning-map__lane--3 { --planning-accent: #0f766e; }
+.planning-map__layer { display: grid; grid-template-columns: 32px 1fr; align-items: center; gap: 3px 10px; }
+.planning-map__number {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 38px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--planning-accent) 8%, var(--color-bg-elevated));
+  color: var(--planning-accent);
+  font-size: .75rem;
+  font-weight: 800;
+}
+.planning-map__layer-name { color: var(--color-text-primary); font-size: .9375rem; white-space: nowrap; }
+.planning-map__period { color: var(--color-text-tertiary); font-size: .6875rem; line-height: 1.5; }
+.planning-map__nodes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; min-width: 0; }
+.planning-map__lane--1 .planning-map__nodes { grid-template-columns: 1fr; }
+.planning-map__node {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 18px 14px;
+  border: 1px solid color-mix(in srgb, var(--planning-accent) 22%, var(--color-border));
+  border-top: 3px solid color-mix(in srgb, var(--planning-accent) 70%, var(--color-bg-elevated));
+  border-radius: 14px;
+  background: var(--color-bg-elevated);
+  text-align: center;
+}
+.planning-map__name { color: var(--color-text-primary); font-size: 1rem; font-weight: 800; line-height: 1.5; }
+.planning-map__english {
+  color: var(--color-text-secondary);
+  font-size: .8125rem;
+  line-height: 1.5;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.planning-map__abbreviation {
+  padding: 2px 9px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--planning-accent) 7%, var(--color-bg-elevated));
+  color: var(--planning-accent);
+  font-size: .6875rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+.planning-map__connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.planning-map__connection { fill: none; stroke: var(--planning-line); stroke-width: 1.8; stroke-linejoin: round; }
+.planning-map__connection--feedback { stroke: var(--planning-feedback); }
+.planning-map__arrow--main path { fill: var(--planning-line); }
+.planning-map__arrow--feedback path { fill: var(--planning-feedback); }
+.planning-map__caption { color: var(--color-text-tertiary); font-size: .75rem; line-height: 1.7; }
+.dark .planning-map { --planning-line: #a5b4fc; --planning-feedback: #fbbf24; }
+.dark .planning-map__lane { --planning-accent: #60a5fa; }
+.dark .planning-map__lane--2 { --planning-accent: #c4b5fd; }
+.dark .planning-map__lane--3 { --planning-accent: #5eead4; }
+
+@container study-diagram (max-width: 1100px) {
+  .planning-map__lane { grid-template-columns: 1fr; gap: 12px; }
+  .planning-map__layer { display: flex; gap: 10px; }
+  .planning-map__period { margin-left: auto; }
+  .planning-map__number { height: 28px; }
+}
+@container study-diagram (max-width: 720px) {
+  .planning-map__canvas { padding-right: 22px; padding-bottom: 0; }
+  .planning-map__nodes { grid-template-columns: 1fr; gap: 28px; }
+  .planning-map__node { min-height: 112px; padding: 16px 12px; }
+  .planning-map__layer { flex-wrap: wrap; gap: 6px; }
+  .planning-map__period { margin-left: 38px; flex-basis: 100%; }
+  .planning-map__lane + .planning-map__lane { margin-top: 32px; }
+  .planning-map__caption { margin-top: 16px; }
+}

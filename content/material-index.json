@@ -1,0 +1,474 @@
+[
+  {
+    "topicCode": "APPX01",
+    "unitId": null,
+    "title": "核心公式與計算題彙整",
+    "summary": "本文件統整 iPAS 智慧生產工程師（初級）兩門學科評鑑中出現頻率最高、最容易失分的八大類定量計算題型，包含嚴謹推導公式、題型設計模式與解題步驟。...",
+    "coreConcepts": [
+      "標準工時 ST 評比外加法",
+      "生產線平衡率 (Line Balancing)",
+      "經濟訂購量 EOQ / EPQ",
+      "安全庫存 SS 與再訂購點 ROP",
+      "製程能力 Cp 與 Cpk",
+      "OEE、MTBF 與 MTTR 計算"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": null
+  },
+  {
+    "topicCode": "APPX02",
+    "unitId": null,
+    "title": "考古題盲點與常見陷阱",
+    "summary": "整理歷屆 iPAS 考生在單選題中最常混淆的十大核心觀念陷阱與出題套路，應考時務必精準識別干擾選項。...",
+    "coreConcepts": [
+      "生產管理易混淆概念辨析",
+      "工業工程常考陷阱題",
+      "品質管理統計計算陷阱",
+      "智慧製造協定層級辨析",
+      "官方公佈考題干擾選項逆向解析"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": null
+  },
+  {
+    "topicCode": "APPX03",
+    "unitId": null,
+    "title": "官方學習資源與參考書目導引",
+    "summary": "本文件以經濟部產業發展署 iPAS [官方學習資源專區](https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources)已保存的 115 年第一次公告試題、術科樣題及參考書目為依據，對映至工作區的各考科筆記單元。...",
+    "coreConcepts": [
+      "四科 200 題與 L13 術科樣題研讀對照",
+      "題號、判讀步驟與誤選原因",
+      "公告答案與一般原理的適用界線",
+      "官方參考書目研讀方向",
+      "基礎觀念、題目辨析與深度案例路徑"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": null
+  },
+  {
+    "topicCode": "APPX04",
+    "unitId": null,
+    "title": "官方考綱對照與複習補充",
+    "summary": "115 年初級智慧生產工程師的兩個學科皆採 75 分鐘、單選題、電腦化測驗（Computer-Based Test, CBT）。考科一聚焦生產管理、物料管理、工業工程與品質管制；考科二聚焦智動化設備、智慧製造與智慧化現場管理。...",
+    "coreConcepts": [
+      "75 分鐘單選電腦測驗 (CBT)",
+      "生產、物料、IE、品質架構",
+      "智動化與智慧現場管理",
+      "MES 與現場資料回饋",
+      "原創練習題使用界線"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": null
+  },
+  {
+    "topicCode": "APPX05",
+    "unitId": null,
+    "title": "115 年試題導向實戰練習",
+    "summary": "本練習依 L11、L12、L21、L22 公告試題的能力主題與 L13 術科樣題設計。以下題目皆為重新編寫的練習情境，不是官方試題；重點是練習推理、計算與說明方法。...",
+    "coreConcepts": [
+      "L11：MRP、標準工時、SPC 與瓶頸產能計算",
+      "L12：ISA-95、CPS、AOI 與 OEE 判讀",
+      "L13：VSM 工時量測與 MES 序時操作演練",
+      "L21：精實、排程、人力、FMEA 與品質分析",
+      "L22：通訊、維護、產能、工作站與設備選型",
+      "原創情境題逐步解題與答案檢核"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": null
+  },
+  {
+    "topicCode": "M11101",
+    "unitId": "L111",
+    "title": "生產管理基本概念",
+    "summary": "生產型態決定了製造企業的供應鏈響應速度、庫存成本與排程複雜度。解耦點（Customer Order Decoupling Point, CODP）是客戶訂單切入生產供應鏈的臨界點。解耦點之前屬於依賴預測的推式（Push）生產，解耦點之後轉為由訂單驅動的拉式（Pull）生產。...",
+    "coreConcepts": [
+      "S&OP 銷售與營運計畫",
+      "MPS 主生產排程",
+      "生產形態 (MTS/MTO/ATO/ETO)",
+      "客戶訂單解耦點 (CODP)",
+      "生產前置時間 (LT)",
+      "設備稼動率 (UR) 與產能負荷 (CL)"
+    ],
+    "diagram3D": "assets/learning-units/01_生產管理基本概念_3D.png",
+    "explainerImg": "assets/learning-explainers/M11101-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11101.html"
+  },
+  {
+    "topicCode": "M11102",
+    "unitId": "L112",
+    "title": "製造流程管理概念",
+    "summary": "製程途程（Manufacturing Routing）定義了原料如何經過一系列工序（Operations）被加工轉化為半成品或最終成品的作業路徑。途程檔是企業資源規劃（Enterprise Resource Planning, ERP）與製造執行系統（Manufacturing Execution System, ME...",
+    "coreConcepts": [
+      "Routing 途程規劃",
+      "EBOM 工程用料清單",
+      "MBOM 製造用料清單",
+      "SOP 標準作業程序",
+      "MPI 製造製程指示",
+      "批次追溯性 Traceability"
+    ],
+    "diagram3D": "assets/learning-units/02_製造流程管理概念_3D.png",
+    "explainerImg": "assets/learning-explainers/M11102-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11102.html"
+  },
+  {
+    "topicCode": "M11103",
+    "unitId": "L113",
+    "title": "物料管理概論",
+    "summary": "物料需求規劃（Material Requirements Planning, MRP）是根據主生產排程（Master Production Schedule, MPS）、物料清單（Bill of Materials, BOM）及庫存主檔（Inventory Records），推導出各種原物料與零組件在各時段的「淨需求量...",
+    "coreConcepts": [
+      "MRP 物料需求計畫邏輯",
+      "安全庫存 (SS) 計算",
+      "EOQ 經濟訂購量",
+      "EPQ 經濟生產量",
+      "現場倉在製品 (WIP) 管理",
+      "物料收發與批次狀態",
+      "ABC 物料分類管制"
+    ],
+    "diagram3D": "assets/learning-units/03_物料管理概論_3D.png",
+    "explainerImg": "assets/learning-explainers/M11103-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11103.html"
+  },
+  {
+    "topicCode": "M11201",
+    "unitId": "L114",
+    "title": "工業工程概論與標準工時",
+    "summary": "工業工程（Industrial Engineering, IE）之基礎為方法工程（Methods Engineering）。法蘭克與莉蓮·吉爾布雷斯（Frank & Lillian Gilbreth）創立了動作研究（Motion Study），將人工作業解構成 17 個基本動素（Therbligs）。...",
+    "coreConcepts": [
+      "17 個基本動素 (Therbligs)",
+      "動作經濟三大原則",
+      "標準工時 (ST) 外加法與內含法",
+      "速度評比 (Rating)",
+      "寬放率 (Allowance)",
+      "稼動率、良率與效率指標",
+      "生產線平衡率與瓶頸消除"
+    ],
+    "diagram3D": "assets/learning-units/04_工業工程概論與標準工時_3D.png",
+    "explainerImg": "assets/learning-explainers/M11201-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11201.html"
+  },
+  {
+    "topicCode": "M11202",
+    "unitId": "L115",
+    "title": "品質管理與統計製程管制",
+    "summary": "現代品質管理強調「品質是製造出來的，不是檢驗出來的」。費根堡（Armand V. Feigenbaum）提出的 PAF 模型將品質成本區分為四大類：...",
+    "coreConcepts": [
+      "PAF 品質成本依活動目的分類",
+      "品管工具、TQM 與公告選項辨析",
+      "X-bar / R 管制圖與規格界限",
+      "製程穩定性與 Cp / Cpk 的前提",
+      "首件檢驗 (FAI) 與自主檢查",
+      "8D 問題解決架構"
+    ],
+    "diagram3D": "assets/learning-units/05_品質管理與統計製程管制_3D.png",
+    "explainerImg": "assets/learning-explainers/M11202-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11202.html"
+  },
+  {
+    "topicCode": "M11203",
+    "unitId": "L116",
+    "title": "精實生產與現場績效管理",
+    "summary": "豐田生產方式（Toyota Production System, TPS）的核心目標是透過徹底消除浪費（Muda），以最短的製造前置時間、最低成本提供最高品質的產品。...",
+    "coreConcepts": [
+      "TPS 七大浪費 (Muda)",
+      "看板管理 (Kanban)",
+      "現場 5S 管理",
+      "防呆法 (Poka-Yoke) 五大層級",
+      "全面生產維護 (TPM)",
+      "設備綜合效率 (OEE = A × P × Q)"
+    ],
+    "diagram3D": "assets/learning-units/06_精實生產與現場績效管理_3D.png",
+    "explainerImg": "assets/learning-explainers/M11203-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M11203.html"
+  },
+  {
+    "topicCode": "M12101",
+    "unitId": "L121",
+    "title": "智慧製造概論與 ISA-95 架構",
+    "summary": "* 工業 1.0（18 世紀末）：水力與蒸汽機驅動的「機械化生產」。...",
+    "coreConcepts": [
+      "工業 4.0 核心三大要素",
+      "ISA-95 五層金字塔架構",
+      "IT 與 OT 融合",
+      "垂直整合與水平價值鏈",
+      "精實自動化原則"
+    ],
+    "diagram3D": "assets/learning-units/07_智慧製造概論與ISA95架構_3D.png",
+    "explainerImg": "assets/learning-explainers/M12101-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12101.html"
+  },
+  {
+    "topicCode": "M12102",
+    "unitId": "L122",
+    "title": "工業物聯網 IIoT 與通訊協定",
+    "summary": "在工業物聯網（Industrial Internet of Things, IIoT）架構中，感知層負責將實體機台的物理量轉換為電氣訊號。...",
+    "coreConcepts": [
+      "工業感測元件 (光電/接近/振動)",
+      "設備介面資料擷取與品質",
+      "Modbus RTU / TCP 協定",
+      "OPC UA 跨平台資訊模型",
+      "MQTT 發布/訂閱架構",
+      "邊緣運算 (Edge Computing) vs 雲端"
+    ],
+    "diagram3D": "assets/learning-units/08_工業物聯網IIoT與通訊協定_3D.png",
+    "explainerImg": "assets/learning-explainers/M12102-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12102.html"
+  },
+  {
+    "topicCode": "M12103",
+    "unitId": "L123",
+    "title": "人工智慧 AI 與機器視覺檢測",
+    "summary": "人工智慧（Artificial Intelligence, AI）在智慧製造中主要用於缺陷檢測、製程參數最佳化與設備故障預測。...",
+    "coreConcepts": [
+      "機器學習分類與決策樹多特徵判讀",
+      "自動光學檢測 (AOI) 運作流程",
+      "相機介面距離與線材條件",
+      "AOI 精確率與召回率",
+      "資料洩漏、過度擬合與驗證切分",
+      "過殺率 (Overkill) 與漏判率 (Underkill)"
+    ],
+    "diagram3D": "assets/learning-units/09_人工智慧AI與機器視覺檢測_3D.png",
+    "explainerImg": "assets/learning-explainers/M12103-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12103.html"
+  },
+  {
+    "topicCode": "M12201",
+    "unitId": "L124",
+    "title": "網宇實體系統 CPS 與數位雙生",
+    "summary": "網宇實體系統（Cyber-Physical Systems, CPS）將計算、網路和物理環境融合，利用量測、模型、分析及受控回饋支援現場運作。傳統自動化本來也可包含 PID 等閉迴路控制；CPS 的重點是進一步整合跨設備資料與運算決策，讓實體物理世界（Physical World）與虛擬運算世界（Cyber World...",
+    "coreConcepts": [
+      "虛實整合系統 (CPS) 5C 架構",
+      "數位雙生 (Digital Twin) 三維模型",
+      "虛實同步與閉迴路回饋控制 (Closed-loop)",
+      "虛擬調試 (Virtual Commissioning)"
+    ],
+    "diagram3D": "assets/learning-units/10_網宇實體系統CPS與數位雙生_3D.png",
+    "explainerImg": "assets/learning-explainers/M12201-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12201.html"
+  },
+  {
+    "topicCode": "M12202",
+    "unitId": "L125",
+    "title": "智動化生產設備與傳送系統",
+    "summary": "可程式化邏輯控制器（Programmable Logic Controller, PLC）是現場自動化控制的核心，專為工業環境設計；實際耐受條件仍需核對設備等級與安裝規範。...",
+    "coreConcepts": [
+      "可程式邏輯控制器 (PLC) 循環掃描",
+      "工業機器人自由度與協作機器人 (Cobot)",
+      "預防保養與設備故障排除",
+      "設備參數與配方版次管理",
+      "無人搬運車 (AGV 磁導引/二維碼)",
+      "自主移動機器人 (AMR SLAM 導航)",
+      "自動倉儲系統 (AS/RS)"
+    ],
+    "diagram3D": "assets/learning-units/11_智動化生產設備與傳送系統_3D.png",
+    "explainerImg": "assets/learning-explainers/M12202-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12202.html"
+  },
+  {
+    "topicCode": "M12203",
+    "unitId": "L126",
+    "title": "智慧工廠生產模式與 MES 整合",
+    "summary": "製造執行系統（Manufacturing Execution System, MES）位於企業控制架構 ISA-95 的 Level 3，專注於從「工單下達」到「成品產出」之間現場活動的最佳化管理。...",
+    "coreConcepts": [
+      "MES 製造執行系統核心模組",
+      "ERP 與 MES 雙向資料串接",
+      "工單生命週期與即時生產排程",
+      "Run-to-Run 批次回饋控制",
+      "條碼/RFID 生產履歷追溯",
+      "現場電子看板與即時報工"
+    ],
+    "diagram3D": "assets/learning-units/12_智慧工廠生產模式與MES系統整合_3D.png",
+    "explainerImg": "assets/learning-explainers/M12203-explainer.jpg",
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M12203.html"
+  },
+  {
+    "topicCode": "M13101",
+    "unitId": null,
+    "title": "生產管理與流程實作",
+    "summary": "本單元對應官方評鑑主題 L131，涵蓋 L13101–L13103。官方樣題第 5–6、9 頁的直接要求是現場測時、填寫 VSM 與計算／說明作答；本章先釐清觀測事件與時間口徑，再用原創情境整合工單、產能及在製品判讀。...",
+    "coreConcepts": [
+      "官方樣題測時規則與 VSM 配分判讀",
+      "操作歷時、流程歷時與出件間隔",
+      "TT、瓶頸 CT 與需求產能缺口驗算",
+      "生產批、品質放行與工單結案的層級",
+      "Move In/Out 事件定義與淨加工時間",
+      "WIP 批次追溯與異常隔離"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M13101.html"
+  },
+  {
+    "topicCode": "M13201",
+    "unitId": null,
+    "title": "智慧製造現場管理實作",
+    "summary": "本單元對應官方評鑑主題 L132，涵蓋 L13201–L13204。官方樣題第 8、10 頁明列十題序時連續操作及逐題畫面證據，並以工單結案為範例。本章據此練習「前置狀態 → 操作 → 重新查詢 → 證據保存」，再延伸到批次、設備、資料採集及現場分析。...",
+    "coreConcepts": [
+      "MES 十題序時任務的前置狀態與交易核對",
+      "指定工單、Close 重新查詢與成功訊息辨析",
+      "整桌面截圖、題號、檔名與 Word 保存",
+      "模次、保養週期與模具終身壽命區分",
+      "事件時間、資料缺漏與重複報工排查",
+      "柏拉圖分母、4M1E 原因驗證與恢復條件"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M13201.html"
+  },
+  {
+    "topicCode": "M21101",
+    "unitId": null,
+    "title": "生產管理實務與精實管理",
+    "summary": "對應官方評鑑主題 L211，本單元聚焦 L21101（生產管理實務）與 L21102（精實管理基本概念），強調「計畫閉迴路」與「以數據消除浪費」的整合應用。...",
+    "coreConcepts": [
+      "S&OP → MPS → CRP → 工單閉迴路",
+      "ATP 可承諾量計算",
+      "生產績效落差分析四類",
+      "VSM 增值比率與改善步驟",
+      "精實工具矩陣（問題現象 vs 工具）",
+      "拉動 vs 推動生產比較"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M21101.html"
+  },
+  {
+    "topicCode": "M21102",
+    "unitId": null,
+    "title": "智慧工廠技術綜觀、現場管理與 MES 實務",
+    "summary": "對應官方評鑑主題 L211，本單元涵蓋 L21103（智慧工廠技術綜觀）、L21104（智慧化現場管理基本原理）、L21105（智慧製造執行系統生產實務），從技術框架到現場應用的完整鏈。...",
+    "coreConcepts": [
+      "工業 4.0 九大技術支柱",
+      "智慧工廠 L1–L5 成熟度模型",
+      "Andon 閉迴路時序與四層目視化",
+      "E-SOP 版本控制與防錯連鎖",
+      "FCS 有限產能排程 vs ICS",
+      "R2R 批次補償控制 EWMA"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M21102.html"
+  },
+  {
+    "topicCode": "M21201",
+    "unitId": null,
+    "title": "MES 全廠管控與生產排程優化",
+    "summary": "對應官方評鑑主題 L212，本單元涵蓋 L21201（MES 全廠資訊流）、L21202（MES 與設備整合）、L21203（生產大數據分析）、L21204（生產排程優化），練習重點是資訊一致性與排程目標的選擇。...",
+    "coreConcepts": [
+      "資訊流與物流帳實不符防止",
+      "MES 設備整合三層次（資料/配方/事件）",
+      "工廠大數據管線與時序分析",
+      "TOC 約束理論五步驟與 DBR 排程",
+      "排程規則比較：FIFO/EDD/SPT/CR 計算"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M21201.html"
+  },
+  {
+    "topicCode": "M21202",
+    "unitId": null,
+    "title": "線平衡、品質要因分析與即時資訊",
+    "summary": "對應官方評鑑主題 L212，本單元涵蓋 L21205（生產線平衡）、L21206（生產品質要因分析）、L21207（即時生產資訊收集與應用），將計算結果連結到產能及品質改善。...",
+    "coreConcepts": [
+      "線平衡率 LBR 計算與改善策略",
+      "Takt Time vs Cycle Time",
+      "假設檢定應用（t-test/ANOVA/DOE）",
+      "Cpk 深化：Cp vs Cpk 偏移判分",
+      "OEE 六大損失完整計算例題",
+      "KPI 儀表板設計五原則"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M21202.html"
+  },
+  {
+    "topicCode": "M22101",
+    "unitId": null,
+    "title": "物聯網與 CPS 基本原理",
+    "summary": "對應官方評鑑主題 L221，本單元涵蓋 L22101（物聯網基本原理）與 L22102（網宇實體整合 CPS 基本原理），是中級考科二的理論基礎層。...",
+    "coreConcepts": [
+      "IIoT 三層架構（感知/網路/應用）",
+      "IIoT vs 消費級 IoT 五大差異",
+      "邊緣運算四大功能",
+      "工業無線協定比較（Wi-Fi 6/5G/LoRaWAN）",
+      "CPS 5C 架構與數位雙生三類型",
+      "CPS 閉迴路回饋設計"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M22101.html"
+  },
+  {
+    "topicCode": "M22102",
+    "unitId": null,
+    "title": "智慧設備管理維護與製程大數據",
+    "summary": "對應官方評鑑主題 L221，本單元涵蓋 L22103（自動設備管理與維護）、L22104（智慧製造設備管理與維護）、L22105（生產工程大數據即時收集分析），是設備管理策略與數據應用的核心。...",
+    "coreConcepts": [
+      "BM/PM/CBM/PdM 策略選擇矩陣",
+      "MTBF/MTTR 計算例題與可用度公式",
+      "CMMS 與 MES 整合閉迴路",
+      "設備健康指數 EHI 加權計算",
+      "製程大數據四大應用場景",
+      "數據品質四大問題與解決"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M22102.html"
+  },
+  {
+    "topicCode": "M22201",
+    "unitId": null,
+    "title": "感測器、機器視覺與機器人整合",
+    "summary": "對應官方評鑑主題 L222，本單元涵蓋 L22201（感測器導入工業應用）、L22202（機器視覺導入工業應用）、L22203（機器人整合製造），為智慧工廠感知與執行層的核心。...",
+    "coreConcepts": [
+      "感測器選型四要素與 4~20mA 優勢",
+      "機器視覺完整架構與打光對照表",
+      "AI 視覺 vs 傳統規則式差異",
+      "漏檢（False Negative）風險判讀",
+      "機器人-PLC 握手訊號設計要點",
+      "Cobot 安全條件（ISO 10218）"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M22201.html"
+  },
+  {
+    "topicCode": "M22202",
+    "unitId": null,
+    "title": "通訊建構、智慧控制與介面管理",
+    "summary": "對應官方評鑑主題 L222，本單元涵蓋 L22204（設備電腦化管控通訊建構）、L22205（智慧型控制應用）、L22206（管控介面管理與維護），聚焦工廠 OT 網路架構與控制系統整合。...",
+    "coreConcepts": [
+      "Purdue 模型 OT/IT 網路分區架構",
+      "工業乙太網路 Modbus/EtherCAT/PROFINET/OPC UA",
+      "PID 三參數作用與副作用",
+      "MPC/Fuzzy/RL/R2R 進階控制方法",
+      "HMI ISA-101 設計五原則",
+      "警報管理最佳實踐"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M22202.html"
+  },
+  {
+    "topicCode": "M22301",
+    "unitId": null,
+    "title": "智慧設備操作與效率指標辨識",
+    "summary": "對應官方評鑑主題 L223，本單元涵蓋 L22301（智慧製造設備操作知識）與 L22302（智慧設備特性及差異辨識），聚焦智慧設備的標準化操作與效率指標分析診斷。...",
+    "coreConcepts": [
+      "標準化操作六階段（啟機/首件/監控/異常/換線/保養）",
+      "配方版本管理操作要點",
+      "設備安全四大項目",
+      "OEE 三元素公式與診斷決策流程",
+      "智慧 vs 傳統設備效率差異比較",
+      "六大損失 vs OEE 三元素映射"
+    ],
+    "diagram3D": null,
+    "explainerImg": null,
+    "interactiveUrl": "assets/interactive-diagrams/unit-summaries/M22301.html"
+  }
+]

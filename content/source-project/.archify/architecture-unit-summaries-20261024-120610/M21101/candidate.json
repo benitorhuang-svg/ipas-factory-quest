@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M21101｜生產管理實務與精實管理：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M21101/M21101-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "plan",
+      "label": "訂單與生產計畫",
+      "sublabel": "S&OP／MPS／供需平衡",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "物料與產能檢核",
+      "sublabel": "MRP／CRP／可行性",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "execution",
+      "label": "工單執行與實績",
+      "sublabel": "工時／耗用／不良／交期",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "lean",
+      "label": "價值流與精實改善",
+      "sublabel": "VSM／浪費／工具選擇",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "promise",
+      "label": "ATP 與 PAB",
+      "sublabel": "供給時間／未承諾量",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "master",
+      "label": "BOM／途程／日曆",
+      "sublabel": "同版本／已放行物料",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "pull",
+      "label": "看板與標準作業",
+      "sublabel": "需求消耗／節拍／WIP",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "promise-to-plan",
+      "from": "promise",
+      "to": "plan",
+      "label": "接單前核對"
+    },
+    {
+      "id": "plan-to-resources",
+      "from": "plan",
+      "to": "resources",
+      "label": "品項／數量／日期"
+    },
+    {
+      "id": "master-to-resources",
+      "from": "master",
+      "to": "resources",
+      "label": "一致的規劃依據"
+    },
+    {
+      "id": "resources-to-execution",
+      "from": "resources",
+      "to": "execution",
+      "label": "可行才釋出"
+    },
+    {
+      "id": "execution-to-lean",
+      "from": "execution",
+      "to": "lean",
+      "label": "辨認績效落差"
+    },
+    {
+      "id": "lean-to-pull",
+      "from": "lean",
+      "to": "pull",
+      "label": "依損失選工具"
+    },
+    {
+      "id": "lean-to-plan",
+      "from": "lean",
+      "to": "plan",
+      "label": "以實績修正計畫",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "via": [
+        [
+          1260,
+          530
+        ],
+        [
+          150,
+          530
+        ]
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "MPS 訂產品完工量與日期；MRP 展開子件淨需求與投料日期；CRP 檢查工作中心負荷。MPS 調整後須同步重算物料。",
+        "ATP 是指定供給點尚未承諾的量；PAB 是逐期供給減需求的餘額。接單須同時檢查時間、物料、品質與產能。",
+        "VSM 先量測加工與等待，VAR＝增值時間／總前置時間；看板量依耗用、補充時間、容器量及明示安全餘裕向上取整。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "後週的 ATP 不能承諾前週交貨，同一份庫存與產能也不能重複承諾。",
+        "拉動仍需可靠供料與必要緩衝；多餘產能不等於已過量生產。工具應對應實際損失。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元五／L21101–L21102，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

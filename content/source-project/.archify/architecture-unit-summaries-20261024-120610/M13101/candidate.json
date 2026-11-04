@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M13101 單元總結｜流程實作：從觀測事件到 VSM 與可交付產能",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M13101/M13101-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "event",
+      "label": "定義觀測事件",
+      "sublabel": "產品、站別、起訖與單位",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "observe",
+      "label": "多次現場測時",
+      "sublabel": "保留原值與異常原因",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "vsm",
+      "label": "VSM 時間口徑",
+      "sublabel": "操作、等待、移送與加值",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "ct",
+      "label": "CT、TT 與瓶頸",
+      "sublabel": "出件間隔、需求節拍分開",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1030,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "identity",
+      "label": "WIP 識別與履歷",
+      "sublabel": "工單、批號、序號與載具",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "mes-event",
+      "label": "Move In／Out 事件",
+      "sublabel": "進出站歷時不等於淨加工",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        370,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "improve",
+      "label": "比較改善方案",
+      "sublabel": "消除、移轉與先行關係",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "capacity",
+      "label": "含損失的良品能力",
+      "sublabel": "停機、重工、良率與負荷",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1030,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "verify",
+      "label": "試跑與交付驗證",
+      "sublabel": "CT 分布、品質、WIP 與準交",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        700,
+        560
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "event",
+      "to": "observe",
+      "label": "統一起訖"
+    },
+    {
+      "id": "relation-2",
+      "from": "observe",
+      "to": "vsm",
+      "label": "分離時間內容"
+    },
+    {
+      "id": "relation-3",
+      "from": "vsm",
+      "to": "ct",
+      "label": "比較需求限制"
+    },
+    {
+      "id": "relation-4",
+      "from": "identity",
+      "to": "mes-event",
+      "label": "關聯正確對象"
+    },
+    {
+      "id": "relation-5",
+      "from": "mes-event",
+      "to": "vsm",
+      "label": "辨識事件歷時"
+    },
+    {
+      "id": "relation-6",
+      "from": "ct",
+      "to": "capacity",
+      "label": "納入實際損失"
+    },
+    {
+      "id": "relation-7",
+      "from": "capacity",
+      "to": "improve",
+      "label": "針對限制改善"
+    },
+    {
+      "id": "relation-8",
+      "from": "improve",
+      "to": "verify",
+      "label": "確認品質產能"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "操作歷時、單件流程歷時、連續出件間隔與加值時間各有邊界。TT＝淨可用時間÷需求；可重疊串聯線的理想 CT 由限制站決定。",
+        "工單、生產批、品質放行與結案是不同層級。依同一時間與產品邊界核對投入＝良品＋報廢＋仍在製。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "CT 小於 TT 僅是初步檢查；停機與品質損失仍可能導致欠交。同一損失不可在工時與效率中重複折減。",
+        "樣題 ±10 秒是該樣題評分條件。平衡率較高不保證能力較大；原始量測、流程圖、計算與建議須使用相同口徑。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "能否用限制站、需求缺口、可實作改善與試跑條件，說明一個真正可交付的產能方案？",
+        "教材來源：docs/科目三_術科實作準備/01_生產管理與流程實作.md"
+      ]
+    }
+  ]
+}

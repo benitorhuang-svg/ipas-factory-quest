@@ -1,0 +1,428 @@
+{
+  "base": "http://127.0.0.1:57841",
+  "date": "2026-10-25T05:45:36.209Z",
+  "passed": 53,
+  "failures": [
+    {
+      "name": "offline-unvisited-units",
+      "message": "page.waitForFunction: Timeout 30000ms exceeded.\n    at C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\optimization-unit-reader-20261025\\verify.mjs:231:16\n    at async attempt (C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\optimization-unit-reader-20261025\\verify.mjs:37:24)\n    at async file:///C:/Users/benit/Desktop/iPAS%E6%99%BA%E6%85%A7%E7%94%9F%E7%94%A2%E5%B7%A5%E7%A8%8B%E5%B8%AB/.archify/optimization-unit-reader-20261025/verify.mjs:225:47"
+    }
+  ],
+  "errors": [],
+  "results": [
+    {
+      "name": "390/M11101",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M11102",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "390/M11103",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M11201",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "390/M11202",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M11203",
+      "ok": true,
+      "font": 14.8,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "390/M12101",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "390/M12102",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M12103",
+      "ok": true,
+      "font": 14.23,
+      "scale": 2.75,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "390/M12201",
+      "ok": true,
+      "font": 14.24,
+      "scale": 2.75,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "390/M12202",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "390/M12203",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 9,
+      "relations": 12
+    },
+    {
+      "name": "390/M13101",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 9,
+      "relations": 8
+    },
+    {
+      "name": "390/M13201",
+      "ok": true,
+      "font": 15.47,
+      "scale": 2.5,
+      "nodes": 9,
+      "relations": 9
+    },
+    {
+      "name": "390/M21101",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "390/M21102",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "390/M21201",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 7,
+      "relations": 8
+    },
+    {
+      "name": "390/M21202",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 7,
+      "relations": 6
+    },
+    {
+      "name": "390/M22101",
+      "ok": true,
+      "font": 14.42,
+      "scale": 2.75,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M22102",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "390/M22201",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "390/M22202",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "390/M22301",
+      "ok": true,
+      "font": 14.04,
+      "scale": 2.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M11101",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M11102",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "1440/M11103",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M11201",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "1440/M11202",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M11203",
+      "ok": true,
+      "font": 14.68,
+      "scale": 1.5,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "1440/M12101",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "1440/M12102",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M12103",
+      "ok": true,
+      "font": 15.4,
+      "scale": 2.25,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "1440/M12201",
+      "ok": true,
+      "font": 15.4,
+      "scale": 2.25,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "1440/M12202",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 8,
+      "relations": 9
+    },
+    {
+      "name": "1440/M12203",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 9,
+      "relations": 12
+    },
+    {
+      "name": "1440/M13101",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 9,
+      "relations": 8
+    },
+    {
+      "name": "1440/M13201",
+      "ok": true,
+      "font": 14.32,
+      "scale": 1.75,
+      "nodes": 9,
+      "relations": 9
+    },
+    {
+      "name": "1440/M21101",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "1440/M21102",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 7,
+      "relations": 7
+    },
+    {
+      "name": "1440/M21201",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 7,
+      "relations": 8
+    },
+    {
+      "name": "1440/M21202",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 7,
+      "relations": 6
+    },
+    {
+      "name": "1440/M22101",
+      "ok": true,
+      "font": 15.6,
+      "scale": 2.25,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M22102",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "1440/M22201",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "1440/M22202",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 7
+    },
+    {
+      "name": "1440/M22301",
+      "ok": true,
+      "font": 14.85,
+      "scale": 2,
+      "nodes": 8,
+      "relations": 8
+    },
+    {
+      "name": "controls-preferences-fullscreen-theme",
+      "ok": true,
+      "overview": 1,
+      "readable": 1.5,
+      "zoomed": 1.75
+    },
+    {
+      "name": "recovery-http",
+      "ok": true,
+      "requests": 2
+    },
+    {
+      "name": "recovery-bridge",
+      "ok": true,
+      "requests": 2
+    },
+    {
+      "name": "recovery-timeout",
+      "ok": true,
+      "requests": 2
+    },
+    {
+      "name": "legacy-isa95",
+      "ok": true
+    },
+    {
+      "name": "rapid-navigation",
+      "ok": true
+    },
+    {
+      "name": "touch-pan",
+      "ok": true,
+      "before": {
+        "scale": 2.5,
+        "x": -58.90625,
+        "y": 0,
+        "mode": "manual"
+      },
+      "after": {
+        "scale": 2.5,
+        "x": -118.9062,
+        "y": -40,
+        "mode": "manual"
+      }
+    }
+  ]
+}

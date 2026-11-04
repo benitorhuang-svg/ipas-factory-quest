@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "scope": "local workspace, no remote deployment",
+  "precache": {
+    "version": "e91d4fad8e5a24df",
+    "assets": 137,
+    "beforeBytes": 8146316,
+    "afterBytes": 2622189
+  },
+  "startupData": {
+    "beforeBytes": 989850,
+    "afterBytes": 323345
+  },
+  "previews": {
+    "count": 43,
+    "sourceBytes": 62720337,
+    "previewBytes": 1803016,
+    "sample": {
+      "originalBytes": 1781329,
+      "previewBytes": 65484
+    }
+  },
+  "browser": {
+    "startTime": "2026-11-04T12:22:09.230Z",
+    "duration": 45696.082,
+    "expected": 15,
+    "skipped": "3 native Service Worker cases on WebKit; each verified on Chromium",
+    "unexpected": 0,
+    "flaky": 0,
+    "projects": [
+      "chromium",
+      "webkit"
+    ]
+  },
+  "validation": {
+    "cleanInstall": true,
+    "lintWarnings": 0,
+    "nodeChecks": true,
+    "allDependencyVulnerabilities": 0,
+    "remoteWorkflowExecuted": false
+  },
+  "content": {
+    "sourceRecords": 476,
+    "uniqueQuestions": 416,
+    "pendingHumanReviews": 416,
+    "preservedSourceHashes": 891
+  },
+  "preservedFiles": {
+    "dist/styles.css": "dd1bdc87f5f5609e10e34cab00bf02a18b86080f65fc7d0a76033646c70ca4e8",
+    "dist/guide.css": "44b020b274abe94fd8c2df978c05cd6b7f4cddec072ac931f446e137732eca36",
+    "dist/reading-position.js": "fdb24af591dce7b9b6c14dded975faa5197c645cdd2355e0f3412cef21b6f296"
+  }
+}

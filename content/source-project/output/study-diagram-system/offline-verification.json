@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "origin": "http://127.0.0.1:4189",
+  "method": "Production preview stopped; HTTP probe confirmed origin unreachable; browser reloads use the installed PWA cache. External network was not disabled.",
+  "cases": [
+    {
+      "actors": [
+        {
+          "fill": "rgb(241, 245, 249)",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "fill": "rgb(241, 245, 249)",
+          "text": "MQTT Broker"
+        },
+        {
+          "fill": "rgb(241, 245, 249)",
+          "text": "SCADA/MES"
+        }
+      ],
+      "errors": 0,
+      "kinds": [
+        "steps",
+        "decision",
+        "groups",
+        "steps",
+        "steps",
+        "sequenceDiagram"
+      ],
+      "title": "智動化生產設備與傳送系統",
+      "topic": "M12202"
+    },
+    {
+      "errors": 0,
+      "kinds": [
+        "stateDiagram-v2",
+        "steps"
+      ],
+      "labels": [
+        {
+          "background": "rgb(30, 41, 59)",
+          "color": "rgb(241, 245, 249)",
+          "text": "工單與本批前置條件已滿足"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "color": "rgb(241, 245, 249)",
+          "text": "本例以 Move In 記錄開工"
+        }
+      ],
+      "title": "生產管理與流程實作",
+      "topic": "M13101"
+    },
+    {
+      "edges": 27,
+      "kinds": [
+        "groups",
+        "planning",
+        "decision",
+        "decision",
+        "decision"
+      ],
+      "nodes": 34,
+      "raw": 0,
+      "routeErrors": 0,
+      "title": "生產管理基本概念",
+      "topic": "M11101"
+    }
+  ]
+}

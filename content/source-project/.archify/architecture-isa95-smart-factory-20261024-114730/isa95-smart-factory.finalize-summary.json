@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\candidate.json",
+    "sha256": "178fec81467fd7ae4b8f51ccb7484ce3f9c7106a7aad97dfce838472a59878b3",
+    "bytes": 5124
+  },
+  "artifact": {
+    "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\isa95-smart-factory.html",
+    "sha256": "e4886e21709d2339c19f0a616ef2e7329744cb34d001e8afa77b9a24eedec5f6",
+    "bytes": 823649
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\isa95-smart-factory.finalize.json",
+    "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\isa95-smart-factory.finalize-summary.json",
+    "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\isa95-smart-factory.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-24T03:48:04.899Z",
+    "source": "network",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4479,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

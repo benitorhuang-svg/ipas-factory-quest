@@ -1,0 +1,76 @@
+import { test, expect } from '@playwright/test';
+import { ready, go, start, state } from './helpers.mjs';
+test.beforeEach(async ({ request, browserName }) => {
+  test.skip(browserName !== 'chromium', 'Playwright native SW lifecycle is verified with Chromium.');
+  await request.post('/__release?v=A');
+  await request.post('/__download-delay?ms=0');
+});
+test('download chapter, reopen offline and report unseen content', async ({ page, context }) => {
+  await ready(page); await go(page, 'progress');
+  await expect(page.locator('#offline-status')).toContainText('尚缺');
+  await page.locator('#offline-download').click();
+  await expect(page.locator('#offline-status')).toContainText('已完整儲存', { timeout: 45000 });
+  await page.evaluate(async () => {
+    const scope = new URL('./', location.href);
+    const cache = await caches.open('factory-quest-content-' + encodeURIComponent(scope.pathname) + '-v1');
+    const url = new URL('assets/L111.png', scope).href;
+    const response = await cache.match(url), bytes = new Uint8Array(await response.arrayBuffer());
+    bytes[0] ^= 1;
+    await cache.put(url, new Response(bytes, { headers: response.headers }));
+  });
+  await go(page, 'home'); await go(page, 'progress');
+  await expect(page.locator('#offline-status')).toContainText('尚缺');
+  await page.locator('#offline-download').click();
+  await expect(page.locator('#offline-status')).toContainText('已完整儲存');
+  await context.setOffline(true); await page.reload();
+  await go(page, 'guide/materials/M11101');
+  await expect(page.locator('.reader-article')).toBeVisible();
+  await expect(page.locator('.study-diagram svg').first()).toBeVisible();
+  await page.locator('.reader-visuals summary').click();
+  await page.locator('.reader-visuals [data-action=open-interactive]').click();
+  await expect(page.locator('dialog iframe')).toBeVisible();
+  const cached = await page.evaluate(async () => {
+    const url = window.FACTORY_QUEST_DATA.studyMaterials.find(m => m.topicCode === 'M11101').interactiveUrl;
+    const response = await fetch(url); return { status: response.status, fallback: response.headers.get('X-Factory-Offline') };
+  });
+  expect(cached).toEqual({ status: 200, fallback: null });
+  const unseen = await page.evaluate(async () => { const response = await fetch('assets/not-downloaded.html'); return { status: response.status, text: await response.text() }; });
+  expect(unseen.status).toBe(503); expect(unseen.text).toContain('尚未儲存');
+});
+test('download can be cancelled and resumed after navigating away', async ({ page, request }) => {
+  await ready(page); await go(page, 'progress');
+  await expect(page.locator('#offline-status')).toContainText('尚缺');
+  await request.post('/__download-delay?ms=300');
+  await page.locator('#offline-download').click();
+  await expect(page.locator('#offline-cancel')).toBeVisible();
+  await go(page, 'home'); await go(page, 'progress');
+  await expect(page.locator('#offline-cancel')).toBeVisible();
+  await page.locator('#offline-cancel').click();
+  await expect(page.locator('#offline-status')).toContainText('已取消');
+  await expect(page.locator('#offline-download')).toBeEnabled();
+  await request.post('/__download-delay?ms=0');
+  await page.locator('#offline-download').click();
+  await expect(page.locator('#offline-status')).toContainText('已完整儲存', { timeout: 45000 });
+});
+test('new worker waits for both old tabs; draft survives activation', async ({ page, context, request }) => {
+  await ready(page); await start(page); await page.locator('input[type=radio]').first().check();
+  const draft = (await state(page)).active;
+  const other = await context.newPage(); await other.goto('./');
+  await expect.poll(() => other.evaluate(() => window.__testRelease)).toBe('A');
+  await request.post('/__release?v=B');
+  await page.evaluate(async () => { const registration = await navigator.serviceWorker.getRegistration(); await registration.update(); });
+  await expect.poll(() => page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration()).waiting)).toBe(true);
+  await expect(page.locator('#update-notice')).toBeVisible();
+  expect(await page.evaluate(() => window.__testRelease)).toBe('A');
+  await go(page, 'guide/materials/M11101');
+  await expect(page.locator('.study-diagram svg').first()).toBeVisible();
+  const cachedApp = await other.evaluate(async () => (await (await fetch('app.js')).text()).includes("__testRelease = 'A'"));
+  expect(cachedApp).toBe(true);
+  await page.close();
+  expect(await other.evaluate(async () => !!(await navigator.serviceWorker.getRegistration()).waiting)).toBe(true);
+  await other.close();
+  const fresh = await context.newPage(); await fresh.goto('./');
+  await fresh.waitForFunction(() => window.__testRelease === 'B');
+  expect((await state(fresh)).active).toEqual(draft);
+  await fresh.locator('[data-action=resume]').click(); await expect(fresh.locator('#quiz-form')).toBeVisible();
+});

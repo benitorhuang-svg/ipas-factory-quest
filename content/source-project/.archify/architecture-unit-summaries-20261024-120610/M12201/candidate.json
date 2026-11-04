@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M12201 單元總結｜CPS 與數位雙生：資料成熟、模型可信與受控回饋",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M12201/M12201-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "connection",
+      "label": "Connection 連接",
+      "sublabel": "採集、傳輸與對時",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "conversion",
+      "label": "Conversion 轉換",
+      "sublabel": "清理、特徵與健康指標",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        350,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "cyber",
+      "label": "Cyber 虛實整合",
+      "sublabel": "模型、機群與履歷關聯",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        660,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "cognition",
+      "label": "Cognition 認知",
+      "sublabel": "診斷、風險與建議",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        970,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "config",
+      "label": "Configuration 配置",
+      "sublabel": "核准界限、互鎖與回退",
+      "type": "security",
+      "icon": "none",
+      "pos": [
+        1280,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "credibility",
+      "label": "可信模型與虛擬除錯",
+      "sublabel": "校準／獨立驗證／SiL／HiL",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        500,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "types",
+      "label": "資料互動型態",
+      "sublabel": "模型／影子／雙生",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        900,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "connection",
+      "to": "conversion",
+      "label": "資料轉資訊"
+    },
+    {
+      "id": "relation-2",
+      "from": "conversion",
+      "to": "cyber",
+      "label": "關聯與比較"
+    },
+    {
+      "id": "relation-3",
+      "from": "cyber",
+      "to": "cognition",
+      "label": "形成決策"
+    },
+    {
+      "id": "relation-4",
+      "from": "cognition",
+      "to": "config",
+      "label": "核准範圍內執行"
+    },
+    {
+      "id": "relation-5",
+      "from": "credibility",
+      "to": "cyber",
+      "label": "校驗模型誤差"
+    },
+    {
+      "id": "relation-6",
+      "from": "cyber",
+      "to": "types",
+      "label": "依資料流辨識"
+    },
+    {
+      "id": "relation-7",
+      "from": "config",
+      "to": "connection",
+      "label": "限幅核准後回饋",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "via": [
+        [
+          1385,
+          510
+        ],
+        [
+          145,
+          510
+        ]
+      ],
+      "labelSegment": 1
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "5C 依序為 Connection→Conversion→Cyber→Cognition→Configuration；採集與傳輸不同於把資料轉成健康資訊。",
+        "數位模型無直接自動交換；影子自動單向更新；本教材以自動同步與受控雙向互動區分雙生。3D 外觀本身不足以證明雙生。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "校準用於估參數，驗證須用未參與校準的資料。用途、負載、模型版次與資料新鮮度皆影響可信範圍。",
+        "SiL 用虛擬控制器，HiL 用實體控制器連虛擬產線；兩者仍需現場驗收。自主回饋須有界限、互鎖、失聯處理與回退。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "建議值雖在允許範圍內，但資料已過期時，為何仍不能執行自動回寫？",
+        "教材來源：docs/科目二_智慧製造生產線管理基礎/04_網宇實體系統CPS與數位雙生.md"
+      ]
+    }
+  ]
+}

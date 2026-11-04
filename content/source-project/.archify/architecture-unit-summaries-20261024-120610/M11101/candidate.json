@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "生產管理基本概念：從需求形成可執行承諾",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11101/M11101-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "sop",
+      "type": "backend",
+      "label": "S&OP 供需協調",
+      "sublabel": "產品族、資源與財務",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "mps",
+      "type": "backend",
+      "label": "MPS 主生產排程",
+      "sublabel": "品項、數量與時段",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "atp",
+      "type": "backend",
+      "label": "ATP 可再承諾量",
+      "sublabel": "供給扣除既有訂單",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "codp",
+      "type": "external",
+      "label": "履約策略與解耦點",
+      "sublabel": "MTS／ATO／MTO／ETO",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "rccp",
+      "type": "backend",
+      "label": "關鍵產能檢核",
+      "sublabel": "RCCP：瓶頸可用工時",
+      "pos": [
+        430,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "mrp",
+      "type": "backend",
+      "label": "MRP 物料需求",
+      "sublabel": "BOM、庫存、前置時間",
+      "pos": [
+        820,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "dispatch",
+      "type": "backend",
+      "label": "依目標選派工法",
+      "sublabel": "FCFS／SPT／EDD／CR",
+      "pos": [
+        430,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "pac",
+      "type": "backend",
+      "label": "PAC 現場管制",
+      "sublabel": "已釋放工單與狀態",
+      "pos": [
+        820,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "codp-to-sop",
+      "from": "codp",
+      "to": "sop",
+      "label": "履約條件"
+    },
+    {
+      "id": "sop-to-mps",
+      "from": "sop",
+      "to": "mps",
+      "label": "品項細化"
+    },
+    {
+      "id": "mps-to-atp",
+      "from": "mps",
+      "to": "atp",
+      "label": "供給區間"
+    },
+    {
+      "id": "mps-to-rccp",
+      "from": "mps",
+      "to": "rccp",
+      "label": "需求工時"
+    },
+    {
+      "id": "rccp-to-mps",
+      "from": "rccp",
+      "to": "mps",
+      "label": "超載修正"
+    },
+    {
+      "id": "mps-to-mrp",
+      "from": "mps",
+      "to": "mrp",
+      "label": "時段需求"
+    },
+    {
+      "id": "mrp-to-pac",
+      "from": "mrp",
+      "to": "pac",
+      "label": "核准後釋放"
+    },
+    {
+      "id": "pac-to-dispatch",
+      "from": "pac",
+      "to": "dispatch",
+      "label": "派工目標"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "一條主線",
+      "items": [
+        "S&OP 平衡產品族供需，MPS 指定品項與時點；RCCP 驗證關鍵能力，MRP 展料，PAC 追蹤現場。ATP 須按供給可用日期扣既有承諾。",
+        "CODP 前後分別由預測與訂單驅動；佈置依設備分組、產品族與流動方式判讀，不能只看產業名稱。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與限制",
+      "items": [
+        "SPT 最小化單機平均流程時間、EDD 最小化最大延遲的結論，須符合工作同時可用、不可中斷等題設；CR 越小越緊迫，CR＜1 是風險訊號。",
+        "正 ATP 不保證物料、品質與瓶頸時段可行；PAB 的預測供需平衡與 ATP 的既有訂單承諾是不同問題。凍結區變更需依權責核准。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11101｜生產管理基本概念；來源：科目一／01_生產管理基本概念.md。",
+        "急單數量小於總剩餘工時，為何仍不能承諾？請檢查正確日期、換線連續性、物料可用狀態及既有保留量。"
+      ]
+    }
+  ]
+}

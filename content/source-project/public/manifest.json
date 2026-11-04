@@ -1,0 +1,27 @@
+{
+  "name": "iPAS 智慧生產工程師 — 備考特訓",
+  "short_name": "SmartProd",
+  "description": "iPAS 智慧生產工程師 (初級) 能力鑑定備考指南與重點特訓 PWA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "zh-TW",
+  "dir": "ltr"
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26T14:04:32.293Z",
+  "url": "http://localhost:5173/#/topic/M11101",
+  "reproduced": "20-second readiness timeout while iframe visibility was hidden",
+  "fix": "Keep iframe rendering behind an opaque loading status overlay",
+  "browserCases": [
+    {
+      "code": "M11101",
+      "check": "fresh-reload",
+      "state": "ready",
+      "zoomIn": "200%",
+      "zoomOut": "175%",
+      "readerConcepts": 8
+    },
+    {
+      "code": "M11102",
+      "state": "ready"
+    },
+    {
+      "code": "M13201",
+      "state": "ready"
+    },
+    {
+      "code": "M22301",
+      "state": "ready"
+    }
+  ],
+  "final": {
+    "code": "M11101",
+    "state": "ready",
+    "mode": "overview",
+    "scale": "100%"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed",
+    "unitSummarySources": "23 passed",
+    "precacheRevisions": "23 diagrams and guides passed"
+  },
+  "offlineRuntimeTested": false,
+  "consoleErrors": []
+}

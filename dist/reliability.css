@@ -1,0 +1,8 @@
+.app-notice { position: sticky; bottom: 0; z-index: 100; padding: 12px 20px; background: #fff5d6; color: #51410c; border-top: 1px solid #dfcb83; font-size: 15px; line-height: 1.7; }
+.app-notice button { margin-left: 12px; padding: 8px 12px; border: 1px solid currentColor; border-radius: 8px; color: inherit; background: transparent; font: inherit; cursor: pointer; }
+.offline-panel select { display: block; width: 100%; max-width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #acb9ac; border-radius: 8px; background: #fff; color: #174b3e; font: inherit; }
+.offline-panel p { overflow-wrap: anywhere; line-height: 1.8; }
+.offline-panel { margin-bottom: 16px; }
+.offline-panel label { display: block; font-weight: 600; }
+.offline-panel button { min-height: 44px; }
+.atlas-unit-previews img, .atlas-overview-image img, .unit-image img { max-width: 100%; }

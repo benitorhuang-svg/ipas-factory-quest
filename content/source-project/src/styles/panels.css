@@ -1,0 +1,5 @@
+@import './panels/dashboard.css';
+@import './panels/subject-map.css';
+@import './panels/navigation.css';
+@import './panels/settings.css';
+@import './panels/sync-wizard.css';

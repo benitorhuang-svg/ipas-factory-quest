@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-26T15:03:53.419Z",
+  "desktop": {
+    "diagramHeight": 551.6223754882812,
+    "edges": [
+      {
+        "bidirectional": false,
+        "from": "BP",
+        "to": "SOP"
+      },
+      {
+        "bidirectional": false,
+        "from": "SOP",
+        "to": "MPS"
+      },
+      {
+        "bidirectional": true,
+        "from": "MPS",
+        "to": "RCCP"
+      },
+      {
+        "bidirectional": false,
+        "from": "MPS",
+        "to": "MRP"
+      },
+      {
+        "bidirectional": true,
+        "from": "MRP",
+        "to": "CRP"
+      },
+      {
+        "bidirectional": false,
+        "from": "MRP",
+        "to": "PAC"
+      }
+    ],
+    "labels": [
+      {
+        "english": "Business Plan",
+        "height": 19.50681495666504,
+        "id": "BP",
+        "lineHeight": "19.5px",
+        "name": "企業營運計畫",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Sales and Operations Planning",
+        "height": 19.50681495666504,
+        "id": "SOP",
+        "lineHeight": "19.5px",
+        "name": "銷售與營運規劃",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Master Production Schedule",
+        "height": 19.50681495666504,
+        "id": "MPS",
+        "lineHeight": "19.5px",
+        "name": "主生產排程",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Rough-Cut Capacity Planning",
+        "height": 19.50681495666504,
+        "id": "RCCP",
+        "lineHeight": "19.5px",
+        "name": "粗略產能規劃",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Material Requirements Planning",
+        "height": 19.50681495666504,
+        "id": "MRP",
+        "lineHeight": "19.5px",
+        "name": "物料需求規劃",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Capacity Requirements Planning",
+        "height": 19.50681495666504,
+        "id": "CRP",
+        "lineHeight": "19.5px",
+        "name": "產能需求規劃",
+        "overflow": false,
+        "englishLines": 1
+      },
+      {
+        "english": "Production Activity Control",
+        "height": 19.50681495666504,
+        "id": "PAC",
+        "lineHeight": "19.5px",
+        "name": "現場生產活動管制",
+        "overflow": false,
+        "englishLines": 1
+      }
+    ],
+    "width": 1440
+  },
+  "narrow": {
+    "connectionsInside": true,
+    "labels": [
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "BP",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "SOP",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "MPS",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "RCCP",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "MRP",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "CRP",
+        "overflow": false
+      },
+      {
+        "englishHeight": 19.50681495666504,
+        "englishLineHeight": "19.5px",
+        "id": "PAC",
+        "overflow": false
+      }
+    ],
+    "pageWidth": 390,
+    "width": 390
+  },
+  "dark": {
+    "dark": true,
+    "nodeBackground": "rgb(30, 41, 59)",
+    "nodeText": "rgb(241, 245, 249)"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed",
+    "unitSummaries": "23 assets passed",
+    "precache": "passed"
+  },
+  "sourceMarkdownChanged": false,
+  "sharedMermaidRendererChanged": false,
+  "viewportTesting": "Actual 1197px app plus real app embedded at 1440px and 390px; browser viewport API failed and was replaced with fixed-size preview frames.",
+  "offlineRuntimeTested": false,
+  "sourceComparison": {
+    "nodes": 7,
+    "connections": 6,
+    "allLabelsPreserved": true,
+    "allRelationshipsPreserved": true
+  }
+}

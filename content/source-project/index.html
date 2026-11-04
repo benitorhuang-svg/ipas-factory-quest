@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <script>
+    (function() {
+      const savedSize = localStorage.getItem('smartprod_font_size');
+      if (savedSize) {
+        document.documentElement.style.setProperty('--app-font-size', savedSize + 'px');
+      }
+      const savedTheme = localStorage.getItem('smartprod_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        if (isDark) {
+          document.body.classList.add('dark');
+        } else {
+          document.body.classList.remove('dark');
+        }
+      });
+    })();
+  </script>
+  <meta name="theme-color" content="#0a0e1a" />
+  <meta name="description" content="iPAS 智慧生產工程師 (初級) 能力鑑定備考指南 — 離線閱讀、重點特訓、公式速查 PWA" />
+  
+  <!-- iOS PWA Enhancements -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SmartProd" />
+  <link rel="apple-touch-icon" href="./favicon.svg" />
+
+  <title>iPAS 智慧生產工程師 (初級) 備考特訓</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/styles/index.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

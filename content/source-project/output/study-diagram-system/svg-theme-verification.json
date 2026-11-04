@@ -1,0 +1,1322 @@
+{
+  "dark": [
+    {
+      "expected": "rgb(241, 245, 249)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "觸發警報通知"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "觸發警報通知"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "並寫入歷史資料庫"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "並寫入歷史資料庫"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "SUBSCRIBE factory/line1/"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "PUBLISH factory/line1/temp ="
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "83.2°C"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "推送 temp=83.2°C"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "PUBLISH factory/line1/alarm = E01"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "推送 alarm=E01"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(241, 245, 249)",
+      "kind": "stateDiagram-v2",
+      "labels": [
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "工單與本批前置條件已滿足"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "工單與本批前置條件已滿足"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "本例以 Move In 記錄開工"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "本例以 Move In 記錄開工"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "本例以 Move Out 記錄加工完成"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "本例以 Move Out 記錄加工完成"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "檢驗通過並核准"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "檢驗通過並核准"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "需評估的品質異常"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "需評估的品質異常"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "核准放行"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "核准放行"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "核准重工途程"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "核准重工途程"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "核准報廢"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "核准報廢"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "重工完成後再檢驗"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "重工完成後再檢驗"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "依途程轉下站或完成本批"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "依途程轉下站或完成本批"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "保留處置與數量紀錄"
+        },
+        {
+          "background": "rgb(30, 41, 59)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "保留處置與數量紀錄"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "待進站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "待進站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "加工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "加工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "待檢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "待檢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "可放行"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "可放行"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "品質待判"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "品質待判"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "重工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "重工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "SPAN",
+          "text": "已報廢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "P",
+          "text": "已報廢"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(241, 245, 249)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "累積 Andon 事件 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "累積 Andon 事件 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "統計分析 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "統計分析 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "觸發系統性改善"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "觸發系統性改善"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "發現異常，拉動安燈/按鈕"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "傳送警報事件（工站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "ID、異常類型、時間戳）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "推送通知（App / Email / 廣播）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "確認收到（依廠內回應目標）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "到場支援，排除異常"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "記錄根因與矯正措施"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "問題解決，燈號復歸"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(241, 245, 249)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "每個動作需「請求＋確認」雙向握手"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "每個動作需「請求＋確認」雙向握手"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "設定逾時計時器避免無限等待"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "tspan",
+          "text": "設定逾時計時器避免無限等待"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "DI 訊號：工件到位"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "執行取料程式"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "DO 訊號：取料完成"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "確認夾具夾緊 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(241, 245, 249)",
+          "tag": "text",
+          "text": "啟動下一工序"
+        }
+      ],
+      "unmatched": []
+    }
+  ],
+  "light": [
+    {
+      "expected": "rgb(15, 23, 42)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "設備(PLC/感測器)"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "MQTT Broker"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "SCADA/MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "觸發警報通知"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "觸發警報通知"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "並寫入歷史資料庫"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "並寫入歷史資料庫"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "SUBSCRIBE factory/line1/"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "PUBLISH factory/line1/temp ="
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "83.2°C"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "推送 temp=83.2°C"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "PUBLISH factory/line1/alarm = E01"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "推送 alarm=E01"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(15, 23, 42)",
+      "kind": "stateDiagram-v2",
+      "labels": [
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "工單與本批前置條件已滿足"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "工單與本批前置條件已滿足"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "本例以 Move In 記錄開工"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "本例以 Move In 記錄開工"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "本例以 Move Out 記錄加工完成"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "本例以 Move Out 記錄加工完成"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "檢驗通過並核准"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "檢驗通過並核准"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "需評估的品質異常"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "需評估的品質異常"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "核准放行"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "核准放行"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "核准重工途程"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "核准重工途程"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "核准報廢"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "核准報廢"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "重工完成後再檢驗"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "重工完成後再檢驗"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "依途程轉下站或完成本批"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "依途程轉下站或完成本批"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "保留處置與數量紀錄"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "保留處置與數量紀錄"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "待進站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "待進站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "加工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "加工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "待檢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "待檢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "可放行"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "可放行"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "品質待判"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "品質待判"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "重工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "重工中"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "SPAN",
+          "text": "已報廢"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "P",
+          "text": "已報廢"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(15, 23, 42)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "工程師/主管"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "MES"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "安燈系統"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "操作員"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "累積 Andon 事件 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "累積 Andon 事件 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "統計分析 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "統計分析 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "觸發系統性改善"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "觸發系統性改善"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "發現異常，拉動安燈/按鈕"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "傳送警報事件（工站"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "ID、異常類型、時間戳）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "推送通知（App / Email / 廣播）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "確認收到（依廠內回應目標）"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "到場支援，排除異常"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "記錄根因與矯正措施"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "問題解決，燈號復歸"
+        }
+      ],
+      "unmatched": []
+    },
+    {
+      "expected": "rgb(15, 23, 42)",
+      "kind": "sequenceDiagram",
+      "labels": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "機器人控制器"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "PLC"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "每個動作需「請求＋確認」雙向握手"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "每個動作需「請求＋確認」雙向握手"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "設定逾時計時器避免無限等待"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "tspan",
+          "text": "設定逾時計時器避免無限等待"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "DI 訊號：工件到位"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "執行取料程式"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "DO 訊號：取料完成"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "確認夾具夾緊 →"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "paint": "rgb(15, 23, 42)",
+          "tag": "text",
+          "text": "啟動下一工序"
+        }
+      ],
+      "unmatched": []
+    }
+  ]
+}

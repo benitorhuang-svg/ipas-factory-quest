@@ -1,0 +1,158 @@
+/* ============================================================
+   index.css — Master Stylesheet
+   QuizQuiz PWA Design System
+   Atomic Design: Tokens → Atoms → Molecules → Organisms
+   ============================================================ */
+
+@import './tokens.css';
+@import './atoms.css';
+@import './molecules.css';
+@import './header.css';
+@import './bottom-nav.css';
+@import './panels.css';
+@import './analytics-hierarchy.css';
+@import './quiz.css';
+@import './exam.css';
+@import './topic-list.css';
+@import './reference-books.css';
+@import './layouts.css';
+@import './study.css';
+@import './production-planning.css';
+@import './study-diagrams.css';
+@import './study-toc.css';
+@import './unit-summary.css';
+@import './appx-lab.css';
+@import './dashboard.css';
+@import './game.css';
+
+/* ── Global Reset ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: var(--app-font-size, 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-sans);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: var(--leading-normal);
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  transition: background-color var(--duration-normal) var(--ease-out), color var(--duration-normal) var(--ease-out);
+}
+
+#app {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background: var(--color-bg-primary);
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  transition: background-color var(--duration-normal) var(--ease-out);
+}
+
+/* Ambient background gradient */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle 80% 60% at 50% -20%, rgba(99, 102, 241, 0.05) 0%, transparent 70%),
+    radial-gradient(circle 50% 45% at 90% 80%, rgba(6, 182, 212, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul, ol { list-style: none; }
+img { max-width: 100%; display: block; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-hover);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+/* ── Focus Visible ── */
+:focus-visible {
+  outline: 2px solid var(--color-indigo-400);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: var(--color-text-primary);
+}
+
+/* ── Utility Classes ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.mt-2 { margin-top: var(--space-2); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+.gap-3 { gap: var(--space-3); }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.w-full { width: 100%; }
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.flex-wrap { flex-wrap: wrap; }
+.items-end { align-items: flex-end; }

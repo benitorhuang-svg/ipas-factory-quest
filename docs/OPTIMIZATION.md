@@ -1,0 +1,50 @@
+# 深度優化紀錄
+
+日期：2026-11-04。範圍為本機 Factory Quest 實作與驗證，保留進場時已有的介面與來源整合修改；未推送或發布。
+
+## 已實作
+
+- **進度匯入**：以欄位白名單重建 history、results 與 active，檢查型別、有限數值及合法單元；依答案重算紀錄分數。成績與歷程的匯入文字亦做 HTML 編碼。修復 null／非法歷史紀錄與 HTML 注入。
+- **內容去重**：原始 476 筆保留，新抽題依內容使用 416 題；40 組／60 筆別名可追溯。既有 earnedCorrectIds、歷史答案、進行中任務與 XP 保留；新獎勵以相同內容只計一次。舊別名的複習狀態依最後一次作答決定。
+- **到期複習**：錯題優先，其次到期日；答對題三天後重新進入今日複習，首頁可直接開始。數值題的零容差設定不再誤用預設容差。
+- **分頁與存檔**：Web Locks 維持單一寫入分頁，其他分頁可閱讀、匯出，並在原分頁關閉後取得作答權。數值輸入合併 180 ms 內的寫入，切頁、隱藏、關閉及版本重載前立即保存。
+- **PWA 更新**：安裝後等待舊頁面結束；不在 updatefound 時強制接管。新開頁面遇到等待版本時，由 SW 確認作用域只剩該頁，才允許啟用；頁面與 controller 版本不一致時先保存再重載，涵蓋關閉後立即重開的競態。
+- **章節離線下載**：列出完整資產與容量估計，依 SHA-256 判斷缺漏／損壞，僅補缺漏，支援取消、續傳及切頁後返回。圖片、原圖、互動 HTML 與有使用的圖表引擎均列入章節清單。
+- **載入成本**：教材按章載入，另保留雙擊本機檔案的 script fallback。圖鑑／單元預覽使用 640 px WebP，放大仍使用原圖；Mermaid 改為按需快取，版本由內容雜湊固定。
+- **維護與發布**：教材唯一輸入為 material-index.json + 教材 TS，整合 JSON 為輸出。新增內容指紋／審查台帳與覆蓋表；engine、資料測試納入 lint，維護檔最多 300 行。PR／發布 workflow 先執行 ci、lint、build、test 與瀏覽器驗證，再上傳同次產物。
+
+## 大小量測
+
+均為原始檔 bytes，不代表壓縮後網路傳輸量，也不代表首次開站載入全部圖片。
+
+| 項目 | 優化前 | 優化後 |
+| --- | ---: | ---: |
+| 首頁 data.js | 989,850 | 323,345 |
+| 外殼預快取 | 8,146,316 | 2,622,189 |
+| 43 筆圖片預覽對應 | 原圖合計 62,720,337 | WebP 合計 1,803,016 |
+| L111 預覽實際回應 body | 原圖 1,781,329 | 預覽 65,484 |
+
+完整原圖未刪除，整體發布目錄會包含新預覽、本機 fallback 與章節資料；優化目標是首次下載及預覽成本。
+
+## 驗證
+
+- npm run lint:fix 後 npm run lint：零錯誤、零警告。
+- npm run build：28 份教材、43 個預覽、28 個離線清單與 137 個外殼資產。
+- npm test：資料／計分、891 個保存來源雜湊、60 張 Mermaid、610 個 KaTeX 公式、路由、作答、閱讀定位及模擬 SW；另有匯入防護、600 次去重抽題、舊進度相容、到期複習、內容台帳與 300 行檢查。
+- npm run test:browser：15 項通過、3 項明確略過。Chromium／WebKit 均驗證 390／1440 設定視窗、講義與圖解載入、原生彈窗焦點、匯入、多分頁寫入權、本機 file 入口及到期複習。Windows WebKit 的 CSS viewport 可能受系統縮放影響，視窗設定不等於實體手機。
+- 原生 SW 的離線、損壞資產重取、取消／續傳與 A／B 更新三項以 Chromium 執行；WebKit 的同三項略過。A／B 由測試伺服器在記憶體中建立，未改寫發布檔。
+- npm audit：全部依賴與正式依賴均為 0 vulnerabilities；以 minimatch override 修補 ESLint 的開發依賴鏈，未降級 ESLint。
+- 讀取並檢視 Chromium 手機及 WebKit 桌面閱讀截圖；瀏覽器報告、截圖與失敗時 trace 位於忽略的 test-results/。
+
+## 保留與限制
+
+- 執行前快照保存在暫存目錄 factory-quest-before-20261104-195333；來源檔、原圖、原始題庫與進度鍵保留。
+- 原稽核文件屬於 891 個保存來源之一；已將其原始位元組保存至 content/source-project/versions/58645c2a7173/docs/PROJECT_AUDIT.md，更新 manifest 的保存位置，未變更預期 SHA-256。
+- 題庫台帳的 416 題全部明確標示 pending；來源路徑、內容指紋及教材連結已建立，人工答案複核、難度與細項官方能力點仍未完成。詳見 QUESTION_COVERAGE.md。
+- Web Locks 不可用時採同步存檔前版本比對，無法提供同等的跨分頁互斥保證。
+- 瀏覽器快取可能遭系統清除；離線面板顯示的是當下檔案檢查結果，並非永久保存承諾。
+- 未驗證手機作業系統安裝／背景回收、所有章節互動圖的每項工具操作，或線上 GitHub Actions／GitHub Pages 部署。
+
+生命週期與測試方式參考 [Service Worker lifecycle](https://web.dev/articles/service-worker-lifecycle)、[Playwright Service Workers](https://playwright.dev/docs/service-workers)；圖片轉換採 [Sharp](https://sharp.pixelplumbing.com/api-resize/) 保留原圖建立預覽。
+
+數字與最後一次驗證摘要保存在 [量測紀錄](evidence/optimization-2026-11-04.json)。

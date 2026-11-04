@@ -1,0 +1,93 @@
+.dark .analytics-panel.diagnostic-dashboard {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.16);
+}
+
+.dark .diagnostic-panel,
+.dark .diagnostic-kpi {
+  background: rgba(15, 23, 42, 0.82);
+  border-color: rgba(148, 163, 184, 0.14);
+}
+
+.dark .diagnostic-subject-btn,
+.dark .diagnostic-unit-card,
+.dark .diagnostic-question-row__metric,
+.dark .diagnostic-detail-metrics div,
+.dark .diagnostic-stem,
+.dark .diagnostic-choice-row {
+  background: rgba(30, 41, 59, 0.62);
+  border-color: rgba(148, 163, 184, 0.14);
+}
+
+.dark .diagnostic-subject-btn.active,
+.dark .diagnostic-unit-card.active,
+.dark .diagnostic-question-row.active,
+.dark .diagnostic-unit-card:hover,
+.dark .diagnostic-question-row:hover {
+  background: rgba(49, 46, 129, 0.42);
+  border-color: rgba(129, 140, 248, 0.35);
+}
+
+.dark .diagnostic-unit-card__bar,
+.dark .diagnostic-choice-row__bar {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.dark .diagnostic-choice-row.correct {
+  background: rgba(6, 78, 59, 0.34);
+}
+
+.dark .diagnostic-choice-row.distractor:not(.correct) {
+  background: rgba(120, 53, 15, 0.36);
+}
+
+.dark .diagnostic-interpretation {
+  background: rgba(30, 41, 59, 0.72);
+  border-color: rgba(129, 140, 248, 0.22);
+}
+
+@media (min-width: 760px) {
+  .diagnostic-header {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+  }
+
+  .diagnostic-kpis {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .analytics-panel.diagnostic-dashboard {
+    padding: 16px;
+  }
+
+  .diagnostic-grid {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .diagnostic-question-table {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1180px) {
+  .analytics-panel.diagnostic-dashboard {
+    padding: 18px;
+  }
+
+  .diagnostic-grid {
+    grid-template-columns: 280px minmax(400px, 1fr) 360px;
+  }
+
+  .diagnostic-question-table {
+    max-height: 680px;
+  }
+
+  .diagnostic-detail-panel {
+    position: sticky;
+    top: 12px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}

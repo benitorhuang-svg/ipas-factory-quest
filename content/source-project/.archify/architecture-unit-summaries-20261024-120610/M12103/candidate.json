@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M12103 單元總結｜AI 與視覺：從代表資料到品質與維護決策",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M12103/M12103-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "data",
+      "label": "代表性資料",
+      "sublabel": "產品、批次、設備與標註",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "split",
+      "label": "群組與時間切分",
+      "sublabel": "訓練、驗證與保留測試",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        350,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "train",
+      "label": "模型訓練",
+      "sublabel": "學習特徵與預測關係",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        660,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "test",
+      "label": "獨立評估",
+      "sublabel": "風險、成本與現場可行性",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        970,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "pdm",
+      "label": "PdM 維護決策",
+      "sublabel": "預警、確認、工單與復驗",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1280,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "optics",
+      "label": "光學與採集條件",
+      "sublabel": "光源、鏡頭、相機與觸發",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "learning",
+      "label": "依資料選學習範式",
+      "sublabel": "監督、半監督、非監督、強化",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        660,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "aoi",
+      "label": "AOI 門檻與複判",
+      "sublabel": "漏檢、過檢及複判容量",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        970,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "optics",
+      "to": "data",
+      "label": "穩定成像"
+    },
+    {
+      "id": "relation-2",
+      "from": "data",
+      "to": "split",
+      "label": "避免洩漏"
+    },
+    {
+      "id": "relation-3",
+      "from": "split",
+      "to": "train",
+      "label": "建立訓練集"
+    },
+    {
+      "id": "relation-4",
+      "from": "learning",
+      "to": "train",
+      "label": "依標籤選法"
+    },
+    {
+      "id": "relation-5",
+      "from": "train",
+      "to": "test",
+      "label": "驗證泛化"
+    },
+    {
+      "id": "relation-6",
+      "from": "test",
+      "to": "aoi",
+      "label": "品質條件通過"
+    },
+    {
+      "id": "relation-7",
+      "from": "test",
+      "to": "pdm",
+      "label": "維護條件確認"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "已知類別或連續目標皆可屬監督式學習；少量標註搭配未標註是半監督；強化學習由獎勵引導行動並需控制風險。",
+        "瑕疵為正類時，Recall＝TP／(TP＋FN)，Precision＝TP／(TP＋FP)。門檻以驗證資料選擇，再以未參與選擇的測試資料評估。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "大量良品會掩蓋漏檢；高準確率不代表可放行。需分缺陷檢查漏檢代價、過檢與人工複判容量。",
+        "同工件近似影像不可洩漏到不同集合；成像漂移、錯標與新工況不能只靠調門檻修復。振動／模型告警是線索，仍需現場確認。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "能否先指定正類與分母，再說明某門檻為何同時符合品質風險、成本與複判能力？",
+        "教材來源：docs/科目二_智慧製造生產線管理基礎/03_人工智慧AI與機器視覺檢測.md"
+      ]
+    }
+  ]
+}

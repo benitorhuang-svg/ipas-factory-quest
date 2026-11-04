@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "date": "2026-10-25T05:55:32.476Z",
+  "browserCases": 54,
+  "failures": [],
+  "viewportMetrics": [
+    {
+      "width": 390,
+      "units": 23,
+      "minFontPx": 14.04,
+      "maxFontPx": 15.47
+    },
+    {
+      "width": 1440,
+      "units": 23,
+      "minFontPx": 14.32,
+      "maxFontPx": 15.6
+    }
+  ],
+  "swSha256": "020baef124324b52fcdabd086bf90392d7bf0516319c244fe47c46d6f92ebd2b",
+  "preview": "http://127.0.0.1:57841",
+  "priorCacheFailure": "Resolved by content revisions and clientsClaim; see verification-before-cache-fix.json."
+}

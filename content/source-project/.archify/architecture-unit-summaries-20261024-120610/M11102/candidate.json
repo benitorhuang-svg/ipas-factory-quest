@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "製造流程管理：用料、工序與作業版本一致",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11102/M11102-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "spec",
+      "type": "external",
+      "label": "核准圖面與規格",
+      "sublabel": "料號、要求與適用版次",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "ebom",
+      "type": "backend",
+      "label": "EBOM 設計結構",
+      "sublabel": "產品組成與功能關係",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "change",
+      "type": "backend",
+      "label": "工程變更與斷點",
+      "sublabel": "審核生效範圍及舊料",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "me",
+      "type": "backend",
+      "label": "製程工程轉譯",
+      "sublabel": "製造可行性與一致性",
+      "pos": [
+        430,
+        230
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "mbom",
+      "type": "backend",
+      "label": "MBOM 製造用料",
+      "sublabel": "物料、用量與投料點",
+      "pos": [
+        40,
+        420
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "route",
+      "type": "backend",
+      "label": "Routing 製程途程",
+      "sublabel": "工序、資源與標準時間",
+      "pos": [
+        430,
+        420
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "sop",
+      "type": "backend",
+      "label": "SOP／MPI 作業指引",
+      "sublabel": "方法、品質與安全",
+      "pos": [
+        820,
+        420
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "trace",
+      "type": "backend",
+      "label": "工單執行與追溯",
+      "sublabel": "用料、版次及實績快照",
+      "pos": [
+        430,
+        610
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "spec-to-ebom",
+      "from": "spec",
+      "to": "ebom",
+      "label": "設計定義"
+    },
+    {
+      "id": "ebom-to-me",
+      "from": "ebom",
+      "to": "me",
+      "label": "轉製造視角"
+    },
+    {
+      "id": "change-to-me",
+      "from": "change",
+      "to": "me",
+      "label": "核准後切換"
+    },
+    {
+      "id": "me-to-mbom",
+      "from": "me",
+      "to": "mbom",
+      "label": "製造投料"
+    },
+    {
+      "id": "me-to-route",
+      "from": "me",
+      "to": "route",
+      "label": "工序規劃"
+    },
+    {
+      "id": "me-to-sop",
+      "from": "me",
+      "to": "sop",
+      "label": "作業要求"
+    },
+    {
+      "id": "mbom-to-trace",
+      "from": "mbom",
+      "to": "trace",
+      "label": "實際用料"
+    },
+    {
+      "id": "route-to-trace",
+      "from": "route",
+      "to": "trace",
+      "label": "實際工序"
+    },
+    {
+      "id": "sop-to-trace",
+      "from": "sop",
+      "to": "trace",
+      "label": "依有效版執行"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "四種資料各答一題",
+      "items": [
+        "EBOM：設計由什麼組成；MBOM：現場要用什麼；途程：在哪裡依何順序做；SOP／MPI：如何操作與確認。共同核對料號、單位、版次及生效條件。",
+        "MLT＝排隊＋準備＋加工＋等待＋搬運；批量加工負荷常含一次 setup 加上數量×單件 run，不能只用加工時間估交期。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "工程變更與追溯",
+      "items": [
+        "切版須盤點已完工、在製、未發放及舊料，依核准日期／工單／批號／序號控制；發布、訓練與實際執行是三種證據。",
+        "替代料外形相同仍須驗證功能、製程、檢驗及適用範圍；工單應保存當時版本與實裝紀錄，不能以最新版覆寫歷史。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11102｜製造流程管理概念；來源：科目一／02_製造流程管理概念.md。",
+        "看到「用料正確但現場仍用舊扭力」，應交叉核對哪幾份文件及哪個切換斷點？"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+/* ── PWA Install Banner ── */
+.pwa-install-banner {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(34, 211, 238, 0.08));
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  border-radius: 20px;
+  padding: 0.875rem 1rem;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-md);
+  transition: all var(--duration-normal);
+  animation: slide-up 0.4s var(--ease-spring);
+}
+
+.pwa-install-banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.pwa-install-banner__title {
+  font-size: 0.9rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
+}
+
+.pwa-install-banner__desc {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.pwa-install-banner__close {
+  background: none;
+  border: none;
+  font-size: var(--text-base);
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  padding: var(--space-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--duration-fast);
+}
+
+.pwa-install-banner__close:hover {
+  color: var(--color-rose-500);
+}
+
+@media (max-width: 640px) {
+  .pwa-install-banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M13201 單元總結｜現場管理實作：前置狀態、交易對帳與作答證據",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M13201/M13201-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "target",
+      "label": "指定對象與前置狀態",
+      "sublabel": "工單、批號、工序與使用者",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "act",
+      "label": "依權限與程序操作",
+      "sublabel": "排程、過站、處置與結案",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "query",
+      "label": "重新查詢同一對象",
+      "sublabel": "狀態、數量與關聯核對",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "答卷證據保存",
+      "sublabel": "整桌面、題號與 Word 存檔",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1030,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "合格資源與排程",
+      "sublabel": "人機料法、能力與交期",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "quantity",
+      "label": "批次數量與品質",
+      "sublabel": "良品、報廢、在製與放行",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        370,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "ledger",
+      "label": "事件帳與去重",
+      "sublabel": "來源時間、識別與交易結果",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        700,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "analysis",
+      "label": "柏拉圖與 4M1E",
+      "sublabel": "分母、候選原因與驗證",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1030,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "模具壽命與保養",
+      "sublabel": "終身累計與週期計數分開",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        40,
+        560
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "target",
+      "to": "act",
+      "label": "前置條件成立"
+    },
+    {
+      "id": "relation-2",
+      "from": "act",
+      "to": "query",
+      "label": "操作後再查"
+    },
+    {
+      "id": "relation-3",
+      "from": "query",
+      "to": "evidence",
+      "label": "核對指定狀態"
+    },
+    {
+      "id": "relation-4",
+      "from": "resources",
+      "to": "target",
+      "label": "確認適用資源"
+    },
+    {
+      "id": "relation-5",
+      "from": "quantity",
+      "to": "act",
+      "label": "依規則核對"
+    },
+    {
+      "id": "relation-6",
+      "from": "ledger",
+      "to": "query",
+      "label": "對帳交易事實"
+    },
+    {
+      "id": "relation-7",
+      "from": "tools",
+      "to": "resources",
+      "label": "核對剩餘能力"
+    },
+    {
+      "id": "relation-8",
+      "from": "query",
+      "to": "analysis",
+      "label": "分層比較資料"
+    },
+    {
+      "id": "relation-9",
+      "from": "analysis",
+      "to": "evidence",
+      "label": "以證據作答"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "完成操作、重新查到正確工單 Close、把指定畫面貼進 Word 並存檔，是不同結果；前題狀態可能成為後題輸入。",
+        "投入＝完成良品＋核准報廢＋未完在製，須固定邊界。數量平衡仍不能替代品質放行、末站完成與未結交易檢查。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "成功訊息、另一張工單的 Close 或舊截圖，都不足以證明本題完成。超時先查交易，避免重複報工；依當次檔名與保存指示作答。",
+        "保養只重設保養週期，不使模具終身累計歸零。柏拉圖占比高是調查優先順序，不是根因證明；事件接收順序也不等於實際作業順序。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "當數量正確但某批尚未放行時，能否說明結案、出貨與答案畫面各自還缺哪些條件？",
+        "教材來源：docs/科目三_術科實作準備/02_智慧製造現場管理實作.md"
+      ]
+    }
+  ]
+}

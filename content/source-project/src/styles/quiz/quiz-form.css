@@ -1,0 +1,109 @@
+/* ── Quiz Form (Quiz page main content) ── */
+.quiz-form {
+  padding: var(--space-5);
+}
+
+@media (max-width: 640px) {
+  .quiz-form {
+    padding: var(--space-4);
+  }
+}
+
+.quiz-form__progress-bar {
+  margin-bottom: var(--space-6);
+}
+
+.quiz-form__counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  font-weight: var(--weight-medium);
+}
+
+.quiz-form__counter-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.quiz-form__counter-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.quiz-form__counter-progress {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 520px) {
+  .quiz-form__counter {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.quiz-form__question {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-6);
+  padding: var(--space-5);
+  background: var(--color-bg-glass);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  border-left: 3px solid var(--color-indigo-500);
+}
+
+.quiz-form__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.quiz-form__explanation {
+  padding: var(--space-5);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-xl);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  animation: slideUp 0.3s var(--ease-out);
+}
+
+.quiz-form__explanation--wrong {
+  background: rgba(244, 63, 94, 0.08);
+  border-color: rgba(244, 63, 94, 0.2);
+}
+
+.quiz-form__explanation--info {
+  background: rgba(6, 182, 212, 0.08);
+  border-color: rgba(6, 182, 212, 0.2);
+}
+
+.quiz-form__explanation-label {
+  font-weight: var(--weight-semibold);
+  color: var(--color-emerald-400);
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.quiz-form__actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}

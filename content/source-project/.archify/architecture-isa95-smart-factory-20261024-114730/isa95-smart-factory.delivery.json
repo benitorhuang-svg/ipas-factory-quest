@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a9c5b8d5-f12a-4df8-9913-e316e19d0ce6",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\candidate.json",
+  "output": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-isa95-smart-factory-20261024-114730\\isa95-smart-factory.html",
+  "specification": {
+    "sha256": "178fec81467fd7ae4b8f51ccb7484ce3f9c7106a7aad97dfce838472a59878b3",
+    "bytes": 5124
+  },
+  "artifact": {
+    "sha256": "e4886e21709d2339c19f0a616ef2e7329744cb34d001e8afa77b9a24eedec5f6",
+    "bytes": 823649
+  }
+}

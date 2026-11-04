@@ -1,0 +1,103 @@
+.header__icon-btn {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  transition: all var(--duration-fast);
+  background: transparent;
+}
+
+.header__icon-btn:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-indigo-600);
+}
+
+.header--compact .header__icon-btn:hover {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.header__icon-btn:active {
+  transform: scale(0.92);
+}
+
+/* ── Modern Theme Toggle Icon ── */
+.theme-toggle {
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+/* Light Mode: Golden Yellow */
+.theme-toggle--light {
+  color: #f59e0b; /* Amber 500 */
+}
+
+/* Dark Mode: Silver White */
+.theme-toggle--dark {
+  color: #f8fafc; /* Slate 50 */
+}
+
+.theme-toggle__sun {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: currentColor;
+  transition: transform var(--duration-normal) var(--ease-spring), opacity var(--duration-fast);
+}
+
+.theme-toggle__moon-mask {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--color-bg-glass); /* Matches header background */
+  transition: transform var(--duration-normal) var(--ease-spring);
+}
+
+/* Sun state (Light mode) */
+.theme-toggle--light .theme-toggle__sun {
+  transform: scale(0.6);
+}
+.theme-toggle--light .theme-toggle__moon-mask {
+  transform: translate(100%, -100%);
+}
+
+/* Moon state (Dark mode) */
+.theme-toggle--dark .theme-toggle__sun {
+  transform: scale(1);
+}
+.theme-toggle--dark .theme-toggle__moon-mask {
+  transform: translate(0, 0);
+}
+
+.dark .theme-toggle__moon-mask {
+  background: var(--color-bg-glass); /* Dark mode background */
+}
+
+/* Ray effect for sun */
+.theme-toggle__sun::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px dotted currentColor;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.theme-toggle--light .theme-toggle__sun::before {
+  opacity: 1;
+  transform: rotate(90deg);
+}

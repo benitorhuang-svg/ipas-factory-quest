@@ -1,0 +1,262 @@
+[
+  {
+    "canonicalId": "L111-B01",
+    "aliases": [
+      "L111-B05",
+      "L111-B09"
+    ]
+  },
+  {
+    "canonicalId": "L111-B02",
+    "aliases": [
+      "L111-B06",
+      "L111-B10"
+    ]
+  },
+  {
+    "canonicalId": "L111-B03",
+    "aliases": [
+      "L111-B07",
+      "L111-B11"
+    ]
+  },
+  {
+    "canonicalId": "L111-B04",
+    "aliases": [
+      "L111-B08",
+      "L111-B12"
+    ]
+  },
+  {
+    "canonicalId": "L112-B01",
+    "aliases": [
+      "L112-B04",
+      "L112-B07"
+    ]
+  },
+  {
+    "canonicalId": "L112-B02",
+    "aliases": [
+      "L112-B05",
+      "L112-B08"
+    ]
+  },
+  {
+    "canonicalId": "L112-B03",
+    "aliases": [
+      "L112-B06",
+      "L112-B09"
+    ]
+  },
+  {
+    "canonicalId": "L113-B01",
+    "aliases": [
+      "L113-B04",
+      "L113-B07"
+    ]
+  },
+  {
+    "canonicalId": "L113-B02",
+    "aliases": [
+      "L113-B05",
+      "L113-B08"
+    ]
+  },
+  {
+    "canonicalId": "L113-B03",
+    "aliases": [
+      "L113-B06",
+      "L113-B09"
+    ]
+  },
+  {
+    "canonicalId": "L114-B01",
+    "aliases": [
+      "L114-B05"
+    ]
+  },
+  {
+    "canonicalId": "L114-B02",
+    "aliases": [
+      "L114-B06"
+    ]
+  },
+  {
+    "canonicalId": "L114-B03",
+    "aliases": [
+      "L114-B07"
+    ]
+  },
+  {
+    "canonicalId": "L114-B04",
+    "aliases": [
+      "L114-B08"
+    ]
+  },
+  {
+    "canonicalId": "L115-B01",
+    "aliases": [
+      "L115-B04"
+    ]
+  },
+  {
+    "canonicalId": "L115-B02",
+    "aliases": [
+      "L115-B05"
+    ]
+  },
+  {
+    "canonicalId": "L115-B03",
+    "aliases": [
+      "L115-B06"
+    ]
+  },
+  {
+    "canonicalId": "L116-B01",
+    "aliases": [
+      "L116-B04"
+    ]
+  },
+  {
+    "canonicalId": "L116-B02",
+    "aliases": [
+      "L116-B05"
+    ]
+  },
+  {
+    "canonicalId": "L116-B03",
+    "aliases": [
+      "L116-B06"
+    ]
+  },
+  {
+    "canonicalId": "L121-B01",
+    "aliases": [
+      "L121-B04",
+      "L121-B07"
+    ]
+  },
+  {
+    "canonicalId": "L121-B02",
+    "aliases": [
+      "L121-B05",
+      "L121-B08"
+    ]
+  },
+  {
+    "canonicalId": "L121-B03",
+    "aliases": [
+      "L121-B06",
+      "L121-B09"
+    ]
+  },
+  {
+    "canonicalId": "L122-B01",
+    "aliases": [
+      "L122-B05",
+      "L122-B09"
+    ]
+  },
+  {
+    "canonicalId": "L122-B02",
+    "aliases": [
+      "L122-B06",
+      "L122-B10"
+    ]
+  },
+  {
+    "canonicalId": "L122-B03",
+    "aliases": [
+      "L122-B07",
+      "L122-B11"
+    ]
+  },
+  {
+    "canonicalId": "L122-B04",
+    "aliases": [
+      "L122-B08",
+      "L122-B12"
+    ]
+  },
+  {
+    "canonicalId": "L123-B01",
+    "aliases": [
+      "L123-B05",
+      "L123-B09"
+    ]
+  },
+  {
+    "canonicalId": "L123-B02",
+    "aliases": [
+      "L123-B06",
+      "L123-B10"
+    ]
+  },
+  {
+    "canonicalId": "L123-B03",
+    "aliases": [
+      "L123-B07",
+      "L123-B11"
+    ]
+  },
+  {
+    "canonicalId": "L123-B04",
+    "aliases": [
+      "L123-B08"
+    ]
+  },
+  {
+    "canonicalId": "L124-B01",
+    "aliases": [
+      "L124-B04"
+    ]
+  },
+  {
+    "canonicalId": "L124-B02",
+    "aliases": [
+      "L124-B05"
+    ]
+  },
+  {
+    "canonicalId": "L124-B03",
+    "aliases": [
+      "L124-B06"
+    ]
+  },
+  {
+    "canonicalId": "L125-B01",
+    "aliases": [
+      "L125-B04"
+    ]
+  },
+  {
+    "canonicalId": "L125-B02",
+    "aliases": [
+      "L125-B05"
+    ]
+  },
+  {
+    "canonicalId": "L125-B03",
+    "aliases": [
+      "L125-B06"
+    ]
+  },
+  {
+    "canonicalId": "L126-B01",
+    "aliases": [
+      "L126-B04"
+    ]
+  },
+  {
+    "canonicalId": "L126-B02",
+    "aliases": [
+      "L126-B05"
+    ]
+  },
+  {
+    "canonicalId": "L126-B03",
+    "aliases": [
+      "L126-B06"
+    ]
+  }
+]

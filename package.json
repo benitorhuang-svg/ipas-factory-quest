@@ -1,0 +1,26 @@
+{
+  "name": "ipas-factory-quest",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "integrate:source": "node scripts/integrate-source.mjs --apply",
+    "build": "node scripts/build-materials.cjs && node scripts/build-media.mjs && node scripts/build-offline.mjs && node scripts/build-precache.mjs",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
+    "test": "node tests/validate.cjs && node tests/integration.mjs && node tests/diagrams.mjs && node tests/routes.mjs && node tests/ui-workflows.mjs && node tests/shell-assets.mjs && node tests/reading-position.mjs && node tests/sw-fetch.mjs && node tests/progress-safety.mjs && node tests/question-catalog.mjs && node scripts/check-question-duplicates.mjs && node scripts/check-structure.mjs && node scripts/check-content-governance.mjs",
+    "test:browser": "playwright test",
+    "test:pwa": "playwright test tests/browser/pwa.spec.mjs --project=chromium",
+    "report:content": "node scripts/check-content-governance.mjs --report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "eslint": "^10.14.0",
+    "jsdom": "^29.1.1",
+    "sharp": "^0.35.5"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  }
+}

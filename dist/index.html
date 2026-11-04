@@ -7,30 +7,56 @@
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#174b3e">
+  <meta name="factory-release" content="e91d4fad8e5a24df">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>智造闖關 Factory Quest｜iPAS 智慧生產工程師全方位備考平台</title>
-  <meta name="description" content="十二個單元、一座智慧工廠。收錄 476 題題庫、高解析結構圖與備考寶典，全面準備 iPAS 智慧生產工程師初級兩科學科。">
+  <meta name="description" content="十二個單元、一座智慧工廠。收錄 416 道不同內容練習題、高解析結構圖與備考寶典，準備 iPAS 智慧生產工程師初級兩科學科。">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
-  <script src="assets/mermaid.min.js" onerror="this.onerror=null;const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';document.head.appendChild(s);"></script>
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous" onerror="console.warn('KaTeX CDN failed to load; using built-in math fallback parser');"></script>
+  <link rel="stylesheet" href="study-typography.css">
+  <link rel="stylesheet" href="study-visuals.css">
+  <link rel="stylesheet" href="study-process.css">
+  <link rel="stylesheet" href="study-systems.css">
+  <link rel="stylesheet" href="study-control.css">
+  <link rel="stylesheet" href="diagrams.css">
+  <link rel="stylesheet" href="shell.css">
+  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="atlas.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="reliability.css">
 </head>
 <body>
   <div id="app"></div>
-  <script src="data.js"></script>
-  <script src="engine.js"></script>
-  <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').then(reg => {
-          console.log('PWA ServiceWorker registered:', reg.scope);
-        }).catch(err => {
-          console.log('PWA ServiceWorker registration failed:', err);
-        });
-      });
-    }
-  </script>
+  <script defer src="data.js"></script>
+  <script defer src="preview-data.js"></script>
+  <script defer src="offline-data.js"></script>
+  <script defer src="offline.js"></script>
+  <script defer src="materials.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="persistence.js"></script>
+  <script defer src="ui.js"></script>
+  <script defer src="asset-loader.js"></script>
+  <script defer src="math.js"></script>
+  <script defer src="diagrams.js"></script>
+  <script defer src="dialogs.js"></script>
+  <script defer src="media-state.js"></script>
+  <script defer src="session.js"></script>
+  <script defer src="progress-store.js"></script>
+  <script defer src="controls.js"></script>
+  <script defer src="view-dashboard.js"></script>
+  <script defer src="view-unit.js"></script>
+  <script defer src="view-atlas.js"></script>
+  <script defer src="view-review.js"></script>
+  <script defer src="view-exam.js"></script>
+  <script defer src="view-progress.js"></script>
+  <script defer src="view-quiz.js"></script>
+  <script defer src="shell.js"></script>
+  <script defer src="guide-notes.js"></script>
+  <script defer src="guide-reading.js"></script>
+  <script defer src="reading-position.js"></script>
+  <script defer src="guide.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="pwa-client.js"></script>
 </body>
 </html>

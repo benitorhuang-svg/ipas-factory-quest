@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<title>教材圖表來源核對</title>
+<output id="status">解析來源中</output><pre id="result"></pre>
+<script type="module">
+import mermaid from 'mermaid';
+mermaid.initialize({startOnLoad:false,securityLevel:'loose',htmlLabels:true});
+const sources=await fetch('./source-inventory.json').then(r=>r.json());
+const models=[];const errors=[];
+for(const entry of sources){
+  if(!/^flowchart/.test(entry.source))continue;
+  try{
+    const diagram=await mermaid.mermaidAPI.getDiagramFromText(entry.source);
+    models.push({...entry,nodes:[...diagram.db.getVertices().values()],edges:diagram.db.getEdges(),groups:diagram.db.getSubGraphs()});
+  }catch(error){errors.push({topic:entry.topic,index:entry.index,error:String(error)});}
+}
+document.querySelector('#result').textContent=JSON.stringify({models,errors});
+document.querySelector('#status').textContent=`完成：${models.length} 張，錯誤 ${errors.length}`;
+</script></html>

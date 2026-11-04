@@ -1,0 +1,42 @@
+{
+  "name": "ipas-smart-production-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "iPAS 智慧生產工程師 (初級) 知識精選與備考特訓 PWA",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/build-unit-summary-readers.mjs --check",
+    "postbuild": "node scripts/check-unit-summary-precache.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sync:materials": "node scripts/sync-materials.mjs",
+    "check:unit-summaries": "node scripts/check-unit-summaries.mjs",
+    "sync:unit-summary-readers": "node scripts/build-unit-summary-readers.mjs",
+    "validate:game:links": "node scripts/validate-game-links.mjs",
+    "validate:game:schemas": "node scripts/validate-json-schemas.mjs",
+    "sync:game:metadata": "node scripts/sync-game-design-metadata.mjs",
+    "validate:game": "node scripts/validate-game-links.mjs && node scripts/validate-json-schemas.mjs && node scripts/sync-game-design-metadata.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:study-diagrams": "node scripts/check-study-diagrams.mjs"
+  },
+  "keywords": [
+    "ipas",
+    "smart-production",
+    "pwa",
+    "study"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/katex": "^0.16.8",
+    "@types/node": "^20.19.43",
+    "typescript": "^5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-pwa": "^1.3.0",
+    "workbox-window": "^7.4.1"
+  },
+  "dependencies": {
+    "katex": "^0.16.21",
+    "mermaid": "^12.0.0"
+  }
+}

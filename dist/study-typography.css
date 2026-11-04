@@ -1,0 +1,221 @@
+/* --- Study Typography Helpers --- */
+.study-h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 18px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--soft);
+  line-height: 1.4;
+}
+.study-h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--green);
+  margin: 28px 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.45;
+}
+.study-h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 22px 0 10px;
+  line-height: 1.5;
+}
+.study-h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 16px 0 8px;
+  line-height: 1.5;
+}
+.h4-bar {
+  border-left: 3px solid var(--green);
+  padding-left: 8px;
+}
+.study-paragraph {
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: #2b403a;
+  margin: 10px 0;
+}
+.study-list {
+  padding-left: 24px;
+  margin: 10px 0;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+.study-list li, .study-ordered-list li {
+  margin-bottom: 6px;
+  color: #2b403a;
+}
+.study-ordered-list {
+  padding-left: 24px;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+.study-strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+.study-divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 28px 0;
+}
+.study-link {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.study-link:hover {
+  color: #24634e;
+}
+.study-inline-code {
+  background: #eef3ec;
+  color: #204b36;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 1px solid #dce8d9;
+}
+.code-block, pre.code-block {
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  margin: 16px 0;
+  border: 1px solid #334155;
+  white-space: pre-wrap;
+}
+.code-block code {
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 0;
+}
+.language-text {
+  font-family: 'Space Grotesk', monospace;
+}
+.math-block {
+  background: #f7faf4;
+  border: 1px solid #dce7d8;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  text-align: center;
+  font-size: 15px;
+  overflow-x: auto;
+  font-family: 'Space Grotesk', 'Noto Sans TC', system-ui, sans-serif;
+  box-shadow: 0 1px 4px rgba(23, 61, 52, 0.03);
+  line-height: 1.8;
+  color: var(--ink);
+}
+.math-inline {
+  font-family: 'Space Grotesk', 'Noto Sans TC', system-ui, sans-serif;
+  color: #1a4235;
+  padding: 0 3px;
+  font-weight: 600;
+  display: inline;
+}
+.math-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 0.9em;
+  line-height: 1.25;
+}
+.math-num {
+  border-bottom: 1.5px solid currentColor;
+  padding: 0 4px 2px;
+}
+.math-denom {
+  padding: 2px 4px 0;
+}
+.math-sqrt {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 3px;
+}
+.math-radicand {
+  border-top: 1.5px solid currentColor;
+  padding: 0 4px;
+  margin-left: 1px;
+}
+.math-op {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 4px;
+  font-size: 1.2em;
+}
+.math-sub {
+  font-size: 0.65em;
+  position: relative;
+  bottom: -0.55em;
+  margin-left: 2px;
+}
+.math-sup {
+  font-size: 0.65em;
+  position: relative;
+  top: -0.55em;
+  margin-left: -0.3em;
+}
+.katex-display {
+  margin: 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+
+/* --- Study Data Tables --- */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(23, 61, 52, 0.04);
+  -webkit-overflow-scrolling: touch;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  text-align: left;
+  line-height: 1.6;
+}
+.data-table th {
+  background: #f1f6ed;
+  color: var(--ink);
+  font-weight: 700;
+  padding: 12px 16px;
+  border-bottom: 2px solid #d4e3cf;
+  white-space: nowrap;
+}
+.data-table td {
+  padding: 11px 16px;
+  border-bottom: 1px solid #edf2ea;
+  color: #2a413c;
+  vertical-align: middle;
+}
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+.data-table tbody tr:hover td {
+  background: #f9fbf8;
+}

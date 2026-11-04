@@ -6,6 +6,41 @@
   'use strict';
   const UNITS = ['L111','L112','L113','L114','L115','L116','L121','L122','L123','L124','L125','L126'];
   const DAY = 86400000;
+  const catalogs = new WeakMap();
+  const MODES = ['mission', 'quick', 'review', 'exam'];
+  const record = value => value && typeof value === 'object' && !Array.isArray(value);
+  const finite = (value, max = Number.MAX_SAFE_INTEGER) => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= max ? value : 0;
+  function fingerprint(q) {
+    return JSON.stringify([q.unit, q.stem.trim(), q.kind, q.options, q.answer, q.tolerance, q.answerUnit]);
+  }
+  function catalog(bank) {
+    if (catalogs.has(bank)) return catalogs.get(bank);
+    const signatures = new Map(), aliases = new Map(), unique = [];
+    for (const q of bank) {
+      const key = fingerprint(q);
+      if (!signatures.has(key)) { signatures.set(key, q.id); unique.push(q); }
+      aliases.set(q.id, signatures.get(key));
+    }
+    const result = { unique, aliases };
+    catalogs.set(bank, result);
+    return result;
+  }
+  function masteredIds(state, bank) {
+    return [...new Set(state.earnedCorrectIds.map(id => catalog(bank).aliases.get(id)).filter(Boolean))];
+  }
+  function reviewEntries(state, bank) {
+    if (!bank) return Object.entries(state.ledger);
+    const entries = new Map(), { aliases } = catalog(bank);
+    for (const [id, entry] of Object.entries(state.ledger)) {
+      const key = aliases.get(id);
+      if (key && (!entries.has(key) || entry.lastSeen > entries.get(key).lastSeen || (entry.lastSeen === entries.get(key).lastSeen && id === key))) entries.set(key, entry);
+    }
+    return [...entries];
+  }
+  function reviewIds(state, bank, now = Date.now()) {
+    return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect || (e.dueAt > 0 && e.dueAt <= now))
+      .sort((a, b) => Number(a[1].lastCorrect) - Number(b[1].lastCorrect) || a[1].dueAt - b[1].dueAt).map(([id]) => id);
+  }
   function dateKey(time = Date.now()) {
     const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(time));
     const get = type => parts.find(p=>p.type===type).value;
@@ -20,13 +55,16 @@
     return Number.isFinite(n) ? n : null;
   }
   function hasAnswer(q, value) { return q.kind === 'number' ? parseNumber(value) !== null : Number.isInteger(value) && value >= 0 && value < q.options.length; }
-  function correct(q, value) { return hasAnswer(q,value) && (q.kind === 'number' ? Math.abs(parseNumber(value)-q.answer) <= (q.tolerance || 0.001)+1e-9 : value === q.answer); }
+  function correct(q, value) { return hasAnswer(q,value) && (q.kind === 'number' ? Math.abs(parseNumber(value)-q.answer) <= (q.tolerance ?? 0.001)+1e-9 : value === q.answer); }
   function shuffle(items, random = Math.random) {
     const a = [...items];
     for(let i=a.length-1;i>0;i--) {const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
     return a;
   }
   function select(bank, spec, random = Math.random) {
+    const source = bank;
+    const { unique, aliases } = catalog(bank);
+    bank = unique;
     if (spec.mode === 'exam') {
       const units = UNITS.filter(u => spec.subject === 1 ? u.startsWith('L11') : u.startsWith('L12'));
       const counts = [9, 9, 8, 8, 8, 8];
@@ -38,7 +76,11 @@
       });
       return shuffle(selected,random);
     }
-    if(spec.mode === 'review') return shuffle(bank.filter(q=>spec.wrongIds.includes(q.id)),random).slice(0,10);
+    if (spec.mode === 'review') {
+      const ids = spec.state ? reviewIds(spec.state, source, spec.now) : [...new Set((spec.wrongIds || []).map(id => aliases.get(id)))];
+      const map = new Map(bank.map(q => [q.id, q]));
+      return ids.map(id => map.get(id)).filter(Boolean).slice(0, 10);
+    }
     const pool = shuffle(bank.filter(q=>q.unit===spec.unitId),random);
     const limit = spec.mode === 'quick' ? 5 : 10;
     const counts = spec.mode === 'quick' ? {concept:2,scenario:2,calculation:1} : {concept:4,scenario:4,calculation:2};
@@ -49,28 +91,49 @@
     return shuffle(picked.slice(0,limit),random);
   }
   function restore(raw, bank) {
-    if (!raw || raw.version !== 1 || typeof raw !== 'object') return emptyState();
+    if (!record(raw) || raw.version !== 1) return emptyState();
     const s = emptyState();
     const known = new Set(bank.map(q=>q.id));
+    const qmap = new Map(bank.map(q => [q.id, q]));
     s.earnedCorrectIds = [...new Set((Array.isArray(raw.earnedCorrectIds)?raw.earnedCorrectIds:[]).filter(id=>known.has(id)))];
     for(const id of UNITS) {
-      const best = Number(raw.best?.[id]);
-      if(Number.isFinite(best) && best>=0 && best<=100) s.best[id] = best;
+      const best = raw.best?.[id];
+      if(typeof best === 'number' && Number.isFinite(best) && best>=0 && best<=100) s.best[id] = best;
     }
     s.passedUnits = [...new Set((Array.isArray(raw.passedUnits)?raw.passedUnits:[]).filter(id=>UNITS.includes(id) && s.best[id]>=80))];
     s.xp = s.earnedCorrectIds.length*10+s.passedUnits.length*50;
-    if(raw.ledger && typeof raw.ledger==='object') for(const [id,entry] of Object.entries(raw.ledger)) {
+    if(record(raw.ledger)) for(const [id,entry] of Object.entries(raw.ledger)) {
       if(!known.has(id) || !entry || typeof entry.lastCorrect!=='boolean') continue;
-      s.ledger[id] = {attempts:Math.max(0,Number(entry.attempts)||0),correctCount:Math.max(0,Number(entry.correctCount)||0),lastCorrect:entry.lastCorrect,lastSeen:Number(entry.lastSeen)||0,dueAt:Number(entry.dueAt)||0};
+      const attempts = Math.floor(finite(entry.attempts, 1000000));
+      s.ledger[id] = {attempts,correctCount:Math.min(attempts, Math.floor(finite(entry.correctCount, 1000000))),lastCorrect:entry.lastCorrect,lastSeen:finite(entry.lastSeen),dueAt:finite(entry.dueAt)};
     }
-    s.studyDates = [...new Set((Array.isArray(raw.studyDates)?raw.studyDates:[]).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)))].sort();
-    s.history = (Array.isArray(raw.history)?raw.history:[]).filter(r=>r && typeof r.runId==='string' && Array.isArray(r.results) && r.results.every(x=>known.has(x.id)) && Number.isFinite(r.score)).slice(-100);
+    s.studyDates = [...new Set((Array.isArray(raw.studyDates)?raw.studyDates:[]).filter(d=>typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && !Number.isNaN(Date.parse(d))))].sort();
+    const safeAnswer = (id, answer) => {
+      const q = qmap.get(id);
+      if (q?.kind === 'number') return typeof answer === 'string' && answer.length <= 128 ? answer : typeof answer === 'number' && Number.isFinite(answer) ? answer : null;
+      return q && hasAnswer(q, answer) ? answer : null;
+    };
+    const history = new Map();
+    for (const r of (Array.isArray(raw.history) ? raw.history : []).slice(-100)) {
+      if (!record(r) || typeof r.runId !== 'string' || !r.runId.length || r.runId.length > 128 || !MODES.includes(r.mode) || !Array.isArray(r.results) || !r.results.length || r.results.length > 50) continue;
+      if (!r.results.every(x => record(x) && known.has(x.id))) continue;
+      const seen = new Set();
+      const results = r.results.filter(x => !seen.has(x.id) && seen.add(x.id)).map(x => {
+        const answer = safeAnswer(x.id, x.answer);
+        return { id: x.id, answer, correct: correct(qmap.get(x.id), answer) };
+      });
+      const count = results.filter(x => x.correct).length, score = Math.round(count / results.length * 100);
+      const unitId = UNITS.includes(r.unitId) ? r.unitId : null;
+      history.set(r.runId, {runId:r.runId,mode:r.mode,unitId,subject:[1,2].includes(r.subject)?r.subject:null,total:results.length,correct:count,score,results,earnedXP:finite(r.earnedXP,550),newBadge:r.newBadge === true && r.mode === 'mission' && !!unitId && score >= 80,completedAt:finite(r.completedAt)});
+    }
+    s.history = [...history.values()];
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
       s.active={id:a.id,mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
-        if(typeof value==='string' || typeof value==='number') s.active.answers[id]=value;
+        const answer = safeAnswer(id, value);
+        if(answer !== null) s.active.answers[id]=answer;
       }
     }
     return s;
@@ -83,12 +146,15 @@
     if(ids.length===0) throw new Error('沒有可結算的題目');
     const s=JSON.parse(JSON.stringify(state));
     const earned=new Set(s.earnedCorrectIds);
+    const { aliases } = catalog(bank);
+    const earnedContent = new Set([...earned].map(id => aliases.get(id)));
     let earnedXP=0;
     const results=ids.map(id=>{
       const q=map.get(id), answer=run.answers[id], ok=correct(q,answer);
-      const old=s.ledger[id] || {attempts:0,correctCount:0};
-      s.ledger[id]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
-      if(ok&&!earned.has(id)){earned.add(id);earnedXP+=10;}
+      const ledgerId = aliases.get(id);
+      const old=s.ledger[ledgerId] || {attempts:0,correctCount:0};
+      s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
+      if(ok&&!earnedContent.has(aliases.get(id))){earned.add(id);earnedContent.add(aliases.get(id));earnedXP+=10;}
       return {id,answer:answer===undefined?null:answer,correct:ok};
     });
     const count=results.filter(x=>x.correct).length,score=Math.round(count/ids.length*100);
@@ -104,7 +170,7 @@
     s.history.push(report);s.history=s.history.slice(-100);s.active=null;
     return {state:s,report};
   }
-  function wrongIds(state) {return Object.entries(state.ledger).filter(([,v])=>!v.lastCorrect).map(([id])=>id);}
+  function wrongIds(state, bank) {return reviewEntries(state, bank).filter(([,v])=>!v.lastCorrect).map(([id])=>id);}
   function streak(state, now=Date.now()) {
     const dates=new Set(state.studyDates), today=dateKey(now);
     let cursor=new Date(`${today}T12:00:00+08:00`).getTime();
@@ -112,5 +178,5 @@
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,streak,level};
+  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,masteredIds,catalog,fingerprint,streak,level};
 });

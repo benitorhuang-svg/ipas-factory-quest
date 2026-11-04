@@ -1,0 +1,28 @@
+﻿<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>學習圖解設計驗證</title>
+<style>body{display:block!important;overflow:auto!important;margin:0!important;padding:20px;background:var(--color-bg-primary);color:var(--color-text-primary)}#controls{display:flex;gap:12px;position:sticky;top:0;z-index:20;background:var(--color-bg-elevated);padding:12px;border:1px solid var(--color-border);border-radius:10px}#gallery{width:1100px;max-width:none}#gallery>section{margin:28px 0}#gallery.narrow{width:390px}#gallery.wide{width:1440px}button,select{font:inherit;padding:6px 12px}</style>
+<div id="controls"><button id="all">全部圖解</button><select id="topic" aria-label="選擇單元"><option value="M11101">M11101</option></select><button id="render">顯示單元</button><button id="width">寬度 1100</button><button id="theme">切換亮暗</button><output id="status">準備中</output></div>
+<main id="gallery"></main><script type="module">
+import '/src/styles/index.css';
+import {renderMermaidDiagrams} from '/src/utils/mermaid-loader.ts';
+const inventory=await fetch('./source-inventory.json').then(r=>r.json());
+const selector=document.querySelector('#topic');selector.innerHTML='';
+for(const topic of [...new Set(inventory.map(x=>x.topic))]){const option=document.createElement('option');option.value=topic;option.textContent=topic;selector.append(option);}
+const gallery=document.querySelector('#gallery');
+async function render(all){
+  gallery.replaceChildren();window.dispatchEvent(new Event('route-teardown'));
+  document.querySelector('#status').textContent='繪製中';
+  for(const entry of inventory.filter(x=>all||x.topic===selector.value)){
+    const section=document.createElement('section');section.dataset.topic=entry.topic;section.dataset.index=entry.index;
+    const title=document.createElement('h3');title.textContent=entry.title;
+    const source=document.createElement('div');source.className='mermaid';source.textContent=entry.source;
+    section.append(title,source);gallery.append(section);
+  }
+  await renderMermaidDiagrams(gallery);
+  document.querySelector('#status').textContent=`完成 ${gallery.querySelectorAll('.study-diagram').length} 張`;
+}
+document.querySelector('#all').onclick=()=>render(true);
+document.querySelector('#render').onclick=()=>render(false);
+let width=1100;document.querySelector('#width').onclick=(event)=>{const widths=[1100,390,1440,900];width=widths[(widths.indexOf(width)+1)%widths.length];gallery.style.width=`${width}px`;event.target.textContent=`寬度 ${width}`;};
+document.querySelector('#theme').onclick=()=>document.documentElement.classList.toggle('dark');
+document.querySelector('#status').textContent='就緒';
+</script></html>

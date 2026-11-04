@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "精實與績效：由浪費和損失選工具，再驗證整體成果",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11203/M11203-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "value",
+      "type": "external",
+      "label": "客戶價值與系統邊界",
+      "sublabel": "交期、需求及品質要求",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "waste",
+      "type": "backend",
+      "label": "觀察價值流與浪費",
+      "sublabel": "過量、等待、搬運等七項",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "baseline",
+      "type": "backend",
+      "label": "建立一致績效基線",
+      "sublabel": "時間、產品與良品口徑",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "quality",
+      "type": "backend",
+      "label": "5S／防呆／自働化",
+      "sublabel": "定位、異常辨識與阻止",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "pull",
+      "type": "backend",
+      "label": "JIT 拉動與看板",
+      "sublabel": "依消耗授權生產／搬運",
+      "pos": [
+        430,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "oee",
+      "type": "backend",
+      "label": "拆解 OEE 三因素",
+      "sublabel": "A 時間、P 性能、Q 品質",
+      "pos": [
+        820,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "verify",
+      "type": "backend",
+      "label": "整體成效與標準化",
+      "sublabel": "需求、瓶頸、WIP 與安全",
+      "pos": [
+        430,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "tpm",
+      "type": "backend",
+      "label": "TPM／SMED 損失改善",
+      "sublabel": "故障、換線與微停分流",
+      "pos": [
+        820,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "value-to-waste",
+      "from": "value",
+      "to": "waste",
+      "label": "定義改善目標"
+    },
+    {
+      "id": "waste-to-baseline",
+      "from": "waste",
+      "to": "baseline",
+      "label": "量測現況"
+    },
+    {
+      "id": "waste-to-quality",
+      "from": "waste",
+      "to": "quality",
+      "label": "動作與不良"
+    },
+    {
+      "id": "waste-to-pull",
+      "from": "waste",
+      "to": "pull",
+      "label": "庫存與等待"
+    },
+    {
+      "id": "baseline-to-oee",
+      "from": "baseline",
+      "to": "oee",
+      "label": "固定計算口徑"
+    },
+    {
+      "id": "oee-to-tpm",
+      "from": "oee",
+      "to": "tpm",
+      "label": "定位六大損失"
+    },
+    {
+      "id": "quality-to-verify",
+      "from": "quality",
+      "to": "verify",
+      "label": "驗證有效性"
+    },
+    {
+      "id": "pull-to-verify",
+      "from": "pull",
+      "to": "verify",
+      "label": "流動與缺料"
+    },
+    {
+      "id": "tpm-to-verify",
+      "from": "tpm",
+      "to": "verify",
+      "label": "瓶頸有效能力"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "工具連回問題",
+      "items": [
+        "TPS 以 JIT 與自働化支撐流動與源頭品質；5S 維持標準環境，防呆阻止錯誤或異常流出。看板是授權訊號，減卡前先穩定補充、品質與設備。",
+        "看板數 N＝ceil(D×L×(1＋α)÷C)，D 與 L 時間單位須一致。相同邊界及穩態平均下，WIP＝通過量×流程時間；砍庫存不保證通過量維持。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "績效分母與損失",
+      "items": [
+        "OEE＝A×P×Q；A 看故障／換線，P 看微停／降速，Q 看啟動／製程不良。先說明計畫時間、理想週期與首次合格口徑，不能重扣同一損失。",
+        "非瓶頸省時不一定增加整線銷售；新增產出受需求與其他資源限制。MTBF、MTTR 分別看故障間隔與修復時間；改善還須確認品質、安全與維持。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11203｜精實生產與現場績效管理；來源：科目一／06_精實生產與現場績效管理.md。",
+        "OEE 變高但出貨沒有增加，請先檢查瓶頸是否改變、客戶需求、WIP 邊界及損失是否轉移。"
+      ]
+    }
+  ]
+}

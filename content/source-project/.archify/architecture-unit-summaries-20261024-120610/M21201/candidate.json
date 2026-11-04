@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M21201｜MES 全廠管控與生產排程優化：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M21201/M21201-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "erp",
+      "label": "ERP 需求與物流",
+      "sublabel": "工單／物料／途程／收發料",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "mes",
+      "label": "MES 事件與 WIP",
+      "sublabel": "物流動作與帳務同步",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "schedule",
+      "label": "有限產能排程",
+      "sublabel": "先行／資格／換線／日曆",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "release",
+      "label": "派工與品質放行",
+      "sublabel": "版本同步／設備確認",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "資料管線與分析",
+      "sublabel": "清理／儲存／時序／預測",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "rules",
+      "label": "TOC／DBR／排序",
+      "sublabel": "瓶頸／緩衝／投料／目標",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "equipment",
+      "label": "設備整合契約",
+      "sublabel": "採集／配方／事件回覆",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "erp-to-mes",
+      "from": "erp",
+      "to": "mes",
+      "label": "需求與受控資料"
+    },
+    {
+      "id": "mes-to-erp",
+      "from": "mes",
+      "to": "erp",
+      "label": "完工／消耗實績"
+    },
+    {
+      "id": "mes-to-schedule",
+      "from": "mes",
+      "to": "schedule",
+      "label": "合法事件與現況"
+    },
+    {
+      "id": "mes-to-analytics",
+      "from": "mes",
+      "to": "analytics",
+      "label": "來源時間與事件 ID"
+    },
+    {
+      "id": "analytics-to-mes",
+      "from": "analytics",
+      "to": "mes",
+      "label": "洞察與品質標記"
+    },
+    {
+      "id": "rules-to-schedule",
+      "from": "rules",
+      "to": "schedule",
+      "label": "按目標選規則"
+    },
+    {
+      "id": "schedule-to-release",
+      "from": "schedule",
+      "to": "release",
+      "label": "可行版本才派工"
+    },
+    {
+      "id": "equipment-to-release",
+      "from": "equipment",
+      "to": "release",
+      "label": "核准與執行回覆"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "領料、移轉與入庫須對應工單、批號、工序及品質狀態；掃碼成功僅表示讀到代碼，不等於產品已放行。",
+        "TOC 依序辨識、充分利用、其他服從、提升瓶頸再重複；DBR 以瓶頸節奏及緩衝控制投料。",
+        "SPT 重平均流程時間，EDD 重最大延遲，相關最佳性需標準單機等前提；CR＝剩餘交期／剩餘加工時間。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "可行排程不等於全域最佳。設備資格、不可中斷工序、換線與停機時點可改變排序結果。",
+        "事件 ID 去重、來源時間、接收時間與更正事件要保留；累計計數器不能直接和事件增量混加，相關不證明因果。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元七／L21201–L21204，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

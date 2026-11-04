@@ -1,0 +1,779 @@
+/* ============================================================
+   appx-lab.css — Interactive Formula Lab & Practice Styles
+   ============================================================ */
+
+.appx-lab {
+  --lab-ink: #172a40;
+  --lab-muted: #6b7b8f;
+  --lab-line: #e2e8f0;
+  --lab-accent: #2e7967;
+  --lab-accent-soft: rgba(46, 121, 103, 0.08);
+  width: 100%;
+  padding: clamp(1.2rem, 3vw, 2.2rem);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  color: var(--lab-ink);
+  background: linear-gradient(135deg, rgba(244, 250, 248, 0.95) 0%, rgba(248, 249, 252, 0.95) 58%, rgba(242, 246, 251, 0.95) 100%);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  backdrop-filter: var(--glass-blur);
+}
+
+/* Eyebrow & Intro */
+.appx-lab__eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3f7e6f;
+  font: 800 0.7rem/1.2 var(--font-mono);
+  letter-spacing: 0.1em;
+}
+
+.appx-lab__eyebrow span:last-child {
+  color: var(--lab-muted);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.appx-lab__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.5rem 0 0.75rem;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.appx-lab__intro h2 {
+  color: var(--lab-ink);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.25;
+  font-weight: 900;
+  margin: 0;
+}
+
+.appx-lab__intro p {
+  margin-top: 0.45rem;
+  color: var(--lab-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.appx-lab__mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 3.75rem;
+  height: 3.75rem;
+  border: 1px solid #cfdfd9;
+  border-radius: var(--radius-xl);
+  background: #e7f2ee;
+  color: #2e7967;
+  font: 800 1.8rem var(--font-mono);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Tool Navigation Tabs */
+.appx-lab__tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.6rem;
+  scrollbar-width: thin;
+}
+
+.appx-lab__tab {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  background: var(--color-bg-elevated);
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.appx-lab__tab:hover {
+  border-color: #2e7967;
+  color: #2e7967;
+  transform: translateY(-1px);
+}
+
+.appx-lab__tab.is-active {
+  border-color: #2e7967;
+  background: #2e7967;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(46, 121, 103, 0.28);
+}
+
+/* Main Calculator Panel */
+.appx-lab__panel {
+  padding: clamp(1.2rem, 3vw, 1.75rem);
+  border: 1px solid var(--lab-line);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.appx-lab__panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.appx-lab__panel-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.appx-lab__step {
+  color: #2e7967;
+  font: 800 0.6875rem/1.2 var(--font-mono);
+  letter-spacing: 0.12em;
+}
+
+.appx-lab__cat-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  background: var(--lab-accent-soft);
+  color: #2e7967;
+  border: 1px solid rgba(46, 121, 103, 0.2);
+}
+
+.appx-lab__panel-head h3 {
+  margin: 0;
+  color: var(--lab-ink);
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.appx-lab__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: #e9f6ef;
+  color: #278053;
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.appx-lab__live i {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #36aa69;
+  box-shadow: 0 0 0 3px #ccebd8;
+  animation: lab-pulse 2s ease infinite;
+}
+
+@keyframes lab-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px #ccebd8; }
+  50% { box-shadow: 0 0 0 6px rgba(54, 170, 105, 0.2); }
+}
+
+/* KaTeX Formula Box */
+.appx-lab__formula-box {
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid #2e7967;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  background: rgba(46, 121, 103, 0.05);
+  border-top: 1px solid var(--lab-line);
+  border-right: 1px solid var(--lab-line);
+  border-bottom: 1px solid var(--lab-line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.appx-lab__formula-render {
+  overflow-x: auto;
+  padding: 0.35rem 0;
+  color: #1e3a35;
+  font-size: 1.05rem;
+}
+
+.appx-lab__formula-render .katex-display {
+  margin: 0.25rem 0;
+}
+
+.appx-lab__formula-raw {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.appx-lab__formula-desc {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--lab-muted);
+  line-height: 1.55;
+}
+
+/* Preset Scenarios */
+.appx-lab__presets-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+
+.appx-lab__presets-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--lab-muted);
+}
+
+.appx-lab__presets-group {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.appx-lab__preset-chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.appx-lab__preset-chip:hover {
+  border-color: #2e7967;
+  color: #2e7967;
+  background: rgba(46, 121, 103, 0.08);
+}
+
+/* Form & Inputs */
+.appx-lab__fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 0.875rem;
+}
+
+.appx-lab__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.appx-lab__field-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text-secondary);
+  font-size: 0.78125rem;
+  font-weight: 700;
+}
+
+.appx-lab__field-unit {
+  color: var(--color-text-tertiary);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.appx-lab__field input,
+.appx-practice__form input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem 0.85rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  font: 800 0.95rem var(--font-mono);
+  transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.appx-lab__field input:focus,
+.appx-practice__form input:focus {
+  outline: 0;
+  border-color: #2e7967;
+  box-shadow: 0 0 0 3.5px rgba(46, 121, 103, 0.16);
+}
+
+/* Output Results KPI Grid */
+.appx-lab__results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.appx-lab__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-secondary);
+  transition: transform var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.appx-lab__result:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.appx-lab__result-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.appx-lab__result-label {
+  color: var(--color-text-tertiary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.appx-lab__result-badge {
+  font-size: 0.65rem;
+  padding: 1px 6px;
+}
+
+.appx-lab__result-val {
+  color: var(--color-text-primary);
+  font: 900 1.25rem var(--font-mono);
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.appx-lab__result-val small {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-tertiary);
+}
+
+.appx-lab__result.is-primary {
+  border-color: rgba(46, 121, 103, 0.35);
+  background: rgba(46, 121, 103, 0.08);
+}
+
+.appx-lab__result.is-primary .appx-lab__result-val {
+  color: #1e6454;
+}
+
+.appx-lab__error {
+  grid-column: 1 / -1;
+  padding: 0.85rem;
+  border-radius: var(--radius-lg);
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  color: var(--color-rose-500);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Step-by-step Math Derivation Card */
+.appx-lab__steps-card {
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
+.appx-lab__steps-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.appx-lab__steps-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: var(--color-text-secondary);
+  font: 600 0.8125rem/1.6 var(--font-mono);
+}
+
+/* Practice Challenge Section */
+.appx-practice {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-md);
+}
+
+.appx-practice__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.appx-practice__title-badge {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-indigo-600);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.appx-practice__title strong {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--color-text-primary);
+}
+
+.appx-practice__title small {
+  color: var(--color-text-tertiary);
+  font-size: 0.78125rem;
+}
+
+.appx-practice__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.appx-practice__meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appx-practice__count {
+  font: 800 0.7rem var(--font-mono);
+  color: #2e7967;
+  letter-spacing: 0.08em;
+}
+
+.appx-practice__import-btn {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 750;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.appx-practice__import-btn:hover {
+  border-color: #2e7967;
+  color: #2e7967;
+  background: rgba(46, 121, 103, 0.08);
+}
+
+.appx-practice__question {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.appx-practice__form {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.appx-practice__input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.appx-practice__input-wrap input {
+  flex: 1;
+}
+
+.appx-practice__unit {
+  font-weight: 800;
+  font-size: 0.8125rem;
+  color: var(--color-text-tertiary);
+}
+
+.appx-practice__submit-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: #203d54;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  transition: background var(--duration-fast);
+  white-space: nowrap;
+}
+
+.appx-practice__submit-btn:hover {
+  background: #2e7967;
+}
+
+.appx-practice__feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.appx-practice__feedback-box {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8125rem;
+}
+
+.appx-practice__feedback-box.is-correct {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: var(--color-emerald-600);
+}
+
+.appx-practice__feedback-box.is-wrong {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  color: var(--color-rose-600);
+}
+
+.appx-practice__feedback-box p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.appx-practice__next {
+  width: fit-content;
+  align-self: flex-start;
+}
+
+/* Reference Study Guide Details Card */
+.appx-reference {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-secondary);
+  transition: all var(--duration-fast);
+}
+
+.appx-reference summary {
+  padding: 1.15rem 1.25rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  transition: color var(--duration-fast);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appx-reference summary:hover {
+  color: var(--color-indigo-600);
+}
+
+.appx-reference[open] summary {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+}
+
+.appx-reference__content {
+  padding: 1.25rem;
+}
+
+/* ============================================================
+   Dark Mode Overrides
+   ============================================================ */
+
+.dark .appx-lab {
+  --lab-ink: #f1f5f9;
+  --lab-muted: #94a3b8;
+  --lab-line: #334155;
+  --lab-accent: #2dd4bf;
+  --lab-accent-soft: rgba(45, 212, 191, 0.12);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 58%, rgba(15, 23, 42, 0.95) 100%);
+  border-color: #334155;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.dark .appx-lab__eyebrow {
+  color: #2dd4bf;
+}
+
+.dark .appx-lab__mark {
+  border-color: #334155;
+  background: #132e2a;
+  color: #2dd4bf;
+}
+
+.dark .appx-lab__tab {
+  border-color: #334155;
+  background: var(--color-bg-elevated);
+  color: #94a3b8;
+}
+
+.dark .appx-lab__tab:hover {
+  border-color: #2dd4bf;
+  color: #f1f5f9;
+}
+
+.dark .appx-lab__tab.is-active {
+  border-color: #14b8a6;
+  background: #14b8a6;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(20, 184, 166, 0.35);
+}
+
+.dark .appx-lab__step {
+  color: #2dd4bf;
+}
+
+.dark .appx-lab__cat-badge {
+  color: #2dd4bf;
+  border-color: rgba(45, 212, 191, 0.3);
+}
+
+.dark .appx-lab__live {
+  background: rgba(20, 184, 166, 0.15);
+  color: #2dd4bf;
+}
+
+.dark .appx-lab__live i {
+  background: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.25);
+}
+
+.dark .appx-lab__formula-box {
+  border-left-color: #14b8a6;
+  background: rgba(20, 184, 166, 0.06);
+  border-top-color: #334155;
+  border-right-color: #334155;
+  border-bottom-color: #334155;
+}
+
+.dark .appx-lab__formula-render {
+  color: #ccfbf1;
+}
+
+.dark .appx-lab__preset-chip:hover {
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+  background: rgba(45, 212, 191, 0.12);
+}
+
+.dark .appx-lab__result.is-primary {
+  border-color: rgba(45, 212, 191, 0.35);
+  background: rgba(45, 212, 191, 0.1);
+}
+
+.dark .appx-lab__result.is-primary .appx-lab__result-val {
+  color: #5eead4;
+}
+
+.dark .appx-practice__title-badge {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--color-indigo-400);
+}
+
+.dark .appx-practice__count {
+  color: #2dd4bf;
+}
+
+.dark .appx-practice__import-btn:hover {
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+  background: rgba(45, 212, 191, 0.12);
+}
+
+.dark .appx-practice__submit-btn {
+  background: #14b8a6;
+  color: #0f172a;
+}
+
+.dark .appx-practice__submit-btn:hover {
+  background: #2dd4bf;
+}
+
+.dark .appx-practice__feedback-box.is-correct {
+  color: var(--color-emerald-400);
+}
+
+.dark .appx-practice__feedback-box.is-wrong {
+  color: var(--color-rose-400);
+}
+
+/* ============================================================
+   Responsive Adjustments
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .appx-lab {
+    padding: 1rem;
+    border-radius: var(--radius-xl);
+  }
+  .appx-lab__intro {
+    align-items: flex-start;
+  }
+  .appx-lab__mark {
+    flex-basis: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+  .appx-practice {
+    padding: 1rem;
+  }
+  .appx-practice__form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .appx-practice__submit-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,151 @@
+/* ── Topic Item (Topic list entry) ── */
+.topic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-bg-glass);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.topic-item:hover {
+  border-color: var(--color-indigo-300);
+  background: var(--color-bg-glass-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.topic-item__icon {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  font-size: var(--text-xl);
+}
+
+.topic-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.topic-item__title {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topic-item__subtitle {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-1);
+}
+
+.topic-item__meta {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+}
+
+.topic-item__chevron {
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+  transition: transform var(--duration-normal);
+}
+
+.topic-item:hover .topic-item__chevron {
+  transform: translateX(2px);
+  color: var(--color-indigo-400);
+}
+
+
+
+/* ── Sub Viewer (PIP Modal) ── */
+.sub-viewer-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: var(--safe-bottom);
+  animation: fadeIn 0.3s var(--ease-out);
+  transition: opacity 0.3s var(--ease-out);
+}
+
+.sub-viewer {
+  width: 100%;
+  max-width: 640px;
+  height: 85vh;
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+  animation: slideFromBottom 0.4s var(--ease-out);
+  transition: transform 0.3s var(--ease-out);
+}
+
+@keyframes slideFromBottom {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.sub-viewer__header {
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.sub-viewer__content {
+  flex: 1;
+  background: #fff;
+  position: relative;
+}
+
+/* ── Shake Animation for wrong answers ── */
+.option-card--shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+/* ── Pop Animation for correct answers ── */
+.option-card--pop {
+  animation: pop 0.4s var(--ease-spring);
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* ── Glow Effect for Subject Map Dots on Hover ── */
+.subject-map-dot-glow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px currentColor;
+  z-index: var(--z-base);
+}

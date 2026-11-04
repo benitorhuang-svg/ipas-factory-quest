@@ -1,0 +1,178 @@
+/* Linked teaching diagnosis dashboard */
+
+.analytics-panel.diagnostic-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 14px;
+  background: rgba(248, 250, 252, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 20px;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+.diagnostic-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: end;
+}
+
+.diagnostic-header__eyebrow {
+  margin-bottom: 6px;
+  color: var(--color-indigo-600);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.diagnostic-header__title {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.diagnostic-header__path {
+  margin-top: 8px;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.diagnostic-kpis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.diagnostic-kpi {
+  min-height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+}
+
+.diagnostic-kpi span {
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.diagnostic-kpi strong {
+  color: var(--color-text-primary);
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 900;
+  font-family: var(--font-mono);
+}
+
+.diagnostic-kpi--attention strong {
+  color: var(--color-rose-600);
+}
+
+.diagnostic-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.diagnostic-panel {
+  min-width: 0;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.diagnostic-panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.diagnostic-panel__head h3 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+.diagnostic-panel__head p {
+  margin: 5px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.diagnostic-panel__count {
+  flex-shrink: 0;
+  padding: 5px 8px;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.diagnostic-subject-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.diagnostic-subject-btn {
+  min-height: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 12px;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.diagnostic-subject-btn span {
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.diagnostic-subject-btn strong {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.diagnostic-subject-btn.active {
+  color: var(--color-indigo-700);
+  background: rgba(238, 242, 255, 0.9);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.diagnostic-unit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 560px;
+  overflow: auto;
+  padding: 12px;
+}

@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "base": "http://127.0.0.1:57841",
+  "installed": {
+    "controller": "http://127.0.0.1:57841/sw.js",
+    "state": "activated",
+    "caches": [
+      "workbox-precache-v2-http://127.0.0.1:57841/"
+    ]
+  },
+  "offlineUnits": [
+    {
+      "code": "M11101",
+      "font": "18px",
+      "concepts": 8,
+      "title": "S&OP 供需協調"
+    },
+    {
+      "code": "M13201",
+      "font": "18px",
+      "concepts": 9,
+      "title": "指定對象與前置狀態"
+    },
+    {
+      "code": "M22301",
+      "font": "18px",
+      "concepts": 8,
+      "title": "工單與核准配方"
+    }
+  ],
+  "errors": [],
+  "date": "2026-10-25T05:48:18.414Z"
+}

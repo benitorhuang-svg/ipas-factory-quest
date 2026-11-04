@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "ISA-95 五層功能與智慧工廠整合關係",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-isa95-smart-factory-20261024-114730/isa95-smart-factory.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": { "label": "ISA-95 五層功能" },
+        "external": { "label": "五層架構範圍外節點" }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "value-chain",
+      "type": "external",
+      "label": "價值鏈夥伴",
+      "sublabel": "供應商／委外／物流／客戶",
+      "icon": "none",
+      "pos": [50, 70],
+      "size": [260, 100]
+    },
+    {
+      "id": "engineering-data",
+      "type": "external",
+      "label": "工程與產品資料",
+      "sublabel": "PLM / CAD · 核准圖面與版次",
+      "icon": "none",
+      "pos": [410, 70],
+      "size": [260, 100]
+    },
+    {
+      "id": "level-4",
+      "type": "backend",
+      "label": "企業計畫（Level 4）",
+      "sublabel": "ERP / SCM · 訂單、MPS、財務",
+      "tag": "L4",
+      "icon": "none",
+      "pos": [50, 420],
+      "size": [210, 112]
+    },
+    {
+      "id": "level-3",
+      "type": "backend",
+      "label": "製造營運（Level 3）",
+      "sublabel": "MOM / MES · WMS · QMS",
+      "tag": "L3",
+      "icon": "none",
+      "pos": [410, 420],
+      "size": [210, 112]
+    },
+    {
+      "id": "level-2",
+      "type": "backend",
+      "label": "製程監控（Level 2）",
+      "sublabel": "SCADA / HMI · 趨勢與警報",
+      "tag": "L2",
+      "icon": "none",
+      "pos": [770, 420],
+      "size": [210, 112]
+    },
+    {
+      "id": "level-1",
+      "type": "backend",
+      "label": "感測與直接控制（Level 1）",
+      "sublabel": "PLC / DCS · 感測、致動、互鎖",
+      "tag": "L1",
+      "icon": "none",
+      "pos": [1130, 420],
+      "size": [210, 112]
+    },
+    {
+      "id": "level-0",
+      "type": "backend",
+      "label": "物理生產製程（Level 0）",
+      "sublabel": "切削、沖壓、注塑、搬運",
+      "tag": "L0",
+      "icon": "none",
+      "pos": [1490, 420],
+      "size": [210, 112]
+    }
+  ],
+  "connections": [
+    {
+      "id": "partners-to-enterprise",
+      "from": "value-chain",
+      "to": "level-4",
+      "label": "訂單／供應／物流狀態"
+    },
+    {
+      "id": "enterprise-to-partners",
+      "from": "level-4",
+      "to": "value-chain",
+      "label": "採購／交期／出貨協同"
+    },
+    {
+      "id": "engineering-to-mom",
+      "from": "engineering-data",
+      "to": "level-3",
+      "label": "核准圖面／產品版次"
+    },
+    {
+      "id": "enterprise-to-mom",
+      "from": "level-4",
+      "to": "level-3",
+      "label": "核准工單／計畫",
+      "variant": "emphasis"
+    },
+    {
+      "id": "mom-to-enterprise",
+      "from": "level-3",
+      "to": "level-4",
+      "label": "工單實績／品質狀態"
+    },
+    {
+      "id": "mom-to-scada",
+      "from": "level-3",
+      "to": "level-2",
+      "label": "派工／作業指示"
+    },
+    {
+      "id": "scada-to-mom",
+      "from": "level-2",
+      "to": "level-3",
+      "label": "設備警報／製程事件"
+    },
+    {
+      "id": "scada-to-control",
+      "from": "level-2",
+      "to": "level-1",
+      "label": "操作請求（受互鎖）"
+    },
+    {
+      "id": "control-to-scada",
+      "from": "level-1",
+      "to": "level-2",
+      "label": "量測／設備警報"
+    },
+    {
+      "id": "control-to-process",
+      "from": "level-1",
+      "to": "level-0",
+      "label": "致動／控制輸出"
+    },
+    {
+      "id": "process-to-control",
+      "from": "level-0",
+      "to": "level-1",
+      "label": "物理製程狀態"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "讀圖方式",
+      "items": [
+        "L4 到 L0 依序呈現企業計畫、製造營運、製程監控、直接控制與物理製程。箭頭表示典型交換方向，不限定每家工廠的實際拓樸或協定。",
+        "Level 0 是物理製程；感測、致動與直接控制功能列在 Level 1。同一設備可能包含不同層級的功能。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "資料權責示例",
+      "items": [
+        "ERP／訂單管理核准訂單需求、承諾交期與生產量；MES 記錄工序、在製狀態與品質實績。",
+        "控制器與監控系統保留設備原始狀態及警報；MES 關聯必要事件與工單，雙向交換不代表雙方可同時修改同一欄位。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "現場控制界線與教材來源",
+      "items": [
+        "Level 1 負責直接控制與互鎖；安全停機依現場控制器設計，不應依賴 ERP 或 MES。Level 2 操作請求仍受現場互鎖約束。",
+        "PLM / CAD 節點代表工程核准資料來源，不表示該系統一定由外部廠商提供。",
+        "教材：docs/科目二_智慧製造生產線管理基礎/01_智慧製造概論與ISA95架構.md"
+      ]
+    }
+  ]
+}

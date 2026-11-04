@@ -1,0 +1,260 @@
+/* ============================================================
+   game.css — Factory Simulation Serious Game Styles
+   Responsive, High-contrast, WCAG-compliant design system
+   ============================================================ */
+
+.game-lobby-page {
+  animation: fadeIn 0.25s ease-out;
+}
+
+.lobby-chapter-card {
+  transition: transform var(--duration-fast, 0.15s) var(--ease-out, ease-out),
+              box-shadow var(--duration-fast, 0.15s) var(--ease-out, ease-out);
+}
+
+.lobby-chapter-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.game-play-page {
+  animation: fadeIn 0.25s ease-out;
+}
+
+.factory-canvas {
+  position: relative;
+  user-select: none;
+}
+
+.factory-canvas__flow::-webkit-scrollbar {
+  height: 6px;
+}
+
+.station-box {
+  transition: transform var(--duration-fast, 0.15s) var(--ease-out, ease-out);
+}
+
+.station-box:hover {
+  transform: translateY(-2px);
+}
+
+.game-card {
+  position: relative;
+}
+
+.game-card:hover {
+  transform: translateY(-3px);
+}
+
+.game-card--selected {
+  border-color: var(--color-indigo-500, #6366f1) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25) !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .game-hud__status-row {
+    grid-template-columns: 1fr;
+  }
+  .card-deck__grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-card {
+    padding: 16px;
+  }
+}
+
+/* Drag and Drop Styles */
+.drop-zone {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drop-zone--hover {
+  border-color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.5) !important;
+  transform: scale(1.05) translateY(-2px);
+}
+
+.dragging-card-ghost {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(99, 102, 241, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  will-change: transform;
+}
+
+/* ── Progress Squares & 108-Level Grid Matrix ── */
+.level-squares-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.level-square {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  border: 1.5px solid transparent;
+}
+
+/* 預設灰色空白 */
+.level-square--empty {
+  background: var(--color-bg-secondary, #f1f5f9);
+  border: 1px solid var(--color-border, #cbd5e1);
+  color: var(--color-text-secondary, #64748b);
+}
+
+.level-square--empty:hover {
+  background: var(--color-surface-hover, #ffffff);
+  border-color: var(--color-indigo-400, #818cf8);
+  color: var(--color-indigo-600, #4f46e5);
+  transform: translateY(-2px) scale(1.08);
+}
+
+/* 完成後綠色填滿 */
+.level-square--completed {
+  background: #10b981;
+  border-color: #059669;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.45);
+}
+
+.level-square--completed:hover {
+  background: #059669;
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.7);
+  transform: translateY(-2px) scale(1.1);
+}
+
+/* 全域 108 關熱圖矩陣樣式 */
+.master-matrix-card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl, 16px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.master-matrix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.master-matrix-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--color-text-secondary, #94a3b8);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.master-matrix-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.matrix-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.matrix-group__label {
+  min-width: 60px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-secondary, #94a3b8);
+}
+
+.matrix-group__cells {
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.matrix-cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.matrix-cell--empty {
+  background: var(--color-bg-secondary, #f1f5f9);
+  border: 1px solid var(--color-border, #cbd5e1);
+  color: var(--color-text-secondary, #64748b);
+}
+
+.matrix-cell--empty:hover {
+  background: var(--color-surface-hover, #ffffff);
+  border-color: var(--color-indigo-400, #818cf8);
+  color: var(--color-indigo-600, #4f46e5);
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+.matrix-cell--completed {
+  background: #10b981;
+  border: 1px solid #059669;
+  color: #ffffff;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.matrix-cell--completed:hover {
+  background: #059669;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+  transform: scale(1.15);
+  z-index: 2;
+}
+

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26T14:35:28.695Z",
+  "implementation": {
+    "unitTitle": "current topic.name in the reading header",
+    "chapters": "header progress and a hover/click floating panel",
+    "navigation": "bottom edge dock without reserved layout space"
+  },
+  "browser": {
+    "desktop": {
+      "width": 1440,
+      "height": 900,
+      "unit": "M11101",
+      "contentWidth": 1348,
+      "readingHeight": 836,
+      "headerTopAfterChapterJump": 0,
+      "chapter": "3 / 27",
+      "progressPercent": 34
+    },
+    "narrow": {
+      "width": 390,
+      "height": 844,
+      "unit": "M11102",
+      "pageWidth": 390,
+      "panelLeft": 12,
+      "panelRight": 379
+    },
+    "dark": {
+      "width": 1197,
+      "unit": "M11102",
+      "panelBackground": "rgb(30, 41, 59)",
+      "diagram": "ready"
+    }
+  },
+  "passed": [
+    "header title follows the unit",
+    "progress sits immediately before Back",
+    "chapter hover expansion",
+    "chapter selection and automatic closure",
+    "reading progress updates on jump",
+    "header remains at the top while the content scrolls",
+    "bottom edge hover reveals navigation",
+    "pointer leave hides navigation",
+    "dock opening does not shrink the reading area",
+    "ArrowDown opens the panel and focuses a visible item",
+    "Escape closes either panel",
+    "navigation reaches the topic catalog",
+    "new unit receives one fresh chapter control",
+    "narrow panel stays inside the viewport",
+    "click fallback opens both panels",
+    "dark mode has readable floating panels",
+    "original light preference restored"
+  ],
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed",
+    "unitSummaryAssets": "23 passed",
+    "precacheRevisions": "passed",
+    "eslint": "not configured in this project"
+  },
+  "offlineRuntimeTested": false,
+  "productionBrowserTested": false,
+  "browserToolRecovery": "one viewport operation lost the debugger connection; a new tab completed final checks"
+}

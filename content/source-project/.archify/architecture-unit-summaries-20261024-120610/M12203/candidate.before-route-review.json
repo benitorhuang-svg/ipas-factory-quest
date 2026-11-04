@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M12203 單元總結｜MES：執行、交易、追溯與績效形成閉環",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M12203/M12203-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "erp",
+      "label": "ERP 計畫與主檔",
+      "sublabel": "訂單、MBOM、途程與交期",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "mes",
+      "label": "MES 製造營運",
+      "sublabel": "排程、派工與工單狀態",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "shop",
+      "label": "現場執行與過站",
+      "sublabel": "人機料法環與工序事件",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "品質與受控處置",
+      "sublabel": "扣留、重工、報廢與放行",
+      "type": "security",
+      "icon": "none",
+      "pos": [
+        1030,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "andon",
+      "label": "Andon 與 8D",
+      "sublabel": "通報、圍堵、根因與再發防止",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "docs",
+      "label": "有效文件與版次",
+      "sublabel": "SOP／MPI／配方生效條件",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        370,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "ledger",
+      "label": "事件帳與數量守恆",
+      "sublabel": "唯一交易、去重與受控更正",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        700,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "trace",
+      "label": "雙向生產履歷",
+      "sublabel": "料批、序號、工序與設備",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        1030,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "oee",
+      "label": "OEE 與改善方向",
+      "sublabel": "A 停機／P 速度／Q 品質",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        560
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "erp",
+      "to": "mes",
+      "label": "下達計畫標準"
+    },
+    {
+      "id": "relation-2",
+      "from": "mes",
+      "to": "erp",
+      "label": "回報實績耗用"
+    },
+    {
+      "id": "relation-3",
+      "from": "mes",
+      "to": "shop",
+      "label": "派工與指示"
+    },
+    {
+      "id": "relation-4",
+      "from": "shop",
+      "to": "mes",
+      "label": "回傳事件狀態"
+    },
+    {
+      "id": "relation-5",
+      "from": "shop",
+      "to": "quality",
+      "label": "檢驗與判定"
+    },
+    {
+      "id": "relation-6",
+      "from": "quality",
+      "to": "shop",
+      "label": "核准後處置"
+    },
+    {
+      "id": "relation-7",
+      "from": "docs",
+      "to": "mes",
+      "label": "核對有效版次"
+    },
+    {
+      "id": "relation-8",
+      "from": "mes",
+      "to": "andon",
+      "label": "異常通報升級"
+    },
+    {
+      "id": "relation-9",
+      "from": "shop",
+      "to": "ledger",
+      "label": "交易狀態更新"
+    },
+    {
+      "id": "relation-10",
+      "from": "quality",
+      "to": "trace",
+      "label": "保留處置履歷"
+    },
+    {
+      "id": "relation-11",
+      "from": "ledger",
+      "to": "oee",
+      "label": "依口徑彙總"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "正向由原料查成品與出貨影響；反向由成品查原料及 4M1E。分合批、載具轉換與重工仍須保留身分關係。",
+        "OEE＝A×P×Q；A 看負荷與運轉時間，P 看理想週期及總產出，Q 須先定義首次或其他品質口徑；改善依損失明細判讀。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "重工合格是原產品的狀態變化，不是新增投入；重送事件不可再次加數，更正應保留原紀錄、原因及核准。",
+        "MES 不是產品設計或 PLC 安全控制。R2R 調整須先確認量測、批次、設備與版次，再依核准界限回饋下一批。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "同一事件重送後 OEE 不變，為何還不能證明數量去重正確？應再核對哪些原始數量與事件？",
+        "教材來源：docs/科目二_智慧製造生產線管理基礎/06_智慧工廠生產模式與MES系統整合.md"
+      ]
+    }
+  ]
+}

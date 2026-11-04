@@ -1,0 +1,50 @@
+/* Keep the reading column shrinkable; only each wide figure/table scrolls. */
+.workspace, .page, .material-content, .material-hero, .material-hero > *,
+.topbar, .topbar-main, .topbar-chapter-select-wrap { min-width: 0; }
+.material-hero { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.material-hero-img img { object-fit: contain; }
+.topbar-left { flex: 1 1 0; min-width: 0; }
+.breadcrumb { flex-shrink: 1; min-width: 0; overflow: hidden; }
+.breadcrumb .breadcrumb-current { overflow: hidden; text-overflow: ellipsis; }
+.topbar-chapter-nav { flex-shrink: 0; }
+.material-content { overflow-wrap: anywhere; }
+.material-content h2 { flex-wrap: wrap; }
+.material-content pre { max-width: 100%; overflow-x: auto; white-space: pre; }
+.material-content .table-container { max-width: 100%; overflow-x: auto; }
+.material-content .table-container table { min-width: 520px; }
+.material-content svg { max-width: 100%; }
+.material-content .study-diagram {
+  margin: 24px 0; padding: 0; min-width: 0; max-width: 100%;
+  border: 1px solid var(--line); border-radius: 14px; background: #fff;
+  overflow: hidden; text-align: left;
+}
+.material-content .diagram-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 0; padding: 10px 14px; background: var(--soft);
+  color: var(--green); font-size: 13px; text-align: left;
+}
+.diagram-toolbar button {
+  flex-shrink: 0; padding: 6px 12px; border: 1px solid #b9cdb2;
+  border-radius: 8px; background: #fff; color: var(--green);
+}
+.diagram-viewport { max-width: 100%; overflow: auto; padding: 20px; }
+.mermaid-rendered { width: max-content; min-width: 100%; }
+.mermaid-rendered svg { display: block; margin: 0 auto; }
+.mermaid-rendered foreignObject { overflow: visible; }
+.diagram-error { padding: 14px; background: #fff8e6; border-radius: 10px; }
+.diagram-error summary { cursor: pointer; }
+.diagram-dialog {
+  width: calc(100vw - 32px); max-width: 1500px; max-height: 94dvh;
+  padding: 20px; border: 1px solid var(--line); border-radius: 16px; color: var(--ink);
+}
+.diagram-dialog::backdrop { background: #122e29bb; }
+.diagram-dialog .diagram-viewport { max-height: 75dvh; margin-top: 12px; }
+.diagram-dialog h2 { display: inline-block; margin-right: 20px; }
+@media (max-width: 900px) { .material-hero { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) {
+  .material-content { padding: 18px 14px; }
+  .diagram-viewport { padding: 12px; }
+  .diagram-toolbar { flex-wrap: wrap; }
+  .material-bottom-nav { flex-wrap: wrap; }
+  .material-bottom-nav > * { min-width: 0; max-width: 100%; }
+}

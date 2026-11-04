@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M21202｜線平衡、品質要因與即時資訊：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M21202/M21202-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "scope",
+      "label": "需求與時間口徑",
+      "sublabel": "淨可用時間／需求／TT",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "balance",
+      "label": "線平衡與瓶頸",
+      "sublabel": "CT／LBR／站數下限",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "quality",
+      "label": "品質原因與風險",
+      "sublabel": "SPC／Cp／Cpk／FMEA",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "資訊與改善決策",
+      "sublabel": "KPI／責任／對策與驗證",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "precedence",
+      "label": "先行與人機時序",
+      "sublabel": "不可分割作業／設備資格",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "量測與分析前提",
+      "sublabel": "穩定性／分布／樣本／DOE",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "loss",
+      "label": "OEE 六大損失",
+      "sublabel": "A 停機／P 速度／Q 品質",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "scope-to-balance",
+      "from": "scope",
+      "to": "balance",
+      "label": "定需求節奏"
+    },
+    {
+      "id": "precedence-to-balance",
+      "from": "precedence",
+      "to": "balance",
+      "label": "驗證合法配置"
+    },
+    {
+      "id": "balance-to-quality",
+      "from": "balance",
+      "to": "quality",
+      "label": "改善仍守品質"
+    },
+    {
+      "id": "evidence-to-quality",
+      "from": "evidence",
+      "to": "quality",
+      "label": "先確認適用性"
+    },
+    {
+      "id": "quality-to-decision",
+      "from": "quality",
+      "to": "decision",
+      "label": "驗證原因與效果"
+    },
+    {
+      "id": "loss-to-decision",
+      "from": "loss",
+      "to": "decision",
+      "label": "以損失選工具"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "TT＝淨可用時間／需求；LBR＝ΣCT／(站數×最大 CT)。理論站數向上取整只給下限，還要驗先行、資格及不可分割作業。",
+        "雙邊規格且同變異估計下，Cp 大於 Cpk 表示偏心；能力分析先確認製程穩定與量測品質。",
+        "OEE＝A×P×Q，對應停機、慢速／短停與品質損失。看板需呈現口徑、警戒、鑽取與處置責任。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "瓶頸 CT 已反映線平衡損失，不能再把理論產量乘一次 LBR；人員負荷總量也不能代替人機時序。",
+        "RPN＝S×O×D 不可蓋過高嚴重度風險；魚骨與散佈提出假設，須驗證。官方 OEE 算題差異依教材保留假設與公告答案。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元八／L21205–L21207，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

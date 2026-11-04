@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "工業工程：由受控方法建立工時，再檢查瓶頸與需求",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M11201/M11201-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心方法與決策"
+        },
+        "external": {
+          "label": "輸入條件與基準"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "method",
+      "type": "backend",
+      "label": "方法與動作改善",
+      "sublabel": "ECRS、動作經濟與安全",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "observe",
+      "type": "backend",
+      "label": "代表性觀測時間 OT",
+      "sublabel": "固定方法、多週期測時",
+      "pos": [
+        430,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "normal",
+      "type": "backend",
+      "label": "評比後正常時間 NT",
+      "sublabel": "NT＝OT×評比係數",
+      "pos": [
+        820,
+        40
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "demand",
+      "type": "external",
+      "label": "可用時間與需求",
+      "sublabel": "時間單位及損失口徑",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "assign",
+      "type": "backend",
+      "label": "可行的工作站分派",
+      "sublabel": "工序先行與資源限制",
+      "pos": [
+        430,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "standard",
+      "type": "backend",
+      "label": "含合理寬放的 ST",
+      "sublabel": "先辨認寬放分母",
+      "pos": [
+        820,
+        260
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "takt",
+      "type": "backend",
+      "label": "需求節拍 TT",
+      "sublabel": "可用時間÷需求量",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    },
+    {
+      "id": "balance",
+      "type": "backend",
+      "label": "CT／TT 與線平衡",
+      "sublabel": "瓶頸、站數及品質檢核",
+      "pos": [
+        430,
+        480
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "icon": "none"
+    }
+  ],
+  "connections": [
+    {
+      "id": "method-to-observe",
+      "from": "method",
+      "to": "observe",
+      "label": "固定作業條件"
+    },
+    {
+      "id": "observe-to-normal",
+      "from": "observe",
+      "to": "normal",
+      "label": "平均後評比"
+    },
+    {
+      "id": "normal-to-standard",
+      "from": "normal",
+      "to": "standard",
+      "label": "依定義加寬放"
+    },
+    {
+      "id": "standard-to-assign",
+      "from": "standard",
+      "to": "assign",
+      "label": "標準作業時間"
+    },
+    {
+      "id": "assign-to-balance",
+      "from": "assign",
+      "to": "balance",
+      "label": "瓶頸 CT"
+    },
+    {
+      "id": "demand-to-takt",
+      "from": "demand",
+      "to": "takt",
+      "label": "同一時間口徑"
+    },
+    {
+      "id": "takt-to-balance",
+      "from": "takt",
+      "to": "balance",
+      "label": "需求比較"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "三種時間與兩種寬放",
+      "items": [
+        "ST 描述標準作業時間；TT 由客戶需求決定；CT 是完工間隔，在題設的穩態串聯單資源模型中受最慢站限制。",
+        "寬放以 NT 為基底：ST＝NT×(1＋A)；以 ST 為分母：ST＝NT÷(1－A)。同一百分比不可直接互換，已從可用時間扣掉的損失也不要重複扣計。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "瓶頸與方法改善",
+      "items": [
+        "理論最少站數＝ceil(總作業時間÷目標 CT)，實際還受不可分作業與先行關係限制。線平衡率＝總作業時間÷(站數×CT)。",
+        "平均工時低於 TT 不代表最慢站達標；改善後重新找瓶頸，並驗證品質、安全、人因與可維持性。工作抽樣估狀態比例，測時建立作業時間，不能把等待率直接當寬放率。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與自我檢核",
+      "items": [
+        "M11201｜工業工程概論與標準工時；來源：科目一／04_工業工程概論與標準工時.md。",
+        "若理論兩站足夠，但不可分工序無法分配到目標 CT 內，應如何設計可執行的改善方案？"
+      ]
+    }
+  ]
+}

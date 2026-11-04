@@ -1,0 +1,555 @@
+[
+  {
+    "code": "M12101",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12101\\candidate.json",
+        "sha256": "e5eead4dabadbd4bfc043369d30583fb516ddd885268f6f943caf5eb556a2bf6",
+        "bytes": 4857
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12101\\M12101-summary.html",
+        "sha256": "36abad7c3c28f51ded69575766e0db986737a659f1ce0b2073b0f191b56c8b26",
+        "bytes": 819600
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12101\\m12101-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12101\\m12101-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12101\\m12101-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 6988,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "code": "M12102",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12102\\candidate.json",
+        "sha256": "6ecf3c5fa9027a40060161946a421dd32b04061849cf5a67539f23990fa98906",
+        "bytes": 4936
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12102\\M12102-summary.html",
+        "sha256": "69d3d35b3c14a29b5d1349a51bac97bfeca10a7fb2567b97325fc2262876c33a",
+        "bytes": 820163
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12102\\m12102-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12102\\m12102-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12102\\m12102-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 6630,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "code": "M12103",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12103\\candidate.json",
+        "sha256": "88e94af32b6bf02d3a7a0a1c9594b2656a27bc132fc86fce36192ce56e2e1ac4",
+        "bytes": 4847
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12103\\M12103-summary.html",
+        "sha256": "798e0b329bf96e8cb971be0fd149b4d48b9e35bcdf5103358fe5154a3c2308de",
+        "bytes": 819135
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12103\\m12103-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12103\\m12103-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12103\\m12103-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 8435,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "code": "M12201",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12201\\candidate.json",
+        "sha256": "29788b0d08878e92302b795de798f8190833139020eebe77c0aff7779d230190",
+        "bytes": 4822
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12201\\M12201-summary.html",
+        "sha256": "7ca5308ff24c0bfb9d237e713df0abed65e4d3be1723f3b7fa9c86d7a7e474cb",
+        "bytes": 817989
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12201\\m12201-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12201\\m12201-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12201\\m12201-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 10772,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      },
+      "visualReviewRecommendation": {
+        "action": "inspect-route-readability",
+        "signals": {
+          "routesOverSuggestedStretch": 1
+        },
+        "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+        "affectedRoutes": {
+          "crossings": [],
+          "detours": [
+            {
+              "relationship": {
+                "id": "relation-7",
+                "from": "config",
+                "to": "connection",
+                "label": "限幅核准後回饋",
+                "collectionIndex": 6,
+                "artifactIndex": 7
+              },
+              "bends": 2,
+              "stretch": 1.613,
+              "directCorridorBlockers": [
+                {
+                  "id": "conversion",
+                  "label": "Conversion 轉換",
+                  "box": [
+                    350,
+                    40,
+                    210,
+                    90
+                  ]
+                },
+                {
+                  "id": "cyber",
+                  "label": "Cyber 虛實整合",
+                  "box": [
+                    660,
+                    40,
+                    210,
+                    90
+                  ]
+                },
+                {
+                  "id": "cognition",
+                  "label": "Cognition 認知",
+                  "box": [
+                    970,
+                    40,
+                    210,
+                    90
+                  ]
+                }
+              ]
+            }
+          ],
+          "truncated": false
+        },
+        "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+      }
+    }
+  },
+  {
+    "code": "M12202",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12202\\candidate.json",
+        "sha256": "251aa528d56877c03bb47c9e8c047048c55cdd4016201bd7206209bc63d7286c",
+        "bytes": 5169
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12202\\M12202-summary.html",
+        "sha256": "360d3a8587fd7f4ab7c0186800bf624787612586e2069ab223ad9c5a9e4bf49e",
+        "bytes": 821903
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12202\\m12202-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12202\\m12202-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12202\\m12202-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 9112,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "code": "M12203",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12203\\candidate.json",
+        "sha256": "93f160800fd68d848381998794756d9fba34304a220e769c9908ef432ec911be",
+        "bytes": 5599
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12203\\M12203-summary.html",
+        "sha256": "24cf29c79d89cb5bca6221f75a59b1b8e00423aa44245b32bb7ece2511ef935b",
+        "bytes": 825067
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12203\\m12203-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12203\\m12203-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M12203\\m12203-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 13254,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      },
+      "visualReviewRecommendation": {
+        "action": "inspect-route-readability",
+        "signals": {
+          "resolvedCrossovers": 1,
+          "routesOverSuggestedBends": 1
+        },
+        "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+        "affectedRoutes": {
+          "crossings": [
+            {
+              "left": {
+                "id": "relation-2",
+                "from": "mes",
+                "to": "erp",
+                "label": "回報實績耗用",
+                "collectionIndex": 1,
+                "artifactIndex": 2
+              },
+              "right": {
+                "id": "relation-8",
+                "from": "mes",
+                "to": "andon",
+                "label": "異常通報升級",
+                "collectionIndex": 7,
+                "artifactIndex": 8
+              },
+              "point": [
+                310,
+                154
+              ],
+              "sharedNode": "mes"
+            }
+          ],
+          "detours": [
+            {
+              "relationship": {
+                "id": "relation-2",
+                "from": "mes",
+                "to": "erp",
+                "label": "回報實績耗用",
+                "collectionIndex": 1,
+                "artifactIndex": 2
+              },
+              "bends": 3,
+              "stretch": 1.193
+            }
+          ],
+          "truncated": false
+        },
+        "hints": [
+          "mes → erp and mes → andon cross next to mes: move node erp or andon so the two reach mes from different sides (for example one level with it, one directly above or below it).",
+          "mes → erp needs 3 bends: move node mes or erp so they share a row or column with matching centers, or sit diagonally with a clear corner."
+        ],
+        "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+      }
+    }
+  },
+  {
+    "code": "M13101",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13101\\candidate.json",
+        "sha256": "0690eec4f1f74c925278d337ff7a5e45845a2e7688ac11a226ecb3630c808f18",
+        "bytes": 5271
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13101\\M13101-summary.html",
+        "sha256": "3262cd2358d112cb23a457eeed5f1ebd1d31f727a72a8fac3be95511f2e59122",
+        "bytes": 821451
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13101\\m13101-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13101\\m13101-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13101\\m13101-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 14725,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  },
+  {
+    "code": "M13201",
+    "exit": 0,
+    "receipt": {
+      "schemaVersion": 1,
+      "ok": true,
+      "command": "finalize",
+      "status": "pass",
+      "type": "architecture",
+      "quality": "showcase",
+      "specification": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13201\\candidate.json",
+        "sha256": "057ca96a52351586608a12cab5cac8464e460c822cd65b96b09ccc84c804c42f",
+        "bytes": 5486
+      },
+      "artifact": {
+        "path": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13201\\M13201-summary.html",
+        "sha256": "e55a4a1d38bbe6b3f27c5740aabd1e314d748234063c91a8c4434695da1351f6",
+        "bytes": 822654
+      },
+      "gates": {
+        "validate": "pass",
+        "deliver": "pass",
+        "check": "pass",
+        "browser-check": "pass"
+      },
+      "diagnostics": [],
+      "diagnosticSummary": {
+        "total": 0,
+        "shown": 0,
+        "truncated": false
+      },
+      "evidence": {
+        "receipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13201\\m13201-summary.finalize.json",
+        "summaryReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13201\\m13201-summary.finalize-summary.json",
+        "browserCheckReceipt": "C:\\Users\\benit\\Desktop\\iPAS智慧生產工程師\\.archify\\architecture-unit-summaries-20261024-120610\\M13201\\m13201-summary.browser-check.json"
+      },
+      "update": {
+        "status": "current",
+        "installedVersion": "3.2.0",
+        "availableVersion": "3.2.0",
+        "releaseNotes": null,
+        "checkedAt": "2026-10-24T03:48:04.899Z",
+        "source": "cache",
+        "noticeRequired": false,
+        "noticeText": null
+      },
+      "visualReview": "not-requested",
+      "durationMs": 17451,
+      "browserCheck": {
+        "requested": true,
+        "ran": true
+      }
+    }
+  }
+]

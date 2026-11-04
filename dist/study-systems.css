@@ -1,0 +1,226 @@
+/* --- OEE 3 Pillars & Six Major Losses --- */
+.oee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 18px 0;
+}
+.oee-pillar {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(23, 61, 52, 0.03);
+}
+.oee-pillar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.oee-pillar-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.oee-pillar-metric {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--green);
+  font-family: 'Space Grotesk', sans-serif;
+}
+.oee-bar-bg {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.oee-bar-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 4px;
+}
+.oee-losses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1.5;
+}
+.oee-losses-list strong {
+  color: #1e3a32;
+}
+.oee-pillar--a { border-top: 4px solid #3b82f6; }
+.oee-pillar--p { border-top: 4px solid #8b5cf6; }
+.oee-pillar--q { border-top: 4px solid #ec4899; }
+.oee-pillar--total {
+  border-color: #86efac;
+  border-top: 4px solid #16a34a;
+  background: #f0fdf4;
+}
+.oee-pillar--total .oee-bar-fill {
+  background: #16a34a;
+}
+@media (max-width: 900px) {
+  .oee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .oee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- ISA-95 Five Tier Pyramid --- */
+.isa95-pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0;
+}
+.isa95-tier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 6px rgba(23, 61, 52, 0.03);
+  transition: transform 0.15s ease;
+}
+.isa95-tier:hover {
+  transform: translateX(4px);
+}
+.isa95-tier-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.isa95-tier-badge {
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: var(--soft);
+  color: var(--green);
+  white-space: nowrap;
+}
+.isa95-tier-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.isa95-tier-desc {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.isa95-tier-meta {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+.isa95-time-pill {
+  font-size: 10.5px;
+  background: #f1f5f9;
+  padding: 4px 9px;
+  border-radius: 12px;
+  color: #475569;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.isa95-tier--l4 { border-left: 5px solid #8b5cf6; }
+.isa95-tier--l3 { border-left: 5px solid #3b82f6; }
+.isa95-tier--l2 { border-left: 5px solid #06b6d4; }
+.isa95-tier--l1 { border-left: 5px solid #10b981; }
+.isa95-tier--l0 { border-left: 5px solid #f59e0b; }
+@media (max-width: 650px) {
+  .isa95-tier {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .isa95-tier-meta {
+    margin-left: 0;
+  }
+}
+
+/* --- Modbus Register Map Grid --- */
+.modbus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 18px 0;
+}
+.modbus-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(23, 61, 52, 0.03);
+}
+.modbus-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.modbus-type {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.modbus-range {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+}
+.modbus-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.modbus-tag-rw {
+  font-size: 10px;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.modbus-tag-ro {
+  font-size: 10px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.modbus-tag-bit {
+  font-size: 10px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.modbus-desc {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .modbus-grid {
+    grid-template-columns: 1fr;
+  }
+}

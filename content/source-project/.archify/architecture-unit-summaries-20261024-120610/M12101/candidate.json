@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M12101 單元總結｜智慧製造：功能分工、整合方向與資料權責",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M12101/M12101-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "核心概念與活動"
+        },
+        "database": {
+          "label": "資料與證據"
+        },
+        "external": {
+          "label": "目標、輸入與結果"
+        },
+        "security": {
+          "label": "條件與防護"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "goal",
+      "label": "營運改善目標",
+      "sublabel": "交期、品質、追溯與停機",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "vertical",
+      "label": "垂直整合",
+      "sublabel": "廠內資料形成營運資訊",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        370,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "levels",
+      "label": "ISA-95 功能分層",
+      "sublabel": "L0 製程至 L4 企業規劃",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        700,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "control",
+      "label": "現場控制界線",
+      "sublabel": "L1 直接控制與互鎖",
+      "type": "security",
+      "icon": "none",
+      "pos": [
+        1030,
+        40
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "horizontal",
+      "label": "水平價值鏈",
+      "sublabel": "供應商、物流與客戶",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "contract",
+      "label": "資料契約與權威來源",
+      "sublabel": "識別、單位、時間與版次",
+      "type": "database",
+      "icon": "none",
+      "pos": [
+        370,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "engineering",
+      "label": "端到端工程整合",
+      "sublabel": "設計、製造到服務",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        700,
+        300
+      ],
+      "size": [
+        210,
+        90
+      ]
+    },
+    {
+      "id": "verify",
+      "label": "對帳與追溯驗證",
+      "sublabel": "需求、投入、良品與報廢",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        370,
+        560
+      ],
+      "size": [
+        210,
+        90
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "relation-1",
+      "from": "goal",
+      "to": "vertical",
+      "label": "界定問題"
+    },
+    {
+      "id": "relation-2",
+      "from": "vertical",
+      "to": "levels",
+      "label": "依功能分工"
+    },
+    {
+      "id": "relation-3",
+      "from": "levels",
+      "to": "control",
+      "label": "保留控制責任"
+    },
+    {
+      "id": "relation-4",
+      "from": "vertical",
+      "to": "contract",
+      "label": "定義欄位權責"
+    },
+    {
+      "id": "relation-5",
+      "from": "horizontal",
+      "to": "contract",
+      "label": "交換供應資訊"
+    },
+    {
+      "id": "relation-6",
+      "from": "engineering",
+      "to": "contract",
+      "label": "延續核准版次"
+    },
+    {
+      "id": "relation-7",
+      "from": "contract",
+      "to": "verify",
+      "label": "核對交易事實"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "核心複習",
+      "items": [
+        "工業演進由機械化、大量生產、自動化走向資料連結與彈性決策；智慧化須對應可驗證的營運問題。",
+        "ERP 核准訂單需求與交期；MES 關聯工序、在製及品質；SCADA／控制器保留設備事件；工程／PLM 管理產品圖面與版次。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "容易誤判的條件",
+      "items": [
+        "Level 分的是功能；物理製程在 L0，感測、致動及直接控制在 L1，同一台設備可包含多層功能。",
+        "雙向交換不等於任意雙方改寫；投入量不等於可交付良品。上位分析不能取代現場安全與互鎖。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "複習自問與教材",
+      "items": [
+        "能否沿一筆工單說明：誰核准、誰執行、誰產生事件，以及如何核對品質放行與數量？",
+        "教材來源：docs/科目二_智慧製造生產線管理基礎/01_智慧製造概論與ISA95架構.md"
+      ]
+    }
+  ]
+}

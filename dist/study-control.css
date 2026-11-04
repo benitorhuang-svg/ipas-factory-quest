@@ -1,0 +1,141 @@
+/* --- CPS 5C Architecture Ladder --- */
+.cps-ladder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0;
+}
+.cps-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(23, 61, 52, 0.03);
+}
+.cps-step-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.cps-step--c5 .cps-step-badge { background: #ede9fe; color: #6d28d9; }
+.cps-step--c4 .cps-step-badge { background: #dbeafe; color: #1d4ed8; }
+.cps-step--c3 .cps-step-badge { background: #cffafe; color: #0e7490; }
+.cps-step--c2 .cps-step-badge { background: #dcfce7; color: #15803d; }
+.cps-step--c1 .cps-step-badge { background: #fef3c7; color: #b45309; }
+.cps-step-body {
+  flex: 1;
+}
+.cps-step-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.cps-step-desc {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+.cps-step-tag {
+  font-size: 10.5px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 9px;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+@media (max-width: 650px) {
+  .cps-step {
+    flex-wrap: wrap;
+  }
+}
+
+/* --- Andon Visual Tower --- */
+.andon-tower {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 18px 0;
+}
+.andon-light-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(23, 61, 52, 0.03);
+}
+.andon-bulb {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+.andon-bulb--green {
+  background: #22c55e;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.45);
+}
+.andon-bulb--yellow {
+  background: #eab308;
+  box-shadow: 0 0 16px rgba(234, 179, 8, 0.45);
+}
+.andon-bulb--red {
+  background: #ef4444;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.45);
+}
+.andon-status-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.andon-status-desc {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .andon-tower {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Control Chart Selection Flowchart Container --- */
+.control-chart-selector {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 22px 0;
+  overflow-x: auto;
+  box-shadow: 0 4px 16px rgba(23, 61, 52, 0.04);
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+.control-chart-selector svg {
+  max-width: 100%;
+  height: auto;
+  min-width: 640px;
+  display: block;
+  margin: 0 auto;
+}
+.selector-line { fill: none; stroke: #6366f1; stroke-width: 3; }
+.selector-question { fill: #eef2ff; stroke: #6366f1; stroke-width: 2.5; }
+.selector-result { fill: #ecfdf5; stroke: #059669; stroke-width: 2.5; }
+.selector-label { fill: #334155; font-weight: 600; font-size: 16px; }
+.selector-main { fill: #1e1b4b; font-weight: 700; font-size: 21px; }
+.selector-result-text { fill: #065f46; font-weight: 700; font-size: 20px; }
+.selector-sub { fill: #475569; font-weight: 500; font-size: 15px; }

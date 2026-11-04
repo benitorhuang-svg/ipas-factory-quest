@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
+import { JSDOM } from 'jsdom';
+const require = createRequire(import.meta.url), E = require('../dist/engine.js');
+const bank = ['1', '2'].flatMap(id => JSON.parse(fs.readFileSync(`content/questions-subject${id}.json`, 'utf8')));
+const question = bank[0], payload = '<b data-audit-probe="true">audit</b>';
+const raw = { ...E.emptyState(), ledger: { [question.id]: { attempts: Infinity, correctCount: 99, lastCorrect: false, lastSeen: -1, dueAt: NaN } },
+  history: [null, { runId: 'bad', mode: 'exam', results: [null] },
+    { runId: 'safe', unitId: payload, mode: 'mission', subject: payload, correct: payload, total: payload, score: 99, earnedXP: payload, newBadge: true, completedAt: Infinity, results: [{ id: question.id, answer: question.answer, correct: false }] }] };
+const state = E.restore(raw, bank);
+assert.equal(state.history.length, 1);
+const report = state.history[0];
+assert.equal(report.unitId, null); assert.equal(report.subject, null); assert.equal(report.score, 100);
+assert.equal(report.total, 1); assert.equal(report.correct, 1); assert.equal(report.earnedXP, 0); assert.equal(report.newBadge, false);
+assert.equal(report.completedAt, 0); assert.equal(state.ledger[question.id].attempts, 0);
+assert.equal(state.ledger[question.id].correctCount, 0);
+for (const invalid of [null, [], 'text', { version: 2 }]) assert.equal(E.restore(invalid, bank).xp, 0);
+for (const results of [[null], [false], ['x'], [{}]]) assert.doesNotThrow(() => E.restore({ ...raw, history: [{ runId: 'x', mode: 'exam', results }] }, bank));
+const dom = new JSDOM('', { runScripts: 'outside-only' });
+dom.window.eval(fs.readFileSync('dist/ui.js', 'utf8'));
+dom.window.eval(fs.readFileSync('dist/view-quiz.js', 'utf8'));
+const context = { E, state, lastReport: null, qmap: new Map(bank.map(q => [q.id, q])), byUnit: () => null, ...dom.window.FactoryUI, home: () => '' };
+dom.window.document.body.innerHTML = dom.window.FactoryQuiz.result(context, 'safe');
+assert.equal(dom.window.document.querySelector('[data-audit-probe]'), null);
+const run = { id: 'valid', mode: 'mission', unitId: question.unit, subject: null, questionIds: [question.id], answers: { [question.id]: question.answer }, startedAt: Date.now() };
+const graded = E.grade(E.emptyState(), run, bank, Date.now());
+const restored = E.restore(JSON.parse(JSON.stringify(graded.state)), bank);
+assert.deepEqual(restored.history[0], graded.report);
+assert.equal(restored.xp, graded.state.xp);
+assert.equal(E.correct({ kind: 'number', answer: 1, tolerance: 0 }, '1.0001'), false);
+dom.window.close();
+console.log('PASS: backup allowlist, malformed history, finite ledger, HTML injection regression and valid round trip.');

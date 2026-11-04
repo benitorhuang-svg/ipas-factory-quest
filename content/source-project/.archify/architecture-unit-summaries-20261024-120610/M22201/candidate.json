@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "M22201｜感測器、機器視覺與機器人整合：單元總結",
+    "locale": "zh-TW",
+    "output": ".archify/architecture-unit-summaries-20261024-120610/M22201/M22201-summary.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "backend": {
+          "label": "核心概念與決策主線"
+        },
+        "external": {
+          "label": "判斷依據與支援條件"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "task",
+      "label": "檢測與動作需求",
+      "sublabel": "物理量／缺陷／節拍／姿態",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "vision",
+      "label": "感測與視覺判定",
+      "sublabel": "量測值／OK-NG／位置",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        410,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "request",
+      "label": "座標與作業請求",
+      "sublabel": "校正／延遲補償／序號",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        780,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "robot",
+      "label": "PLC／機器人執行",
+      "sublabel": "正確序號／互鎖才放行",
+      "type": "backend",
+      "icon": "none",
+      "pos": [
+        1150,
+        40
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "sensor",
+      "label": "感測器與介面",
+      "sublabel": "量程／解析度／輸出／環境",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "optics",
+      "label": "光學與曝光",
+      "sublabel": "FOV／照明／運動模糊",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        410,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "transaction",
+      "label": "握手與期限",
+      "sublabel": "Request／Ack／逾時狀態",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        780,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "作業風險與安全迴路",
+      "sublabel": "工具／速度／空間／驗證",
+      "type": "external",
+      "icon": "none",
+      "pos": [
+        1150,
+        300
+      ],
+      "size": [
+        220,
+        96
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "task-to-sensor",
+      "from": "task",
+      "to": "sensor",
+      "label": "依任務選型"
+    },
+    {
+      "id": "task-to-vision",
+      "from": "task",
+      "to": "vision",
+      "label": "代表性樣品驗證"
+    },
+    {
+      "id": "optics-to-vision",
+      "from": "optics",
+      "to": "vision",
+      "label": "可信取像"
+    },
+    {
+      "id": "vision-to-request",
+      "from": "vision",
+      "to": "request",
+      "label": "毫米座標與時間"
+    },
+    {
+      "id": "transaction-to-request",
+      "from": "transaction",
+      "to": "request",
+      "label": "一次請求一個序號"
+    },
+    {
+      "id": "request-to-robot",
+      "from": "request",
+      "to": "robot",
+      "label": "序號正確且受互鎖"
+    },
+    {
+      "id": "robot-to-request",
+      "from": "robot",
+      "to": "request",
+      "label": "相同序號完成回覆"
+    },
+    {
+      "id": "safety-to-robot",
+      "from": "safety",
+      "to": "robot",
+      "label": "風險控制通過"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "重點回顧",
+      "items": [
+        "4–20mA 的 4mA 為量程下限，0mA 常為迴路異常；量程、精度、解析度、重複性與安裝誤差分別驗證。",
+        "物方尺度約 FOV／像素數；曝光位移約速度×曝光時間。像素尺寸不等於量測精度，光學與演算法皆須驗證。",
+        "像素需經校正轉到機器人座標，移動工件另考慮延遲。請求綁工件、序號、版本與期限，逾時先查狀態。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "考點與常見誤判",
+      "items": [
+        "漏檢與誤殺依風險及成本評估；AI 不會自動補救模糊、錯誤校正或缺少代表性資料。",
+        "舊序號完成不可放行新工件；急停須經驗證安全迴路／通訊，Cobot 碰撞偵測不代表可直接撤除防護。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "教材依據與讀圖範圍",
+      "items": [
+        "中級單元十一／L22201–L22203，以目前專案教材為依據。",
+        "關係圖濃縮章節主線；公式及題目仍須回看原文的分母、單位、假設與公告答案界線。"
+      ]
+    }
+  ]
+}

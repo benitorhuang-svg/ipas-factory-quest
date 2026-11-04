@@ -1,0 +1,54 @@
+/* ── Exam Select Page ── */
+.exam-select-page { max-width: 720px; margin: 0 auto; padding: 1.5rem 1rem; }
+.exam-select__header { margin-bottom: 1.5rem; }
+.exam-select__header h2 { font-size: 1.3rem; font-weight: 900; }
+.exam-select__desc { color: var(--color-text-secondary); font-size: .85rem; margin-top: .35rem; line-height: 1.55; }
+.exam-select__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.exam-select__card { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.25rem; cursor: pointer; transition: all .2s ease; display: flex; flex-direction: column; gap: .65rem; }
+.exam-select__card:hover { border-color: var(--color-indigo-400); box-shadow: 0 4px 20px rgba(99,102,241,.1); transform: translateY(-2px); }
+.exam-select__badge { display: inline-block; width: fit-content; padding: .2rem .6rem; border-radius: var(--radius-md); background: rgba(99,102,241,.12); color: var(--color-indigo-500); font-size: .7rem; font-weight: 800; letter-spacing: .03em; }
+.exam-select__title { font-size: 1.05rem; font-weight: 800; line-height: 1.4; }
+.exam-select__meta { display: flex; flex-wrap: wrap; gap: .6rem; font-size: .75rem; color: var(--color-text-muted); }
+.exam-select__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+.exam-select__stat { text-align: center; padding: .5rem .25rem; background: var(--color-bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+.exam-select__stat-value { display: block; font-size: 1.1rem; font-weight: 900; color: var(--color-text-primary); }
+.exam-select__stat-label { display: block; font-size: .65rem; font-weight: 700; color: var(--color-text-tertiary); margin-top: 2px; }
+.exam-select__progress { height: 6px; background: rgba(148,163,184,.12); border-radius: 3px; overflow: hidden; }
+.exam-select__progress-fill { height: 100%; background: linear-gradient(90deg, var(--color-indigo-500), var(--color-indigo-400)); border-radius: 3px; transition: width .6s ease; }
+.exam-select__btn { width: 100%; }
+.exam-select__actions { display: flex; justify-content: center; margin-top: 1.25rem; }
+@media (max-width: 560px) { .exam-select__grid { grid-template-columns: 1fr; } }
+
+.exam-page { max-width: 900px; margin: 0 auto; padding: 1rem; }
+.exam-header, .exam-progress, .exam-actions { display: flex; gap: .75rem; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.exam-eyebrow { font-size: .75rem; color: var(--color-text-muted); margin-bottom: .25rem; }
+.exam-header h2 { font-size: 1.1rem; }
+.exam-timer { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: .6rem .8rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.exam-timer--warning { color: #dc2626; border-color: #fca5a5; }
+.exam-progress { margin: 1rem 0; font-size: .825rem; color: var(--color-text-secondary); }
+.exam-question, .exam-result-card, .exam-review__item { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.25rem; }
+.exam-question h3 { line-height: 1.65; margin-bottom: 1rem; }
+.exam-question > .badge { margin-bottom: .75rem; }
+.exam-option { display: block; width: 100%; text-align: left; margin-top: .65rem; padding: .85rem; color: var(--color-text-primary); background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+.exam-option:hover, .exam-option--selected { border-color: var(--color-indigo-400); background: rgba(99,102,241,.12); }
+.exam-actions { margin: 1rem 0; justify-content: center; }
+.exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: .4rem; }
+.exam-grid__cell { min-height: 38px; border: 1px solid var(--color-border); border-radius: .45rem; color: var(--color-text-secondary); background: var(--color-bg-secondary); }
+.exam-grid__cell--answered { background: rgba(16,185,129,.16); border-color: #34d399; }
+.exam-grid__cell--active { outline: 2px solid var(--color-indigo-400); }
+.exam-result-card { text-align: center; }.exam-result-card__icon { font-size: 2.5rem; }.exam-score { font-size: 4rem; font-weight: 900; color: var(--color-indigo-500); }.exam-score small { font-size: 1rem; }
+.exam-review { margin-top: 1rem; }.exam-review h3 { margin-bottom: .75rem; }.exam-review__item { margin-bottom: .6rem; border-left: 4px solid #ef4444; }.exam-review__item--correct { border-left-color: #10b981; }.exam-review__item p { margin-top: .35rem; font-size: .85rem; color: var(--color-text-secondary); }
+.exam-history-page__intro { color: var(--color-text-secondary); font-size: .875rem; margin: .4rem 0 1rem; }
+.exam-history-page__actions { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+.exam-history-list { display: grid; gap: .75rem; }
+.exam-history-card { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1rem; }
+.exam-history-card__heading { display: flex; gap: .5rem; justify-content: space-between; align-items: start; }.exam-history-card__heading h3 { font-size: .95rem; }.exam-history-card__heading time, .exam-history-card__meta { color: var(--color-text-muted); font-size: .75rem; }.exam-history-card__score { font-size: 1.45rem; font-weight: 900; }.exam-history-card__score--pass { color: #059669; }.exam-history-card__score--retry { color: #e11d48; }.exam-history-card__meta { margin: .45rem 0 .8rem; }.exam-history-card__details { margin-top: 1rem; }
+@media (max-width: 560px) { .exam-actions .btn { flex: 1; } }
+
+/* ── Review filter tabs ── */
+.exam-review-filter { display: flex; gap: .4rem; margin-bottom: .75rem; flex-wrap: wrap; }
+.exam-review-filter__tab { padding: .45rem .85rem; border-radius: var(--radius-lg); font-size: .8rem; font-weight: 700; border: 1px solid var(--color-border); background: var(--color-bg-secondary); color: var(--color-text-secondary); cursor: pointer; transition: all .15s ease; }
+.exam-review-filter__tab:hover { border-color: var(--color-indigo-400); color: var(--color-text-primary); }
+.exam-review-filter__tab--active { background: rgba(99,102,241,.15); border-color: var(--color-indigo-400); color: var(--color-indigo-500); }
+.exam-review__list { display: flex; flex-direction: column; gap: .6rem; }
+.exam-review__empty { text-align: center; padding: 2rem 1rem; color: var(--color-text-muted); font-size: .875rem; }
