@@ -2,7 +2,7 @@
 
 ## 1. 專案基本資訊
 
-- 日期：2026-11-05。範圍：main 上相對正式版本 12f5f40 的全部產品修改；scratch 臨時檔不發布。
+- 日期：2026-11-05。範圍：main 上相對正式版本 12f5f40 的全部產品修改；scratch 臨時檔不屬網站發布內容，後依使用者「push all」要求收錄版本庫供追溯。
 - 實際入口是 dist/index.html；content/source-project/ 是保存來源。先前 2026-11-04 稽核另存 [歷史快照](PROJECT_AUDIT_2026-11-04.md)。
 - 純靜態 HTML／CSS／Vanilla JS PWA，使用 LocalStorage、Service Worker、本機 Mermaid／KaTeX。Node >=22.13.0、npm、ESLint、jsdom、Playwright、sharp。
 - 啟動：python -m http.server 8000 --directory dist。建置：npm run build；檢查：npm run lint、npm test、npm run test:browser、npm audit。
@@ -52,7 +52,7 @@ package.json                   唯一日常建置及測試入口
 | P2，內容覆核 | 三道內容修正已登記 pending，其他既有審核標記不代表本輪新增獨立人工審核。 | MRP 核心輸入答案、待驗庫存選項、ISA-95 Level 0／1 用語已修正並保留題號。仍需獨立專業覆核，不以程式測試宣稱人工審查完成。 |
 | P2，實機範圍 | 自動測試涵蓋 Chromium／WebKit、模擬網路及 Chromium 原生 SW，不等於所有手機安裝與儲存配額情境。 | 保留明確的能力跳過項；不把桌面測試外推為實機保證。 |
 
-本輪依賴稽核為 0 個已知漏洞。來源保存檔不做格式化；scratch 留在本機，不納入提交。發布前另檢查暫存檔、密鑰模式及 staged 來源雜湊。
+本輪依賴稽核為 0 個已知漏洞。來源保存檔不做格式化。scratch 歷史實驗資料依補充要求收錄版本庫，但不參與正式建置或網站發布；其密鑰模式掃描無命中。發布前另檢查暫存檔、密鑰模式及 staged 來源雜湊。
 
 ## 6. 優化建議
 
