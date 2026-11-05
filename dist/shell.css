@@ -14,13 +14,12 @@
 .topbar { min-width: 0; height: 74px; border-bottom: 1px solid #e4e9e1; }
 .topbar-left { min-width: 0; flex-shrink: 1; overflow: hidden; }
 .breadcrumb { overflow: hidden; text-overflow: ellipsis; font-size: 12px; gap: 10px; }
-.profile { padding-left: 16px; }
 .mobile-nav a { display: flex; flex-direction: column; align-items: center; gap: 4px; color: #607164; font-size: 10px; padding: 6px 3px; border-radius: 9px; min-height: 48px; }
 .mobile-nav a .icon { width: 20px; height: 20px; }
 .mobile-nav a.active { color: var(--green); background: #edf3e9; font-weight: 700; }
 select:focus-visible { outline: 3px solid #71a481; outline-offset: 4px; }
 .section-topbar.topbar {
-  display: grid; grid-template-columns: auto minmax(0, 1fr) auto;
+  display: grid; grid-template-columns: auto minmax(0, 1fr);
   align-items: center; gap: 24px; height: 80px; padding: 0 42px;
   position: sticky; top: 0; z-index: 15; background: var(--paper);
 }
@@ -33,7 +32,6 @@ select:focus-visible { outline: 3px solid #71a481; outline-offset: 4px; }
 }
 .section-tab:hover { color: var(--green); background: #eef2e9; }
 .section-tab.active { color: var(--green); border-color: var(--green); font-weight: 700; }
-.section-topbar .profile { padding-left: 0; margin-left: 0; }
 .page.page--section { padding-top: 26px; }
 .section-description { font-size: 13px; color: #65746c; margin: 0 0 24px; }
 .atlas-content > .atlas-section-title:first-child { margin: 0 0 18px; }
@@ -42,19 +40,16 @@ select:focus-visible { outline: 3px solid #71a481; outline-offset: 4px; }
 .atlas-content .section-caption { margin-left: auto; color: #65746c; font-size: 11px; }
 @media (max-width: 1180px) {
   .section-topbar.topbar { padding-right: 28px; padding-left: 28px; gap: 18px; }
-  .section-topbar .profile > span { display: none; }
 }
 @media (max-width: 980px) {
-  .section-topbar.topbar { grid-template-columns: minmax(0, 1fr) auto; height: auto; padding-top: 14px; gap: 8px 16px; }
+  .section-topbar.topbar { grid-template-columns: minmax(0, 1fr); height: auto; padding-top: 14px; gap: 8px 16px; }
   .section-topbar .section-tabs { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 16px; }
   .section-topbar .section-tab { padding: 0 6px 8px; }
-  .section-topbar .profile { grid-column: 2; grid-row: 1; }
 }
 @media (max-width: 700px) {
   .topbar { height: 64px; padding: 0 20px; }
   .topbar-left { overflow: visible; }
   .mobile-brand { font-size: 15px; }
-  .profile span { font-size: 11px; }
   .section-topbar.topbar { padding-right: 20px; padding-left: 20px; }
   .section-title { font-size: 17px; }
   .section-topbar .section-tabs { justify-content: space-between; gap: 4px; }

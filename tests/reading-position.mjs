@@ -49,6 +49,13 @@ const heading = doc.getElementById('reading-section-2');
 position.jump(heading);
 assert.equal(doc.activeElement, heading);
 assert.equal(window.scrollY, 1600);
+doc.documentElement.style.scrollPaddingTop = '110px';
+doc.querySelectorAll('h2').forEach(node => { node.style.scrollMarginTop = '26px'; });
+window.scrollY = 1564;
+position.refresh();
+assert.equal(doc.querySelector('[aria-current="location"]').dataset.target, 'reading-section-2', 'CSS scroll padding plus margin counts as the current paragraph landing line');
+window.scrollY = 1600;
+position.refresh();
 window.dispatchEvent(new window.Event('pagehide'));
 position.unmount();
 

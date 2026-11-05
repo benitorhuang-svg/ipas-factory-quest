@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import vm from 'node:vm';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import { hydrate } from './helpers/materials.mjs';
+import { shell, bundled } from './helpers/shell.mjs';
 
 const html = fs.readFileSync('dist/index.html', 'utf8');
 const scripts = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
@@ -77,7 +78,12 @@ vm.runInNewContext(fs.readFileSync('dist/precache.js', 'utf8'), precache);
 const assets = precache.self.FACTORY_PRECACHE.assets;
 for (const file of [...scripts, ...styles]) {
   assert.ok(assets.includes(file), `${file}: precache`);
-  assert.ok(fs.readFileSync(`dist/${file}`, 'utf8').split('\n').length <= 300 || ['data.js', 'offline-data.js', 'preview-data.js'].includes(file), `${file}: focused module`);
+}
+assert.deepEqual(scripts, ['data.js', 'app-bundle.js'], 'Two classic scripts also work under file://');
+assert.deepEqual(styles, ['shell-bundle.css']);
+for (const file of [...shell.scripts, ...shell.styles].filter(file => !['data.js', 'offline-data.js', 'preview-data.js'].includes(file))) {
+  assert.ok(bundled(file), `${file}: included in generated shell`);
+  assert.ok(fs.readFileSync(`dist/${file}`, 'utf8').split('\n').length <= 300, `${file}: focused source module`);
 }
 const vendorPath = 'assets/vendor/katex/';
 const vendor = JSON.parse(fs.readFileSync(`dist/${vendorPath}manifest.json`, 'utf8'));
@@ -85,8 +91,10 @@ assert.equal(window.katex.version, vendor.version);
 for (const file of vendor.files) {
   const bytes = fs.readFileSync(`dist/${vendorPath}${file.path}`);
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), file.sha256);
-  if (file.path !== 'LICENSE') assert.ok(assets.includes(vendorPath + file.path), `${file.path}: precache`);
+  if (file.path.endsWith('.woff2') || file.path.endsWith('.css')) assert.ok(assets.includes(vendorPath + file.path), `${file.path}: precache`);
 }
+assert.ok(!assets.includes(vendorPath + 'katex.min.js'), 'Prebuilt formulas do not require the JS renderer in the offline shell');
+assert.ok(!assets.some(file => /\.(?:woff|ttf)$/.test(file)), 'Modern browsers use the precached WOFF2 fonts; legacy formats stay available on demand');
 assert.deepEqual(errors, []);
 dom.window.close();
 console.log(`PASS: ${scripts.length} shell scripts; ${styles.length} stylesheets; local KaTeX readiness/retry; ${formulas} real formula renders; ${vendor.files.length} vendor hashes; precache coverage. DOM/static checks only.`);

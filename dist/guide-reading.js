@@ -6,6 +6,24 @@
     const template = document.createElement('template');
     template.innerHTML = details || '<p>講義內容準備中。</p>';
     template.content.querySelector('h1')?.remove();
+    for (const image of template.content.querySelectorAll('img[src]')) {
+      const source = image.getAttribute('src');
+      const preview = window.FactoryPreviews?.[source];
+      if (!preview) continue;
+      image.src = preview.src;
+      image.width = preview.width;
+      image.height = preview.height;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      if (image.closest('a, button')) continue;
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'reader-image-button';
+      button.dataset.action = 'lightbox'; button.dataset.src = source;
+      button.dataset.title = image.alt || '教材高解析圖解';
+      button.setAttribute('aria-label', `放大閱讀：${button.dataset.title}`);
+      button.title = '點選開啟高解析原圖';
+      image.replaceWith(button); button.append(image);
+    }
     const headings = [...template.content.querySelectorAll('h2, h3')];
     const level = headings.some(h => h.tagName === 'H2') ? 'H2' : 'H3';
     const sections = headings.filter(h => h.tagName === level).map((heading, index) => {
@@ -21,6 +39,20 @@
       wrap.setAttribute('aria-label', '教材表格，可左右捲動');
       table.replaceWith(wrap);
       wrap.append(table);
+    }
+    // Keep outline anchors outside layout containment: measuring a heading must
+    // not force the browser to render its entire offscreen section.
+    let chunk = document.createElement('section');
+    chunk.className = 'reader-chunk';
+    const children = [...template.content.childNodes];
+    template.content.prepend(chunk);
+    for (const node of children) {
+      if (node.nodeType === 1 && node.tagName === level) {
+        chunk = document.createElement('section'); chunk.className = 'reader-chunk';
+        node.after(chunk);
+        continue;
+      }
+      chunk.append(node);
     }
     return { html: template.innerHTML, sections };
   }

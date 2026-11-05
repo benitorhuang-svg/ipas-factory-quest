@@ -5,7 +5,7 @@ function progressView() {
     const history = [...state.history].reverse();
     return `
       <div class="stats-row">
-        <div class="stat"><span class="stat-icon">${icon('star')}</span><div><div class="stat-label">累積經驗</div><div class="stat-value number">${fmt(state.xp)}<small>XP</small></div></div></div>
+        <div class="stat"><span class="stat-icon">${icon('star')}</span><div><div class="stat-label">累積經驗 · ${esc(E.level(state.xp))}</div><div class="stat-value number">${fmt(state.xp)}<small>XP</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('flame')}</span><div><div class="stat-label">連續學習</div><div class="stat-value number">${E.streak(state)}<small>天</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('check')}</span><div><div class="stat-label">已答對不同題目</div><div class="stat-value number">${E.masteredIds(state, bank).length}<small>／${E.catalog(bank).unique.length}</small></div></div></div>
       </div>

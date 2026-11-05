@@ -19,15 +19,19 @@ function start(mode, unitId = null, subject = null, force = false) {
       `);
       return;
     }
-    let qs;
+    let qs, reviewTargets;
     try {
-      qs = E.select(bank, { mode, unitId, subject, state: ctx.state });
+      if (mode === 'review') {
+        const plan = E.reviewPlan(ctx.state, bank);
+        qs = plan.questions;
+        reviewTargets = plan.targets;
+      } else qs = E.select(bank, { mode, unitId, subject, state: ctx.state });
     } catch (e) {
       toast(e.message);
       return;
     }
     if (!qs.length) {
-      toast(mode === 'review' ? '目前沒有錯題或到期複習題目。' : '題庫尚未準備完成。');
+      toast(mode === 'review' ? '目前沒有待加強或到期複習題目。' : '題庫尚未準備完成。');
       return;
     }
     closeModal();
@@ -37,6 +41,7 @@ function start(mode, unitId = null, subject = null, force = false) {
       unitId,
       subject,
       questionIds: qs.map(q => q.id),
+      ...(reviewTargets ? { reviewTargets } : {}),
       answers: {},
       startedAt: Date.now()
     };

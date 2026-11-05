@@ -6,10 +6,11 @@
   },
   "scripts": {
     "integrate:source": "node scripts/integrate-source.mjs --apply",
-    "build": "node scripts/build-materials.cjs && node scripts/build-media.mjs && node scripts/build-offline.mjs && node scripts/build-precache.mjs",
+    "build": "node scripts/build-materials.cjs && node scripts/build-math.mjs && node scripts/build-diagrams.mjs && node scripts/build-media.mjs && node scripts/build-offline.mjs && node scripts/build-shell.mjs && node scripts/build-precache.mjs",
+    "measure:performance": "node scripts/measure-performance.mjs",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --fix --max-warnings 0",
-    "test": "node tests/validate.cjs && node tests/integration.mjs && node tests/diagrams.mjs && node tests/routes.mjs && node tests/ui-workflows.mjs && node tests/shell-assets.mjs && node tests/reading-position.mjs && node tests/sw-fetch.mjs && node tests/progress-safety.mjs && node tests/question-catalog.mjs && node scripts/check-question-duplicates.mjs && node scripts/check-structure.mjs && node scripts/check-content-governance.mjs",
+    "test": "node tests/validate.cjs && node tests/integration.mjs && node tests/diagrams.mjs && node tests/prebuilt-content.mjs && node tests/routes.mjs && node tests/ui-workflows.mjs && node tests/shell-assets.mjs && node tests/reading-position.mjs && node tests/sw-fetch.mjs && node tests/progress-safety.mjs && node tests/question-catalog.mjs && node tests/review-rotation.mjs && node scripts/check-question-duplicates.mjs && node scripts/check-structure.mjs && node scripts/check-content-governance.mjs",
     "test:browser": "playwright test",
     "test:pwa": "playwright test tests/browser/pwa.spec.mjs --project=chromium",
     "report:content": "node scripts/check-content-governance.mjs --report"

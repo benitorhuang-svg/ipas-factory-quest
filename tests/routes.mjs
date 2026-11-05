@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import { hydrate } from './helpers/materials.mjs';
+import { shell, bundled } from './helpers/shell.mjs';
 
 const errors = [];
 const diagnostics = new VirtualConsole();
@@ -17,7 +18,7 @@ window.HTMLElement.prototype.scrollIntoView = () => {};
 // Real diagram syntax and lifecycle checks live in diagrams.mjs.
 window.FactoryDiagrams = { render: async () => {} };
 const html = fs.readFileSync('dist/index.html', 'utf8');
-const scriptPaths = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
+const scriptPaths = shell.scripts;
 for (const file of scriptPaths.filter(file => !/^(https?:|assets\/|diagrams\.js)/.test(file))) {
   const script = doc.createElement('script');
   script.textContent = fs.readFileSync(`dist/${file}`, 'utf8');
@@ -145,7 +146,8 @@ assert.equal(new Set([...doc.querySelectorAll('a[href$=".pdf"]')].map(link => li
 const precache = { self: {} };
 vm.runInNewContext(fs.readFileSync('dist/precache.js', 'utf8'), precache);
 for (const file of ['guide.js', 'guide-reading.js', 'guide-notes.js', 'guide.css', 'shell.js', 'shell.css']) {
-  assert.ok(html.includes(file) && precache.self.FACTORY_PRECACHE.assets.includes(file), `${file}: shell and precache`);
+  const bundle = file.endsWith('.css') ? 'shell-bundle.css' : 'app-bundle.js';
+  assert.ok(bundled(file) && html.includes(bundle) && precache.self.FACTORY_PRECACHE.assets.includes(bundle), `${file}: bundled shell and precache`);
   assert.ok(fs.readFileSync(`dist/${file}`, 'utf8').split('\n').length <= 300, `${file}: focused module`);
 }
 assert.deepEqual(errors, []);

@@ -12,7 +12,7 @@ function snapshot(version) {
   vm.runInNewContext(fs.readFileSync(path.join(root, 'precache.js'), 'utf8'), context);
   const assets = context.self.FACTORY_PRECACHE.assets;
   const files = new Map(assets.map(asset => [asset, fs.readFileSync(path.join(root, asset))]));
-  files.set('app.js', Buffer.from(files.get('app.js').toString() + `\nwindow.__testRelease = '${version}';\n`));
+  files.set('app-bundle.js', Buffer.from(files.get('app-bundle.js').toString() + `\nwindow.__testRelease = '${version}';\n`));
   const normalizedHTML = files.get('index.html').toString().replace(/(<meta name="factory-release" content=")[^"]+/, '$1generated');
   files.set('index.html', Buffer.from(normalizedHTML));
   const worker = fs.readFileSync(path.join(root, 'sw.js'), 'utf8').replace(/\/\/ Cache revision: \S+/, '// Cache revision: generated');

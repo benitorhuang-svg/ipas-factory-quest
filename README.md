@@ -31,14 +31,15 @@
   - **官方試題與簡章 PDF 下載**：收錄 115 年第一次初級／中級官方公告試題、術科樣題標準與鑑定簡章（含歷史版本共 9 份 PDF），支援線上直接開啟與下載。
 - **純靜態零依賴與 PWA 離線支援**：
   - 純 HTML、CSS、Vanilla JavaScript，本機直接開啟或靜態託管隨處可跑。
-  - 支援 PWA 漸進式網頁應用安裝，外殼、章節文字與本機 KaTeX／完整字型列入預快取；圖片、互動頁與 Mermaid 按需快取，亦可在成長紀錄下載完整章節。更新等待舊分頁結束。
+  - 支援 PWA 漸進式網頁應用安裝，外殼、章節文字、預先排版的公式與本機 KaTeX 樣式／WOFF2 字型列入預快取；圖片、教材 SVG 與互動頁按需快取，亦可在成長紀錄下載完整章節。更新等待舊分頁結束。
 
 ## 介面與閱讀流程
 
 - 頁面標題與分區集中於頂欄；首頁突出一個建議任務，通關、經驗與錯題以簡潔數據列呈現。
 - 圖鑑以單元為主，圖片直接開啟放大閱讀；全廠總覽在「全部圖鑑」中收合，也可從頂欄直接進入。
 - 講義目錄返回後保留搜尋、分類與捲動位置；錯題依單元收合，作答報告可只顯示答錯題目。
-- 圖解與公式引擎按需載入，完整公式排版使用站內資源；圖片載入失敗會顯示提示，放大視窗可重試。
+- HTTP 閱讀使用預先產生的 SVG 圖解與 HTML／MathML 公式；本機 file 模式及 SVG 載入失敗時保留站內 Mermaid 備援。講義圖片使用 WebP 預覽，點選可開原圖；載入失敗會顯示提示，放大視窗可重試。
+- 頁面以 2 支腳本及 1 份樣式載入。開發仍維護分開的原始模組；新增 JS／CSS 請更新 content/shell-assets.json，執行 build 產生 bundle，不直接修改 app-bundle.js 或 shell-bundle.css。
 - 每次修改執行程式或樣式後請執行 `npm run build`，依資產內容重建快取版本，避免新舊模組混用。
 - 執行 `npm run lint` 與 `npm test` 可檢查導航、作答、彈窗焦點及快取清單。這些檢查不代表已完成瀏覽器視覺或離線驗收，詳見 [介面驗收紀錄](docs/UI_REDESIGN.md)。
 
@@ -123,6 +124,7 @@ ipas-factory-quest-source/
 
 ```sh
 npm ci
+npx playwright install chromium
 npm run build
 npm run lint
 npm test
@@ -154,6 +156,7 @@ node tests/validate.cjs
 
 ## 深度優化與瀏覽器驗證
 
+- 圖解／公式預先產生、外殼合併、慢網路修正與前後量測見 [網頁效能優化](docs/PERFORMANCE.md)。
 - 匯入防護、內容去重、到期複習、單一寫入分頁、章節離線下載與效能量測見 [深度優化紀錄](docs/OPTIMIZATION.md)。
 - `npm run build` 先建立按章教材、WebP 預覽與離線清單，再更新快取版本；請勿直接使用舊的 rebuild-clean 等遷移腳本作為日常建置。
 - `npx playwright install chromium webkit` 後執行 `npm run test:browser`；SW 的原生離線與更新驗證限 Chromium，其餘流程也涵蓋 WebKit。

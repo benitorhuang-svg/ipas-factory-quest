@@ -3,9 +3,14 @@
 現行發布入口為根目錄 package.json；請使用 npm run build。
 
 - build-materials.cjs：從 material-index.json 與教材 TS 來源建立教材資料；JSON 整合檔、按章檔與本機 fallback 均為輸出。
+- build-math.mjs：用站內 KaTeX 預先產生 610 個 HTML／MathML 公式，保留原始公式；一般閱讀只載入樣式與字型。
+- build-diagrams.mjs：用 Chromium 與站內 Mermaid 產生教材 SVG；依來源與編譯器指紋重用已核對的產物，保留 Mermaid 文字來源。第一次建置需先執行 npx playwright install chromium。
 - build-media.mjs：建立 WebP 預覽與索引，保留全部原圖。
 - build-offline.mjs：建立逐章離線資產、大小與 SHA-256 清單。
+- build-shell.mjs：依 content/shell-assets.json 的順序合併原始 JS／CSS，產生 app-bundle.js、shell-bundle.css 及入口引用；新增模組要更新該清單，不直接修改 bundle。
 - build-precache.mjs：建立一致的外殼版本；SW 註記及 HTML 版本標記以固定占位字串參與雜湊。
+- measure-performance.mjs：Chromium 390×844、4 倍 CPU 降速、4 Mbps／120 ms 的可重複量測；停用 HTTP cache 與 SW，區分文字出現、圖解完成、錯誤與作答回應。可用 --root、--output、--runs、--kbps 等參數指定前後版本與條件，這不是手機或公開站實測。
+- compare-performance.mjs：對齊量測條件，彙整中位數、範圍與成功／失敗數；輸入優化前、優化後 JSON 及輸出路徑。圖解失敗不會被當成成功速度。
 - check-question-duplicates.mjs：只接受已登錄的重複群組；新重複或別名變更必須重新檢視。
 - check-content-governance.mjs：核對題目指紋、來源檔與教材連結；--report 更新單元覆蓋表。
 - check-structure.mjs：維護程式與樣式最多 300 行；排除生成資料與來源保存專案。

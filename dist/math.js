@@ -129,5 +129,5 @@ function renderMathFormulas() {
       el.setAttribute('data-math-done', 'fallback');
     });
   }
-window.FactoryMath = { render: renderMathFormulas, format: formatMathFallback };
+window.FactoryMath = { render: renderMathFormulas, format: formatMathFallback, clean: cleanMathTex };
 })();

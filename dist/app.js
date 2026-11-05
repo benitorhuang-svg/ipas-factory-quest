@@ -57,12 +57,17 @@
   function enhance(token) {
     window.FactoryMath.render();
     if (app.querySelector('.math-block, .math-inline')) {
-      window.FactoryAssets.katex().then(() => { window.FactoryMath.render(); ctx.readingPosition.refresh(); }).catch(() => {});
+      const pending = app.querySelector('.math-block:not([data-math-done="katex"]), .math-inline:not([data-math-done="katex"])');
+      const loading = pending || !window.FactoryAssets.katexStyles ? window.FactoryAssets.katex() : window.FactoryAssets.katexStyles();
+      loading.then(() => {
+        if (token !== renderToken) return;
+        window.FactoryMath.render(); ctx.readingPosition.refresh();
+      }).catch(() => {});
     }
     if (app.querySelector('.mermaid, .language-mermaid')) {
-      window.FactoryAssets.mermaid().catch(() => {}).then(() => {
-        if (token === renderToken) window.FactoryDiagrams.render(app).then(() => ctx.readingPosition.refresh()).catch(() => {});
-      });
+      if (token === renderToken) window.FactoryDiagrams.render(app).then(() => {
+        if (token === renderToken) ctx.readingPosition.refresh();
+      }).catch(() => {});
     }
   }
   function render() {
@@ -100,12 +105,12 @@
     app.innerHTML = window.FactoryShell.render({
       body: views[r.view](), view: r.view, route: r, icon, esc,
       pageTitle: r.view === 'unit' ? ctx.byUnit(r.arg)?.title : r.view === 'quiz' && !ctx.state.active ? '練習任務' : '',
-      level: E.level(ctx.state.xp), wrongCount: E.reviewIds(ctx.state, bank).length,
+      wrongCount: E.reviewIds(ctx.state, bank).length,
     });
     window.FactoryGuide.mount();
     window.FactoryMaterials.mount(ctx);
     window.FactoryOffline.mount();
-    const title = { home: '工廠總覽', repair: '錯題複習', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄', unit: ctx.byUnit(r.arg)?.title, quiz: '任務挑戰', result: '任務報告' }[r.view];
+    const title = { home: '工廠總覽', repair: '到期複習', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄', unit: ctx.byUnit(r.arg)?.title, quiz: '任務挑戰', result: '任務報告' }[r.view];
     document.title = `${title}｜智造闖關 Factory Quest`;
     if (r.view === 'quiz') { ctx.updateQuizStatus(); ctx.tick(); }
     if (changed && previousPath) {

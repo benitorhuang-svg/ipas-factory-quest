@@ -1,0 +1,61 @@
+/* Compact navigation on devices with a precise, hovering pointer. */
+@media (min-width: 701px) and (hover: hover) and (pointer: fine) {
+  #app { --sidebar-width: 80px; }
+  #app:has(.sidebar:hover, .sidebar:focus-within) { --sidebar-width: 216px; }
+  .sidebar {
+    width: var(--sidebar-width);
+    overflow-x: hidden;
+    transition: width .18s ease;
+  }
+  .workspace {
+    margin-left: var(--sidebar-width);
+    transition: margin-left .18s ease;
+  }
+  .toast { left: calc(50% + var(--sidebar-width, 80px) / 2); }
+  body:has(.sidebar:hover, .sidebar:focus-within) .toast { --sidebar-width: 216px; }
+  .sidebar .brand { padding: 0 7px; gap: 12px; min-height: 47px; }
+  .sidebar .brand-mark { flex-shrink: 0; }
+  .sidebar .brand-name, .sidebar .nav-text {
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    transition: max-width .18s ease, opacity .12s ease;
+  }
+  .sidebar .nav-label, .sidebar .sidebar-note {
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: opacity .12s ease;
+  }
+  .sidebar .nav-button {
+    position: relative;
+    gap: 0;
+    padding: 11px 15px;
+    transition: gap .18s ease, background .15s, color .15s;
+  }
+  .sidebar .nav-count {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    min-width: 18px;
+    padding: 0 2px;
+    font-size: 10px;
+  }
+  .sidebar:is(:hover, :focus-within) .brand-name,
+  .sidebar:is(:hover, :focus-within) .nav-text {
+    max-width: 150px;
+    opacity: 1;
+  }
+  .sidebar:is(:hover, :focus-within) .nav-label,
+  .sidebar:is(:hover, :focus-within) .sidebar-note {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar:is(:hover, :focus-within) .nav-button { gap: 12px; }
+  .sidebar:is(:hover, :focus-within) .nav-count { position: static; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar, .workspace, .sidebar .brand-name, .sidebar .nav-text,
+  .sidebar .nav-label, .sidebar .sidebar-note, .sidebar .nav-button { transition: none; }
+}

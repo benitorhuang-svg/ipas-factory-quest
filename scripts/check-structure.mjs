@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-const generated = new Set(['data.js', 'precache.js', 'preview-data.js', 'offline-data.js', 'materials-local.js']);
+const generated = new Set(['data.js', 'precache.js', 'preview-data.js', 'offline-data.js', 'materials-local.js', 'app-bundle.js', 'shell-bundle.css']);
 const problems = [];
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

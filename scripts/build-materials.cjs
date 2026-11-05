@@ -21,9 +21,6 @@ data.questions = [...readJSON('content/questions-subject1.json'), ...readJSON('c
 data.glossary = readJSON('content/glossary.json');
 const rendererHash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'dist/assets/mermaid.min.js'))).digest('hex').slice(0,16);
 data.rendererUrl = `assets/mermaid.min.js?v=${rendererHash}`;
-for (const [key, file] of Object.entries({
-  formulasMarkdown: '核心公式與計算題彙整.md', trapsMarkdown: '考古題盲點與常見陷阱.md',
-})) data[key] = fs.readFileSync(path.join(root, 'docs/歷屆試題與解題技巧', file), 'utf8');
 fs.writeFileSync(path.join(root, 'content/study-materials.json'), JSON.stringify(data.studyMaterials, null, 2) + '\n');
 const materialDirectory = path.join(root, 'dist/materials');
 fs.mkdirSync(materialDirectory, { recursive: true });

@@ -11,7 +11,7 @@ button, a, input, select, textarea, summary { touch-action: manipulation; }
 .side-nav { gap: 5px; }
 .side-nav .nav-button { font-size: 14px; min-height: 48px; padding: 11px 14px; }
 .section-topbar.topbar { height: 72px; padding-right: 32px; padding-left: 32px; gap: 20px; }
-.section-topbar--plain.topbar { grid-template-columns: minmax(0, 1fr) auto; }
+.section-topbar--plain.topbar { grid-template-columns: minmax(0, 1fr); }
 .section-title { font-weight: 600; overflow-wrap: anywhere; }
 .section-tab { font-size: 13px; }
 .page { max-width: 1280px; padding-right: 32px; padding-left: 32px; }

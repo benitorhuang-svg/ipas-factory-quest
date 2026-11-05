@@ -219,3 +219,5 @@
 .data-table tbody tr:hover td {
   background: #f9fbf8;
 }
+/* Before the stylesheet arrives, show the accessible MathML without a duplicate HTML formula. */
+html:not([data-katex-ready]) .katex-html { display: none; }

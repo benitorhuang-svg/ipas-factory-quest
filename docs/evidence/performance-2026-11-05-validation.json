@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-05T01:51:20.537Z",
+  "release": "dc82b527fd6ae3d0",
+  "lintFix": true,
+  "zeroWarningLint": true,
+  "build": true,
+  "nodeTestSuite": true,
+  "sourceReceiptsVerified": 891,
+  "prebuiltDiagrams": 60,
+  "prebuiltFormulas": 610,
+  "browser": {
+    "startTime": "2026-11-05T01:43:58.602Z",
+    "duration": 64413.491,
+    "expected": 22,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": {
+    "nativeServiceWorker": "Chromium",
+    "otherBrowser": "Windows WebKit",
+    "physicalMobile": false,
+    "publicDeployment": false
+  },
+  "preservation": {
+    "questionRecords": 476,
+    "uniqueQuestionContents": 416,
+    "progressFormatUnchanged": true,
+    "originalImagesPreserved": true,
+    "existingUnrelatedRuntimeEditsVerifiedAgainstEntrySnapshot": true
+  }
+}

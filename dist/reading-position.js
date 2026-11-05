@@ -22,7 +22,12 @@
     }
     function measure(record) {
       if (!record.root.isConnected) return;
-      const edge = (document.querySelector('.section-topbar')?.getBoundingClientRect().bottom || 0) + 32;
+      const headerEdge = (document.querySelector('.section-topbar')?.getBoundingClientRect().bottom || 0) + 32;
+      const padding = parseFloat(window.getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      const margin = record.headings[0] ? parseFloat(window.getComputedStyle(record.headings[0]).scrollMarginTop) || 0 : 0;
+      // scrollIntoView applies both root padding and heading margin. Include that
+      // landing line so a paragraph jump does not highlight the previous section.
+      const edge = Math.max(headerEdge, padding + margin + 1);
       let active = null;
       for (const heading of record.headings) {
         if (heading.getBoundingClientRect().top <= edge) active = heading;

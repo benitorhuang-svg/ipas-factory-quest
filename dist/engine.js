@@ -41,6 +41,38 @@
     return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect || (e.dueAt > 0 && e.dueAt <= now))
       .sort((a, b) => Number(a[1].lastCorrect) - Number(b[1].lastCorrect) || a[1].dueAt - b[1].dueAt).map(([id]) => id);
   }
+  function reviewPlan(state, bank, now = Date.now(), random = Math.random) {
+    const { unique } = catalog(bank), entries = new Map(reviewEntries(state, bank));
+    const mastered = new Set(masteredIds(state, bank));
+    const qmap = new Map(unique.map(q => [q.id, q]));
+    const due = reviewIds(state, bank, now), reserved = new Set(due.slice(0, 10));
+    const questions = [], targets = {}, used = new Set();
+    for (const targetId of due.slice(0, 10)) {
+      const target = qmap.get(targetId);
+      if (!target) continue;
+      let question = target;
+      if (entries.get(targetId).lastCorrect) {
+        const pool = unique.filter(q => q.unit === target.unit && q.skill === target.skill &&
+          !used.has(q.id) && !reserved.has(q.id) &&
+          (!entries.get(q.id)?.lastCorrect || (entries.get(q.id).dueAt > 0 && entries.get(q.id).dueAt <= now)));
+        const unseen = pool.filter(q => !entries.has(q.id) && !mastered.has(q.id));
+        const candidates = unseen.length ? unseen : pool;
+        if (candidates.length) {
+          const weights = candidates.map(q => 1 / (1 + (entries.get(q.id)?.correctCount || (mastered.has(q.id) ? 1 : 0))) ** 2);
+          let draw = random() * weights.reduce((sum, weight) => sum + weight, 0);
+          question = candidates[candidates.length - 1];
+          for (let i = 0; i < candidates.length; i++) {
+            draw -= weights[i];
+            if (draw < 0) { question = candidates[i]; break; }
+          }
+        }
+      }
+      used.add(question.id);
+      questions.push(question);
+      if (question.id !== targetId) targets[question.id] = targetId;
+    }
+    return { questions, targets };
+  }
   function dateKey(time = Date.now()) {
     const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(time));
     const get = type => parts.find(p=>p.type===type).value;
@@ -77,7 +109,8 @@
       return shuffle(selected,random);
     }
     if (spec.mode === 'review') {
-      const ids = spec.state ? reviewIds(spec.state, source, spec.now) : [...new Set((spec.wrongIds || []).map(id => aliases.get(id)))];
+      if (spec.state) return reviewPlan(spec.state, source, spec.now, random).questions;
+      const ids = [...new Set((spec.wrongIds || []).map(id => aliases.get(id)))];
       const map = new Map(bank.map(q => [q.id, q]));
       return ids.map(id => map.get(id)).filter(Boolean).slice(0, 10);
     }
@@ -130,6 +163,18 @@
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
       s.active={id:a.id,mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
+      if (a.mode === 'review' && record(a.reviewTargets)) {
+        const entries = new Map(reviewEntries(s, bank)), targets = new Set();
+        s.active.reviewTargets = {};
+        for (const id of s.active.questionIds) {
+          const targetId = a.reviewTargets[id], target = qmap.get(targetId), q = qmap.get(id);
+          if (target && id !== targetId && !s.active.questionIds.includes(targetId) && !targets.has(targetId) &&
+              q.unit === target.unit && q.skill === target.skill && entries.get(targetId)?.lastCorrect &&
+              entries.get(targetId).dueAt > 0 && entries.get(targetId).dueAt <= a.startedAt) {
+            s.active.reviewTargets[id] = targetId; targets.add(targetId);
+          }
+        }
+      }
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
         const answer = safeAnswer(id, value);
@@ -147,16 +192,28 @@
     const s=JSON.parse(JSON.stringify(state));
     const earned=new Set(s.earnedCorrectIds);
     const { aliases } = catalog(bank);
+    const previousEntries = new Map(reviewEntries(state, bank));
     const earnedContent = new Set([...earned].map(id => aliases.get(id)));
     let earnedXP=0;
     const results=ids.map(id=>{
       const q=map.get(id), answer=run.answers[id], ok=correct(q,answer);
       const ledgerId = aliases.get(id);
-      const old=s.ledger[ledgerId] || {attempts:0,correctCount:0};
+      const old=previousEntries.get(ledgerId) || {attempts:0,correctCount:0};
       s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
       if(ok&&!earnedContent.has(aliases.get(id))){earned.add(id);earnedContent.add(aliases.get(id));earnedXP+=10;}
       return {id,answer:answer===undefined?null:answer,correct:ok};
     });
+    if (run.mode === 'review' && record(run.reviewTargets)) {
+      const entries = new Map(reviewEntries(s, bank)), targets = new Set();
+      for (const result of results.filter(result => result.correct)) {
+        const q = map.get(result.id), targetId = run.reviewTargets[result.id], target = map.get(targetId);
+        const entry = entries.get(targetId);
+        if (target && !ids.includes(targetId) && !targets.has(targetId) && q.unit === target.unit &&
+            q.skill === target.skill && entry?.lastCorrect && entry.dueAt > 0 && entry.dueAt <= now) {
+          entry.dueAt = now + 3 * DAY; targets.add(targetId);
+        }
+      }
+    }
     const count=results.filter(x=>x.correct).length,score=Math.round(count/ids.length*100);
     let newBadge=false;
     if(run.mode==='mission' && UNITS.includes(run.unitId)) {
@@ -178,5 +235,5 @@
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
 });

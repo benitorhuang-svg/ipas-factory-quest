@@ -3,6 +3,7 @@
   let queue = Promise.resolve();
   let sequence = 0;
   let initialized = false;
+  const staticDiagrams = new Map();
   const sourceSelector = '.mermaid:not([data-diagram-state]), .language-mermaid:not([data-diagram-state])';
 
   function initialize() {
@@ -70,23 +71,44 @@
     (block.closest('.mermaid-block') || block.closest('pre') || block).replaceWith(frame);
   }
 
+  async function staticSVG(block) {
+    const file = block.dataset.diagramSrc;
+    if (location.protocol === 'file:' || !/^assets\/diagrams\/[a-f0-9]{16}\.svg$/.test(file || '')) return null;
+    if (!staticDiagrams.has(file)) {
+      const controller = new window.AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      const request = window.fetch(file, { signal: controller.signal }).then(async response => {
+        if (!response.ok) throw new Error('Diagram unavailable');
+        const svg = await response.text();
+        if (!svg.startsWith('<svg') || !svg.includes('data-prebuilt-diagram="true"')) throw new Error('Invalid diagram asset');
+        return svg;
+      }).catch(() => { staticDiagrams.delete(file); return null; }).finally(() => clearTimeout(timer));
+      staticDiagrams.set(file, request);
+    }
+    return staticDiagrams.get(file);
+  }
+
   async function render(root) {
     const blocks = [...root.querySelectorAll(sourceSelector)];
     if (!blocks.length) return;
-    if (!window.mermaid) {
-      for (const block of blocks) showError(block, '圖解引擎尚未載入，請重新整理頁面。');
-      return;
-    }
-    // Lazy Mermaid may receive window.load while fonts are pending. Disable its
-    // automatic DOM scan before yielding so only this reader consumes sources.
-    initialize();
-    await document.fonts?.ready;
-    for (const block of blocks) {
+    // Fetch this chapter's small static diagrams concurrently; only the fallback
+    // Mermaid parser needs serialization. No renderer is downloaded on success.
+    const prepared = await Promise.all(blocks.map(block => staticSVG(block)));
+    for (const [index, block] of blocks.entries()) {
       if (!block.isConnected || !root.contains(block)) continue;
       block.dataset.diagramState = 'rendering';
       const id = `study-mermaid-${++sequence}`;
       try {
-        const { svg } = await window.mermaid.render(id, readSource(block));
+        let svg = prepared[index];
+        if (svg) svg = svg.replaceAll('FQ_DIAGRAM_INSTANCE', id);
+        else {
+          if (!window.mermaid) await window.FactoryAssets.mermaid();
+          // Disable automatic scanning before yielding for fonts, including file://.
+          initialize();
+          await document.fonts?.ready;
+          if (!block.isConnected || !root.contains(block)) continue;
+          ({ svg } = await window.mermaid.render(id, readSource(block)));
+        }
         if (block.isConnected) makeFrame(svg, block);
       } catch (error) {
         document.getElementById(id)?.remove();

@@ -1,5 +1,5 @@
 export default [
-  { ignores: ['content/**', 'docs/**', 'node_modules/**', 'test-results/**', 'playwright-report/**', 'dist/assets/**', 'dist/materials-local.js', 'dist/data.js', 'dist/preview-data.js', 'dist/offline-data.js', 'dist/precache.js', 'dist/styles.css', 'scripts/*.cjs', '!scripts/build-materials.cjs'] },
+  { ignores: ['content/**', 'docs/**', 'node_modules/**', 'test-results/**', 'playwright-report/**', 'dist/assets/**', 'dist/app-bundle.js', 'dist/materials-local.js', 'dist/data.js', 'dist/preview-data.js', 'dist/offline-data.js', 'dist/precache.js', 'dist/styles.css', 'scripts/*.cjs', '!scripts/build-materials.cjs'] },
   {
     files: ['scripts/*.mjs', 'tests/**/*.mjs', 'dist/*.js', 'eslint.config.mjs', 'playwright.config.mjs'],
     languageOptions: { ecmaVersion: 'latest', sourceType: 'module' },

@@ -1,16 +1,16 @@
 (function () {
   'use strict';
   const items = [
-    ['home', 'home', '工廠總覽', '總覽'], ['repair', 'wrench', '錯題複習', '錯題'],
+    ['home', 'home', '工廠總覽', '總覽'], ['repair', 'clock', '到期複習', '複習'],
     ['atlas', 'book', '複習圖鑑', '圖鑑'], ['guide', 'bulb', '備考寶典', '寶典'],
     ['exam', 'flag', '考前模擬', '模擬'], ['progress', 'chart', '成長紀錄', '紀錄'],
   ];
-  const names = { home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '返修中心', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' };
+  const names = { home: '工廠總覽', unit: '部門任務', quiz: '任務進行中', result: '任務報告', repair: '到期複習', atlas: '複習圖鑑', guide: '備考寶典', exam: '考前模擬', progress: '成長紀錄' };
 
   const sectionPages = {
     home: { title: '工廠總覽', tabs: [] },
     unit: { title: '單元練習', tabs: [] },
-    repair: { title: '錯題複習', tabs: [] },
+    repair: { title: '到期複習', tabs: [] },
     progress: { title: '成長紀錄', tabs: [] },
     atlas: {
       title: '單元架構與視覺圖鑑', label: '圖鑑單元分類', initial: 'all',
@@ -31,23 +31,21 @@
     },
   };
 
-  function render({ body, view, route, pageTitle, icon, esc, level, wrongCount }) {
+  function render({ body, view, route, pageTitle, icon, esc, wrongCount }) {
     const nav = mobile => items.map(([id, glyph, label, short]) => {
       const active = id === view || (id === 'home' && ['unit', 'quiz', 'result'].includes(view));
-      return `<a href="#/${id}" class="${mobile ? '' : 'nav-button '}${active ? 'active' : ''}" ${active ? 'aria-current="page"' : ''}>${icon(glyph)}<span>${mobile ? short : label}</span>${!mobile && id === 'repair' && wrongCount ? `<span class="nav-count">${wrongCount}</span>` : ''}</a>`;
+      return `<a href="#/${id}" class="${mobile ? '' : 'nav-button '}${active ? 'active' : ''}" aria-label="${label}${id === 'repair' && wrongCount ? `，${wrongCount} 題待複習` : ''}" ${active ? 'aria-current="page"' : ''}>${icon(glyph)}<span class="nav-text">${mobile ? short : label}</span>${!mobile && id === 'repair' && wrongCount ? `<span class="nav-count">${wrongCount}</span>` : ''}</a>`;
     }).join('');
     const section = sectionPages[view] || (pageTitle ? { title: pageTitle, tabs: [] } : null);
     const activeTab = section?.tabs.some(([id]) => id === route.arg) ? route.arg : section?.initial;
-    const profile = `<div class="profile"><span>${esc(level)}</span><div class="avatar" aria-hidden="true">廠</div></div>`;
     const header = section ? `
       <header class="topbar section-topbar ${section.tabs.length ? '' : 'section-topbar--plain'}">
         <h1 class="section-title">${esc(pageTitle || section.title)}</h1>
         ${section.tabs.length ? `<nav class="section-tabs" aria-label="${section.label}">${section.tabs.map(([id, label, description]) => `
           <a href="#/${view}/${id}" class="section-tab ${view === 'guide' ? 'study-tab ' : ''}${activeTab === id ? 'active' : ''}" ${activeTab === id ? 'aria-current="page"' : ''}${description ? ` title="${esc(description)}"` : ''}>${label}</a>
         `).join('')}</nav>` : ''}
-        ${profile}
       </header>` : `
-      <header class="topbar"><div class="topbar-left"><a href="#/home" class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</a><div class="breadcrumb">學習中心<span>／</span><strong>${names[view] || '工廠總覽'}</strong></div></div>${profile}</header>`;
+      <header class="topbar"><div class="topbar-left"><a href="#/home" class="mobile-brand"><span class="brand-mark">${icon('factory')}</span>智造闖關</a><div class="breadcrumb">學習中心<span>／</span><strong>${names[view] || '工廠總覽'}</strong></div></div></header>`;
     return `
       <a class="skip" data-action="skip" href="#content">跳到主要內容</a>
       <aside class="sidebar">

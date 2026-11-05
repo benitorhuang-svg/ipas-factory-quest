@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import { hydrate } from './helpers/materials.mjs';
+import { shell } from './helpers/shell.mjs';
 
 const errors = [];
 const diagnostics = new VirtualConsole();
@@ -16,8 +17,7 @@ window.HTMLElement.prototype.scrollIntoView = () => {};
 // Model the native dialog contract; these assertions do not prove browser layout.
 window.HTMLDialogElement.prototype.showModal = function () { this.setAttribute('open', ''); };
 window.HTMLDialogElement.prototype.close = function () { this.removeAttribute('open'); this.dispatchEvent(new window.Event('close')); };
-const index = fs.readFileSync('dist/index.html', 'utf8');
-for (const [, file] of index.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)) {
+for (const file of shell.scripts) {
   if (file === 'diagrams.js') continue;
   if (file === 'app.js') {
     window.FactoryAssets = { mermaid: async () => {}, katex: async () => {} };

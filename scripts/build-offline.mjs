@@ -34,7 +34,8 @@ for (const material of data.studyMaterials) {
   for (const source of [material, unit || {}]) for (const key of ['diagram3D', 'explainerImg', 'interactiveUrl', 'structureDiagram']) add(source[key]);
   doc.body.innerHTML = details;
   for (const element of doc.querySelectorAll('[src], a[href]')) add(element.getAttribute('src') || element.getAttribute('href'));
-  if (doc.querySelector('.mermaid')) add(data.rendererUrl);
+  for (const block of doc.querySelectorAll('[data-diagram-src]')) add(block.dataset.diagramSrc);
+  if (doc.querySelector('.mermaid:not([data-diagram-src])')) add(data.rendererUrl);
   const assets = [...files].sort().map(file => {
     const bytes = fs.readFileSync(path.join(root, file.split('?')[0]));
     return { file, bytes: bytes.length, sha256: crypto.createHash('sha256').update(bytes).digest('hex') };

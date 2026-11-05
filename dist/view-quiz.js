@@ -94,12 +94,12 @@ function resultView(id) {
       <div class="result-hero ${passed ? '' : 'failed'}">
         <div>
           <div class="eyebrow">MISSION REPORT · ${esc(r.unitId || 'MIXED CHALLENGE')}</div>
-          <h1>${r.newBadge ? '部門升級，徽章到手！' : r.mode === 'review' ? (r.correct === r.total ? '返修完成，觀念歸位。' : '再修一輪，把觀念補齊。') : passed ? '任務完成，繼續前進。' : '找到弱點，就有改善方向。'}</h1>
+          <h1>${r.newBadge ? '部門升級，徽章到手！' : r.mode === 'review' ? (r.correct === r.total ? '複習完成，觀念歸位。' : '繼續複習，把觀念補齊。') : passed ? '任務完成，繼續前進。' : '找到弱點，就有改善方向。'}</h1>
           <p>${u ? esc(u.room) + ' · ' : ''}${modeName(r)} · ${esc(r.correct)}／${esc(r.total)}題答對</p>
           <div class="result-chips">
             <span>${icon('star')}+${esc(r.earnedXP)} XP</span>
             ${r.newBadge ? `<span>${icon('badge')}${u.badge}</span>` : ''}
-            <span>${icon('wrench')}${r.total - r.correct ? (r.total - r.correct) + '題已送返修' : '本次全數答對'}</span>
+            <span>${icon('wrench')}${r.total - r.correct ? (r.total - r.correct) + '題待加強' : '本次全數答對'}</span>
           </div>
         </div>
         <div class="result-score">
@@ -121,7 +121,7 @@ function resultView(id) {
           <article class="feedback-card ${item.correct ? 'right' : 'wrong'}">
             <div class="feedback-meta">
               ${icon(item.correct ? 'circlecheck' : 'cross')}
-              <span>第${i + 1}題 · ${q.unit} · ${item.correct ? '答對' : '待返修'}</span>
+              <span>第${i + 1}題 · ${q.unit} · ${item.correct ? '答對' : '待加強'}</span>
             </div>
             <h3>${esc(q.stem)}</h3>
             <div class="answer-lines">

@@ -93,8 +93,8 @@ assert.ok(!deleted.includes('another-project-pwa-v1'));
 assert.equal(await store(contentName).get(urlOf('assets/old.png')).clone().text(), 'saved diagram');
 
 fetcher = async () => { throw new Error('Core shell must use its installed snapshot'); };
-let result = await dispatch(request('app.js'));
-assert.equal(await result.response.text(), fs.readFileSync('dist/app.js', 'utf8'));
+let result = await dispatch(request('app-bundle.js'));
+assert.equal(await result.response.text(), fs.readFileSync('dist/app-bundle.js', 'utf8'));
 result = await dispatch(request('./?from=test', { mode: 'navigate' }));
 assert.equal(await result.response.text(), fs.readFileSync('dist/index.html', 'utf8'));
 result = await dispatch(request('assets/old.png', { destination: 'image' }));

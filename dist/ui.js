@@ -42,7 +42,7 @@ const paths = {
 const icon = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.factory}</svg>`;
 const fmt = n => new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 3 }).format(n);
 function modeName(r) {
-    return r.mode === 'exam' ? '科目' + (r.subject === 1 ? '一' : '二') + '模擬' : r.mode === 'review' ? '錯題返修' : r.mode === 'quick' ? '5題快練' : '10題闖關';
+    return r.mode === 'exam' ? '科目' + (r.subject === 1 ? '一' : '二') + '模擬' : r.mode === 'review' ? '到期複習' : r.mode === 'quick' ? '5題快練' : '10題闖關';
   }
 function footer() {
     return `<footer class="footnote"><span>iPAS 智慧生產工程師 · 初級兩科學科</span><a href="https://ipd.nat.gov.tw/ipas/certification/SPE/exam-info" target="_blank" rel="noopener">官方考試資訊 ${icon('external')}</a></footer>`;

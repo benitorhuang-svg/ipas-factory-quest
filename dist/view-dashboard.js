@@ -8,8 +8,8 @@
     const subset = units.filter(unit => filter === 'all' || unit.subject === filter);
     return `<section class="dashboard-next" aria-labelledby="next-title">
       <div class="dashboard-next-copy"><div class="eyebrow">${active ? '繼續上次進度' : '下一個學習任務'}</div>
-        <h2 id="next-title">${esc(active ? activeUnit?.title || (active.mode === 'exam' ? '計時模擬測驗' : '錯題複習') : wrong ? '今日到期與錯題複習' : next.title)}</h2>
-        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題需要複習，優先處理錯題，再回想到期觀念。` : esc(next.takeaway)}</p>
+        <h2 id="next-title">${esc(active ? activeUnit?.title || (active.mode === 'exam' ? '計時模擬測驗' : '到期複習') : wrong ? '今日到期複習' : next.title)}</h2>
+        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題待複習：錯題優先重練，到期題優先換新題。` : esc(next.takeaway)}</p>
         <div class="dashboard-next-actions"><button class="btn btn-primary" data-action="${active ? 'resume' : wrong ? 'review' : 'unit'}" ${active || wrong ? '' : `data-unit="${next.id}"`}>${active ? '繼續作答' : wrong ? '開始今日複習' : '開始本章練習'}${icon('arrow')}</button><a class="text-link" href="#/guide/materials/${activeUnit?.topicCode || next.topicCode}">先讀講義</a></div>
       </div><div class="dashboard-next-symbol" aria-hidden="true">${icon('factory')}<span>FACTORY<br>QUEST</span></div>
     </section>

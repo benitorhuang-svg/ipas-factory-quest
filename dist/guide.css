@@ -126,3 +126,4 @@
   .reader-body .reader-disclosure summary span { font-size: 10px; }
   .reader-body .reader-article { margin-bottom: 0; }
 }
+.reader-chunk { content-visibility: auto; contain-intrinsic-size: auto 800px; }

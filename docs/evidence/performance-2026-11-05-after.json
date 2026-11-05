@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-05T01:46:15.721Z",
+  "root": "C:\\Users\\benit\\Desktop\\ipas-factory-quest-source\\dist",
+  "browser": "156.0.8078.4",
+  "profile": {
+    "viewport": "390x844",
+    "cpuRate": 4,
+    "latencyMs": 120,
+    "downloadKbps": 4000,
+    "serviceWorkers": "blocked",
+    "httpCache": "disabled",
+    "compression": "none",
+    "runs": 3
+  },
+  "samples": [
+    {
+      "sample": 1,
+      "home": {
+        "readyMs": 2722.1999999284744,
+        "fcpMs": 2516,
+        "lcp": 2624,
+        "cls": 0,
+        "tasks": [
+          {
+            "start": 1491.8999999761581,
+            "duration": 997
+          }
+        ],
+        "requests": 3,
+        "bodyBytes": 564238
+      },
+      "routes": [
+        {
+          "route": "atlas",
+          "textReadyMs": 540.6000000238419,
+          "enhancedReadyMs": 1309.6999999284744,
+          "requests": 6,
+          "bodyBytes": 314096,
+          "longTaskMs": 438,
+          "maxTaskMs": 438,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 1694,
+          "enhancedReadyMs": 2225.2000000476837,
+          "requests": 7,
+          "bodyBytes": 188870,
+          "longTaskMs": 1515,
+          "maxTaskMs": 999,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "home",
+          "textReadyMs": 82,
+          "enhancedReadyMs": 115.20000004768372,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 0,
+          "maxTaskMs": 0,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 196.60000002384186,
+          "enhancedReadyMs": 229.20000004768372,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 57,
+          "maxTaskMs": 57,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "unit/L111",
+          "textReadyMs": 180.79999995231628,
+          "enhancedReadyMs": 214.79999995231628,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 129,
+          "maxTaskMs": 129,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "quiz",
+          "textReadyMs": 948.8000000715256,
+          "enhancedReadyMs": 982.8000000715256,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 569,
+          "maxTaskMs": 569,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        }
+      ],
+      "answer": {
+        "readyMs": 328,
+        "answered": "1"
+      },
+      "errors": []
+    },
+    {
+      "sample": 2,
+      "home": {
+        "readyMs": 2679.7000000476837,
+        "fcpMs": 2460,
+        "lcp": 2600,
+        "cls": 0,
+        "tasks": [
+          {
+            "start": 1444.4000000953674,
+            "duration": 990
+          }
+        ],
+        "requests": 3,
+        "bodyBytes": 564238
+      },
+      "routes": [
+        {
+          "route": "atlas",
+          "textReadyMs": 591.1000000238419,
+          "enhancedReadyMs": 1360.8999999761581,
+          "requests": 6,
+          "bodyBytes": 314096,
+          "longTaskMs": 484,
+          "maxTaskMs": 484,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 1759.0999999046326,
+          "enhancedReadyMs": 2325.899999976158,
+          "requests": 7,
+          "bodyBytes": 188870,
+          "longTaskMs": 1604,
+          "maxTaskMs": 1040,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "home",
+          "textReadyMs": 80.5,
+          "enhancedReadyMs": 114.39999997615814,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 0,
+          "maxTaskMs": 0,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 215.69999992847443,
+          "enhancedReadyMs": 249.89999997615814,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 162,
+          "maxTaskMs": 55,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "unit/L111",
+          "textReadyMs": 195.09999990463257,
+          "enhancedReadyMs": 226.79999995231628,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 144,
+          "maxTaskMs": 144,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "quiz",
+          "textReadyMs": 950.2999999523163,
+          "enhancedReadyMs": 980.3999999761581,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 577,
+          "maxTaskMs": 577,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        }
+      ],
+      "answer": {
+        "readyMs": 342.5,
+        "answered": "1"
+      },
+      "errors": []
+    },
+    {
+      "sample": 3,
+      "home": {
+        "readyMs": 2637.7000000476837,
+        "fcpMs": 2448,
+        "lcp": 2568,
+        "cls": 0,
+        "tasks": [
+          {
+            "start": 1447.3000000715256,
+            "duration": 976
+          }
+        ],
+        "requests": 3,
+        "bodyBytes": 564238
+      },
+      "routes": [
+        {
+          "route": "atlas",
+          "textReadyMs": 584.7000000476837,
+          "enhancedReadyMs": 1337.8000000715256,
+          "requests": 6,
+          "bodyBytes": 314096,
+          "longTaskMs": 483,
+          "maxTaskMs": 483,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 1743.8999999761581,
+          "enhancedReadyMs": 2325,
+          "requests": 7,
+          "bodyBytes": 188870,
+          "longTaskMs": 1603,
+          "maxTaskMs": 1049,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "home",
+          "textReadyMs": 81.80000007152557,
+          "enhancedReadyMs": 119.40000009536743,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 0,
+          "maxTaskMs": 0,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "guide/materials/M11101",
+          "textReadyMs": 211.70000004768372,
+          "enhancedReadyMs": 248.40000009536743,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 57,
+          "maxTaskMs": 57,
+          "diagramCount": 5,
+          "diagramErrors": 0
+        },
+        {
+          "route": "unit/L111",
+          "textReadyMs": 174.60000002384186,
+          "enhancedReadyMs": 208,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 128,
+          "maxTaskMs": 128,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        },
+        {
+          "route": "quiz",
+          "textReadyMs": 1031,
+          "enhancedReadyMs": 1064.3000000715256,
+          "requests": 0,
+          "bodyBytes": 0,
+          "longTaskMs": 634,
+          "maxTaskMs": 634,
+          "diagramCount": 0,
+          "diagramErrors": 0
+        }
+      ],
+      "answer": {
+        "readyMs": 328.6999999284744,
+        "answered": "1"
+      },
+      "errors": []
+    }
+  ]
+}

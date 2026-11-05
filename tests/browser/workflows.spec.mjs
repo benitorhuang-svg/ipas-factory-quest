@@ -64,16 +64,29 @@ test('local file entry loads split materials without an HTTP server', async ({ p
   await expect(page.locator('.katex').first()).toBeVisible();
   expect(errors).toEqual([]);
 });
-test('answered questions return when due and resolve after review', async ({ page }) => {
-  await page.addInitScript(() => localStorage.setItem('factory-quest-ipas-v1', JSON.stringify({
+test('due review rotates questions and survives reload', async ({ page, context, browserName }) => {
+  await page.addInitScript(() => { if (!localStorage.getItem('factory-quest-ipas-v1')) localStorage.setItem('factory-quest-ipas-v1', JSON.stringify({
     version: 1, earnedCorrectIds: ['L111-01'], passedUnits: [], best: {}, history: [], studyDates: [], active: null,
     ledger: { 'L111-01': { attempts: 1, correctCount: 1, lastCorrect: true, lastSeen: Date.now() - 4 * 86400000, dueAt: Date.now() - 86400000 } },
-  })));
+  })); });
   await ready(page);
-  await page.locator('.dashboard-next [data-action=review]').click();
+  await go(page, 'repair');
+  await expect(page.getByRole('heading', { name: '到期複習', exact: true })).toBeVisible();
+  await expect(page.locator('.repair-summary')).toContainText('0 題待加強 · 1 題已到期');
+  await page.locator('.repair-summary [data-action=review]').click();
   await expect(page.locator('.question-card')).toHaveCount(1);
-  const answer = await page.evaluate(() => window.FACTORY_QUEST_DATA.questions.find(q => q.id === 'L111-01').answer);
-  await page.locator(`[data-answer="L111-01"][value="${answer}"]`).check();
+  const run = (await state(page)).active, id = run.questionIds[0];
+  expect(id).not.toBe('L111-01');
+  expect(run.reviewTargets[id]).toBe('L111-01');
+  if (browserName === 'chromium') await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator('.question-card')).toHaveCount(1);
+  expect((await state(page)).active.reviewTargets).toEqual(run.reviewTargets);
+  const question = await page.evaluate(id => window.FACTORY_QUEST_DATA.questions.find(q => q.id === id), id);
+  if (question.kind === 'choice') await page.locator(`[data-answer="${id}"][value="${question.answer}"]`).check();
+  else await page.locator(`[data-answer="${id}"]`).fill(String(question.answer));
   await page.locator('#submit-run').click(); await expect(page.locator('.result-hero')).toBeVisible();
   await go(page, 'repair'); await expect(page.locator('.empty h2')).toHaveText('今日複習已完成');
+  expect((await state(page)).ledger['L111-01'].attempts).toBe(1);
+  expect((await state(page)).ledger[id].correctCount).toBe(1);
 });

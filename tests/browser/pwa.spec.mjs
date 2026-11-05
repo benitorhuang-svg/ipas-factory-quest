@@ -64,7 +64,7 @@ test('new worker waits for both old tabs; draft survives activation', async ({ p
   expect(await page.evaluate(() => window.__testRelease)).toBe('A');
   await go(page, 'guide/materials/M11101');
   await expect(page.locator('.study-diagram svg').first()).toBeVisible();
-  const cachedApp = await other.evaluate(async () => (await (await fetch('app.js')).text()).includes("__testRelease = 'A'"));
+  const cachedApp = await other.evaluate(async () => (await (await fetch('app-bundle.js')).text()).includes("__testRelease = 'A'"));
   expect(cachedApp).toBe(true);
   await page.close();
   expect(await other.evaluate(async () => !!(await navigator.serviceWorker.getRegistration()).waiting)).toBe(true);

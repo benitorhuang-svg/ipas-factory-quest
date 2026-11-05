@@ -7,11 +7,11 @@ const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const scripts = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
 const styles = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map(match => match[1]);
 const vendor = 'assets/vendor/katex/';
-const fonts = [...fs.readFileSync(path.join(root, vendor, 'katex.min.css'), 'utf8').matchAll(/url\(([^)]+)\)/g)].map(match => vendor + match[1].replace(/['"]/g, ''));
+const fonts = [...fs.readFileSync(path.join(root, vendor, 'katex.min.css'), 'utf8').matchAll(/url\(([^)]+)\)/g)].map(match => vendor + match[1].replace(/['"]/g, '')).filter(file => file.endsWith('.woff2'));
 const assets = [...new Set([
   'index.html', ...scripts, ...styles, 'favicon.svg', 'manifest.webmanifest',
   ...fs.readdirSync(path.join(root, 'materials')).filter(file => file.endsWith('.json')).map(file => 'materials/' + file),
-  vendor + 'katex.min.js', vendor + 'katex.min.css', ...fonts,
+  vendor + 'katex.min.css', ...fonts,
 ])].sort();
 const digest = crypto.createHash('sha256');
 const workerPath = path.join(root, 'sw.js');

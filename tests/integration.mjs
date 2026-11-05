@@ -5,6 +5,7 @@ import crypto from 'node:crypto';
 import vm from 'node:vm';
 import { JSDOM } from 'jsdom';
 import { hydrate } from './helpers/materials.mjs';
+import { bundled } from './helpers/shell.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'content/source-integration.json'), 'utf8'));
@@ -35,5 +36,8 @@ for (const url of referenced) assert.ok(fs.existsSync(path.join(root, 'dist', de
 const html = fs.readFileSync(path.join(root, 'dist/index.html'), 'utf8');
 const precache = { self: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'dist/precache.js'), 'utf8'), precache);
-for (const file of ['diagrams.js', 'diagrams.css']) { assert.ok(html.includes(file)); assert.ok(precache.self.FACTORY_PRECACHE.assets.includes(file)); }
+for (const file of ['diagrams.js', 'diagrams.css']) {
+  const bundle = file.endsWith('.css') ? 'shell-bundle.css' : 'app-bundle.js';
+  assert.ok(bundled(file) && html.includes(bundle)); assert.ok(precache.self.FACTORY_PRECACHE.assets.includes(bundle));
+}
 console.log(`PASS: ${manifest.files.length} source hashes preserved; 28 materials; ${referenced.size} linked runtime assets; diagram shell precache.`);
