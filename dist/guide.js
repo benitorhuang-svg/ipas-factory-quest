@@ -16,6 +16,7 @@
     return `
       <section class="guide-library" aria-labelledby="library-title">
         <div class="library-intro"><div><div class="eyebrow">CHAPTER COLLECTION</div><h2 id="library-title">從一個章節開始</h2><p>依考試科目循序閱讀，或搜尋想複習的主題。</p></div><span>${count} 篇講義</span></div>
+        <p><a class="btn btn-small" href="#/guide/questions">115 年第一次公告試題說明</a></p>
         <div class="library-filters">
           <div class="library-search"><label for="library-search" class="sr-only">搜尋講義</label>${icon('search')}<input id="library-search" type="search" placeholder="搜尋章節、關鍵字或單元代碼" value="${esc(libraryState.query)}" autocomplete="off"></div>
           <label class="library-select"><span class="sr-only">篩選講義分類</span><select id="library-group"><option value="all">全部分類</option>${groups.map(g => `<option value="${g.id}" ${libraryState.group === g.id ? 'selected' : ''}>${g.name}</option>`).join('')}</select></label>
@@ -66,7 +67,8 @@
     const { DATA, footer, selectedTopic } = context;
     const subView = tabs.includes(context.subView) ? context.subView : 'materials';
     let content;
-    if (subView === 'glossary') content = glossary(context);
+    if (context.subView === 'questions') content = window.FactoryQuestions.render(context);
+    else if (subView === 'glossary') content = glossary(context);
     else if (subView === 'materials' && !selectedTopic) content = catalog(context);
     else {
       const code = subView === 'formulas' ? 'APPX01' : subView === 'traps' ? 'APPX02' : selectedTopic;

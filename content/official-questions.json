@@ -1,0 +1,3184 @@
+[
+  {
+    "question": 1,
+    "concept": "EPQ總成本與隨批量變動成本的區別",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "subject": "L11",
+    "id": "L11-1",
+    "topicCode": "EXAM-L11-1",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">EPQ 的總成本可包含生產、設置及持有。</p>\n<p class=\"study-paragraph\">求最佳批量時，再區分哪些成本隨 Q 改變。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因固定單位成本不影響最佳 Q，就將生產成本排除於所有「總成本」定義之外。</p></section>"
+  },
+  {
+    "question": 2,
+    "concept": "MPS的品項、時點與數量決策",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-2",
+    "topicCode": "EXAM-L11-2",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MPS 將需求轉成具體品項、數量與時點。</p>\n<p class=\"study-paragraph\">先分辨「生產計畫」和「人員排班」。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把班表、付款或廠房設計當成 MPS 的主要產出。</p>\n<p class=\"study-paragraph\">MPS 提供品項與日期基礎，詳細工序開工仍須由途程與排程展開。</p></section>"
+  },
+  {
+    "question": 3,
+    "concept": "客製需求下的接單生產策略",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-3",
+    "topicCode": "EXAM-L11-3",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>"
+  },
+  {
+    "question": 4,
+    "concept": "MTS依預測預製成品",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-4",
+    "topicCode": "EXAM-L11-4",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>"
+  },
+  {
+    "question": 5,
+    "concept": "批量與年持有、訂購成本的反向關係",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "note": "保留公告A；正比關係限持有成本，原題總庫存成本用語不可擴張為總相關成本正比。",
+    "subject": "L11",
+    "id": "L11-5",
+    "topicCode": "EXAM-L11-5",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544",
+      "a5fbf5111233c163"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定需求下，先分開年持有成本 <span class=\"math-inline\">$HQ/2$</span> 和年訂購成本 <span class=\"math-inline\">$DS/Q$</span>。</p>\n<p class=\"study-paragraph\">Q 增加時前者上升、後者下降。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將選項「總庫存成本」擴張成兩者合計，再誤記為總相關成本必與 Q 正比。</p>\n<p class=\"study-paragraph\">公告 A 保留，正比敘述限於模型的持有成本口徑。</p>\n<p class=\"study-paragraph\">原題用語不足以支持更廣的通則。</p></section>"
+  },
+  {
+    "question": 6,
+    "concept": "低成本策略與標準化、流程效率",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-6",
+    "topicCode": "EXAM-L11-6",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>"
+  },
+  {
+    "question": 7,
+    "concept": "需求節拍與時間單位換算",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-7",
+    "topicCode": "EXAM-L11-7",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一週可用 40 小時、需求 800 件，TT 為 <span class=\"math-inline\">$40/800=0.05$</span> 小時／件，即 3 分鐘／件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">顛倒成 20 件／小時後卻仍標「小時」。</p>\n<p class=\"study-paragraph\">速率與每件時間互為倒數，單位要一併改。</p></section>"
+  },
+  {
+    "question": 8,
+    "concept": "觀測時間評比後加寬放時間",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-8",
+    "topicCode": "EXAM-L11-8",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+  },
+  {
+    "question": 9,
+    "concept": "排程工作順序與既定製程順序的區別",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "relatedTopics": [
+      "M11102"
+    ],
+    "subject": "L11",
+    "id": "L11-9",
+    "topicCode": "EXAM-L11-9",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">已知製程途程下，排程主要決定批量、何時做及哪批先做。</p>\n<p class=\"study-paragraph\">技術工序順序是既定限制。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「工作順序」與「製程順序」視為同一件事。</p>\n<p class=\"study-paragraph\">若工程允許替代途程，須先確認核准條件，不能自行調換。</p></section>"
+  },
+  {
+    "question": 10,
+    "concept": "彈性競爭優先與產品及產線切換能力",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-10",
+    "topicCode": "EXAM-L11-10",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>"
+  },
+  {
+    "question": 11,
+    "concept": "甘特圖用途與SPT、EDD績效目標",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-11",
+    "topicCode": "EXAM-L11-11",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "502a95ae417c9236"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">甘特圖可表達工作／資源的時間與負荷。</p>\n<p class=\"study-paragraph\">比較 SPT、EDD 時須先說明績效目標。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 SPT 可縮短平均流程時間，便推成它在所有交期指標上都較好。</p>\n<p class=\"study-paragraph\">服務作業也可能使用排程。</p></section>"
+  },
+  {
+    "question": 12,
+    "concept": "醫院功能分科與床邊固定位置混合佈置",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-12",
+    "topicCode": "EXAM-L11-12",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>"
+  },
+  {
+    "question": 13,
+    "concept": "製程別路徑彈性與產品別連鎖停線風險",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-13",
+    "topicCode": "EXAM-L11-13",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>"
+  },
+  {
+    "question": 14,
+    "concept": "混線生產節拍及工序同步",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "relatedTopics": [
+      "M11201"
+    ],
+    "subject": "L11",
+    "id": "L11-14",
+    "topicCode": "EXAM-L11-14",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>"
+  },
+  {
+    "question": 15,
+    "concept": "製造可存貨產出與服務即時消費特性",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-15",
+    "topicCode": "EXAM-L11-15",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "017ddb06d51b26e4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>"
+  },
+  {
+    "question": 16,
+    "concept": "低階編碼決定多階MRP計算順序",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "relatedTopics": [
+      "M11102"
+    ],
+    "subject": "L11",
+    "id": "L11-16",
+    "topicCode": "EXAM-L11-16",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一料件低階碼取出現的最深層，等全部母項需求彙總後才淨算該料件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見「編碼」就選儲位、盤點或資料存取成本，而未辨明它在 MRP 中的計算順序用途。</p></section>"
+  },
+  {
+    "question": 17,
+    "concept": "MBOM多階母子件需求與結構關係",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "subject": "L11",
+    "id": "L11-17",
+    "topicCode": "EXAM-L11-17",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>"
+  },
+  {
+    "question": 18,
+    "concept": "需求來源追溯、前置時間與批量設定",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "subject": "L11",
+    "id": "L11-18",
+    "topicCode": "EXAM-L11-18",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">需求來源追溯回答哪個母項需要它。</p>\n<p class=\"study-paragraph\">前置時間將需求日回推至發出日。</p>\n<p class=\"study-paragraph\">批量規則再決定實際補入量。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">合併不同品項或清空安全庫存，只會刪掉限制。</p>\n<p class=\"study-paragraph\">追溯本身也不能代替正確的前置時間與批量設定。</p></section>"
+  },
+  {
+    "question": 19,
+    "concept": "MBOM與實際製造裝配工序的關聯",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "subject": "L11",
+    "id": "L11-19",
+    "topicCode": "EXAM-L11-19",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>"
+  },
+  {
+    "question": 20,
+    "concept": "自製採購屬性與BOM製程關聯修正",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "subject": "L11",
+    "id": "L11-20",
+    "topicCode": "EXAM-L11-20",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨明自製、採購與組裝屬性，再修正 BOM 和製程關聯，讓工單能正確展料及投料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只發 ECN、換樹狀圖或購買 ERP 模組，卻未補正主檔。</p>\n<p class=\"study-paragraph\">工具不會自行產生正確資料。</p></section>"
+  },
+  {
+    "question": 21,
+    "concept": "ECRS先刪除再合併、重排及簡化",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-21",
+    "topicCode": "EXAM-L11-21",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">ECRS 是刪除、合併、重排、簡化。</p>\n<p class=\"study-paragraph\">先確認工作是否必要，再考慮如何更快執行。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">遇到低效率先購置工具簡化，使原本可刪除的搬運或重複動作被保留下來。</p></section>"
+  },
+  {
+    "question": 22,
+    "concept": "速率統一後比較瓶頸改善的整線效益",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "relatedTopics": [
+      "M11203"
+    ],
+    "subject": "L11",
+    "id": "L11-22",
+    "topicCode": "EXAM-L11-22",
+    "materialCode": "M11201",
+    "noteIds": [
+      "a905c5ac99f9b6aa",
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 22 題的比較依據：</strong>四站換為件／小時依序為 6、10、8、5，限制在丁。</p>\n<p class=\"study-paragraph\">只提高甲、乙或丙仍受丁的 5 限制。</p>\n<p class=\"study-paragraph\">丁由 12 分／件降為 10 分／件後，甲與丁同為 6 件／小時，因此整線理論上限由 5 提高為 6，而非其他站的 8 或 10。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>"
+  },
+  {
+    "question": 23,
+    "concept": "最長不可分作業為最短CT下限",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-23",
+    "topicCode": "EXAM-L11-23",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">不可再分割的作業元素中，最長者構成最短 CT 的下限。</p>\n<p class=\"study-paragraph\">接著檢查先行關係與分站可行性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以最短元素、平均值或總時間作為單站 CT 下限。</p>\n<p class=\"study-paragraph\">總時間可用於估最少站數，不能與最長元素互換。</p></section>"
+  },
+  {
+    "question": 24,
+    "concept": "SOP須符合設備能力與需求節拍",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "relatedTopics": [
+      "M11201"
+    ],
+    "subject": "L11",
+    "id": "L11-24",
+    "topicCode": "EXAM-L11-24",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給 SOP 卻仍有瓶頸與波動，應檢核 SOP 的方法、設備能力及需求節拍是否相容。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">沒有證據就將所有問題歸因於員工不遵守。</p>\n<p class=\"study-paragraph\">公告所選是此情境最可能原因，不是說通報、訓練與步驟完整性不重要。</p></section>"
+  },
+  {
+    "question": 25,
+    "concept": "SOP核心步驟、工具及安全內容",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "subject": "L11",
+    "id": "L11-25",
+    "topicCode": "EXAM-L11-25",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">以「能否照文件安全完成工作」檢核：執行步驟、工具及安全事項是核心，另應有參數、品質判定與異常處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把個人考核、合約或客訴流程等管理資料當成每份現場 SOP 的核心操作內容。</p></section>"
+  },
+  {
+    "question": 26,
+    "concept": "先扣母項庫存再合併子件淨需求",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "subject": "L11",
+    "id": "L11-26",
+    "topicCode": "EXAM-L11-26",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先扣 B 成品庫存：尚需生產 <span class=\"math-inline\">$60-25=35$</span>。</p>\n<p class=\"study-paragraph\">C 毛需求 <span class=\"math-inline\">$80×2+35×5=335$</span>，再扣 C 可用量 160，淨需求為 <strong class=\"study-strong\">175</strong>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">直接以需求 60 展開 B，重複採購庫存 B 內已含的 C。</p>\n<p class=\"study-paragraph\">或把 B 的 25 件直接當成 25 個 C 扣除，忽略單位用量。</p></section>"
+  },
+  {
+    "question": 27,
+    "concept": "MPS未及時更新導致MRP需求時間錯置",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先淨算母項，再展開子項",
+    "relatedTopics": [
+      "M11101"
+    ],
+    "subject": "L11",
+    "id": "L11-27",
+    "topicCode": "EXAM-L11-27",
+    "materialCode": "M11103",
+    "noteIds": [
+      "d37a6422949d4491",
+      "4500cd95a8d23544"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">關鍵線索是需求「時間」錯置，優先核對 MPS 是否及時更新，再檢查各階需求與前置時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只提高安全庫存可遮住短缺，卻不修正時間資料。</p>\n<p class=\"study-paragraph\">數量錯誤和日期錯誤不宜混成同一診斷。</p></section>"
+  },
+  {
+    "question": 28,
+    "concept": "時間欄柵控制近期主排程變更",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-28",
+    "topicCode": "EXAM-L11-28",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "502a95ae417c9236"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>"
+  },
+  {
+    "question": 29,
+    "concept": "排程方向與容量限制是不同維度",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-29",
+    "topicCode": "EXAM-L11-29",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "502a95ae417c9236"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>"
+  },
+  {
+    "question": 30,
+    "concept": "DRP成品補充與配送節點協調",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：先辨認決策層級",
+    "subject": "L11",
+    "id": "L11-30",
+    "topicCode": "EXAM-L11-30",
+    "materialCode": "M11101",
+    "noteIds": [
+      "cee27eb9dca1a47c",
+      "502a95ae417c9236"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看管理對象：DRP 協調配銷節點的成品補充與配送時程。</p>\n<p class=\"study-paragraph\">MRP 展開製造物料需求。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把投資回收、年度預算或單筆訂單狀態追蹤當成 DRP 的主要功能。</p></section>"
+  },
+  {
+    "question": 31,
+    "concept": "工具及物料置於正常伸及範圍",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-31",
+    "topicCode": "EXAM-L11-31",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>"
+  },
+  {
+    "question": 32,
+    "concept": "工作研究以觀察分析改善方法合理性",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-32",
+    "topicCode": "EXAM-L11-32",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>"
+  },
+  {
+    "question": 33,
+    "concept": "JIT停機情境中的預防保養與換線診斷",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+    "note": "保留公告A；題中未拆分正常換線和故障損失，不能推成所有頻繁換線都優先保養。",
+    "subject": "L11",
+    "id": "L11-33",
+    "topicCode": "EXAM-L11-33",
+    "materialCode": "M11203",
+    "noteIds": [
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題給選項中，停機及產能不穩對應預防性保養。</p>\n<p class=\"study-paragraph\">實務再將故障停機、正常換線、調整與微停分開蒐證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用勞資協調、全面自動化或末端檢查取代設備穩定性改善。</p>\n<p class=\"study-paragraph\">原題未提供換線／故障損失明細，不能延伸成「所有頻繁換線一律優先保養」。</p></section>"
+  },
+  {
+    "question": 34,
+    "concept": "工時損失階層與一次、最終良率區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+    "note": "原卷工時層級命名不得未經定義就套用到不同工廠或OEE軟體欄位。",
+    "subject": "L11",
+    "id": "L11-34",
+    "topicCode": "EXAM-L11-34",
+    "materialCode": "M11203",
+    "noteIds": [
+      "2326dbdacd10691f",
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先畫時間損失階層：扣停機、再扣速度損失、再扣品質損失。</p>\n<p class=\"study-paragraph\">價值工時加回品質損失才回到其上一層。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 34 題的名詞處理：</strong>工廠對「負荷、淨作業、有效、價值」工時的命名可能不同，讀題先對照它的損失瀑布。</p>\n<p class=\"study-paragraph\">本章 OEE 採「計畫生產時間 → 扣停機後運轉時間 → 扣速度損失後淨運轉時間 → 扣品質損失後完全有效時間」。</p>\n<p class=\"study-paragraph\">不能只因別處也叫「有效工時」就跨定義套式。</p>\n<p class=\"study-paragraph\">更不能將本題的人工工時命名直接當成所有 OEE 軟體的欄位定義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把速度與品質損失放在同一層。</p>\n<p class=\"study-paragraph\">同題其餘良率式又需分清首次合格和重工後最終合格，不能拿最終良率代表 FPY。</p></section>"
+  },
+  {
+    "question": 35,
+    "concept": "正常時間經寬放後形成標準工時",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "subject": "L11",
+    "id": "L11-35",
+    "topicCode": "EXAM-L11-35",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+  },
+  {
+    "question": 36,
+    "concept": "五次觀測平均、105%評比及15%外加寬放",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "note": "公告選項對應外加法；不得推定所有未註明分母的寬放率都採外加法。",
+    "subject": "L11",
+    "id": "L11-36",
+    "topicCode": "EXAM-L11-36",
+    "materialCode": "M11201",
+    "noteIds": [
+      "7fd801f1e3758abe"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p>\n<p class=\"study-paragraph\">第 36 題採外加法得 1.32825 分鐘，約 1.33。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+  },
+  {
+    "question": 37,
+    "concept": "實際量逐層回推有效與設計產能",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+    "relatedTopics": [
+      "M11201"
+    ],
+    "subject": "L11",
+    "id": "L11-37",
+    "topicCode": "EXAM-L11-37",
+    "materialCode": "M11203",
+    "noteIds": [
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先由實際量除以 0.8 得有效產能 10，再除以 0.5 得設計產能 <strong class=\"study-strong\">20 件／週</strong>。</p>\n<p class=\"study-paragraph\">也可用 <span class=\"math-inline\">$8/(0.8×0.5)$</span>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只除一次百分比就停止，或把兩個百分比相加。</p>\n<p class=\"study-paragraph\">效率比較實際／有效，利用率比較實際／設計，此題分別為 80% 和 40%。</p></section>"
+  },
+  {
+    "question": 38,
+    "concept": "流程時間、CT與增值時間占比的單位",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：文件能回答哪個問題",
+    "relatedTopics": [
+      "M11201",
+      "M11203"
+    ],
+    "note": "原卷流程速度採增值時間／流程時間之無量綱比例，與件／時間的產出速率不同。",
+    "subject": "L11",
+    "id": "L11-38",
+    "topicCode": "EXAM-L11-38",
+    "materialCode": "M11102",
+    "noteIds": [
+      "633dd3ff37563ee6",
+      "592c42010cc8c041",
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先標示計量單位：流程時間是單件通過全流程的時間。</p>\n<p class=\"study-paragraph\">CT 是連續完工間隔。</p>\n<p class=\"study-paragraph\">加工及整備時間只是流程時間的部分。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將全程投入到完成的時間當成 CT。</p>\n<p class=\"study-paragraph\">題中「流程速度」採增值時間占流程時間的比值，是無量綱比例，不能拿來當件／小時的產出速率。</p></section>"
+  },
+  {
+    "question": 39,
+    "concept": "找最慢站並重算改善後下一瓶頸",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：單位、限制與改善後的新瓶頸",
+    "relatedTopics": [
+      "M11203"
+    ],
+    "subject": "L11",
+    "id": "L11-39",
+    "topicCode": "EXAM-L11-39",
+    "materialCode": "M11201",
+    "noteIds": [
+      "5a940befd48ea4c9",
+      "7fd801f1e3758abe",
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 39 題的改善界線：</strong>四站單件時間的最大值為 C 的 15 分鐘，480 分鐘的穩態理論量為 32 件。</p>\n<p class=\"study-paragraph\">即使 C 改善至 10 分鐘以下，B 仍需 10 分鐘，未改善 B 前整線上限不超過 48 件。</p>\n<p class=\"study-paragraph\">不能只寫「改善瓶頸」就直接推得 60 件。</p>\n<p class=\"study-paragraph\">若從空線開工計有限班次的實際完成數，還須考慮首件通過時間，與此穩態上限分開。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>"
+  },
+  {
+    "question": 40,
+    "concept": "WIP週轉與相同邊界下的流程改善",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：損失不能跨層相加",
+    "subject": "L11",
+    "id": "L11-40",
+    "topicCode": "EXAM-L11-40",
+    "materialCode": "M11203",
+    "noteIds": [
+      "b809ae52db9c108b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">要看精實流動，優先觀察與 WIP 直接連結的週轉。</p>\n<p class=\"study-paragraph\">在通過量穩定且邊界相同時，較高週轉對應較短平均流程時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">ROI 屬較廣的財務結果，不能單獨診斷現場流動。</p>\n<p class=\"study-paragraph\">只清空緩衝造成缺料、或把 WIP 移出統計範圍，也不能算改善。</p></section>"
+  },
+  {
+    "question": 41,
+    "concept": "p圖樣本數增加使界限半寬縮小",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-41",
+    "topicCode": "EXAM-L11-41",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定平均不良率時，比較 <span class=\"math-inline\">$\\sqrt{\\bar p(1-\\bar p)/n}$</span>：n 增加，未截斷的界限半寬縮小。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把抽樣精度提高說成製程不良率下降或產品規格變嚴。</p>\n<p class=\"study-paragraph\">若 LCL 已截為 0，須區別理論半寬與實際顯示寬度。</p></section>"
+  },
+  {
+    "question": 42,
+    "concept": "SPC受控仍有共同原因隨機變異",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-42",
+    "topicCode": "EXAM-L11-42",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>"
+  },
+  {
+    "question": 43,
+    "concept": "品管工具用於現場製程與品質問題",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-43",
+    "topicCode": "EXAM-L11-43",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+  },
+  {
+    "question": 44,
+    "concept": "初始管制界限須有代表性合理分組資料",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-44",
+    "topicCode": "EXAM-L11-44",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>"
+  },
+  {
+    "question": 45,
+    "concept": "監控對象、圖種、樣本大小與頻率的規劃",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "note": "PDF第9頁確認公告A；題面未說品項已指定，不能解讀成實務無需定義品項或品質特性。",
+    "subject": "L11",
+    "id": "L11-45",
+    "topicCode": "EXAM-L11-45",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "5ce08d0c3497498b",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"><strong class=\"study-strong\">第 45 題公告 A：</strong>題面未交代品項已被預先指定，故不能據此得出「使用管制圖不必決定監控哪個品項／品質特性」。</p>\n<p class=\"study-paragraph\">可確定要規劃圖種、樣本大小與頻率。</p>\n<p class=\"study-paragraph\">完整實務仍須先定義監控對象、量測方法及合理分組。</p>\n<p class=\"study-paragraph\">本教材保留公告答案，不替題面補上未提供的前提。</p></section>"
+  },
+  {
+    "question": 46,
+    "concept": "散佈圖檢查兩連續變數相關趨勢",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-46",
+    "topicCode": "EXAM-L11-46",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+  },
+  {
+    "question": 47,
+    "concept": "魚骨圖展開待驗證的潛在原因",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-47",
+    "topicCode": "EXAM-L11-47",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+  },
+  {
+    "question": 48,
+    "concept": "品質成本依活動目的及交付前後分類",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "note": "PDF第9頁確認公告A；檢查及測試本身仍可屬鑑定，品管程序、蒐集分析或問題解決須依實際目的分類。",
+    "subject": "L11",
+    "id": "L11-48",
+    "topicCode": "EXAM-L11-48",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "f9975979e4a36264",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed",
+      "c655cb2e1def2f2d"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 48 題公告 A：</strong>檢查、測試等符合性評估本身確可屬鑑定成本。</p>\n<p class=\"study-paragraph\">「品質管制程序」涵義較廣，須依實際工作目的分類。</p>\n<p class=\"study-paragraph\">不能因公告選 A，就把所有檢驗設備或測試費改列成預防成本。</p>\n<p class=\"study-paragraph\">題中的資料蒐集／分析與問題解決，也同樣須看其預防、鑑定或失敗處理目的。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>"
+  },
+  {
+    "question": 49,
+    "concept": "TQM全員參與與依事實決策並行",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "note": "PDF第9頁確認公告C；ASQ同時列全員參與及依事實決策，不可推成禁止團隊參與。",
+    "subject": "L11",
+    "id": "L11-49",
+    "topicCode": "EXAM-L11-49",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "217e22781fd37868",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">分清全員參與和決策依據：TQM 支持跨部門參與，但決策須以事實、分析和顧客要求支持。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 49 題公告 C：</strong>僅憑該詞不能推論團隊參與一律不正確。</p>\n<p class=\"study-paragraph\"><a href=\"https://asq.org/quality-resources/total-quality-management\" class=\"study-link\">ASQ 的 TQM 說明</a>同時包含全員參與及依事實決策。</p>\n<p class=\"study-paragraph\">公告答案應與通用原理分別保存，不能將「不用團隊」當成 TQM 的學習結論。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為配合答案而推論團隊合作不屬 TQM，或反過來認為多數同意便足以證明改善有效。</p></section>"
+  },
+  {
+    "question": 50,
+    "concept": "訓練及品質制度建置屬預防成本",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：統計判斷與公告答案的界線",
+    "subject": "L11",
+    "id": "L11-50",
+    "topicCode": "EXAM-L11-50",
+    "materialCode": "M11202",
+    "noteIds": [
+      "ca61d998c66c0493",
+      "decc0e48b5dd9757",
+      "63c28db1847c53ed"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>"
+  },
+  {
+    "question": 1,
+    "concept": "ERP 整合管理與設備自動化的責任",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+    "subject": "L12",
+    "id": "L12-1",
+    "topicCode": "EXAM-L12-1",
+    "materialCode": "M12101",
+    "noteIds": [
+      "cfb0f4c3b6c4296a",
+      "31bd26096021962a",
+      "1486fa7138a4a65d"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先將財務、人資與製造管理流程歸入企業資源整合，再辨別直接控制生產動作的責任。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 ERP 可以下發工單，就把它與 PLC 驅動機械動作的自動化等同。</p>\n<p class=\"study-paragraph\">流程標準化與設備自動加工是不同層次。</p></section>"
+  },
+  {
+    "question": 2,
+    "concept": "IIoT 作為 IT／OT 資料連結基礎",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+    "relatedTopics": [
+      "M12102"
+    ],
+    "subject": "L12",
+    "id": "L12-2",
+    "topicCode": "EXAM-L12-2",
+    "materialCode": "M12101",
+    "noteIds": [
+      "cfb0f4c3b6c4296a",
+      "31bd26096021962a",
+      "1486fa7138a4a65d",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目問 IT／OT 的連結基礎，先找能接入設備、採集及交換現場資料的 IIoT。</p>\n<p class=\"study-paragraph\">再向上連到 MES、ERP 應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 ERP 規模大或 MES 有排程，就把管理應用當成底層設備互聯的基礎建置。</p></section>"
+  },
+  {
+    "question": 3,
+    "concept": "OT 將製程知識轉成可執行邏輯",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+    "subject": "L12",
+    "id": "L12-3",
+    "topicCode": "EXAM-L12-3",
+    "materialCode": "M12101",
+    "noteIds": [
+      "cfb0f4c3b6c4296a",
+      "31bd26096021962a",
+      "1486fa7138a4a65d"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OT 的關鍵是讓製程知識成為可量測、可控制、可執行的邏輯，例如溫度到位且夾具確認才進料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 OT 縮成「只提供運轉狀態」，忽略順序、互鎖與實體製程控制。</p>\n<p class=\"study-paragraph\">企業財務管理則屬 IT 側任務。</p></section>"
+  },
+  {
+    "question": 4,
+    "concept": "感測器提供控制輸入而非致動",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "relatedTopics": [
+      "M12202"
+    ],
+    "subject": "L12",
+    "id": "L12-4",
+    "topicCode": "EXAM-L12-4",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">沿「感測器量測 → 控制邏輯判斷 → 執行元件動作」閱讀，感測器提供輸入資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把量測與致動混為一談。</p>\n<p class=\"study-paragraph\">到位感測器告知位置，真正推動工件的是氣缸、馬達等執行元件。</p></section>"
+  },
+  {
+    "question": 5,
+    "concept": "AGV／AMR 的物料領用轉運任務",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-5",
+    "topicCode": "EXAM-L12-5",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識動作對象：AGV／AMR 移動物料，主要任務是領用與轉運。</p>\n<p class=\"study-paragraph\">生產追蹤及品質監督是可與之整合的管理用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因搬運紀錄可追蹤，就把派車設備的主要職責改判成全廠生產執行跟蹤。</p></section>"
+  },
+  {
+    "question": 6,
+    "concept": "異常振動優先檢查機械結構",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-6",
+    "topicCode": "EXAM-L12-6",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題內四類候選中，異常振動首先指向機械結構。</p>\n<p class=\"study-paragraph\">按程序停機／隔離後檢查固定、對心、軸承及傳動，並核對感測安裝。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見設備有電腦便先改作業系統或網路設定。</p>\n<p class=\"study-paragraph\">也不可從一個振幅就直接斷定某個零件已壞。</p></section>"
+  },
+  {
+    "question": 7,
+    "concept": "MES 的 OEE 模組及工單績效",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-7",
+    "topicCode": "EXAM-L12-7",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同時顯示設備時間稼動與工單良率，應找將時間、產量及品質整合的 OEE 模組。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因報工提供資料就選報工系統，或把單純設備監控當成已計算工單品質績效。</p></section>"
+  },
+  {
+    "question": 8,
+    "concept": "故障前監測及預防措施",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-8",
+    "topicCode": "EXAM-L12-8",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">「防患於未然」須有故障前的監測、風險辨識與處置。</p>\n<p class=\"study-paragraph\">要看是否在事件發生前改變風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將事後檢討當作預警，或只靠增加人力、發放手冊就認為已建立設備異常監控。</p></section>"
+  },
+  {
+    "question": 9,
+    "concept": "漏警的模型、通訊及操作原因",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12102",
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-9",
+    "topicCode": "EXAM-L12-9",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">逐項檢查「能否偵測此故障、資料有無送達、是否有突發誤操作」。</p>\n<p class=\"study-paragraph\">三者都可能造成預警未出現。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將無告警直接等同模型正常，或把所有漏警都歸因於模型，忽略通訊及現場使用條件。</p></section>"
+  },
+  {
+    "question": 10,
+    "concept": "參數偏移的品質與維護影響",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-10",
+    "topicCode": "EXAM-L12-10",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：量測偏移可能是感測失準，也可能是真實製程／設備劣化。</p>\n<p class=\"study-paragraph\">先查原因與品質影響，再依核准流程處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只把數值調回標準便宣告沒有品質影響。</p>\n<p class=\"study-paragraph\">校正量測系統、改顯示值與修復設備不是同一種動作。</p></section>"
+  },
+  {
+    "question": 11,
+    "concept": "系統記錄支援分析追溯及改善",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "relatedTopics": [
+      "M12202"
+    ],
+    "subject": "L12",
+    "id": "L12-11",
+    "topicCode": "EXAM-L12-11",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "9f80c05d03f823a0",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">連續資料與系統記錄應能支援趨勢、追溯及改善。</p>\n<p class=\"study-paragraph\">至少識別來源、時間、狀態與事件內容。</p>\n<p class=\"study-paragraph\">仍須保留抽樣影像、模型版本、事件時間與處置結果，讓第 11 題所要求的追溯及後續優化有可靠依據。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只想到開機時數或網路是否接通，忽略跨事件的分析用途。</p>\n<p class=\"study-paragraph\">自動刪除原始資料也無法支援問題追查。</p></section>"
+  },
+  {
+    "question": 12,
+    "concept": "HMI 的人機監控與操作目的",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-12",
+    "topicCode": "EXAM-L12-12",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">HMI 把設備狀態、警報及受權操作呈現給人員，核心是監控與控制的互動窗口。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將「介面」當作 AI 訓練、能源供應或維修本體。</p>\n<p class=\"study-paragraph\">有按鈕也不代表任何人都能改配方或遠端啟動。</p></section>"
+  },
+  {
+    "question": 13,
+    "concept": "工業相機介面的概括線長排序",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "relatedTopics": [
+      "M12102"
+    ],
+    "note": "公告採 GigE、Camera Link、USB 3.0；線材、模式、版本及延伸方案影響實際距離，非固定線長定律。",
+    "subject": "L12",
+    "id": "L12-13",
+    "topicCode": "EXAM-L12-13",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b",
+      "e736f971c9b5b81a"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識題目比較的是「連接線長度」，公告排序為 GigE → Camera Link → USB 3.0。</p>\n<p class=\"study-paragraph\">再檢查工程應用有無指定線材或延伸方案。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以頻寬排名代替距離排名，或把題內排序誤寫成所有型號均適用的固定公尺數。</p></section>"
+  },
+  {
+    "question": 14,
+    "concept": "設備介面需求、格式及版本規格",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-14",
+    "topicCode": "EXAM-L12-14",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">整合前建立資料格式、通訊方式、命名與介面需求，再管理版本及驗證責任，才能減少對接歧義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自由命名、每台重寫或不留版本當成彈性。</p>\n<p class=\"study-paragraph\">這會提高整合及追查成本，不能以內部使用為由省略。</p></section>"
+  },
+  {
+    "question": 15,
+    "concept": "MES 彙整設備資料供營運管理",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：系統功能與整合基礎",
+    "relatedTopics": [
+      "M12203"
+    ],
+    "note": "題意包含彙整供上層管理；不表示所有高頻原始波形必須直接寫入 MES。",
+    "subject": "L12",
+    "id": "L12-15",
+    "topicCode": "EXAM-L12-15",
+    "materialCode": "M12101",
+    "noteIds": [
+      "cfb0f4c3b6c4296a",
+      "f57f30af08ca38c8",
+      "31bd26096021962a",
+      "1486fa7138a4a65d",
+      "8019365c207ea452"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題意包含「彙整後供上層管理」，應把設備訊號關聯成工單、進度與品質資訊，定位 MES 的製造營運角色。</p>\n<p class=\"study-paragraph\">第 15 題的答案反映其管理用途，不能拿來規定所有原始波形的儲存位置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只抓住「快速變化」就選控制器。</p>\n<p class=\"study-paragraph\">控制器擅長即時控制，不等同跨工單與產線的營運彙整。</p></section>"
+  },
+  {
+    "question": 16,
+    "concept": "電子看板效益與稽核仍須保留",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-16",
+    "topicCode": "EXAM-L12-16",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：電子看板共享現況、減少人工通報等待，但仍需資料來源、稽核、更正及結案流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「減少人工依賴」放大成「全面取消紀錄與稽核」。</p>\n<p class=\"study-paragraph\">即時顯示不等於資料必然正確。</p></section>"
+  },
+  {
+    "question": 17,
+    "concept": "IMS 的 Predict and Prevent 策略",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-17",
+    "topicCode": "EXAM-L12-17",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">用三層記憶 IMS：第 17 題辨認 PAP 策略。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+  },
+  {
+    "question": 18,
+    "concept": "IoT 典型組成與特定辨識應用",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "note": "聲音辨識為特定應用；題內雲端為典型平台選項，實務亦可用地端，非所有 IoT 都強制使用雲端。",
+    "subject": "L12",
+    "id": "L12-18",
+    "topicCode": "EXAM-L12-18",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "fda04b77c229f593",
+      "1371595b77ca7b1e"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：分清採集、連線、資料處理平台等基本組成，與聲音辨識這種特定應用能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到功能「智慧」就認為每套 IoT 都必須具備。</p>\n<p class=\"study-paragraph\">雲端是題內的典型平台選項，實務可使用地端部署。</p></section>"
+  },
+  {
+    "question": 19,
+    "concept": "IoT 分層語境及排除混用模型",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "note": "題內採含應用、網路、商務層的語境；IoT 可有不同分層，不與 OSI 名稱任意混接。",
+    "subject": "L12",
+    "id": "L12-19",
+    "topicCode": "EXAM-L12-19",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先確認題目使用 IoT 的分層語境。</p>\n<p class=\"study-paragraph\">在其候選名稱中辨認應用、網路、商務層，排除不屬該模型的名稱。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將三層 IoT、含商務層的五層模型與 OSI 七層混接。</p>\n<p class=\"study-paragraph\">IoT 沒有一個適用所有情境的唯一層數。</p></section>"
+  },
+  {
+    "question": 20,
+    "concept": "Wi-Fi、Bluetooth、NFC 概括速率排序",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "note": "題內未指定版本，採常見概括排序；工程選型仍須比較實際版本、距離、干擾與資料量。",
+    "subject": "L12",
+    "id": "L12-20",
+    "topicCode": "EXAM-L12-20",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "fda04b77c229f593",
+      "1371595b77ca7b1e"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題內未給版本，採常見概括速率順序 Wi-Fi、Bluetooth、NFC。</p>\n<p class=\"study-paragraph\">作答後再區分速率、距離與功耗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用最遠傳輸距離或最低功耗排序，卻沒有回答資料速率。</p>\n<p class=\"study-paragraph\">也可能把概括排序誤當成跨所有版本的定律。</p></section>"
+  },
+  {
+    "question": 21,
+    "concept": "邊緣 AI 降低延遲及傳輸負擔",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-21",
+    "topicCode": "EXAM-L12-21",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "9f80c05d03f823a0",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">邊緣 AI 把部分推論移近資料來源，主要價值是減少往返延遲、原始資料傳送與即時處理等待。</p>\n<p class=\"study-paragraph\">靠近資料源可減少往返延遲與原始影像傳輸，對應第 21 題。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「放到邊緣」理解成增加雲端負載或擴充儲存。</p>\n<p class=\"study-paragraph\">運算位置與硬碟容量不是同一件事。</p></section>"
+  },
+  {
+    "question": 22,
+    "concept": "感知層執行資料採集",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：資料鏈與架構條件",
+    "subject": "L12",
+    "id": "L12-22",
+    "topicCode": "EXAM-L12-22",
+    "materialCode": "M12102",
+    "noteIds": [
+      "765d6594f65732cb",
+      "fda04b77c229f593"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依動詞辨層：「量到、讀取、辨識」是感知採集。</p>\n<p class=\"study-paragraph\">「送出」是傳輸。</p>\n<p class=\"study-paragraph\">「推論、決策」才是分析應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因感測器具備處理晶片，就把感知層的主要任務改判為全廠決策或雲端共享。</p></section>"
+  },
+  {
+    "question": 23,
+    "concept": "迴歸的監督式學習與過度擬合",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "subject": "L12",
+    "id": "L12-23",
+    "topicCode": "EXAM-L12-23",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：以已知目標數值配對輸入來擬合，是監督式迴歸。</p>\n<p class=\"study-paragraph\">最小平方法可用於線性迴歸，參數過多也可能過度擬合。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">誤以為監督式只能輸出類別。</p>\n<p class=\"study-paragraph\">另須區分關聯與因果，迴歸關係本身不證明改變某參數必然造成品質變化。</p></section>"
+  },
+  {
+    "question": 24,
+    "concept": "強化學習的獎勵函數",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "subject": "L12",
+    "id": "L12-24",
+    "topicCode": "EXAM-L12-24",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">強化學習依行動後的獎勵學習策略，因此須定義獎勵訊號／函數。</p>\n<p class=\"study-paragraph\">製造任務還應限制碰撞、超溫及品質風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將分類模型需要大量人工標籤的流程套到強化學習，或以固定規則列盡所有情境，忽略互動學習。</p></section>"
+  },
+  {
+    "question": 25,
+    "concept": "本地訓練前提下的網路影響",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "note": "以資料與運算在本地、無需遠端取數為前提；雲端訓練或線上取數須重判。",
+    "subject": "L12",
+    "id": "L12-25",
+    "topicCode": "EXAM-L12-25",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b",
+      "065ee51b3ab60079"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先保留「資料與運算都在本地」前提，再比較模型泛化問題與外部連線問題。</p>\n<p class=\"study-paragraph\">此時網路穩定性通常不直接改變預測準確性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">漏讀本地前提，套用雲端取數中斷的情境。</p>\n<p class=\"study-paragraph\">資料偏差、洩漏及過度擬合則確實會使結果失真。</p></section>"
+  },
+  {
+    "question": 26,
+    "concept": "工業多關節多自由度機器人分類",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-26",
+    "topicCode": "EXAM-L12-26",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目以工業場域、多關節／多自由度設備描述工業機器人，先看用途及機構功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因動作像人就判成仿人型，或把所有自動設備都視作服務機器人。</p></section>"
+  },
+  {
+    "question": 27,
+    "concept": "電腦視覺的場景理解目的",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "subject": "L12",
+    "id": "L12-27",
+    "topicCode": "EXAM-L12-27",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">視覺的任務目的是從影像取得可用的場景理解，如物件、位置與關係。</p>\n<p class=\"study-paragraph\">像素或顏色統計只是中間處理。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把容易量測的像素數當最終目的，或把影像轉文字這一項應用當作全部電腦視覺的定義。</p></section>"
+  },
+  {
+    "question": 28,
+    "concept": "CPS 連接採集與資訊轉換分工",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+    "subject": "L12",
+    "id": "L12-28",
+    "topicCode": "EXAM-L12-28",
+    "materialCode": "M12201",
+    "noteIds": [
+      "87325009794d3468",
+      "e3ff4df535394797",
+      "d8c129afa3bb25f8"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先問資料是否已採到。</p>\n<p class=\"study-paragraph\">接入／傳輸屬 Connection。</p>\n<p class=\"study-paragraph\">把資料轉成健康指標、劣化趨勢等才是 Conversion。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因為採集後能做分析，就把採集本身放入資訊挖掘層。</p>\n<p class=\"study-paragraph\">「非接觸式」是採集方式，不會改變其層級。</p></section>"
+  },
+  {
+    "question": 29,
+    "concept": "CPS 5C 由連接到配置的順序",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+    "subject": "L12",
+    "id": "L12-29",
+    "topicCode": "EXAM-L12-29",
+    "materialCode": "M12201",
+    "noteIds": [
+      "87325009794d3468",
+      "e3ff4df535394797",
+      "d8c129afa3bb25f8"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依資料成熟度重建 Connection → Conversion → Cyber → Cognition → Configuration，再對回題內代號，公告順序為乙戊丁丙甲。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背五個中文名的排列，或因 Cyber 有「網路」就把它移到感測連線之前，混淆與 IoT 網路層的語境。</p></section>"
+  },
+  {
+    "question": 30,
+    "concept": "CPS 的實體量測與計算回饋互動",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+    "note": "區塊鏈可支援 CPS 應用，但帳本技術本身不構成實體閉環。",
+    "subject": "L12",
+    "id": "L12-30",
+    "topicCode": "EXAM-L12-30",
+    "materialCode": "M12201",
+    "noteIds": [
+      "87325009794d3468",
+      "e3ff4df535394797",
+      "d8c129afa3bb25f8",
+      "86e285241a1b8372"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">找「實體對象、量測、計算、回饋」的互動：智慧電網、自動駕駛及與實體連結的數位孿生可形成 CPS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將任何數位技術都當 CPS。</p>\n<p class=\"study-paragraph\">區塊鏈可支援追溯，但帳本技術本身不具備對實體製程的量測與回饋閉環。</p></section>"
+  },
+  {
+    "question": 31,
+    "concept": "CPS 的自主補救與受控回饋",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：5C 順序與自主性邊界",
+    "note": "自主性限於已定義目標、允許範圍與已驗證控制條件；不保證任意未知失控均可自動最佳化。",
+    "subject": "L12",
+    "id": "L12-31",
+    "topicCode": "EXAM-L12-31",
+    "materialCode": "M12201",
+    "noteIds": [
+      "87325009794d3468",
+      "e3ff4df535394797",
+      "d8c129afa3bb25f8",
+      "86e285241a1b8372"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給具自主性的資料驅動系統，應辨認在既定目標及允許範圍內執行補救的配置／回饋功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自主性縮成只告警或永遠等人工。</p>\n<p class=\"study-paragraph\">相反地，也不能把題內「最佳」理解成對任何未知失控都保證找出全域最優措施。</p></section>"
+  },
+  {
+    "question": 32,
+    "concept": "決策樹可使用多個輸入特徵",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：學習方式與視覺任務",
+    "note": "單節點測一特徵不等於整棵樹只能處理一維；耗時及可解釋性仍受資料量、樹深與演算法影響。",
+    "subject": "L12",
+    "id": "L12-32",
+    "topicCode": "EXAM-L12-32",
+    "materialCode": "M12103",
+    "noteIds": [
+      "73e0de759c9b42bf",
+      "d9e0756895300234",
+      "83ffa8171e64de5b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：整棵樹可以依不同節點使用多個特徵。</p>\n<p class=\"study-paragraph\">例如先判斷溫度，再判斷振動。</p>\n<p class=\"study-paragraph\">單一節點測一個特徵，不等於整棵樹只能輸入一維資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將節點的單一條件誤推成模型的單一維度。</p>\n<p class=\"study-paragraph\">「容易理解」也不表示深樹永遠簡單或訓練耗時固定。</p></section>"
+  },
+  {
+    "question": 33,
+    "concept": "IMS 持續監測與性能預測",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-33",
+    "topicCode": "EXAM-L12-33",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題辨認持續監測及性能預測。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+  },
+  {
+    "question": 34,
+    "concept": "MES 執行管理與產品研發分工",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "relatedTopics": [
+      "M12101"
+    ],
+    "subject": "L12",
+    "id": "L12-34",
+    "topicCode": "EXAM-L12-34",
+    "materialCode": "M12203",
+    "noteIds": [
+      "f57f30af08ca38c8",
+      "1486fa7138a4a65d",
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題的 MES 與產品研發責任，另在單元六辨析。</p>\n<p class=\"study-paragraph\">反向題：MES 支援執行、追溯、品質及換線協調。</p>\n<p class=\"study-paragraph\">新產品本體設計主要屬工程研發及 CAD／PLM。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 MES 會使用產品版次或製程文件，就認為它直接設計全新產品。</p>\n<p class=\"study-paragraph\">使用工程資料與創建設計是不同責任。</p></section>"
+  },
+  {
+    "question": 35,
+    "concept": "資料探勘支持智慧維護",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "relatedTopics": [
+      "M12103"
+    ],
+    "subject": "L12",
+    "id": "L12-35",
+    "topicCode": "EXAM-L12-35",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題辨認支援預測的資料探勘能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+  },
+  {
+    "question": 36,
+    "concept": "稼動、能率及預防保養支持生產力",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "relatedTopics": [
+      "M12202"
+    ],
+    "note": "題內方法均可能改善；實際全線交付仍受瓶頸與需求限制。",
+    "subject": "L12",
+    "id": "L12-36",
+    "topicCode": "EXAM-L12-36",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">稼動、運轉效率與預防保養可分別減少時間／速度損失及突發故障，所以題內三項皆可能支持生產力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只選最熟悉的單一方法。</p>\n<p class=\"study-paragraph\">實務仍應核對瓶頸與需求，非瓶頸稼動提高不必然增加全線交付。</p></section>"
+  },
+  {
+    "question": 37,
+    "concept": "換模換線改善減少停機損失",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "relatedTopics": [
+      "M12202"
+    ],
+    "subject": "L12",
+    "id": "L12-37",
+    "topicCode": "EXAM-L12-37",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">換模換線改善直接縮短停機設定時間，在相同負荷口徑下提高 Availability。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把多機作業的人員配置改善直接當作設備稼動改善，未說明是否真的減少該設備停機。</p></section>"
+  },
+  {
+    "question": 38,
+    "concept": "生產日報的人員、工序與產品欄位",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "note": "按題內欄位語境辨認；企業特有工號定義應依資料字典，不將名稱當普遍標準。",
+    "subject": "L12",
+    "id": "L12-38",
+    "topicCode": "EXAM-L12-38",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：對照題內日報欄位，分清工序、實際加工量、人員識別及不良個數。</p>\n<p class=\"study-paragraph\">產品識別應用料號／產品代碼。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因「工」字就把工號當產品代碼。</p>\n<p class=\"study-paragraph\">企業若用工號表示其他識別，需依資料字典讀取，不能只靠欄名猜測。</p></section>"
+  },
+  {
+    "question": 39,
+    "concept": "Homing 建立定位參考點",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-39",
+    "topicCode": "EXAM-L12-39",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">Homing 建立已知位置參考，供後續定位使用。</p>\n<p class=\"study-paragraph\">檢查復歸完成狀態及允許啟動條件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把回原點當加速、故障清除或進維修模式。</p>\n<p class=\"study-paragraph\">參考點建立也不會自動校正所有治具與工具誤差。</p></section>"
+  },
+  {
+    "question": 40,
+    "concept": "六軸關節型機器人的空間姿態協調",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：設備任務、維護與介面",
+    "subject": "L12",
+    "id": "L12-40",
+    "topicCode": "EXAM-L12-40",
+    "materialCode": "M12202",
+    "noteIds": [
+      "10567c328b840963",
+      "31767811f3d6d704",
+      "35fbb1e1e2cef464",
+      "2cac8123a3ab738b"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">六軸關節型手臂以多軸協調調整空間位置與姿態，適合需要方向變換的任務。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將其誤限為平面或堆高用途。</p>\n<p class=\"study-paragraph\">自由度高不代表必然達到所有精度、負載、可達性或無碰撞要求。</p></section>"
+  },
+  {
+    "question": 41,
+    "concept": "拉式以實際需求觸發補充",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-41",
+    "topicCode": "EXAM-L12-41",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">拉式由下游消耗／需求授權上游補充，需有數量與在製限制。</p>\n<p class=\"study-paragraph\">電子訊息也可承載拉動訊號。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將裝電子看板或改小批量直接等同拉式，卻未改變投產觸發規則。</p></section>"
+  },
+  {
+    "question": 42,
+    "concept": "OEE 的時間、性能與品質三要素",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-42",
+    "topicCode": "EXAM-L12-42",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>"
+  },
+  {
+    "question": 43,
+    "concept": "性能稼動率比較實際與理想速度",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-43",
+    "topicCode": "EXAM-L12-43",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">P 比較實際運轉期間的產出速度與理想／標準速度，公式為理想週期 × 總產出 ÷ 運轉時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「有沒有開動」的 A，或「好不好」的 Q 當成速度表現。</p>\n<p class=\"study-paragraph\">運轉時間不可再扣一次已歸為速度損失的微停。</p></section>"
+  },
+  {
+    "question": 44,
+    "concept": "時間稼動率的運轉／負荷時間分母",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-44",
+    "topicCode": "EXAM-L12-44",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">A＝運轉時間 ÷ 預先定義的負荷時間。</p>\n<p class=\"study-paragraph\">先固定哪些時段納入生產計畫。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把修理時間本身當比率，或以良品數作時間指標。</p>\n<p class=\"study-paragraph\">不同班表排除口徑也不能直接比較。</p></section>"
+  },
+  {
+    "question": 45,
+    "concept": "設備效率差異與生產方法策略",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "note": "保留公告答案；僅知效率不同仍不足以證明唯一根因，需對齊口徑並調查 A、P、Q 損失。",
+    "subject": "L12",
+    "id": "L12-45",
+    "topicCode": "EXAM-L12-45",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5",
+      "3ec5918af508c042"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">公告選擇生產方法／策略差異。</p>\n<p class=\"study-paragraph\">它能影響換線、速度及作業損失。</p>\n<p class=\"study-paragraph\">工程判讀還須分解 A、P、Q 並核對產品與期間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只憑操作者、設備新舊或所在產線便斷定原因。</p>\n<p class=\"study-paragraph\">僅知兩台效率不同，仍不足以證明唯一根因。</p>\n<p class=\"study-paragraph\">題內答案是選項判讀方向。</p></section>"
+  },
+  {
+    "question": 46,
+    "concept": "最終良品率與首次直行率",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "note": "100 件全數重工回收為最終良率 100%、直行率 90%；不可無條件搬入採首次合格率的 OEE。",
+    "subject": "L12",
+    "id": "L12-46",
+    "topicCode": "EXAM-L12-46",
+    "materialCode": "M12203",
+    "noteIds": [
+      "3d4d8284e1b67eae",
+      "13e15faebada86a5",
+      "a5f7a3a641c7174f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">保留投入 100 件分母：第一次合格 90 件，重工後最終合格 100 件，因此直行率 90%、最終良品率 100%。</p>\n<p class=\"study-paragraph\">另第 46 題的「最終良品率」口徑，不能不經定義便搬進採首次合格率的 OEE。</p>\n<p class=\"study-paragraph\">同一批產品可以最終全部交付，仍保留首次品質與重工時間損失。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將重工 10 件再計為新投入，或因全部修好就把首次品質也改為 100%。</p>\n<p class=\"study-paragraph\">額外 10 分鐘是時間損失，不是件數分母。</p></section>"
+  },
+  {
+    "question": 47,
+    "concept": "單件順序加工總時間與流水節拍",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "note": "題內三作業時間相加為 9 分鐘；4 分鐘僅在獨立工站可重疊、無其他損失時為理想穩態節拍。",
+    "subject": "L12",
+    "id": "L12-47",
+    "topicCode": "EXAM-L12-47",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5",
+      "a5f7a3a641c7174f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">按題內順序加工時間相加，單件總加工時間為 2＋3＋4＝9 分鐘。</p>\n<p class=\"study-paragraph\">此處沒有另給評比／寬放資料，不自行追加。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將最長站 4 分鐘誤當單件總時間。</p>\n<p class=\"study-paragraph\">若三站獨立且可重疊流水，4 分鐘才是理想穩態節拍，首件仍需依序通過。</p></section>"
+  },
+  {
+    "question": 48,
+    "concept": "OEE 為 A、P、Q 比率相乘",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-48",
+    "topicCode": "EXAM-L12-48",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>"
+  },
+  {
+    "question": 49,
+    "concept": "高良率低稼動提示停機或待機",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "note": "題意指向時間損失；單靠比率不能進一步識別故障、待料或換線的個別原因。",
+    "subject": "L12",
+    "id": "L12-49",
+    "topicCode": "EXAM-L12-49",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5",
+      "3ec5918af508c042"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">良率 95% 與 A＝60% 分別描述品質和時間。</p>\n<p class=\"study-paragraph\">題意主要指向頻繁停機／待機，而非先假設加工精度差。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到效率不佳就一律改善品質，或忽略題目已排除的原料／設計變動。</p>\n<p class=\"study-paragraph\">單靠比率仍不能再分辨故障、待料或換線，須查停機明細。</p></section>"
+  },
+  {
+    "question": 50,
+    "concept": "即時可視及異常快速反應",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析：MES、績效分母與改善方向",
+    "subject": "L12",
+    "id": "L12-50",
+    "topicCode": "EXAM-L12-50",
+    "materialCode": "M12203",
+    "noteIds": [
+      "13e15faebada86a5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">即時、可視與異常反應的作用是較快看見並處理問題。</p>\n<p class=\"study-paragraph\">需把訊息接到責任人與處置流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把庫存增加當核心效益，或認為可視化能降低系統整合及品質穩定要求。</p></section>"
+  },
+  {
+    "question": 1,
+    "concept": "MES 與 ERP 的分工，不互相全面取代",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-1",
+    "topicCode": "EXAM-L21-1",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>"
+  },
+  {
+    "question": 2,
+    "concept": "MES 的生產執行及資料處理職責",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-2",
+    "topicCode": "EXAM-L21-2",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>"
+  },
+  {
+    "question": 3,
+    "concept": "單次感測與資料探勘的區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-3",
+    "topicCode": "EXAM-L21-3",
+    "materialCode": "M21102",
+    "noteIds": [
+      "ba3e67157f7f1091",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題（C）的單次溫度讀值屬感測。</p>\n<p class=\"study-paragraph\">溫度計讀值是感測；從歷史讀值找故障前兆才涉及資料分析／探勘。</p></section>"
+  },
+  {
+    "question": 4,
+    "concept": "SQDCM 現場活動優先順序",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-4",
+    "topicCode": "EXAM-L21-4",
+    "materialCode": "M21102",
+    "noteIds": [
+      "b107003456cacf5c",
+      "43022f484e098526"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題（C）以 SQDCM 判優先順序。</p>\n<p class=\"study-paragraph\">活動排序以安全、品質、交期、成本、士氣（SQDCM）判讀；趕產量不能跳過必要安全與品質確認。</p></section>"
+  },
+  {
+    "question": 5,
+    "concept": "CSV 資料格式與工具／平台區別",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-5",
+    "topicCode": "EXAM-L21-5",
+    "materialCode": "M21102",
+    "noteIds": [
+      "ba3e67157f7f1091"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 5 題（D）的 CSV 是文字資料格式。</p>\n<p class=\"study-paragraph\">SQL Server／Oracle 是資料庫平台，C# 是程式語言，可支援分析流程，並非三種探勘演算法。</p></section>"
+  },
+  {
+    "question": 6,
+    "concept": "七站線平衡率須重找最大 CT 並核對近似值",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "90 秒代回 LBR 約 84.92%，85% 為四捨五入近似，並非精確可解等式。",
+    "subject": "L21",
+    "id": "L21-6",
+    "topicCode": "EXAM-L21-6",
+    "materialCode": "M21202",
+    "noteIds": [
+      "8c89ef016f6a5f9c",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 6 題（公告 C）的 90 秒代回得 84.92%，不是精確等式。</p>\n<p class=\"study-paragraph\">每次試選項都要重找最大 CT。</p></section>"
+  },
+  {
+    "question": 7,
+    "concept": "JIT 減少重工及需求彈性的前提",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-7",
+    "topicCode": "EXAM-L21-7",
+    "materialCode": "M21101",
+    "noteIds": [
+      "fbb2b5f9f54d0318",
+      "426859ce978f22c3"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 7 題（C）採減少重工作答。</p>\n<p class=\"study-paragraph\">JIT 的拉動仍需換線能力與可靠供料，不能保證任意需求變更都能立即處理。</p></section>"
+  },
+  {
+    "question": 8,
+    "concept": "精實供應商數量與推拉式用語疑義",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告 A；C 的推式生產亦與典型精實拉動衝突，供應商數量是否減少有情境差異。",
+    "subject": "L21",
+    "id": "L21-8",
+    "topicCode": "EXAM-L21-8",
+    "materialCode": "M21101",
+    "noteIds": [
+      "fbb2b5f9f54d0318",
+      "426859ce978f22c3",
+      "05e26e60cb6853e7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題公告 A，但「減少供應商數量」有情境差異，C 的推式生產亦與典型拉動原則衝突，保留用語疑義。</p></section>"
+  },
+  {
+    "question": 9,
+    "concept": "標準作業的節拍、順序、標準在製量三要素",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-9",
+    "topicCode": "EXAM-L21-9",
+    "materialCode": "M21101",
+    "noteIds": [
+      "fbb2b5f9f54d0318",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 9 題（B）問的是節拍、順序與標準在製量三要素。</p>\n<p class=\"study-paragraph\">人員是執行者，未列入該三要素不代表不用訓練。</p></section>"
+  },
+  {
+    "question": 10,
+    "concept": "PDCA 檢查原因與再發防止，不限可見表象",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-10",
+    "topicCode": "EXAM-L21-10",
+    "materialCode": "M21102",
+    "noteIds": [
+      "b107003456cacf5c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 10 題（D）的 PDCA 不應只檢查可見表象，還要驗證原因、對策與再發防止。</p></section>"
+  },
+  {
+    "question": 11,
+    "concept": "智慧製造監控能力不保證立即提高良率",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-11",
+    "topicCode": "EXAM-L21-11",
+    "materialCode": "M21102",
+    "noteIds": [
+      "ba3e67157f7f1091",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 11 題（C）不能把「具備即時監控」推成「良率立即提高」。</p></section>"
+  },
+  {
+    "question": 12,
+    "concept": "CPS 的感知、計算、控制與通訊整合",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-12",
+    "topicCode": "EXAM-L21-12",
+    "materialCode": "M22101",
+    "noteIds": [
+      "8770ff84a92a36cf",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>"
+  },
+  {
+    "question": 13,
+    "concept": "IoT 三層模型及 Zigbee／RFID 功能區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "雲端是運算部署方式，並非所有三層 IoT 另需固定雲端層。",
+    "subject": "L21",
+    "id": "L21-13",
+    "topicCode": "EXAM-L21-13",
+    "materialCode": "M22101",
+    "noteIds": [
+      "8770ff84a92a36cf",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>"
+  },
+  {
+    "question": 14,
+    "concept": "智慧工廠常用技術的相對分類與區塊鏈邊界",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告 C 為常用技術相對分類，不代表區塊鏈不可用於製造追溯。",
+    "subject": "L21",
+    "id": "L21-14",
+    "topicCode": "EXAM-L21-14",
+    "materialCode": "M21102",
+    "noteIds": [
+      "ba3e67157f7f1091"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題公告 C 是常用技術的相對分類，區塊鏈並非絕對不能用於製造追溯。</p></section>"
+  },
+  {
+    "question": 15,
+    "concept": "MTS／ATO／MTO／ETO 的訂單觸發及設計階段",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-15",
+    "topicCode": "EXAM-L21-15",
+    "materialCode": "M21101",
+    "noteIds": [
+      "22399cc1d910c628",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 15 題（公告 D）中，ETO 要先完成設計與工程確認，不能接單後直接略過設計開工。</p></section>"
+  },
+  {
+    "question": 16,
+    "concept": "資料驅動、可靠性、混合模型與物件建模區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-16",
+    "topicCode": "EXAM-L21-16",
+    "materialCode": "M21201",
+    "noteIds": [
+      "a72ce86e439858e5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 16 題（A）對照資料驅動、可靠性與混合模型。</p>\n<p class=\"study-paragraph\">物件建模可描述軟體結構，單憑這個名稱不能推出故障機率或衰退過程。</p></section>"
+  },
+  {
+    "question": 17,
+    "concept": "人員、RFID、條碼等 MES 現場資料來源",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-17",
+    "topicCode": "EXAM-L21-17",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 17 題（B）以人員工時、RFID、條碼為現場資料來源，上一批售價不是本題的生產採集項目。</p>\n<p class=\"study-paragraph\">但不代表跨系統分析永遠不能使用價格。</p></section>"
+  },
+  {
+    "question": 18,
+    "concept": "TOC 由瓶頸限制整體產出及非瓶頸配合",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "非瓶頸若避免瓶頸缺料仍可能提升系統產出，不能把無影響概括所有改善。",
+    "subject": "L21",
+    "id": "L21-18",
+    "topicCode": "EXAM-L21-18",
+    "materialCode": "M21201",
+    "noteIds": [
+      "d14b42529a26a414",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 18 題（D）以瓶頸決定系統產出，非瓶頸須配合投料。</p>\n<p class=\"study-paragraph\">非瓶頸改善若只是堆更多 WIP，不會直接提高出貨，但若能防止瓶頸缺料或解除其前置限制，仍可能有益，不能把「無影響」擴為所有情境。</p></section>"
+  },
+  {
+    "question": 19,
+    "concept": "晶圓小排程的小時粒度與情境限制",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "小時粒度是本題情境，不是半導體業的固定最小工程單位。",
+    "subject": "L21",
+    "id": "L21-19",
+    "topicCode": "EXAM-L21-19",
+    "materialCode": "M21201",
+    "noteIds": [
+      "98a1cf67a9e08182",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 19 題公告 D，以小時安排晶圓現場。</p></section>"
+  },
+  {
+    "question": 20,
+    "concept": "自省預測等進階能力與基礎性能品質控制比較",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告 B 比較進階屬性，不能由此否定智慧製造中的品質控制。",
+    "subject": "L21",
+    "id": "L21-20",
+    "topicCode": "EXAM-L21-20",
+    "materialCode": "M21102",
+    "noteIds": [
+      "ba3e67157f7f1091"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 20 題公告 B 著重傳統性能品質控制與自省、預測、自重組等進階能力的比較，品質控制並未因此變得不重要。</p></section>"
+  },
+  {
+    "question": 21,
+    "concept": "資源短缺時的例外管理與工單管理",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-21",
+    "topicCode": "EXAM-L21-21",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 21 題（B）問資源短缺後的例外處理與工單重排。</p>\n<p class=\"study-paragraph\">缺料造成原工單延後，系統先改工單優先序，再派搬運車補料。前者對應例外管理與工單管理，後者對應物料搬運管理。</p></section>"
+  },
+  {
+    "question": 22,
+    "concept": "看板訊號、前置耗用、安全量與箱數",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-22",
+    "topicCode": "EXAM-L21-22",
+    "materialCode": "M21101",
+    "noteIds": [
+      "fbb2b5f9f54d0318",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 22 題（D）須同時核對使用訊號、前置需求及箱數。</p></section>"
+  },
+  {
+    "question": 23,
+    "concept": "Q 固定訂量與 P 固定檢查期間",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-23",
+    "topicCode": "EXAM-L21-23",
+    "materialCode": "M21101",
+    "noteIds": [
+      "8e9dddddf11dbbd8",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 23 題（D）中，Q 固定的是訂購量，P 固定的是檢查期間。</p>\n<p class=\"study-paragraph\">不是兩者都固定日期、固定數量。</p></section>"
+  },
+  {
+    "question": 24,
+    "concept": "基本 EOQ 的穩定需求、固定單價與前置假設",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "固定且均勻宜讀為確定穩定耗用率，並非需求服從均勻機率分布。",
+    "subject": "L21",
+    "id": "L21-24",
+    "topicCode": "EXAM-L21-24",
+    "materialCode": "M21101",
+    "noteIds": [
+      "8e9dddddf11dbbd8",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（D）所述「固定且均勻」應讀為確定、穩定的耗用率，不是需求服從機率上的均勻分布。</p></section>"
+  },
+  {
+    "question": 25,
+    "concept": "鍛造併批、換線及日粒度的情境判讀",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "日粒度為本題併批情境，不排除詳細派工採更細時間。",
+    "subject": "L21",
+    "id": "L21-25",
+    "topicCode": "EXAM-L21-25",
+    "materialCode": "M21201",
+    "noteIds": [
+      "98a1cf67a9e08182",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題公告 C，以日安排須高溫、併批的鍛造。</p>\n<p class=\"study-paragraph\">判讀時先找換線成本、批次不可拆性與反應頻率，再選能保留限制的時間粒度。</p>\n<p class=\"study-paragraph\">這是該題情境的作答分類，不是「半導體一律只能小時、鍛造一律不能小時」的工程標準。</p>\n<p class=\"study-paragraph\">換成廠內詳細派工，仍可能需要更細的事件時間。</p></section>"
+  },
+  {
+    "question": 26,
+    "concept": "OEE 改善仍需標準操作程序",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-26",
+    "topicCode": "EXAM-L21-26",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c445f8c6b5bd35ff"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 26 題（C）否定不定義操作程序就能提高熟練度。</p></section>"
+  },
+  {
+    "question": 27,
+    "concept": "工作站排程、工單優先序、物料搬運與閥門控制",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-27",
+    "topicCode": "EXAM-L21-27",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題（A）問閥門控制，判斷層級不同。</p>\n<p class=\"study-paragraph\">流體閥門的開關指令則屬設備／製程控制，不能只因它位於某工作站就歸入工作站排程。</p></section>"
+  },
+  {
+    "question": 28,
+    "concept": "OEE 計畫時間與理想 CT 的口徑驗算差異",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告 C 約67%；假設100秒為理想CT，計畫時間1200分得62.5%，1230分得60.98%，均無法重現67%。",
+    "subject": "L21",
+    "id": "L21-28",
+    "topicCode": "EXAM-L21-28",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c445f8c6b5bd35ff",
+      "c3340a366002402c",
+      "c6f0a4705824f0f2",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題公告 C 約 67%，本章上方保留 62.5%／60.98% 的條件驗算差異，不能為湊答案混用分母。</p></section>"
+  },
+  {
+    "question": 29,
+    "concept": "人機服務窗、人工負荷及向上取整",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "30分服務窗的人工負荷可重現3人，仍須釐清上機10分是否在循環內並驗人機時序。",
+    "subject": "L21",
+    "id": "L21-29",
+    "topicCode": "EXAM-L21-29",
+    "materialCode": "M21202",
+    "noteIds": [
+      "8fafb02314e04cb9",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（公告 A）以 30 分鐘服務窗計人工負荷 <span class=\"math-inline\">$7×10÷(30×0.9)=2.59$</span>，故至少 3 人。</p>\n<p class=\"study-paragraph\">這能重現公告選項，但連續運轉仍須用人機時序驗證，尤其要釐清 30 分鐘是否包含上機操作。</p></section>"
+  },
+  {
+    "question": 30,
+    "concept": "兩班每班人數、淨工時與每週產量 7380 件",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "7380件估算採每班5人；若5人是兩班總編制需另算。",
+    "subject": "L21",
+    "id": "L21-30",
+    "topicCode": "EXAM-L21-30",
+    "materialCode": "M21202",
+    "noteIds": [
+      "8fafb02314e04cb9",
+      "53786c778c18f9be",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（B）採每班 5 人，淨工時每班 <span class=\"math-inline\">$480-70=410$</span> 分鐘，週量為 <span class=\"math-inline\">$410×60×2×5×5×0.9÷150=7380$</span> 件，約 7K。</p>\n<p class=\"study-paragraph\">不能把「5 人總編制」直接當作每班 5 人。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>"
+  },
+  {
+    "question": 31,
+    "concept": "FMEA 的 S、O、D 與檢出度方向",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-31",
+    "topicCode": "EXAM-L21-31",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c0424530e5cd8d40",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（D）中維修人數不屬 RPN 的 S、O、D。</p>\n<p class=\"study-paragraph\">檢出度分數越高通常表示越難在流出前檢出，不是檢測能力越強。</p></section>"
+  },
+  {
+    "question": 32,
+    "concept": "目視化顯示製造狀態而非單純位置或人員 KPI",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-32",
+    "topicCode": "EXAM-L21-32",
+    "materialCode": "M21102",
+    "noteIds": [
+      "b107003456cacf5c",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）顯示計畫、實績與異常，屬製造狀態可視化。</p></section>"
+  },
+  {
+    "question": 33,
+    "concept": "瓶頸 50 秒限制每日理論產出 576 件",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-33",
+    "topicCode": "EXAM-L21-33",
+    "materialCode": "M21202",
+    "noteIds": [
+      "8c89ef016f6a5f9c",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（C）以瓶頸 50 秒計算 <span class=\"math-inline\">$8×3600÷50=576$</span> 件，不能把四站時間相加當出件間隔。</p></section>"
+  },
+  {
+    "question": 34,
+    "concept": "描述統計與主動避免顯性／隱性問題的方向",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-34",
+    "topicCode": "EXAM-L21-34",
+    "materialCode": "M21201",
+    "noteIds": [
+      "a72ce86e439858e5"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（D）要區分描述既有良率以估設備量，與由歷史、預測、設計知識主動避免顯性及隱性問題。</p>\n<p class=\"study-paragraph\">前者有用，只是未充分表達題目所指的主動改善方向。</p></section>"
+  },
+  {
+    "question": 35,
+    "concept": "相同口徑下 OEE 與良品產出關係",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "需求下降時調整排產，不是故意增加設備損失來降低OEE。",
+    "subject": "L21",
+    "id": "L21-35",
+    "topicCode": "EXAM-L21-35",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c445f8c6b5bd35ff",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題（D）否定 OEE 越低良品越多，須在相同時間與理想速度下比較。</p>\n<p class=\"study-paragraph\">需求減少時調整排產，不必故意增加故障或慢速。</p></section>"
+  },
+  {
+    "question": 36,
+    "concept": "精實供應鏈涵蓋供應、採購、製造、物流與顧客",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-36",
+    "topicCode": "EXAM-L21-36",
+    "materialCode": "M21101",
+    "noteIds": [
+      "fbb2b5f9f54d0318",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（D）則把精實延伸至採購、供應、物流、倉庫與顧客，不能只改善廠內機台。</p></section>"
+  },
+  {
+    "question": 37,
+    "concept": "交期、流程時間及閒置等排程目標的取捨",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-37",
+    "topicCode": "EXAM-L21-37",
+    "materialCode": "M21201",
+    "noteIds": [
+      "d14b42529a26a414",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 37 題（公告 D）包含交期、流程時間與閒置時間。</p>\n<p class=\"study-paragraph\">三者可能互相牴觸，排程前要先決定優先級，不能認為同一規則同時使全部指標最佳。</p></section>"
+  },
+  {
+    "question": 38,
+    "concept": "SMRT 題幹與 SMART 目標要素的用語區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "題幹寫SMRT；教材另說明通行SMART縮寫，保留原題字母。",
+    "subject": "L21",
+    "id": "L21-38",
+    "topicCode": "EXAM-L21-38",
+    "materialCode": "M21101",
+    "noteIds": [
+      "8e9dddddf11dbbd8",
+      "426859ce978f22c3"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題公告 A，題幹寫 SMRT。</p>\n<p class=\"study-paragraph\">通行 SMART 目標包含明確、可衡量、可達成、相關及期限，「可塑性」不是此組縮寫要素。</p>\n<p class=\"study-paragraph\">上述字母是該份公告作答參考，技術判斷仍須保留題設邊界。</p></section>"
+  },
+  {
+    "question": 39,
+    "concept": "增加投資是手段而非排程效能指標",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-39",
+    "topicCode": "EXAM-L21-39",
+    "materialCode": "M21201",
+    "noteIds": [
+      "d14b42529a26a414",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（C）中的增加投資是決策手段，並非排程本身的效能指標。</p></section>"
+  },
+  {
+    "question": 40,
+    "concept": "多餘產能與實際過量生產的區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-40",
+    "topicCode": "EXAM-L21-40",
+    "materialCode": "M21101",
+    "noteIds": [
+      "8e9dddddf11dbbd8",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（C）須區分「閒置的多餘產能」與「已實際超量生產」。</p></section>"
+  },
+  {
+    "question": 41,
+    "concept": "TT 連結需求與計畫，CT 不必自然小於 TT",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告A；LEI以TT連結需求與生產，故不能泛化為TT不可作為計畫依據。CT≤TT是設計條件，非所有現況必然成立。",
+    "subject": "L21",
+    "id": "L21-41",
+    "topicCode": "EXAM-L21-41",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c445f8c6b5bd35ff"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 41 題公告 A，但其「節拍不能作為計畫基礎」的讀法有疑義。</p>\n<p class=\"study-paragraph\">依 <a href=\"https://www.lean.org/lexicon-terms/takt-time/\" class=\"study-link\">LEI 的 Takt 定義</a>，TT 正是以需求與可用時間連結生產的依據，<span class=\"math-inline\">$CT\\le TT$</span> 是滿足需求的設計條件，並非任何現況都自然成立。</p></section>"
+  },
+  {
+    "question": 42,
+    "concept": "MES 生產監控與 WMS 跨系統整合的邊界",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告A不代表MES不可與WMS整合。",
+    "subject": "L21",
+    "id": "L21-42",
+    "topicCode": "EXAM-L21-42",
+    "materialCode": "M21102",
+    "noteIds": [
+      "c53a9e0f8c2880ac",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題公告 A。</p>\n<p class=\"study-paragraph\">WMS 仍可與 MES 整合，不能由此推成「MES 不可連 WMS」。</p></section>"
+  },
+  {
+    "question": 43,
+    "concept": "OEM／ODM／OBM 及共同設計 JDM 的責任",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "題目JBM與通常共同設計製造縮寫JDM不同，需辨詞義及責任。",
+    "subject": "L21",
+    "id": "L21-43",
+    "topicCode": "EXAM-L21-43",
+    "materialCode": "M21101",
+    "noteIds": [
+      "22399cc1d910c628",
+      "426859ce978f22c3",
+      "272aaea4ea75dee0"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）把共同設計製造寫成 JBM。</p>\n<p class=\"study-paragraph\">通常對應的詞是 JDM，應辨識縮寫與設計責任，不能把它當作 MTO 的同義詞。</p></section>"
+  },
+  {
+    "question": 44,
+    "concept": "固定自動供料與有感知回饋的智慧供料區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告C；固定自動供料可能只是自動化，有感知回饋的供料也可屬智慧應用。",
+    "subject": "L21",
+    "id": "L21-44",
+    "topicCode": "EXAM-L21-44",
+    "materialCode": "M21102",
+    "noteIds": [
+      "160086ac6e5cef4a"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 44 題公告 C 將自動供料排除於該題的智慧應用。</p>\n<p class=\"study-paragraph\">固定時序供料確可能只是自動化，但依 WIP、料況及異常動態調整的供料也可屬智慧製造。</p>\n<p class=\"study-paragraph\">作答保留公告字母，實務辨識則查輸入、規則、授權及執行結果，不能一律把所有自動供料列為非智慧應用。</p></section>"
+  },
+  {
+    "question": 45,
+    "concept": "需求工時除每班有效週工時並向上取整為 3 人",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-45",
+    "topicCode": "EXAM-L21-45",
+    "materialCode": "M21202",
+    "noteIds": [
+      "8fafb02314e04cb9",
+      "53786c778c18f9be",
+      "c3340a366002402c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（C）用相同班次口徑，所需每班人數 <span class=\"math-inline\">$\\lceil1000×500÷(410×60×2×5×0.9)\\rceil=3$</span>。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>"
+  },
+  {
+    "question": 46,
+    "concept": "末端全檢不能保證品質，需源頭及過程控制",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-46",
+    "topicCode": "EXAM-L21-46",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c0424530e5cd8d40"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）不能靠末端全檢保證所有品質，還須源頭控制與適用量測。</p></section>"
+  },
+  {
+    "question": 47,
+    "concept": "4M 材料、主管點檢目的及管制圖同側連串",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "管制圖同側連串門檻依採用規則而異，界限內不代表可忽略非隨機偏移。",
+    "subject": "L21",
+    "id": "L21-47",
+    "topicCode": "EXAM-L21-47",
+    "materialCode": "M21202",
+    "noteIds": [
+      "c0424530e5cd8d40",
+      "c3340a366002402c",
+      "562fd0a337d0c57a"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（B）的 4M 是人、機、料、法，「管理」不能取代材料。</p>\n<p class=\"study-paragraph\">主管點檢應確認製程受控與必要處置，不以重複簽名為目的。</p>\n<p class=\"study-paragraph\">連續多點落在中心線同側即使未超 UCL 也可能有非隨機偏移。</p>\n<p class=\"study-paragraph\">7、8 點等門檻須依採用的判異規則確認，不可單憑「在界限內」宣稱正常。</p>\n<p class=\"study-paragraph\">可參考 <a href=\"https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc32.htm\" class=\"study-link\">NIST 管制圖判讀</a>。</p></section>"
+  },
+  {
+    "question": 48,
+    "concept": "AGV、電子看板與機器手臂的設備應用",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-48",
+    "topicCode": "EXAM-L21-48",
+    "materialCode": "M21102",
+    "noteIds": [
+      "b107003456cacf5c"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>"
+  },
+  {
+    "question": 49,
+    "concept": "生產量、準時供料與異常停線的現場閉迴路",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-49",
+    "topicCode": "EXAM-L21-49",
+    "materialCode": "M21102",
+    "noteIds": [
+      "b107003456cacf5c",
+      "7a3b4fe3fc0816c7"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>"
+  },
+  {
+    "question": 50,
+    "concept": "檢查碼、狀態合法性及資料完整性的多道校驗",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L21",
+    "id": "L21-50",
+    "topicCode": "EXAM-L21-50",
+    "materialCode": "M21201",
+    "noteIds": [
+      "b36da53da6e68237",
+      "374673f073b7e549"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 50 題公告 B，因為檢查碼不能適用所有情況。</p>\n<p class=\"study-paragraph\">依序核對格式／範圍、料號與設備是否存在、工單及工序狀態是否合法、必要檢驗是否完成，再查事件重複與欄位完整性。</p>\n<p class=\"study-paragraph\">正確檢查碼只能支持編碼完整性，不能證明產品真的完成檢驗、資料來源有權限或數量正確。</p>\n<p class=\"study-paragraph\">必須搭配業務狀態與對帳證據。</p></section>"
+  },
+  {
+    "question": 1,
+    "concept": "偏振取像利用反射差異辨認液體",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "偏振僅在適當光源、材質及背景下支援辨認，不保證所有液體有效。",
+    "subject": "L22",
+    "id": "L22-1",
+    "topicCode": "EXAM-L22-1",
+    "materialCode": "M22201",
+    "noteIds": [
+      "19824cca059b976f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 1 題（公告 A）選偏振相機，是利用反射偏振差異建立液體對比，不是其他波段永遠看不到液體。</p></section>"
+  },
+  {
+    "question": 2,
+    "concept": "FOV、WD、焦距、光圈與景深判讀",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-2",
+    "topicCode": "EXAM-L22-2",
+    "materialCode": "M22201",
+    "noteIds": [
+      "19824cca059b976f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 2 題（C）不能由焦距長便推出景深大。</p>\n<p class=\"study-paragraph\">光圈開大、f 值變小通常增加進光量，卻不等於景深增加。</p></section>"
+  },
+  {
+    "question": 3,
+    "concept": "常見 24 V 控制電壓仍須核對設備規格",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "24V是題設常見控制電壓，實際仍以設備額定與端子規格確認。",
+    "subject": "L22",
+    "id": "L22-3",
+    "topicCode": "EXAM-L22-3",
+    "materialCode": "M22201",
+    "noteIds": [
+      "5c7abec2d7264fda"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題公告 A 對應常見 24 V 控制電壓，許多控制迴路使用 24 V DC，但設備也可能採其他電壓，選型仍看端子及原廠規格。</p></section>"
+  },
+  {
+    "question": 4,
+    "concept": "IoT 平台的政府與企業服務驅動敘事",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "政府與企業是題設平台驅動敘事，不排除個人或消費者IoT應用。",
+    "subject": "L22",
+    "id": "L22-4",
+    "topicCode": "EXAM-L22-4",
+    "materialCode": "M22101",
+    "noteIds": [
+      "14d1adc0bb2de356"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題公告 B，採政府與企業推動服務平台的敘事。</p>\n<p class=\"study-paragraph\">這不是禁止個人或消費者創造 IoT 應用的定義。</p></section>"
+  },
+  {
+    "question": 5,
+    "concept": "INI／JSON／XML 與 BMP 影像格式區別",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-5",
+    "topicCode": "EXAM-L22-5",
+    "materialCode": "M22202",
+    "noteIds": [
+      "2da99d1b0505a704",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 5 題（公告 D）中的 BMP 是影像格式。</p>\n<p class=\"study-paragraph\">INI 可記設定，JSON／XML 可表示結構資料，但格式本身不定義設備間的傳送時序。</p></section>"
+  },
+  {
+    "question": 6,
+    "concept": "點光源與平行、環形、同軸照明區別",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-6",
+    "topicCode": "EXAM-L22-6",
+    "materialCode": "M22201",
+    "noteIds": [
+      "19824cca059b976f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 6 題（B）將點光源與特殊平行照明用途混用，選光時應依反光、陰影與輪廓需求試樣。</p>\n<p class=\"study-paragraph\">鏡頭與光圈關係可對照 <a href=\"https://docs.baslerweb.com/optimizing-image-quality\" class=\"study-link\">Basler 影像品質說明</a>。</p></section>"
+  },
+  {
+    "question": 7,
+    "concept": "工業手臂速度、精度、重複動作及急停條件",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-7",
+    "topicCode": "EXAM-L22-7",
+    "materialCode": "M22201",
+    "noteIds": [
+      "470b96e4ef1b833f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 7 題（B）不能把所有工業手臂說成速度慢。</p>\n<p class=\"study-paragraph\">快慢應與負載、路徑及精度條件比較。</p></section>"
+  },
+  {
+    "question": 8,
+    "concept": "熱動繼電器的過載保護不等於短路保護",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-8",
+    "topicCode": "EXAM-L22-8",
+    "materialCode": "M22201",
+    "noteIds": [
+      "5c7abec2d7264fda"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題（C）以熱絲／熱動原理判斷過載繼電器，其目的為過電流發熱保護，不能把過載保護當作短路保護的替代。</p>\n<p class=\"study-paragraph\">可參照 <a href=\"https://eshop.se.com/in/blog/post/what-is-a-thermal-overload-relay.html\" class=\"study-link\">Schneider 熱過載繼電器說明</a>。</p></section>"
+  },
+  {
+    "question": 9,
+    "concept": "PdM 分析預測與固定 PM 計畫的觸發區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告A；若只按歷史平均訂固定週期，實務仍可能屬PM，PdM須檢查狀態與失效預測。",
+    "subject": "L22",
+    "id": "L22-9",
+    "topicCode": "EXAM-L22-9",
+    "materialCode": "M22102",
+    "noteIds": [
+      "add1f2f55c35749f",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 9 題（公告 A）把歷史故障、保養資料及迴歸分析歸為預測保養。</p>\n<p class=\"study-paragraph\">B 是故障後修、C 是事先固定計畫、D 是免保養。</p>\n<p class=\"study-paragraph\">實務分類還須問分析結果是否隨設備狀態預測失效時點：若只用歷史平均壽命設定固定年保養，仍可能是經統計設計的 PM，不能一概稱為 PdM。</p></section>"
+  },
+  {
+    "question": 10,
+    "concept": "感測器、網路、資料庫構成資料採集鏈",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-10",
+    "topicCode": "EXAM-L22-10",
+    "materialCode": "M22102",
+    "noteIds": [
+      "188f8dbd2bf72589",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 10 題（D）的治具不是題目所列資料採集鏈基本元件，感測器、網路與資料庫分別取得、傳輸、保存資料。</p>\n<p class=\"study-paragraph\">裝有感測器的智慧治具仍可提供資料。</p></section>"
+  },
+  {
+    "question": 11,
+    "concept": "GT 按零件族與機器群歸併組織生產",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-11",
+    "topicCode": "EXAM-L22-11",
+    "materialCode": "M21101",
+    "noteIds": [
+      "22399cc1d910c628",
+      "426859ce978f22c3"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 11 題（A）以零件族與機器群歸併判為 GT。</p></section>"
+  },
+  {
+    "question": 12,
+    "concept": "CAD 基礎任務為建立幾何模型",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-12",
+    "topicCode": "EXAM-L22-12",
+    "materialCode": "M21101",
+    "noteIds": [
+      "22399cc1d910c628",
+      "426859ce978f22c3"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 12 題（A）以建立幾何模型判為 CAD。</p>\n<p class=\"study-paragraph\">產生加工刀路屬 CAM 範疇。</p></section>"
+  },
+  {
+    "question": 13,
+    "concept": "工廠典型視覺應用與車流辨識領域分類",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "車流辨識仍屬視覺應用，題目採工廠典型場域分類。",
+    "subject": "L22",
+    "id": "L22-13",
+    "topicCode": "EXAM-L22-13",
+    "materialCode": "M22201",
+    "noteIds": [
+      "65748451fd310c0e"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 13 題公告 B，以「工廠內典型應用」排除車流辨識。</p>\n<p class=\"study-paragraph\">車流仍是電腦視覺應用，不能理解成相機無法辨車。</p></section>"
+  },
+  {
+    "question": 14,
+    "concept": "安裝姿態誤差與本體線性度、解析度、重複性",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-14",
+    "topicCode": "EXAM-L22-14",
+    "materialCode": "M22201",
+    "noteIds": [
+      "5c7abec2d7264fda",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題（A）區分安裝俯仰姿態與元件線性度、解析度、重複性。</p>\n<p class=\"study-paragraph\">安裝誤差雖非該題本體分類，仍會影響系統量測。</p></section>"
+  },
+  {
+    "question": 15,
+    "concept": "IoT、邊緣與大數據分析互補",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-15",
+    "topicCode": "EXAM-L22-15",
+    "materialCode": "M22101",
+    "noteIds": [
+      "fd0ebfd1ddcdd111",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 15 題（D）包含 IoT、邊緣運算與分析。</p></section>"
+  },
+  {
+    "question": 16,
+    "concept": "設備連網增加資安風險且不免除現場維護",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-16",
+    "topicCode": "EXAM-L22-16",
+    "materialCode": "M22101",
+    "noteIds": [
+      "14d1adc0bb2de356",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 16 題（A）指出傳輸遭攻擊及機密外洩風險，B、C、D 則過度推論成免監控、不會分析或免維修。</p>\n<p class=\"study-paragraph\">連線後應確認設備身分、最小權限、傳輸保護與更新責任。</p>\n<p class=\"study-paragraph\">即時監控取得的是資訊，不會自動代替現場維護或批准遠端控制。</p></section>"
+  },
+  {
+    "question": 17,
+    "concept": "實際產出除利用率反推 1500 件滿負荷能力",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-17",
+    "topicCode": "EXAM-L22-17",
+    "materialCode": "M22301",
+    "noteIds": [
+      "09f85b798ace92ba",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 17 題（公告 C）以 <span class=\"math-inline\">$1200÷0.8=1500$</span> 件反推滿負荷能力。</p>\n<p class=\"study-paragraph\">不能再乘 80% 得到較小值。</p></section>"
+  },
+  {
+    "question": 18,
+    "concept": "輸送間距除線速為出件週期，線長給通過時間",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-18",
+    "topicCode": "EXAM-L22-18",
+    "materialCode": "M22301",
+    "noteIds": [
+      "6c490472828fde67",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 18 題（C）的連續輸送假設下，出件週期 <span class=\"math-inline\">$1\\text{ m}÷1\\text{ m/min}=1$</span> min/件。</p>\n<p class=\"study-paragraph\">4 m 線長給的是單件通過時間 4 min。</p></section>"
+  },
+  {
+    "question": 19,
+    "concept": "8 站人分、效率、平衡及完全修復重工量",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "假設效率與平衡損失分開，1975.31人分加10重工人分=1985.31，近似選1990；效率已含其他損失時不可再重複除。",
+    "subject": "L22",
+    "id": "L22-19",
+    "topicCode": "EXAM-L22-19",
+    "materialCode": "M22301",
+    "noteIds": [
+      "4b76455e7e173fef",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 19 題（B）有 8 站各 1 人，理想 1 min/件。</p>\n<p class=\"study-paragraph\">依題意把效率與平衡率視為不同損失，基本派工為 <span class=\"math-inline\">$200×1×8÷(0.9×0.9)=1975.31$</span> 人分。</p>\n<p class=\"study-paragraph\">不良可完全修復，重工另加 <span class=\"math-inline\">$200×0.01×5=10$</span> 人分，合計 1985.31，選最接近的 1990。</p>\n<p class=\"study-paragraph\">不能省略 8 人、不能再除 99% 把同一品質損失重複膨脹。</p>\n<p class=\"study-paragraph\">若現場的「長期效率」已含線平衡或重工，此分解就需重定義。</p>\n<p class=\"study-paragraph\">題目只要求總派工估算，尚不能證明瓶頸與重工人員日曆一定足夠。</p></section>"
+  },
+  {
+    "question": 20,
+    "concept": "IoT 感知、網路、應用三層模型",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-20",
+    "topicCode": "EXAM-L22-20",
+    "materialCode": "M22101",
+    "noteIds": [
+      "8770ff84a92a36cf",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>"
+  },
+  {
+    "question": 21,
+    "concept": "CPS 整合運算通訊控制，不限健康照護",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-21",
+    "topicCode": "EXAM-L22-21",
+    "materialCode": "M22101",
+    "noteIds": [
+      "8770ff84a92a36cf",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>"
+  },
+  {
+    "question": 22,
+    "concept": "設備管理不佳連帶影響品質、交期、安全與成本",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-22",
+    "topicCode": "EXAM-L22-22",
+    "materialCode": "M22102",
+    "noteIds": [
+      "be7f7c0e7a2e934e",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 22 題（B）不能假設管理不佳而成本不變。</p>\n<p class=\"study-paragraph\">劣化可能連帶造成品質、交期與安全問題。</p></section>"
+  },
+  {
+    "question": 23,
+    "concept": "MQTT QoS 0／1／2 與業務去重邊界",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-23",
+    "topicCode": "EXAM-L22-23",
+    "materialCode": "M22202",
+    "noteIds": [
+      "2da99d1b0505a704",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 23 題（D）的 MQTT 正式等級只有 QoS 0／1／2：「多傳幾次」不是第四級。</p>\n<p class=\"study-paragraph\">QoS 1 可能重複，QoS 2 的交付語意也不會自動涵蓋資料庫交易。</p>\n<p class=\"study-paragraph\">完工數仍需事件 ID 與業務去重。</p></section>"
+  },
+  {
+    "question": 24,
+    "concept": "預防性維護支持連續生產與維修效率",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-24",
+    "topicCode": "EXAM-L22-24",
+    "materialCode": "M22102",
+    "noteIds": [
+      "be7f7c0e7a2e934e",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（A）以預防活動支持生產連續性，並非降低維修效率。</p></section>"
+  },
+  {
+    "question": 25,
+    "concept": "清理、整合、轉換及概念一般化區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-25",
+    "topicCode": "EXAM-L22-25",
+    "materialCode": "M22102",
+    "noteIds": [
+      "188f8dbd2bf72589",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題（A）的整合重點是跨來源建立一致語意與關聯，並非把來源再分散到多個儲存庫。</p>\n<p class=\"study-paragraph\">清理確認品質、轉換支援分析，一般化如「機台→產線→工廠」提升概念層級。</p></section>"
+  },
+  {
+    "question": 26,
+    "concept": "資料探勘效益與電子商務業務模式區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-26",
+    "topicCode": "EXAM-L22-26",
+    "materialCode": "M22102",
+    "noteIds": [
+      "188f8dbd2bf72589",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 26 題（C）的電子商務全球化屬業務模式，不能直接當作探勘分析步驟。</p></section>"
+  },
+  {
+    "question": 27,
+    "concept": "一般機器視覺分類與紅外熱像測溫邊界",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告D為一般工業視覺分類，紅外熱像可測溫。",
+    "subject": "L22",
+    "id": "L22-27",
+    "topicCode": "EXAM-L22-27",
+    "materialCode": "M22201",
+    "noteIds": [
+      "65748451fd310c0e",
+      "fe61bb30de9aac87",
+      "0e29db8e337897e1"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題公告 D 將溫度量測與一般可見光視覺分類區別。</p>\n<p class=\"study-paragraph\">紅外熱像具測溫應用，須核對波段、校正及發射率。</p></section>"
+  },
+  {
+    "question": 28,
+    "concept": "ToF、立體三角測量及結構光的深度原理",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-28",
+    "topicCode": "EXAM-L22-28",
+    "materialCode": "M22201",
+    "noteIds": [
+      "65748451fd310c0e",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題（D）的 ToF 依飛行時間、立體視覺依視差、結構光依投射圖案重建深度，三者不能只用「3D」互相代換。</p></section>"
+  },
+  {
+    "question": 29,
+    "concept": "少量多樣下程式治具與換線成本限制",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-29",
+    "topicCode": "EXAM-L22-29",
+    "materialCode": "M22201",
+    "noteIds": [
+      "470b96e4ef1b833f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（C）少量多樣可能使程式、治具及換線成本超過效益。</p></section>"
+  },
+  {
+    "question": 30,
+    "concept": "噴塗大範圍與姿態需求對應關節型手臂",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-30",
+    "topicCode": "EXAM-L22-30",
+    "materialCode": "M22201",
+    "noteIds": [
+      "470b96e4ef1b833f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（A）以人形／關節型手臂的姿態與範圍對應噴塗，但還需核對專用規格。</p></section>"
+  },
+  {
+    "question": 31,
+    "concept": "分散控制分配現場控制與整合責任",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-31",
+    "topicCode": "EXAM-L22-31",
+    "materialCode": "M22202",
+    "noteIds": [
+      "97551200c90b70e5",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（C）採分散式控制以分配控制與整合責任，雲端集中監控不能直接取代現場所需的響應期限及失效行為。</p></section>"
+  },
+  {
+    "question": 32,
+    "concept": "結構式環境、固定程式及位置精度依賴",
+    "officialAnswer": "D",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-32",
+    "topicCode": "EXAM-L22-32",
+    "materialCode": "M22201",
+    "noteIds": [
+      "470b96e4ef1b833f",
+      "fe61bb30de9aac87"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）將固定工件位置、結構式環境、程式化流程相連。</p>\n<p class=\"study-paragraph\">固定教點不具備自動容忍任意位置偏移的能力，需額外定位、視覺或力控回饋。</p></section>"
+  },
+  {
+    "question": 33,
+    "concept": "智慧控制適應性受模型、資料及限制影響",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-33",
+    "topicCode": "EXAM-L22-33",
+    "materialCode": "M22202",
+    "noteIds": [
+      "97551200c90b70e5",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（B）否定「對所有複雜環境均無適應性」。</p>\n<p class=\"study-paragraph\">能否適應仍受模型、資料與控制範圍限制。</p></section>"
+  },
+  {
+    "question": 34,
+    "concept": "基因演算法可搜尋非線性解但不保證全域最佳",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "能搜尋大型非線性問題不代表有限時間保證全域最佳。",
+    "subject": "L22",
+    "id": "L22-34",
+    "topicCode": "EXAM-L22-34",
+    "materialCode": "M22202",
+    "noteIds": [
+      "97551200c90b70e5",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（C）否定基因演算法不能處理大型非線性問題。</p>\n<p class=\"study-paragraph\">它用族群、適應度、選擇、交配及突變搜尋候選解，可求近似優良方案，卻不保證有限時間每次得到全域最佳。</p>\n<p class=\"study-paragraph\">不要把「為尋找最佳解而設計」讀成「已保證找到最佳解」。</p></section>"
+  },
+  {
+    "question": 35,
+    "concept": "IaaS 客戶仍管理作業系統及部署應用",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-35",
+    "topicCode": "EXAM-L22-35",
+    "materialCode": "M22202",
+    "noteIds": [
+      "b434a42915ea2c0e",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 35 題（A）是 IaaS：供應者管底層基礎設施，客戶仍管作業系統與部署應用。</p>\n<p class=\"study-paragraph\">PaaS 再由供應者接管執行平台，SaaS 提供已完成的軟體服務。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/publications/nist-definition-cloud-computing\" class=\"study-link\">NIST 雲端服務模型</a>。</p></section>"
+  },
+  {
+    "question": 36,
+    "concept": "網路監控、診斷、衰退預測與維護處置",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-36",
+    "topicCode": "EXAM-L22-36",
+    "materialCode": "M22102",
+    "noteIds": [
+      "add1f2f55c35749f",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（B）否定「不能透過網路監控」。</p>\n<p class=\"study-paragraph\">智慧維護是從狀態、診斷走向衰退預測與處置，不等於保證不故障。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/el/applied-economics-office/manufacturing/topics-manufacturing/manufacturing-machinery-maintenance\" class=\"study-link\">NIST 維護分類</a>。</p></section>"
+  },
+  {
+    "question": 37,
+    "concept": "公告封閉式 MES 說法與現代整合架構邊界",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告A；MES職能無法推出所有產品必須封閉，實際看API、資料模型與整合設計。",
+    "subject": "L22",
+    "id": "L22-37",
+    "topicCode": "EXAM-L22-37",
+    "materialCode": "M22202",
+    "noteIds": [
+      "b434a42915ea2c0e",
+      "a871d706309fe38f",
+      "6db10c4f12f211a4"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 37 題公告 A 將 MES 描述為封閉架構，但 MES 的職能定義不能推出「所有產品必須封閉」。</p>\n<p class=\"study-paragraph\">現代系統是否開放，要看 API、資料模型、介面與供應商契約。</p>\n<p class=\"study-paragraph\">其餘選項提到特定 GUI 或一概採主從式，也不能當作跨世代必要條件。</p></section>"
+  },
+  {
+    "question": 38,
+    "concept": "分層邊緣與串流處理分攤高資料負載",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-38",
+    "topicCode": "EXAM-L22-38",
+    "materialCode": "M22101",
+    "noteIds": [
+      "fd0ebfd1ddcdd111",
+      "aed1fd449aaeb162",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題（A）以分層邊緣及串流處理分攤高負載，增加容量只解決儲存問題，區塊鏈也不能直接消除運算瓶頸。</p></section>"
+  },
+  {
+    "question": 39,
+    "concept": "單一產品、固定途程適合流線型工廠",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-39",
+    "topicCode": "EXAM-L22-39",
+    "materialCode": "M21101",
+    "noteIds": [
+      "22399cc1d910c628",
+      "426859ce978f22c3",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（A）的固定途程、單一產品適合流線型，不能只看到「接單」便選零工型。</p></section>"
+  },
+  {
+    "question": 40,
+    "concept": "效率以有效產能為分母，利用率以設計產能為分母",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-40",
+    "topicCode": "EXAM-L22-40",
+    "materialCode": "M22301",
+    "noteIds": [
+      "09f85b798ace92ba",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（A）效率是 <span class=\"math-inline\">$3600÷4000=90\\%$</span>，利用率是 <span class=\"math-inline\">$3600÷6000=60\\%$</span>。</p>\n<p class=\"study-paragraph\"><span class=\"math-inline\">$4000÷6000≈67\\%$</span> 只是有效對設計產能比，不能冒充實際利用率。</p>\n<p class=\"study-paragraph\">數字即使都能算出百分比，仍須標記分子分母。</p></section>"
+  },
+  {
+    "question": 41,
+    "concept": "TT 9.6 分鐘與理論最少站數 8 站",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-41",
+    "topicCode": "EXAM-L22-41",
+    "materialCode": "M22301",
+    "noteIds": [
+      "8c89ef016f6a5f9c",
+      "c3340a366002402c",
+      "6c490472828fde67",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 41 題（B）為 <span class=\"math-inline\">$TT=480÷50=9.6$</span> 分鐘、理論最少站數 <span class=\"math-inline\">$\\lceil72÷9.6\\rceil=8$</span>。</p>\n<p class=\"study-paragraph\">向上取整只給下限，仍要驗先行關係。</p>\n<p class=\"study-paragraph\">第 41 題（B）另以 <span class=\"math-inline\">$TT=9.6$</span> 分鐘與總作業 72 分鐘求至少 8 站，不能把「每站指定一步驟」誤當作必須 10 站，也不能保證下限就能合法排完。</p></section>"
+  },
+  {
+    "question": 42,
+    "concept": "串聯線穩態週期由最慢工作站限制",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-42",
+    "topicCode": "EXAM-L22-42",
+    "materialCode": "M22301",
+    "noteIds": [
+      "6c490472828fde67",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題（B）串聯線由最慢站限制穩態出件，並非各站平均。</p></section>"
+  },
+  {
+    "question": 43,
+    "concept": "點檢計畫的標準、工具、職責及五感界線",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-43",
+    "topicCode": "EXAM-L22-43",
+    "materialCode": "M22102",
+    "noteIds": [
+      "0fd895b32422fc0f",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）判點檢方法時，須核對部位、判定標準、工具、週期及責任。</p>\n<p class=\"study-paragraph\">眼耳等觀察可以補充，軸承振動、絕緣及精度仍須適當儀器。</p>\n<p class=\"study-paragraph\">「味」尤其不應被理解為用口嘗試工業介質。</p>\n<p class=\"study-paragraph\">操作員日常點檢、維修人員專業點檢及故障後復歸驗證，也不能以一張簽名表互相取代。</p></section>"
+  },
+  {
+    "question": 44,
+    "concept": "工業相機包含感測器，保留公告分類疑義",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "公告A；相機包含影像感測元件，不能泛化為工業相機不是感測設備。",
+    "subject": "L22",
+    "id": "L22-44",
+    "topicCode": "EXAM-L22-44",
+    "materialCode": "M22201",
+    "noteIds": [
+      "65748451fd310c0e",
+      "fe61bb30de9aac87",
+      "0e29db8e337897e1"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 44 題公告 A 排除工業相機，但相機包含影像感測器，本章圖中仍列為感知設備，保留分類用語疑義。</p></section>"
+  },
+  {
+    "question": 45,
+    "concept": "同網段不等於同 IP，RS-232 與 TCP/IP 分層",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "同網段位址須不同；不同子網亦可依路由及受控規則通訊。",
+    "subject": "L22",
+    "id": "L22-45",
+    "topicCode": "EXAM-L22-45",
+    "materialCode": "M22202",
+    "noteIds": [
+      "2da99d1b0505a704",
+      "a871d706309fe38f"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（A）同網段不等於同 IP。</p>\n<p class=\"study-paragraph\">兩端用相同 IP 會位址衝突，RS-232 則是通訊介面，並非一組 IP 設定。</p></section>"
+  },
+  {
+    "question": 46,
+    "concept": "AI／ML 與 UID 連網物件的 IoT 描述區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "監督、非監督並非ML僅有類型；C實為IoT描述。",
+    "subject": "L22",
+    "id": "L22-46",
+    "topicCode": "EXAM-L22-46",
+    "materialCode": "M22101",
+    "noteIds": [
+      "fd0ebfd1ddcdd111",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）的物件 UID 與網路傳輸描述是 IoT，並非 AI 定義。</p>\n<p class=\"study-paragraph\">監督與非監督是 ML 類型，但不能把它們當成唯一兩類而排除強化學習。</p></section>"
+  },
+  {
+    "question": 47,
+    "concept": "ERP 企業資源整合與 CPS 5C 回饋架構區別",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-47",
+    "topicCode": "EXAM-L22-47",
+    "materialCode": "M22101",
+    "noteIds": [
+      "fd0ebfd1ddcdd111",
+      "aed1fd449aaeb162"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（C）描述的是企業資源整合軟體 ERP，與 CPS 實體回饋不同。</p>\n<p class=\"study-paragraph\">5C 可依連線、轉換、網宇、認知、配置逐層查證，不能只背五個 C。</p></section>"
+  },
+  {
+    "question": 48,
+    "concept": "TPS 可動率與需求下稼動率的區別",
+    "officialAnswer": "A",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-48",
+    "topicCode": "EXAM-L22-48",
+    "materialCode": "M22301",
+    "noteIds": [
+      "34545225595d5cff",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 48 題（A）重視 TPS 的可動率，即需要設備時是否能正常運轉。</p>\n<p class=\"study-paragraph\">接單不足造成稼動率低，不等同設備不可靠。</p>\n<p class=\"study-paragraph\">應維持需要時可用、按實際需求排產，再分解停機、慢速及品質損失，不能為增加利用率而先做無需求的庫存。</p></section>"
+  },
+  {
+    "question": 49,
+    "concept": "由 8 小時與 480 件需求求 TT 60 秒",
+    "officialAnswer": "C",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "subject": "L22",
+    "id": "L22-49",
+    "topicCode": "EXAM-L22-49",
+    "materialCode": "M22301",
+    "noteIds": [
+      "6c490472828fde67",
+      "02f3fa3c812dbd78"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 49 題（C）以需求求 <span class=\"math-inline\">$8×3600÷480=60$</span> 秒/件，是 TT，不是已量得的機台 CT。</p></section>"
+  },
+  {
+    "question": 50,
+    "concept": "反應性維護故障後恢復功能與成本比較邊界",
+    "officialAnswer": "B",
+    "evidenceHeading": "試題判讀與選項辨析",
+    "note": "原題成本3至4倍不能跨設備直接套用，應實算停機、修復、備品與監測成本。",
+    "subject": "L22",
+    "id": "L22-50",
+    "topicCode": "EXAM-L22-50",
+    "materialCode": "M22102",
+    "noteIds": [
+      "be7f7c0e7a2e934e",
+      "1439b0a356221599"
+    ],
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 50 題（B）中，反應性維護的直接目標是故障後恢復功能，庫存管理不能代替此定義。</p>\n<p class=\"study-paragraph\">需備品也不等於該策略會自動優化庫存。</p>\n<p class=\"study-paragraph\">題目其他選項提到的「3 至 4 倍」只能保留為原題說法，跨設備比較應實算修復、停機、備品與監測成本。</p></section>"
+  }
+]

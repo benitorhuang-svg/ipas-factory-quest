@@ -1,4 +1,20 @@
 (function () { 'use strict';
+function getOptionOrder(seedString) {
+  let hash = 0;
+  for (let i = 0; i < seedString.length; i++) hash = (hash * 31 + seedString.charCodeAt(i)) >>> 0;
+  const random = () => {
+    hash = (hash + 0x6D2B79F5) >>> 0;
+    let t = Math.imul(hash ^ (hash >>> 15), 1 | hash);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const order = [0, 1, 2, 3];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+}
 function create(ctx) {
 const { E, state, bank, lastReport, qmap, byUnit, fmt, icon, esc, footer, modeName, runQuestions, home } = ctx;
 function quizView() {
@@ -15,7 +31,7 @@ function quizView() {
     return `
       <div class="quiz-top">
         <div>
-          <h1>${unit ? unit.room : modeName(run)}</h1>
+          <h1>${run.mode === 'exam' ? (run.difficulty === 'hardcore' ? '魔鬼高難衝刺模擬考' : '全真標準模擬考') : (unit ? unit.room : modeName(run))}</h1>
           <p>${run.unitId ? run.unitId + ' · ' : ''}${modeName(run)} · 答完統一交卷與解析</p>
         </div>
         <div class="button-row">
@@ -24,7 +40,8 @@ function quizView() {
           <button class="btn btn-small" aria-label="暫存離開" data-action="nav" data-view="home">${icon('save')}<span>暫存離開</span></button>
         </div>
       </div>
-      ${run.mode === 'exam' ? '<div class="exam-warning">模擬採50題單選、75分鐘。時間到自動交卷，未答題以答錯計；離開頁面後仍持續計時。</div>' : ''}
+      ${run.questionRevision === E.legacyRevision ? '<p class="section-description">此份作答保留原題目與選項；新任務採用新版題庫。</p>' : ''}
+      ${run.mode === 'exam' ? `<div class="exam-warning">${run.difficulty === 'hardcore' ? '【魔鬼挑戰】鎖定高難度考點與陷阱，強化連續計算與實務情境判讀。共 50 題單選、75 分鐘。時間到自動交卷。' : '【全真標準】依單元與題型權重組卷，模擬正式考試節奏。共 50 題單選、75 分鐘。時間到自動交卷。'}</div>` : ''}
       <div class="quiz-status">
         <div class="quiz-status-line">
           <span>已完成 <strong id="answered-count" class="number">0</strong>／${qs.length} 題</span>
@@ -35,7 +52,9 @@ function quizView() {
         </div></details>
       </div>
       <form id="quiz-form" novalidate>
-        ${qs.map((q, i) => `
+        ${qs.map((q, i) => {
+          const order = q.kind === 'choice' ? (run?.id && run.questionRevision !== E.legacyRevision ? getOptionOrder(run.id + ':' + q.id) : [0, 1, 2, 3]) : null;
+          return `
           <article id="question-${q.id}" class="question-card">
             <div class="question-meta">
               <span class="question-no number">${String(i + 1).padStart(2, '0')}</span>
@@ -45,11 +64,11 @@ function quizView() {
             <h2 id="question-title-${q.id}" tabindex="-1">${esc(q.stem)}</h2>
             ${q.kind === 'choice' ? `
               <div class="options" role="radiogroup" aria-labelledby="question-title-${q.id}">
-                ${q.options.map((o, j) => `
+                ${order.map((origIdx, slotIdx) => `
                   <label class="option">
-                    <input type="radio" name="${q.id}" data-answer="${q.id}" value="${j}" ${answers[q.id] === j ? 'checked' : ''}>
-                    <span class="option-letter">${'ABCD'[j]}</span>
-                    <span>${esc(o)}</span>
+                    <input type="radio" name="${q.id}" data-answer="${q.id}" value="${origIdx}" ${answers[q.id] === origIdx ? 'checked' : ''}>
+                    <span class="option-letter">${'ABCD'[slotIdx]}</span>
+                    <span>${esc(q.options[origIdx])}</span>
                   </label>
                 `).join('')}
               </div>
@@ -68,7 +87,8 @@ function quizView() {
               </details>
             ` : ''}
           </article>
-        `).join('')}
+        `;
+        }).join('')}
         <div class="quiz-submit">
           <div>
             <strong>完成後，一次看懂解題關鍵。</strong>
@@ -81,10 +101,14 @@ function quizView() {
     `;
   }
 
-function formatAnswer(q, a) {
+function formatAnswer(q, a, runId) {
     if (!E.hasAnswer(q, a)) return '未作答';
-    return q.kind === 'number' ? fmt(E.parseNumber(a)) + ' ' + q.answerUnit : 'ABCD'[a] + '. ' + q.options[a];
+    if (q.kind === 'number') return fmt(E.parseNumber(a)) + ' ' + q.answerUnit;
+    const order = runId ? getOptionOrder(runId + ':' + q.id) : null;
+    const letter = order ? 'ABCD'[order.indexOf(a)] : 'ABCD'[a];
+    return (letter || '') + '. ' + q.options[a];
   }
+
 
 function resultView(id) {
     const r = state.history.find(x => x.runId === id) || lastReport || state.history.at(-1);
@@ -115,20 +139,23 @@ function resultView(id) {
         <h2>逐題解析</h2><label><input type="checkbox" id="result-only-wrong">只看錯題</label><span id="result-count" role="status">顯示 ${r.results.length} 題解析</span>
       </div>
       ${r.results.map((item, i) => {
-        const q = qmap.get(item.id);
+        const q = E.questionFor(qmap.get(item.id), r), displayRunId = r.questionRevision === E.legacyRevision ? null : r.runId;
         if (!q) return '';
         return `
           <article class="feedback-card ${item.correct ? 'right' : 'wrong'}">
             <div class="feedback-meta">
               ${icon(item.correct ? 'circlecheck' : 'cross')}
               <span>第${i + 1}題 · ${q.unit} · ${item.correct ? '答對' : '待加強'}</span>
+              ${r.questionRevision === E.legacyRevision ? '<span class="tag tag-green">原版試卷</span>' : ''}
+              ${q.difficulty ? `<span class="tag-diff tag-${q.difficulty}">${q.difficulty === 'hard' ? '🔥 困難' : q.difficulty === 'medium' ? '⚡ 進階' : '🌱 基礎'}</span>` : ''}
+              ${q.skill ? `<span class="tag-skill tag-${q.skill}">${q.skill === 'calculation' ? '📐 計算' : q.skill === 'scenario' ? '🏭 情境' : '💡 觀念'}</span>` : ''}
             </div>
             <h3>${esc(q.stem)}</h3>
             <div class="answer-lines">
-              <div><span>你的答案</span>${esc(formatAnswer(q, item.answer))}</div>
-              <div><span>正確答案</span>${esc(formatAnswer(q, q.answer))}</div>
+              <div><span>你的答案</span>${esc(formatAnswer(q, item.answer, displayRunId))}</div>
+              <div><span>正確答案</span>${esc(formatAnswer(q, q.answer, displayRunId))}</div>
             </div>
-            <p class="explanation">${esc(q.explanation)}</p>
+            ${window.FactoryExplanations.render(ctx, q, { answer: item.answer, order: displayRunId ? getOptionOrder(displayRunId + ':' + q.id) : null })}
             <div class="button-row" style="margin-top:10px">
               <button class="text-link feedback-poster" data-action="poster" data-unit="${q.unit}">${icon('book')}查看${q.unit}複習圖</button>
             </div>

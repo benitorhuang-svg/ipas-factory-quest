@@ -3,7 +3,10 @@
 現行發布入口為根目錄 package.json；請使用 npm run build。
 
 - build-materials.cjs：從 material-index.json 與教材 TS 來源建立教材資料；JSON 整合檔、按章檔與本機 fallback 均為輸出。
-- build-math.mjs：用站內 KaTeX 預先產生 610 個 HTML／MathML 公式，保留原始公式；一般閱讀只載入樣式與字型。
+- question-explanations.cjs：合併 content/question-explanations.json 與 question-explanations/L*.json，覆蓋全部 416 道不同題（含 396 道模擬選擇題）。缺任何題、選項理由不完整或題目指紋改變皆停止建置。新增或修改解析後跑 npm run test:explanations；資料格式與修正記錄見 docs/QUESTION_EXPLANATIONS.md。
+- prepare-exam-content.cjs / exam-analysis.cjs：依保存教材與試題對照索引建立逐題解析，共用完整原段落並保留公式。公告答案沿用來源；自動切分不等於人工答案審查。
+- build-math.mjs：用站內 KaTeX 預先產生教材、逐題說明與共用補充的 HTML／MathML 公式，保留原始公式；一般閱讀只載入樣式與字型。
+- build-question-local.mjs：將同章試題與共用補充附加至本機 HTML 的備援資料。HTTP 版共用按章 JSON，不另產生逐題檔案。
 - build-diagrams.mjs：用 Chromium 與站內 Mermaid 產生教材 SVG；依來源與編譯器指紋重用已核對的產物，保留 Mermaid 文字來源。第一次建置需先執行 npx playwright install chromium。
 - build-media.mjs：建立 WebP 預覽與索引，保留全部原圖。
 - build-offline.mjs：建立逐章離線資產、大小與 SHA-256 清單。

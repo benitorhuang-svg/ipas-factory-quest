@@ -19,6 +19,7 @@ for (const invalid of [null, [], 'text', { version: 2 }]) assert.equal(E.restore
 for (const results of [[null], [false], ['x'], [{}]]) assert.doesNotThrow(() => E.restore({ ...raw, history: [{ runId: 'x', mode: 'exam', results }] }, bank));
 const dom = new JSDOM('', { runScripts: 'outside-only' });
 dom.window.eval(fs.readFileSync('dist/ui.js', 'utf8'));
+dom.window.eval(fs.readFileSync('dist/explanations.js', 'utf8'));
 dom.window.eval(fs.readFileSync('dist/view-quiz.js', 'utf8'));
 const context = { E, state, lastReport: null, qmap: new Map(bank.map(q => [q.id, q])), byUnit: () => null, ...dom.window.FactoryUI, home: () => '' };
 dom.window.document.body.innerHTML = dom.window.FactoryQuiz.result(context, 'safe');

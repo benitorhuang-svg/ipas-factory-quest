@@ -8,6 +8,10 @@
   const DAY = 86400000;
   const catalogs = new WeakMap();
   const MODES = ['mission', 'quick', 'review', 'exam'];
+  const questionRevision = 'questions-2026-11-05', legacyRevision = 'legacy-v1';
+  const revisionOf = (run, state) => run?.questionRevision === legacyRevision ||
+    !run?.questionRevision && state?.questionRevision !== questionRevision ? legacyRevision : questionRevision;
+  const questionFor = (question, run) => run?.questionRevision === legacyRevision ? question?.legacy || question : question;
   const record = value => value && typeof value === 'object' && !Array.isArray(value);
   const finite = (value, max = Number.MAX_SAFE_INTEGER) => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= max ? value : 0;
   function fingerprint(q) {
@@ -78,7 +82,7 @@
     const get = type => parts.find(p=>p.type===type).value;
     return `${get('year')}-${get('month')}-${get('day')}`;
   }
-  function emptyState() { return {version:1,xp:0,earnedCorrectIds:[],passedUnits:[],best:{},ledger:{},history:[],active:null,studyDates:[]}; }
+  function emptyState() { return {version:1,questionRevision,xp:0,earnedCorrectIds:[],passedUnits:[],best:{},ledger:{},history:[],active:null,studyDates:[]}; }
   function parseNumber(value) {
     if (value === null || value === undefined || String(value).trim() === '') return null;
     const normalized = String(value).trim().replace(/[０-９]/g,c=>String(c.charCodeAt(0)-65296)).replace(/，|,/g,'').replace(/％/g,'%').replace(/%$/,'').trim();
@@ -93,6 +97,23 @@
     for(let i=a.length-1;i>0;i--) {const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
     return a;
   }
+  const EXCLUSIONS = [['L114-10', 'L114-11']];
+  function filterExclusions(items, chosen) {
+    const blocked = new Set();
+    for (const q of chosen) for (const pair of EXCLUSIONS) if (pair.includes(q.id)) pair.forEach(x => { if (x !== q.id) blocked.add(x); });
+    return items.filter(q => !blocked.has(q.id));
+  }
+  function pickSafe(candidates, count, random, chosen) {
+    if (count <= 0) return [];
+    const out = [];
+    for (const q of shuffle(candidates, random)) {
+      if (filterExclusions([q], [...chosen, ...out]).length) {
+        out.push(q);
+        if (out.length === count) break;
+      }
+    }
+    return out;
+  }
   function select(bank, spec, random = Math.random) {
     const source = bank;
     const { unique, aliases } = catalog(bank);
@@ -100,13 +121,33 @@
     if (spec.mode === 'exam') {
       const units = UNITS.filter(u => spec.subject === 1 ? u.startsWith('L11') : u.startsWith('L12'));
       const counts = [9, 9, 8, 8, 8, 8];
-      const selected = units.flatMap((unit,i) => {
-        const count = counts[i] || 8;
-        const pool = bank.filter(q=>q.unit===unit && q.kind==='choice');
-        if(pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
-        return shuffle(pool,random).slice(0,count);
-      });
-      return shuffle(selected,random);
+      const isHardcore = spec.difficulty === 'hardcore' || spec.difficulty === 'hard';
+      const pickedAll = [];
+      for (let i = 0; i < units.length; i++) {
+        const unit = units[i], count = counts[i] || 8;
+        const pool = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        if (pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
+        if (isHardcore) {
+          const picked = [];
+          const tiers = [q => q.skill === 'calculation', q => q.difficulty === 'hard', q => q.skill === 'scenario', () => true];
+          for (const accepts of tiers) {
+            const candidates = pool.filter(q => accepts(q) && !picked.includes(q));
+            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked]));
+          }
+          pickedAll.push(...picked);
+        } else {
+          const calcs = pool.filter(q => q.skill === 'calculation');
+          const scenarios = pool.filter(q => q.skill === 'scenario');
+          const picked = [];
+          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked]));
+          const wantScenarios = Math.min(count - picked.length, Math.min(3, scenarios.length));
+          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked]));
+          const remaining = pool.filter(q => !picked.includes(q));
+          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked]));
+          pickedAll.push(...picked);
+        }
+      }
+      return shuffle(pickedAll, random);
     }
     if (spec.mode === 'review') {
       if (spec.state) return reviewPlan(spec.state, source, spec.now, random).questions;
@@ -118,9 +159,12 @@
     const limit = spec.mode === 'quick' ? 5 : 10;
     const counts = spec.mode === 'quick' ? {concept:2,scenario:2,calculation:1} : {concept:4,scenario:4,calculation:2};
     const picked = [];
-    for(const [skill,count] of Object.entries(counts)) picked.push(...pool.filter(q=>q.skill===skill).slice(0,count));
+    for(const [skill,count] of Object.entries(counts)) {
+      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked));
+    }
     const ids = new Set(picked.map(q=>q.id));
-    picked.push(...pool.filter(q=>!ids.has(q.id)).slice(0,Math.max(0,limit-picked.length)));
+    const remaining = pool.filter(q => !ids.has(q.id));
+    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked));
     return shuffle(picked.slice(0,limit),random);
   }
   function restore(raw, bank) {
@@ -141,8 +185,8 @@
       s.ledger[id] = {attempts,correctCount:Math.min(attempts, Math.floor(finite(entry.correctCount, 1000000))),lastCorrect:entry.lastCorrect,lastSeen:finite(entry.lastSeen),dueAt:finite(entry.dueAt)};
     }
     s.studyDates = [...new Set((Array.isArray(raw.studyDates)?raw.studyDates:[]).filter(d=>typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && !Number.isNaN(Date.parse(d))))].sort();
-    const safeAnswer = (id, answer) => {
-      const q = qmap.get(id);
+    const safeAnswer = (id, answer, revision) => {
+      const q = questionFor(qmap.get(id), { questionRevision: revision });
       if (q?.kind === 'number') return typeof answer === 'string' && answer.length <= 128 ? answer : typeof answer === 'number' && Number.isFinite(answer) ? answer : null;
       return q && hasAnswer(q, answer) ? answer : null;
     };
@@ -151,18 +195,19 @@
       if (!record(r) || typeof r.runId !== 'string' || !r.runId.length || r.runId.length > 128 || !MODES.includes(r.mode) || !Array.isArray(r.results) || !r.results.length || r.results.length > 50) continue;
       if (!r.results.every(x => record(x) && known.has(x.id))) continue;
       const seen = new Set();
+      const revision = revisionOf(r, raw);
       const results = r.results.filter(x => !seen.has(x.id) && seen.add(x.id)).map(x => {
-        const answer = safeAnswer(x.id, x.answer);
-        return { id: x.id, answer, correct: correct(qmap.get(x.id), answer) };
+        const answer = safeAnswer(x.id, x.answer, revision);
+        return { id: x.id, answer, correct: correct(questionFor(qmap.get(x.id), { questionRevision: revision }), answer) };
       });
       const count = results.filter(x => x.correct).length, score = Math.round(count / results.length * 100);
       const unitId = UNITS.includes(r.unitId) ? r.unitId : null;
-      history.set(r.runId, {runId:r.runId,mode:r.mode,unitId,subject:[1,2].includes(r.subject)?r.subject:null,total:results.length,correct:count,score,results,earnedXP:finite(r.earnedXP,550),newBadge:r.newBadge === true && r.mode === 'mission' && !!unitId && score >= 80,completedAt:finite(r.completedAt)});
+      history.set(r.runId, {runId:r.runId,questionRevision:revision,mode:r.mode,unitId,subject:[1,2].includes(r.subject)?r.subject:null,difficulty:['standard','hardcore','hard'].includes(r.difficulty)?r.difficulty:null,total:results.length,correct:count,score,results,earnedXP:finite(r.earnedXP,550),newBadge:r.newBadge === true && r.mode === 'mission' && !!unitId && score >= 80,completedAt:finite(r.completedAt)});
     }
     s.history = [...history.values()];
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
-      s.active={id:a.id,mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
+      s.active={id:a.id,questionRevision:revisionOf(a, raw),mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,difficulty:['standard','hardcore','hard'].includes(a.difficulty)?a.difficulty:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
       if (a.mode === 'review' && record(a.reviewTargets)) {
         const entries = new Map(reviewEntries(s, bank)), targets = new Set();
         s.active.reviewTargets = {};
@@ -177,7 +222,7 @@
       }
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
-        const answer = safeAnswer(id, value);
+        const answer = safeAnswer(id, value, s.active.questionRevision);
         if(answer !== null) s.active.answers[id]=answer;
       }
     }
@@ -196,7 +241,7 @@
     const earnedContent = new Set([...earned].map(id => aliases.get(id)));
     let earnedXP=0;
     const results=ids.map(id=>{
-      const q=map.get(id), answer=run.answers[id], ok=correct(q,answer);
+      const q=questionFor(map.get(id),run), answer=run.answers[id], ok=correct(q,answer);
       const ledgerId = aliases.get(id);
       const old=previousEntries.get(ledgerId) || {attempts:0,correctCount:0};
       s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
@@ -223,7 +268,7 @@
     s.earnedCorrectIds=[...earned];
     s.xp+=earnedXP;
     const key=dateKey(now);if(!s.studyDates.includes(key))s.studyDates.push(key);
-    const report={runId:run.id,mode:run.mode,unitId:run.unitId,subject:run.subject,total:ids.length,correct:count,score,results,earnedXP,newBadge,completedAt:now};
+    const report={runId:run.id,questionRevision:run.questionRevision||questionRevision,mode:run.mode,unitId:run.unitId,subject:run.subject,difficulty:run.difficulty||null,total:ids.length,correct:count,score,results,earnedXP,newBadge,completedAt:now};
     s.history.push(report);s.history=s.history.slice(-100);s.active=null;
     return {state:s,report};
   }
@@ -235,5 +280,5 @@
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,questionRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
 });

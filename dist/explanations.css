@@ -1,0 +1,13 @@
+.expl-section + .expl-section{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.expl-section h4{margin:0 0 8px;font-size:12px;color:var(--green)}
+.expl-section p{margin:4px 0;overflow-wrap:anywhere}
+.expl-steps,.expl-pitfalls{margin:0;padding-left:22px}
+.expl-steps li + li,.expl-pitfalls li + li{margin-top:7px}
+.expl-options{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.expl-option{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--white,#fff);overflow-wrap:anywhere}
+.expl-option > div{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.expl-option p{color:var(--muted)}
+.expl-option.is-selected{border-color:#d78e70;background:#fff5ee}
+.expl-selected{font-size:11px;font-weight:700;color:#944025}
+.expl-check{color:var(--green)}
+@media(max-width:600px){.explanation-card{padding:12px}.expl-option{padding:8px 10px}}

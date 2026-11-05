@@ -2,14 +2,14 @@
   "styles": [
     "styles.css", "study-typography.css", "study-visuals.css", "study-process.css",
     "study-systems.css", "study-control.css", "diagrams.css", "shell.css", "guide.css",
-    "dashboard.css", "atlas.css", "components.css", "sidebar.css", "reliability.css"
+    "dashboard.css", "atlas.css", "components.css", "sidebar.css", "reliability.css", "guide-questions.css", "explanations.css"
   ],
   "scripts": [
     "data.js", "preview-data.js", "offline-data.js", "offline.js", "materials.js",
     "engine.js", "persistence.js", "ui.js", "asset-loader.js", "math.js", "diagrams.js",
     "dialogs.js", "media-state.js", "session.js", "progress-store.js", "controls.js",
     "view-dashboard.js", "view-unit.js", "view-atlas.js", "view-review.js", "view-exam.js",
-    "view-progress.js", "view-quiz.js", "shell.js", "guide-notes.js", "guide-reading.js",
-    "reading-position.js", "guide.js", "app.js", "pwa-client.js"
+    "view-progress.js", "explanations.js", "view-quiz.js", "shell.js", "guide-notes.js", "guide-reading.js",
+    "reading-position.js", "guide-question-catalog.js", "guide-questions.js", "guide.js", "app.js", "pwa-client.js"
   ]
 }

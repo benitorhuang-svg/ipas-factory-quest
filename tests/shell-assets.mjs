@@ -65,13 +65,16 @@ assert.equal(host.querySelectorAll('.katex').length, 1, 'Upgrading fallback is i
 load('data.js');
 hydrate(window.FACTORY_QUEST_DATA);
 let formulas = 0;
+let expectedFormulas = 0;
 for (const material of window.FACTORY_QUEST_DATA.studyMaterials) {
-  host.innerHTML = material.details;
+  const fragments = [material.details, ...Object.values(material.questions).map(question => question.details), ...Object.values(material.notes).map(note => note.html)];
+  host.innerHTML = fragments.join('\n');
+  expectedFormulas += host.querySelectorAll('.math-inline, .math-block').length;
   window.FactoryMath.render();
   formulas += host.querySelectorAll('[data-math-done="katex"]').length;
   assert.equal(host.querySelectorAll('.katex-error').length, 0, `${material.topicCode}: valid math source`);
 }
-assert.equal(formulas, 610, 'Every embedded formula uses the shipped local engine');
+assert.equal(formulas, expectedFormulas, 'Every chapter and question formula uses the shipped local engine');
 
 const precache = { self: {} };
 vm.runInNewContext(fs.readFileSync('dist/precache.js', 'utf8'), precache);

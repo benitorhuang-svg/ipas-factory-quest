@@ -2,10 +2,10 @@
 function create(ctx) {
 const { E, bank, qmap, go, save, toast, modal, closeModal, icon } = ctx;
 function runQuestions() {
-    return (ctx.state.active?.questionIds || []).map(id => qmap.get(id)).filter(Boolean);
+    return (ctx.state.active?.questionIds || []).map(id => E.questionFor(qmap.get(id), ctx.state.active)).filter(Boolean);
   }
 
-function start(mode, unitId = null, subject = null, force = false) {
+function start(mode, unitId = null, subject = null, force = false, difficulty = null) {
     if (!ctx.canEdit()) return;
     if (ctx.state.active && !force) {
       modal(`
@@ -14,7 +14,7 @@ function start(mode, unitId = null, subject = null, force = false) {
         <p>可以接著完成目前作答，或放下未交卷的答案，開啟新的挑戰。已交卷的成績與徽章會保留。</p>
         <div class="button-row">
           <button class="btn btn-primary" data-action="resume">繼續原任務</button>
-          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}">開始新任務</button>
+          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}" data-difficulty="${difficulty || ''}">開始新任務</button>
         </div>
       `);
       return;
@@ -25,7 +25,7 @@ function start(mode, unitId = null, subject = null, force = false) {
         const plan = E.reviewPlan(ctx.state, bank);
         qs = plan.questions;
         reviewTargets = plan.targets;
-      } else qs = E.select(bank, { mode, unitId, subject, state: ctx.state });
+      } else qs = E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
     } catch (e) {
       toast(e.message);
       return;
@@ -38,8 +38,10 @@ function start(mode, unitId = null, subject = null, force = false) {
     ctx.state.active = {
       id: crypto.randomUUID ? crypto.randomUUID() : 'r' + Date.now() + Math.random().toString(36).slice(2),
       mode,
+      questionRevision: E.questionRevision,
       unitId,
       subject,
+      difficulty: difficulty || null,
       questionIds: qs.map(q => q.id),
       ...(reviewTargets ? { reviewTargets } : {}),
       answers: {},

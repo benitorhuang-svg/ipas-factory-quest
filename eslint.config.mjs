@@ -1,5 +1,5 @@
 export default [
-  { ignores: ['content/**', 'docs/**', 'node_modules/**', 'test-results/**', 'playwright-report/**', 'dist/assets/**', 'dist/app-bundle.js', 'dist/materials-local.js', 'dist/data.js', 'dist/preview-data.js', 'dist/offline-data.js', 'dist/precache.js', 'dist/styles.css', 'scripts/*.cjs', '!scripts/build-materials.cjs'] },
+  { ignores: ['content/**', 'docs/**', 'node_modules/**', 'test-results/**', 'playwright-report/**', 'dist/assets/**', 'dist/app-bundle.js', 'dist/materials-local.js', 'dist/data.js', 'dist/preview-data.js', 'dist/offline-data.js', 'dist/precache.js', 'dist/styles.css', 'scripts/*.cjs', '!scripts/build-materials.cjs', '!scripts/prepare-exam-content.cjs', '!scripts/exam-analysis.cjs', '!scripts/question-explanations.cjs'] },
   {
     files: ['scripts/*.mjs', 'tests/**/*.mjs', 'dist/*.js', 'eslint.config.mjs', 'playwright.config.mjs'],
     languageOptions: { ecmaVersion: 'latest', sourceType: 'module' },
@@ -10,7 +10,7 @@ export default [
     },
   },
   {
-    files: ['scripts/build-materials.cjs', 'tests/*.cjs', 'dist/engine.js'],
+    files: ['scripts/build-materials.cjs', 'scripts/prepare-exam-content.cjs', 'scripts/exam-analysis.cjs', 'scripts/question-explanations.cjs', 'tests/*.cjs', 'dist/engine.js'],
     languageOptions: { sourceType: 'commonjs', globals: { globalThis: 'readonly', __dirname: 'readonly', console: 'readonly' } },
     rules: { 'no-unused-vars': 'error', 'no-unreachable': 'error', 'no-undef': 'error' },
   },

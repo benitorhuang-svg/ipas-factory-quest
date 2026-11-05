@@ -55,6 +55,18 @@ document.addEventListener('click', e => {
       case 'clear-library':
         window.FactoryGuide.filterCatalog(true);
         break;
+      case 'question-open':
+        if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) window.FactoryQuestions.remember(b.dataset.question, b.dataset.material);
+        break;
+      case 'question-return':
+        window.FactoryQuestions.returnTo(b.dataset.question, b.dataset.material);
+        break;
+      case 'question-clear':
+        window.FactoryQuestionCatalog.update(true);
+        break;
+      case 'question-page':
+        window.FactoryQuestionCatalog.paginate(Number(b.dataset.page));
+        break;
       case 'close':
         closeModal();
         break;
@@ -62,10 +74,10 @@ document.addEventListener('click', e => {
         window.FactoryMedia.retry(b.closest('dialog') || document.getElementById('content'));
         break;
       case 'start':
-        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null);
+        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, false, b.dataset.difficulty || null);
         break;
       case 'force-start':
-        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true);
+        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true, b.dataset.difficulty || null);
         break;
       case 'resume':
         closeModal();
@@ -112,6 +124,8 @@ document.addEventListener('click', e => {
     }
   });
 document.addEventListener('change', e => {
+    if (['exam-question-subject', 'exam-question-notes'].includes(e.target.id)) window.FactoryQuestionCatalog.update();
+    if (e.target.id === 'exam-question-jump') go('guide', 'questions', e.target.value);
     if (e.target.id === 'library-group') window.FactoryGuide.filterCatalog();
     if (e.target.id === 'result-only-wrong') {
       document.querySelectorAll('.feedback-card.right').forEach(card => { card.hidden = e.target.checked; });
@@ -120,6 +134,7 @@ document.addEventListener('change', e => {
     }
   });
 document.addEventListener('input', e => {
+    if (e.target.id === 'exam-question-search') { window.FactoryQuestionCatalog.update(); return; }
     if (e.target.id === 'library-search') {
       window.FactoryGuide.filterCatalog();
       return;

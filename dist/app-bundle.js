@@ -3,7 +3,7 @@
 window.FactoryPreviews = {"assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D-v2.png":{"src":"assets/previews/2acd9447fd9ba412.webp","width":640,"height":360,"bytes":45428},"assets/infographics/智慧生產工程師職能-分解爆炸圖-imagegen-3D.png":{"src":"assets/previews/afe93d55980dc990.webp","width":640,"height":360,"bytes":42324},"assets/infographics/智慧生產工程師職能-分解爆炸圖.png":{"src":"assets/previews/1feeacdc1bb5a5c2.webp","width":640,"height":360,"bytes":27080},"assets/L111.png":{"src":"assets/previews/d92b77987198d4f7.webp","width":640,"height":360,"bytes":65484},"assets/L112.png":{"src":"assets/previews/f4fcea0d125acc08.webp","width":640,"height":360,"bytes":39220},"assets/L113.png":{"src":"assets/previews/5aafbb39c971d34b.webp","width":640,"height":360,"bytes":35476},"assets/L114.png":{"src":"assets/previews/f3dd05d969c85323.webp","width":640,"height":360,"bytes":37386},"assets/L115.png":{"src":"assets/previews/df447a9bc698327f.webp","width":640,"height":360,"bytes":40628},"assets/L116.png":{"src":"assets/previews/342fbd931c061f21.webp","width":640,"height":360,"bytes":40640},"assets/L121.png":{"src":"assets/previews/39f943962629df68.webp","width":640,"height":360,"bytes":35368},"assets/L122.png":{"src":"assets/previews/34c4260cd2a636db.webp","width":640,"height":360,"bytes":35610},"assets/L123.png":{"src":"assets/previews/2ac10e82d4f27e64.webp","width":640,"height":360,"bytes":37280},"assets/L124.png":{"src":"assets/previews/5030bc9dc80dbb8c.webp","width":640,"height":360,"bytes":38172},"assets/L125.png":{"src":"assets/previews/853e5969bea7d6e1.webp","width":640,"height":360,"bytes":39564},"assets/L126.png":{"src":"assets/previews/e1eac2f4df0e49a4.webp","width":640,"height":360,"bytes":44278},"assets/learning-diagrams/bom-hierarchy-v1.png":{"src":"assets/previews/8f1783d5d1a6fd81.webp","width":640,"height":360,"bytes":14922},"assets/learning-explainers/M11101-explainer.jpg":{"src":"assets/previews/bfc9e6b8e0ebf248.webp","width":640,"height":320,"bytes":28652},"assets/learning-explainers/M11102-explainer.jpg":{"src":"assets/previews/fea52ca2588d2376.webp","width":640,"height":320,"bytes":27652},"assets/learning-explainers/M11103-explainer.jpg":{"src":"assets/previews/58e1a07e3b4f4700.webp","width":640,"height":427,"bytes":37116},"assets/learning-explainers/M11201-explainer.jpg":{"src":"assets/previews/30d027559c40df24.webp","width":640,"height":320,"bytes":34224},"assets/learning-explainers/M11202-explainer.jpg":{"src":"assets/previews/7f18074003c4b1ea.webp","width":640,"height":360,"bytes":27708},"assets/learning-explainers/M11203-explainer.jpg":{"src":"assets/previews/2a11befe6a1b118a.webp","width":640,"height":320,"bytes":39080},"assets/learning-explainers/M12101-explainer.jpg":{"src":"assets/previews/07227dd362fec8c2.webp","width":640,"height":427,"bytes":29714},"assets/learning-explainers/M12102-explainer.jpg":{"src":"assets/previews/0de485765ed767aa.webp","width":640,"height":360,"bytes":28920},"assets/learning-explainers/M12103-explainer.jpg":{"src":"assets/previews/31b902dbd244d2e7.webp","width":640,"height":360,"bytes":33666},"assets/learning-explainers/M12201-explainer.jpg":{"src":"assets/previews/9fd5668103a75615.webp","width":640,"height":320,"bytes":23762},"assets/learning-explainers/M12202-explainer.jpg":{"src":"assets/previews/ee49a7c0fc03c9ef.webp","width":640,"height":427,"bytes":35794},"assets/learning-explainers/M12203-explainer.jpg":{"src":"assets/previews/24df1c36c81a5339.webp","width":640,"height":360,"bytes":41724},"assets/learning-units/01_生產管理基本概念_3D.png":{"src":"assets/previews/65173ad33ba16a70.webp","width":640,"height":360,"bytes":56780},"assets/learning-units/02_製造流程管理概念_3D.png":{"src":"assets/previews/97c7185992bc8df1.webp","width":640,"height":360,"bytes":58814},"assets/learning-units/03_物料管理概論_3D.png":{"src":"assets/previews/10a0b56d1f2d9d05.webp","width":640,"height":360,"bytes":58322},"assets/learning-units/04_工業工程概論與標準工時_3D.png":{"src":"assets/previews/2a0079c5df4222b3.webp","width":640,"height":360,"bytes":53238},"assets/learning-units/05_品質管理與統計製程管制_3D.png":{"src":"assets/previews/094a02cad925b1e2.webp","width":640,"height":360,"bytes":63478},"assets/learning-units/06_精實生產與現場績效管理_3D.png":{"src":"assets/previews/4a87d60bc2fb657b.webp","width":640,"height":360,"bytes":59640},"assets/learning-units/07_智慧製造概論與ISA95架構_3D.png":{"src":"assets/previews/30ca9b8fe487a950.webp","width":640,"height":360,"bytes":50620},"assets/learning-units/08_工業物聯網IIoT與通訊協定_3D.png":{"src":"assets/previews/74ed11bbdafcc6c6.webp","width":640,"height":360,"bytes":49494},"assets/learning-units/09_人工智慧AI與機器視覺檢測_3D.png":{"src":"assets/previews/d23fc1ed1e92379d.webp","width":640,"height":360,"bytes":51128},"assets/learning-units/10_網宇實體系統CPS與數位雙生_3D.png":{"src":"assets/previews/09a21719955e8e4f.webp","width":640,"height":360,"bytes":49958},"assets/learning-units/11_智動化生產設備與傳送系統_3D.png":{"src":"assets/previews/0a6054328294541b.webp","width":640,"height":360,"bytes":64344},"assets/learning-units/12_智慧工廠生產模式與MES系統整合_3D.png":{"src":"assets/previews/93062a4945774e26.webp","width":640,"height":360,"bytes":51622},"assets/S1_Overview.png":{"src":"assets/previews/aeef77127120e64d.webp","width":640,"height":360,"bytes":34064},"assets/S2_Overview.png":{"src":"assets/previews/b69be456a3dff66e.webp","width":640,"height":360,"bytes":79060},"assets/smart-factory-dashboard-hero.png":{"src":"assets/previews/c18666ba3bda3053.webp","width":640,"height":274,"bytes":15582}};
 ;
 /* Source: offline-data.js */
-window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與計算題彙整","assets":[{"file":"materials/APPX01.json","bytes":185657,"sha256":"5b5a2eef66a021047497fc601305452d5cce4a5c86437b3f1db4c93fc2065841"}],"bytes":185657},{"topicCode":"APPX02","title":"考古題盲點與常見陷阱","assets":[{"file":"materials/APPX02.json","bytes":25327,"sha256":"7d85acbb583ed09fca3f2eaab809c22a3af3cbaf49b8614aeccc003b68c5869a"}],"bytes":25327},{"topicCode":"APPX03","title":"官方學習資源與參考書目導引","assets":[{"file":"assets/diagrams/6abb97b1add8c7c4.svg","bytes":21530,"sha256":"e29bf14d805cd0d2bbcba8e4a1660ab90cbaaa0147e4d42809c7d9bf4478348c"},{"file":"materials/APPX03.json","bytes":33793,"sha256":"91ff4045094252b2c947d6382e12127ddae028425328118de8a65e3c44117905"}],"bytes":55323},{"topicCode":"APPX04","title":"官方考綱對照與複習補充","assets":[{"file":"materials/APPX04.json","bytes":4207,"sha256":"9951e52be5192973dfc912875948f9766d461acc0d67ab8a3e307ea5a50adf16"}],"bytes":4207},{"topicCode":"APPX05","title":"115 年試題導向實戰練習","assets":[{"file":"materials/APPX05.json","bytes":65034,"sha256":"df32fe2214eb475fc812d2133e3e06c8d206652be47d2ade4656ad15dd5131bf"}],"bytes":65034},{"topicCode":"M11101","title":"生產管理基本概念","assets":[{"file":"assets/L111.png","bytes":1781329,"sha256":"d92b77987198d4f7f5c70dedcde87eec44119784bfd9916c28ea030eecdf1d3b"},{"file":"assets/diagrams/291ed64a6cbaa3d6.svg","bytes":21255,"sha256":"0a89d5d02e9f7606854229c743fb259bdc6b17bfd52d37820b7bc7833e43e21d"},{"file":"assets/diagrams/2b39fd6806b1be19.svg","bytes":17391,"sha256":"c2e01c43672c24ae11412f8b66c697bba6ef2274add0ce07c83da5ed7be76935"},{"file":"assets/diagrams/8c96ee478875b727.svg","bytes":19788,"sha256":"5e9206b844b594eca4541e723a91f3d66894e79eb71bd9e3eabaf57a0c466a3f"},{"file":"assets/diagrams/c237321420e4c4ca.svg","bytes":23475,"sha256":"cdb0c518975d26c92530722f6e277cf66ee4df5db41aea037d6fc17cb0f13b39"},{"file":"assets/diagrams/d925e296eeb7f0f5.svg","bytes":15733,"sha256":"39edc4cfe185ba0e7b6fe0acd4de4b20812103e01acd8c25ee6bbcbb377f1525"},{"file":"assets/interactive-diagrams/unit-summaries/M11101.html","bytes":819566,"sha256":"21fbbc25188e8ad2d197699b92cc95ae402d1d2116cbc5359d176b86a7bf8c04"},{"file":"assets/learning-explainers/M11101-explainer.jpg","bytes":142471,"sha256":"bfc9e6b8e0ebf248ad914d18a9d1cfc9272027c64f25e1e276c341cc243b08d9"},{"file":"assets/learning-units/01_生產管理基本概念_3D.png","bytes":2546207,"sha256":"65173ad33ba16a70b0b6ae7d874593ea375925a2504d854b68d3192bf1b8a8de"},{"file":"assets/previews/65173ad33ba16a70.webp","bytes":56780,"sha256":"3e2c903557ab043dc58661523cf8f35be8bad4c03e1ae0c2b752aa14ccc3cbc0"},{"file":"assets/previews/bfc9e6b8e0ebf248.webp","bytes":28652,"sha256":"d0f1c3cd05c7be630788f032c3a15bad6e2e0ad907df91d57c7356a3f3a9b27d"},{"file":"assets/previews/d92b77987198d4f7.webp","bytes":65484,"sha256":"75282a12e7776ab86723e1f9d8512ae7a7dbfae409d4fda4dbd5040f6e5b9958"},{"file":"materials/M11101.json","bytes":68032,"sha256":"351024c2cd4ee79b3c1ae9bf3adbafc23c681f61184d0e6c8f9d465595fd26cd"}],"bytes":5606163},{"topicCode":"M11102","title":"製造流程管理概念","assets":[{"file":"assets/L112.png","bytes":1525592,"sha256":"f4fcea0d125acc08250a4d4ccd83edcedc5a1f38e3d25fc3b9f90a27a6a2cc25"},{"file":"assets/diagrams/375c688c98862bbd.svg","bytes":15231,"sha256":"8c353b10ad1d04769134ded5d540c23b42753a580b516bbbf66f9946f64d6188"},{"file":"assets/diagrams/4fac8023612477b7.svg","bytes":16353,"sha256":"fd3ef910c86c4247f22f9bdb0d800dcb74315b26ef2fe793f20b6fd238cc959e"},{"file":"assets/diagrams/a1556c23c847a099.svg","bytes":18613,"sha256":"660808f978216a3c46e885678eaabd545b56f54f0a26e60a583100c325f9136a"},{"file":"assets/interactive-diagrams/unit-summaries/M11102.html","bytes":820959,"sha256":"d496546260f2e6d7fa5fe3e74a80f4b0bc469ae81fd01730ed306ac73b5e5b2d"},{"file":"assets/learning-diagrams/bom-hierarchy-v1.png","bytes":1093219,"sha256":"8f1783d5d1a6fd810185e5e75b5d2ee8a6a8570c8472005dbe7e5ceaf4e39bd3"},{"file":"assets/learning-explainers/M11102-explainer.jpg","bytes":128852,"sha256":"fea52ca2588d237652ecab642f8aa39fe897b10330b5608bc48ee47fd957d02f"},{"file":"assets/learning-units/02_製造流程管理概念_3D.png","bytes":2531363,"sha256":"97c7185992bc8df162aa4ed174d836dcf688138dd2ad9a71c230a061d92cd17b"},{"file":"assets/previews/8f1783d5d1a6fd81.webp","bytes":14922,"sha256":"283fcf9b9d35e6ed265081222e49674d04bc3100923c52483b34b829262df11a"},{"file":"assets/previews/97c7185992bc8df1.webp","bytes":58814,"sha256":"53f870849211cf68b3e55b8f3b5691dfd90e09dbfa711bf77b437f0c8fb131cb"},{"file":"assets/previews/f4fcea0d125acc08.webp","bytes":39220,"sha256":"f63f0be0b1933d6439ef872891e2da98ff5a0c77697af2f326a9023180f9a135"},{"file":"assets/previews/fea52ca2588d2376.webp","bytes":27652,"sha256":"58c90de27a33b63ad4f39c48cb2ff5f0eb57edfef2a0e9eb01c18c0ef5d3e777"},{"file":"materials/M11102.json","bytes":45463,"sha256":"7c8be7e0713e715ef47771fd8e90e1a5d3d4d82a918350b0ba22a23008af60cf"}],"bytes":6336253},{"topicCode":"M11103","title":"物料管理概論","assets":[{"file":"assets/L113.png","bytes":1403787,"sha256":"5aafbb39c971d34b156ac34ce7832cdd6b94619163b73e1d255abe7f44c99667"},{"file":"assets/diagrams/6a68321e2a1327e2.svg","bytes":22228,"sha256":"7fb66414d060560eab1396bdb9cea1298c30598b3d4d9559588551f2b002f03e"},{"file":"assets/diagrams/7a7f5ff96a9bda8c.svg","bytes":15591,"sha256":"a1e6fff509926aa1e7e1822269298e5a29db9db8f50f9eb2e940f18496c71763"},{"file":"assets/diagrams/7eeaf0dbc6e15dee.svg","bytes":18189,"sha256":"03d5244896225ec322028bcd522056aa135f29a6c1e2781fdb074330f687b39d"},{"file":"assets/diagrams/9020102d809d3f03.svg","bytes":19090,"sha256":"5a3be32bd68d11be7cd36d98512e3453f515b79dded7f833c7a6bd33a14201f5"},{"file":"assets/interactive-diagrams/unit-summaries/M11103.html","bytes":820049,"sha256":"0fdc0d292508e116c3cc24fdbf52a20c57120474dd85974e3d87b19a04478d28"},{"file":"assets/learning-explainers/M11103-explainer.jpg","bytes":166063,"sha256":"58e1a07e3b4f4700d7a34d2be061ab41667cc0d6de84f6c1ed5aeb38f076637b"},{"file":"assets/learning-units/03_物料管理概論_3D.png","bytes":2532288,"sha256":"10a0b56d1f2d9d0595bffe8792d014a2673b641bcfef0f5432c7df2e76c2a94e"},{"file":"assets/previews/10a0b56d1f2d9d05.webp","bytes":58322,"sha256":"8cb24eddf1098520af25c76edb2e195d3f5f94462c68671c1f86fa4f4336793b"},{"file":"assets/previews/58e1a07e3b4f4700.webp","bytes":37116,"sha256":"dd278d6182468fb7d861f2fca9afb06f1d74d8e8a3d5e606312b91cd581e36a3"},{"file":"assets/previews/5aafbb39c971d34b.webp","bytes":35476,"sha256":"17405fa6d94fb51c7d717e2a50dc16c922b4c62e88e9d6b7b949b3afc846e9fb"},{"file":"materials/M11103.json","bytes":123604,"sha256":"092b65aad04cac9dbc1cd8c5847cd0baa813782b9a1477923cf2faf90e1b48a7"}],"bytes":5251803},{"topicCode":"M11201","title":"工業工程概論與標準工時","assets":[{"file":"assets/L114.png","bytes":1529209,"sha256":"f3dd05d969c85323bd9ecb7517449807cc3b9eb8f987ac125819e85516ea5504"},{"file":"assets/diagrams/d2aeafa6ed29b047.svg","bytes":13908,"sha256":"2d71347a70f41424c4970e584041432939e53de632b3ac4970341b2bb8078891"},{"file":"assets/diagrams/f81923f8237c3bf9.svg","bytes":22976,"sha256":"621a334735f476a52e00ee682c55a20b0a93a3f3e7caaf86d00755b06c5990ae"},{"file":"assets/interactive-diagrams/unit-summaries/M11201.html","bytes":818947,"sha256":"c51632d0062cdf4ac24520e77353a4c6abe7dfb38614a5ae35ec79b0735a32e2"},{"file":"assets/learning-explainers/M11201-explainer.jpg","bytes":146638,"sha256":"30d027559c40df2419dfadd5bf0c9891b15539d5e38067f849f0c50379797f43"},{"file":"assets/learning-units/04_工業工程概論與標準工時_3D.png","bytes":2361243,"sha256":"2a0079c5df4222b3986d5d9f918abcfd0afac770e4e43da45e735cf887591c38"},{"file":"assets/previews/2a0079c5df4222b3.webp","bytes":53238,"sha256":"d0a836dc90466e11b56207ac96c863b511c87d7a7c1d958d480ac48a9b85f395"},{"file":"assets/previews/30d027559c40df24.webp","bytes":34224,"sha256":"5d16f33af40d4e2de6655aa9f20103e7dec562e14b034bee92aebfb28595aaff"},{"file":"assets/previews/f3dd05d969c85323.webp","bytes":37386,"sha256":"207988402ef232afc151682b644a5939051fee50d2620fc0698e37e71241ef9a"},{"file":"materials/M11201.json","bytes":107312,"sha256":"c22b0fc70c79cbf5805fefe466643114e821d27115f6b017be72ad717e64c29a"}],"bytes":5125081},{"topicCode":"M11202","title":"品質管理與統計製程管制","assets":[{"file":"assets/L115.png","bytes":1559110,"sha256":"df447a9bc698327f088bb0e734886f15d975f2e14af3e89819f432a75222e04b"},{"file":"assets/diagrams/27c430a96e5cc897.svg","bytes":18802,"sha256":"008353f6a5df1a002972f8beada35f345749f1ec5a0b90e025b6644d1ba63c15"},{"file":"assets/diagrams/601942f06a3a02d0.svg","bytes":19026,"sha256":"7795ac2ca1be5a25ba30db4098c67a8ee0600767b046f436e015923ed7e806f4"},{"file":"assets/diagrams/be47b16f3603be05.svg","bytes":13965,"sha256":"48517b051ff06657de15bdda870648167402e3d93092c7d77ff4f9b4bc484987"},{"file":"assets/diagrams/fcbba4b86b6b6f70.svg","bytes":31608,"sha256":"a86f73fe414fec9d5e707dad5500ff3e483835233692ab43c982bf6b0b86b143"},{"file":"assets/interactive-diagrams/unit-summaries/M11202.html","bytes":820101,"sha256":"59274d740e462119f065c1cbe9ea647a916170153a809d361ffb3e5e37489ab4"},{"file":"assets/learning-explainers/M11202-explainer.jpg","bytes":121249,"sha256":"7f18074003c4b1ea6f00b10e4cfac212f7d4d2c457429efad66557b051252fa4"},{"file":"assets/learning-units/05_品質管理與統計製程管制_3D.png","bytes":2573248,"sha256":"094a02cad925b1e2e2067c0f60e6af72e4c94f3e2f4c848871a2b3ec1b2f4f60"},{"file":"assets/previews/094a02cad925b1e2.webp","bytes":63478,"sha256":"76c33a5d23d34392a776d8dfd6238c08ea0758e4114df85225e26c43b5c9b1af"},{"file":"assets/previews/7f18074003c4b1ea.webp","bytes":27708,"sha256":"5a9a041ae681b2bd9060a4beffa5f3e9c7c1f0ba516a38046197c676ba11020a"},{"file":"assets/previews/df447a9bc698327f.webp","bytes":40628,"sha256":"f6046c815ae80c15cfb6b72c1da8a93effd42df94c2b00793d1b9ae0588e845c"},{"file":"materials/M11202.json","bytes":123973,"sha256":"adb628370571e101f2fa98e0668ae7cb52cb4ee5241a426c44c309bfbcf2a68e"}],"bytes":5412896},{"topicCode":"M11203","title":"精實生產與現場績效管理","assets":[{"file":"assets/L116.png","bytes":1542283,"sha256":"342fbd931c061f215e542f0ef70b827111ad70cacb98783b62d0158e048308c9"},{"file":"assets/diagrams/4b07bc19a0ce00bd.svg","bytes":22831,"sha256":"3509e3390f108db2fa8a702b61cfbe14b95800c693e2b520c84f6412ece59511"},{"file":"assets/diagrams/683041e7c39efc72.svg","bytes":17408,"sha256":"6b0b8088e62be3ab01591d0712faa6b58768cde01d888de4637f023fb88e31dc"},{"file":"assets/diagrams/d49895d75f8a44ee.svg","bytes":21293,"sha256":"68bbf17de6edf797a92f2065f84fcafe9077e045b54549a165069ef2474b7ad6"},{"file":"assets/interactive-diagrams/unit-summaries/M11203.html","bytes":821351,"sha256":"1a06b122962ee3365ea1f45e6222e83665685f182393b7b4e86ec422198f2f68"},{"file":"assets/learning-explainers/M11203-explainer.jpg","bytes":156584,"sha256":"2a11befe6a1b118a8d4d2887dce5183211a3fa1ea0782fcb97c31ef8f69f4f13"},{"file":"assets/learning-units/06_精實生產與現場績效管理_3D.png","bytes":2667850,"sha256":"4a87d60bc2fb657b5568973f49582b584101807278dc0de8cfcf767e1d0e3718"},{"file":"assets/previews/2a11befe6a1b118a.webp","bytes":39080,"sha256":"952d6be6c31037f50b0836927a5286643cf2fdca8313757d2665d77b0d76c25b"},{"file":"assets/previews/342fbd931c061f21.webp","bytes":40640,"sha256":"04c7e17a8ea2b243ccaabc9e629411d157784f70a3ba6c173cc6fefa1f99acf5"},{"file":"assets/previews/4a87d60bc2fb657b.webp","bytes":59640,"sha256":"a109369b38b9833612d7f304aeaca2faae76e798095e7c9e7044f7e4fa102f35"},{"file":"materials/M11203.json","bytes":87159,"sha256":"ff3bbe90a3816e4d7b5f1e90e38ae736625e055c5c0efca9ee43b4fd12de6e93"}],"bytes":5476119},{"topicCode":"M12101","title":"智慧製造概論與 ISA-95 架構","assets":[{"file":"assets/L121.png","bytes":1440611,"sha256":"39f943962629df68a576965aeedd863d8bfd2484dae1b260083a59b76bab851e"},{"file":"assets/diagrams/1cfb1eb57657dbd0.svg","bytes":22382,"sha256":"ef4b8a49ae21f0db56f3fe4fa8c80f77895cc14f85fa7e4868faf6584b868d04"},{"file":"assets/interactive-diagrams/isa95-smart-factory.html","bytes":823649,"sha256":"e4886e21709d2339c19f0a616ef2e7329744cb34d001e8afa77b9a24eedec5f6"},{"file":"assets/interactive-diagrams/unit-summaries/M12101.html","bytes":819600,"sha256":"36abad7c3c28f51ded69575766e0db986737a659f1ce0b2073b0f191b56c8b26"},{"file":"assets/learning-explainers/M12101-explainer.jpg","bytes":170457,"sha256":"07227dd362fec8c25f274c864de105ec50980957579db21bdf250998f03d27c2"},{"file":"assets/learning-units/07_智慧製造概論與ISA95架構_3D.png","bytes":2361781,"sha256":"30ca9b8fe487a95046e1ccda89af6a1dd1248e624b8cb6e77ae21c64ce63163d"},{"file":"assets/previews/07227dd362fec8c2.webp","bytes":29714,"sha256":"eb761c01f8d67b2f482a341ef4c69c8a54be9e9a08dd0d196eb8b0e10e044f51"},{"file":"assets/previews/30ca9b8fe487a950.webp","bytes":50620,"sha256":"6d4a0c2074baa493c279c98d18029e3330d5e361db80cd1c8ecbf77504df7146"},{"file":"assets/previews/39f943962629df68.webp","bytes":35368,"sha256":"ec365a78ad90bd2137c8a131690337be23cccac0226b86621bcd07637964539d"},{"file":"materials/M12101.json","bytes":34776,"sha256":"7c0cc3b17327d6b68d6d22de15c1c44c256f9e56fe387ca47e1e539e697cd65c"}],"bytes":5788958},{"topicCode":"M12102","title":"工業物聯網 IIoT 與通訊協定","assets":[{"file":"assets/L122.png","bytes":1481739,"sha256":"34c4260cd2a636dbc4dd63feaef216454b5c5a416f237de35043de527019173c"},{"file":"assets/diagrams/45c1f957457c478a.svg","bytes":18292,"sha256":"4f562369c4f4f89b5126db2d69153b68259843df7c9031085ad93af3e0db1a4a"},{"file":"assets/diagrams/e376b5880e1bbcd0.svg","bytes":22032,"sha256":"e6e087d575a49e0d65770f5d943953a2aeaa3c9540d1f906d1bd1e1b51794702"},{"file":"assets/interactive-diagrams/unit-summaries/M12102.html","bytes":820280,"sha256":"ec78607749f83c1298de4be95744d09cdd01ef2b6b217172741e110749b4816f"},{"file":"assets/learning-explainers/M12102-explainer.jpg","bytes":133159,"sha256":"0de485765ed767aa9c0b06cd69fea7f957baf000de9f727f8a2d6d94c6939a48"},{"file":"assets/learning-units/08_工業物聯網IIoT與通訊協定_3D.png","bytes":2344758,"sha256":"74ed11bbdafcc6c6a05326c39a6a3e4cc57adffb8196c9559679ba3015a0209e"},{"file":"assets/previews/0de485765ed767aa.webp","bytes":28920,"sha256":"1e3663ed0a79988cf144370bf170bf12923837e5648e8fd88e223b566c22055b"},{"file":"assets/previews/34c4260cd2a636db.webp","bytes":35610,"sha256":"d8b91c4fa35f274146ba1f7cd3a9dad0fea5d6fad722741c533b4bcbf8af413d"},{"file":"assets/previews/74ed11bbdafcc6c6.webp","bytes":49494,"sha256":"fadd53a9cebcdb03d884c84c06a0d13a4c254ec96010f99b47ee5ad4783d5c3c"},{"file":"materials/M12102.json","bytes":41252,"sha256":"ccd651ebe7e22f1d140f5a897f4debffc33030ea55f18cd51e37f82da8a5803e"}],"bytes":4975536},{"topicCode":"M12103","title":"人工智慧 AI 與機器視覺檢測","assets":[{"file":"assets/L123.png","bytes":1570773,"sha256":"2ac10e82d4f27e643bbd68382c122d30019f0a7ef504afd2b71e1e647f19d8b2"},{"file":"assets/diagrams/0bffe0c7acd5e443.svg","bytes":19789,"sha256":"2d37811677c517b848af94f370ed8aebaa7a13bea2bc9e8e3a64194448ffa03d"},{"file":"assets/diagrams/6230ae4106a9e8d1.svg","bytes":19825,"sha256":"bcefbb0136b2a835ea162c56fa6f3379910d97a923aa91cced3000489c9e799c"},{"file":"assets/diagrams/684b0ead21d11c57.svg","bytes":15097,"sha256":"cbb64b2b11ecf2b91828d76086f4381d7f0c61a437d6eac6f0de9720521b2c06"},{"file":"assets/interactive-diagrams/unit-summaries/M12103.html","bytes":819135,"sha256":"798e0b329bf96e8cb971be0fd149b4d48b9e35bcdf5103358fe5154a3c2308de"},{"file":"assets/learning-explainers/M12103-explainer.jpg","bytes":133735,"sha256":"31b902dbd244d2e7a2417d14bc4c3795f53345d9ca1b2ceeb5184648433db4cf"},{"file":"assets/learning-units/09_人工智慧AI與機器視覺檢測_3D.png","bytes":2443138,"sha256":"d23fc1ed1e92379ded8c7b2187fb6cc8ceb00ede494822e792abf8a73f6b290b"},{"file":"assets/previews/2ac10e82d4f27e64.webp","bytes":37280,"sha256":"facc2c17d2728167bad471f2de62ac15b6a8f2dbe1e0fc44714ed4623a3112da"},{"file":"assets/previews/31b902dbd244d2e7.webp","bytes":33666,"sha256":"71a88db81528c15dddc480e1032245f03607c406197ce1b962baa4df7dfbab7d"},{"file":"assets/previews/d23fc1ed1e92379d.webp","bytes":51128,"sha256":"654dea544d11a641455ac20583f2793d901a2fb364de427767da90de41be01f6"},{"file":"materials/M12103.json","bytes":55494,"sha256":"0159fd8c141088d21806117e82c3a313202f4aafe0971ad218abcf2f9c16f4ac"}],"bytes":5199060},{"topicCode":"M12201","title":"網宇實體系統 CPS 與數位雙生","assets":[{"file":"assets/L124.png","bytes":1553862,"sha256":"5030bc9dc80dbb8c21fee4b80a1c0206768dde69762e023f886da5b09b9b2cab"},{"file":"assets/diagrams/678e26836c50f356.svg","bytes":17843,"sha256":"929d34aadba4fe4fc5f2f3a7c6057cbd0658814d8924ca6a1e69e0660ca685cf"},{"file":"assets/diagrams/6a6edda6c2e3f5f2.svg","bytes":21572,"sha256":"dc3a41a825572499cd11474e7f1a3637fc44876467327d72287b6e5e71ea9891"},{"file":"assets/diagrams/b9f63d9fc643efdc.svg","bytes":17547,"sha256":"e0e017e17edb6849ac4b2fcc69763bcd0501f95413d2a66b7e48ca974936e4e8"},{"file":"assets/interactive-diagrams/unit-summaries/M12201.html","bytes":817989,"sha256":"7ca5308ff24c0bfb9d237e713df0abed65e4d3be1723f3b7fa9c86d7a7e474cb"},{"file":"assets/learning-explainers/M12201-explainer.jpg","bytes":131053,"sha256":"9fd5668103a7561580775fa6a58dc7c0df8142d2cfe06393c873d225dc5a48b5"},{"file":"assets/learning-units/10_網宇實體系統CPS與數位雙生_3D.png","bytes":2358214,"sha256":"09a21719955e8e4ff115455cf1e7c34c3adc8fc6ba06928d197aa8f52a056b37"},{"file":"assets/previews/09a21719955e8e4f.webp","bytes":49958,"sha256":"4ea281b1170528125c069c3fe5482ef1f9cd11a6c7750025ae5d3334e8638490"},{"file":"assets/previews/5030bc9dc80dbb8c.webp","bytes":38172,"sha256":"db1090c2c4cf46a16da0c1f81b4d36d2530348587e3a546633f984a9cf1c4150"},{"file":"assets/previews/9fd5668103a75615.webp","bytes":23762,"sha256":"c1133dac06f107a5e699765e295767ef6d5eeed029be5c447c0835bc56975108"},{"file":"materials/M12201.json","bytes":34849,"sha256":"3dea5be1dc098766605a3238b01f1a2cacd9f33d35be8bed58e5bc201e62339d"}],"bytes":5064821},{"topicCode":"M12202","title":"智動化生產設備與傳送系統","assets":[{"file":"assets/L125.png","bytes":1642991,"sha256":"853e5969bea7d6e103e2ea3bd4a4cc932ca38709d1c80f499530c99abad62064"},{"file":"assets/diagrams/382c075b253e5cbf.svg","bytes":17925,"sha256":"20174c0b7c795a37b8e1e9ded5830790317b642ff79bd5972725e922db7b0c4b"},{"file":"assets/diagrams/49c59c2b0179caa9.svg","bytes":14163,"sha256":"c441b6d1c5f78ba12513faa1cb36f9a7a242a415e9a53ae3d1b40abc5639db72"},{"file":"assets/diagrams/9fcf148777f410a8.svg","bytes":27497,"sha256":"d851f350282e2fb3171366ebc32c3c1684966588738d4718d4d5c4063cd74971"},{"file":"assets/diagrams/a15fff7aac865d89.svg","bytes":12773,"sha256":"1b135725116b2d4182addf50266a95f1bd820e8db34ec27b6d3796c2916efde6"},{"file":"assets/diagrams/b14904a68954613e.svg","bytes":17523,"sha256":"f59ddfa7ef87cb5fb7372a9def1d2a40b917e7a07ade6f10c25d06c904e50451"},{"file":"assets/diagrams/c3208915f9839192.svg","bytes":99103,"sha256":"6c25f9a616739f17ea778f6f585fac7728accb866f12449410669fd99f9912c1"},{"file":"assets/interactive-diagrams/unit-summaries/M12202.html","bytes":821903,"sha256":"360d3a8587fd7f4ab7c0186800bf624787612586e2069ab223ad9c5a9e4bf49e"},{"file":"assets/learning-explainers/M12202-explainer.jpg","bytes":182260,"sha256":"ee49a7c0fc03c9efe5c2167bed319447e01f02c904d654202aa6d33b28697b2a"},{"file":"assets/learning-units/11_智動化生產設備與傳送系統_3D.png","bytes":2763307,"sha256":"0a6054328294541b33320d1a96199f53d97dce11486f2448300d5b0cc2503fee"},{"file":"assets/previews/0a6054328294541b.webp","bytes":64344,"sha256":"be1ba9900ad7f5f1ad411a7762bdd65962ccb6c9071476dbd2c3d05c5ef8cef7"},{"file":"assets/previews/853e5969bea7d6e1.webp","bytes":39564,"sha256":"20e410add96590a7e4fdff404935a878b818512e84e305dc170df5dd3b94916d"},{"file":"assets/previews/ee49a7c0fc03c9ef.webp","bytes":35794,"sha256":"bf15129b88bf005843cff1f2ce9c8a4a1c279f086994b729515fad04b8b58447"},{"file":"materials/M12202.json","bytes":62040,"sha256":"c7b5376a3e7cb3372d653007343bfba866942bd4a3816c0281d31843a9692f73"}],"bytes":5801187},{"topicCode":"M12203","title":"智慧工廠生產模式與 MES 整合","assets":[{"file":"assets/L126.png","bytes":1620829,"sha256":"e1eac2f4df0e49a47c50fcd070b7acb42118238dd6d00a894855d90de2240237"},{"file":"assets/diagrams/731328c53fbef64a.svg","bytes":20604,"sha256":"c15aa5943ebe644986f1e5383db0623d6a7aa0df38b9b0d2d00e6169540824ae"},{"file":"assets/diagrams/e0591f5758511376.svg","bytes":21927,"sha256":"fb229094a5c88c095e32ba4c86283422345e7e409e7ed6b963a58ca540eab398"},{"file":"assets/interactive-diagrams/unit-summaries/M12203.html","bytes":825865,"sha256":"2537d6824909c3e42724f3e0ede74d9a648d6dd912c8a9cfa373b1088cdf8d41"},{"file":"assets/learning-explainers/M12203-explainer.jpg","bytes":178747,"sha256":"24df1c36c81a533959720d0c54101b523cf7fb51a5d9c94eb8e0d965a5404c14"},{"file":"assets/learning-units/12_智慧工廠生產模式與MES系統整合_3D.png","bytes":2355887,"sha256":"93062a4945774e26605517241849a63f2314fb7a0a5809ab24c8179ea70c50b4"},{"file":"assets/previews/24df1c36c81a5339.webp","bytes":41724,"sha256":"37858a82dcdc905186f5696f3b2487293237394448af217398813c1ed2e36efc"},{"file":"assets/previews/93062a4945774e26.webp","bytes":51622,"sha256":"d8758e3662851294faf57f5434fbff33564abc77e017db2e975eef131766dc56"},{"file":"assets/previews/e1eac2f4df0e49a4.webp","bytes":44278,"sha256":"970a66033f012b4ece46f896288a575d9d57deb262521e8bb6e6f315ba21e63a"},{"file":"materials/M12203.json","bytes":56077,"sha256":"3d1705610a60c15367338d30a911594ee94b27da00022824be5d4fb8007c3310"}],"bytes":5217560},{"topicCode":"M13101","title":"生產管理與流程實作","assets":[{"file":"assets/diagrams/5836d984a739e295.svg","bytes":17053,"sha256":"3335c1b2b76ef17492f1759afbc88aa22ae81b41550f9f46892894db5e6b5f4f"},{"file":"assets/diagrams/bbbc1b9e60a83ee2.svg","bytes":39839,"sha256":"b5c9b0babbaf1434decf44f0adbd7ee7ebde5908ed216cfd31021ee3a3a14137"},{"file":"assets/interactive-diagrams/unit-summaries/M13101.html","bytes":821451,"sha256":"3262cd2358d112cb23a457eeed5f1ebd1d31f727a72a8fac3be95511f2e59122"},{"file":"materials/M13101.json","bytes":70889,"sha256":"d07348373bca00b7681ad4a93546e386456064527508d6573bce1eb330e0a458"}],"bytes":949232},{"topicCode":"M13201","title":"智慧製造現場管理實作","assets":[{"file":"assets/diagrams/206dc82b6df6bd53.svg","bytes":21697,"sha256":"0b453080ae1a963bb57211f15fa5f58e70296ffbd153a36efd1b491b3cd60276"},{"file":"assets/diagrams/c7e20c746c6a738b.svg","bytes":23188,"sha256":"53c9642ff7486e98246665db0c3d38c82c8be5a7a3e3e4b701201274af759814"},{"file":"assets/diagrams/e7d282c8ef37db36.svg","bytes":16814,"sha256":"c9edba4381147681205cbf2ecf20aba0699496f23ca5e00fdce4fbafca5cb72b"},{"file":"assets/interactive-diagrams/unit-summaries/M13201.html","bytes":822654,"sha256":"e55a4a1d38bbe6b3f27c5740aabd1e314d748234063c91a8c4434695da1351f6"},{"file":"materials/M13201.json","bytes":49751,"sha256":"e738741cb443333d0367494d1adba9d93ea293eb71b8dcb71007d6277f595f0b"}],"bytes":934104},{"topicCode":"M21101","title":"生產管理實務與精實管理","assets":[{"file":"assets/diagrams/2d6bfc64ce358e4f.svg","bytes":19280,"sha256":"c6b533cae06ad981561faa03ea7ba1eda20fdf747144fb0e7faeadd19621ab1d"},{"file":"assets/diagrams/b6bb1e95afd96a37.svg","bytes":21202,"sha256":"d5b19477a0b2414b9ea844e4f2c4b96e882db6a32de72e3db27bc953fa68c13e"},{"file":"assets/interactive-diagrams/unit-summaries/M21101.html","bytes":817664,"sha256":"d4e32a0c67087fcdd588ca28543d1b6320bc47002648bcd9fb58456fface9053"},{"file":"materials/M21101.json","bytes":33138,"sha256":"351a30f21792d1546bf130df24521feec79791793cee8073dd445cfe4986189c"}],"bytes":891284},{"topicCode":"M21102","title":"智慧工廠技術綜觀、現場管理與 MES 實務","assets":[{"file":"assets/diagrams/60b318ff1d39fe69.svg","bytes":29667,"sha256":"906551f4217517cc7894c14a9eeac4a8742d2aa1b8908b11a294b295028e93ae"},{"file":"assets/diagrams/c6b5ccb8363b6eba.svg","bytes":15870,"sha256":"34635239d194e81f9e8d847b0afd87722744c3cc6448c9661840f0180bc0f11f"},{"file":"assets/interactive-diagrams/unit-summaries/M21102.html","bytes":817992,"sha256":"93bedbd894bf1f537048bef11ebbe06301537db4cf82edbe2b0d5ecdfe25fcc0"},{"file":"materials/M21102.json","bytes":24114,"sha256":"1e42260a4db855396592225d5bb37bd054c542c140a70624566308f85e1e3c93"}],"bytes":887643},{"topicCode":"M21201","title":"MES 全廠管控與生產排程優化","assets":[{"file":"assets/diagrams/7ada368f365afbf6.svg","bytes":30068,"sha256":"2cec583e56e534be5ee27c1b544a528bccc955a5a07cd345a3eef70cebd6479a"},{"file":"assets/diagrams/d83dda9198697d54.svg","bytes":16770,"sha256":"a1980886e5cf610e1b25f4fc30465efb06ef3a44be880381a65ce17f32272327"},{"file":"assets/diagrams/fe27d1f852f931fb.svg","bytes":18253,"sha256":"dcfb451969f106e5f59092aaca550635badb3c29e6572a76ec936aac86c8fc1f"},{"file":"assets/interactive-diagrams/unit-summaries/M21201.html","bytes":819121,"sha256":"2c0c2950a7afd7b28e45471f77c3b6c257f5a00df6d15a8898e2d6ed40ad56b7"},{"file":"materials/M21201.json","bytes":22061,"sha256":"9dc3eebe50ef2265dd780e8d3991bc100e61d45dc26564e517096deb281c0cf0"}],"bytes":906273},{"topicCode":"M21202","title":"線平衡、品質要因分析與即時資訊","assets":[{"file":"assets/interactive-diagrams/unit-summaries/M21202.html","bytes":816969,"sha256":"44be4b0203bc1b23fa5ea30b16b61acb66e990349696af25f0bf1358055cc548"},{"file":"materials/M21202.json","bytes":113223,"sha256":"5ee92bfd73ef9a53281c70ca64b15bd2fa32af87b6575ec03d3fd17c2993b90d"}],"bytes":930192},{"topicCode":"M22101","title":"物聯網與 CPS 基本原理","assets":[{"file":"assets/diagrams/071b8df19a7e0404.svg","bytes":18982,"sha256":"e2ee4566120e9fd9b6b1bb8c026933eb3fc3e06fcd3081c75e7570bd3f4de845"},{"file":"assets/diagrams/3079cc8803250348.svg","bytes":17784,"sha256":"d872f9744c2cf64f012bec9908d75e127611192e36d82673a7aa9cd7a8b9cb20"},{"file":"assets/interactive-diagrams/unit-summaries/M22101.html","bytes":819678,"sha256":"be4f4157e8f78a1a93ec7df48951a804bdc9410e9c008b825b574f955c9a55da"},{"file":"materials/M22101.json","bytes":18406,"sha256":"233bc1bb0bdc4113d7006588342c586aef3ed6e25a872ef0bf7fe6b05123a050"}],"bytes":874850},{"topicCode":"M22102","title":"智慧設備管理維護與製程大數據","assets":[{"file":"assets/diagrams/d0af770d2508c0c2.svg","bytes":18584,"sha256":"8c0f6eba0f491d9ecf95d7fd07148db55054043685beb3d2cc3453096d27f474"},{"file":"assets/interactive-diagrams/unit-summaries/M22102.html","bytes":819029,"sha256":"cdbb49937fac17085b20eb7000153b9323716829312fb0c87b8b236db508591f"},{"file":"materials/M22102.json","bytes":42628,"sha256":"20d12f869b9f59a6e2254143371c26e47680756d698a21a49de0c3a7655ac512"}],"bytes":880241},{"topicCode":"M22201","title":"感測器、機器視覺與機器人整合","assets":[{"file":"assets/diagrams/6d3aab4d775d12ad.svg","bytes":13999,"sha256":"84fb3d6f5e803258e7ce5928b32b53150d9ea880093df210cda5e6b9a8c93e57"},{"file":"assets/diagrams/a098ae3fb04949e9.svg","bytes":26000,"sha256":"335cccd19dce7b51b4b666932e017d263a9aecb90488ac26b852ccf897ff7fd7"},{"file":"assets/diagrams/f6ebc0a3976c0c06.svg","bytes":20547,"sha256":"29061446346645e64e1af29faea27556ac14afe6feac7849ecdc3b3f723a2dd2"},{"file":"assets/interactive-diagrams/unit-summaries/M22201.html","bytes":820134,"sha256":"07fa1bf2664ffda8e7fa40d93dc2ce985410fe3bee3a5171d18e82f70eab24f8"},{"file":"materials/M22201.json","bytes":27144,"sha256":"94e18e1001743624dc4db5959ef4c109da9890740f00a5ff0cfa2293aea1681b"}],"bytes":907824},{"topicCode":"M22202","title":"通訊建構、智慧控制與介面管理","assets":[{"file":"assets/diagrams/b2ec020e5266df4e.svg","bytes":17422,"sha256":"e115fc1cff4246b9d5eea90aa0036d9c8b55b364c8adfb468092717beeae19fe"},{"file":"assets/interactive-diagrams/unit-summaries/M22202.html","bytes":819053,"sha256":"e23cf836bc1907e8e752807ab558dbf1d6f09cd1eed2180dc4608dfc98fcdf28"},{"file":"materials/M22202.json","bytes":28304,"sha256":"f323653a468ad2c8537570d98a1e73dee81e611d9bf036d335c3f0e5a8842868"}],"bytes":864779},{"topicCode":"M22301","title":"智慧設備操作與效率指標辨識","assets":[{"file":"assets/diagrams/12756f65d28f3e81.svg","bytes":17933,"sha256":"5718145180aea6a1a7d8885383a6adeb1ea9a0a7bfe881311df5b61ade95e429"},{"file":"assets/diagrams/d6544547e0cb1b24.svg","bytes":22817,"sha256":"2321f06fb28e46008d20c4f8f5a009374a9f8ae50141386f309ad28f16941551"},{"file":"assets/interactive-diagrams/unit-summaries/M22301.html","bytes":820075,"sha256":"f0f1fe6153c2e2d9e182611815a75173c94e2f0a3d0c0cdee54d15d84e40141d"},{"file":"materials/M22301.json","bytes":52265,"sha256":"6c425cc4bd71c8f089850afdc7fa9aa770099bc894bb6a8330246432a3dc28aa"}],"bytes":913090}];
+window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與計算題彙整","assets":[{"file":"materials/APPX01.json","bytes":185683,"sha256":"297e362326c00f603536175166350a5b867a4d9aba7b41823365649fb1f56e39"}],"bytes":185683},{"topicCode":"APPX02","title":"考古題盲點與常見陷阱","assets":[{"file":"materials/APPX02.json","bytes":25353,"sha256":"b31634942365b407b30fd40e94a1052254d98d3a55a4bb5c449d87fb1c4f06f4"}],"bytes":25353},{"topicCode":"APPX03","title":"官方學習資源與參考書目導引","assets":[{"file":"assets/diagrams/6abb97b1add8c7c4.svg","bytes":21530,"sha256":"e29bf14d805cd0d2bbcba8e4a1660ab90cbaaa0147e4d42809c7d9bf4478348c"},{"file":"materials/APPX03.json","bytes":34059,"sha256":"5c97cfc1b0602722e6e162907f2af6b4d1ec7a66fa9ace775d1094f01f6a28ab"}],"bytes":55589},{"topicCode":"APPX04","title":"官方考綱對照與複習補充","assets":[{"file":"materials/APPX04.json","bytes":4233,"sha256":"359b1260f51033e252c52223927029945db0b148c0c824162bb095a9d2134f20"}],"bytes":4233},{"topicCode":"APPX05","title":"115 年試題導向實戰練習","assets":[{"file":"materials/APPX05.json","bytes":65060,"sha256":"db843aa9962c15bafa66dde1fa543f7e6dd8ebfad15b9ddf7c1522dc7ce564dd"}],"bytes":65060},{"topicCode":"M11101","title":"生產管理基本概念","assets":[{"file":"assets/L111.png","bytes":1781329,"sha256":"d92b77987198d4f7f5c70dedcde87eec44119784bfd9916c28ea030eecdf1d3b"},{"file":"assets/diagrams/291ed64a6cbaa3d6.svg","bytes":21255,"sha256":"0a89d5d02e9f7606854229c743fb259bdc6b17bfd52d37820b7bc7833e43e21d"},{"file":"assets/diagrams/2b39fd6806b1be19.svg","bytes":17391,"sha256":"c2e01c43672c24ae11412f8b66c697bba6ef2274add0ce07c83da5ed7be76935"},{"file":"assets/diagrams/8c96ee478875b727.svg","bytes":19788,"sha256":"5e9206b844b594eca4541e723a91f3d66894e79eb71bd9e3eabaf57a0c466a3f"},{"file":"assets/diagrams/c237321420e4c4ca.svg","bytes":23475,"sha256":"cdb0c518975d26c92530722f6e277cf66ee4df5db41aea037d6fc17cb0f13b39"},{"file":"assets/diagrams/d925e296eeb7f0f5.svg","bytes":15733,"sha256":"39edc4cfe185ba0e7b6fe0acd4de4b20812103e01acd8c25ee6bbcbb377f1525"},{"file":"assets/interactive-diagrams/unit-summaries/M11101.html","bytes":819566,"sha256":"21fbbc25188e8ad2d197699b92cc95ae402d1d2116cbc5359d176b86a7bf8c04"},{"file":"assets/learning-explainers/M11101-explainer.jpg","bytes":142471,"sha256":"bfc9e6b8e0ebf248ad914d18a9d1cfc9272027c64f25e1e276c341cc243b08d9"},{"file":"assets/learning-units/01_生產管理基本概念_3D.png","bytes":2546207,"sha256":"65173ad33ba16a70b0b6ae7d874593ea375925a2504d854b68d3192bf1b8a8de"},{"file":"assets/previews/65173ad33ba16a70.webp","bytes":56780,"sha256":"3e2c903557ab043dc58661523cf8f35be8bad4c03e1ae0c2b752aa14ccc3cbc0"},{"file":"assets/previews/bfc9e6b8e0ebf248.webp","bytes":28652,"sha256":"d0f1c3cd05c7be630788f032c3a15bad6e2e0ad907df91d57c7356a3f3a9b27d"},{"file":"assets/previews/d92b77987198d4f7.webp","bytes":65484,"sha256":"75282a12e7776ab86723e1f9d8512ae7a7dbfae409d4fda4dbd5040f6e5b9958"},{"file":"materials/M11101.json","bytes":78005,"sha256":"c26917a545901c8d703686e4f523f0c54d4a2269ff6f55b73c51a083a20885cf"}],"bytes":5616136},{"topicCode":"M11102","title":"製造流程管理概念","assets":[{"file":"assets/L112.png","bytes":1525592,"sha256":"f4fcea0d125acc08250a4d4ccd83edcedc5a1f38e3d25fc3b9f90a27a6a2cc25"},{"file":"assets/diagrams/375c688c98862bbd.svg","bytes":15231,"sha256":"8c353b10ad1d04769134ded5d540c23b42753a580b516bbbf66f9946f64d6188"},{"file":"assets/diagrams/4fac8023612477b7.svg","bytes":16353,"sha256":"fd3ef910c86c4247f22f9bdb0d800dcb74315b26ef2fe793f20b6fd238cc959e"},{"file":"assets/diagrams/a1556c23c847a099.svg","bytes":18613,"sha256":"660808f978216a3c46e885678eaabd545b56f54f0a26e60a583100c325f9136a"},{"file":"assets/interactive-diagrams/unit-summaries/M11102.html","bytes":820959,"sha256":"d496546260f2e6d7fa5fe3e74a80f4b0bc469ae81fd01730ed306ac73b5e5b2d"},{"file":"assets/learning-diagrams/bom-hierarchy-v1.png","bytes":1093219,"sha256":"8f1783d5d1a6fd810185e5e75b5d2ee8a6a8570c8472005dbe7e5ceaf4e39bd3"},{"file":"assets/learning-explainers/M11102-explainer.jpg","bytes":128852,"sha256":"fea52ca2588d237652ecab642f8aa39fe897b10330b5608bc48ee47fd957d02f"},{"file":"assets/learning-units/02_製造流程管理概念_3D.png","bytes":2531363,"sha256":"97c7185992bc8df162aa4ed174d836dcf688138dd2ad9a71c230a061d92cd17b"},{"file":"assets/previews/8f1783d5d1a6fd81.webp","bytes":14922,"sha256":"283fcf9b9d35e6ed265081222e49674d04bc3100923c52483b34b829262df11a"},{"file":"assets/previews/97c7185992bc8df1.webp","bytes":58814,"sha256":"53f870849211cf68b3e55b8f3b5691dfd90e09dbfa711bf77b437f0c8fb131cb"},{"file":"assets/previews/f4fcea0d125acc08.webp","bytes":39220,"sha256":"f63f0be0b1933d6439ef872891e2da98ff5a0c77697af2f326a9023180f9a135"},{"file":"assets/previews/fea52ca2588d2376.webp","bytes":27652,"sha256":"58c90de27a33b63ad4f39c48cb2ff5f0eb57edfef2a0e9eb01c18c0ef5d3e777"},{"file":"materials/M11102.json","bytes":50229,"sha256":"f7d2b168d3cd45d2d9f7d78a70d7f8b4cd103cc2804d423c28d0a1a4101f47d0"}],"bytes":6341019},{"topicCode":"M11103","title":"物料管理概論","assets":[{"file":"assets/L113.png","bytes":1403787,"sha256":"5aafbb39c971d34b156ac34ce7832cdd6b94619163b73e1d255abe7f44c99667"},{"file":"assets/diagrams/6a68321e2a1327e2.svg","bytes":22228,"sha256":"7fb66414d060560eab1396bdb9cea1298c30598b3d4d9559588551f2b002f03e"},{"file":"assets/diagrams/7a7f5ff96a9bda8c.svg","bytes":15591,"sha256":"a1e6fff509926aa1e7e1822269298e5a29db9db8f50f9eb2e940f18496c71763"},{"file":"assets/diagrams/7eeaf0dbc6e15dee.svg","bytes":18189,"sha256":"03d5244896225ec322028bcd522056aa135f29a6c1e2781fdb074330f687b39d"},{"file":"assets/diagrams/9020102d809d3f03.svg","bytes":19090,"sha256":"5a3be32bd68d11be7cd36d98512e3453f515b79dded7f833c7a6bd33a14201f5"},{"file":"assets/interactive-diagrams/unit-summaries/M11103.html","bytes":820049,"sha256":"0fdc0d292508e116c3cc24fdbf52a20c57120474dd85974e3d87b19a04478d28"},{"file":"assets/learning-explainers/M11103-explainer.jpg","bytes":166063,"sha256":"58e1a07e3b4f4700d7a34d2be061ab41667cc0d6de84f6c1ed5aeb38f076637b"},{"file":"assets/learning-units/03_物料管理概論_3D.png","bytes":2532288,"sha256":"10a0b56d1f2d9d0595bffe8792d014a2673b641bcfef0f5432c7df2e76c2a94e"},{"file":"assets/previews/10a0b56d1f2d9d05.webp","bytes":58322,"sha256":"8cb24eddf1098520af25c76edb2e195d3f5f94462c68671c1f86fa4f4336793b"},{"file":"assets/previews/58e1a07e3b4f4700.webp","bytes":37116,"sha256":"dd278d6182468fb7d861f2fca9afb06f1d74d8e8a3d5e606312b91cd581e36a3"},{"file":"assets/previews/5aafbb39c971d34b.webp","bytes":35476,"sha256":"17405fa6d94fb51c7d717e2a50dc16c922b4c62e88e9d6b7b949b3afc846e9fb"},{"file":"materials/M11103.json","bytes":127651,"sha256":"096e3e9a0954dab635d04270eff257ef7858859725ac85a094773e1b2c16ab85"}],"bytes":5255850},{"topicCode":"M11201","title":"工業工程概論與標準工時","assets":[{"file":"assets/L114.png","bytes":1529209,"sha256":"f3dd05d969c85323bd9ecb7517449807cc3b9eb8f987ac125819e85516ea5504"},{"file":"assets/diagrams/d2aeafa6ed29b047.svg","bytes":13908,"sha256":"2d71347a70f41424c4970e584041432939e53de632b3ac4970341b2bb8078891"},{"file":"assets/diagrams/f81923f8237c3bf9.svg","bytes":22976,"sha256":"621a334735f476a52e00ee682c55a20b0a93a3f3e7caaf86d00755b06c5990ae"},{"file":"assets/interactive-diagrams/unit-summaries/M11201.html","bytes":818947,"sha256":"c51632d0062cdf4ac24520e77353a4c6abe7dfb38614a5ae35ec79b0735a32e2"},{"file":"assets/learning-explainers/M11201-explainer.jpg","bytes":146638,"sha256":"30d027559c40df2419dfadd5bf0c9891b15539d5e38067f849f0c50379797f43"},{"file":"assets/learning-units/04_工業工程概論與標準工時_3D.png","bytes":2361243,"sha256":"2a0079c5df4222b3986d5d9f918abcfd0afac770e4e43da45e735cf887591c38"},{"file":"assets/previews/2a0079c5df4222b3.webp","bytes":53238,"sha256":"d0a836dc90466e11b56207ac96c863b511c87d7a7c1d958d480ac48a9b85f395"},{"file":"assets/previews/30d027559c40df24.webp","bytes":34224,"sha256":"5d16f33af40d4e2de6655aa9f20103e7dec562e14b034bee92aebfb28595aaff"},{"file":"assets/previews/f3dd05d969c85323.webp","bytes":37386,"sha256":"207988402ef232afc151682b644a5939051fee50d2620fc0698e37e71241ef9a"},{"file":"materials/M11201.json","bytes":115943,"sha256":"5b7da0400bf6d19ec630c7ad96384f9bd57ccda9f9663c4b7c947e8716e228ba"}],"bytes":5133712},{"topicCode":"M11202","title":"品質管理與統計製程管制","assets":[{"file":"assets/L115.png","bytes":1559110,"sha256":"df447a9bc698327f088bb0e734886f15d975f2e14af3e89819f432a75222e04b"},{"file":"assets/diagrams/27c430a96e5cc897.svg","bytes":18802,"sha256":"008353f6a5df1a002972f8beada35f345749f1ec5a0b90e025b6644d1ba63c15"},{"file":"assets/diagrams/601942f06a3a02d0.svg","bytes":19026,"sha256":"7795ac2ca1be5a25ba30db4098c67a8ee0600767b046f436e015923ed7e806f4"},{"file":"assets/diagrams/be47b16f3603be05.svg","bytes":13965,"sha256":"48517b051ff06657de15bdda870648167402e3d93092c7d77ff4f9b4bc484987"},{"file":"assets/diagrams/fcbba4b86b6b6f70.svg","bytes":31608,"sha256":"a86f73fe414fec9d5e707dad5500ff3e483835233692ab43c982bf6b0b86b143"},{"file":"assets/interactive-diagrams/unit-summaries/M11202.html","bytes":820101,"sha256":"59274d740e462119f065c1cbe9ea647a916170153a809d361ffb3e5e37489ab4"},{"file":"assets/learning-explainers/M11202-explainer.jpg","bytes":121249,"sha256":"7f18074003c4b1ea6f00b10e4cfac212f7d4d2c457429efad66557b051252fa4"},{"file":"assets/learning-units/05_品質管理與統計製程管制_3D.png","bytes":2573248,"sha256":"094a02cad925b1e2e2067c0f60e6af72e4c94f3e2f4c848871a2b3ec1b2f4f60"},{"file":"assets/previews/094a02cad925b1e2.webp","bytes":63478,"sha256":"76c33a5d23d34392a776d8dfd6238c08ea0758e4114df85225e26c43b5c9b1af"},{"file":"assets/previews/7f18074003c4b1ea.webp","bytes":27708,"sha256":"5a9a041ae681b2bd9060a4beffa5f3e9c7c1f0ba516a38046197c676ba11020a"},{"file":"assets/previews/df447a9bc698327f.webp","bytes":40628,"sha256":"f6046c815ae80c15cfb6b72c1da8a93effd42df94c2b00793d1b9ae0588e845c"},{"file":"materials/M11202.json","bytes":133969,"sha256":"7ba56aed8e9f26ee9220a1c45d5b329a624b06ec32c05b99b5f0fa5ea4d94bf4"}],"bytes":5422892},{"topicCode":"M11203","title":"精實生產與現場績效管理","assets":[{"file":"assets/L116.png","bytes":1542283,"sha256":"342fbd931c061f215e542f0ef70b827111ad70cacb98783b62d0158e048308c9"},{"file":"assets/diagrams/4b07bc19a0ce00bd.svg","bytes":22831,"sha256":"3509e3390f108db2fa8a702b61cfbe14b95800c693e2b520c84f6412ece59511"},{"file":"assets/diagrams/683041e7c39efc72.svg","bytes":17408,"sha256":"6b0b8088e62be3ab01591d0712faa6b58768cde01d888de4637f023fb88e31dc"},{"file":"assets/diagrams/d49895d75f8a44ee.svg","bytes":21293,"sha256":"68bbf17de6edf797a92f2065f84fcafe9077e045b54549a165069ef2474b7ad6"},{"file":"assets/interactive-diagrams/unit-summaries/M11203.html","bytes":821351,"sha256":"1a06b122962ee3365ea1f45e6222e83665685f182393b7b4e86ec422198f2f68"},{"file":"assets/learning-explainers/M11203-explainer.jpg","bytes":156584,"sha256":"2a11befe6a1b118a8d4d2887dce5183211a3fa1ea0782fcb97c31ef8f69f4f13"},{"file":"assets/learning-units/06_精實生產與現場績效管理_3D.png","bytes":2667850,"sha256":"4a87d60bc2fb657b5568973f49582b584101807278dc0de8cfcf767e1d0e3718"},{"file":"assets/previews/2a11befe6a1b118a.webp","bytes":39080,"sha256":"952d6be6c31037f50b0836927a5286643cf2fdca8313757d2665d77b0d76c25b"},{"file":"assets/previews/342fbd931c061f21.webp","bytes":40640,"sha256":"04c7e17a8ea2b243ccaabc9e629411d157784f70a3ba6c173cc6fefa1f99acf5"},{"file":"assets/previews/4a87d60bc2fb657b.webp","bytes":59640,"sha256":"a109369b38b9833612d7f304aeaca2faae76e798095e7c9e7044f7e4fa102f35"},{"file":"materials/M11203.json","bytes":90597,"sha256":"32066d18a62a2c336433d268834aa3345f8f48fe64b8da057eae94a34bf2726f"}],"bytes":5479557},{"topicCode":"M12101","title":"智慧製造概論與 ISA-95 架構","assets":[{"file":"assets/L121.png","bytes":1440611,"sha256":"39f943962629df68a576965aeedd863d8bfd2484dae1b260083a59b76bab851e"},{"file":"assets/diagrams/1cfb1eb57657dbd0.svg","bytes":22382,"sha256":"ef4b8a49ae21f0db56f3fe4fa8c80f77895cc14f85fa7e4868faf6584b868d04"},{"file":"assets/interactive-diagrams/isa95-smart-factory.html","bytes":823649,"sha256":"e4886e21709d2339c19f0a616ef2e7329744cb34d001e8afa77b9a24eedec5f6"},{"file":"assets/interactive-diagrams/unit-summaries/M12101.html","bytes":819600,"sha256":"36abad7c3c28f51ded69575766e0db986737a659f1ce0b2073b0f191b56c8b26"},{"file":"assets/learning-explainers/M12101-explainer.jpg","bytes":170457,"sha256":"07227dd362fec8c25f274c864de105ec50980957579db21bdf250998f03d27c2"},{"file":"assets/learning-units/07_智慧製造概論與ISA95架構_3D.png","bytes":2361781,"sha256":"30ca9b8fe487a95046e1ccda89af6a1dd1248e624b8cb6e77ae21c64ce63163d"},{"file":"assets/previews/07227dd362fec8c2.webp","bytes":29714,"sha256":"eb761c01f8d67b2f482a341ef4c69c8a54be9e9a08dd0d196eb8b0e10e044f51"},{"file":"assets/previews/30ca9b8fe487a950.webp","bytes":50620,"sha256":"6d4a0c2074baa493c279c98d18029e3330d5e361db80cd1c8ecbf77504df7146"},{"file":"assets/previews/39f943962629df68.webp","bytes":35368,"sha256":"ec365a78ad90bd2137c8a131690337be23cccac0226b86621bcd07637964539d"},{"file":"materials/M12101.json","bytes":38900,"sha256":"510eac5de51d5d2688f7dc6a46889192f335afbcaaaacc11118acb70c993619a"}],"bytes":5793082},{"topicCode":"M12102","title":"工業物聯網 IIoT 與通訊協定","assets":[{"file":"assets/L122.png","bytes":1481739,"sha256":"34c4260cd2a636dbc4dd63feaef216454b5c5a416f237de35043de527019173c"},{"file":"assets/diagrams/45c1f957457c478a.svg","bytes":18292,"sha256":"4f562369c4f4f89b5126db2d69153b68259843df7c9031085ad93af3e0db1a4a"},{"file":"assets/diagrams/e376b5880e1bbcd0.svg","bytes":22032,"sha256":"e6e087d575a49e0d65770f5d943953a2aeaa3c9540d1f906d1bd1e1b51794702"},{"file":"assets/interactive-diagrams/unit-summaries/M12102.html","bytes":820280,"sha256":"ec78607749f83c1298de4be95744d09cdd01ef2b6b217172741e110749b4816f"},{"file":"assets/learning-explainers/M12102-explainer.jpg","bytes":133159,"sha256":"0de485765ed767aa9c0b06cd69fea7f957baf000de9f727f8a2d6d94c6939a48"},{"file":"assets/learning-units/08_工業物聯網IIoT與通訊協定_3D.png","bytes":2344758,"sha256":"74ed11bbdafcc6c6a05326c39a6a3e4cc57adffb8196c9559679ba3015a0209e"},{"file":"assets/previews/0de485765ed767aa.webp","bytes":28920,"sha256":"1e3663ed0a79988cf144370bf170bf12923837e5648e8fd88e223b566c22055b"},{"file":"assets/previews/34c4260cd2a636db.webp","bytes":35610,"sha256":"d8b91c4fa35f274146ba1f7cd3a9dad0fea5d6fad722741c533b4bcbf8af413d"},{"file":"assets/previews/74ed11bbdafcc6c6.webp","bytes":49494,"sha256":"fadd53a9cebcdb03d884c84c06a0d13a4c254ec96010f99b47ee5ad4783d5c3c"},{"file":"materials/M12102.json","bytes":46548,"sha256":"896aca6dd148a1fc1e50ad78da72cf7aea2249bbfd28eac5a3db5703fd782042"}],"bytes":4980832},{"topicCode":"M12103","title":"人工智慧 AI 與機器視覺檢測","assets":[{"file":"assets/L123.png","bytes":1570773,"sha256":"2ac10e82d4f27e643bbd68382c122d30019f0a7ef504afd2b71e1e647f19d8b2"},{"file":"assets/diagrams/0bffe0c7acd5e443.svg","bytes":19789,"sha256":"2d37811677c517b848af94f370ed8aebaa7a13bea2bc9e8e3a64194448ffa03d"},{"file":"assets/diagrams/6230ae4106a9e8d1.svg","bytes":19825,"sha256":"bcefbb0136b2a835ea162c56fa6f3379910d97a923aa91cced3000489c9e799c"},{"file":"assets/diagrams/684b0ead21d11c57.svg","bytes":15097,"sha256":"cbb64b2b11ecf2b91828d76086f4381d7f0c61a437d6eac6f0de9720521b2c06"},{"file":"assets/interactive-diagrams/unit-summaries/M12103.html","bytes":819135,"sha256":"798e0b329bf96e8cb971be0fd149b4d48b9e35bcdf5103358fe5154a3c2308de"},{"file":"assets/learning-explainers/M12103-explainer.jpg","bytes":133735,"sha256":"31b902dbd244d2e7a2417d14bc4c3795f53345d9ca1b2ceeb5184648433db4cf"},{"file":"assets/learning-units/09_人工智慧AI與機器視覺檢測_3D.png","bytes":2443138,"sha256":"d23fc1ed1e92379ded8c7b2187fb6cc8ceb00ede494822e792abf8a73f6b290b"},{"file":"assets/previews/2ac10e82d4f27e64.webp","bytes":37280,"sha256":"facc2c17d2728167bad471f2de62ac15b6a8f2dbe1e0fc44714ed4623a3112da"},{"file":"assets/previews/31b902dbd244d2e7.webp","bytes":33666,"sha256":"71a88db81528c15dddc480e1032245f03607c406197ce1b962baa4df7dfbab7d"},{"file":"assets/previews/d23fc1ed1e92379d.webp","bytes":51128,"sha256":"654dea544d11a641455ac20583f2793d901a2fb364de427767da90de41be01f6"},{"file":"materials/M12103.json","bytes":60167,"sha256":"01c707130fdc6005fc4ca868c9f6760ba661ac453570dc5e17f60a6dbc491968"}],"bytes":5203733},{"topicCode":"M12201","title":"網宇實體系統 CPS 與數位雙生","assets":[{"file":"assets/L124.png","bytes":1553862,"sha256":"5030bc9dc80dbb8c21fee4b80a1c0206768dde69762e023f886da5b09b9b2cab"},{"file":"assets/diagrams/678e26836c50f356.svg","bytes":17843,"sha256":"929d34aadba4fe4fc5f2f3a7c6057cbd0658814d8924ca6a1e69e0660ca685cf"},{"file":"assets/diagrams/6a6edda6c2e3f5f2.svg","bytes":21572,"sha256":"dc3a41a825572499cd11474e7f1a3637fc44876467327d72287b6e5e71ea9891"},{"file":"assets/diagrams/b9f63d9fc643efdc.svg","bytes":17547,"sha256":"e0e017e17edb6849ac4b2fcc69763bcd0501f95413d2a66b7e48ca974936e4e8"},{"file":"assets/interactive-diagrams/unit-summaries/M12201.html","bytes":817989,"sha256":"7ca5308ff24c0bfb9d237e713df0abed65e4d3be1723f3b7fa9c86d7a7e474cb"},{"file":"assets/learning-explainers/M12201-explainer.jpg","bytes":131053,"sha256":"9fd5668103a7561580775fa6a58dc7c0df8142d2cfe06393c873d225dc5a48b5"},{"file":"assets/learning-units/10_網宇實體系統CPS與數位雙生_3D.png","bytes":2358214,"sha256":"09a21719955e8e4ff115455cf1e7c34c3adc8fc6ba06928d197aa8f52a056b37"},{"file":"assets/previews/09a21719955e8e4f.webp","bytes":49958,"sha256":"4ea281b1170528125c069c3fe5482ef1f9cd11a6c7750025ae5d3334e8638490"},{"file":"assets/previews/5030bc9dc80dbb8c.webp","bytes":38172,"sha256":"db1090c2c4cf46a16da0c1f81b4d36d2530348587e3a546633f984a9cf1c4150"},{"file":"assets/previews/9fd5668103a75615.webp","bytes":23762,"sha256":"c1133dac06f107a5e699765e295767ef6d5eeed029be5c447c0835bc56975108"},{"file":"materials/M12201.json","bytes":37973,"sha256":"da279eb6659434050c4d40c7bf6fae61bbbb7bf45e60f8a76e08be5bd49910d2"}],"bytes":5067945},{"topicCode":"M12202","title":"智動化生產設備與傳送系統","assets":[{"file":"assets/L125.png","bytes":1642991,"sha256":"853e5969bea7d6e103e2ea3bd4a4cc932ca38709d1c80f499530c99abad62064"},{"file":"assets/diagrams/382c075b253e5cbf.svg","bytes":17925,"sha256":"20174c0b7c795a37b8e1e9ded5830790317b642ff79bd5972725e922db7b0c4b"},{"file":"assets/diagrams/49c59c2b0179caa9.svg","bytes":14163,"sha256":"c441b6d1c5f78ba12513faa1cb36f9a7a242a415e9a53ae3d1b40abc5639db72"},{"file":"assets/diagrams/9fcf148777f410a8.svg","bytes":27497,"sha256":"d851f350282e2fb3171366ebc32c3c1684966588738d4718d4d5c4063cd74971"},{"file":"assets/diagrams/a15fff7aac865d89.svg","bytes":12773,"sha256":"1b135725116b2d4182addf50266a95f1bd820e8db34ec27b6d3796c2916efde6"},{"file":"assets/diagrams/b14904a68954613e.svg","bytes":17523,"sha256":"f59ddfa7ef87cb5fb7372a9def1d2a40b917e7a07ade6f10c25d06c904e50451"},{"file":"assets/diagrams/c3208915f9839192.svg","bytes":99103,"sha256":"6c25f9a616739f17ea778f6f585fac7728accb866f12449410669fd99f9912c1"},{"file":"assets/interactive-diagrams/unit-summaries/M12202.html","bytes":821903,"sha256":"360d3a8587fd7f4ab7c0186800bf624787612586e2069ab223ad9c5a9e4bf49e"},{"file":"assets/learning-explainers/M12202-explainer.jpg","bytes":182260,"sha256":"ee49a7c0fc03c9efe5c2167bed319447e01f02c904d654202aa6d33b28697b2a"},{"file":"assets/learning-units/11_智動化生產設備與傳送系統_3D.png","bytes":2763307,"sha256":"0a6054328294541b33320d1a96199f53d97dce11486f2448300d5b0cc2503fee"},{"file":"assets/previews/0a6054328294541b.webp","bytes":64344,"sha256":"be1ba9900ad7f5f1ad411a7762bdd65962ccb6c9071476dbd2c3d05c5ef8cef7"},{"file":"assets/previews/853e5969bea7d6e1.webp","bytes":39564,"sha256":"20e410add96590a7e4fdff404935a878b818512e84e305dc170df5dd3b94916d"},{"file":"assets/previews/ee49a7c0fc03c9ef.webp","bytes":35794,"sha256":"bf15129b88bf005843cff1f2ce9c8a4a1c279f086994b729515fad04b8b58447"},{"file":"materials/M12202.json","bytes":70659,"sha256":"379e8a69179f2465f7ae9c4f845fe54c9989d8f54af1e5512f85384648cc2fa5"}],"bytes":5809806},{"topicCode":"M12203","title":"智慧工廠生產模式與 MES 整合","assets":[{"file":"assets/L126.png","bytes":1620829,"sha256":"e1eac2f4df0e49a47c50fcd070b7acb42118238dd6d00a894855d90de2240237"},{"file":"assets/diagrams/731328c53fbef64a.svg","bytes":20604,"sha256":"c15aa5943ebe644986f1e5383db0623d6a7aa0df38b9b0d2d00e6169540824ae"},{"file":"assets/diagrams/e0591f5758511376.svg","bytes":21927,"sha256":"fb229094a5c88c095e32ba4c86283422345e7e409e7ed6b963a58ca540eab398"},{"file":"assets/interactive-diagrams/unit-summaries/M12203.html","bytes":825865,"sha256":"2537d6824909c3e42724f3e0ede74d9a648d6dd912c8a9cfa373b1088cdf8d41"},{"file":"assets/learning-explainers/M12203-explainer.jpg","bytes":178747,"sha256":"24df1c36c81a533959720d0c54101b523cf7fb51a5d9c94eb8e0d965a5404c14"},{"file":"assets/learning-units/12_智慧工廠生產模式與MES系統整合_3D.png","bytes":2355887,"sha256":"93062a4945774e26605517241849a63f2314fb7a0a5809ab24c8179ea70c50b4"},{"file":"assets/previews/24df1c36c81a5339.webp","bytes":41724,"sha256":"37858a82dcdc905186f5696f3b2487293237394448af217398813c1ed2e36efc"},{"file":"assets/previews/93062a4945774e26.webp","bytes":51622,"sha256":"d8758e3662851294faf57f5434fbff33564abc77e017db2e975eef131766dc56"},{"file":"assets/previews/e1eac2f4df0e49a4.webp","bytes":44278,"sha256":"970a66033f012b4ece46f896288a575d9d57deb262521e8bb6e6f315ba21e63a"},{"file":"materials/M12203.json","bytes":67910,"sha256":"eecd0c35c1cf58dc4b33c073b0bd25a268db9801cb8ec2a89bbe604e0ebb0d9d"}],"bytes":5229393},{"topicCode":"M13101","title":"生產管理與流程實作","assets":[{"file":"assets/diagrams/5836d984a739e295.svg","bytes":17053,"sha256":"3335c1b2b76ef17492f1759afbc88aa22ae81b41550f9f46892894db5e6b5f4f"},{"file":"assets/diagrams/bbbc1b9e60a83ee2.svg","bytes":39839,"sha256":"b5c9b0babbaf1434decf44f0adbd7ee7ebde5908ed216cfd31021ee3a3a14137"},{"file":"assets/interactive-diagrams/unit-summaries/M13101.html","bytes":821451,"sha256":"3262cd2358d112cb23a457eeed5f1ebd1d31f727a72a8fac3be95511f2e59122"},{"file":"materials/M13101.json","bytes":70924,"sha256":"f2427b0a64a7e2783fd0e40a5d68c70ac4d205fb0a50b17ba3c1997dc939685e"}],"bytes":949267},{"topicCode":"M13201","title":"智慧製造現場管理實作","assets":[{"file":"assets/diagrams/206dc82b6df6bd53.svg","bytes":21697,"sha256":"0b453080ae1a963bb57211f15fa5f58e70296ffbd153a36efd1b491b3cd60276"},{"file":"assets/diagrams/c7e20c746c6a738b.svg","bytes":23188,"sha256":"53c9642ff7486e98246665db0c3d38c82c8be5a7a3e3e4b701201274af759814"},{"file":"assets/diagrams/e7d282c8ef37db36.svg","bytes":16814,"sha256":"c9edba4381147681205cbf2ecf20aba0699496f23ca5e00fdce4fbafca5cb72b"},{"file":"assets/interactive-diagrams/unit-summaries/M13201.html","bytes":822654,"sha256":"e55a4a1d38bbe6b3f27c5740aabd1e314d748234063c91a8c4434695da1351f6"},{"file":"materials/M13201.json","bytes":49777,"sha256":"4d89f10abfd8b3f7300ef7ebde79df4b76daa0798df0bb49708d81389c223182"}],"bytes":934130},{"topicCode":"M21101","title":"生產管理實務與精實管理","assets":[{"file":"assets/diagrams/2d6bfc64ce358e4f.svg","bytes":19280,"sha256":"c6b533cae06ad981561faa03ea7ba1eda20fdf747144fb0e7faeadd19621ab1d"},{"file":"assets/diagrams/b6bb1e95afd96a37.svg","bytes":21202,"sha256":"d5b19477a0b2414b9ea844e4f2c4b96e882db6a32de72e3db27bc953fa68c13e"},{"file":"assets/interactive-diagrams/unit-summaries/M21101.html","bytes":817664,"sha256":"d4e32a0c67087fcdd588ca28543d1b6320bc47002648bcd9fb58456fface9053"},{"file":"materials/M21101.json","bytes":43648,"sha256":"23eb7953d237d425d6c7f764665daa258ff17a9a1157d039fa4aefa07d330180"}],"bytes":901794},{"topicCode":"M21102","title":"智慧工廠技術綜觀、現場管理與 MES 實務","assets":[{"file":"assets/diagrams/60b318ff1d39fe69.svg","bytes":29667,"sha256":"906551f4217517cc7894c14a9eeac4a8742d2aa1b8908b11a294b295028e93ae"},{"file":"assets/diagrams/c6b5ccb8363b6eba.svg","bytes":15870,"sha256":"34635239d194e81f9e8d847b0afd87722744c3cc6448c9661840f0180bc0f11f"},{"file":"assets/interactive-diagrams/unit-summaries/M21102.html","bytes":817992,"sha256":"93bedbd894bf1f537048bef11ebbe06301537db4cf82edbe2b0d5ecdfe25fcc0"},{"file":"materials/M21102.json","bytes":35884,"sha256":"8f77e96a2ede0f22ec0c5059a58082fa57c36b0f4f61faac922c3664a60e5425"}],"bytes":899413},{"topicCode":"M21201","title":"MES 全廠管控與生產排程優化","assets":[{"file":"assets/diagrams/7ada368f365afbf6.svg","bytes":30068,"sha256":"2cec583e56e534be5ee27c1b544a528bccc955a5a07cd345a3eef70cebd6479a"},{"file":"assets/diagrams/d83dda9198697d54.svg","bytes":16770,"sha256":"a1980886e5cf610e1b25f4fc30465efb06ef3a44be880381a65ce17f32272327"},{"file":"assets/diagrams/fe27d1f852f931fb.svg","bytes":18253,"sha256":"dcfb451969f106e5f59092aaca550635badb3c29e6572a76ec936aac86c8fc1f"},{"file":"assets/interactive-diagrams/unit-summaries/M21201.html","bytes":819121,"sha256":"2c0c2950a7afd7b28e45471f77c3b6c257f5a00df6d15a8898e2d6ed40ad56b7"},{"file":"materials/M21201.json","bytes":28801,"sha256":"6036b2e422ee72aaa50b661fe7f59339cfc6df823896a657cf2eb62b1d45b208"}],"bytes":913013},{"topicCode":"M21202","title":"線平衡、品質要因分析與即時資訊","assets":[{"file":"assets/interactive-diagrams/unit-summaries/M21202.html","bytes":816969,"sha256":"44be4b0203bc1b23fa5ea30b16b61acb66e990349696af25f0bf1358055cc548"},{"file":"materials/M21202.json","bytes":135632,"sha256":"0c74abe40a486f846e7118e3a564d9a92b3f74697a66eccef1fcbd150fd33b8e"}],"bytes":952601},{"topicCode":"M22101","title":"物聯網與 CPS 基本原理","assets":[{"file":"assets/diagrams/071b8df19a7e0404.svg","bytes":18982,"sha256":"e2ee4566120e9fd9b6b1bb8c026933eb3fc3e06fcd3081c75e7570bd3f4de845"},{"file":"assets/diagrams/3079cc8803250348.svg","bytes":17784,"sha256":"d872f9744c2cf64f012bec9908d75e127611192e36d82673a7aa9cd7a8b9cb20"},{"file":"assets/interactive-diagrams/unit-summaries/M22101.html","bytes":819678,"sha256":"be4f4157e8f78a1a93ec7df48951a804bdc9410e9c008b825b574f955c9a55da"},{"file":"materials/M22101.json","bytes":27034,"sha256":"d843e5a8565c7fb6762b264d29b7727ccb2da1a5780dd0a9e48ec1e2572003c9"}],"bytes":883478},{"topicCode":"M22102","title":"智慧設備管理維護與製程大數據","assets":[{"file":"assets/diagrams/d0af770d2508c0c2.svg","bytes":18584,"sha256":"8c0f6eba0f491d9ecf95d7fd07148db55054043685beb3d2cc3453096d27f474"},{"file":"assets/interactive-diagrams/unit-summaries/M22102.html","bytes":819029,"sha256":"cdbb49937fac17085b20eb7000153b9323716829312fb0c87b8b236db508591f"},{"file":"materials/M22102.json","bytes":50262,"sha256":"63440ea51cca33a2ece0b72e76f4147a0f13833cb78848d3da2e736cb60e2ed6"}],"bytes":887875},{"topicCode":"M22201","title":"感測器、機器視覺與機器人整合","assets":[{"file":"assets/diagrams/6d3aab4d775d12ad.svg","bytes":13999,"sha256":"84fb3d6f5e803258e7ce5928b32b53150d9ea880093df210cda5e6b9a8c93e57"},{"file":"assets/diagrams/a098ae3fb04949e9.svg","bytes":26000,"sha256":"335cccd19dce7b51b4b666932e017d263a9aecb90488ac26b852ccf897ff7fd7"},{"file":"assets/diagrams/f6ebc0a3976c0c06.svg","bytes":20547,"sha256":"29061446346645e64e1af29faea27556ac14afe6feac7849ecdc3b3f723a2dd2"},{"file":"assets/interactive-diagrams/unit-summaries/M22201.html","bytes":820134,"sha256":"07fa1bf2664ffda8e7fa40d93dc2ce985410fe3bee3a5171d18e82f70eab24f8"},{"file":"materials/M22201.json","bytes":37327,"sha256":"8122bbc14a286d26f2220a4bf50449d56f7814685014e90ff4240065849dae4d"}],"bytes":918007},{"topicCode":"M22202","title":"通訊建構、智慧控制與介面管理","assets":[{"file":"assets/diagrams/b2ec020e5266df4e.svg","bytes":17422,"sha256":"e115fc1cff4246b9d5eea90aa0036d9c8b55b364c8adfb468092717beeae19fe"},{"file":"assets/interactive-diagrams/unit-summaries/M22202.html","bytes":819053,"sha256":"e23cf836bc1907e8e752807ab558dbf1d6f09cd1eed2180dc4608dfc98fcdf28"},{"file":"materials/M22202.json","bytes":35158,"sha256":"d45b5eb145f6949745e7c5469751970fa1bd5fa588e402dd410b395b0015338c"}],"bytes":871633},{"topicCode":"M22301","title":"智慧設備操作與效率指標辨識","assets":[{"file":"assets/diagrams/12756f65d28f3e81.svg","bytes":17933,"sha256":"5718145180aea6a1a7d8885383a6adeb1ea9a0a7bfe881311df5b61ade95e429"},{"file":"assets/diagrams/d6544547e0cb1b24.svg","bytes":22817,"sha256":"2321f06fb28e46008d20c4f8f5a009374a9f8ae50141386f309ad28f16941551"},{"file":"assets/interactive-diagrams/unit-summaries/M22301.html","bytes":820075,"sha256":"f0f1fe6153c2e2d9e182611815a75173c94e2f0a3d0c0cdee54d15d84e40141d"},{"file":"materials/M22301.json","bytes":81323,"sha256":"d7b467899c7fcd7945b5b30ff0d5904bdc2dbe081bfdc28da5f75f32b971b300"}],"bytes":942148}];
 ;
 /* Source: offline.js */
 (function () {
@@ -112,23 +112,38 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     if (window.FactoryLocalMaterials) return Promise.resolve();
     if (!local) local = new Promise((resolve, reject) => {
       const script = document.createElement('script'); script.src = 'materials-local.js';
-      script.onload = resolve; script.onerror = () => { local = null; script.remove(); reject(new Error('無法讀取本機講義。')); };
+      const fail = () => { clearTimeout(timer); local = null; script.remove(); reject(new Error('無法讀取本機教材，請重試。')); };
+      const timer = setTimeout(fail, 15000);
+      script.onload = () => { clearTimeout(timer); resolve(); }; script.onerror = fail;
       document.head.append(script);
     });
     return local;
   }
+  function validate(material, data) {
+    if (data.topicCode !== material.topicCode || typeof data.details !== 'string') throw new Error('教材格式不正確。');
+    const expected = material.questionIds || [];
+    if (!expected.length) return;
+    if (!data.questions || !data.notes || Object.keys(data.questions).length !== expected.length) throw new Error('試題說明資料不完整，請重試。');
+    for (const id of expected) {
+      const question = data.questions[id];
+      if (!question || typeof question.details !== 'string' || typeof question.note !== 'string' || !Array.isArray(question.noteIds)) throw new Error('試題說明格式不正確。');
+      for (const noteId of question.noteIds) if (typeof noteId !== 'string' || typeof data.notes[noteId]?.html !== 'string') throw new Error('試題補充資料不完整。');
+    }
+  }
   function load(material) {
-    if (material.details) return Promise.resolve();
+    if (material.details && (!(material.questionIds || []).length || material.questions)) return Promise.resolve();
     if (pending.has(material.topicCode)) return pending.get(material.topicCode);
     const controller = new window.AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
-    const source = location.protocol === 'file:' ? localSource().then(() => ({ topicCode: material.topicCode, details: window.FactoryLocalMaterials[material.topicCode] })) : window.fetch(material.file, { signal: controller.signal }).then(response => {
+    const source = location.protocol === 'file:' ? localSource().then(() => ({ topicCode: material.topicCode, details: window.FactoryLocalMaterials[material.topicCode], ...window.FactoryLocalQuestionBundles?.[material.topicCode] })) : window.fetch(material.file, { signal: controller.signal }).then(response => {
       if (!response.ok) throw new Error('無法載入講義，請確認連線後重試。');
       return response.json();
     });
     const promise = source.then(data => {
-      if (data.topicCode !== material.topicCode || typeof data.details !== 'string') throw new Error('講義格式不正確。');
+      validate(material, data);
       material.details = data.details;
+      material.questions = data.questions || {};
+      material.notes = data.notes || {};
     }).finally(() => { clearTimeout(timeout); pending.delete(material.topicCode); });
     pending.set(material.topicCode, promise);
     return promise;
@@ -141,7 +156,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     load(material).then(() => { if (host.isConnected) context.render(); }).catch(error => {
       if (!host.isConnected) return;
       host.replaceChildren(document.createTextNode(error.message));
-      const retry = document.createElement('button'); retry.className = 'btn'; retry.textContent = '重新載入講義';
+      const retry = document.createElement('button'); retry.type = 'button'; retry.className = 'btn'; retry.textContent = '重新載入內容';
       retry.addEventListener('click', () => { retry.disabled = true; mount(context); }); host.append(retry);
     });
   }
@@ -159,6 +174,10 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
   const DAY = 86400000;
   const catalogs = new WeakMap();
   const MODES = ['mission', 'quick', 'review', 'exam'];
+  const questionRevision = 'questions-2026-11-05', legacyRevision = 'legacy-v1';
+  const revisionOf = (run, state) => run?.questionRevision === legacyRevision ||
+    !run?.questionRevision && state?.questionRevision !== questionRevision ? legacyRevision : questionRevision;
+  const questionFor = (question, run) => run?.questionRevision === legacyRevision ? question?.legacy || question : question;
   const record = value => value && typeof value === 'object' && !Array.isArray(value);
   const finite = (value, max = Number.MAX_SAFE_INTEGER) => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= max ? value : 0;
   function fingerprint(q) {
@@ -229,7 +248,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     const get = type => parts.find(p=>p.type===type).value;
     return `${get('year')}-${get('month')}-${get('day')}`;
   }
-  function emptyState() { return {version:1,xp:0,earnedCorrectIds:[],passedUnits:[],best:{},ledger:{},history:[],active:null,studyDates:[]}; }
+  function emptyState() { return {version:1,questionRevision,xp:0,earnedCorrectIds:[],passedUnits:[],best:{},ledger:{},history:[],active:null,studyDates:[]}; }
   function parseNumber(value) {
     if (value === null || value === undefined || String(value).trim() === '') return null;
     const normalized = String(value).trim().replace(/[０-９]/g,c=>String(c.charCodeAt(0)-65296)).replace(/，|,/g,'').replace(/％/g,'%').replace(/%$/,'').trim();
@@ -244,6 +263,23 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     for(let i=a.length-1;i>0;i--) {const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
     return a;
   }
+  const EXCLUSIONS = [['L114-10', 'L114-11']];
+  function filterExclusions(items, chosen) {
+    const blocked = new Set();
+    for (const q of chosen) for (const pair of EXCLUSIONS) if (pair.includes(q.id)) pair.forEach(x => { if (x !== q.id) blocked.add(x); });
+    return items.filter(q => !blocked.has(q.id));
+  }
+  function pickSafe(candidates, count, random, chosen) {
+    if (count <= 0) return [];
+    const out = [];
+    for (const q of shuffle(candidates, random)) {
+      if (filterExclusions([q], [...chosen, ...out]).length) {
+        out.push(q);
+        if (out.length === count) break;
+      }
+    }
+    return out;
+  }
   function select(bank, spec, random = Math.random) {
     const source = bank;
     const { unique, aliases } = catalog(bank);
@@ -251,13 +287,33 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     if (spec.mode === 'exam') {
       const units = UNITS.filter(u => spec.subject === 1 ? u.startsWith('L11') : u.startsWith('L12'));
       const counts = [9, 9, 8, 8, 8, 8];
-      const selected = units.flatMap((unit,i) => {
-        const count = counts[i] || 8;
-        const pool = bank.filter(q=>q.unit===unit && q.kind==='choice');
-        if(pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
-        return shuffle(pool,random).slice(0,count);
-      });
-      return shuffle(selected,random);
+      const isHardcore = spec.difficulty === 'hardcore' || spec.difficulty === 'hard';
+      const pickedAll = [];
+      for (let i = 0; i < units.length; i++) {
+        const unit = units[i], count = counts[i] || 8;
+        const pool = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        if (pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
+        if (isHardcore) {
+          const picked = [];
+          const tiers = [q => q.skill === 'calculation', q => q.difficulty === 'hard', q => q.skill === 'scenario', () => true];
+          for (const accepts of tiers) {
+            const candidates = pool.filter(q => accepts(q) && !picked.includes(q));
+            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked]));
+          }
+          pickedAll.push(...picked);
+        } else {
+          const calcs = pool.filter(q => q.skill === 'calculation');
+          const scenarios = pool.filter(q => q.skill === 'scenario');
+          const picked = [];
+          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked]));
+          const wantScenarios = Math.min(count - picked.length, Math.min(3, scenarios.length));
+          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked]));
+          const remaining = pool.filter(q => !picked.includes(q));
+          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked]));
+          pickedAll.push(...picked);
+        }
+      }
+      return shuffle(pickedAll, random);
     }
     if (spec.mode === 'review') {
       if (spec.state) return reviewPlan(spec.state, source, spec.now, random).questions;
@@ -269,9 +325,12 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     const limit = spec.mode === 'quick' ? 5 : 10;
     const counts = spec.mode === 'quick' ? {concept:2,scenario:2,calculation:1} : {concept:4,scenario:4,calculation:2};
     const picked = [];
-    for(const [skill,count] of Object.entries(counts)) picked.push(...pool.filter(q=>q.skill===skill).slice(0,count));
+    for(const [skill,count] of Object.entries(counts)) {
+      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked));
+    }
     const ids = new Set(picked.map(q=>q.id));
-    picked.push(...pool.filter(q=>!ids.has(q.id)).slice(0,Math.max(0,limit-picked.length)));
+    const remaining = pool.filter(q => !ids.has(q.id));
+    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked));
     return shuffle(picked.slice(0,limit),random);
   }
   function restore(raw, bank) {
@@ -292,8 +351,8 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
       s.ledger[id] = {attempts,correctCount:Math.min(attempts, Math.floor(finite(entry.correctCount, 1000000))),lastCorrect:entry.lastCorrect,lastSeen:finite(entry.lastSeen),dueAt:finite(entry.dueAt)};
     }
     s.studyDates = [...new Set((Array.isArray(raw.studyDates)?raw.studyDates:[]).filter(d=>typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && !Number.isNaN(Date.parse(d))))].sort();
-    const safeAnswer = (id, answer) => {
-      const q = qmap.get(id);
+    const safeAnswer = (id, answer, revision) => {
+      const q = questionFor(qmap.get(id), { questionRevision: revision });
       if (q?.kind === 'number') return typeof answer === 'string' && answer.length <= 128 ? answer : typeof answer === 'number' && Number.isFinite(answer) ? answer : null;
       return q && hasAnswer(q, answer) ? answer : null;
     };
@@ -302,18 +361,19 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
       if (!record(r) || typeof r.runId !== 'string' || !r.runId.length || r.runId.length > 128 || !MODES.includes(r.mode) || !Array.isArray(r.results) || !r.results.length || r.results.length > 50) continue;
       if (!r.results.every(x => record(x) && known.has(x.id))) continue;
       const seen = new Set();
+      const revision = revisionOf(r, raw);
       const results = r.results.filter(x => !seen.has(x.id) && seen.add(x.id)).map(x => {
-        const answer = safeAnswer(x.id, x.answer);
-        return { id: x.id, answer, correct: correct(qmap.get(x.id), answer) };
+        const answer = safeAnswer(x.id, x.answer, revision);
+        return { id: x.id, answer, correct: correct(questionFor(qmap.get(x.id), { questionRevision: revision }), answer) };
       });
       const count = results.filter(x => x.correct).length, score = Math.round(count / results.length * 100);
       const unitId = UNITS.includes(r.unitId) ? r.unitId : null;
-      history.set(r.runId, {runId:r.runId,mode:r.mode,unitId,subject:[1,2].includes(r.subject)?r.subject:null,total:results.length,correct:count,score,results,earnedXP:finite(r.earnedXP,550),newBadge:r.newBadge === true && r.mode === 'mission' && !!unitId && score >= 80,completedAt:finite(r.completedAt)});
+      history.set(r.runId, {runId:r.runId,questionRevision:revision,mode:r.mode,unitId,subject:[1,2].includes(r.subject)?r.subject:null,difficulty:['standard','hardcore','hard'].includes(r.difficulty)?r.difficulty:null,total:results.length,correct:count,score,results,earnedXP:finite(r.earnedXP,550),newBadge:r.newBadge === true && r.mode === 'mission' && !!unitId && score >= 80,completedAt:finite(r.completedAt)});
     }
     s.history = [...history.values()];
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
-      s.active={id:a.id,mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
+      s.active={id:a.id,questionRevision:revisionOf(a, raw),mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,difficulty:['standard','hardcore','hard'].includes(a.difficulty)?a.difficulty:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
       if (a.mode === 'review' && record(a.reviewTargets)) {
         const entries = new Map(reviewEntries(s, bank)), targets = new Set();
         s.active.reviewTargets = {};
@@ -328,7 +388,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
       }
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
-        const answer = safeAnswer(id, value);
+        const answer = safeAnswer(id, value, s.active.questionRevision);
         if(answer !== null) s.active.answers[id]=answer;
       }
     }
@@ -347,7 +407,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     const earnedContent = new Set([...earned].map(id => aliases.get(id)));
     let earnedXP=0;
     const results=ids.map(id=>{
-      const q=map.get(id), answer=run.answers[id], ok=correct(q,answer);
+      const q=questionFor(map.get(id),run), answer=run.answers[id], ok=correct(q,answer);
       const ledgerId = aliases.get(id);
       const old=previousEntries.get(ledgerId) || {attempts:0,correctCount:0};
       s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
@@ -374,7 +434,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     s.earnedCorrectIds=[...earned];
     s.xp+=earnedXP;
     const key=dateKey(now);if(!s.studyDates.includes(key))s.studyDates.push(key);
-    const report={runId:run.id,mode:run.mode,unitId:run.unitId,subject:run.subject,total:ids.length,correct:count,score,results,earnedXP,newBadge,completedAt:now};
+    const report={runId:run.id,questionRevision:run.questionRevision||questionRevision,mode:run.mode,unitId:run.unitId,subject:run.subject,difficulty:run.difficulty||null,total:ids.length,correct:count,score,results,earnedXP,newBadge,completedAt:now};
     s.history.push(report);s.history=s.history.slice(-100);s.active=null;
     return {state:s,report};
   }
@@ -386,7 +446,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,questionRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
 });
 ;
 /* Source: persistence.js */
@@ -954,10 +1014,10 @@ window.FactoryMath = { render: renderMathFormulas, format: formatMathFallback, c
 function create(ctx) {
 const { E, bank, qmap, go, save, toast, modal, closeModal, icon } = ctx;
 function runQuestions() {
-    return (ctx.state.active?.questionIds || []).map(id => qmap.get(id)).filter(Boolean);
+    return (ctx.state.active?.questionIds || []).map(id => E.questionFor(qmap.get(id), ctx.state.active)).filter(Boolean);
   }
 
-function start(mode, unitId = null, subject = null, force = false) {
+function start(mode, unitId = null, subject = null, force = false, difficulty = null) {
     if (!ctx.canEdit()) return;
     if (ctx.state.active && !force) {
       modal(`
@@ -966,7 +1026,7 @@ function start(mode, unitId = null, subject = null, force = false) {
         <p>可以接著完成目前作答，或放下未交卷的答案，開啟新的挑戰。已交卷的成績與徽章會保留。</p>
         <div class="button-row">
           <button class="btn btn-primary" data-action="resume">繼續原任務</button>
-          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}">開始新任務</button>
+          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}" data-difficulty="${difficulty || ''}">開始新任務</button>
         </div>
       `);
       return;
@@ -977,7 +1037,7 @@ function start(mode, unitId = null, subject = null, force = false) {
         const plan = E.reviewPlan(ctx.state, bank);
         qs = plan.questions;
         reviewTargets = plan.targets;
-      } else qs = E.select(bank, { mode, unitId, subject, state: ctx.state });
+      } else qs = E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
     } catch (e) {
       toast(e.message);
       return;
@@ -990,8 +1050,10 @@ function start(mode, unitId = null, subject = null, force = false) {
     ctx.state.active = {
       id: crypto.randomUUID ? crypto.randomUUID() : 'r' + Date.now() + Math.random().toString(36).slice(2),
       mode,
+      questionRevision: E.questionRevision,
       unitId,
       subject,
+      difficulty: difficulty || null,
       questionIds: qs.map(q => q.id),
       ...(reviewTargets ? { reviewTargets } : {}),
       answers: {},
@@ -1168,6 +1230,18 @@ document.addEventListener('click', e => {
       case 'clear-library':
         window.FactoryGuide.filterCatalog(true);
         break;
+      case 'question-open':
+        if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) window.FactoryQuestions.remember(b.dataset.question, b.dataset.material);
+        break;
+      case 'question-return':
+        window.FactoryQuestions.returnTo(b.dataset.question, b.dataset.material);
+        break;
+      case 'question-clear':
+        window.FactoryQuestionCatalog.update(true);
+        break;
+      case 'question-page':
+        window.FactoryQuestionCatalog.paginate(Number(b.dataset.page));
+        break;
       case 'close':
         closeModal();
         break;
@@ -1175,10 +1249,10 @@ document.addEventListener('click', e => {
         window.FactoryMedia.retry(b.closest('dialog') || document.getElementById('content'));
         break;
       case 'start':
-        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null);
+        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, false, b.dataset.difficulty || null);
         break;
       case 'force-start':
-        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true);
+        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true, b.dataset.difficulty || null);
         break;
       case 'resume':
         closeModal();
@@ -1225,6 +1299,8 @@ document.addEventListener('click', e => {
     }
   });
 document.addEventListener('change', e => {
+    if (['exam-question-subject', 'exam-question-notes'].includes(e.target.id)) window.FactoryQuestionCatalog.update();
+    if (e.target.id === 'exam-question-jump') go('guide', 'questions', e.target.value);
     if (e.target.id === 'library-group') window.FactoryGuide.filterCatalog();
     if (e.target.id === 'result-only-wrong') {
       document.querySelectorAll('.feedback-card.right').forEach(card => { card.hidden = e.target.checked; });
@@ -1233,6 +1309,7 @@ document.addEventListener('change', e => {
     }
   });
 document.addEventListener('input', e => {
+    if (e.target.id === 'exam-question-search') { window.FactoryQuestionCatalog.update(); return; }
     if (e.target.id === 'library-search') {
       window.FactoryGuide.filterCatalog();
       return;
@@ -1272,10 +1349,11 @@ window.FactoryControls = { bind };
     const active = state.active;
     const activeUnit = units.find(u => u.id === active?.unitId);
     const wrong = E.reviewIds(state, bank).length;
+    const targetUnit = active ? activeUnit : (!wrong ? next : null);
     const subset = units.filter(unit => filter === 'all' || unit.subject === filter);
     return `<section class="dashboard-next" aria-labelledby="next-title">
       <div class="dashboard-next-copy"><div class="eyebrow">${active ? '繼續上次進度' : '下一個學習任務'}</div>
-        <h2 id="next-title">${esc(active ? activeUnit?.title || (active.mode === 'exam' ? '計時模擬測驗' : '到期複習') : wrong ? '今日到期複習' : next.title)}</h2>
+        <h2 id="next-title">${esc(targetUnit ? `${targetUnit.id} · ${targetUnit.title}` : (active ? (active.mode === 'exam' ? '計時模擬測驗' : '到期複習') : '今日到期複習'))}</h2>
         <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題待複習：錯題優先重練，到期題優先換新題。` : esc(next.takeaway)}</p>
         <div class="dashboard-next-actions"><button class="btn btn-primary" data-action="${active ? 'resume' : wrong ? 'review' : 'unit'}" ${active || wrong ? '' : `data-unit="${next.id}"`}>${active ? '繼續作答' : wrong ? '開始今日複習' : '開始本章練習'}${icon('arrow')}</button><a class="text-link" href="#/guide/materials/${activeUnit?.topicCode || next.topicCode}">先讀講義</a></div>
       </div><div class="dashboard-next-symbol" aria-hidden="true">${icon('factory')}<span>FACTORY<br>QUEST</span></div>
@@ -1407,7 +1485,7 @@ function examView(subTab = 'quiz') {
     }
 
     return `
-      <p class="section-description">選擇考試科目，開始 50 題、75 分鐘的計時演練。</p>
+      <p class="section-description">選擇考試科目與難度模式，開始 50 題、75 分鐘的計時演練。</p>
       <div class="exam-grid">
         ${[1, 2].map(s => `
           <section class="exam-card">
@@ -1419,13 +1497,20 @@ function examView(subTab = 'quiz') {
               <span><strong class="number">75</strong><small>分鐘</small></span>
               <span><strong class="number">100</strong><small>分滿分</small></span>
             </div>
-            <p>${s === 1 ? '涵蓋 L111～L116 六大單元，每單元均勻抽題。' : '涵蓋 L121～L126 六大單元，每單元均勻抽題。'}<br>時間到將自動交卷；離開頁面後計時仍會持續。</p>
-            <button class="btn btn-primary" data-action="start" data-mode="exam" data-subject="${s}">${icon('flag')}開始科目${s === 1 ? '一' : '二'}模擬</button>
+            <p>${s === 1 ? '涵蓋 L111～L116 六大單元。' : '涵蓋 L121～L126 六大單元。'}<br>時間到將自動交卷；離開頁面後計時仍會持續。</p>
+            <div class="exam-actions-stack">
+              <button class="btn btn-primary" data-action="start" data-mode="exam" data-subject="${s}" data-difficulty="standard">${icon('flag')}開始全真標準模考</button>
+              <button class="btn btn-danger" data-action="start" data-mode="exam" data-subject="${s}" data-difficulty="hardcore">${icon('flame')}魔鬼高難度衝刺</button>
+            </div>
+            <div class="exam-difficulty-hint">
+              <small><b>標準模考</b>：依真題難度均衡組卷 · 合格 70 分基準</small>
+              <small><b>魔鬼衝刺</b>：高密度鎖定計算、實務情境與易錯陷阱題</small>
+            </div>
           </section>
         `).join('')}
       </div>
       <details class="panel source-panel"><summary>關於練習題與正式考試</summary>
-        <p>本網站題目為依官方範圍設計的原創練習題與實戰題庫，全庫共收錄 476 題。50題／75分鐘用於模擬正式作答節奏；網站的 80 分通關門檻是遊戲規則，正式獲證標準請依當年度簡章判定（雙科平均 70 分以上，任一科不低於 60 分）。</p>
+        <p>本網站題目為依官方範圍設計的原創練習題與實戰題庫，全庫收錄 416 道獨立實戰題目（共 476 筆來源題庫）。50題／75分鐘用於模擬正式作答節奏；網站的 80 分通關門檻是遊戲規則，正式獲證標準請依當年度簡章判定（雙科平均 70 分以上，任一科不低於 60 分）。</p>
         <div class="source-links">
           <a href="https://ipd.nat.gov.tw/ipas/certification/SPE/exam-info" target="_blank" rel="noopener">官方考試資訊 ↗</a>
           <a href="https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources" target="_blank" rel="noopener">官方歷屆試題 ↗</a>
@@ -1504,8 +1589,88 @@ return progressView();
 window.FactoryProgress = { render };
 })();
 ;
+/* Source: explanations.js */
+/* global module */
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.FactoryExplanations = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const groups = {
+    正解解析: 'steps', 正解: 'steps', 解題步驟: 'steps', 破題關鍵: 'focus',
+    干擾項辨析: 'pitfalls', 重點辨析: 'pitfalls', 常見誤算剖析: 'pitfalls',
+    避坑提醒: 'check', 觀念提示: 'check', 結果檢核: 'check',
+  };
+  const marker = new RegExp(`【(${Object.keys(groups).join('|')})】`, 'g');
+  const key = text => text.replace(/[\s。；;•\-*]/g, '');
+  function generic(text) {
+    return /其他選項均為|與題意核心概念不符|數值計算(?:常見干擾陷阱|干擾項)|常見誤算：未扣抵安全庫存/.test(text);
+  }
+  function parse(text = '') {
+    const parts = { focus: [], steps: [], pitfalls: [], check: [] };
+    const matches = [...text.matchAll(marker)];
+    let start = 0, group = 'steps';
+    const seen = new Set();
+    const append = end => {
+      for (const line of text.slice(start, end).split(/\r?\n/)) {
+        const clean = line.trim().replace(/^[•\-*]\s*/, '');
+        if (!clean || generic(clean) || seen.has(key(clean))) continue;
+        seen.add(key(clean)); parts[group].push(clean);
+      }
+    };
+    for (const match of matches) {
+      append(match.index);
+      group = groups[match[1]]; start = match.index + match[0].length;
+    }
+    append(text.length);
+    return parts;
+  }
+  function render({ esc, icon }, question, { answer, order } = {}) {
+    const detail = question.analysis || parse(question.explanation);
+    const focus = (detail.focus?.length ? detail.focus : question.hint ? [question.hint] : [])
+      .filter(line => !detail.steps.some(step => key(step).includes(key(line))));
+    const paragraphs = lines => lines.map(line => `<p class="expl-p">${esc(line)}</p>`).join('');
+    const section = (title, body, type) => body ? `<section class="expl-section expl-${type}"><h4>${title}</h4>${body}</section>` : '';
+    const focusHtml = section('破題關鍵', paragraphs(focus), 'focus');
+    const steps = detail.steps || [];
+    const solution = section(question.skill === 'calculation' || question.kind === 'number' ? '解題步驟' : '正解解析',
+      steps.length > 1 ? `<ol class="expl-steps">${steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol>` : paragraphs(steps), 'solution');
+    let options = '';
+    if (detail.options && question.kind === 'choice') {
+      options = (order || question.options.map((_, index) => index)).map((index, slot) => {
+        if (index === question.answer) return '';
+        const selected = answer === index;
+        return `<li class="expl-option${selected ? ' is-selected' : ''}" data-option-index="${index}"><div><strong>${'ABCD'[slot]}. ${esc(question.options[index])}</strong>${selected ? '<span class="expl-selected">你的選擇</span>' : ''}</div><p>${esc(detail.options[index])}</p></li>`;
+      }).join('');
+      options = `<ul class="expl-options">${options}</ul>`;
+    }
+    const pitfalls = section(options ? '選項辨析' : '重點辨析', options ||
+      (detail.pitfalls?.length ? `<ul class="expl-pitfalls">${detail.pitfalls.map(line => `<li>${esc(line)}</li>`).join('')}</ul>` : ''), 'distinctions');
+    const check = section('結果檢核與遷移', paragraphs(detail.check || []), 'check');
+    return `<div class="explanation-card"><div class="expl-card-head">${icon('bulb')}<strong>試題解析</strong></div>${focusHtml}${solution}${pitfalls}${check}</div>`;
+  }
+  return { parse, render };
+});
+;
 /* Source: view-quiz.js */
 (function () { 'use strict';
+function getOptionOrder(seedString) {
+  let hash = 0;
+  for (let i = 0; i < seedString.length; i++) hash = (hash * 31 + seedString.charCodeAt(i)) >>> 0;
+  const random = () => {
+    hash = (hash + 0x6D2B79F5) >>> 0;
+    let t = Math.imul(hash ^ (hash >>> 15), 1 | hash);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const order = [0, 1, 2, 3];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+}
 function create(ctx) {
 const { E, state, bank, lastReport, qmap, byUnit, fmt, icon, esc, footer, modeName, runQuestions, home } = ctx;
 function quizView() {
@@ -1522,7 +1687,7 @@ function quizView() {
     return `
       <div class="quiz-top">
         <div>
-          <h1>${unit ? unit.room : modeName(run)}</h1>
+          <h1>${run.mode === 'exam' ? (run.difficulty === 'hardcore' ? '魔鬼高難衝刺模擬考' : '全真標準模擬考') : (unit ? unit.room : modeName(run))}</h1>
           <p>${run.unitId ? run.unitId + ' · ' : ''}${modeName(run)} · 答完統一交卷與解析</p>
         </div>
         <div class="button-row">
@@ -1531,7 +1696,8 @@ function quizView() {
           <button class="btn btn-small" aria-label="暫存離開" data-action="nav" data-view="home">${icon('save')}<span>暫存離開</span></button>
         </div>
       </div>
-      ${run.mode === 'exam' ? '<div class="exam-warning">模擬採50題單選、75分鐘。時間到自動交卷，未答題以答錯計；離開頁面後仍持續計時。</div>' : ''}
+      ${run.questionRevision === E.legacyRevision ? '<p class="section-description">此份作答保留原題目與選項；新任務採用新版題庫。</p>' : ''}
+      ${run.mode === 'exam' ? `<div class="exam-warning">${run.difficulty === 'hardcore' ? '【魔鬼挑戰】鎖定高難度考點與陷阱，強化連續計算與實務情境判讀。共 50 題單選、75 分鐘。時間到自動交卷。' : '【全真標準】依單元與題型權重組卷，模擬正式考試節奏。共 50 題單選、75 分鐘。時間到自動交卷。'}</div>` : ''}
       <div class="quiz-status">
         <div class="quiz-status-line">
           <span>已完成 <strong id="answered-count" class="number">0</strong>／${qs.length} 題</span>
@@ -1542,7 +1708,9 @@ function quizView() {
         </div></details>
       </div>
       <form id="quiz-form" novalidate>
-        ${qs.map((q, i) => `
+        ${qs.map((q, i) => {
+          const order = q.kind === 'choice' ? (run?.id && run.questionRevision !== E.legacyRevision ? getOptionOrder(run.id + ':' + q.id) : [0, 1, 2, 3]) : null;
+          return `
           <article id="question-${q.id}" class="question-card">
             <div class="question-meta">
               <span class="question-no number">${String(i + 1).padStart(2, '0')}</span>
@@ -1552,11 +1720,11 @@ function quizView() {
             <h2 id="question-title-${q.id}" tabindex="-1">${esc(q.stem)}</h2>
             ${q.kind === 'choice' ? `
               <div class="options" role="radiogroup" aria-labelledby="question-title-${q.id}">
-                ${q.options.map((o, j) => `
+                ${order.map((origIdx, slotIdx) => `
                   <label class="option">
-                    <input type="radio" name="${q.id}" data-answer="${q.id}" value="${j}" ${answers[q.id] === j ? 'checked' : ''}>
-                    <span class="option-letter">${'ABCD'[j]}</span>
-                    <span>${esc(o)}</span>
+                    <input type="radio" name="${q.id}" data-answer="${q.id}" value="${origIdx}" ${answers[q.id] === origIdx ? 'checked' : ''}>
+                    <span class="option-letter">${'ABCD'[slotIdx]}</span>
+                    <span>${esc(q.options[origIdx])}</span>
                   </label>
                 `).join('')}
               </div>
@@ -1575,7 +1743,8 @@ function quizView() {
               </details>
             ` : ''}
           </article>
-        `).join('')}
+        `;
+        }).join('')}
         <div class="quiz-submit">
           <div>
             <strong>完成後，一次看懂解題關鍵。</strong>
@@ -1588,10 +1757,14 @@ function quizView() {
     `;
   }
 
-function formatAnswer(q, a) {
+function formatAnswer(q, a, runId) {
     if (!E.hasAnswer(q, a)) return '未作答';
-    return q.kind === 'number' ? fmt(E.parseNumber(a)) + ' ' + q.answerUnit : 'ABCD'[a] + '. ' + q.options[a];
+    if (q.kind === 'number') return fmt(E.parseNumber(a)) + ' ' + q.answerUnit;
+    const order = runId ? getOptionOrder(runId + ':' + q.id) : null;
+    const letter = order ? 'ABCD'[order.indexOf(a)] : 'ABCD'[a];
+    return (letter || '') + '. ' + q.options[a];
   }
+
 
 function resultView(id) {
     const r = state.history.find(x => x.runId === id) || lastReport || state.history.at(-1);
@@ -1622,20 +1795,23 @@ function resultView(id) {
         <h2>逐題解析</h2><label><input type="checkbox" id="result-only-wrong">只看錯題</label><span id="result-count" role="status">顯示 ${r.results.length} 題解析</span>
       </div>
       ${r.results.map((item, i) => {
-        const q = qmap.get(item.id);
+        const q = E.questionFor(qmap.get(item.id), r), displayRunId = r.questionRevision === E.legacyRevision ? null : r.runId;
         if (!q) return '';
         return `
           <article class="feedback-card ${item.correct ? 'right' : 'wrong'}">
             <div class="feedback-meta">
               ${icon(item.correct ? 'circlecheck' : 'cross')}
               <span>第${i + 1}題 · ${q.unit} · ${item.correct ? '答對' : '待加強'}</span>
+              ${r.questionRevision === E.legacyRevision ? '<span class="tag tag-green">原版試卷</span>' : ''}
+              ${q.difficulty ? `<span class="tag-diff tag-${q.difficulty}">${q.difficulty === 'hard' ? '🔥 困難' : q.difficulty === 'medium' ? '⚡ 進階' : '🌱 基礎'}</span>` : ''}
+              ${q.skill ? `<span class="tag-skill tag-${q.skill}">${q.skill === 'calculation' ? '📐 計算' : q.skill === 'scenario' ? '🏭 情境' : '💡 觀念'}</span>` : ''}
             </div>
             <h3>${esc(q.stem)}</h3>
             <div class="answer-lines">
-              <div><span>你的答案</span>${esc(formatAnswer(q, item.answer))}</div>
-              <div><span>正確答案</span>${esc(formatAnswer(q, q.answer))}</div>
+              <div><span>你的答案</span>${esc(formatAnswer(q, item.answer, displayRunId))}</div>
+              <div><span>正確答案</span>${esc(formatAnswer(q, q.answer, displayRunId))}</div>
             </div>
-            <p class="explanation">${esc(q.explanation)}</p>
+            ${window.FactoryExplanations.render(ctx, q, { answer: item.answer, order: displayRunId ? getOptionOrder(displayRunId + ':' + q.id) : null })}
             <div class="button-row" style="margin-top:10px">
               <button class="text-link feedback-poster" data-action="poster" data-unit="${q.unit}">${icon('book')}查看${q.unit}複習圖</button>
             </div>
@@ -1977,6 +2153,121 @@ window.FactoryGuideNotes = icon => `
   window.FactoryReadingPosition = { create };
 })();
 ;
+/* Source: guide-question-catalog.js */
+(function () {
+  'use strict';
+  const key = 'factory-exam-catalog-v1', size = 25;
+  const state = { query: '', subject: 'all', notesOnly: false, page: 0 };
+  let context;
+  try {
+    const saved = JSON.parse(window.sessionStorage.getItem(key));
+    if (saved && typeof saved.query === 'string') state.query = saved.query.slice(0, 120);
+    if (['all', 'L11', 'L12', 'L21', 'L22'].includes(saved?.subject)) state.subject = saved.subject;
+    state.notesOnly = saved?.notesOnly === true;
+    if (Number.isInteger(saved?.page) && saved.page >= 0 && saved.page < 8) state.page = saved.page;
+  } catch {}
+  const normalize = text => String(text).normalize('NFKC').trim().toLowerCase();
+  function matches(question) {
+    if (state.subject !== 'all' && question.subject !== state.subject || state.notesOnly && !question.hasNote) return false;
+    const query = normalize(state.query);
+    const id = query.match(/^(l(?:11|12|21|22))[\s-]*0*(\d+)$/);
+    if (id) return normalize(question.subject) === id[1] && question.question === Number(id[2]);
+    const number = query.match(/^(?:第\s*)?0*(\d+)\s*題?$/);
+    if (number) return question.question === Number(number[1]);
+    const text = normalize([question.id, question.concept, question.materialCode, context.DATA.studyMaterials.find(chapter => chapter.topicCode === question.materialCode)?.title].join(' '));
+    return query.split(/\s+/).every(word => text.includes(word));
+  }
+  function results() {
+    const { DATA, esc } = context;
+    const questions = DATA.officialQuestions.filter(matches);
+    state.page = Math.min(state.page, Math.max(0, Math.ceil(questions.length / size) - 1));
+    const start = state.page * size, page = questions.slice(start, start + size);
+    const count = questions.length ? `顯示 ${start + 1}–${start + page.length} / ${questions.length} 題` : '找不到符合的試題';
+    return `<p id="exam-result-count" class="library-result" role="status" tabindex="-1">${count}</p>
+      <div class="exam-result-list">${page.map(question => `<a class="exam-result" href="#/guide/questions/${question.id}" data-action="question-open" data-question="${question.id}">
+        <span class="exam-result-number">${question.subject}<strong>第 ${question.question} 題</strong></span>
+        <span class="exam-result-core">${esc(question.concept)}${question.hasNote ? '<small>有題目用語提醒</small>' : ''}</span><span aria-hidden="true">→</span>
+      </a>`).join('')}</div>
+      ${questions.length ? `<nav class="exam-list-pagination" aria-label="試題清單分頁"><button type="button" class="btn btn-small" data-action="question-page" data-page="${state.page - 1}" ${state.page === 0 ? 'disabled' : ''}>上一頁</button><span>第 ${state.page + 1} / ${Math.ceil(questions.length / size)} 頁</span><button type="button" class="btn btn-small" data-action="question-page" data-page="${state.page + 1}" ${start + size >= questions.length ? 'disabled' : ''}>下一頁</button></nav>` : '<div class="guide-empty"><p>試試題號、章節或核心關鍵字。</p><button type="button" class="btn btn-small" data-action="question-clear">清除篩選</button></div>'}`;
+  }
+  function persist() { try { window.sessionStorage.setItem(key, JSON.stringify(state)); } catch {} }
+  function render(ctx) {
+    context = ctx;
+    const { DATA, esc } = ctx;
+    return `<section class="exam-catalog" aria-labelledby="exam-catalog-title">
+      <a class="reader-back" href="#/guide/materials">全部講義</a><div class="library-intro"><div><div class="eyebrow">115 年第一次 · 公告試題</div><h2 id="exam-catalog-title">從考題核心找到解題方向</h2><p>依原始題號查閱說明，再回到對應章節理解觀念。</p></div><span>${DATA.officialQuestions.length} 題</span></div>
+      <div class="exam-search-tools"><div class="library-search"><label class="sr-only" for="exam-question-search">搜尋試題題號或考查核心</label><input id="exam-question-search" type="search" maxlength="120" placeholder="搜尋 L12-7、OEE 或章節名稱" value="${esc(state.query)}"></div>
+      <label class="library-select"><span class="sr-only">試題科目</span><select id="exam-question-subject"><option value="all">全部科目</option>${DATA.officialSubjects.map(subject => `<option value="${subject.code}" ${subject.code === state.subject ? 'selected' : ''}>${subject.code} · ${esc(subject.title)}</option>`).join('')}</select></label>
+      <label class="exam-note-filter"><input id="exam-question-notes" type="checkbox" ${state.notesOnly ? 'checked' : ''}>只看用語提醒</label></div>
+      <div id="exam-results">${results()}</div></section>`;
+  }
+  function update(reset = false) {
+    const host = document.getElementById('exam-results');
+    if (!host) return;
+    const search = document.getElementById('exam-question-search'), subject = document.getElementById('exam-question-subject'), notes = document.getElementById('exam-question-notes');
+    state.query = reset ? '' : search.value; state.subject = reset ? 'all' : subject.value; state.notesOnly = reset ? false : notes.checked; state.page = 0;
+    search.value = state.query; subject.value = state.subject; notes.checked = state.notesOnly;
+    host.innerHTML = results(); persist();
+    if (reset) search.focus();
+  }
+  function paginate(value) {
+    if (!Number.isInteger(value) || value < 0 || value >= 8) return;
+    state.page = value;
+    document.getElementById('exam-results').innerHTML = results(); persist();
+    const count = document.getElementById('exam-result-count'); count.focus({ preventScroll: true }); count.scrollIntoView({ block: 'nearest' });
+  }
+  window.FactoryQuestionCatalog = { render, update, paginate };
+})();
+;
+/* Source: guide-questions.js */
+(function () {
+  'use strict';
+  const originKey = 'factory-exam-origin-v1';
+  let origin = null, pendingReturn = null;
+  const valid = value => value && /^L(?:11|12|21|22)-\d{1,2}$/.test(value.question) && /^M\d{5}$/.test(value.material);
+  try { const saved = JSON.parse(window.sessionStorage.getItem(originKey)); if (valid(saved)) origin = saved; } catch {}
+  function remember(question, material) {
+    origin = valid({ question, material }) ? { question, material } : null;
+    try { window.sessionStorage.setItem(originKey, JSON.stringify(origin)); } catch {}
+  }
+  function returnTo(question, material) { if (valid({ question, material })) pendingReturn = { question, material }; }
+  function restore(ctx) {
+    if (!pendingReturn || location.hash !== `#/guide/materials/${pendingReturn.material}`) return;
+    const row = document.getElementById(`exam-core-${pendingReturn.question}`);
+    if (!row) return;
+    pendingReturn = null;
+    ctx.readingPosition.jump(row);
+  }
+  function render(ctx) {
+    const { DATA, selectedTopic, esc } = ctx;
+    if (!selectedTopic) return window.FactoryQuestionCatalog.render(ctx);
+    const question = DATA.officialQuestions.find(item => item.id === selectedTopic);
+    if (!question) return '<div class="guide-empty"><h2>找不到這道試題</h2><p>請依公告原始題號重新選擇。</p><a class="btn" href="#/guide/questions">返回試題說明</a></div>';
+    const chapter = DATA.studyMaterials.find(material => material.topicCode === question.materialCode);
+    const subject = DATA.officialSubjects.find(subject => subject.code === question.subject);
+    const payload = chapter.questions?.[question.id];
+    const own = DATA.officialQuestions.filter(item => item.subject === question.subject), index = own.indexOf(question);
+    const adjacent = (offset, label) => {
+      const next = own[index + offset];
+      return next ? `<a class="reader-next" href="#/guide/questions/${next.id}"><small>${label} · 第 ${next.question} 題</small><strong>${esc(next.concept)}</strong></a>` : '<span></span>';
+    };
+    const chapterLink = (id, code, title) => `<a class="btn btn-small" data-action="question-return" data-question="${id}" data-material="${code}" href="#/guide/materials/${code}">${esc(title)}</a>`;
+    const returnLink = origin && DATA.studyMaterials.some(material => material.topicCode === origin.material) ? chapterLink(origin.question, origin.material, '返回原章節位置') : '';
+    const notes = payload ? payload.noteIds.map(id => chapter.notes[id]).filter(Boolean) : [];
+    const content = payload ? `<div class="exam-answer"><span>公告答案</span><strong>${question.officialAnswer}</strong><p>以本題條件與公告選項為準</p></div>
+      ${payload.note ? `<aside class="exam-caveat" aria-label="題目用語提醒"><strong>題目用語與適用界線</strong><p>${esc(payload.note)}</p></aside>` : ''}
+      ${payload.details}
+      ${notes.length ? `<details class="exam-context"><summary>相關情境與原段落補充<span>${notes.length} 則</span></summary><p class="muted">保留相關題目的共同情境，供需要時延伸對照。</p>${notes.map(note => `<section><h4>${esc(DATA.studyMaterials.find(material => material.topicCode === note.materialCode)?.title || '')} · ${esc(note.heading)}</h4>${note.html.startsWith('<li') ? `<ul>${note.html}</ul>` : note.html}</section>`).join('')}</details>` : ''}` : `<div data-material-loading="${chapter.topicCode}" role="status">載入本題說明…</div>`;
+    return `<div class="reading-page exam-reading"><a class="reader-back" href="#/guide/questions">全部公告試題說明</a>
+      <header class="reader-heading"><div class="eyebrow">${question.subject} · 115 年第一次 · 第 ${question.question} 題</div><h2 id="exam-question-title">${esc(question.concept)}</h2><p>連結考查核心、解題步驟與本章知識。</p>
+      <div class="button-row">${returnLink}${chapterLink(question.id, question.materialCode, `本題章節：${chapter.title}`)}<a class="btn btn-small" href="${esc(subject.source)}" target="_blank" rel="noopener">對照公告試題 PDF</a>${chapter.unitId ? `<a class="btn btn-small" href="#/unit/${chapter.unitId}">本章練習</a>` : ''}</div></header>
+      <article class="reader-article material-content" aria-labelledby="exam-question-title">${content}</article>
+      <div class="exam-question-jump"><label for="exam-question-jump">${question.subject} 題號</label><select id="exam-question-jump">${own.map(item => `<option value="${item.id}" ${item.id === question.id ? 'selected' : ''}>第 ${item.question} 題 · ${esc(item.concept)}</option>`).join('')}</select></div>
+      <nav class="reader-pagination" aria-label="同科試題導覽">${adjacent(-1, '上一題')}${adjacent(1, '下一題')}</nav></div>`;
+  }
+  window.FactoryQuestions = { render, remember, returnTo, restore };
+})();
+;
 /* Source: guide.js */
 (function () {
   'use strict';
@@ -1996,6 +2287,7 @@ window.FactoryGuideNotes = icon => `
     return `
       <section class="guide-library" aria-labelledby="library-title">
         <div class="library-intro"><div><div class="eyebrow">CHAPTER COLLECTION</div><h2 id="library-title">從一個章節開始</h2><p>依考試科目循序閱讀，或搜尋想複習的主題。</p></div><span>${count} 篇講義</span></div>
+        <p><a class="btn btn-small" href="#/guide/questions">115 年第一次公告試題說明</a></p>
         <div class="library-filters">
           <div class="library-search"><label for="library-search" class="sr-only">搜尋講義</label>${icon('search')}<input id="library-search" type="search" placeholder="搜尋章節、關鍵字或單元代碼" value="${esc(libraryState.query)}" autocomplete="off"></div>
           <label class="library-select"><span class="sr-only">篩選講義分類</span><select id="library-group"><option value="all">全部分類</option>${groups.map(g => `<option value="${g.id}" ${libraryState.group === g.id ? 'selected' : ''}>${g.name}</option>`).join('')}</select></label>
@@ -2046,7 +2338,8 @@ window.FactoryGuideNotes = icon => `
     const { DATA, footer, selectedTopic } = context;
     const subView = tabs.includes(context.subView) ? context.subView : 'materials';
     let content;
-    if (subView === 'glossary') content = glossary(context);
+    if (context.subView === 'questions') content = window.FactoryQuestions.render(context);
+    else if (subView === 'glossary') content = glossary(context);
     else if (subView === 'materials' && !selectedTopic) content = catalog(context);
     else {
       const code = subView === 'formulas' ? 'APPX01' : subView === 'traps' ? 'APPX02' : selectedTopic;
@@ -2215,7 +2508,8 @@ window.FactoryGuideNotes = icon => `
     if (r.view === 'quiz') { ctx.updateQuizStatus(); ctx.tick(); }
     if (changed && previousPath) {
       document.getElementById('content').focus({ preventScroll: true });
-      const returningToLibrary = /^guide\/materials\//.test(previousPath) && /^guide\/(materials)?\/$/.test(path);
+      const returningToLibrary = /^guide\/materials\//.test(previousPath) && /^guide\/(materials)?\/$/.test(path)
+        || /^guide\/questions\/.+/.test(previousPath) && path === 'guide/questions/';
       window.scrollTo({ top: returningToLibrary ? scrollPositions.get(path) || 0 : 0, behavior: 'instant' });
     } else if (!changed) {
       const target = filterValue !== null ? document.querySelector(`[data-action="filter"][data-filter="${filterValue}"]`) : document.getElementById(focusId);
@@ -2223,6 +2517,7 @@ window.FactoryGuideNotes = icon => `
     }
     previousPath = path;
     ctx.readingPosition.mount();
+    window.FactoryQuestions.restore(ctx);
     clearTimeout(enhancementTimer);
     const token = ++renderToken;
     enhancementTimer = setTimeout(() => enhance(token), 0);

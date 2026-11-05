@@ -4,5 +4,8 @@ node_modules/
 *.tar.gz
 scripts/*.cjs
 !scripts/build-materials.cjs
+!scripts/prepare-exam-content.cjs
+!scripts/exam-analysis.cjs
+!scripts/question-explanations.cjs
 test-results/
 playwright-report/

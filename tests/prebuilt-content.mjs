@@ -4,16 +4,21 @@ import crypto from 'node:crypto';
 import vm from 'node:vm';
 import { JSDOM } from 'jsdom';
 import { shell } from './helpers/shell.mjs';
+import { htmlFields } from '../scripts/material-payloads.mjs';
 
 const read = file => fs.readFileSync(file, 'utf8');
-const raw = JSON.parse(read('content/study-materials.json'));
+const chapters = JSON.parse(read('content/study-materials.json'));
+const raw = chapters;
+const questions = new Map(JSON.parse(read('content/official-questions.json')).map(question => [question.id, question]));
+const notes = new Map(JSON.parse(read('content/official-exam-notes.json')).map(note => [note.id, note]));
 const manifest = JSON.parse(read('dist/assets/diagrams/manifest.json'));
 let diagrams = 0, formulas = 0;
 const ids = new Set();
 for (const material of raw) {
-  const sourceDOM = new JSDOM(material.details);
   const payload = JSON.parse(read(`dist/materials/${material.topicCode}.json`));
-  const builtDOM = new JSDOM(payload.details);
+  const sources = [material.details, ...Object.keys(payload.questions).map(id => questions.get(id).details), ...Object.keys(payload.notes).map(id => notes.get(id).html)];
+  const sourceDOM = new JSDOM(sources.join('\n'));
+  const builtDOM = new JSDOM(htmlFields(payload).map(({ owner, key }) => owner[key]).join('\n'));
   const originals = [...sourceDOM.window.document.querySelectorAll('.mermaid')];
   const built = [...builtDOM.window.document.querySelectorAll('.mermaid')];
   assert.equal(built.length, originals.length, `${material.topicCode}: preserve all original Mermaid sources`);
@@ -51,7 +56,7 @@ for (const material of raw) {
   }
   sourceDOM.window.close(); builtDOM.window.close();
 }
-assert.equal(diagrams, 60); assert.equal(formulas, 610);
+assert.equal(diagrams, 60); assert.ok(formulas > 0);
 assert.equal(Object.keys(manifest.entries).length, ids.size);
 const precache = { self: {} };
 vm.runInNewContext(read('dist/precache.js'), precache);

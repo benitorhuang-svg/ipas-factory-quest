@@ -1,140 +1,69 @@
-# Factory Quest 專案優化稽核
-
-> 本文保留 2026-11-04 實作前的稽核快照。後續修正、效能數字及驗證範圍見 [深度優化紀錄](OPTIMIZATION.md)。
+# Factory Quest 發布前專案審查
 
 ## 1. 專案基本資訊
 
-- 稽核日期：2026-11-04；範圍：目前工作目錄，包含既有尚未提交的整合與介面修改。
-- 實際產品：Factory Quest 初級兩科學科備考 PWA；執行入口為 `dist/index.html`。
-- 技術：HTML、CSS、Vanilla JavaScript、LocalStorage、Service Worker；Mermaid、KaTeX 為站內資源。
-- 工具：npm／package-lock.json，Node.js >=22.13.0；開發依賴 ESLint、jsdom。
-- `content/source-project/` 是保存的 TypeScript/Vite 來源，不是目前網站啟動入口。
-- 啟動：`python -m http.server 8000 --directory dist`，開啟 localhost:8000。
-- 檢查：`npm run lint`、`npm test`；建置：`npm run build`。
-- 本次已執行：lint 零警告通過、八個 test 腳本全部通過，以及唯讀資料／資產統計與無害 HTML 注入重現。
-- 本次未執行：build、套件安裝、格式修正、瀏覽器 E2E、手機／PWA 安裝與線上部署驗收。build 會覆寫 content 與 dist，故不在此次唯讀檢查中執行。
-- 唯一寫入為本報告；保留原本工作目錄修改。舊報告的 Vite 入口與「尚無作答功能」判斷已不適用。
+- 日期：2026-11-05。範圍：main 上相對正式版本 12f5f40 的全部產品修改；scratch 臨時檔不發布。
+- 實際入口是 dist/index.html；content/source-project/ 是保存來源。先前 2026-11-04 稽核另存 [歷史快照](PROJECT_AUDIT_2026-11-04.md)。
+- 純靜態 HTML／CSS／Vanilla JS PWA，使用 LocalStorage、Service Worker、本機 Mermaid／KaTeX。Node >=22.13.0、npm、ESLint、jsdom、Playwright、sharp。
+- 啟動：python -m http.server 8000 --directory dist。建置：npm run build；檢查：npm run lint、npm test、npm run test:browser、npm audit。
+- 本輪已執行差異與資料流審查、依賴稽核、修正後 lint／build、完整 npm test 與瀏覽器測試；測試結果為 53 通過、5 個能力限制跳過、0 失敗。
 
 ## 2. 專案目錄結構
 
-以下省略依賴、發布輸出與 Git 內部目錄；發布程式職責另見架構分析。
-
 ```text
-.github/workflows/             GitHub Pages 部署
+.github/workflows/             先驗證、再發布 GitHub Pages
 content/
-  units.json                  12 個單元
-  questions-subject*.json      272 + 204 筆題目
-  study-materials/             28 篇教材來源模組
-  study-materials.json         教材整合輸出，同時提供部分建置輸入
-  glossary.json                165 筆辭典
-  site-resources.json          視覺資源與 PDF 清單
-  source-integration.json      891 個來源檔案保存紀錄
-  source-project/              另一套專案的保存來源
-docs/                          教材、設計、整合及介面驗收紀錄
-scripts/                       教材建置、預快取、來源整合與舊診斷工具
-tests/                         資料、路由、作答、閱讀、資產與模擬 SW 測試
-package.json                   現行命令與開發依賴
-eslint.config.mjs              現行 lint 範圍及規則
+  questions-subject*.json      476 筆題目，416 道不同內容
+  question-explanations*       全部 416 題解析與內容指紋
+  question-legacy.json         上一正式版本題庫快照
+  question-reviews.json        逐題來源與獨立審核狀態
+  official-questions.json      200 題公告試題解析的建置輸出
+  study-materials/             28 篇教材的維護來源
+  source-project/              891 份來源保存紀錄對應檔案
+scripts/                       教材、公式、圖解、外殼與預快取建置
+tests/                        資料、作答、遷移、瀏覽器與原生 PWA 驗證
+docs/                         審查、解析覆蓋與教材說明
+package.json                   唯一日常建置及測試入口
 ```
 
 ## 3. 核心功能推測
 
-由入口、路由及測試可確認程式包含以下功能；本次 DOM 執行不等於實機操作驗收。
+由程式與本輪執行可確認：12 單元任務、快練、錯題與到期複習、兩科 50 題／75 分鐘模擬、標準與高難抽題、XP／徽章、進度備份與匯入、28 篇教材與圖鑑、200 題公告試題查詢、章節離線及安全更新。這些是網站能力，不代表正式試題或人工審題已全覆蓋。
 
-- 12 單元任務、5 題快練、錯題複習、XP／徽章。
-- 兩科各 50 題、75 分鐘模考，暫存作答及到時交卷。
-- 28 篇教材、165 筆辭典、公式／易錯觀念、9 份 PDF。
-- 單元圖鑑、Mermaid／KaTeX、互動圖 iframe、閱讀位置接續。
-- 本機進度保存與 JSON 備份匯入／匯出。
-- PWA 外殼預快取，圖片／PDF／互動頁按需快取。
-
-「476 筆題目」是記錄數；本次依題幹、類型、選項、答案、容差與單位比較，只得到 416 種不同題目，詳見風險。
+模擬題池 396 道選擇題全部有正解思路、逐選項理由與檢核；20 道數值題另有計算及誤算解析。60 筆共用內容的來源 ID 保留，不重複抽題或重複給同內容首次答對 XP。
 
 ## 4. 架構分析
 
-- **啟動與路由**：`dist/index.html` 依序載入 24 個站內腳本、12 份樣式；`app.js` 解析 hash，組合各 view，透過 `window.Factory*` 互通。
-- **資料流**：教材 TS 字串 → `scripts/build-materials.cjs` → `content/study-materials.json`／`dist/data.js` → UI；題庫、辭典及資源清單亦併入 data.js。
-- **狀態**：`engine.js` 負責抽題、復原、計分與進度；`session.js` 處理任務生命週期；`app.js` 把整份狀態寫入 LocalStorage。
-- **分層**：頁面已拆為 view 模組，另有彈窗、閱讀定位、圖表、公式與資產載入模組；目前根層執行 JS/CSS 均未超過 300 行。
-- **外部邊界**：主要學習流程未見後端 API；使用者匯入 JSON、教材 HTML、同源互動 iframe、Service Worker 快取是主要信任邊界。
-- **PWA**：`build-precache.mjs` 對外殼與 SW 計算版本；103 個預快取資產，8,146,316 bytes；本次重算版本與現有清單一致。
-- **測試**：八個 Node 腳本涵蓋題庫／計分、891 個來源雜湊、60 張圖、610 個公式、路由與作答流程；畫面幾何、dialog 及 SW 多為 jsdom／模擬事件。
+- content/shell-assets.json 管理 33 個腳本及 16 份樣式來源，建置合併為 2 個腳本請求與 1 個樣式請求；不是直接修改 bundle。
+- 教材 TS → build-materials → 按章 JSON；公告解析與補充按章共用。固定來源摘錄須通過原文核對。HTTP／file URL 使用相同已驗證章節內容，失敗不覆蓋有效資料。
+- question-explanations.cjs 核對全部題目存在、各選項理由及題目指紋，再併入 data.js。缺題或過期解析阻止建置。
+- engine.js 處理抽題、計分與存檔白名單；session.js 處理作答生命週期；persistence.js 提供 Web Locks、衝突通知與延遲保存。
+- 每份作答與歷史報告記錄 questionRevision。無版本的既有資料沿用正式版 12f5f40 的題目快照；舊索引不會套到新選項。新任務使用新題庫與固定種子的選項洗牌。
+- 外部邊界是進度 JSON、受控教材 HTML、同源互動資產與快取；匯入欄位驗證、文字 escape、查詢狀態白名單與請求生命週期均納入檢查。
+- PWA 分離不可變外殼與內容快取、以內容雜湊命名版本、等待舊分頁結束才接管；章節資產下載可取消、續傳及驗證雜湊。
 
 ## 5. 目前風險
 
-| 優先 | 類別 | 證據、機制與影響 |
+| 優先 | 發現與證據 | 本輪處理／實際限制 |
 | --- | --- | --- |
-| P0 | 匯入安全／正確性 | `dist/engine.js:67` 原樣保留大部分 history 欄位；`view-quiz.js:96`、`view-progress.js:28` 直接插入 unitId 等值。無害的 b 標記可穿過 restore 並生成 DOM，已證實 HTML 注入；未測試執行惡意腳本。使用者須先匯入特製備份才會觸發，存在 DOM XSS 風險。 |
-| P1 | 題庫品質／評量 | 476 筆包含 40 組完全重複題，多出 60 筆；例如 L111-B01／B05／B09。抽題與 XP 以 ID 區分，同一內容可能在同次測驗出現多次，亦可被計為不同題目首次答對。 |
-| P1 | 發布可靠性 | `.github/workflows/deploy.yml` 直接上傳 dist，沒有 Node／npm ci／lint／build／test，也沒有 PR 驗證；本機通過不代表之後每次部署會驗證。 |
-| P1 | 更新生命週期 | `dist/sw.js:17` install 後立即 skipWaiting，activate 時 claim 並移除可清理舊外殼。新 SW 可接管舊頁面，延後載入資產可能跨版本；此為程式與生命週期推論，尚未在兩版本瀏覽器重現。 |
-| P1 | 實機驗證缺口 | 現有測試沒有實際瀏覽器排版與原生 SW；`docs/UI_REDESIGN.md` 亦列有手機、200% 縮放、dialog 焦點、離線與更新待驗項目。 |
-| P2 | 載入／容量 | 發布資產共 95,945,848 bytes，data.js 989,850 bytes，Mermaid 5,575,485 bytes 且列入預快取；多張 PNG 約 2–2.76 MB。按需執行 Mermaid 已做好，但首次 SW 安裝仍會下載它；數字皆為原始檔大小，不是網路壓縮傳輸量。 |
-| P2 | 快取管理 | 內容快取長期保留、未見容量預估／內容離線清單／使用者管理介面。現有 quota fallback 能維持回應，但無法讓學習者掌握哪些章節已備妥。 |
-| P2 | 存檔一致性 | `app.js` 在每次答案 input 同步序列化整份狀態，storage 事件直接取代目前狀態。多分頁同時作答可能覆寫彼此進度；本次僅靜態判讀，未做競態重現。 |
-| P2 | 學習效果 | `engine.js:90` 寫入 dueAt，但 review 抽題只使用最後答錯的 ID；答對題到期不會回到複習。首頁建議主要依未通關／最佳分數，未使用到期日及近期弱點。 |
-| P2 | 內容治理 | 476 筆皆未提供 source、sourceUrl、reviewedAt、version、competencyId、difficulty 欄位。現有單元對應可用，但無法逐題追溯出處與能力覆蓋；不表示每題答案有錯。 |
-| P2 | 維護性 | 教材建置同時讀寫 study-materials.json，與 TS 來源形成雙重維護；global 載入次序由 HTML 維持。ESLint 排除 engine.js、validate.cjs 與大部分舊 CJS；`scripts/rebuild-clean.cjs` 335 行，且多個舊建置入口仍在。 |
+| P1，已修 | 高難模式先合併優先題與普通題再全體洗牌。合成題庫有足夠高難題時，舊碼仍抽到 24 道普通題。 | engine.select 改成依計算、高難、情境、一般題分層補足。新增 600 次真題抽題及合成候選池回歸，核對配額、排除對與不足時補題。 |
+| P1，已修 | 437 筆選擇題的文字或順序相對正式版變動；舊答案以數字索引儲存，原本直接用新題重算會誤判。 | 保存 476 筆原題快照，逐份作答辨認版本。原題、原選項、原答案、歷史分數及未交卷作答沿用原卷。全 476 題逐題測遷移、重載與計分。 |
+| P2，已修 | 補抽 0 題仍洗牌及走訪所有候選；最後截斷保住配比，但產生無效抽樣及亂數消耗。 | pickSafe 在 count <= 0 時立即返回；配比回歸保持通過。 |
+| P2，內容覆核 | 三道內容修正已登記 pending，其他既有審核標記不代表本輪新增獨立人工審核。 | MRP 核心輸入答案、待驗庫存選項、ISA-95 Level 0／1 用語已修正並保留題號。仍需獨立專業覆核，不以程式測試宣稱人工審查完成。 |
+| P2，實機範圍 | 自動測試涵蓋 Chromium／WebKit、模擬網路及 Chromium 原生 SW，不等於所有手機安裝與儲存配額情境。 | 保留明確的能力跳過項；不把桌面測試外推為實機保證。 |
 
-匯入修正應同時做欄位白名單、型別／有限數值驗證與輸出編碼；一般文字優先使用 textContent，富 HTML 才需清理。此建議依據 [OWASP XSS 防護指南](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)。
-
-新 SW 接管舊頁面的機制可參考 [Service Worker lifecycle](https://web.dev/articles/service-worker-lifecycle)；本報告未把該風險當成已重現的現場故障。
+本輪依賴稽核為 0 個已知漏洞。來源保存檔不做格式化；scratch 留在本機，不納入提交。發布前另檢查暫存檔、密鑰模式及 staged 來源雜湊。
 
 ## 6. 優化建議
 
-**立即處理**
+本輪阻擋發布的抽題與舊進度解讀問題已修正；不引入框架遷移。中期維護應持續保留題庫版本、逐題解析缺漏阻擋、按章資料共用及原始來源證據。題庫快照增加外殼原始大小，是保留既有作答的明確取捨；若將來拆成按需載入，須先維持首次離線開啟舊報告的能力。
 
-1. 修補進度匯入，拒絕或正規化非預期欄位；成績頁與紀錄頁不得把匯入文字當 HTML。補無害標記、null results、非法數值及正常備份回歸案例。
-2. 建立題目內容指紋與 canonical ID；保留舊 ID 對照，先決定替換重複題或合併策略，避免直接刪掉 60 筆而損壞舊存檔及 XP。
-3. 加入 PR／部署驗證，順序為 npm ci → lint → build → test，全部通過後才上傳同次建置產物。現有測試依賴發布檔，故 build 應先於 test。
-4. 更新策略延後至作答結束或使用者同意重新載入；加入兩版本、兩分頁、延後載入圖解與公式的真實瀏覽器測試。
-
-**中期重構與產品改進**
-
-- 建立「今日應複習」：依 dueAt 納入答對但已到期題目；錯題與薄弱能力優先，讓首頁建議可解釋。
-- 圖鑑使用縮圖與 WebP／AVIF，保留原圖給放大閱讀；拆分教材資料，先量測再決定 chunk 粒度。大檔不應只依靠延遲執行改善安裝成本。
-- 提供章節離線下載、完成／缺漏清單、容量資訊及可取消操作；圖片與互動頁是否已下載要分開計算。可用 [Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API) 估計容量，但不是保證可用空間。
-- 加入分頁 revision 或作答鎖與衝突提示；先證明兩分頁競態，再選擇合併或單一作答頁策略。
-- 宣告每份教材的唯一來源，建置只產生輸出，避免靜默覆寫另一份可編輯來源；標記舊工具用途，不刪除保存資料。
-- 讓 engine 與資料驗證器也納入適當 lint；維護檔維持 300 行以內。僅文件更新不應觸發應用程式格式修正。
-- 為受控教材 HTML／互動 URL 制定可接受來源；iframe 限制需先驗證縮放、匯出與下載能力，避免直接加 sandbox 破壞現有功能。
-
-**長期架構**
-
-- 建立能力點—教材—canonical 題目的覆蓋矩陣，附版本、審核狀態與勘誤紀錄；逐步以資料品質門檻取代單純題數門檻。
-- 若模組依賴持續增加，再逐步改為 ES modules 並加入 JSDoc／checkJs；現況可沿用純靜態部署。
-- 以完成一次「診斷 → 弱項閱讀 → 到期複習 → 模考」的成功率與作答可靠性衡量優化，而非只看頁面數或 XP。
+目前驗證證據：lint 零警告、build 成功、完整 npm test 通過、npm audit 0 個已知漏洞；完整 Chromium／WebKit 測試 53 通過、5 跳過、0 失敗。跳過項為 WebKit 不提供此測試所需的 CDP 節流與原生 SW 測試能力；相應原生離線、更新及節流案例已在 Chromium 通過。來源 891 份 SHA-256 一致，待提交檔案密鑰模式掃描無命中。
 
 ## 7. 下一步任務建議
 
-以下恰為五個可獨立交付的小任務；新增命令列為預定交付，尚未存在。
-
-1. **修補備份匯入與成績輸出**
-   - 目標：匯入資料只能形成合規狀態與文字。
-   - 範圍：engine.restore、progress-store、兩個成績／紀錄 view 及相關測試。
-   - 驗收：無害 HTML 不生成標記；null／非法 history 不拋錯或污染進度；正常匯入、模考、計分冪等仍正確。
-   - 驗證：`npm run lint:fix && npm run lint && npm run build && npm test`。
-
-2. **加入題庫重複檢查與遷移提案**
-   - 目標：明確區分記錄數、不同題目數與舊 ID。
-   - 範圍：新增唯讀指紋檢查器與 40 組對照表；本任務先不刪題。
-   - 驗收：重現 476／416／60；列出重複 ID；提出 earnedCorrectIds、ledger、history、active 的遷移規則。
-   - 驗證：預定 `node scripts/check-question-duplicates.mjs`；現有重複應明確回報為待處理，不冒稱已清零。
-
-3. **建立 GitHub Actions 品質關卡**
-   - 目標：每次部署使用已驗證的建置產物。
-   - 範圍：workflow 與必要的命令說明。
-   - 驗收：PR 執行 ci／lint／build／test；任一失敗阻止發布；deploy 只使用通過檢查的同次產物。
-   - 驗證：`npm ci && npm run lint && npm run build && npm test`；另以 PR 與部署 workflow 執行紀錄確認關卡。
-
-4. **新增兩版本 PWA 更新驗收**
-   - 目標：先重現並限制舊頁被新 SW 接管的風險。
-   - 範圍：瀏覽器測試工具與 A／B 版本靜態 fixture；必要時修正 SW／更新通知。
-   - 驗收：兩分頁之一正在模考時更新不遺失答案；圖表／公式延後載入版本一致；已存與未存內容離線回應符合定義。
-   - 驗證：預定 `npm run test:pwa`；報告需附實際瀏覽器版本、步驟及網路／快取證據。
-
-5. **建立圖鑑縮圖試點與容量基準**
-   - 目標：降低圖鑑預覽成本，保留原圖閱讀品質。
-   - 範圍：先選一個單元，新增縮圖、尺寸資訊與預覽引用；不批次覆蓋原圖。
-   - 驗收：原圖仍可放大；預覽檔小於原圖；390／1440 px 可讀且無新增溢出；報告列出前後實際請求 bytes。
-   - 驗證：`npm run lint:fix && npm run lint && npm run build && npm test`，加上兩種寬度的實際瀏覽器量測。
+1. 三道內容獨立覆核：範圍限 question-reviews 中 pending 題；驗收須有真實審核者、日期及依據；驗證 node scripts/check-content-governance.mjs。
+2. 補充發布版題庫快照流程：範圍限題庫改版與版本文件；驗收能辨認舊／新作答且不重複遷移；驗證 node tests/question-versions.mjs。
+3. 持續防守高難抽題：範圍限候選優先與配額；驗收保持 50 題、兩科配額及互斥題限制；驗證 node tests/exam-selection.mjs。
+4. 真實手機離線抽查：範圍限選定 iOS／Android 裝置；驗收安裝後重開、離線作答與舊報告內容一致；記錄裝置及步驟，不能以自動測試替代。
+5. 分版本追蹤外殼成本：範圍限實際發出的 data.js／bundle；驗收同條件量測首次及重訪位元組與讀取時間，且不破壞舊卷離線；驗證 npm run measure:performance。

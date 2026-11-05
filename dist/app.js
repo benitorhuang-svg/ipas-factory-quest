@@ -115,7 +115,8 @@
     if (r.view === 'quiz') { ctx.updateQuizStatus(); ctx.tick(); }
     if (changed && previousPath) {
       document.getElementById('content').focus({ preventScroll: true });
-      const returningToLibrary = /^guide\/materials\//.test(previousPath) && /^guide\/(materials)?\/$/.test(path);
+      const returningToLibrary = /^guide\/materials\//.test(previousPath) && /^guide\/(materials)?\/$/.test(path)
+        || /^guide\/questions\/.+/.test(previousPath) && path === 'guide/questions/';
       window.scrollTo({ top: returningToLibrary ? scrollPositions.get(path) || 0 : 0, behavior: 'instant' });
     } else if (!changed) {
       const target = filterValue !== null ? document.querySelector(`[data-action="filter"][data-filter="${filterValue}"]`) : document.getElementById(focusId);
@@ -123,6 +124,7 @@
     }
     previousPath = path;
     ctx.readingPosition.mount();
+    window.FactoryQuestions.restore(ctx);
     clearTimeout(enhancementTimer);
     const token = ++renderToken;
     enhancementTimer = setTimeout(() => enhance(token), 0);
