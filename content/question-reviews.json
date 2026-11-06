@@ -2353,7 +2353,7 @@
     },
     {
       "canonicalId": "L111-B04",
-      "fingerprint": "3c78b03317267309628c015f1ae5a298edae4415b9525eac4f01c2e79a83b39a",
+      "fingerprint": "e4dea5ab1939fdaa2e00a45b10ce8543ffa71147a78b80bfa43b02541270b416",
       "unitId": "L111",
       "materialCode": "M11101",
       "sourceFiles": [
@@ -2369,9 +2369,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -2649,7 +2649,7 @@
     },
     {
       "canonicalId": "L111-B26",
-      "fingerprint": "2839ec8054ca8a5e233da67cb78d3495fe046e3d936f6ae66fa37dbbcff09bfa",
+      "fingerprint": "56ba8d0c5c10e5a9c28c846384e7923e8c444aaee622e6e33faff86b331c507e",
       "unitId": "L111",
       "materialCode": "M11101",
       "sourceFiles": [
@@ -2663,9 +2663,9 @@
       ],
       "difficulty": "hard",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -3333,7 +3333,7 @@
     },
     {
       "canonicalId": "L113-B13",
-      "fingerprint": "fc76d593701f1509d4d5ceb4636c447dac4dbc9bc6967ead26e6a0d5e9c79644",
+      "fingerprint": "7c7cd0e1b8c7c04d35a29d06991c73e8a609e4707b9b68b73ccaa85811a922f7",
       "unitId": "L113",
       "materialCode": "M11103",
       "sourceFiles": [
@@ -3347,9 +3347,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -3522,7 +3522,7 @@
     },
     {
       "canonicalId": "L113-B22",
-      "fingerprint": "56fc9fa6e99064aa43c15ffff06e85d4b5b2a60a5f4b2c5c6047ee0ef7ffb0e1",
+      "fingerprint": "3c05342647c237abfe10859bc2a4ea53b1ead18d332210a95dfdd2668dbed9fe",
       "unitId": "L113",
       "materialCode": "M11103",
       "sourceFiles": [
@@ -3536,9 +3536,9 @@
       ],
       "difficulty": "hard",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -3883,7 +3883,7 @@
     },
     {
       "canonicalId": "L114-B16",
-      "fingerprint": "0b3927c65acd5418c8ff3858d202fce1019991136464e693a31a9607491b6d08",
+      "fingerprint": "47991f21f7d236e45c37442476a1e12d41bd21bf22342bdc89b5bcc6b60c7aa6",
       "unitId": "L114",
       "materialCode": "M11201",
       "sourceFiles": [
@@ -3897,9 +3897,9 @@
       ],
       "difficulty": "easy",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -3988,7 +3988,7 @@
     },
     {
       "canonicalId": "L114-B21",
-      "fingerprint": "882b68231701accf8e2b7fee7f51ea86dd0e9c5c59783e5ac0cb68b22e0ba6fe",
+      "fingerprint": "9e4ace3d04b801e087242fa2261a2d00360a94ce00cce91a5a1b9988930e6288",
       "unitId": "L114",
       "materialCode": "M11201",
       "sourceFiles": [
@@ -4002,9 +4002,9 @@
       ],
       "difficulty": "hard",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -4136,7 +4136,7 @@
     },
     {
       "canonicalId": "L115-B02",
-      "fingerprint": "a6b9776ba9638f99bd510380751551861d0ce6bf185cd9f0a4831f326d44f156",
+      "fingerprint": "806f1e4dcb687b8b369c9368e31e80145501b32b025c07e86fcb90316ec3d20d",
       "unitId": "L115",
       "materialCode": "M11202",
       "sourceFiles": [
@@ -4151,9 +4151,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -4180,7 +4180,7 @@
     },
     {
       "canonicalId": "L115-B07",
-      "fingerprint": "9fc41d0abe21e12a0b2c42e733565286c6028a3e3325757714235fb63bc583e5",
+      "fingerprint": "6afcb42f15e9ddfa0d4e8178b84e04faa843e15870d9b16234e27f1df867eeca",
       "unitId": "L115",
       "materialCode": "M11202",
       "sourceFiles": [
@@ -4194,9 +4194,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -4411,7 +4411,7 @@
     },
     {
       "canonicalId": "L115-B18",
-      "fingerprint": "c4b9a218dc937dd5c07f5cb4a3bee05cf5dd1e0fb488748b061da3cd6979c974",
+      "fingerprint": "9b35a1bfbba19e51557c5c8b1cd69d6a14fdd76198278305ca9f401da995fd43",
       "unitId": "L115",
       "materialCode": "M11202",
       "sourceFiles": [
@@ -4425,9 +4425,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -5342,7 +5342,7 @@
     },
     {
       "canonicalId": "L122-04",
-      "fingerprint": "977d2f039c0f658553d43f420718be7c9eb6dc6bd042fda0dcc8cb4f1895c87c",
+      "fingerprint": "4306250116d7b397b18176562426ef11d7126fe789ef1b49fd0af062469b83ae",
       "unitId": "L122",
       "materialCode": "M12102",
       "sourceFiles": [
@@ -5355,9 +5355,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -5742,7 +5742,7 @@
     },
     {
       "canonicalId": "L126-06",
-      "fingerprint": "0622aa47100acc51b083cfa28660466d38917ab4001cee58de89d0bf4d554961",
+      "fingerprint": "6b1a0f5d6b4ee0b27152e003a73525d5a54a2ccffa580f30301af27d64fe4cdc",
       "unitId": "L126",
       "materialCode": "M12203",
       "sourceFiles": [
@@ -5755,9 +5755,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -5922,7 +5922,7 @@
     },
     {
       "canonicalId": "L121-B01",
-      "fingerprint": "107360794c09a0c964606bd4588d1fe0b84cf3ccaa00608f58a2a5ec9039068e",
+      "fingerprint": "a51cf0e06d756ee710a68af538b98ed71d1de1bd428740ed02c6f04f45635981",
       "unitId": "L121",
       "materialCode": "M12101",
       "sourceFiles": [
@@ -5938,9 +5938,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -6096,7 +6096,7 @@
     },
     {
       "canonicalId": "L121-B15",
-      "fingerprint": "5d2bfe1d3c5ff179d48090181ecf1be317c091ecdee7fa3cde4e19f4539ba39e",
+      "fingerprint": "04f11f28986385512982d619ba56834663623964bfd20bf1b7e3be7f7c565c4b",
       "unitId": "L121",
       "materialCode": "M12101",
       "sourceFiles": [
@@ -6110,9 +6110,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -6201,7 +6201,7 @@
     },
     {
       "canonicalId": "L121-B20",
-      "fingerprint": "ff87a98a08bcb5bad30af95525d703ca9da6a6511261be895d8e4b9470e0ac91",
+      "fingerprint": "ef1edc4ebf1c1110bb54de8bd843089cb430dd125eaa09c61082bcee229dbc29",
       "unitId": "L121",
       "materialCode": "M12101",
       "sourceFiles": [
@@ -6215,9 +6215,9 @@
       ],
       "difficulty": "hard",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -6306,7 +6306,7 @@
     },
     {
       "canonicalId": "L121-B25",
-      "fingerprint": "41b642ed878f426f8fc16238c1e537b48b0e0274457e7431d5560eea52e64c41",
+      "fingerprint": "aef2b719d62ab9bf7f9f53425575bb845712cf4a00d4206a6d6f6f410112fa52",
       "unitId": "L121",
       "materialCode": "M12101",
       "sourceFiles": [
@@ -6320,9 +6320,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -6755,7 +6755,7 @@
     },
     {
       "canonicalId": "L122-B27",
-      "fingerprint": "7a582ab7b8b2a206811d9e04ae7f78b388c8eb43c5288ea1dea180fbf98aa9e7",
+      "fingerprint": "85a3b86f0810767930376a75de89bb3c0c93000d0de248c466491cf0efed5dbe",
       "unitId": "L122",
       "materialCode": "M12102",
       "sourceFiles": [
@@ -6769,9 +6769,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -6885,7 +6885,7 @@
     },
     {
       "canonicalId": "L123-B03",
-      "fingerprint": "ab1f13084e2e48448cced47b39a5f00003f376f4e6e5c4ccef19ed85966fc367",
+      "fingerprint": "bb14be93cc2a57a7608e7876c09bdaa812f26e501f4ea47865751d3bae50e4d6",
       "unitId": "L123",
       "materialCode": "M12103",
       "sourceFiles": [
@@ -6901,9 +6901,9 @@
       ],
       "difficulty": "hard",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7140,7 +7140,7 @@
     },
     {
       "canonicalId": "L123-B22",
-      "fingerprint": "0df98870200e05bcc1df7a666b8324d1ba4e4a92b584d3d10966df13aea91692",
+      "fingerprint": "a04f04ae1f898d7d6bbab2245c5783e3be646f7df7d8ab3c0c33cb25f1528d6e",
       "unitId": "L123",
       "materialCode": "M12103",
       "sourceFiles": [
@@ -7154,9 +7154,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7203,7 +7203,7 @@
     },
     {
       "canonicalId": "L123-B25",
-      "fingerprint": "9821361549551e0b4280f568710d1575684465d1fcf56ad167492e26f57ab1aa",
+      "fingerprint": "9d38ef69b6b982f2d48e306cc5f830a95683f3a25cc2870e8458b8c9bdf0a280",
       "unitId": "L123",
       "materialCode": "M12103",
       "sourceFiles": [
@@ -7217,9 +7217,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7245,7 +7245,7 @@
     },
     {
       "canonicalId": "L123-B27",
-      "fingerprint": "d46212356f1390d9cd9bfe4b27ad8b10653e18b5d3b93f26ae43028b71285f50",
+      "fingerprint": "480ead889e2c64449a42821728cd8e1e78a6194b2bf311dab3907edeab27c813",
       "unitId": "L123",
       "materialCode": "M12103",
       "sourceFiles": [
@@ -7259,9 +7259,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7330,7 +7330,7 @@
     },
     {
       "canonicalId": "L124-B02",
-      "fingerprint": "c7862af0af58bac297e0a142e186448376e8c09c73b1aa08a2686e891c18d0ae",
+      "fingerprint": "bf571bab9f94532bd8a74e476624ab9fc75165806bab8e43e6497e97fed7c047",
       "unitId": "L124",
       "materialCode": "M12201",
       "sourceFiles": [
@@ -7345,9 +7345,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7521,7 +7521,7 @@
     },
     {
       "canonicalId": "L124-B14",
-      "fingerprint": "8eb5cbe82820b72f41963ececb54818d9348ad19ae03da1965a6962a45fdbef5",
+      "fingerprint": "348dc85d797d64c767be68ef44e4a38f112fa7694286b2129ae79d6253dc1b93",
       "unitId": "L124",
       "materialCode": "M12201",
       "sourceFiles": [
@@ -7535,9 +7535,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7605,7 +7605,7 @@
     },
     {
       "canonicalId": "L124-B18",
-      "fingerprint": "b67ed2e1589053e455ffb43243dfa136a847051c575fdc3955782efb7eb7c7fe",
+      "fingerprint": "3a23ac118a60b6cc490187e5c2892aacd1a5c104422e336bb2b9c3f9267d3080",
       "unitId": "L124",
       "materialCode": "M12201",
       "sourceFiles": [
@@ -7619,14 +7619,14 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
       "canonicalId": "L124-B19",
-      "fingerprint": "04df7da88065552595a40a8563d03c94d2f31745ce751d6c9f5b07dda12cdec2",
+      "fingerprint": "dc8461369cebbd44c3750d6893de1ceb1d6654c1ccb68f84160fd7cebd5dba3e",
       "unitId": "L124",
       "materialCode": "M12201",
       "sourceFiles": [
@@ -7640,9 +7640,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -7796,7 +7796,7 @@
     },
     {
       "canonicalId": "L125-B03",
-      "fingerprint": "7bad4adbf57392cee644e451d9ca653115674f8c5dab03f32e5adc16495d001e",
+      "fingerprint": "a9a886485eb8cd607fcafecb65f72c93ce84181c5d0b5043c468b2dcdeb7fed6",
       "unitId": "L125",
       "materialCode": "M12202",
       "sourceFiles": [
@@ -7811,9 +7811,9 @@
       ],
       "difficulty": "easy",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -8049,7 +8049,7 @@
     },
     {
       "canonicalId": "L125-B18",
-      "fingerprint": "f0bf053c068032e1868a44f98e31299a3d6a70dbd275982c48590905092f8dda",
+      "fingerprint": "21c01b095d343195e4f771ec7dbae47a12cd6151602264c70d642e4c66298564",
       "unitId": "L125",
       "materialCode": "M12202",
       "sourceFiles": [
@@ -8063,9 +8063,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -8154,7 +8154,7 @@
     },
     {
       "canonicalId": "L125-B23",
-      "fingerprint": "a6bce58329c5ca5c177838542b88825aabbf208c7e9c2f5fa22f272fe83a027b",
+      "fingerprint": "fe99c304838ecd37cd9855bf74d3967c79f55680f01d5d99fac8f79b23928626",
       "unitId": "L125",
       "materialCode": "M12202",
       "sourceFiles": [
@@ -8168,9 +8168,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {
@@ -8218,7 +8218,7 @@
     },
     {
       "canonicalId": "L126-B02",
-      "fingerprint": "48b0e704420a5d131ed955021b3441aecdec4a8dcfdb21153d201fa3388f74fb",
+      "fingerprint": "a3be0c187e2572be320d859550acfe320f65530d8566f7ebf7155b8d669c33d0",
       "unitId": "L126",
       "materialCode": "M12203",
       "sourceFiles": [
@@ -8233,9 +8233,9 @@
       ],
       "difficulty": "medium",
       "review": {
-        "status": "reviewed",
-        "reviewedAt": "2026-11-05",
-        "reviewer": "iPAS-Curriculum-Auditor"
+        "status": "pending",
+        "reviewedAt": null,
+        "reviewer": null
       }
     },
     {

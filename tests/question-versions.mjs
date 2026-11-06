@@ -19,7 +19,9 @@ for (const q of bank) {
   assert.equal(restored.active.questionRevision, E.legacyRevision);
   assert.equal(restored.history[0].score, 100, `${q.id}: old correct answers keep their meaning`);
   assert.equal(restored.active.answers[q.id], original.answer, `${q.id}: draft answers retained exactly`);
-  assert.deepEqual(E.questionFor(q, restored.active), original, `${q.id}: original question, not changed option order`);
+  const historical = { ...E.questionFor(q, restored.active) };
+  delete historical.analysis;
+  assert.deepEqual(historical, original, `${q.id}: original question, not changed option order`);
   const graded = E.grade(restored, restored.active, bank);
   assert.equal(graded.report.score, 100, `${q.id}: old draft grades against original question`);
   assert.deepEqual(E.restore(JSON.parse(JSON.stringify(restored)), bank), restored, 'Revision migration is idempotent');

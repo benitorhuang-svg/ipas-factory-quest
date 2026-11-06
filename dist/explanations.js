@@ -36,7 +36,7 @@
   }
   function render({ esc, icon }, question, { answer, order } = {}) {
     const detail = question.analysis || parse(question.explanation);
-    const focus = (detail.focus?.length ? detail.focus : question.hint ? [question.hint] : [])
+    const focus = (detail.focus || [])
       .filter(line => !detail.steps.some(step => key(step).includes(key(line))));
     const paragraphs = lines => lines.map(line => `<p class="expl-p">${esc(line)}</p>`).join('');
     const section = (title, body, type) => body ? `<section class="expl-section expl-${type}"><h4>${title}</h4>${body}</section>` : '';
@@ -55,8 +55,11 @@
     }
     const pitfalls = section(options ? '選項辨析' : '重點辨析', options ||
       (detail.pitfalls?.length ? `<ul class="expl-pitfalls">${detail.pitfalls.map(line => `<li>${esc(line)}</li>`).join('')}</ul>` : ''), 'distinctions');
-    const check = section('結果檢核與遷移', paragraphs(detail.check || []), 'check');
-    return `<div class="explanation-card"><div class="expl-card-head">${icon('bulb')}<strong>試題解析</strong></div>${focusHtml}${solution}${pitfalls}${check}</div>`;
+    const check = section('本題檢核', paragraphs(detail.check || []), 'check');
+    const references = (detail.references || []).filter(ref => /^https:\/\//.test(ref.url)).map(ref =>
+      `<a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)}</a>`).join('、');
+    const sources = references ? `<p class="expl-p expl-sources">參考依據：${references}</p>` : '';
+    return `<div class="explanation-card"><div class="expl-card-head">${icon('bulb')}<strong>試題解析</strong></div>${focusHtml}${solution}${pitfalls}${check}${sources}</div>`;
   }
   return { parse, render };
 });

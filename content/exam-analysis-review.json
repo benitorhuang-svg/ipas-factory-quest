@@ -1,0 +1,4234 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-06",
+  "reviewer": "Codex",
+  "reviewType": "agent-content-review",
+  "scope": "All canonical project-practice questions; mock exams select choice questions only. This is not independent subject-expert or official certification.",
+  "criteria": [
+    "題幹條件與唯一正解",
+    "公式與單位、分類前提",
+    "正解推理及情境應用",
+    "各錯誤選項理由",
+    "檢核是否切題、提示是否完整",
+    "選項洗牌及舊作答相容性"
+  ],
+  "questions": [
+    {
+      "id": "L111-01",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1a55cd1d29bb05f43960850c06d974bdc362cb5539261e336d12fb44a943c8de",
+      "analysisFingerprint": "0def338085106203274698c4b0fb08fe6edcc8c8ec0a06f96a2724441c1d23bd",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-02",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d9d66d2132d4b3ac8a210a468a63903f9aaf0cc273cbd5ede4daa4f2eeddf00a",
+      "analysisFingerprint": "986f85f3dba5bd7272b4d7e4d9ba7e6030ab7dff9f057dc76d5d9842db99528e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-03",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "edd2a6c3f5695535f6947a5e5ffeca01de45fe7d86e9964ce651f17915df10bc",
+      "analysisFingerprint": "6d1baf45b1abbfc4a345f1567a47b7fe91992c4e96e78159241dc7e0451ff2bb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-04",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "72328e5a4dad03da0978c9883bea80a441c72c98f142f20fa0619db36af4fdd4",
+      "analysisFingerprint": "b70cc9cc5fc6a299895d186a4ba3bcfa4b920b2e47af00a1f3c7f7ae17dc36ab",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-05",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "68e5935aba70997cced86aabd58fd23f90a6a099cc2e93ab81b2aca033516dd1",
+      "analysisFingerprint": "dcd443d0b34d3cbd82beed1505d3b8e62194937decee6df795d1b885d47bd32d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-06",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8b55f23dfe26e03c7a1db48e7045adc1b9c5a4df4fa5f011bcc30c53059cd33a",
+      "analysisFingerprint": "5a1b1c5f8f206fc7e37196ccfa07a13cb5d31a8804778c6a3b3405d3b00706f6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-07",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "025fcbc574927258ecdd827e50e1e8b8a57ad68cbd8a2a29955f5676cc1341dd",
+      "analysisFingerprint": "2de400177dce4bb6ee18601f5bc241b91cdf9417fda7d7f183bc1e19238227de",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-08",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "52b07c81829c585b3baf34d96fd5b1044270899092da71177857b89ea1b1d6d4",
+      "analysisFingerprint": "7f45df471c487d0eeecc2c2feda40b1a651b21dfcaa0f95148c2cb7a9a1ff5a9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-09",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "45e946b4923ae819f496f9d1a2bb2d842b916b128d788616e51619102df52c10",
+      "analysisFingerprint": "c9e5a32712ee32ca26926c08eaad511439e5f777fdc6bc126c810e8412c4b501",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-10",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9b832d02d29afe4ce923037f637b2904935c1a87db49976d9e124150af8ba0e2",
+      "analysisFingerprint": "27f9b59177636c306007c193741fd0a88caa59751f3e8377d2c9e211fdaae8c3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-11",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "107532a96d28cbee82ffd088d3937fcb188658fa4d3c18d84ec34df4d8ccaf8f",
+      "analysisFingerprint": "139e3ccee9f2fd36a4577a65b6477f85be002bf409d90f4fccb406c7b77f9dce",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-12",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0f1db8b1d15fa2e351450c63f8ae851f85be45fb6165c16e686bcae63560b3db",
+      "analysisFingerprint": "e36a86c567c42eb0bbfef7524e639bdeafd2dc001b0aff9931b316cee74d2604",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-13",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5f4325827faf9477f3816be90ed34debb4d6c9b7d9310dec663fb089971de721",
+      "analysisFingerprint": "56e9ed8ee45a35e4f631eaf9012f5699f1db43ca0e7430af45ed7df86cb22d71",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-14",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "26f0cfbb90af7e2286e4f6b9db83ffefc2e4922336c10784055e81cbf70bee05",
+      "analysisFingerprint": "a8ca99d5a018bf6bd85c39989f29c3b75c4751a877fce478636ca6e1f70bb103",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-15",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4086f066b6067d2def3f262431bad213d279191488490dd250254e9dd7a24e0c",
+      "analysisFingerprint": "b3c77fadb41e6c42c4bab08796fb12b76881c6df8e4314dc8d1c4fd155aa77c4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-16",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c83cf37c916eb4057f9726b02d9f80c51e2f0b6e2dae9a20cc465a487f768b23",
+      "analysisFingerprint": "dbcdd53b3f45e86f7b46a0d44aa09bb4facca407bb8e133e4d09e904fcf5ccee",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-17",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0cb944671698209e492e47024b3cdc0eee1a38f23eaec09ce80cfecf11dfba77",
+      "analysisFingerprint": "b7b548677fa9a0001fa7496349f0d4da60ff83448f5da51c4950641188d523d1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-18",
+      "unit": "L111",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "3f95eedee889689bcea8e85a7e41965c372b000f3abedfabf97ea13bc9b65be0",
+      "analysisFingerprint": "565abd3bbd9757c617efb3caef56351d627513ed96961d9216a0b8c327e72860",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-19",
+      "unit": "L111",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "b8fcc291b18e49effcf52cb24183f5867bd1e1b7bbba7af397e4b108e183f7ed",
+      "analysisFingerprint": "18bbc1c984d9320a76b45c76dd57ba2eb88c1f0e001b44370c06322446b4e16a",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-20",
+      "unit": "L111",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "a710f7ea0bcc02b317f17d7994251c51f678fbae93ea5c2827325f71f5a814a1",
+      "analysisFingerprint": "55f856705eb747e4a98d193ad1d79abebdbb6f59d11d41fa9c9a1ed21979cd8e",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-01",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f59ba21d0688c4041f537cfed9d59b200c11dd3ce0de0a2dc84e12b8ddd551c9",
+      "analysisFingerprint": "481881eb524037c8a5da5461226415c474f4ea88b43988045f499b6619fbc79c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-02",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a8f6cec25c1a3c9ea3f046d78d674d1010f069eb858c07f1f9ae26bead7aab95",
+      "analysisFingerprint": "f2d2f48130bf86025fa770f98d0e18cf389b2ab958e37ad14ac022c86c7c8a74",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-03",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "42d910d911ef431d1921651ef8bb492dcf71f76e0131fa5b66dad819c0bf7ff2",
+      "analysisFingerprint": "59e36a55e52f3e8104bf4c957600b8d2027374971f548b9175814fb3221140ff",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-04",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "237d80ccf8578468ce3bfcadba33b1463921a90c7f6f21b14f9697b55f4e5300",
+      "analysisFingerprint": "201a9bdb9e39ab0b575c9da6264912edd0dcccce79bb0a08b29e51ff75163bdb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-05",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a47c65fcb4983349c384976fcfde47136dd8664801e421ea0ace19c7fa49de2a",
+      "analysisFingerprint": "f16abb539a0bc326b1a1b7259f1b069dcb2494c6823310a5042af4cc1e97bb37",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-06",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "08619f6d085e518908a474db67cb60e720e328631204a9d0365a89e31f03702d",
+      "analysisFingerprint": "30daa1c8f3380be21319ddb28b059aabf641bde090ce46710d3bb23fb4eaef5a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-07",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6ccb8e8c41e9b6f471f6b55e3fd43342cf886039de3045c288ac74a1ff8a028f",
+      "analysisFingerprint": "6257d4fbd3bff07efe4072319d1deb4c00922be21a7d4c1ef8c57c441c8946de",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-08",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "51f28cd2b4ccfe669bbb182446483defe7c41c6f4b3a49a3c1c120b0845ca194",
+      "analysisFingerprint": "2f7076ab417582915ed6b70a00d1290c330cf0cd09c0fc0ea5c28f8bce9ed306",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-09",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "506efb8343330ab3ffd268ecee7122eda670baf1564ec525ea79d8d3d8d53062",
+      "analysisFingerprint": "223bc8e249eeb09db12eb595bbe28e8233a97c0fc1bbfd2019c24ad3cdc049b0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-10",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "440ae84b44a9c55334e99a88246659319c57f2cee0772128960bb67cebcbcba0",
+      "analysisFingerprint": "de6573939161840273241fd569bec42b8aec1ac3e958c9daa4e81043ec92f303",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-11",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7f0d1b341ecbce55223cfc0aa103b267eda56bf00403d34cb02d1189ec9ca900",
+      "analysisFingerprint": "e78dfba5f8517ce13e1152f3597093cfd53cc49489c7be5354bddb9680d99700",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-12",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3f215f0b27798e928f8808e53daab3da635c9037ca2d39f86f62205971e2def1",
+      "analysisFingerprint": "8213089171d7952482963b8ddd0176d300489043f8561ef22ec9c2640ecf4b0f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-13",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9e1c647fd0cda6ea88c97dde1bf4dd917d5c157446beaa3c82569464f991baeb",
+      "analysisFingerprint": "7e023019ebaef98059a3e7dfb2a585c9b85af8c42b301f5dcfdf23ad7e9b3b15",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-14",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "74d77efe3e780e2f770fffadaba9fb5516a738c464763a6255aadc566b665723",
+      "analysisFingerprint": "bff2986a0c2ffc3a5ed9cb7dda6b65b666a781b7211b108e2d8817df7ef09688",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-15",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ab0a6ffbfba790b2f1916c1dc570902079e41082a9edc44b7b2a4326bf4021b1",
+      "analysisFingerprint": "63e6c11f3f6443d27b690c5e57d0e0aa70b7f04090929309dac5a14772178dc3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-16",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "36a9bcd8e8df2f3c8cb5ee215a43a1789965cf79f61a3bb7a346818931a3262d",
+      "analysisFingerprint": "0ded45f9452781a662765e103dc89eb6007acb94844e88ee359025572e171ed5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-17",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a25e223dd3978fd37c321bbcbb0d22ee0b1d86a1c991a042cdf9b5d3ab12224e",
+      "analysisFingerprint": "5dbde7a4150307a449b1c8fbf953d66f6aaae906af6bdc23b23904bc07b35dcb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-18",
+      "unit": "L112",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "338589002cf3d9af5c3239a5d2fbe389f49b2454c8d06981e383796f6fb15fa4",
+      "analysisFingerprint": "bbb2ee771860e31ee6ab81e12bcd7b1ba2b6da1eea7114785622103a604ba5bb",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-19",
+      "unit": "L112",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "536073bb57454ed9cd86ebd68839f99154a7e8b362b753ae2218667cfcc0be3f",
+      "analysisFingerprint": "fc00c610e9b99ef41c85d773da066de833a36dcec3a5dbb1f8780b42ac9ff4a3",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-20",
+      "unit": "L112",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "0e5789432108a8f47be17d78943bdbadf2540f720a7ff38329fb194880097400",
+      "analysisFingerprint": "49e9cbf3b4d80940afcc4be0297ce00cbdeb4f62d2cfd452a62b4dfc5232c73c",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-01",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1fab46f027fa2b27889aaf279a415c726ab6e04cee859097d0fb37c40ce1d6d8",
+      "analysisFingerprint": "38af5c936631e2ac586be83837c9798a0d0eaf1d6ad2d2490c27c5d6a9384851",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-02",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4a9cf9c5d5a7c34b3180f52d3ecede09d5426837fd8421da671f4767dddd1817",
+      "analysisFingerprint": "742bb7c209b5d4bb05f97250bdea198f13e1d313ea7f19fbf90d18ae4ade0c3c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-03",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "129123db3fa968cea79597da68680b2b513808803c101a41a3f58b869f25d89d",
+      "analysisFingerprint": "4b86a3553ae929598273915e20b30c8adad0f4e97209d09350cca60bd320183d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-04",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f1e1595bc6a05eb49eedbf51d4b5bff10069096743685e6a88939b46751c4e2c",
+      "analysisFingerprint": "cadbe0d755e47e27592a150cb15f4768a08ca9ee3136605c9ff3d6727f3ba692",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-05",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c27377d8b9db27232a7eaf60e3aef50c21aafe4964a26b9eed3fd4746e6d4fa3",
+      "analysisFingerprint": "b7c086405ed5aba75ac501dc51e12451d036e10b4bb087a83056d302f43a8180",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-06",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "24c3f8b4e8ccf5db21c7d1bd84cdb3efddaa0e8e2bb170f4857833fde5d88fb8",
+      "analysisFingerprint": "41875e2df8c2b7132e3e27a78c3857aa2ffd82340aa95c8a234caa4b96b6340a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-07",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fc54277d19e5ff3cab21e7b9f8ceff6a169669044209d6bcf9cfb19e8d9ae633",
+      "analysisFingerprint": "aa395bd1774aeec7b65fa7c08d16ba85d35f9baee9360e6072ddba25bcc5ae04",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-08",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8b136a32257171e3d2c50de1513ffcb3c89434c77f3665140ec44d297c753724",
+      "analysisFingerprint": "75d7ce7bfbe4427a3efbd40f9ed0b1b740e3f666dee71d3b3a295f279a639e39",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-09",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "dbcf4089acfc6125007461782d48b798cb718fd38063a385c33f374aa89594d0",
+      "analysisFingerprint": "4a409ff5260a98e353f9a13c7ff69635216168232a14ec05bcd1bae5e6a8f5a0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-10",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aa53a3a7d24fc8c41c1ba4d825500f62c1eb5428290b1b5be4872c787fa109f2",
+      "analysisFingerprint": "782af76ec34790d7065f3ae64459b3491bb892bb1f115fef2cce79da7941dec6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-11",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "86edeb3d370af6f737b3a30092bdc5a9aeecf41dfd373d687a80273e9ad9ce0f",
+      "analysisFingerprint": "a02c253eb55570d04b605c6a9bf0f9d9283a767d5ded2fa0e703a6ac0d95abe8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-12",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d9e4abaf58833bb95e3f11b4fe9a89a408ea631537eaece7d3f682e052a9e3a6",
+      "analysisFingerprint": "faa2bcd237c1bc9c4409abe4ed4562fbb95a77ab9c989ec4f8fd3f47fd15f22f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-13",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "93b9f2679ba470222f018bc704efa31b6df6afa7ee5526a97157b56c2f0c10d2",
+      "analysisFingerprint": "49ec9d2fd5b6684c3bf884eea3d347ab376205605a17fa168dab9ef5ddb2fda2",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-14",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a3edcbecc830e8852900a3e5b7e89d75a46beb793ba5a028e1d73f311a5e39c1",
+      "analysisFingerprint": "5a22680fadef8218249d5afd7aff8bff8908de61feeed3600c4968e9cacc0535",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-15",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4209147cf619d80c592027b27e996913c41493ef092c6c41b94fe08fffec00c7",
+      "analysisFingerprint": "95856a1284a8cc2311e58cffe9c449ba5c7a5d05a40017307b60849084ea98d1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-16",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9b00498e3ef9dcdd86008327607051d5a6554b8392eb287adb336a853ca729ba",
+      "analysisFingerprint": "20f169b0bc3d89575915210bd517bd165b3f57f4d75663ccf983d6fbe2d3293f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-17",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5e438d97000fc317f0f69ed64a1c85f723d68f2d2964989715d3184655fa72f9",
+      "analysisFingerprint": "85f5e2051c43e5837ee08ad6d01d05cd5e65af7228f0576edb8096dd7209133d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-18",
+      "unit": "L113",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "6cedd7e027adb49099a385c81b4921c5c509ef12647c3b6bf68869490baee776",
+      "analysisFingerprint": "8118e6503648e81987c794c339b7b424e0e108caa2ca0a901ca86aa8e6bc398b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-19",
+      "unit": "L113",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "c7468c19a99765d73e2207ef55f0ef743cc8108c38c596e0b4be478c31b5f1e9",
+      "analysisFingerprint": "ed3cf7eef1bae0bd10fc097cbec0c5d21a92110fd4748d5759cf66b6d846b614",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-20",
+      "unit": "L113",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "7059f6e82003bb19086cb19ddaa56ea8880f93eba5c2b7bee8df86064ae06d63",
+      "analysisFingerprint": "0b8fd6cfd3b261b7260b437fe6ad7e4b58103495e4517625b3001151d3e30ca8",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-01",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1efa2e9d92490dbee48d0b2cd07e0bc887456838cfb674b217468649eda395b9",
+      "analysisFingerprint": "365dd67c641c534dda202dec7d8f4e2c3c54810a9ec8cb2fd2e58c7bf706c58f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-02",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bad6c6fd1aeca6c1896f94c53bd9d074bc251018507278e511af55c0ec72ae98",
+      "analysisFingerprint": "c91498d31bbb224fa439fec80fa4b879d35eb604973ed987411ff584b7c4ffb5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-03",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "612ebfeaae10105f7f9db02efaa8552b0ebcf40e6fa74996f6a2cd9eccb1777c",
+      "analysisFingerprint": "470d500678181c3f3185eb5cb2ec6efd3c404703cc81d0652d9b95a6e4074853",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-04",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b53fafb147a7fa22c4a38e8377c68ded8cfb1d743a9f184dde99016f900c6f66",
+      "analysisFingerprint": "d1e42c190a918e73b2fb2d31760229a668dbb0bd03989603e6a6b0919eaeacfe",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-05",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "984e1395f53cf62d112064f26812ab54bd3a149ba3a314126f17503a9a33dc86",
+      "analysisFingerprint": "2b209564fc6f5100a32de475f6d10a0caedb121066bb267d5b1e4eac370d4002",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-06",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "945344d35c9bd35a3022a2b1670d81472bfe2e05e0ab5ac5bc62ab4ae622622b",
+      "analysisFingerprint": "9cc7ac0efdbabbed880be64356e74e5186b8dd31976439b9f6c5d60bb4b70d50",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-07",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2b39766668e919c7404f208f695a49634b03538565ff8eb13428e9e1b6a9d104",
+      "analysisFingerprint": "450091b82bac50f33aaa480b94d91281a4bed9940cbf3d7d0e966cf6ff3d32da",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-08",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f58cfc961032575de7e2b50d89e578168a424f89095010ef95e68bfd47649352",
+      "analysisFingerprint": "4c502aedaba135143ef76dadb0157d4a28ad898d9bd326da02879f1923bc2d68",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-09",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e87e16068bf86f507f84ba74ee65b023fac1b200d63e95123f9b74c8313b0402",
+      "analysisFingerprint": "3cfbf5f07e63315ea6a50e1085cfa267108aec539bfd30ce5173b102cb03c8c6",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-10",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1ad87d6cf4360ee2e3f7d459112d9e005cbc21830c324b1b01d363bbfccf88de",
+      "analysisFingerprint": "29ddcf915d0d5ff7a8872d7f1406fa525b0ff52b675149fde58f17c9c1e625d0",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-11",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e9556c57197a0d9a3c0fcccc870f9f00236bc713984689e930502500504044e2",
+      "analysisFingerprint": "c4774acffcc8cac684370051f82703fadf2de2eac5f7167f16a5a9634991e465",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-12",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "97a33dccde27416344b4ae27b0912f2d1fdd605031c085775e5f1ec57afa3254",
+      "analysisFingerprint": "f3519a03b2d626664dfbdcccef2df79f16f5bfa9ca14237a831c44a18e853071",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-13",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8285254615a5cf1315db831a22d5f68b8434c4e266ba23737e5ce47f91ee4da7",
+      "analysisFingerprint": "36eafcea30adae84f723c3a357c22d50496b4a2d007f34f35233a44338dd6dfb",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-14",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ef1634bd3ad7e7819d9bc807335d80bf02ea231afd97d6cced6139ed9825bbe5",
+      "analysisFingerprint": "2d8312d28e6d5a22a4d2ad41a8df6c739ad35f5dd673a82a44ff5e4265ac8716",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-15",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0723b34d2285891e2d03d69d5e107cc68d7446ce9558ed1cad2944226bd1ae18",
+      "analysisFingerprint": "44317a2f13270211d9fa79ff80920e1b3a7d855cccd07261b7f461b32db15b01",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-16",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2db06c9e8e0cdc79a18d4f0ec75b917f4a406eb8adc941044a383b6328c47e28",
+      "analysisFingerprint": "23482dc62de015915b7865a2a0f810a0c23af75804ff2115de369cde945cce57",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-17",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b13e3db81d9be6d5bab7a0fb80df5cbaa50b16a56951f6b84b276995c22252e4",
+      "analysisFingerprint": "d7bd0f7e826b226cbdff23a3647880df5b426a29a4e1a57900b0462ec492406a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-18",
+      "unit": "L114",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "a14cb341abb4ccac4791709e1b5dc1cbad42fa6372c210f5ec86bc2b645f3a1d",
+      "analysisFingerprint": "7d8b125e0e74986d7fabd9bc72a72c9a98f64f7d799d2fe3c3027eb572a6bf5f",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-19",
+      "unit": "L114",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "fa2e576af8103a0e54b0dc320e4e3f5f6dfbac793d777e4fad50da844cf16394",
+      "analysisFingerprint": "13be883700f2d0e9af8118b33f235a75417fc81d5bf8956423971ac4ed17920b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-20",
+      "unit": "L114",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "eee21a073cf8ca7828874ced609587cba866c416598773f306e628c8563a441e",
+      "analysisFingerprint": "c69efcf50c17f319bf53e466c307c25e4235291e09ffb982fffb18cd99d7e531",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-01",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e40c4423abcd35e330fcbac6af145e7603253ddd63ee222db750bc8e898e4e3d",
+      "analysisFingerprint": "cd2a5439930ddb26452410b8b3e96130ff0bec982f43ec3737ed442c72a91f21",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-02",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8b913500a0bc0f0ac8d7833cb9f4c4e27394807d1f5bd5e34e36d03309f017b3",
+      "analysisFingerprint": "e6fe64afd6eee3fc3c8bb46c1cfd475363c029cdab3706952cc15d59a6e7a54a",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-03",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8bc60716c54732250e5cdd91ad733ec5a202cbb6981c4514b718d563bc77ea93",
+      "analysisFingerprint": "630293c061d11ba7632fee61c8b4a3989e2114be26b05f3d61b9979634df0c51",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-04",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "75c18df8f8493c0b91b1e1411f77b23b5d06368c7d5c1650791dd29326eaf638",
+      "analysisFingerprint": "54f75f04951f1d8a4b97544831a469c864f3f18750be072683f0e4527247b2b8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-05",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4b7e34e3d2e0b0b48b12ea85db87367f62d8a30d6d073ca94e8fd041398d078c",
+      "analysisFingerprint": "f7188123ecf9500c8e776852eb744f99f9a8d0fb79662d8aa981c9aca750861a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-06",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "00c8e019f1c053e3422b7b41710745f4c9854b2c19bcdc86b5cef04bf09f3aa1",
+      "analysisFingerprint": "d5d38f4092fe48591101e51eb1af24231d31a136b337fff8a313d2b523ba7fe5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-07",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "dd20d7f9097aeb37fbe4f6eb63e39cb8462057e3164acf6bb750efba699b6fc8",
+      "analysisFingerprint": "4ec7bfd83f1d5a4316e6d63c61a29436ccc543643b51cc032c6fd7c1b688e2de",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-08",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ff23ee22fb44bf7551c1e3a84c2fcb848007793ada56ee4e6c4d6b9e546d4226",
+      "analysisFingerprint": "0893e1cd79b142b3072b33ce02a0123d82b53cbda1523696c2bf13306c012c29",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-09",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f869e25cc3508d7206ae0821c7a349bc08862633d283a5408125f0694564f693",
+      "analysisFingerprint": "5c82e783f7e629a983961354af00162202d370c4472b25c453c7b583997f2c23",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-10",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1270c7751c9810cea5b25bd00ffa5d476d54295ddb17bfefdfb8158eba148246",
+      "analysisFingerprint": "46420774150772f5fd8bda7c85eb9a2e609d960cea5c82c8dfec49418485efb9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-11",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b63abf9f5b8961263916346fa1a312eaad6272743c5a5f2ade44f7bba45c9bb2",
+      "analysisFingerprint": "7a79dadb4379ef44fcf4d513c2699c5a61f00053e9ee8f4200461d12e50d76c8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-12",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4d720f92f28352129c4008c4bc9740998785b4c1504d739c9b53ddb1ec6c5071",
+      "analysisFingerprint": "9c3003842057420c57a6db75f4988bef77dc102d0f821ca225e421afaaa7c4aa",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-13",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1588390fb3c049ef7a3107606ec7d0b4c8632b202be8144d582a33d764870311",
+      "analysisFingerprint": "561d46083942466bf411727df3bc98c6494e7b90662a5066a3ad96c2dfa2d2b8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-14",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b1352f22491235224ab10ba857e265e95549a3ed5f3fa6e660e85164037539a0",
+      "analysisFingerprint": "bd024350488521e1bb1e9227b554c2120596c98a4a26923f3d32930df4591ae3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-15",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1069f7dbbfa1344b847945ea1e5e7ead22680b70bbe3443a9fa27d9175d587be",
+      "analysisFingerprint": "d9d8ce751d7941b70003468eac2909568255460fac2a9b1ddd5a8be4e7d05d52",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-16",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3025d990b92aa3f8c7f571cfe4eac5e6b6605168baced4968d4a2becef9eb471",
+      "analysisFingerprint": "faaf0108893aa9218411f772a368e6dfef041adf1bc9030f5dc7e9c0e50f96e8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-17",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "03d1d0814dbf68b4fd4d0d7dfce31bc55657c870f262ce2ed4540dbc55dc29a1",
+      "analysisFingerprint": "025ede518f5b63b70032cf972fdd014e2a73519a65e4321ea89d147829814c99",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-18",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1eb10910127f7791e1e29b3ccb1ac60194e09616938b0a0e27b1331c5e42244a",
+      "analysisFingerprint": "a414117979d912c70859ddad4212524ce49f65d32681f3197e49ae645706ed3f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-19",
+      "unit": "L115",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "88be59c9c38064616562191e47ddcaa5d1ca8b41747462ce8b9718cd4a6c0926",
+      "analysisFingerprint": "e71d6b609409c8898841010e568ab863aabf71310795dc03c37550ba7eff8276",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-20",
+      "unit": "L115",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "59718eee880aa55c3ad41a2d470e9da1a300770182460ee087ae922f770571bd",
+      "analysisFingerprint": "f184842ed87dc685dff5d49466bd8221b23d14cd28bc6e9d9eabcd75e9f0a309",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-01",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "453a09334538c54a57a39549c495b9c56e8115d1e617a4666d3a338bd3270f0d",
+      "analysisFingerprint": "dce64915584e73ec19ea93a8630f13a69613ad99865705b1d175362df499e3fb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-02",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6d78cb4a78a54a006db88e4485c8ea1c90a46bbcbe77f5929000b33b77b8e46e",
+      "analysisFingerprint": "d28c1b927fcc395300106151d5892c30901caa3dc4e7708e91f76ac957e645b6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-03",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8dbbb073e4fdad7f2e74b28aeab71eeda81bdedf105526cf80ba6a74b5c8ae68",
+      "analysisFingerprint": "ddff1a407422b432061b19d236bf86f4975b2af8f054cbae594195828058aa70",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-04",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "823b501eb025980aa4b1c18e3bee8d10a5188db9ddaf7cccd0c796e727ea9ba5",
+      "analysisFingerprint": "bbcd284e73ad46437d6222f8c6cdb321e7bf3443fa0e8f43ee451dd8cd68ab4e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-05",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "072cfd22971f88a1325a844be1a3c45b69b6471b1cc0173a8005e758daea10fe",
+      "analysisFingerprint": "f1ff976ef7905250452d65e2b33c684a7fe40b08d05bbaf980011aa0854fb219",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-06",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "686847fc30b257f6f5e612265173f42ca7a3b27d652d3d89215e35be96dbe439",
+      "analysisFingerprint": "5cf4e6f851e0315276f49e0d73457bef2abd4076e2393fd79caf69615775f09b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-07",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6fbd842bc5bdcd5dfd69be8a3eb32875005fe672fdef194c212c4ede6308970e",
+      "analysisFingerprint": "558a6c527a324364c70a6b85f2800c9fce6f2a77d295be2385b4778b4dadb63b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-08",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "45b2a5f4c788134835198f7e30c736c80619b7987e284b27ed2ec89b1bb41751",
+      "analysisFingerprint": "a597692a450a81cef524c8096912c8cd7e1aca78970a126b3c408d687988475b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-09",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "527506fa898f3e2c1c98ec419c4f4e3a372cc5303d4d0e516b776202dd9e4b8d",
+      "analysisFingerprint": "605e38ac72e01bcbfb50b334c5dcd15d05f33e321e84f3f110e1c77f3af89a24",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-10",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8ead4aa6415aaf0b7dbfb57e0925765481f8b16c5d54a9335a6db39168f65052",
+      "analysisFingerprint": "89dc0b6f1d9411132be8ee35e87344033e43fa23cfd1674aa92f690716856b83",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-11",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ff32141a11e1ed56bb2ecc2dc997b2b9d47fa4899e25d6daf4b47ef450599c33",
+      "analysisFingerprint": "6d58e57dbfa9138478232bf71b87edd32c1801ded448bc2f7adc9636d5c1f957",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-12",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6e77b06dd034bfaf0f962d18b1aed51c2291a4977818fae321ed9ddbf7f1f95a",
+      "analysisFingerprint": "7a4a751dc8e177bd087e8d942c608e3657b283826754dbac97faf02fdaaa06ef",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-13",
+      "unit": "L116",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "a0939cd03a7d262e837790e1324e9eb8ea2fb11cb6524d3ed4e51bc17ce81d4f",
+      "analysisFingerprint": "7b28a41f12f3c0055ebb47c78819930228fbc4a3c3a5a31ecd1cc9cc2b7ba0cf",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-14",
+      "unit": "L116",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "6077ec7c48cdf745d37f9a3a5565aa4a6aedfa2b1965f3d2b8f82c8f94d26f2f",
+      "analysisFingerprint": "6f4d11ec3df4b2ad39ecb11ed6ee9d16454d28dcb0a7866c681799a58379c7af",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B01",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e5eb51899518e8c10b5b7113d85d2bab1e716f4d0bc71e16f364b05e68cd78db",
+      "analysisFingerprint": "a63e11147bff3b67fb5f933c87ecb236f4c1c2907fa009230885470281c56eec",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B02",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "10b0ff8e52d54ab956067469a7d7b21447d648d54eabdb0026da96f8a8c4ef33",
+      "analysisFingerprint": "1f46ff6d7e43f3350d79291e1a59aa86002a272e1975655e4c82f3c4cc8c81cd",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B03",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9e60cc1d7805fa6e628b3cf746a78152646d307a64a8bba9ae8cad6b40fc1757",
+      "analysisFingerprint": "9dbd6f1d84b6009034e8cf4cb313ce712c9d863aecdc400aa7235002ce64287e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B04",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e4dea5ab1939fdaa2e00a45b10ce8543ffa71147a78b80bfa43b02541270b416",
+      "analysisFingerprint": "0edf8765524a63bdb908e6a3ed099b38cd12aad2a4be754130b07d2ded8e69a2",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L111-B13",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "05f478b7dfcb7fd29f60407f0156718856f0cc36069286901a99b3fc3a346a1a",
+      "analysisFingerprint": "420516b8dc3bd5e0023970851131186a727a87d04c4c90ac435c2e9975879176",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B14",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cc1b9d4018be37201c2d8d7481d24ff0afefe33d38a03d2ef9f51f63f9836f59",
+      "analysisFingerprint": "e9226ef2478dabf0fdc3650467c611256d45a485b9d3381dac64a541ad773bc7",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B15",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "be4ce0919b5a3dcf95e6a3d16667563aad69eb4d54b6a60ab09f843e1af0b486",
+      "analysisFingerprint": "925627750dfea6c8feab5a322d3446c309b241d6bc7c58775894594d144c57a0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B16",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3174170ebe10e0b90ed9d99ffa0a3babe7c3c3792339a92d1af596cd7a0f7878",
+      "analysisFingerprint": "e5c1e8c45a80e2f702907d7a7d8dfb3ea31d3c71d6e32036e0e194a791d40c35",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B17",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e8dd5f03dd27ae6398bb5d1201594c52a0bbcfff73362bfd48ef3810cf4eaefb",
+      "analysisFingerprint": "1378d5e46e289497749ec82988ad2a2369e90851aeefa73e19046c413789ea2e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B18",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9d12a807d525c1f092e5cef59a53865be8150e58d9442e4afff4e9e98cd02568",
+      "analysisFingerprint": "85174bea3ab40f4f08936cc44e4462d9914f518056e98bf5076389e2f316c3fc",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B19",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b99d869858269033a6f254998eb0dfa7609c019a52de1fc07d0853b73bc4311d",
+      "analysisFingerprint": "7c55286cd76ab081061c9911258334e3bde4357666cfbb708ab0eb03273ccd54",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B20",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fa3eca363955782d10dd7a9e58915892bd3d7c04dfe7bbbf38f05c26505ddaa5",
+      "analysisFingerprint": "8ba589d16b6458bf86611ba522da43dcbbcff8005e783ede499b93227b08bcc5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B21",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "636b950aa1bebb5087902dc5f0d1c333fbc3db4ea66b41eb025e5464cbf8af48",
+      "analysisFingerprint": "d212c232f7a086c77f8f56b98df3b0af761e06a2dba864ddec35628b714069e1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B22",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ff4691130e3ae0e792604859f1d92fe79c098314f13c3926a5b790bc286929ba",
+      "analysisFingerprint": "3a3ece29101eb4ec1dc25c72e119b84938f4c79533598143cd4a0fe9b0a41e55",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B23",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e258cc56d5032c48e18a2509fee213d841d7de1bd647ffd82e14207c4ae15349",
+      "analysisFingerprint": "833b427165316a9fdd166678deb8680226110d7520af92f6382f9bbad60bbc8f",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B24",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c405b817da5d2bbd6bcde87a7653957f3973ef553785d902a21f7ec762e2940e",
+      "analysisFingerprint": "7cfcfe0531fc2648ea4102161286016924f09429298dc2aaf077492887a95dbf",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B25",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0245124bce6b925572f0725c8c7a59cb3504ff35daea5998309e59fc671e0731",
+      "analysisFingerprint": "bc5af4c902551dae6b35b0cb18c6c858ea491a25946deeca9fe793a8b85c7291",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B26",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "56ba8d0c5c10e5a9c28c846384e7923e8c444aaee622e6e33faff86b331c507e",
+      "analysisFingerprint": "1a9c6a8563e9dcf6367da9b94b84eb0c4fd3262f16bc76bc2d0bb0f1ae46ae26",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L111-B27",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0cada2392deb261a2b2b5fc42f045e2e9db6dd13fccb6a2b610507424ffc6f50",
+      "analysisFingerprint": "ae4bc1bc724265093eee04c465a78d88ecf13449873a839bd6cbc42a32f758b8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B28",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5237088880e62b4b0031c2ec2b8f3142c0ef85ab3dec1384bc09fe4e7a9f93a8",
+      "analysisFingerprint": "451f56b2816527814e1462a595bf29b69af6c9f7228464d4a555b95c737f3a27",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B29",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "91b2bc821b4106a330a327ab66e31cf8f79354db4bb052ba4cdac3d21a6ec332",
+      "analysisFingerprint": "61fd22a6257b0d5c185bcd9bbf97a8d2bfc8e08415d2209e350b16241562be8b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L111-B30",
+      "unit": "L111",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a8019ff37be33acb3e6447698e0624bba4ae04f38f87d4c4fcafb3724e884c18",
+      "analysisFingerprint": "c8330bb880b2db74069b0cdd44ae75b41a63bc71500bb577c84f0b20e03bbebe",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B01",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f03314441e579ad8b8024e9fdfd0139271513ece52f0db0373e3f7c591940412",
+      "analysisFingerprint": "71ccb068137603549e0c6467b6e2510515a5edd157ddde5ea8b375919ad30417",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B02",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "25c848a338e6cd0aa65ee2231d460fd4802cdffbc61df917452845cd4d75f2b4",
+      "analysisFingerprint": "c61e1796cd68d72728a619b4dedf75a215d604a5cb608af9485c2b469506ce9a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B03",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ba568c78cf9b6ccf4056c234da008c6f9dace050947ca61b8cbf63f984375725",
+      "analysisFingerprint": "669f83d159b8de48289fd80768eb6ed1fb250266f29aa9809faa6499c9ee68c0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B10",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1e1e829d851f6af819ab5dc5702b315f5091b5c37b3420647f8279f5d9f9cf5a",
+      "analysisFingerprint": "a1ddac1a75e85ab2c87411cbaa20d798785f3dc82d6d0271fb67a3007a854807",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B11",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "40d844e3c5a4e477b035f7102c240e68571d61fac110a913a182cb63ebf19757",
+      "analysisFingerprint": "43b4b8c64b824f5022bc9f7dd2814a795f1e6039c72d5e4c8347d92d0c678570",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B12",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e74f837e4029155c37c62e2efbd0484220b7ad824b34d75844f96bc77356496d",
+      "analysisFingerprint": "d46a16dced0b87be8b5f785382483a90424f498cb7ffbf3a1ff8634d168b47d9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B13",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "31a0dad78c79f6923607a2d19df082235a90e4a821d83c82dee6127c6047690a",
+      "analysisFingerprint": "b98089bb27107741cce5466bd03c589cfe7c1bae22bdabf3f76a5a39d04e7920",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B14",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9d36d4f4e4bd4ea75cd1d6e4dde42120a9a8fc5fa206d930b4ba62cb6e70062c",
+      "analysisFingerprint": "2b12e3079cd0fde65893673bab28c2e91b15e1df72650bb91f1f3617a7577399",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B15",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0147c0b4260d40caaff83b1eb3d2f28b5ff297f1c174d2e1f03976867d2024a9",
+      "analysisFingerprint": "458398080543fbfe55c6699b4252670b1546c2ab288720b7631a006fc1a41095",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B16",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6a7356b686e6f63e57713315984e46f46d1825c92ee9cadd3fd38a7b07fc25f0",
+      "analysisFingerprint": "965bcbd335f5acb014d6305028227650471d638d63b790f08adb2996cda83a91",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B17",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "acb588b0b901a8f599236576b50412d30cb95845d6c19746374605bd1d257802",
+      "analysisFingerprint": "6522427f0d40e439ffb39db5b337a77bdf67573f6ed331e915cf0cf262f525bb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B18",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3f2b85bde98229977aeb717be17205a56696a1c715a5690d73a0d3ee4dc6ac1a",
+      "analysisFingerprint": "c78b57d7fed9dc0a6883f7f1c02a0721bf04e3cbd833e8217c21f529074603be",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B19",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "39b916158f16f805b6d5ad1ce055a34abedc71da82b1254017e5fc80f3ff3690",
+      "analysisFingerprint": "ff16e32713232f55f821595e45ba19fd599288eef650e2f93041ad17c9cd1fd9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B20",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aad8768036d8d1b8fc406ce478359d61d365dd6556824bfd78dfd068e1053a07",
+      "analysisFingerprint": "33df158a13550398665316d17f9544894c2010c894fdb661f348f03a60c486ea",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B21",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e9b2ac3a503b871605a552e44280476c70cadf98246ea1eff49de015703ec6f8",
+      "analysisFingerprint": "3fdc312d1cdc8bf4db14afe711f65508b66841b6397ac2d95dc0212bbf5f71f9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B22",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ab202d8e8cbe6ec8e99a62e7d884a1eeaa505da449b11f8551cb9994c244044a",
+      "analysisFingerprint": "5defe46eb6246a0c109706483e654668b40ca8a3373fb8f1d259f9e26439dff9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B23",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "190c84c184c4978333f199aff09b49de3412140c8ad82ca83b12fa806fe60661",
+      "analysisFingerprint": "f255cdd7959d5662806675516701900b8674dc0a06290ae0ec5dd8f10dafae51",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B24",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1b31a95fa7ccb400c5aa88e38a94db9d93960f478650610afd430a908a2a0eb3",
+      "analysisFingerprint": "42e7060226f119235f4515a8046dd73e2a2495bbd08952287f45adeb5d2e6112",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B25",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3a0ab1a5a77ec35c0d77a705534304857c1bd8183db90fc0f1753d11c1b3f195",
+      "analysisFingerprint": "fc846a80029f3679b4039c62b8b9435682c7c155baec1e52982ac7ffe94ae60c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B26",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a0e165072e0e020829513af5a8ffdd17b2bdf5655a029c890bdb281fe8fe0e63",
+      "analysisFingerprint": "6a9b54f2bfb0b16dbf290f656be1e6b2e7699c7576ea48866848306722d90318",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L112-B27",
+      "unit": "L112",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f8cef164fb1edebb9096a15d39cf21260c249e88bf0a31949f4423595d2e271b",
+      "analysisFingerprint": "f6ba9f163ddbfa7155fc8a2c9ea095803dfe16a96cbd00150165000e4cf8b18c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B01",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "af1c7f4415612f23225b3026960075d1d89e4cd62c1b9fa3c6bf057a4da3e0ad",
+      "analysisFingerprint": "f6d471393818743741de10496e886d09bdcaa437e55a0f43cce351805dfa1553",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B02",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a84b054ae334d64ded9386009a8706e72a69fea697bbfebdbac64d3ff4347ddc",
+      "analysisFingerprint": "8df07dc282731292d19c86d685d01f7d393c0e1be17852ed5fc186b6df1f7235",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B03",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6b061a6f2eba245f02dcbd07b4a8baf0ba3630c4e62e26c5b1408772251704ab",
+      "analysisFingerprint": "978decebd5450ba7c04e3d066bd13bb676ebd0f3569b710968767c7c2d4d21a8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B10",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "40200d75a64613c9335ebec91a9161f339926a1ece5a5be07f958929eec75a11",
+      "analysisFingerprint": "d64a4fd6ebd7e28bbd9381ae38a0084d5a67093ce9a04b609588f38825352a4c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B11",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0f83b6a0275d808c283bb9a3ddcb125db5d060493cf95e0cf7d2d505780de79b",
+      "analysisFingerprint": "f9e462de52b725b15a4a3b16f5f50373dbc9dc18eb525885bf562d34caccc86b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B12",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "508ade7ce7d9486e5c614d8bee007b5c075b1f8a939c24535ec17b6ed24169d7",
+      "analysisFingerprint": "db5dcc3d2d31a50f5cce47e01d462b8a15a3d16a3d791fdddc0f70d2a0360d17",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B13",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7c7cd0e1b8c7c04d35a29d06991c73e8a609e4707b9b68b73ccaa85811a922f7",
+      "analysisFingerprint": "b660f83298952a6d2b859ba27158d13f4dcdfd82e3d056ef00129992339479a6",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L113-B14",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a821c4065f3755fb67e647a27a549c241262d1089e3a5121af315d418a50753c",
+      "analysisFingerprint": "e4cce61b99677d85adcfb4cc5aceb63cba5d51d8e7ba2404a03fb9157d183d37",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B15",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9a32e7ec33608bd15862a1a3eb28db1b402930829475878cacb73a811f6c9fb7",
+      "analysisFingerprint": "3c12a6206c18e3a90d0974a9efed33a99fe9d54834af32a1fa975c5ca384c605",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B16",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "82c0d73f1b1051ed6b1925caef7dfd8d02b3ad120e8efd244d711a43e61a5875",
+      "analysisFingerprint": "e3c1ed7bda22ed692eef90524440a17d7bda60ff18954900618f0eda60a9261b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B17",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5a4dcd648e0a3bd3e955e34378def2c4ce235386a04a6bf8675e02cf159d4895",
+      "analysisFingerprint": "78c47e2a2767a230353d5722f7b7c4d07ff686a17dacc438ba0d41e467f9d59c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B18",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "da7d663aed11d270f9959d9107a4c754441ddcc00a5d2de8f885368b6eb5aba1",
+      "analysisFingerprint": "94685a3b3662add32f61b6dc8b21cfb97f9620904f1e3b4dfd539c04809b3058",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B19",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bfd55dfc7dcc68443a84339ed940c690fc3bd79ce00f2efdd9e21ae26faa8a9a",
+      "analysisFingerprint": "4d6b525a513d3f631d8500a43bcf9fb53c882a86e8cc94afd21a73897a547ee7",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B20",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aed64b5bcae8373cc1fc08f4c4262971f77b4ac9c5bf75766a8e33228224c85c",
+      "analysisFingerprint": "904db21a7106421a26f5a97404a1dffea54262e689a5e493d98aa036cf5d7c0c",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B21",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0b910083e0e1e5c8a31a5926f013d7147e19625dfad2d8411711012a90723620",
+      "analysisFingerprint": "ad7b8e1889654f253a44ee148a6716eba45a29766a8978a7ba27f74c5266b61e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B22",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3c05342647c237abfe10859bc2a4ea53b1ead18d332210a95dfdd2668dbed9fe",
+      "analysisFingerprint": "2ad6945909bc21e19fef3a2289310a510b33e20f457b4e804098b84af0d98d86",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L113-B23",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b18b2a7ffb88b73aa95088008688c8b09b032bcf797ff990fc340a76f470c0ec",
+      "analysisFingerprint": "58d8d6fbaf0cb03f937ebc9c2d1305c4326c23ff8721acfa9858879a4ca9c80f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B24",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "93fcd02723b8b85e4de96362d4c0f9264f062aa4d9a4868e48f5ec94cf43e2b6",
+      "analysisFingerprint": "93c07c6d24a0222ea2c8a8dfc2184f20267129f72cb3c4c6cfd14563ad7f3392",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B25",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "620e356bff262779c3cc4ba4ba1d3a5bc68e605fc2e8573e44dff0e7aad03f59",
+      "analysisFingerprint": "095e704366939350751f9bdc9d58c27ca7a3e56ca3edd39fdbe6149bda001092",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B26",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0a6735eca3bc96db4a7528c85891e8e084229d27ec419cdaebeeceb130bca466",
+      "analysisFingerprint": "b26806c3aa3fd6a3b19d5cc66ed9d7a5aff8ed2699e9a3daecca5ebcdca5afdd",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L113-B27",
+      "unit": "L113",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "485f27cb998a563b8692ff44cc4cd991a2bf10f4695ca1f2548dd512356ec900",
+      "analysisFingerprint": "fd2f7a5cb381260971f303168ed5479a53ec5164a218b678316b53df817d4a16",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B01",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "195baeebd91e867c542b788bf9b28835fe8b74ecd4c84d2e923a97d7e085ebaa",
+      "analysisFingerprint": "e5751d09299c42d786c1358d16098edf68d39012422f7349727c9b5c4db32e99",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B02",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "803d410a75c80f2e3d018adcb8df9bbdbb18625d6ea6d4ffc71fa4a2e22b7ca3",
+      "analysisFingerprint": "ed0b6889e39745308f7a62e05fa863605a05b2c7a7ac29804c989d87e9acc6a5",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B03",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "05fbceac6ba2d2c790c0b81e73974d8a49126c434acd8f36aa3d3d64202de2f4",
+      "analysisFingerprint": "7e0918fe4d7644a5c726ceafedf1be3c63fb00d18cedf96ea7304516ddf29003",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B04",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7abf41cd265728ea55314693a87f0630fc779c447eec72f9e16d775f7bea460e",
+      "analysisFingerprint": "ef9be16d7498d5d93a34b1ed79be00b5b8c765807412487ea1fe04df7f2a0267",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B09",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6c7af4d7d0e3babe5a3e371d427acdc1acab9f24caf44896f6ae0b763eb5db72",
+      "analysisFingerprint": "7c27a702fae4b1d51bc4889bfa207e9de23f5ca6d14b5071bef848e8bc0a74dc",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B10",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "422bff8767d8d7af77beb60270e5ead959789363c23005d82aaa31e53a1eb442",
+      "analysisFingerprint": "2bf2f7b40d116154c920b1c55eaa15e66ad4e188535df48826f0d9edab10d63f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B11",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "345b5c5b0db7bd7a10141b4ed1c0f8f1755f55da4869a477326437e311f3c1f3",
+      "analysisFingerprint": "82dd2cf52f52258b356237e71ab0b31093bada49798bdffdbb08b348b660e8e4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B12",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a5deb865321f0030fd6571a10a7d7af5071db56b413d4232873a2d4ce9fdf9cd",
+      "analysisFingerprint": "880b1f8b738168d34b517d4358dd9e6a92c0aa800b303b380db0951a17c7c2ad",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B13",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "732afcf8d869fc905482dde8ec30ecf927e97eb1cd94eea400937ae5d2c4b85f",
+      "analysisFingerprint": "3bf55390d3bb5db4bb0d38027e08d0361a8c88c63ab98dab3c14fea9e573320a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B14",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d047817b56f5749dce60e516b6962d118cb415fb90a1bf726a6cc30ce0e5ebea",
+      "analysisFingerprint": "12fa6e6e3f3dbd5e389fff402cab02e9f752da39360da59ddb83e0122487546d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B15",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f5d840a43f2e3cc46c821193e70d4072a6ad49b07ecfc278b6f28eb2f469e3a8",
+      "analysisFingerprint": "6a38f0359f91c09bdc3d5341ea7cd49987d21e51a8f5be90d44492712194cfd1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B16",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "47991f21f7d236e45c37442476a1e12d41bd21bf22342bdc89b5bcc6b60c7aa6",
+      "analysisFingerprint": "885e86af9c07ec6792230ecc01dd6682eb1a13d90fea858cd89b591cf02735ab",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L114-B17",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fa7019e265cf08381b96b1a4b3832865306b94993e6c9fec8e0234c6fca42cab",
+      "analysisFingerprint": "f65dcfe5b0567d33b3293289bd1ef15d72e72c98e6866354fd31f0a768e89901",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B18",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "045e2db1bc51c608d995a3642275a4d3034897296bc525d503e5ecf444bd4667",
+      "analysisFingerprint": "ce7b8e825cfa1ac6e21c9c11393f093a40f435718d013d30bbd3db8695c89705",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B19",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e858a9e3d3e0e105d530f739c1eea829b91d7dbbdb44c6ecf0a300f39754e691",
+      "analysisFingerprint": "568a828eee54f1b1c72dfedb84946a413934dbb1e1445bd4965d999b7a46e695",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B20",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bd1dc7bae616680ded321259ec6c8705ade5f3bdb4e65ddb5846703515835309",
+      "analysisFingerprint": "b5adc1137cf2a76a3a38d309d89cb1a75c2afb5ca4b35482d60385b70b1f0799",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B21",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9e4ace3d04b801e087242fa2261a2d00360a94ce00cce91a5a1b9988930e6288",
+      "analysisFingerprint": "791225444b911a73e1f90fef47befb15cc17ccbb363aa0aa2f552e134a980d2e",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L114-B22",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "40700ab51f433ac21a335d6b72d73f95b1c21d5b90ad6a2fc93535da0529df17",
+      "analysisFingerprint": "2704a8139f58050592619cbcfc5cbc0582ca1129f110903c8ff9c9b942927ad4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B23",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d7d0a7b247e4833272ac44fdc630a513ddff26d9e118577112e6d1f35464fbca",
+      "analysisFingerprint": "8ddc57021c0e99baea1bb262720bc9228a6d33f7bf3a2893d591bef22d019540",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B24",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "732ccb48977294d574f9f356e030d9ebe58f05935f1643e09c6d40d736fecd66",
+      "analysisFingerprint": "baaabf63450623fb3e67505fb875495f569793072e8bb3b58e6064811afaf77e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B25",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5bf4590ee820e6c7497d46c4736d68652b10d6ce911fc768ae17bf5ad446e736",
+      "analysisFingerprint": "de31142826221916802d508ae096d1d63e472f0e4288754960ca659a02113ca5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L114-B26",
+      "unit": "L114",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f0b83a9d1c795365e88ca4e3fe748db61dc7853f7785ecff80bdaa4ae0114516",
+      "analysisFingerprint": "ed00bddc06178c345160fea79966849c41ae863e52b2864f4cd29b827b0d2b16",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B01",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "af02e1be4d07a7e8afdbe500d220d8fa65f63cf3b1ce4853ac26047ad92e1dac",
+      "analysisFingerprint": "b5b1e8174c33628ff6f19c305f88719641677e732ee5d25a6f7923f49363f0e8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B02",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "806f1e4dcb687b8b369c9368e31e80145501b32b025c07e86fcb90316ec3d20d",
+      "analysisFingerprint": "289551afb469975bfa87b6a8504b07f7aaf06ece885581d1f849513f28a09a73",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L115-B03",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c5b14cf34c7eb3e7e4762adf0e440a59b63ef6841a6cdeb6043f2f83d5c00019",
+      "analysisFingerprint": "31d4962d80463cb9e01aabbc59beb504d67296d9eb5e6d60d9c3e4907e78b52b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B07",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6afcb42f15e9ddfa0d4e8178b84e04faa843e15870d9b16234e27f1df867eeca",
+      "analysisFingerprint": "3fe2275e39cd1660cdaac44c0c4b5fe4883fdd077b4b4f994af6fae5f94c2d12",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L115-B08",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b889ba21569210bfd237eaab2fe3a3eebc321a532f05c901c73963b49e751339",
+      "analysisFingerprint": "49c3dd77220dc92e6568d2df45c285c22b2e9f5623dfbc96f3a8a503191ccb31",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B09",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "044c44fe97bbe990c725b57469dbaae73422589429e841aaeb1b449a12512b68",
+      "analysisFingerprint": "c983a975048a9719b2b4062df70c2aa2c0217d1a22d3d44ee21e510d435476fb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B10",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c64051446d4139dd8b1b0ce7fb92b19f2dff61b7027e0e62251d0f4ced53d30e",
+      "analysisFingerprint": "28a7d3c7954b3cc06817e2f8a32a876a5f6b861d72d3d8bae6e8e24104bdcc72",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B11",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "42116eaecd52eceddffebbdc817208a49f611443de9346d1d3cd391b87feabcc",
+      "analysisFingerprint": "88a89f4c98d67f543f17cc8525e0afb063e03d0745f486e03f693c2cb924fde2",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B12",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "92d7e4beaa04ed165c03a5e061e52d33f55b2eae3b2018477f2adf34064aa0fd",
+      "analysisFingerprint": "697ee193d2f6c0e15d94d0b499f6a6b6c34e423d6b1da76d76d57bc443054eae",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B13",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "13dda729660d9414df62778ad3657a364ee60a38d80470d97b416c48667f9e37",
+      "analysisFingerprint": "7c37b31d7d0bd2e628c9d33e90614fe850b8d4d5e56a23cd5973b560f155a484",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B14",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "eeed0a771f7d9e8b5d859e4234ea8143f3b7a2243601828960484a2fe85a0521",
+      "analysisFingerprint": "1f9d49e3030a3d615c81b7d47d5e1e1170d8ef89bc932928943326e286d96787",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B15",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "42feab654395cacb7ad3d221b2c8c31ffec097e2c61d30b360e8a57854c1150f",
+      "analysisFingerprint": "33e1c3be5daf42d185375c39fc9cce01cca90f88449de48e458de7703744c477",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B16",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "805b99c399a1bb30b162eeac084d79a702daedb83c400be924bec2db1b8e7708",
+      "analysisFingerprint": "7e4425dcfa0323f52618ec41e05b3315dad8f60c34cf278dc78879c34a181292",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B17",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a8473f01cf0d005dda35719c065d679d6ac00dfe6209d31b775ddee79d8a3750",
+      "analysisFingerprint": "bfa1a3bc11e8f4811b32067d972253fd7680c3941219dba1b1769146f671b42a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B18",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9b35a1bfbba19e51557c5c8b1cd69d6a14fdd76198278305ca9f401da995fd43",
+      "analysisFingerprint": "312d1cde5b043a7df3e0b40e44a7bacf37b82fcbab84fc98e8e4f4b74ce9312e",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L115-B19",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2f97362a82f36695e81829894bfced22277998b67e902451da356e6cb72f7dc1",
+      "analysisFingerprint": "73c78ae25373fba21b2c0be48cb47003fa43de0c1d9cd95cc3ec3bc437412746",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B20",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "31cda1751e47be14080d67d4191c930bff162c021d7028f7141c6fb2a56bad30",
+      "analysisFingerprint": "cc5fdefe8ac65ede48ce740da0acc9eee1f97494c47e23ca25d3c5131a7fcaf1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B21",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b38477475d2a4374fec444f644193ac227b10ce3e495e81776c44028aeabe2e6",
+      "analysisFingerprint": "67a03dbf5663112d55bcde85b0413a907f3b43b337e52844096a3501a685564c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B22",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "dc406a08dce645fd6d83e5449f10c5739380503e9c555fa7e670bd5f0ece0a06",
+      "analysisFingerprint": "44705c3bbdecf95ca6d7c32fe7b2232c34fd8bde80493d0860a4cde6ed95699a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B23",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cb9469e8a6b05e192060943826750295d1ca45b6876b318fde071eeaeffdba25",
+      "analysisFingerprint": "ad2a1b98fe3d1da7b218064bf4cb512cac0a6499419b7504479e10a146a782bb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L115-B24",
+      "unit": "L115",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "718a5ef1fec4970495e47eb53e6654187c1d96d7aa4fa8c860b25a2e95c09165",
+      "analysisFingerprint": "eb6c3e0c03681d7762a0bed07c6869ed56b89bddfbb3b8ac4d0749743cf5d482",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B01",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c0d25f1b937b5059a984c10173b45780733595b037906582356a18c3dfddf5f4",
+      "analysisFingerprint": "38f7ee614d4e70e27b35301cf52932d3cb9105fd4b6b813069c4251a65b7144b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B02",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5a3313178031fd80db79ef92affa62ef1ffab63b8d137084d9f53483f7478f99",
+      "analysisFingerprint": "c44542dacdbf478a82d2bd5cb83127d22b1acf16ff679612507ca3729d204898",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B03",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6407169ade85d3c35f9b50c9badf7305bcb2818f3038ab2695af88c084faa8e3",
+      "analysisFingerprint": "ca3369f5b1087010749d20de27a4e8f29f2185787e275be5934a2359339577ac",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B07",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aca2a2d34109c542e2bb67a82a9f425cead2a4df26af06d2323e0a79d4e7b334",
+      "analysisFingerprint": "63dba77299247beeacb6cef986be6ff8d75e0aa7032cd0fc80ca65ecb1a8e32b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B08",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "392088bf512a775d776dadc5c9a420b2ae689e8584a514af3a3dbd6ad4b15967",
+      "analysisFingerprint": "37e240456bc866ee6ee748010c091c84ad1764d7e99832d6c438ccb01237ed3d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B09",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4ff6cc24fffd75ade879533ebe9c594902a189f7386f50427836604aeb855258",
+      "analysisFingerprint": "7f633c488b8c912a80aa350b80adfed44a93672e2809d001e50f442a0e360725",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B10",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "46b86075cddb0c60913025500c4b6b74a30dd9955c1b742a3997f0a78e5cbafa",
+      "analysisFingerprint": "0ade3f0222da473899b12f64402fb1a21ec4740f53db96710c704a8bbc58abc3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B11",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a081742548898c6513dd8d321f66290df3edca7375cb7288348e12153aeab86f",
+      "analysisFingerprint": "9c5cc89fcc9f03cae2643e2b45cf96d291f0e50facc0168206eb3a6f1dfdadce",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B12",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6cbd41119a3b8dc85c64d1077e69fc3c1dd1afaad4e60534131f52d8ef9a35e6",
+      "analysisFingerprint": "d4c8617b5bf2613e77a07d227f65a14d1c0a643d18bde21c28f6e9068355278f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B13",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6d6c69196e6cfd18de8ecb932b4bf82c33e0544259f7c34444df4959bca5a870",
+      "analysisFingerprint": "8f5e33f35ef9e491ece79a5752b063f6a1476eb94f45a1f0a29668c7bf255f6a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B14",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9eb874fcd3fafc09394cc9cf56a43a05c66a80aa33d98d271df3e458d9c8182d",
+      "analysisFingerprint": "c2bd2d52ff339847bfa4f2b34fdc2b06a76771e4fe5309de62df6d6efe64ecf5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B15",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7d3fff27666e1b7e1c74410ff135b572df69ac018cd2ce738b23fc9f4971c25d",
+      "analysisFingerprint": "c5591e2ebd4d6a965abe76a1d3bbdf7149769fd642ca35c7aff2efbf52ad7cbb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B16",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "41e70ced9e1df33264989dad1e5d479f1b9baf55bad0c589ee3d4db616ef90d9",
+      "analysisFingerprint": "f854210fe70cd41301f288206cf42ae721d275214d7098178e349041b0d6d725",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B17",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cfc89d69095bb93bbbf90f393de7fa1c56408dece619bb8f6b7d5322ef34f37b",
+      "analysisFingerprint": "61aae74a6b869c6c776326d5a8ec7dafc180dd5f1e64fa6b8e284c3d6b3794d6",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B18",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "54ffabaffb5f964b0634ef0d7b9241ea7119d00dddefe667957e54c27cf938ca",
+      "analysisFingerprint": "a9a967155f40ff22fa3239f7c6c984862cdb48ac59543e0d00efd1c53d6c826f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B19",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "36f5102baf18638e287a257b99cdad852c90c4b3220a03b0a99f4fe1ac87a471",
+      "analysisFingerprint": "cf0149fd7489c221c0118ba950c412aa445aec838dfc181f76c3836fee230842",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B20",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "31bd43e009053ee0950bae5c8a00940272ce4074a3d5321e8deaac0da8554f60",
+      "analysisFingerprint": "8851e39264b1439882489ded1f3d507fdc54e4a608c41f03bbd613172ea7e8a0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B21",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "99c37a9bf50cb93eeeec32238248870ac27efc374e3615d7d96463b9f8fc6b0d",
+      "analysisFingerprint": "fe76a2eaff07b6c5444df632dbe0d6def1c54047603baf76bcc1afac7a621f8c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B22",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e280352259c3be77a3ff706929ee51806c39b25bae8a5879d35f8c0863bab12e",
+      "analysisFingerprint": "16514ebf92b5573bf92950fe67aab6c661339a57505ad69c858325e9426fb820",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B23",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cbe7eb26347f9be7deec008cc515cf54fe2e636e1be774e49e98a0ac5ce9538f",
+      "analysisFingerprint": "6eac613837113d323df46573fc16a64e65b9edf671ccc132d4dcfafba042f248",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L116-B24",
+      "unit": "L116",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8368b1df85975405c75154d433c390ba7fd331fc581e3c4737bdf134a79b0e0e",
+      "analysisFingerprint": "b59c60d907a10c63513a428991ec6092aa7a4b8a97fbc21d40cf511c5c74de3e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-01",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "30f16a9eae65df35e16147e470040b0fa3221acadb40e769402de0af5a40c1ac",
+      "analysisFingerprint": "5d367f97393294c8146e83ed2ef3f1a1effa050998eae8d32f55d0f167c11346",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-02",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "97217d4ca5836f4eb107fdb6d1408dcf7d310939b73221f2f797055b4c963cf9",
+      "analysisFingerprint": "b8cf0d92e6267bde78034fe1cfadb9122cda22c5a3847e7f4a4179d8ecd3b98a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-01",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b1197a38c8ea7023e77d020e7ad4b8714afdb96b02b3526defb81286f644e6bf",
+      "analysisFingerprint": "f1fd5f331389c5b3e16dd74a4e2cbc21267fe00af7eaf0f5008909768f82b7fa",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-01",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "25477d57fad1da03138784b62156ec83e46de09b3890e8a2a77a0ebdbad7d766",
+      "analysisFingerprint": "4a5929fb4c56ee8ff005f517571f0d049d960e31fce462093a9683cb25962146",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-02",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ad7b3a378787bb8d18d2e0537af7326f7429fd651831389fead82f9e3f6a9851",
+      "analysisFingerprint": "a824cc0fd31e09474c1fa03d0c168485c16612583ff9499b98e6a66186dbc112",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-03",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "78e7ab24019081b22cc251c9bda45b391513f2148dce0782ce44cd2a0e2c28ac",
+      "analysisFingerprint": "63690d4e252d8e11c9f0b5f205d36fa4dc2ab225b325f88351407440feeeb48f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-04",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b6b8259505b580a09d40c6d4e2eed25911d9a27692330e7590fb611548de9aae",
+      "analysisFingerprint": "8dfb16eeed7eea63f4c9cec8bbb21c083d45f6ebf814305dc7d39e7aef2d6e57",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-05",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9d71ee42e9002471ee1989902a581a9842382d9e01ddc0a37daa0fac2910b523",
+      "analysisFingerprint": "cfeab95b0020ecf2f15837f960c31ab9ca445bf53d9fab2f79bdc7a91064244d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-06",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7c470b4e539eba7520caa4f187a84da035f6f61bc52fb7168e82e38fc15b802a",
+      "analysisFingerprint": "5668b59d6c1b67c2716babfe13f88d1187eb18a6c90431a42c7aba806e3eb312",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-01",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1ca0da8b9b1ea52fa144984cde88489c2b7d0455db4e97a08a876a39e0c1d8db",
+      "analysisFingerprint": "d7008d07d653bce0d1399da7d14dc095ac259c50b3742d14ad6090105d5ff097",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-07",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "32d79794b38e9138fb63f865fdda60a4134a1a9fb9116075f97fdaad9f387abb",
+      "analysisFingerprint": "681c6026da0dc3338b4c88adf9b4ac886ba2550f0261b452398a5aa42a0fe43b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-08",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aa097f8e349bee8b2959b21426fcd7804e292578471452f46f88319464424fa0",
+      "analysisFingerprint": "c9c8e4613227e4794b68b10e921d42ab5865b8839f307dcfb26dc445913821d9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-01",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8f8b155c1979495d9f6391ff9687bbc8e12815521072efe88aec8a93c34c2dbc",
+      "analysisFingerprint": "453276e61a30d71f805909aa0b16ec0e4fec6c8694144bfd88cec554017e9059",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-02",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9ba0c4cc27edbe975d7f37916f4cba16b9b4e655d31a2d2134d3c2ffc533e468",
+      "analysisFingerprint": "f9e4eba9a87c137957bee5a76987d3f1b5d811ff9fb0ed3304d162c63e66ea69",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-03",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4622bcd1960b2c317de56846c8e185fa15253bb4917aa084c058efb507326a93",
+      "analysisFingerprint": "c6b59693712e45d0ed517c2c16ec372dd1c9c35c4987e8c78164614c3b9e5b7f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-03",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4d3b0aa6b88bbc629ed27cc718f7c6f1aa21a02df9b096906134f84ab0afb27f",
+      "analysisFingerprint": "206cf1b0bae8930e3bac343e7f6daf8cb79ce8e83edcd129f0fa5a54db7a6d55",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-04",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c63683148ea4ea13c0c69ab6e6e3293dec04020e61acbd2284db6c629b64ea59",
+      "analysisFingerprint": "e3d15502a00a69f70d6db788097950982e1f528aa78d9e00cf0c2581a32eaee3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-04",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4306250116d7b397b18176562426ef11d7126fe789ef1b49fd0af062469b83ae",
+      "analysisFingerprint": "dc5275628b61fed0246d224298f46faa7a9100ac81b1745f1650c78237e4085c",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L122-05",
+      "unit": "L122",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "0f6851dc24879c02d54f6112f8649e5883027ffeef7bf464a33ac90fa739da1a",
+      "analysisFingerprint": "7f6e8522ff46d864863dcee1589ca430518d9b0948348d49c4d3135055b94071",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-06",
+      "unit": "L122",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "3b9d171f5274a16418a51d7e1cd3417a71024e0661d023503401648840d3e92a",
+      "analysisFingerprint": "991ff76cb729dd2e4ae9dd9e76a33f4012f5ce099a3fa4d734b40cec4d08acc5",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-07",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "eac09c4b986417d12218d13e4f065806cb9acd985cf3bf578bdcc9d868c2cd84",
+      "analysisFingerprint": "64c763b0e181196f46bb38c3674d021e02e7dd554fcd0d6e010e8ceec36086c0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-08",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "778b862bbaf8843ff0722095543d1d99689d9839dfae5c988e516d22e1240477",
+      "analysisFingerprint": "b1d5e9827e6086853dab03b6583c3677e4a200c7a08f5892446c4516709984f2",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-09",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "209adebeea7ff891a77d126f6e912b6d4fb235f0385c3a2f77aff1f286c61464",
+      "analysisFingerprint": "60fc6bdac34a8c5df47b4f1b916ed9687453a561a2e3a560528972c8f58b4d5f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-02",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a650c45fb13da462f9dad59d25fe3d3eaf0e1650fcefb1a47f0ab0fde527b2bb",
+      "analysisFingerprint": "51018574e4f8f659301196523c45f27e7cea37d7ac0ecba892166c118ccc737e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-03",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "86f005babb2f4b61980a7038548e0b2e728baba5a2d87080e23b0279ae109108",
+      "analysisFingerprint": "37baa993784ae7a33c365ef2150bfb9ec112a1d2c260f5d60d78328ce93ccf8c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-04",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e88fdd67230bcea0ea5fc07bb8835ed05433999cf11f6c853c10440d69bc9e69",
+      "analysisFingerprint": "bd232386d8036686be1c68991e85765ede4ee90244dfc035b356472497d8e466",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-05",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9b175bbf9831a2a74c78f874a6e3cd9ded9c5c994b36ebbfd65947dd066d595e",
+      "analysisFingerprint": "385068c19b6299c3cddb011c619b5bad810291be9be1261536f6199ec52bc31d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-06",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "074826d9384af3e67120eb061653c272bc4bcd0218278ba23a56c0078093ecc6",
+      "analysisFingerprint": "187d89c0355cf6b046c4cca20f9dcd3cf56a1de329cd57e07f794fb65d7213e9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-07",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7df9a72c3c22746547bec76630e52d16c187edd30b2d3b11618a794e72f1337d",
+      "analysisFingerprint": "eb6c08f61337f1c16f7bdf5d5178d5da1dc17dfb2c63936ca69992062f3e5aa8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-08",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c599e057eb83e3b5e93a29acbfb5237fd74a8e741324931b30692a136dfa297c",
+      "analysisFingerprint": "cdda7deb1e13eb6af80daf414b411cef5d92860d3ce179c92dc35e08a1e7409d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-01",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fbb74865ded097403f1e67be701642a69a38b3f2ee06ba31d66ec9e41eab22d7",
+      "analysisFingerprint": "f7ad5e9defe4c82737a3e495b122891520c4fea2f4d57c13654175468cc0a7fb",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-02",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "92d7e390cdd66166aa62b8fd8cfa44ba7af753e4d06c89677ea9fed10d2a2739",
+      "analysisFingerprint": "00ec7882b0e583087b53d63680bb1b64b153af41503efc06a6a49ea2faa7506e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-03",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e8f39092e6dea9a8f4d62de03dc413ff192e4220628df869f0485c0f81c78184",
+      "analysisFingerprint": "685a4825f5d4809a6ea013ce8ca0dab635729c743ade7cea114f40b35aab2474",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-04",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "99d95bc41ebccfc08706f0aa5d6d787d97ddef9694b1d1a8b5fb1f5a6d62414e",
+      "analysisFingerprint": "cce4f8d09bda78ed099df1ad2fd676969f1befd011324fd86f317981b6c4082c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-05",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "27e3c6a69e360992aa709feee9a80d0dc124c0a461f59efe605a82662255e4b2",
+      "analysisFingerprint": "893fb78beb84c63152ddc2e4dcfe460ffe77cf83f1f36a68b15dcc81ffb692ec",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-06",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "37344845c00084ed179259ca06fb00a5cbd978f3de902bbb34ec359f52dcc3ca",
+      "analysisFingerprint": "bb4f889f7a357b3badae4561a90776baaa2f2eaab71a6561004a3d1b1f0169c7",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-05",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5b124d5a4d549a473e580448f8a5022e9c6bd4f6c4d1995e7763bbef1b966a5a",
+      "analysisFingerprint": "f8ab4557cfb7706eb91b62e1963a4286421ce71eeb7238cf1631dbdcfd008903",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-06",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6b1a0f5d6b4ee0b27152e003a73525d5a54a2ccffa580f30301af27d64fe4cdc",
+      "analysisFingerprint": "ca688993195cf1041df2e9d85cadca2e349175a8eeb97a163ba299068c3a53d5",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L123-09",
+      "unit": "L123",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "50f2a6eed419ad288f83c4ae1563795ab6c81e550ae4c20b71770deac94e7e75",
+      "analysisFingerprint": "2e2bc7c2fffea0e529dbe012df448bdab56405bd18cc292f17e20b0b5c1a4a0b",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-10",
+      "unit": "L122",
+      "kind": "number",
+      "examEligible": false,
+      "questionFingerprint": "db5ea3ae26d20ffe85403b2525392e2e5fb5b1e26ca3c5f39068ec166453a5a3",
+      "analysisFingerprint": "e571501c7cc2d5eba616b853638951170de4921922d5dc9c32e3a0caff896622",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-09",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "730b649d54d1b0fdb72ce0dbe72b4c7aa133d4d372a816044a76a0fcae29c5c7",
+      "analysisFingerprint": "e5fb165b8db4b0825f6997b83d79bd798dfdf2a3f11dc4bd949e1007437bc2ea",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-10",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "48938b073d46eada29534af4e738a2fc71da09bdc01f1705c6fc3699e49803eb",
+      "analysisFingerprint": "0c3f7f7d9417e4a2496a5fb750e909d3855416a6366b809990262dccf1cfa6a1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-11",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "41311d6f1a849e4d0533931378209a7bfeb94bd7e32c13538eacb4cb6ee10fd1",
+      "analysisFingerprint": "2287391846112de14de75a2fa0f865e7ef5eb4ba832176ee5945d35e6b4f5114",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-12",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "62bf6c3434813a33a8306bf7866f90d30a0fd41389a1b44fee7e3ae33b9311ca",
+      "analysisFingerprint": "1a4273e68cdf73f82fca3c58b9ec1b58f732b3b60e51c2d258c6bc4cdf32d35f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-13",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0ac54b63be6fc6dff990e046c5005b03f8d4a006c3e6e720ca9f7d98deea11b5",
+      "analysisFingerprint": "0f62ab2681a337dd9e7ee488885280fb40bc42e971a71baf8d1bdd2965e6113d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-14",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5a81cbda4e4007b3d7facf4207db08f783c09028c1eb69e61c65ff5889293d43",
+      "analysisFingerprint": "c9ff340dfb8333bf3b005c659cfc24d1d184b3f76a82044f7f30a89df0dd58bd",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B01",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a51cf0e06d756ee710a68af538b98ed71d1de1bd428740ed02c6f04f45635981",
+      "analysisFingerprint": "fc32775410c9b5d58a8f354c21f2393d3bf3521e9b2c29f631b35f3862da65db",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L121-B02",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b7f2f62ee580f3bface2ac1baa47598f98340a1da53ebe695c4eb1ed6c5cc9ca",
+      "analysisFingerprint": "0fdbd19c14b4801f17fdcc8ad73799678e59f8c7fd85804970c004be54333fa6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B03",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d30db3d5dfa5042381d9150fadd3ed2ce88f9f496b33aaf56e44b20c6fa775c9",
+      "analysisFingerprint": "3da02e94183cf0469a00929fa1c4d2b0d12b46efbab4c006f05d00b776979410",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B10",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "380b7b3b196a8cad01c5a70eb5d08295ac81ce89b0ecc4da1c37089a585dbfdc",
+      "analysisFingerprint": "0de415045fe1a0435efaa6d7e92b38ce24e6aa8c11c24f6ddf82479d1cb8a253",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B11",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f5da497a6ffee0a3a45553afd2c3a8a9e3ee504c0753cfb21469328da8076933",
+      "analysisFingerprint": "67b13520b704d9dc88b5738ab7444594ab24dc13ec86038b787c86319f301672",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B12",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9623691a63781f3c35ff754353e9c5bdca2e36a8f7ccb90278d51d13bec0ef4a",
+      "analysisFingerprint": "dfdcb8056d212fcf2efb5f9cad92548d911e8b033121e7656255496d31089324",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B13",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0f62870e37a0a03cca24a68c39f9986e0c3d836f522d558f91e1d0013afbfd0b",
+      "analysisFingerprint": "76065427bc3889cec9f4cfc6ceecef0e6bbed96d1ce151976358bde16e69945e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B14",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "deda9f9307f9f5fa3472dc63a09a9615c57063f4f8d85c1e4564fb64f91c94ce",
+      "analysisFingerprint": "0e8a90c6145816397bf0fd5d724e8197c42b10bc681e6560a6c6628544050387",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B15",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "04f11f28986385512982d619ba56834663623964bfd20bf1b7e3be7f7c565c4b",
+      "analysisFingerprint": "99573d916e6d669bad3eabc030291c8e5fb05e09c3a27fac065c7f0e2d5d97be",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L121-B16",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c0c0af3db017765712770861f386218c7f31f9278f5441ae2ff0426db277461b",
+      "analysisFingerprint": "aec094306fdf89960aa3070e62c4b619ed9bc5680b7705a10d483585804c7756",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B17",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d8e1803d2e98936777f2e5e00b4b646efd3cba3d32fc7034f88cd76f66d8b839",
+      "analysisFingerprint": "46c974290872f5d0c11b632cc347d776225a9360fab0dd731cbc6deea250b57a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B18",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d2b989e3c32f215cbfe1026e5218e545dff3ec7e48f38babe84d21db8348f892",
+      "analysisFingerprint": "458bea99718c3b61aea38cfc38adc82ba906caf0dedb0e4ad034066994a5efe4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B19",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fa69ab35c021586b3d591d38af635179b46136cfe1573f5a3a29c407386609aa",
+      "analysisFingerprint": "87c30ed2a8e7af74c2949607f18cdcd9b8d93cab17ab0cb83c637d817a4e9eb1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B20",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ef1edc4ebf1c1110bb54de8bd843089cb430dd125eaa09c61082bcee229dbc29",
+      "analysisFingerprint": "3dbeec8cbd9736ad2f17ca1bacef81bbfc55892f5e4d61f4fc28dd7fcac61d53",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L121-B21",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b9c2f33aa58640d6863505b03228641bcfdbf7ef0ec2b3b688225102ff9afc50",
+      "analysisFingerprint": "5799b6bcc5a78ef1a9123b0d50072729c378f6fc3935180ab9478b76175d7127",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B22",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3bdaef9c2d9fac56604f83c4d1811e45d30d3c5c6d832ecdeaea761cea7bb37e",
+      "analysisFingerprint": "21a33081f16f2bbc19ad4d92e6e91d7901f2928ac5adf9664abbb46dfa16f2a6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B23",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6b00ece211b189172ca24ea46c65ed04ecadef972e1a41422b66c24d3cbf2eb7",
+      "analysisFingerprint": "54a871516e327d7721a7c4cf9ba0a3e50bae565231ccc6f50f49743e38442e6a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B24",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8dcac980e89eea0611af1872d986c61f225514ccaed27654646fef2fbca348ab",
+      "analysisFingerprint": "4ac826c61590aa66dfc44585c99e9cc11eda745c04e5ec8b0ea15e5d58d122af",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B25",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aef2b719d62ab9bf7f9f53425575bb845712cf4a00d4206a6d6f6f410112fa52",
+      "analysisFingerprint": "623fa0f61fff5630e783e804e1ac47f7319d9a9dcb5e1f2bcaba090b4c6dc815",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L121-B26",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fa63330566bf4758ff0a3d6566b34a4b45326fb7935fe77d13b697672d7c9733",
+      "analysisFingerprint": "fe0994d20dfbad0224d04e41b47227011824554b6ea09f059bef67127435ceae",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L121-B27",
+      "unit": "L121",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a82bc12455b9a1f29b363db213f7ff29a856cb20e58c538b4292af600c5327a7",
+      "analysisFingerprint": "f785577d9bf54a09ea0375a322803ab63f3f55ae9056649cf9c2d586037093f8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B01",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d0b140445dd865cf8f5cf221c86bd894c9a89963316c6298b6813a2f2759101b",
+      "analysisFingerprint": "c248436323eb1c8b300b50da31b5a13f9695140313d03c9535e0521c8deb30a8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B02",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "68ccd15d9b9df862700359f947c5e5eec1dafdbfef4007923cf599e758357155",
+      "analysisFingerprint": "db09b4fbc0ac286caf9e016acbc60f436ffa36b1f8dfe301b0703d1c56e80069",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B03",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6b2da46d8e2ca070e66c61a337f3484b35a4c35edde85dc728ac719cd1db317b",
+      "analysisFingerprint": "37e37d7ed42914f186f527ba3f9488e99c0e198e905ff119273aec90a9994ae3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B04",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "87a0ab5bf27007ed39591fd6ef056f096dad245be507548ef1935b2307682e35",
+      "analysisFingerprint": "3fbb87a8a66902b765775fee50f172e545b1dddde85e9d775c029b459e677446",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B13",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b9054d3e245affd0b103ce51a50ca8e8fc5cbcbe93268dea7c3e5ecd2796fcc8",
+      "analysisFingerprint": "4aadd6e015d47a61013790b13ebc6f3f63514aa2446b8950fa530324e1742388",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B14",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9b98a5b342bf4e946bf0904e1d1638032555781c826b7e6ace969df4e3b16fd3",
+      "analysisFingerprint": "65ccb20f9a67cf0eb5370e26ce2a713e1d182daedb2453e7c868cc2fdf708868",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B15",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c9a66e86b94b5943e5de3d8cdd4a3837beb9db2e54ab68003dd03ff19269045f",
+      "analysisFingerprint": "704aa9f302fc88e8f2d2df6b0ab16711a07ca515c8cd6769b3063b94409dcecc",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B16",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "56373ebb331d095ea383da85852d8e50ace6f16bb7c96af51e9705808e230cb9",
+      "analysisFingerprint": "e83e734132763505ba3032b09f9cf0521988fe554c7b7a405f407d268422a93e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B17",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6aef05b8a4e2d6021438c4b1794d2afb462d43f732c8032d0ec22c2241f661f5",
+      "analysisFingerprint": "6caab360b198c5a5eb28c27f2a160372f88f2df5d723e5074280656d804f11a9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B18",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ee96e59c65eeebe4e2cc4924e72bfa806a5c53500bff3c8f51830ab151e9699c",
+      "analysisFingerprint": "00f22152052372083255aec00d8895ec7e5b193e8c7f9ba8815cb39b7690bced",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B19",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "80a607593befa2102a5fc75b936dfa2201c9a7906d507f2fa3f87f0ef65b7b55",
+      "analysisFingerprint": "151fdba1a17b7a347ba1bf2263f31b7594e0e9dda906b5d2f76798eedf7e1382",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B20",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4683d4405dae24457d237786b6c1668bb9a0144c9b0055b95dbc3f136f8a8d75",
+      "analysisFingerprint": "2d3ec7b8a9a14564270c6be76786b8ebefabf20e478264c60b2e1815fab55163",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B21",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9fd5326fce8552dbe1270c84c0910750bd87961cda347995d8480cec5bae1265",
+      "analysisFingerprint": "d1fbdac0b57d81b04f185a04e4a15c5fb99235525804e2bace42f0e6f27f483f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B22",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "594c61a890f37ad077c34bd25f4b05720e2c476671212b5b0549b2d9d0065dec",
+      "analysisFingerprint": "fe62beb0cb65142c9cbf5b1f07f42d21fa5ccf0a17a30c5b154eb93ed734b6e5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B23",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ba55be8035caa6d72f7d0ee38b92dd61ea7e117d50a9d45244cb4252877523f1",
+      "analysisFingerprint": "37c087357cc34246b8df45b7b20af3ee052c4de457f3086564e6367daacebdd3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B24",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9712a6092d1f53c4077eae876f35f407fb2aae0d08750e06c510063e271a2c9b",
+      "analysisFingerprint": "53bb0f99700cc81310e9ed42736ea6dd5095e710f22c8cc0d6661d4f28bfadd5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B25",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8a6f6e4a3ef918a85f03558dc55e99055147c70b09d750ecb0a4e013a0d9d5f0",
+      "analysisFingerprint": "ec12f8f0d8547a6a6783fda5f295baa500dd54429a024dd909bafb5f7278c0d6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B26",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0558ed8cfd2332fcc70fac18145fbe9491a5ad2b129cf895dcd945c52e9f569c",
+      "analysisFingerprint": "3e8fceded8755a391eb63b993cc80a464c186ea8bc7d7629baaba6b420acdbe2",
+      "decision": "retained",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B27",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "85a3b86f0810767930376a75de89bb3c0c93000d0de248c466491cf0efed5dbe",
+      "analysisFingerprint": "699529435529158fa44624f4b1392f88f153c5d5f23ad783f97b9af749105021",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L122-B28",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "45a9728e019834f0394269045e784cf2b270f38f7dd5ec7e530df26e6e3d1d0e",
+      "analysisFingerprint": "3d2216c8402378d94269f3c9303aa1d6eeb49ba7271588e823a632f288a2f587",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B29",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "db89a850e59b0adb3d1022bd4dd7e7ee972ab135e4034175d80180165565839d",
+      "analysisFingerprint": "8f4711176bf1218793324bf534549a47acea0a404b907c774fa04f7c3a49680f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L122-B30",
+      "unit": "L122",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "37f4a83973dd78974367b2f9c60a460ce66f3565dc7ff9b3fe17222210c3af45",
+      "analysisFingerprint": "d58078cb09bde876582ea5a727d681bd11f5a2dd8480d22a90ff2df0aff538b7",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B01",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3b9c5a25c16c8449220089bc033e0a03e2140f2261806d59a75a83d9253fe2b8",
+      "analysisFingerprint": "c242ee365c72dd416ce333ee9e7f099c41a59a462665f9fe82dbdf905d89febf",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B02",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "240fcdf94c33d87b5230ea3fac80d3d2a4b808471173456e0b2d39933bccc3be",
+      "analysisFingerprint": "201cfa52298039875a7b2930a52b2af0c6ac2cceae4b107554e9833dbf9248e1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B03",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bb14be93cc2a57a7608e7876c09bdaa812f26e501f4ea47865751d3bae50e4d6",
+      "analysisFingerprint": "bf8c37b3b219c0be83b8484da665da68a42297cb4286efa897d4583e61e35292",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L123-B04",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3c855ec96f6eb0c53ac5b734227aab2577a03f9de462e6db054002e653e7645f",
+      "analysisFingerprint": "433a782550319e8f4c5d2129cde2f803179f63089ad5becc15d4fd6c389d4138",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B12",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3a390fca56f9d8b0a8426303c138df0814564f8bb6a2e9c0f646a94b8607ba25",
+      "analysisFingerprint": "b64830c03263651e0dfc890b0eef2142bc70a03d0756017307bc0fd710290bb1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B13",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2daa33eb6b7fd461922592137849c00cebcbc63dfcdd13f7759405ff76d2c487",
+      "analysisFingerprint": "0e00493d6f0f7acae2973a01ec4f56956b14b2262dd65647ee162c6c102a2635",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B14",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "aca5d1f1a57f30ea9ebe22ef262ac0694a84adb5842d9e1dd2265e21de00c303",
+      "analysisFingerprint": "c574a72b398d4add4e9cda69ecf9e1c3d02d837573dee235a84261bc1ac4e1c4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B15",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "96161b0c2a9553fe50e5b66d6d224b2fdffb9e4902b0795347c745eb1f6d1b39",
+      "analysisFingerprint": "fa77273b2dbbfdac2c99d8c114c996e75e4d02ab1a199642f88b6a7b53f9c93a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B16",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3b6a08792b0f730486ce35d7a67e4b3e69e120f811ac960d3907f042f3757858",
+      "analysisFingerprint": "4f97eaef386466a6bc33f2ab0a0f7e1fdeac3c96db500c26dc1c2c11bd9c8f99",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B17",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6d0be176ec63029b71cf7a4d1f7bc02ce2a1992fb7af978a1c5f316c0d718b6e",
+      "analysisFingerprint": "d054b0cd197fd4bddeb8d06631de00e8740a222fc605cb18772bfd3e8597c117",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B18",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3fda791ca05c05ab9f2c587e28caf94b11c2ef492d70cf252b88c2f4cffaef68",
+      "analysisFingerprint": "b77943f257f15c3f5fa7d24fa89cfbb045bac5d654ebbd53a6f76c5071ef9ef4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B19",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b73b445fa3ff623ae577db5dc0c591d5f4754aab6589ce75a23c5b62160dc119",
+      "analysisFingerprint": "edcf504f15eca22d79e1de2f4b35b09ff4b1499db232efd73232d70ceca4fd3f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B20",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cd4534f247acd0b342f2f1f77988d7c18e2a324014afe2e9caa34f94682eba7d",
+      "analysisFingerprint": "cb31e6aed1974107d0598c0163b4baf3f87166d37203faa99aac7a1a3ca18d92",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B21",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "dd0447b2908d5b2d236a5338e45ba8f063f5d384a16d24e3cd865f916cbbcd95",
+      "analysisFingerprint": "e4525ab67226f52a7270a70493efdcb6927abeede268fa96065a08caa3bc5131",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B22",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a04f04ae1f898d7d6bbab2245c5783e3be646f7df7d8ab3c0c33cb25f1528d6e",
+      "analysisFingerprint": "6be09d77b0f0126e4111af2a73ec3e66b22f4cadb0f2ebbe663f0750e83c49c9",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L123-B23",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9af5d837dfa2eb0518665182886bb6857c9073cc42a9e32c40e8a36d07383465",
+      "analysisFingerprint": "e05544204e87c3c789e46e84199511d0711ae0ae16ba3efee10f67a7d6e25922",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B24",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "45fe6b2a13ed3007ff46bdcb55111d8fc3e914b2b15969797177792b270bbfdb",
+      "analysisFingerprint": "abdd8386eda01c7bdfdf541e05fae2883374ffaf6a21706b70b2eabcce6b35b8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B25",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9d38ef69b6b982f2d48e306cc5f830a95683f3a25cc2870e8458b8c9bdf0a280",
+      "analysisFingerprint": "4e866b0c22ac3645286b67546e1af54d4a6d4718ef0308f6dab4b84c1ec2762a",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L123-B26",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "67812570a91cff830a27418d2c8a35eb5d44249b0a56d64cc592d3ee82730271",
+      "analysisFingerprint": "18a2bb74397eff900038badf0819b97ed0b42f419b207f055356cd5e19cf2db3",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B27",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "480ead889e2c64449a42821728cd8e1e78a6194b2bf311dab3907edeab27c813",
+      "analysisFingerprint": "6be5fbfa6b8792d415e4d6aa1bb40472721d561cbaa9adf202b599ffd614faa7",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L123-B28",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e51cfa84a0494a755e7be1b21dbe20499f3368ecd3932518038a4f001101c8c7",
+      "analysisFingerprint": "0d1da517574074002c7061b1073d726f5b67e64bffd73f3e5d86546553604658",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L123-B29",
+      "unit": "L123",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "980d08af821fa421e1a2ebe6dec5cf989327dd58965ababce89be2ebcab2851d",
+      "analysisFingerprint": "ea67f316c41153bfc8b741a82330b7b7d8844bad44a05e60775f05d2b2ef732f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B01",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0e94637b1ebb8299dcc127fb0027c48a7c52a98292071d13c8b74df22dbea799",
+      "analysisFingerprint": "1975f3d98f34f2a6948fa0f93d6698d369707fdf37988e3aecddb5277d388cb1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B02",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bf571bab9f94532bd8a74e476624ab9fc75165806bab8e43e6497e97fed7c047",
+      "analysisFingerprint": "a33185261f6455294454454a13a91eab06e69098ab3ba03530f2b0d58f4917e9",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L124-B03",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1327e6f61f9e2835688566424b0f205a1109bbe943f39038fc66a2c8053f7891",
+      "analysisFingerprint": "2e0c1ab83e26888439ccc3fe2a6dca99c45a3c945d78eb9e3dde3a86375e6e8c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B07",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a3150a4ca2e2023b1beab39a583e373a81bed41c04a8acfc459ec3be28d7ee07",
+      "analysisFingerprint": "6b847f48a07f43fa67772a08b273afd2277f026a20e6506910ca751be30c0e81",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B08",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "06fac9344ca3e6216ba4ff75147643a7216c49b4c1eff702b241277043d90283",
+      "analysisFingerprint": "9d9d36a38bff86b143288e4ccb9f78cdac61d2554010567bdee0cc14d569c77a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B09",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "40e5467f149ab7c59c00327ba66908633aad1d7eb6a30aff6a92717ee51b5132",
+      "analysisFingerprint": "b204e5d8ceaeb50b47a37764382d1af78bcb953b92b345beb850d52a774d4f4c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B10",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9abe49917aadfc09525080333c51a2b00d1ca3c17f5b3fac55e8cddebeb1606f",
+      "analysisFingerprint": "dcebb375d42e2d2115f2ecbd1e6cedadbe558a89278505585c10d073c0dd9dd9",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B11",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e46a76d4729af16365e828757cbca8fa8bc40c26d4c0b16dac725800bf5a5f1c",
+      "analysisFingerprint": "be65bf4f19d7789dfe34c7e473b0a119da4d24ecbf110d5d53b001f852e957f6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B12",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cb99cad8741fee135bf02855242eecc7b4b5c313da36cddab633a4c458cb9d5f",
+      "analysisFingerprint": "3236cd285606fff461fec4d987deeab53a8a80e7d98b519e30f4efb7234e1bc5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B13",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6346d902f9d5b296a29b0f851fc2f7bcb561f4450d6e7b50097d9f5dc1b70e64",
+      "analysisFingerprint": "cf8d564dee6b5302eaaa7d301b03a67c316d9e49e45af71b6e259dc886d33639",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B14",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "348dc85d797d64c767be68ef44e4a38f112fa7694286b2129ae79d6253dc1b93",
+      "analysisFingerprint": "1a74be889c907fb664afc7b1f50c32cb538b41c6743967e38df1d269084eda06",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L124-B15",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "81fee7d72f30f28a2e05ac0f1990fd2fcbdbe43cf017016b78bffd3b0effadc5",
+      "analysisFingerprint": "cb750fce70881b32c0d0cc145f17525113cf06818763743a0e09652cb860d459",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B16",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "272568548390d3b76e44eff60daf4ca5ff1f6bf79686613716302e460c07b53e",
+      "analysisFingerprint": "bc295fb76e4b4800a5f89235c353e1bf4a79098a00bb259af75fafe0b3ef9b3f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B17",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "98fc70d3909ac9c700e681652e1de5d97052baa4b7051974dbd0a9ae548aa371",
+      "analysisFingerprint": "469f3154fc0d09e6313282275aaa1c2332b6e4a7257f98bab4d345e836a8ecb8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B18",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3a23ac118a60b6cc490187e5c2892aacd1a5c104422e336bb2b9c3f9267d3080",
+      "analysisFingerprint": "cc9895728d2abfaf9e8f8af272c3934613006647aabf9f344b2d0b798bae71dd",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem"
+      ]
+    },
+    {
+      "id": "L124-B19",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "dc8461369cebbd44c3750d6893de1ceb1d6654c1ccb68f84160fd7cebd5dba3e",
+      "analysisFingerprint": "4bce712c14ebd3b070098e117c3d56a20d9dd8653a983940cb7e8c0af359ffcd",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L124-B20",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "987f4257e2cebbd8108622575a787dea671fb486c357ddfe874ba36a48c59ef8",
+      "analysisFingerprint": "746d7596612f0b91cabee5990eab1f783bad65ef75e2fddf8b8c0b5b44070525",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B21",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "22d696aac16438c8cfdfd93c6708c13b6c7ffbdcbffca0359803836673f84c6e",
+      "analysisFingerprint": "8aaf1babbc14a3c5d12599be81d978729e75b2e70cdba0195ad28b3ff7227b1c",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B22",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a209fcf188acdaaa61553b5a49ee2fcbcba7a41d0bc8a9d39543881e3920eace",
+      "analysisFingerprint": "67df18e3d36a7e57bf80e76a1f87c48a20cb819274092a1480e81d6105ea6e3a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B23",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3bb7bb0adf7e4d34dc6f5578d1b97ca6c398d3584ec1f165ea4bdb86e80f273e",
+      "analysisFingerprint": "72efec03cc339164b0d8b194b89ba020ad16556ccd14f680b187163ce076363e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L124-B24",
+      "unit": "L124",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3e860d040cac34ef8a207fc43e58d03029c2edf6a3e7345a81dcb0b233f6e36f",
+      "analysisFingerprint": "6fae682731f29565a3821ca9f514fd776f6a4a893da830f1d5566a0cee5ae5ed",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B01",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "bfa42e8fca968a2bd8cef8fcacc87993b50ea49dde5c144c3131d8cbf3fb116e",
+      "analysisFingerprint": "efef858c6d29fddcad0b0af0806f091909dbce42f7aac61807bc097508f2a901",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B02",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "283dc709d8ad364319ecc19497a36e3dc1ca56be35ec5dc3f04f280028fa6620",
+      "analysisFingerprint": "50fcc04f5777677f79e511d692c07cbc67b0c15ef1720642aa105593b438e521",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B03",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a9a886485eb8cd607fcafecb65f72c93ce84181c5d0b5043c468b2dcdeb7fed6",
+      "analysisFingerprint": "e524e7fdd4680c54a685e30b90f47b2c1d46b04f91c9c88b09675141c370ba6e",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "stem",
+        "options"
+      ]
+    },
+    {
+      "id": "L125-B07",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "52c384fddab4d880a65faae82b196d86e01074404f772ab526e43789c1d4c06d",
+      "analysisFingerprint": "ff44d0fa7bd06b8fc799372f38d0e99df284a2548689112a68e73cbd16420c89",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B08",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "3e1a92dad330357c7131d71ef021284358f4ed88ac0aced08b510941de3fca42",
+      "analysisFingerprint": "29a1d2cb536552220ba9e35d0ca5e30bdc741b33efa4724604306c44e85e183d",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B09",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ba4faf5217d5515677f51df7af1acf7f5f51fda21ab5c7a39132bbaebbc3967d",
+      "analysisFingerprint": "45e5c8be0cd831ae2c2c91b0e0433e0d0f4892f0d9dcb8578b747fc71e050c94",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B10",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "54714121d77422f643392885a9c0844cd82761c7c69c729072ed6ba1e5538f55",
+      "analysisFingerprint": "20dfcb688d307659307714a6dd291aec23d379e5d055a50b540e99a7204ace16",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B11",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "57e533da6b6470b387fab26ebbcc15e67ae59b6c15ad7e2f6f30bc65a5d2cd04",
+      "analysisFingerprint": "734a9218584b75d00c3426ecf33d2a2905e2c20004f7414f10aa2c7694d9b4c7",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B12",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "285b76051b648dcc203be211797c2a732d44541c3a5b5ff00e39e268d5312baa",
+      "analysisFingerprint": "5c4e1e8d692b61500f142ef1a5e847167371f4a07ad18c9bd689c7fdaeb427c1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B13",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e0cfa60a326669387fe3b0a5d191f62357ff05fbf70316736a99204dd8c4e6fe",
+      "analysisFingerprint": "0b9ea5d8df5d0a76a3d6cf7ff9a974fc9e055424ef72faede5369b73e35997a4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B14",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "4679ea7df2e31a28b73064b5833901cb2c0e55568774c4a0df68353d61b35b61",
+      "analysisFingerprint": "b9c3477db031ddda7c49bc61f3ca1743e209ee537689145594fa85545e0d40b6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B15",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "f3ed960ae519cbce2913f8e8cabe25a92cddef010acc17aeb0b8e56b8850f80a",
+      "analysisFingerprint": "ceaa7d14c7d8731f06c5a6476fb1eafef11b4745aaf16d5ff31aae83c30a3e6e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B16",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8e66f1167cd9eda8753800f7b5139229638b19360c3eb01dfa7ce3b46ebfba7c",
+      "analysisFingerprint": "a2d961fb1e06b50a0748d017ea160e20d57c11cdf6401ec84cf23b54aa0af584",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B17",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "03530d6b77d7aa409f732eb8d0665e00c04384963d32d7436b5232c118c8199f",
+      "analysisFingerprint": "10ed202777af0e62d6d6457f66fb22d6c41bec82d7f0a5eab8aba94d13bf0974",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B18",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "21c01b095d343195e4f771ec7dbae47a12cd6151602264c70d642e4c66298564",
+      "analysisFingerprint": "71275972717a7c071968df1ec8ac10e32de9aed3b3712d9332f7a660dec2dc34",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L125-B19",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "87940d7a98e41e93f48e98223d54d0cf1fb671f6e087d34b8284ba8553f67b11",
+      "analysisFingerprint": "6a48d92c4a04fe0d23bf02b706de1f7f2237c25dcc957962b2fef097c67be0f4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B20",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "8ea4f95f9f41c18346cdd009d69ee157a6aa9b2c5d3d5beff47904db93108034",
+      "analysisFingerprint": "07e23f16b34991d8dbb1f48f9fa220446889fc02e6ce5dfd3b9297adbc50ea30",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B21",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "0028ac39093b61f488471b84fb8b4a968fba703f07ed893798417f14dae0b1d2",
+      "analysisFingerprint": "33012f02da426cb1baf9b6192539664084ee7e91cd77ed160e60f24acf032d8a",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B22",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ca6ec3767da39179f6dc60a910ca267c8f5689227cb07790b57f3bede0310f81",
+      "analysisFingerprint": "4564a19102009355a7cf9e9fcc70e0885bf81c51e4ef0b140ba53d6b3239db6f",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L125-B23",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "fe99c304838ecd37cd9855bf74d3967c79f55680f01d5d99fac8f79b23928626",
+      "analysisFingerprint": "b5c8ec95e0b28d882fad0126d0a94acca4d3ebde26baf4fc905e3760b59bca37",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L125-B24",
+      "unit": "L125",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cea9d0fbd86f8e515e0582967d93f1775876145903ae451137ca831266ebf992",
+      "analysisFingerprint": "8c2b1ea83b277dc70992384c5c5a9032786e25b15b8e112ebdd59de20adc0b85",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B01",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2861f268affada1081a3cc028bf640b876297ad64169b48c4c3188492f13206f",
+      "analysisFingerprint": "0400f448585ca6e5b815c142c7b2a6ba62320c83538f49b7ba3284b7c3051fb6",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B02",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "a3be0c187e2572be320d859550acfe320f65530d8566f7ebf7155b8d669c33d0",
+      "analysisFingerprint": "fcb32b4a7457efc2b60b09a632ebf88234d3a1b8a09cf30ea1e89c559aa8ab68",
+      "decision": "clarified",
+      "changedQuestionFields": [
+        "options"
+      ]
+    },
+    {
+      "id": "L126-B03",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5e1cf9e132517cc515980556c39e79878ecceaa1322b0613bd148545ac4b0c7a",
+      "analysisFingerprint": "15ca35ff6a01f8ad6f3a6b0060750dc0c381cec62b3035a023ff89931d2d53c8",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B07",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cd5991d0719a478c32ade4d2054e0221e16ba3ec74f38ab0da73a4a19d4653e6",
+      "analysisFingerprint": "dfa4f31e9bcbcadaa3fb4221600ad928c63d86eeee208c1168e86ca69978be07",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B08",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "281f15f41e6ceacc1f1521edaea3da8749fd7b14064af806da414ed6adca1e1d",
+      "analysisFingerprint": "920eb24d6426142d7915df0843141c44a607ae7aa7c64def16b08849e8501158",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B09",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "d0ce67ef61207e2b84f8cc2c7f6c75a5113340f5938adf8e9f0f0ef79eecd969",
+      "analysisFingerprint": "db051bc8a2dcfe7929cf797858ec6e7b159e573c25fceb054fa14556eaaf1934",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B10",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "cca16826738fe5c8bda8d95fb69af95b779b145f1749057eb594d47dc92b5340",
+      "analysisFingerprint": "64d614a7e455a140fa663067b634dd8a98d68f9c3c0591b0b4023fa64d69815e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B11",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "5a306b358dea1794bebb0ef446986ee565321c4b2a8d08568b41d226a2eab0d7",
+      "analysisFingerprint": "8d34ab82840faedd0aeed2ee1ea121ba924221241ba9d1f4524d41ec45192ec2",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B12",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "6ae58ee7fcffdc85af54f159e5e8a71478bdfb3ecea828d9fa458d1bf6418622",
+      "analysisFingerprint": "c5d1a69dff869ddbf516b8c187275d8e2b23f8ad71a097f0c69408833cf0d193",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B13",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "30f819b0618c4547fdc3a921a44bbf56d126406a1cf83b796845c05583af6183",
+      "analysisFingerprint": "1f6ece7dfcea5e85cc080bd3e5f063d3b078ee74ee49ac5ffcc5bbcf4818b935",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B14",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "2a661e08fad9dfcb51b36025cde0ae5772b7c405779e1a23cbfa0ba8ac29cc04",
+      "analysisFingerprint": "5e8738677df77a7c9111d97705dce1102c7dbed11cf51293c8d9f097b2c17a3e",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B15",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "c59e4b7e8be46265457627b0c05c17bc294d5b164f50b860690207e22f05c3ca",
+      "analysisFingerprint": "ccd55e9b5a058ea2223b19855cf3b9b6c37ca907b28e959ab71f19fa6629f449",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B16",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "7054ac94ee3c64c65a0975c9c8323ac2f6b645043283e5c8bf74cf587a4b8dde",
+      "analysisFingerprint": "6e1a1def4ac9f8ea61d3ac4883113b0701af2bd2e9c142388fa669653621d580",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B17",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "b4654619cdd70d245a9dceaddf76b48e1217ad5aa2ded32a0bef4803577c5d5e",
+      "analysisFingerprint": "9a4f60dd9482c1fd49cd0b0a576ff73b3d38ff6ffb2cb6f67ee9ba06c94335a0",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B18",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "9ad02cba8ce3b3dfd8607f6e9e52699a0984545e7617e7f8cd8abd89c2ebd4c6",
+      "analysisFingerprint": "5dd0f503a031190840c69793348a7852022a3b0574160c6158e8dc587842d5b4",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B19",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "1646e50abd0bdef8220e500369094a20052a869983e268c5ac929883c8407861",
+      "analysisFingerprint": "1136805e0c998fd0561d19ddb1ee81337fc5f2b2db3cfe00df40021b4b12aef1",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B20",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "84d8aee01a67981cde80f9693222ccf26dbc4a35a3dd66b76f0ca9790fa524a2",
+      "analysisFingerprint": "29893ed1acf81f8734cb0ea8cfd7f56cbb25b833fc53095d74a8f4a6059d7973",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B21",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "699f022f643acdfdf18e924124a3aa3cc7eb7d6f9b6b803bdf4d79a0e140c9a8",
+      "analysisFingerprint": "7480b645f5293faf8e461a2c68f799f19427b23996e35093d95fda7b2b75a1e5",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B22",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "ba0a13a6746d5f13e199172aa3dbc72ccc23f518732198614d011b2f2f5fc68f",
+      "analysisFingerprint": "77f0b379c093592131cd79de0a285fb78511ccae72e74461acee87e0212a2463",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B23",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "e883e1f6a2e2f10f6f1e1ef6447014f607309e0775fe6a50301a873b59d2f5f2",
+      "analysisFingerprint": "1d5f6b37fa5e7fae155fbcf0a26627fa0f7565b590a5661aae320d4a1fac843b",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    },
+    {
+      "id": "L126-B24",
+      "unit": "L126",
+      "kind": "choice",
+      "examEligible": true,
+      "questionFingerprint": "411d0fddf6f3b0460f540b2310d835c0a2f6be1ee23e33f8d26ce263b06d324b",
+      "analysisFingerprint": "4420259c509594e606124cbc4552ee90c645cc81e7564f8a94a0dbf9b5a92799",
+      "decision": "expanded",
+      "changedQuestionFields": []
+    }
+  ]
+}

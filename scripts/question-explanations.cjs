@@ -3,7 +3,6 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const crypto = require('node:crypto');
 const E = require('../dist/engine.js');
-const { parse } = require('../dist/explanations.js');
 
 function load(bank, root) {
   const authored = JSON.parse(fs.readFileSync(path.join(root, 'content/question-explanations.json'), 'utf8'));
@@ -16,12 +15,8 @@ function load(bank, root) {
       const q = byId.get(id);
       assert.ok(q && q.unit === file.slice(0, -5), `Explanation in wrong unit: ${id}`);
       assert.ok(!authored[id], `Duplicate authored explanation: ${id}`);
-      assert.ok(Array.isArray(row) && row.length === 6, `${id}: four option reasons, check and fingerprint required`);
-      const solution = parse(q.explanation).steps.join(' ').replace(/^[」』][。；]?\s*/, '');
-      authored[id] = {
-        focus: [q.hint], steps: [solution, row[q.answer]],
-        options: row.slice(0, 4), check: [row[4]], fingerprint: row[5],
-      };
+      assert.ok(row && typeof row === 'object' && !Array.isArray(row), `${id}: explicit authored analysis required`);
+      authored[id] = row;
     }
   }
   return authored;
@@ -39,10 +34,15 @@ module.exports = function enrich(bank, root) {
     assert.equal(catalog.aliases.get(id), id, `Author canonical explanations only: ${id}`);
     assert.equal(detail.fingerprint, hash(question), `${id}: question changed; recheck its explanation`);
     for (const field of ['focus', 'steps', 'check']) {
-      assert.ok(Array.isArray(detail[field]) && detail[field].length, `${id}: ${field}`);
+      assert.ok(Array.isArray(detail[field]) && (field === 'focus' || detail[field].length), `${id}: ${field}`);
       assert.ok(detail[field].every(line => typeof line === 'string' && line.trim()), `${id}: ${field} text`);
     }
     assert.ok(detail.steps.length >= 2, `${id}: reasoning must have multiple steps`);
+    assert.equal(new Set(detail.steps).size, detail.steps.length, `${id}: repeated reasoning`);
+    assert.ok(!detail.steps.some(step => detail.check.includes(step)), `${id}: repeated check`);
+    for (const reference of detail.references || []) {
+      assert.ok(reference.title?.trim() && /^https:\/\//.test(reference.url), `${id}: reference`);
+    }
     if (question.kind === 'choice') {
       assert.ok(Array.isArray(detail.options) && detail.options.length === question.options.length, `${id}: option coverage`);
       assert.ok(detail.options.every(line => typeof line === 'string' && line.trim()), `${id}: option reasons`);
@@ -53,8 +53,17 @@ module.exports = function enrich(bank, root) {
   return bank.map(question => {
     const detail = { ...authored[catalog.aliases.get(question.id)] };
     delete detail.fingerprint;
-    return { ...question, analysis: Object.keys(detail).length ? detail : parse(question.explanation),
-      ...(legacy.questions[question.id] ? { legacy: legacy.questions[question.id] } : {}) };
+    const original = legacy.questions[question.id];
+    let historical = original;
+    // Only reuse analysis when the original wording and option meanings match.
+    // Historical answers and option order remain exactly as originally published.
+    if (original && original.stem === question.stem) {
+      if (question.kind === 'number' && original.answer === question.answer) historical = { ...original, analysis: detail };
+      else if (original.options?.every(option => question.options.includes(option)) && original.options[original.answer] === question.options[question.answer]) {
+        historical = { ...original, analysis: { ...detail, options: original.options.map(option => detail.options[question.options.indexOf(option)]) } };
+      }
+    }
+    return { ...question, analysis: detail, ...(historical ? { legacy: historical } : {}) };
   });
 };
 module.exports.load = load;

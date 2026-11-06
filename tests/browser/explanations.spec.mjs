@@ -21,7 +21,7 @@ async function answerAndCheck(page) {
   await input.check();
   await page.locator('#submit-run').click();
   const card = page.locator('.explanation-card');
-  await expect(card.locator('h4')).toHaveText(['破題關鍵', '解題步驟', '選項辨析', '結果檢核與遷移']);
+  await expect(card.locator('h4')).toHaveText(['破題關鍵', '解題步驟', '選項辨析', '本題檢核']);
   await expect(card.locator('.expl-steps li')).toHaveCount(3);
   await expect(card.locator('.expl-option')).toHaveCount(3);
   await expect(card.locator('.is-selected strong')).toContainText(`${letter}. 78.75`);
