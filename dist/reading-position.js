@@ -49,8 +49,7 @@
       if (current !== record || !record.target) return;
       const heading = record.target.section ? document.getElementById(record.target.section) : null;
       const y = heading ? window.scrollY + heading.getBoundingClientRect().top + record.target.offset : record.target.y;
-      window.scrollTo({ top: Math.max(0, y), behavior: 'instant' });
-      record.lastRestored = window.scrollY;
+      window.scrollTo({ top: Math.max(0, Math.ceil(y)), behavior: 'instant' });
     }
     function refresh() {
       if (!current) return;
@@ -73,7 +72,7 @@
       const record = {
         root, code: root.dataset.readingKey, headings: [...root.querySelectorAll('[id^="reading-section-"]')],
         buttons: [...root.querySelectorAll('[data-action="reading-section"]')],
-        target: positions.get(root.dataset.readingKey) || null, lastRestored: null, frame: null, cleanup: [],
+        target: positions.get(root.dataset.readingKey) || null, frame: null, cleanup: [],
       };
       current = record;
       const listen = (target, name, handler, options) => {
@@ -88,10 +87,9 @@
         });
       };
       const stopRestoring = () => { record.target = null; };
-      listen(window, 'scroll', () => {
-        if (record.lastRestored !== null && Math.abs(window.scrollY - record.lastRestored) > 2) stopRestoring();
-        schedule();
-      }, { passive: true });
+      // Layout/scroll anchoring can also emit scroll events. Only actual reader
+      // input cancels a requested anchor; late layout must not cancel itself.
+      listen(window, 'scroll', schedule, { passive: true });
       for (const name of ['wheel', 'touchstart', 'pointerdown', 'keydown']) listen(window, name, stopRestoring, { passive: true });
       listen(window, 'pagehide', () => { measure(record); persist(); });
       listen(document, 'visibilitychange', () => { if (document.hidden) { measure(record); persist(); } });
@@ -113,9 +111,14 @@
     }
     function jump(target) {
       if (current) current.target = null;
-      target?.scrollIntoView({ block: 'start' });
+      target?.scrollIntoView({ block: 'start', behavior: 'instant' });
       target?.focus({ preventScroll: true });
-      if (current) { measure(current); persist(); }
+      if (current && target?.id && current.root.contains(target)) {
+        const padding = parseFloat(window.getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+        const margin = parseFloat(window.getComputedStyle(target).scrollMarginTop) || 0;
+        current.target = { section: target.id, offset: -(padding + margin), y: window.scrollY };
+        restore(current); measure(current); persist();
+      }
     }
     return { mount, unmount, refresh, jump };
   }

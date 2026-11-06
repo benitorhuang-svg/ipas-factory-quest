@@ -81,6 +81,16 @@ test('contained reading sections preserve paragraph jumps and same-tab resume', 
     return top >= 0 && top < 180;
   });
   await expect.poll(aligned).toBe(true);
+  // Lazy sections/media can expand after scrollIntoView has used estimated
+  // heights. Keep the chosen heading aligned until the reader starts scrolling.
+  await page.locator('.reader-article').evaluate(node => {
+    document.documentElement.style.overflowAnchor = 'none';
+    const lateContent = document.createElement('div');
+    lateContent.style.height = '900px';
+    node.prepend(lateContent);
+  });
+  await expect.poll(aligned).toBe(true);
+  await expect(paragraph).toHaveAttribute('aria-current', 'location');
   await go(page, 'home'); await expect(page.locator('.dashboard-unit').first()).toBeVisible();
   await go(page, 'guide/materials/M11101');
   await expect(page.locator('.study-diagram svg')).toHaveCount(5);

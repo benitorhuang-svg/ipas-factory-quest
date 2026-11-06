@@ -6,10 +6,12 @@ const dom = new JSDOM('<!doctype html><body><header class="section-topbar"></hea
 const { window } = dom;
 const doc = window.document;
 const header = doc.querySelector('header');
+doc.documentElement.style.scrollPaddingTop = '100px';
 header.getBoundingClientRect = () => ({ bottom: 72 });
 window.scrollTo = ({ top }) => { window.scrollY = top; };
 window.HTMLElement.prototype.scrollIntoView = function () { window.scrollY += this.getBoundingClientRect().top - 100; };
 let wide = true;
+let layoutShift = 0;
 const mediaListeners = new Set();
 window.matchMedia = () => ({ get matches() { return wide; }, addEventListener: (_, handler) => mediaListeners.add(handler), removeEventListener: (_, handler) => mediaListeners.delete(handler) });
 const script = doc.createElement('script');
@@ -18,7 +20,7 @@ doc.body.append(script);
 function page(code, shift = 0) {
   const main = doc.querySelector('main');
   main.innerHTML = `<div data-reading-key="${code}"><aside><details class="reader-sections"><summary>段落</summary>${[0, 1, 2].map(i => `<button data-action="reading-section" data-target="reading-section-${i}">${i}</button>`).join('')}</details></aside><article class="reader-article">${[0, 1, 2].map(i => `<h2 id="reading-section-${i}" tabindex="-1">段落 ${i}</h2>`).join('')}</article></div>`;
-  main.querySelectorAll('h2').forEach((heading, index) => { heading.getBoundingClientRect = () => ({ top: 200 + index * 600 + shift - window.scrollY }); });
+  main.querySelectorAll('h2').forEach((heading, index) => { heading.getBoundingClientRect = () => ({ top: 200 + index * 600 + shift + layoutShift - window.scrollY }); });
 }
 const settle = () => new Promise(resolve => window.setTimeout(resolve, 5));
 let position = window.FactoryReadingPosition.create(['M11101', 'M11102']);
@@ -49,6 +51,16 @@ const heading = doc.getElementById('reading-section-2');
 position.jump(heading);
 assert.equal(doc.activeElement, heading);
 assert.equal(window.scrollY, 1600);
+layoutShift = 400;
+window.scrollY += 20;
+window.dispatchEvent(new window.Event('scroll'));
+await settle();
+assert.equal(window.scrollY, 2000, 'Jump anchor survives late layout and non-user scroll events');
+window.dispatchEvent(new window.Event('wheel'));
+layoutShift = 0;
+window.scrollY = 1600;
+position.refresh();
+assert.equal(window.scrollY, 1600, 'Actual input releases the jump anchor');
 doc.documentElement.style.scrollPaddingTop = '110px';
 doc.querySelectorAll('h2').forEach(node => { node.style.scrollMarginTop = '26px'; });
 window.scrollY = 1564;

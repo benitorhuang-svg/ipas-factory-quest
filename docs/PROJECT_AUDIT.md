@@ -2,7 +2,7 @@
 
 ## 1. 專案基本資訊
 
-- 日期：2026-11-05。範圍：main 上相對正式版本 12f5f40 的全部產品修改；scratch 臨時檔不屬網站發布內容，後依使用者「push all」要求收錄版本庫供追溯。
+- 初審：2026-11-05；CI 修復追蹤：2026-11-06。範圍：main 上相對正式版本 12f5f40 的全部產品修改；scratch 臨時檔不屬網站發布內容，後依使用者「push all」要求收錄版本庫供追溯。
 - 實際入口是 dist/index.html；content/source-project/ 是保存來源。先前 2026-11-04 稽核另存 [歷史快照](PROJECT_AUDIT_2026-11-04.md)。
 - 純靜態 HTML／CSS／Vanilla JS PWA，使用 LocalStorage、Service Worker、本機 Mermaid／KaTeX。Node >=22.13.0、npm、ESLint、jsdom、Playwright、sharp。
 - 啟動：python -m http.server 8000 --directory dist。建置：npm run build；檢查：npm run lint、npm test、npm run test:browser、npm audit。
@@ -55,6 +55,12 @@ package.json                   唯一日常建置及測試入口
 本輪依賴稽核為 0 個已知漏洞。來源保存檔不做格式化。scratch 歷史實驗資料依補充要求收錄版本庫，但不參與正式建置或網站發布；其密鑰模式掃描無命中。發布前另檢查暫存檔、密鑰模式及 staged 來源雜湊。
 
 ## 6. 優化建議
+
+2026-11-06 追查 a4bb18c 的 CI 執行 42053984705：52 通過、5 跳過，唯一失敗為 Chromium 教材段落跳轉後位置偏移。定位到 reading-position.jump 只捲動一次、隨即清除目標；前方 content-visibility 區段完成排版後，ResizeObserver 已無可恢復的目標。另發現任何非使用者捲動事件也會誤取消既有定位。
+
+修正為保留指定段落與 CSS 捲動邊界，在版面改變時重新定位，僅在 wheel／touch／pointer／keyboard 等使用者輸入時解除。捲動座標向上取整，避免 WebKit 小數座標量化使段落仍落在判讀邊界之外。回歸測試在跳轉後於前方加入 900px 內容並關閉原生 scroll anchoring，修正前可重現偏移；保留原本 0–180px 的斷言，未增加重試或放寬門檻。兩瀏覽器各重複 3 次通過。
+
+本機修復驗證：lint 零警告、完整 Node 測試通過；最終閱讀定位單元測試、圖解／公式／外殼一致性及 300 行結構檢查通過；相關瀏覽器流程 33 通過、1 個 WebKit CDP 能力限制跳過。GitHub Ubuntu 的最終結果以修復提交對應的 CI 與部署紀錄為準。
 
 本輪阻擋發布的抽題與舊進度解讀問題已修正；不引入框架遷移。中期維護應持續保留題庫版本、逐題解析缺漏阻擋、按章資料共用及原始來源證據。題庫快照增加外殼原始大小，是保留既有作答的明確取捨；若將來拆成按需載入，須先維持首次離線開啟舊報告的能力。
 
