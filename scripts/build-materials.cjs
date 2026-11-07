@@ -9,6 +9,7 @@ const data = readJSON('content/site-resources.json');
 // Evaluate the repository's generated string literals once. Manual replacements
 // leave escaped CRs behind and damage LaTeX, quotes and diagram labels.
 const materialIndex = readJSON('content/material-index.json');
+const summaries = readJSON('content/material-summaries.json');
 const topicCodes = new Set(materialIndex.map(material => material.topicCode));
 data.studyMaterials = materialIndex.map(previous => {
   const file = path.join(root, 'content/study-materials', `${previous.topicCode}.ts`);
@@ -21,7 +22,11 @@ data.studyMaterials = materialIndex.map(previous => {
       if (!topicCodes.has(code)) throw new Error(`Unknown chapter link: ${code}`);
       return `href="#/guide/materials/${code}"`;
     }).replace(/href="#\/topics"/g, 'href="#/guide/materials"');
-  return { ...previous, ...material, details };
+  const summary = summaries[previous.topicCode];
+  if (typeof summary !== 'string' || !summary.trim() || /(?:\.{3}|…|[:：])\s*$/.test(summary)) {
+    throw new Error(`Missing or incomplete chapter summary: ${previous.topicCode}`);
+  }
+  return { ...previous, ...material, summary, details };
 });
 data.units = readJSON('content/units.json');
 data.questions = require('./question-explanations.cjs')([...readJSON('content/questions-subject1.json'), ...readJSON('content/questions-subject2.json')], root);
@@ -47,7 +52,7 @@ const publish = ({ details, ...meta }) => {
   return { ...meta, file, questionIds: own.map(question => question.id) };
 };
 data.studyMaterials = data.studyMaterials.map(publish);
-data.officialQuestions = exams.questions.map(({ id, subject, question, concept, officialAnswer, materialCode, note }) => ({ id, subject, question, concept, officialAnswer, materialCode, hasNote: Boolean(note) }));
+data.officialQuestions = exams.questions.map(({ id, subject, question, concept, officialAnswer, materialCode, note, sourcePage }) => ({ id, subject, question, concept, officialAnswer, materialCode, sourcePage, hasNote: Boolean(note) }));
 // Remove only superseded per-question outputs owned by this publisher.
 for (const name of fs.readdirSync(materialDirectory).filter(name => /^EXAM-L(?:11|12|21|22)-\d+\.json$/.test(name))) {
   const file = path.join(materialDirectory, name);

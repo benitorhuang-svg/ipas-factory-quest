@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-07",
+  "reviewType": "agent-content-review",
+  "scope": {
+    "canonicalPractice": 416,
+    "official": 200,
+    "practiceSourceRecords": 476,
+    "canonicalPracticeChanges": 8,
+    "previousRevisionSnapshotsIncludingAliases": 9,
+    "independentlyRecomputedNumericAnswers": 20,
+    "officialRetained": 82,
+    "officialQualified": 104,
+    "officialAmbiguous": 14,
+    "independentReviewPending": 36
+  },
+  "checks": {
+    "lint": "passed with zero warnings",
+    "build": "passed",
+    "nodeSuite": "passed",
+    "pdfOriginalPageAndPrintedAnswerMatches": 200,
+    "originalIntegrationHashesPreserved": 891
+  },
+  "browserBatches": {
+    "content": {
+      "startTime": "2026-11-07T02:31:55.880Z",
+      "duration": 75464.813,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "lifecycle": {
+      "startTime": "2026-11-07T02:33:22.227Z",
+      "duration": 164257.213,
+      "expected": 18,
+      "skipped": 4,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "finalHistorical": {
+      "startTime": "2026-11-07T02:37:17.557Z",
+      "duration": 15651.091,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "notes": [
+    "Batches overlap; do not sum them as unique test cases.",
+    "Four WebKit native service-worker/offline cases skipped; corresponding Chromium cases passed.",
+    "Not deployed; no real-device installation/update certification."
+  ],
+  "artifacts": {
+    "dist/data.js": "7ee4969f4c3e9ba5fe5f16bea1c28722719ecf9108169d6932b373808e58cc40",
+    "dist/app-bundle.js": "91e7a4a0ffffa36a5ca90675f518a3133f6e0dd95de6af7c8c870040b58c2bdd",
+    "dist/precache.js": "a4f049d7e6fe03e1d878faa5c60a82df834e7cb3a1bb708924c06f3f7f99848b",
+    "content/official-question-review.json": "f18a3137a0c1b1b30be7b1d2d4ec13eb69ef6d51511f21a9c58eefb377e73776",
+    "content/question-revisions.json": "4350fbeae74adf91f8e60fc51db9bb76e637ef80b04d0783b97d855afd17a34a"
+  }
+}

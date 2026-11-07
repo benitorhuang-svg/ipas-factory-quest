@@ -36,16 +36,14 @@
     const frame = document.createElement('figure');
     frame.className = 'study-diagram';
     frame.dataset.noTerminology = 'true';
-    frame.innerHTML = '<figcaption class="diagram-toolbar"><span>重點圖解 · 可橫向捲動</span><button type="button">放大閱讀</button></figcaption><div class="diagram-viewport" tabindex="0" role="region" aria-label="可捲動的重點圖解"><div class="mermaid-rendered"></div></div>';
+    frame.innerHTML = '<figcaption class="diagram-toolbar"><span>重點圖解 · 完整圖覽</span><button type="button">放大閱讀</button></figcaption><div class="diagram-viewport" tabindex="0" role="region" aria-label="重點圖解完整圖覽"><div class="mermaid-rendered"></div></div>';
     const graphic = frame.querySelector('.mermaid-rendered');
     graphic.innerHTML = svg;
     const image = graphic.querySelector('svg');
     if (image) {
       const box = image.getAttribute('viewBox')?.trim().split(/[ ,]+/).map(Number);
       const width = box?.[2] || parseFloat(image.getAttribute('width')) || 640;
-      image.style.width = `${Math.max(width, 320)}px`;
-      image.style.maxWidth = 'none';
-      image.style.height = 'auto';
+      image.style.setProperty('--diagram-width', `${Math.max(width, 320)}px`);
       image.setAttribute('role', 'img');
       image.setAttribute('aria-label', '教材重點圖解');
     }
@@ -58,6 +56,8 @@
       close.type = 'button'; close.className = 'btn'; close.textContent = '關閉圖解';
       const title = document.createElement('h2'); title.textContent = '放大閱讀圖解';
       const viewport = document.createElement('div'); viewport.className = 'diagram-viewport';
+      viewport.tabIndex = 0; viewport.setAttribute('role', 'region');
+      viewport.setAttribute('aria-label', '放大圖解，可橫向與縱向捲動');
       // Move the actual graphic so SVG IDs and fragment references stay unique.
       const marker = document.createComment('diagram-position');
       graphic.before(marker); viewport.append(graphic);

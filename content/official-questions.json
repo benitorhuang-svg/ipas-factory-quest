@@ -12,7 +12,8 @@
       "d37a6422949d4491",
       "4500cd95a8d23544"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">EPQ 的總成本可包含生產、設置及持有。</p>\n<p class=\"study-paragraph\">求最佳批量時，再區分哪些成本隨 Q 改變。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因固定單位成本不影響最佳 Q，就將生產成本排除於所有「總成本」定義之外。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">EPQ 的總成本可包含生產、設置及持有。</p>\n<p class=\"study-paragraph\">求最佳批量時，再區分哪些成本隨 Q 改變。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因固定單位成本不影響最佳 Q，就將生產成本排除於所有「總成本」定義之外。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">先區分總成本的組成與最佳批量的決策成本。單位生產成本固定時，年生產成本不隨批量改變，但仍可列入總成本；不能只選其中一項成本。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 2,
@@ -26,7 +27,8 @@
     "noteIds": [
       "cee27eb9dca1a47c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MPS 將需求轉成具體品項、數量與時點。</p>\n<p class=\"study-paragraph\">先分辨「生產計畫」和「人員排班」。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把班表、付款或廠房設計當成 MPS 的主要產出。</p>\n<p class=\"study-paragraph\">MPS 提供品項與日期基礎，詳細工序開工仍須由途程與排程展開。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MPS 將需求轉成具體品項、數量與時點。</p>\n<p class=\"study-paragraph\">先分辨「生產計畫」和「人員排班」。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把班表、付款或廠房設計當成 MPS 的主要產出。</p>\n<p class=\"study-paragraph\">MPS 提供品項與日期基礎，詳細工序開工仍須由途程與排程展開。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MPS 的對象是具體產品與分期數量。它提供製造時點的計畫基準，班表、付款及廠房設計各屬不同管理任務；詳細工序仍須再展開。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 3,
@@ -41,7 +43,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">客製化且承受成品庫存壓力時，接單才製造的 MTO 最符合題意。加大批量或倉庫不會改變訂單觸發點，也不保證反應更快。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 4,
@@ -56,7 +59,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先找訂單切入點：接單後啟動製造對應 MTO。</p>\n<p class=\"study-paragraph\">依預測預製成品對應 MTS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把大量生產、JIT 或零庫存當成訂單履行策略。</p>\n<p class=\"study-paragraph\">MTO 不代表完全沒有原料庫存，MTS 也不代表不可採拉動補充。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MTS 在訂單到達前依預測備成品。JIT 是流動與補充方式，不能單獨代表 MTS；MTS 也不等於完全零庫存。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 5,
@@ -73,7 +77,8 @@
       "4500cd95a8d23544",
       "a5fbf5111233c163"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定需求下，先分開年持有成本 <span class=\"math-inline\">$HQ/2$</span> 和年訂購成本 <span class=\"math-inline\">$DS/Q$</span>。</p>\n<p class=\"study-paragraph\">Q 增加時前者上升、後者下降。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將選項「總庫存成本」擴張成兩者合計，再誤記為總相關成本必與 Q 正比。</p>\n<p class=\"study-paragraph\">公告 A 保留，正比敘述限於模型的持有成本口徑。</p>\n<p class=\"study-paragraph\">原題用語不足以支持更廣的通則。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定需求下，先分開年持有成本 <span class=\"math-inline\">$HQ/2$</span> 和年訂購成本 <span class=\"math-inline\">$DS/Q$</span>。</p>\n<p class=\"study-paragraph\">Q 增加時前者上升、後者下降。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將選項「總庫存成本」擴張成兩者合計，再誤記為總相關成本必與 Q 正比。</p>\n<p class=\"study-paragraph\">公告 A 保留，正比敘述限於模型的持有成本口徑。</p>\n<p class=\"study-paragraph\">原題用語不足以支持更廣的通則。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告保留 A，但「總庫存成本」範圍未定義。固定年需求下，持有成本 HQ/2 隨 Q 上升，訂購成本 DS/Q 下降，兩者合計不與 Q 成正比。不可把公告選項背成總相關成本定律。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 6,
@@ -88,7 +93,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">低價格策略需由單位成本支撐，標準化與流程效率最直接。關係管理、多樣性與研發可有價值，卻不等於本題的優先成本途徑。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 7,
@@ -102,7 +108,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一週可用 40 小時、需求 800 件，TT 為 <span class=\"math-inline\">$40/800=0.05$</span> 小時／件，即 3 分鐘／件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">顛倒成 20 件／小時後卻仍標「小時」。</p>\n<p class=\"study-paragraph\">速率與每件時間互為倒數，單位要一併改。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一週可用 40 小時、需求 800 件，TT 為 <span class=\"math-inline\">$40/800=0.05$</span> 小時／件，即 3 分鐘／件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">顛倒成 20 件／小時後卻仍標「小時」。</p>\n<p class=\"study-paragraph\">速率與每件時間互為倒數，單位要一併改。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">每週可用時間 8×5＝40 小時，40÷800＝0.05 小時／件＝3 分鐘／件。800÷40＝20 的單位是件／小時，不能填成 20 小時。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 8,
@@ -116,7 +123,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">先將觀測時間乘評比係數得到正常時間，再加以時間表示的寬放。評比是無量綱係數，不能直接與分鐘相加；若給寬放率，還要先辨認其分母。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 9,
@@ -134,7 +142,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">已知製程途程下，排程主要決定批量、何時做及哪批先做。</p>\n<p class=\"study-paragraph\">技術工序順序是既定限制。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「工作順序」與「製程順序」視為同一件事。</p>\n<p class=\"study-paragraph\">若工程允許替代途程，須先確認核准條件，不能自行調換。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">已知製程途程下，排程主要決定批量、何時做及哪批先做。</p>\n<p class=\"study-paragraph\">技術工序順序是既定限制。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「工作順序」與「製程順序」視為同一件事。</p>\n<p class=\"study-paragraph\">若工程允許替代途程，須先確認核准條件，不能自行調換。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">在製程途程已確定的前提下，排程決定批量、時點及工單先後。技術工序順序是限制條件，不能把工單排序與改變製程途程當成同一決策。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 10,
@@ -149,7 +158,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">低價競爭優先看標準化及流程效率。</p>\n<p class=\"study-paragraph\">需求多變且重視彈性，則看換線、產品轉換與資源調配能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以產品種類最多作為低成本的直接方法，或以控制庫存代替反應不同需求的能力。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">需求變動時，彈性表現在切換產品、產線與資源的能力。股價、管理層級或只限制庫存，均未直接回答產品轉換能力。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 11,
@@ -164,7 +174,8 @@
       "cee27eb9dca1a47c",
       "502a95ae417c9236"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">甘特圖可表達工作／資源的時間與負荷。</p>\n<p class=\"study-paragraph\">比較 SPT、EDD 時須先說明績效目標。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 SPT 可縮短平均流程時間，便推成它在所有交期指標上都較好。</p>\n<p class=\"study-paragraph\">服務作業也可能使用排程。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">甘特圖可表達工作／資源的時間與負荷。</p>\n<p class=\"study-paragraph\">比較 SPT、EDD 時須先說明績效目標。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 SPT 可縮短平均流程時間，便推成它在所有交期指標上都較好。</p>\n<p class=\"study-paragraph\">服務作業也可能使用排程。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">甘特圖可呈現時間配置及資源負荷。SPT 與 EDD 各有目標及模型前提，不能宣稱任何績效都由 SPT 勝出；服務業也有排程問題。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 12,
@@ -179,7 +190,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">醫院按科別集中資源是功能別作業，床邊照護則由人員設備移向病人。判斷依作業對象與資源移動方式，不能僅憑產業名稱固定分類。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 13,
@@ -194,7 +206,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看實際作業對象是否移動及設備如何分組。</p>\n<p class=\"study-paragraph\">醫院可同時有功能分科與床邊作業。</p>\n<p class=\"study-paragraph\">串聯產線較易因單站故障擴大停線。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只靠產業名稱判定單一佈置，或把製程別的路徑彈性與產品別的連鎖停工風險混在一起。</p>\n<p class=\"study-paragraph\">各型態仍都需要適當保養。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">反向題應比較故障的系統影響。產品別串聯線較容易因一站故障連帶停線；製程別仍需維護，但不能把串聯停線特性一概移植過去。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 14,
@@ -212,7 +225,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">不同車型的站別負荷與換型需求不同，混線後需維持節拍與工序同步。B 指需要克服的風險，不表示彈性流線永遠無法穩定。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 15,
@@ -227,7 +241,8 @@
       "cee27eb9dca1a47c",
       "017ddb06d51b26e4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">混線時核對車型工時與工序同步。</p>\n<p class=\"study-paragraph\">比較製造和服務時，分清實體產出可存放與服務多在提供時消費。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為有智慧設備就能自動維持節拍，或把一般服務特性誇大成所有服務完全不能預製任何內容。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">比較典型產出特性：實體製品通常可儲存，服務多在提供時消費。兩業皆可外包，也非所有活動完全標準化，不宜把典型差異改寫成絕對規則。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 16,
@@ -245,7 +260,8 @@
       "d37a6422949d4491",
       "4500cd95a8d23544"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一料件低階碼取出現的最深層，等全部母項需求彙總後才淨算該料件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見「編碼」就選儲位、盤點或資料存取成本，而未辨明它在 MRP 中的計算順序用途。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同一料件低階碼取出現的最深層，等全部母項需求彙總後才淨算該料件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見「編碼」就選儲位、盤點或資料存取成本，而未辨明它在 MRP 中的計算順序用途。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">共用料件取所有出現位置中最深的低階碼，使上階需求先彙總再處理該料件。它是 MRP 計算順序資訊，並非儲位、盤點數量或資料庫效能指標。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 17,
@@ -260,7 +276,8 @@
       "633dd3ff37563ee6",
       "592c42010cc8c041"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MBOM 支援多階品項的結構、用量及製造用途，並不限最終品或單一供應商。選 B 不代表 EBOM 沒有多階零件或版本。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 18,
@@ -275,7 +292,8 @@
       "d37a6422949d4491",
       "4500cd95a8d23544"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">需求來源追溯回答哪個母項需要它。</p>\n<p class=\"study-paragraph\">前置時間將需求日回推至發出日。</p>\n<p class=\"study-paragraph\">批量規則再決定實際補入量。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">合併不同品項或清空安全庫存，只會刪掉限制。</p>\n<p class=\"study-paragraph\">追溯本身也不能代替正確的前置時間與批量設定。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">需求來源追溯回答哪個母項需要它。</p>\n<p class=\"study-paragraph\">前置時間將需求日回推至發出日。</p>\n<p class=\"study-paragraph\">批量規則再決定實際補入量。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">合併不同品項或清空安全庫存，只會刪掉限制。</p>\n<p class=\"study-paragraph\">追溯本身也不能代替正確的前置時間與批量設定。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">先追到需求母項，再以各階前置時間回推投入日，依批量規則形成計畫。需求追溯有助核對來源，仍須正確設定交期與批量，不能單靠追溯保證排程。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 19,
@@ -290,7 +308,8 @@
       "633dd3ff37563ee6",
       "592c42010cc8c041"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">MBOM 支援多階母子件與用量，並與實際裝配／投料工序關聯。</p>\n<p class=\"study-paragraph\">先看選項是否完整表達製造用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 MBOM 限縮為最終品預估或單一供應商轉換。</p>\n<p class=\"study-paragraph\">也不能倒推成 EBOM 沒有子件、料號或技術資訊。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MBOM 以實際製造與組裝方式組織用料，需與途程對應。工序的詳細資源及時間仍由途程管理，不能把 MBOM 當成可取代全部途程資料。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 20,
@@ -305,7 +324,8 @@
       "633dd3ff37563ee6",
       "592c42010cc8c041"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨明自製、採購與組裝屬性，再修正 BOM 和製程關聯，讓工單能正確展料及投料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只發 ECN、換樹狀圖或購買 ERP 模組，卻未補正主檔。</p>\n<p class=\"study-paragraph\">工具不會自行產生正確資料。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨明自製、採購與組裝屬性，再修正 BOM 和製程關聯，讓工單能正確展料及投料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只發 ECN、換樹狀圖或購買 ERP 模組，卻未補正主檔。</p>\n<p class=\"study-paragraph\">工具不會自行產生正確資料。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">問題在自製、採購與組裝屬性不明，應補正 BOM 與製程主資料。僅發通知、換圖法或裝採購模組，並不會自動補齊正確屬性。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 21,
@@ -319,7 +339,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">ECRS 是刪除、合併、重排、簡化。</p>\n<p class=\"study-paragraph\">先確認工作是否必要，再考慮如何更快執行。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">遇到低效率先購置工具簡化，使原本可刪除的搬運或重複動作被保留下來。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">ECRS 是刪除、合併、重排、簡化。</p>\n<p class=\"study-paragraph\">先確認工作是否必要，再考慮如何更快執行。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">遇到低效率先購置工具簡化，使原本可刪除的搬運或重複動作被保留下來。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">ECRS 依序先問能否刪除，再合併、重排及簡化。先簡化不必要搬運，可能只是把浪費做得更快；刪除仍須保留必要安全及品質活動。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 22,
@@ -337,7 +358,8 @@
       "a905c5ac99f9b6aa",
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 22 題的比較依據：</strong>四站換為件／小時依序為 6、10、8、5，限制在丁。</p>\n<p class=\"study-paragraph\">只提高甲、乙或丙仍受丁的 5 限制。</p>\n<p class=\"study-paragraph\">丁由 12 分／件降為 10 分／件後，甲與丁同為 6 件／小時，因此整線理論上限由 5 提高為 6，而非其他站的 8 或 10。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 22 題的比較依據：</strong>四站換為件／小時依序為 6、10、8、5，限制在丁。</p>\n<p class=\"study-paragraph\">只提高甲、乙或丙仍受丁的 5 限制。</p>\n<p class=\"study-paragraph\">丁由 12 分／件降為 10 分／件後，甲與丁同為 6 件／小時，因此整線理論上限由 5 提高為 6，而非其他站的 8 或 10。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">甲乙丙丁能力依序是 6、10、8、5 件／小時。前三個方案都仍受丁的 5 限制；丁縮至 10 分鐘／件後，整線受甲丁共同限制為 6 件／小時。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 23,
@@ -351,7 +373,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">不可再分割的作業元素中，最長者構成最短 CT 的下限。</p>\n<p class=\"study-paragraph\">接著檢查先行關係與分站可行性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以最短元素、平均值或總時間作為單站 CT 下限。</p>\n<p class=\"study-paragraph\">總時間可用於估最少站數，不能與最長元素互換。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">不可再分割的作業元素中，最長者構成最短 CT 的下限。</p>\n<p class=\"study-paragraph\">接著檢查先行關係與分站可行性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以最短元素、平均值或總時間作為單站 CT 下限。</p>\n<p class=\"study-paragraph\">總時間可用於估最少站數，不能與最長元素互換。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">不可分作業元素中最長者形成單站週期下限。它只是理論界線，分站還須符合先行關係；總工時用來估站數，不能與最長元素互換。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 24,
@@ -369,7 +392,8 @@
       "633dd3ff37563ee6",
       "592c42010cc8c041"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給 SOP 卻仍有瓶頸與波動，應檢核 SOP 的方法、設備能力及需求節拍是否相容。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">沒有證據就將所有問題歸因於員工不遵守。</p>\n<p class=\"study-paragraph\">公告所選是此情境最可能原因，不是說通報、訓練與步驟完整性不重要。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給 SOP 卻仍有瓶頸與波動，應檢核 SOP 的方法、設備能力及需求節拍是否相容。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">沒有證據就將所有問題歸因於員工不遵守。</p>\n<p class=\"study-paragraph\">公告所選是此情境最可能原因，不是說通報、訓練與步驟完整性不重要。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 D 強調 SOP 必須可在實際設備能力與節拍下執行。題面沒有足夠資料排除 A、B、C 的可能性，現場仍須查遵循、流程設計與異常反應，不能直接認定唯一根因。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 25,
@@ -384,7 +408,8 @@
       "633dd3ff37563ee6",
       "592c42010cc8c041"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">以「能否照文件安全完成工作」檢核：執行步驟、工具及安全事項是核心，另應有參數、品質判定與異常處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把個人考核、合約或客訴流程等管理資料當成每份現場 SOP 的核心操作內容。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">以「能否照文件安全完成工作」檢核：執行步驟、工具及安全事項是核心，另應有參數、品質判定與異常處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把個人考核、合約或客訴流程等管理資料當成每份現場 SOP 的核心操作內容。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">核心判準是受訓人員能否按步驟、工具及安全要求完成工作。考績、合約與客訴制度不能替代現場操作指示；適用時也須列參數及異常處置。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 26,
@@ -399,7 +424,8 @@
       "d37a6422949d4491",
       "4500cd95a8d23544"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先扣 B 成品庫存：尚需生產 <span class=\"math-inline\">$60-25=35$</span>。</p>\n<p class=\"study-paragraph\">C 毛需求 <span class=\"math-inline\">$80×2+35×5=335$</span>，再扣 C 可用量 160，淨需求為 <strong class=\"study-strong\">175</strong>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">直接以需求 60 展開 B，重複採購庫存 B 內已含的 C。</p>\n<p class=\"study-paragraph\">或把 B 的 25 件直接當成 25 個 C 扣除，忽略單位用量。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先扣 B 成品庫存：尚需生產 <span class=\"math-inline\">$60-25=35$</span>。</p>\n<p class=\"study-paragraph\">C 毛需求 <span class=\"math-inline\">$80×2+35×5=335$</span>，再扣 C 可用量 160，淨需求為 <strong class=\"study-strong\">175</strong>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">直接以需求 60 展開 B，重複採購庫存 B 內已含的 C。</p>\n<p class=\"study-paragraph\">或把 B 的 25 件直接當成 25 個 C 扣除，忽略單位用量。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">依公告採需求先淨算：B 尚需製造 60－25＝35，C 毛需求 80×2＋35×5＝335，再扣 160 得 175。若題首的「生產」已指核定淨生產量，口徑會不同，不應再扣一次 B。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 27,
@@ -417,7 +443,8 @@
       "d37a6422949d4491",
       "4500cd95a8d23544"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">關鍵線索是需求「時間」錯置，優先核對 MPS 是否及時更新，再檢查各階需求與前置時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只提高安全庫存可遮住短缺，卻不修正時間資料。</p>\n<p class=\"study-paragraph\">數量錯誤和日期錯誤不宜混成同一診斷。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">關鍵線索是需求「時間」錯置，優先核對 MPS 是否及時更新，再檢查各階需求與前置時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只提高安全庫存可遮住短缺，卻不修正時間資料。</p>\n<p class=\"study-paragraph\">數量錯誤和日期錯誤不宜混成同一診斷。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題目線索是需求時間錯置，MPS 未即時更新最直接影響分期需求。提高安全庫存不修復日期；實務仍應檢查前置時間、行事曆及收貨變更。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 28,
@@ -432,7 +459,8 @@
       "cee27eb9dca1a47c",
       "502a95ae417c9236"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">時間欄柵規範近期變更權限與影響評估，以降低排程擾動。它不等於完全禁改；重大例外仍須核准並同步相關備料與交期。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 29,
@@ -447,7 +475,8 @@
       "cee27eb9dca1a47c",
       "502a95ae417c9236"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">時間欄柵控制哪些期間可改。</p>\n<p class=\"study-paragraph\">有限／無限負荷控制是否納入容量。</p>\n<p class=\"study-paragraph\">前向／後向則是推算時間的方向。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">每天無限制更新 MPS 可能增加擾動。</p>\n<p class=\"study-paragraph\">前向排程或排程軟體本身不會自動消除瓶頸超載。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">前向是時間推算方向，無限負荷表示尚未以容量限制排入量。需要 16 小時卻只有 8 小時不會自動平衡，仍須補資源或改期。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 30,
@@ -462,7 +491,8 @@
       "cee27eb9dca1a47c",
       "502a95ae417c9236"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看管理對象：DRP 協調配銷節點的成品補充與配送時程。</p>\n<p class=\"study-paragraph\">MRP 展開製造物料需求。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把投資回收、年度預算或單筆訂單狀態追蹤當成 DRP 的主要功能。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">看管理對象：DRP 協調配銷節點的成品補充與配送時程。</p>\n<p class=\"study-paragraph\">MRP 展開製造物料需求。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把投資回收、年度預算或單筆訂單狀態追蹤當成 DRP 的主要功能。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">DRP 的主對象是配銷節點的成品補充與配送時程。投資、預算及單筆訂單查詢不是此模組的主要規劃輸出。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 31,
@@ -476,7 +506,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">反向題中把常用工具放遠會增加伸取與疲勞，故選 C。利用重力仍須有受控導引與防護，不能把原題 D 解讀成任意讓物品墜落。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 32,
@@ -490,7 +521,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">常用工具置於正常伸及範圍，雙手合理同步。</p>\n<p class=\"study-paragraph\">工作研究用觀察和分析建立更合理、有效率的方法。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為增加桌面空間而把工具放遠，或把方法改善誤當作追求人體極速、全面自動化或個人績效打分。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">方法 B 比 A 少 3 秒，顯示觀察分析可建立改善依據。工作研究還需確認安全、品質與可持續性，不能只追最快速度或把方法差異當個人考績。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 33,
@@ -505,7 +537,8 @@
     "noteIds": [
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題給選項中，停機及產能不穩對應預防性保養。</p>\n<p class=\"study-paragraph\">實務再將故障停機、正常換線、調整與微停分開蒐證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用勞資協調、全面自動化或末端檢查取代設備穩定性改善。</p>\n<p class=\"study-paragraph\">原題未提供換線／故障損失明細，不能延伸成「所有頻繁換線一律優先保養」。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題給選項中，停機及產能不穩對應預防性保養。</p>\n<p class=\"study-paragraph\">實務再將故障停機、正常換線、調整與微停分開蒐證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用勞資協調、全面自動化或末端檢查取代設備穩定性改善。</p>\n<p class=\"study-paragraph\">原題未提供換線／故障損失明細，不能延伸成「所有頻繁換線一律優先保養」。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 在題給選項中指向設備穩定性，但題面把換線與故障停機混在一起。若主要損失是正常換型，應另分析 SMED；沒有損失明細不能宣稱預防保養必為唯一優先對策。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 34,
@@ -521,7 +554,8 @@
       "2326dbdacd10691f",
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先畫時間損失階層：扣停機、再扣速度損失、再扣品質損失。</p>\n<p class=\"study-paragraph\">價值工時加回品質損失才回到其上一層。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 34 題的名詞處理：</strong>工廠對「負荷、淨作業、有效、價值」工時的命名可能不同，讀題先對照它的損失瀑布。</p>\n<p class=\"study-paragraph\">本章 OEE 採「計畫生產時間 → 扣停機後運轉時間 → 扣速度損失後淨運轉時間 → 扣品質損失後完全有效時間」。</p>\n<p class=\"study-paragraph\">不能只因別處也叫「有效工時」就跨定義套式。</p>\n<p class=\"study-paragraph\">更不能將本題的人工工時命名直接當成所有 OEE 軟體的欄位定義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把速度與品質損失放在同一層。</p>\n<p class=\"study-paragraph\">同題其餘良率式又需分清首次合格和重工後最終合格，不能拿最終良率代表 FPY。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先畫時間損失階層：扣停機、再扣速度損失、再扣品質損失。</p>\n<p class=\"study-paragraph\">價值工時加回品質損失才回到其上一層。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 34 題的名詞處理：</strong>工廠對「負荷、淨作業、有效、價值」工時的命名可能不同，讀題先對照它的損失瀑布。</p>\n<p class=\"study-paragraph\">本章 OEE 採「計畫生產時間 → 扣停機後運轉時間 → 扣速度損失後淨運轉時間 → 扣品質損失後完全有效時間」。</p>\n<p class=\"study-paragraph\">不能只因別處也叫「有效工時」就跨定義套式。</p>\n<p class=\"study-paragraph\">更不能將本題的人工工時命名直接當成所有 OEE 軟體的欄位定義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把速度與品質損失放在同一層。</p>\n<p class=\"study-paragraph\">同題其餘良率式又需分清首次合格和重工後最終合格，不能拿最終良率代表 FPY。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">依本題損失階層，速度損失與品質損失不能放錯層。良率可計重工後回收，直通率只計一次合格；工時名稱未定義時不得直接套入其他 OEE 系統。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 35,
@@ -535,7 +569,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">標準時間由觀測資料先經速度評比形成正常時間，再加入合理寬放。C 需按這個先後順序理解，並非把正常時間再重複乘評比。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 36,
@@ -550,7 +585,8 @@
     "noteIds": [
       "7fd801f1e3758abe"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p>\n<p class=\"study-paragraph\">第 36 題採外加法得 1.32825 分鐘，約 1.33。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先平均觀測，再乘評比得到 NT，最後加寬放。</p>\n<p class=\"study-paragraph\">第 36 題採外加法得 1.32825 分鐘，約 1.33。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把評比係數直接加進分鐘，或未先平均就對個別極值計算。</p>\n<p class=\"study-paragraph\">百分比相同但分母不同，外加與內含不可混用。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">觀測平均為 5.5÷5＝1.1 分鐘，正常時間 1.1×1.05＝1.155；依公告外加口徑乘 1.15 得 1.32825，約 1.33。內含口徑則為 1.155÷0.85，兩者不能混用。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 37,
@@ -567,7 +603,8 @@
     "noteIds": [
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先由實際量除以 0.8 得有效產能 10，再除以 0.5 得設計產能 <strong class=\"study-strong\">20 件／週</strong>。</p>\n<p class=\"study-paragraph\">也可用 <span class=\"math-inline\">$8/(0.8×0.5)$</span>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只除一次百分比就停止，或把兩個百分比相加。</p>\n<p class=\"study-paragraph\">效率比較實際／有效，利用率比較實際／設計，此題分別為 80% 和 40%。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先由實際量除以 0.8 得有效產能 10，再除以 0.5 得設計產能 <strong class=\"study-strong\">20 件／週</strong>。</p>\n<p class=\"study-paragraph\">也可用 <span class=\"math-inline\">$8/(0.8×0.5)$</span>。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只除一次百分比就停止，或把兩個百分比相加。</p>\n<p class=\"study-paragraph\">效率比較實際／有效，利用率比較實際／設計，此題分別為 80% 和 40%。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">實際 8＝設計產能×0.5×0.8，故設計產能為 20 件／週。有效產能為 10；只除其中一個比率或相加兩比率皆不符階層關係。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 38,
@@ -588,7 +625,8 @@
       "592c42010cc8c041",
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先標示計量單位：流程時間是單件通過全流程的時間。</p>\n<p class=\"study-paragraph\">CT 是連續完工間隔。</p>\n<p class=\"study-paragraph\">加工及整備時間只是流程時間的部分。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將全程投入到完成的時間當成 CT。</p>\n<p class=\"study-paragraph\">題中「流程速度」採增值時間占流程時間的比值，是無量綱比例，不能拿來當件／小時的產出速率。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先標示計量單位：流程時間是單件通過全流程的時間。</p>\n<p class=\"study-paragraph\">CT 是連續完工間隔。</p>\n<p class=\"study-paragraph\">加工及整備時間只是流程時間的部分。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將全程投入到完成的時間當成 CT。</p>\n<p class=\"study-paragraph\">題中「流程速度」採增值時間占流程時間的比值，是無量綱比例，不能拿來當件／小時的產出速率。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">原料投入至成品完成是單件流程時間，連續完工間隔才是產出週期。題中增值時間／流程時間為無量綱比例，不是件／小時的產出速率。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 39,
@@ -607,7 +645,8 @@
       "7fd801f1e3758abe",
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 39 題的改善界線：</strong>四站單件時間的最大值為 C 的 15 分鐘，480 分鐘的穩態理論量為 32 件。</p>\n<p class=\"study-paragraph\">即使 C 改善至 10 分鐘以下，B 仍需 10 分鐘，未改善 B 前整線上限不超過 48 件。</p>\n<p class=\"study-paragraph\">不能只寫「改善瓶頸」就直接推得 60 件。</p>\n<p class=\"study-paragraph\">若從空線開工計有限班次的實際完成數，還須考慮首件通過時間，與此穩態上限分開。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">全站換為相同速率或時間單位，找最慢站，再逐案重算改善後的整線上限。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 39 題的改善界線：</strong>四站單件時間的最大值為 C 的 15 分鐘，480 分鐘的穩態理論量為 32 件。</p>\n<p class=\"study-paragraph\">即使 C 改善至 10 分鐘以下，B 仍需 10 分鐘，未改善 B 前整線上限不超過 48 件。</p>\n<p class=\"study-paragraph\">不能只寫「改善瓶頸」就直接推得 60 件。</p>\n<p class=\"study-paragraph\">若從空線開工計有限班次的實際完成數，還須考慮首件通過時間，與此穩態上限分開。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只看被改善站的百分比，或以最快站估整線產能。</p>\n<p class=\"study-paragraph\">瓶頸改善後下一慢站會接手限制。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">瓶頸為 C 的 15 分鐘，穩態上限 480÷15＝32 件。只改善 C 後還有 B 的 10 分鐘限制，最多 48 件；空線有限班次的完成數另需首件通過時間。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 40,
@@ -621,7 +660,8 @@
     "noteIds": [
       "b809ae52db9c108b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">要看精實流動，優先觀察與 WIP 直接連結的週轉。</p>\n<p class=\"study-paragraph\">在通過量穩定且邊界相同時，較高週轉對應較短平均流程時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">ROI 屬較廣的財務結果，不能單獨診斷現場流動。</p>\n<p class=\"study-paragraph\">只清空緩衝造成缺料、或把 WIP 移出統計範圍，也不能算改善。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">要看精實流動，優先觀察與 WIP 直接連結的週轉。</p>\n<p class=\"study-paragraph\">在通過量穩定且邊界相同時，較高週轉對應較短平均流程時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">ROI 屬較廣的財務結果，不能單獨診斷現場流動。</p>\n<p class=\"study-paragraph\">只清空緩衝造成缺料、或把 WIP 移出統計範圍，也不能算改善。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">相同成本或數量口徑及系統邊界下，WIP 週轉可反映流動。不能靠把存貨移出統計範圍或犧牲出貨來做高週轉；ROI 不直接定位現場等待。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 41,
@@ -637,7 +677,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定平均不良率時，比較 <span class=\"math-inline\">$\\sqrt{\\bar p(1-\\bar p)/n}$</span>：n 增加，未截斷的界限半寬縮小。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把抽樣精度提高說成製程不良率下降或產品規格變嚴。</p>\n<p class=\"study-paragraph\">若 LCL 已截為 0，須區別理論半寬與實際顯示寬度。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">固定平均不良率時，比較 <span class=\"math-inline\">$\\sqrt{\\bar p(1-\\bar p)/n}$</span>：n 增加，未截斷的界限半寬縮小。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把抽樣精度提高說成製程不良率下降或產品規格變嚴。</p>\n<p class=\"study-paragraph\">若 LCL 已截為 0，須區別理論半寬與實際顯示寬度。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">固定平均不良率時，p 圖標準誤與 1／√n 成比例，增加樣本使理論界限縮窄。這不代表製程本身已改善，也不會改變產品規格。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 42,
@@ -653,7 +694,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">SPC 以時間順序辨認共同與特殊原因；受控仍存在隨機波動。排除特殊原因並不會使每件未來產出完全確定，也不自動保證能力足夠。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 43,
@@ -669,7 +711,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">品管工具直接服務現場資料與問題分析，企業形象或黏著度是更遠的可能結果。工具須配合問題選用，不能以工具名稱替代根因證據。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 44,
@@ -685,7 +728,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">受控仍有共同原因的隨機波動。</p>\n<p class=\"study-paragraph\">初始界限要由有代表性的合理分組資料估計、檢查與驗證。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">認為 SPC 可讓未來每件結果確定，或只為不打擾生產就任取少量資料。</p>\n<p class=\"study-paragraph\">找到並矯正特殊原因後才按程序處理資料，不能逢超界就刪點。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">初始界限需代表性時間與合理分組，不以少干擾生產為唯一原則任取少量資料。調查並矯正特殊原因後再處理資料，不能只為圖面受控而刪掉超界點。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 45,
@@ -703,7 +747,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"><strong class=\"study-strong\">第 45 題公告 A：</strong>題面未交代品項已被預先指定，故不能據此得出「使用管制圖不必決定監控哪個品項／品質特性」。</p>\n<p class=\"study-paragraph\">可確定要規劃圖種、樣本大小與頻率。</p>\n<p class=\"study-paragraph\">完整實務仍須先定義監控對象、量測方法及合理分組。</p>\n<p class=\"study-paragraph\">本教材保留公告答案，不替題面補上未提供的前提。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"><strong class=\"study-strong\">第 45 題公告 A：</strong>題面未交代品項已被預先指定，故不能據此得出「使用管制圖不必決定監控哪個品項／品質特性」。</p>\n<p class=\"study-paragraph\">可確定要規劃圖種、樣本大小與頻率。</p>\n<p class=\"study-paragraph\">完整實務仍須先定義監控對象、量測方法及合理分組。</p>\n<p class=\"study-paragraph\">本教材保留公告答案，不替題面補上未提供的前提。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留；題面未說監控品項已事先指定。實務必須決定品項或品質特性、圖種、樣本大小及頻率，不能把 A 背成「選監控對象不必考量」。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 46,
@@ -719,7 +764,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">散佈圖以成對觀測檢查兩變數的關係。查檢表蒐集資料，魚骨圖列可能原因，層別區分來源；有相關趨勢仍不足以證明因果。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 47,
@@ -735,7 +781,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨問題：品質現場分析選適合工具。</p>\n<p class=\"study-paragraph\">兩連續變數的關係用散佈圖。</p>\n<p class=\"study-paragraph\">可能原因展開用魚骨圖。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把查檢表當相關分析，或把魚骨圖列出的原因當成已證實根因。</p>\n<p class=\"study-paragraph\">有關聯也不等於因果。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">魚骨圖將潛在原因系統化，並未證明其中任何一項成立。能力指標、產品分級及獎懲不屬其主要用途，後續須用資料驗證原因。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 48,
@@ -754,7 +801,8 @@
       "63c28db1847c53ed",
       "c655cb2e1def2f2d"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 48 題公告 A：</strong>檢查、測試等符合性評估本身確可屬鑑定成本。</p>\n<p class=\"study-paragraph\">「品質管制程序」涵義較廣，須依實際工作目的分類。</p>\n<p class=\"study-paragraph\">不能因公告選 A，就把所有檢驗設備或測試費改列成預防成本。</p>\n<p class=\"study-paragraph\">題中的資料蒐集／分析與問題解決，也同樣須看其預防、鑑定或失敗處理目的。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 48 題公告 A：</strong>檢查、測試等符合性評估本身確可屬鑑定成本。</p>\n<p class=\"study-paragraph\">「品質管制程序」涵義較廣，須依實際工作目的分類。</p>\n<p class=\"study-paragraph\">不能因公告選 A，就把所有檢驗設備或測試費改列成預防成本。</p>\n<p class=\"study-paragraph\">題中的資料蒐集／分析與問題解決，也同樣須看其預防、鑑定或失敗處理目的。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，但符合性檢查與測試可屬鑑定成本。品管程序、蒐集分析或問題解決須按實際目的拆分；不能為配合反向答案，把全部檢驗與測試改列預防。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 49,
@@ -772,7 +820,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">分清全員參與和決策依據：TQM 支持跨部門參與，但決策須以事實、分析和顧客要求支持。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 49 題公告 C：</strong>僅憑該詞不能推論團隊參與一律不正確。</p>\n<p class=\"study-paragraph\"><a href=\"https://asq.org/quality-resources/total-quality-management\" class=\"study-link\">ASQ 的 TQM 說明</a>同時包含全員參與及依事實決策。</p>\n<p class=\"study-paragraph\">公告答案應與通用原理分別保存，不能將「不用團隊」當成 TQM 的學習結論。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為配合答案而推論團隊合作不屬 TQM，或反過來認為多數同意便足以證明改善有效。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">分清全員參與和決策依據：TQM 支持跨部門參與，但決策須以事實、分析和顧客要求支持。</p>\n<p class=\"study-paragraph\"><strong class=\"study-strong\">第 49 題公告 C：</strong>僅憑該詞不能推論團隊參與一律不正確。</p>\n<p class=\"study-paragraph\"><a href=\"https://asq.org/quality-resources/total-quality-management\" class=\"study-link\">ASQ 的 TQM 說明</a>同時包含全員參與及依事實決策。</p>\n<p class=\"study-paragraph\">公告答案應與通用原理分別保存，不能將「不用團隊」當成 TQM 的學習結論。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">為配合答案而推論團隊合作不屬 TQM，或反過來認為多數同意便足以證明改善有效。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 C 保留；TQM 同時重視全員參與與依事實決策，團隊參與本身並非錯誤。團隊共識也不能代替數據驗證，原題不足以推出普遍禁止團隊決策。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 50,
@@ -788,7 +837,8 @@
       "decc0e48b5dd9757",
       "63c28db1847c53ed"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先看支出目的，再看不良於交付前或後發現。</p>\n<p class=\"study-paragraph\">訓練／制度預防、符合性檢查鑑定、廠內不良內部失敗、客戶端不良外部失敗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">僅以部門、設備名稱或「品質」字樣分類。</p>\n<p class=\"study-paragraph\">同一筆品管程序費用可能要依工作目的拆分，不能整包歸入一類。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">品質訓練與制度建置以避免問題為目的，屬預防。退貨、維修及客訴屬交付後失敗；原題罰款也不能僅因與品質有關就歸預防。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 1,
@@ -804,7 +854,8 @@
       "31bd26096021962a",
       "1486fa7138a4a65d"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先將財務、人資與製造管理流程歸入企業資源整合，再辨別直接控制生產動作的責任。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 ERP 可以下發工單，就把它與 PLC 驅動機械動作的自動化等同。</p>\n<p class=\"study-paragraph\">流程標準化與設備自動加工是不同層次。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先將財務、人資與製造管理流程歸入企業資源整合，再辨別直接控制生產動作的責任。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到 ERP 可以下發工單，就把它與 PLC 驅動機械動作的自動化等同。</p>\n<p class=\"study-paragraph\">流程標準化與設備自動加工是不同層次。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">ERP 整合財務、人資與製造資源資料；直接執行設備控制不是其主要職責。下發工單屬計畫協作，不能等同機台自動動作。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 2,
@@ -824,7 +875,8 @@
       "1486fa7138a4a65d",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目問 IT／OT 的連結基礎，先找能接入設備、採集及交換現場資料的 IIoT。</p>\n<p class=\"study-paragraph\">再向上連到 MES、ERP 應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 ERP 規模大或 MES 有排程，就把管理應用當成底層設備互聯的基礎建置。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目問 IT／OT 的連結基礎，先找能接入設備、採集及交換現場資料的 IIoT。</p>\n<p class=\"study-paragraph\">再向上連到 MES、ERP 應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 ERP 規模大或 MES 有排程，就把管理應用當成底層設備互聯的基礎建置。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">IIoT 提供設備接入與資料交換基礎，再由 MES、ERP 形成管理應用。只有管理軟體排程，並未回答如何連通現場設備。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 3,
@@ -840,7 +892,8 @@
       "31bd26096021962a",
       "1486fa7138a4a65d"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OT 的關鍵是讓製程知識成為可量測、可控制、可執行的邏輯，例如溫度到位且夾具確認才進料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 OT 縮成「只提供運轉狀態」，忽略順序、互鎖與實體製程控制。</p>\n<p class=\"study-paragraph\">企業財務管理則屬 IT 側任務。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OT 的關鍵是讓製程知識成為可量測、可控制、可執行的邏輯，例如溫度到位且夾具確認才進料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把 OT 縮成「只提供運轉狀態」，忽略順序、互鎖與實體製程控制。</p>\n<p class=\"study-paragraph\">企業財務管理則屬 IT 側任務。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題意強調把製程知識落成可量測、可執行的控制邏輯。OT 也包含監控，故 D 的「僅」過度限縮；B 不是所有 OT 系統的完整定義。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 4,
@@ -858,7 +911,8 @@
       "765d6594f65732cb",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">沿「感測器量測 → 控制邏輯判斷 → 執行元件動作」閱讀，感測器提供輸入資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把量測與致動混為一談。</p>\n<p class=\"study-paragraph\">到位感測器告知位置，真正推動工件的是氣缸、馬達等執行元件。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">沿「感測器量測 → 控制邏輯判斷 → 執行元件動作」閱讀，感測器提供輸入資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把量測與致動混為一談。</p>\n<p class=\"study-paragraph\">到位感測器告知位置，真正推動工件的是氣缸、馬達等執行元件。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">感測器產生控制邏輯的輸入，控制器判斷後由致動器產生動作。取得資料與驅動機構是不同角色，感測器不取代執行元件。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 5,
@@ -875,7 +929,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識動作對象：AGV／AMR 移動物料，主要任務是領用與轉運。</p>\n<p class=\"study-paragraph\">生產追蹤及品質監督是可與之整合的管理用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因搬運紀錄可追蹤，就把派車設備的主要職責改判成全廠生產執行跟蹤。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識動作對象：AGV／AMR 移動物料，主要任務是領用與轉運。</p>\n<p class=\"study-paragraph\">生產追蹤及品質監督是可與之整合的管理用途。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因搬運紀錄可追蹤，就把派車設備的主要職責改判成全廠生產執行跟蹤。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">AGV／AMR 的主要工作是搬運物料。搬運事件可支援追蹤或資源管理，但不使車輛本身成為全廠執行或品質監督系統。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 6,
@@ -892,7 +947,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題內四類候選中，異常振動首先指向機械結構。</p>\n<p class=\"study-paragraph\">按程序停機／隔離後檢查固定、對心、軸承及傳動，並核對感測安裝。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見設備有電腦便先改作業系統或網路設定。</p>\n<p class=\"study-paragraph\">也不可從一個振幅就直接斷定某個零件已壞。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">在題內四類候選中，異常振動首先指向機械結構。</p>\n<p class=\"study-paragraph\">按程序停機／隔離後檢查固定、對心、軸承及傳動，並核對感測安裝。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看見設備有電腦便先改作業系統或網路設定。</p>\n<p class=\"study-paragraph\">也不可從一個振幅就直接斷定某個零件已壞。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">在四類候選中，異常振動先指向機械結構；依安全程序確認固定、對心、軸承及感測安裝。此為診斷方向，不能僅憑振動直接認定某零件必壞。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 7,
@@ -906,7 +962,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同時顯示設備時間稼動與工單良率，應找將時間、產量及品質整合的 OEE 模組。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因報工提供資料就選報工系統，或把單純設備監控當成已計算工單品質績效。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">同時顯示設備時間稼動與工單良率，應找將時間、產量及品質整合的 OEE 模組。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因報工提供資料就選報工系統，或把單純設備監控當成已計算工單品質績效。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題目同時要求時間稼動與工單良率，須整合時間、產量及品質的 OEE 模組。報工與監控可供資料，並不等於已完成這組績效計算。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 8,
@@ -926,7 +983,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">「防患於未然」須有故障前的監測、風險辨識與處置。</p>\n<p class=\"study-paragraph\">要看是否在事件發生前改變風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將事後檢討當作預警，或只靠增加人力、發放手冊就認為已建立設備異常監控。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">「防患於未然」須有故障前的監測、風險辨識與處置。</p>\n<p class=\"study-paragraph\">要看是否在事件發生前改變風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將事後檢討當作預警，或只靠增加人力、發放手冊就認為已建立設備異常監控。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">預防須在事故前識別風險並落實處置。監控與預測有助提前行動，仍須驗證反應與防護；遵守操作手冊也重要，但未直接回答題內技術方案。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 9,
@@ -947,7 +1005,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">逐項檢查「能否偵測此故障、資料有無送達、是否有突發誤操作」。</p>\n<p class=\"study-paragraph\">三者都可能造成預警未出現。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將無告警直接等同模型正常，或把所有漏警都歸因於模型，忽略通訊及現場使用條件。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">逐項檢查「能否偵測此故障、資料有無送達、是否有突發誤操作」。</p>\n<p class=\"study-paragraph\">三者都可能造成預警未出現。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將無告警直接等同模型正常，或把所有漏警都歸因於模型，忽略通訊及現場使用條件。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">模型未涵蓋故障、通訊中斷或誤操作都可能使預警缺失。無警報不能證明設備健康，應分開查偵測、資料送達及實體事件。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 10,
@@ -967,7 +1026,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：量測偏移可能是感測失準，也可能是真實製程／設備劣化。</p>\n<p class=\"study-paragraph\">先查原因與品質影響，再依核准流程處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只把數值調回標準便宣告沒有品質影響。</p>\n<p class=\"study-paragraph\">校正量測系統、改顯示值與修復設備不是同一種動作。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：量測偏移可能是感測失準，也可能是真實製程／設備劣化。</p>\n<p class=\"study-paragraph\">先查原因與品質影響，再依核准流程處置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只把數值調回標準便宣告沒有品質影響。</p>\n<p class=\"study-paragraph\">校正量測系統、改顯示值與修復設備不是同一種動作。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">偏移可能來自量測失準或真實製程變化，兩者都要調查。只改顯示數字不會消除實體故障，也不足以判定產品未受影響。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 11,
@@ -986,7 +1046,8 @@
       "9f80c05d03f823a0",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">連續資料與系統記錄應能支援趨勢、追溯及改善。</p>\n<p class=\"study-paragraph\">至少識別來源、時間、狀態與事件內容。</p>\n<p class=\"study-paragraph\">仍須保留抽樣影像、模型版本、事件時間與處置結果，讓第 11 題所要求的追溯及後續優化有可靠依據。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只想到開機時數或網路是否接通，忽略跨事件的分析用途。</p>\n<p class=\"study-paragraph\">自動刪除原始資料也無法支援問題追查。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">連續資料與系統記錄應能支援趨勢、追溯及改善。</p>\n<p class=\"study-paragraph\">至少識別來源、時間、狀態與事件內容。</p>\n<p class=\"study-paragraph\">仍須保留抽樣影像、模型版本、事件時間與處置結果，讓第 11 題所要求的追溯及後續優化有可靠依據。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只想到開機時數或網路是否接通，忽略跨事件的分析用途。</p>\n<p class=\"study-paragraph\">自動刪除原始資料也無法支援問題追查。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">紀錄需含來源、事件時間與狀態，才能支持趨勢、追溯與優化。開機時數與連線狀態只是部分資訊，不能取代完整事件脈絡。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 12,
@@ -1003,7 +1064,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">HMI 把設備狀態、警報及受權操作呈現給人員，核心是監控與控制的互動窗口。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將「介面」當作 AI 訓練、能源供應或維修本體。</p>\n<p class=\"study-paragraph\">有按鈕也不代表任何人都能改配方或遠端啟動。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">HMI 把設備狀態、警報及受權操作呈現給人員，核心是監控與控制的互動窗口。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將「介面」當作 AI 訓練、能源供應或維修本體。</p>\n<p class=\"study-paragraph\">有按鈕也不代表任何人都能改配方或遠端啟動。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">設備介面讓人員理解狀態並依權限操作。能源供應、維修及模型學習各有其他元件與程序；有介面不等於具備全部能力。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 13,
@@ -1024,7 +1086,8 @@
       "83ffa8171e64de5b",
       "e736f971c9b5b81a"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識題目比較的是「連接線長度」，公告排序為 GigE → Camera Link → USB 3.0。</p>\n<p class=\"study-paragraph\">再檢查工程應用有無指定線材或延伸方案。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以頻寬排名代替距離排名，或把題內排序誤寫成所有型號均適用的固定公尺數。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先辨識題目比較的是「連接線長度」，公告排序為 GigE → Camera Link → USB 3.0。</p>\n<p class=\"study-paragraph\">再檢查工程應用有無指定線材或延伸方案。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以頻寬排名代替距離排名，或把題內排序誤寫成所有型號均適用的固定公尺數。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告依典型連線距離選 GigE、Camera Link、USB 3.0。比較項目是距離而非頻寬；實際長度須查版本、模式、線材及主動延伸方案。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 14,
@@ -1041,7 +1104,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">整合前建立資料格式、通訊方式、命名與介面需求，再管理版本及驗證責任，才能減少對接歧義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自由命名、每台重寫或不留版本當成彈性。</p>\n<p class=\"study-paragraph\">這會提高整合及追查成本，不能以內部使用為由省略。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">整合前建立資料格式、通訊方式、命名與介面需求，再管理版本及驗證責任，才能減少對接歧義。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自由命名、每台重寫或不留版本當成彈性。</p>\n<p class=\"study-paragraph\">這會提高整合及追查成本，不能以內部使用為由省略。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">先定義資料、通訊與介面需求，才可重用並驗證整合。自由命名、每台重寫及不記版本會擴大歧義，內部使用也需資料契約。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 15,
@@ -1063,7 +1127,8 @@
       "1486fa7138a4a65d",
       "8019365c207ea452"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題意包含「彙整後供上層管理」，應把設備訊號關聯成工單、進度與品質資訊，定位 MES 的製造營運角色。</p>\n<p class=\"study-paragraph\">第 15 題的答案反映其管理用途，不能拿來規定所有原始波形的儲存位置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只抓住「快速變化」就選控制器。</p>\n<p class=\"study-paragraph\">控制器擅長即時控制，不等同跨工單與產線的營運彙整。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題意包含「彙整後供上層管理」，應把設備訊號關聯成工單、進度與品質資訊，定位 MES 的製造營運角色。</p>\n<p class=\"study-paragraph\">第 15 題的答案反映其管理用途，不能拿來規定所有原始波形的儲存位置。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只抓住「快速變化」就選控制器。</p>\n<p class=\"study-paragraph\">控制器擅長即時控制，不等同跨工單與產線的營運彙整。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">保留「彙整後提供上層管理」線索，MES 將設備事件關聯成工單與製造資訊。高頻原始波形可先由控制器或邊緣系統處理，不必全部直寫 MES。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 16,
@@ -1077,7 +1142,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：電子看板共享現況、減少人工通報等待，但仍需資料來源、稽核、更正及結案流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「減少人工依賴」放大成「全面取消紀錄與稽核」。</p>\n<p class=\"study-paragraph\">即時顯示不等於資料必然正確。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：電子看板共享現況、減少人工通報等待，但仍需資料來源、稽核、更正及結案流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「減少人工依賴」放大成「全面取消紀錄與稽核」。</p>\n<p class=\"study-paragraph\">即時顯示不等於資料必然正確。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">電子看板可提高資訊透明並減少人工通報等待，仍須來源校驗、稽核及更正。畫面即時不代表資料必定正確，更不代表全面取消紀錄。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 17,
@@ -1097,7 +1163,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">用三層記憶 IMS：第 17 題辨認 PAP 策略。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">用三層記憶 IMS：第 17 題辨認 PAP 策略。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">故障前預測並預防是 PAP；FAF 與緊急排除均在故障後。固定排程保養可以預防，但不等同依狀態預測失效。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 18,
@@ -1114,7 +1181,8 @@
       "fda04b77c229f593",
       "1371595b77ca7b1e"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：分清採集、連線、資料處理平台等基本組成，與聲音辨識這種特定應用能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到功能「智慧」就認為每套 IoT 都必須具備。</p>\n<p class=\"study-paragraph\">雲端是題內的典型平台選項，實務可使用地端部署。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：分清採集、連線、資料處理平台等基本組成，與聲音辨識這種特定應用能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到功能「智慧」就認為每套 IoT 都必須具備。</p>\n<p class=\"study-paragraph\">雲端是題內的典型平台選項，實務可使用地端部署。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告以聲音辨識為特定應用而選 D。雲端是典型部署選項，實務可採地端；題面若把「核心」解作所有 IoT 的必要條件，雲端也不能一律強制。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 19,
@@ -1130,7 +1198,8 @@
       "765d6594f65732cb",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先確認題目使用 IoT 的分層語境。</p>\n<p class=\"study-paragraph\">在其候選名稱中辨認應用、網路、商務層，排除不屬該模型的名稱。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將三層 IoT、含商務層的五層模型與 OSI 七層混接。</p>\n<p class=\"study-paragraph\">IoT 沒有一個適用所有情境的唯一層數。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先確認題目使用 IoT 的分層語境。</p>\n<p class=\"study-paragraph\">在其候選名稱中辨認應用、網路、商務層，排除不屬該模型的名稱。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將三層 IoT、含商務層的五層模型與 OSI 七層混接。</p>\n<p class=\"study-paragraph\">IoT 沒有一個適用所有情境的唯一層數。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 C 對應應用、網路、商務三名稱，屬題內分層語境。商務層常見於延伸模型，不能拿來替換所有三層 IoT 的感知層，也不可混接 OSI 名詞。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 20,
@@ -1147,7 +1216,8 @@
       "fda04b77c229f593",
       "1371595b77ca7b1e"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題內未給版本，採常見概括速率順序 Wi-Fi、Bluetooth、NFC。</p>\n<p class=\"study-paragraph\">作答後再區分速率、距離與功耗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用最遠傳輸距離或最低功耗排序，卻沒有回答資料速率。</p>\n<p class=\"study-paragraph\">也可能把概括排序誤當成跨所有版本的定律。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題內未給版本，採常見概括速率順序 Wi-Fi、Bluetooth、NFC。</p>\n<p class=\"study-paragraph\">作答後再區分速率、距離與功耗。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">用最遠傳輸距離或最低功耗排序，卻沒有回答資料速率。</p>\n<p class=\"study-paragraph\">也可能把概括排序誤當成跨所有版本的定律。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題目未定版本時，公告採 Wi-Fi、Bluetooth、NFC 的常見概括速率排序。這不是跨版本定律；速率也不等於距離、功耗或現場有效吞吐量。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 21,
@@ -1166,7 +1236,8 @@
       "9f80c05d03f823a0",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">邊緣 AI 把部分推論移近資料來源，主要價值是減少往返延遲、原始資料傳送與即時處理等待。</p>\n<p class=\"study-paragraph\">靠近資料源可減少往返延遲與原始影像傳輸，對應第 21 題。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「放到邊緣」理解成增加雲端負載或擴充儲存。</p>\n<p class=\"study-paragraph\">運算位置與硬碟容量不是同一件事。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">邊緣 AI 把部分推論移近資料來源，主要價值是減少往返延遲、原始資料傳送與即時處理等待。</p>\n<p class=\"study-paragraph\">靠近資料源可減少往返延遲與原始影像傳輸，對應第 21 題。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「放到邊緣」理解成增加雲端負載或擴充儲存。</p>\n<p class=\"study-paragraph\">運算位置與硬碟容量不是同一件事。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">把推論移近資料源可縮短雲端往返並減少傳輸負擔。仍須量測整體延遲與算力，增加儲存容量或雲端負荷不是此設計的主要目的。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 22,
@@ -1181,7 +1252,8 @@
       "765d6594f65732cb",
       "fda04b77c229f593"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依動詞辨層：「量到、讀取、辨識」是感知採集。</p>\n<p class=\"study-paragraph\">「送出」是傳輸。</p>\n<p class=\"study-paragraph\">「推論、決策」才是分析應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因感測器具備處理晶片，就把感知層的主要任務改判為全廠決策或雲端共享。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依動詞辨層：「量到、讀取、辨識」是感知採集。</p>\n<p class=\"study-paragraph\">「送出」是傳輸。</p>\n<p class=\"study-paragraph\">「推論、決策」才是分析應用。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因感測器具備處理晶片，就把感知層的主要任務改判為全廠決策或雲端共享。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">感知層主要取得物理資料；網路層送達，應用層分析與決策。按指定動作分層，同一智慧裝置可能同時具備多層功能。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 23,
@@ -1197,7 +1269,8 @@
       "d9e0756895300234",
       "83ffa8171e64de5b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：以已知目標數值配對輸入來擬合，是監督式迴歸。</p>\n<p class=\"study-paragraph\">最小平方法可用於線性迴歸，參數過多也可能過度擬合。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">誤以為監督式只能輸出類別。</p>\n<p class=\"study-paragraph\">另須區分關聯與因果，迴歸關係本身不證明改變某參數必然造成品質變化。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：以已知目標數值配對輸入來擬合，是監督式迴歸。</p>\n<p class=\"study-paragraph\">最小平方法可用於線性迴歸，參數過多也可能過度擬合。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">誤以為監督式只能輸出類別。</p>\n<p class=\"study-paragraph\">另須區分關聯與因果，迴歸關係本身不證明改變某參數必然造成品質變化。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">有目標數值供學習的迴歸屬監督式，故 A 錯。模型過複雜可能過擬合，最小平方可擬合線性模型；相關或迴歸仍不直接證明因果。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 24,
@@ -1213,7 +1286,8 @@
       "d9e0756895300234",
       "83ffa8171e64de5b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">強化學習依行動後的獎勵學習策略，因此須定義獎勵訊號／函數。</p>\n<p class=\"study-paragraph\">製造任務還應限制碰撞、超溫及品質風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將分類模型需要大量人工標籤的流程套到強化學習，或以固定規則列盡所有情境，忽略互動學習。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">強化學習依行動後的獎勵學習策略，因此須定義獎勵訊號／函數。</p>\n<p class=\"study-paragraph\">製造任務還應限制碰撞、超溫及品質風險。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將分類模型需要大量人工標籤的流程套到強化學習，或以固定規則列盡所有情境，忽略互動學習。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">強化學習由互動獎勵引導策略，因此需定義獎勵訊號。人工逐筆類別標註不是其共同必要條件，固定規則也不必預先涵蓋所有情境。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 25,
@@ -1231,7 +1305,8 @@
       "83ffa8171e64de5b",
       "065ee51b3ab60079"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先保留「資料與運算都在本地」前提，再比較模型泛化問題與外部連線問題。</p>\n<p class=\"study-paragraph\">此時網路穩定性通常不直接改變預測準確性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">漏讀本地前提，套用雲端取數中斷的情境。</p>\n<p class=\"study-paragraph\">資料偏差、洩漏及過度擬合則確實會使結果失真。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">先保留「資料與運算都在本地」前提，再比較模型泛化問題與外部連線問題。</p>\n<p class=\"study-paragraph\">此時網路穩定性通常不直接改變預測準確性。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">漏讀本地前提，套用雲端取數中斷的情境。</p>\n<p class=\"study-paragraph\">資料偏差、洩漏及過度擬合則確實會使結果失真。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">以資料與運算均在本地且不依賴遠端取數為前提，網路穩定性通常不直接改變準確率。洩漏、偏差與過擬合會使評估或泛化失真。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 26,
@@ -1248,7 +1323,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目以工業場域、多關節／多自由度設備描述工業機器人，先看用途及機構功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因動作像人就判成仿人型，或把所有自動設備都視作服務機器人。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目以工業場域、多關節／多自由度設備描述工業機器人，先看用途及機構功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因動作像人就判成仿人型，或把所有自動設備都視作服務機器人。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題目以工業用途及多關節設備判為工業機器人。是否仿人取決外形與設計，不因動作類似人就自動歸入仿人型。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 27,
@@ -1264,7 +1340,8 @@
       "d9e0756895300234",
       "83ffa8171e64de5b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">視覺的任務目的是從影像取得可用的場景理解，如物件、位置與關係。</p>\n<p class=\"study-paragraph\">像素或顏色統計只是中間處理。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把容易量測的像素數當最終目的，或把影像轉文字這一項應用當作全部電腦視覺的定義。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">視覺的任務目的是從影像取得可用的場景理解，如物件、位置與關係。</p>\n<p class=\"study-paragraph\">像素或顏色統計只是中間處理。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把容易量測的像素數當最終目的，或把影像轉文字這一項應用當作全部電腦視覺的定義。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">電腦視覺從影像取得場景理解，像素、顏色與文字描述是部分處理或任務。並非每套視覺系統都必須完成三維重建才能成立。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 28,
@@ -1280,7 +1357,8 @@
       "e3ff4df535394797",
       "d8c129afa3bb25f8"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先問資料是否已採到。</p>\n<p class=\"study-paragraph\">接入／傳輸屬 Connection。</p>\n<p class=\"study-paragraph\">把資料轉成健康指標、劣化趨勢等才是 Conversion。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因為採集後能做分析，就把採集本身放入資訊挖掘層。</p>\n<p class=\"study-paragraph\">「非接觸式」是採集方式，不會改變其層級。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：先問資料是否已採到。</p>\n<p class=\"study-paragraph\">接入／傳輸屬 Connection。</p>\n<p class=\"study-paragraph\">把資料轉成健康指標、劣化趨勢等才是 Conversion。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因為採集後能做分析，就把採集本身放入資訊挖掘層。</p>\n<p class=\"study-paragraph\">「非接觸式」是採集方式，不會改變其層級。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">非接觸採集與傳輸仍屬 Connection；資料轉成健康評估、劣化特徵及趨勢才對應 Conversion。採集方式不改變其功能層級。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 29,
@@ -1296,7 +1374,8 @@
       "e3ff4df535394797",
       "d8c129afa3bb25f8"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依資料成熟度重建 Connection → Conversion → Cyber → Cognition → Configuration，再對回題內代號，公告順序為乙戊丁丙甲。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背五個中文名的排列，或因 Cyber 有「網路」就把它移到感測連線之前，混淆與 IoT 網路層的語境。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">依資料成熟度重建 Connection → Conversion → Cyber → Cognition → Configuration，再對回題內代號，公告順序為乙戊丁丙甲。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背五個中文名的排列，或因 Cyber 有「網路」就把它移到感測連線之前，混淆與 IoT 網路層的語境。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">先重建五層功能：連線取數、轉成資訊、虛擬整合、認知決策、回饋配置，再對回乙戊丁丙甲。5C 的 Cyber 不只是一般封包傳送。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 30,
@@ -1314,7 +1393,8 @@
       "d8c129afa3bb25f8",
       "86e285241a1b8372"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">找「實體對象、量測、計算、回饋」的互動：智慧電網、自動駕駛及與實體連結的數位孿生可形成 CPS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將任何數位技術都當 CPS。</p>\n<p class=\"study-paragraph\">區塊鏈可支援追溯，但帳本技術本身不具備對實體製程的量測與回饋閉環。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">找「實體對象、量測、計算、回饋」的互動：智慧電網、自動駕駛及與實體連結的數位孿生可形成 CPS。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將任何數位技術都當 CPS。</p>\n<p class=\"study-paragraph\">區塊鏈可支援追溯，但帳本技術本身不具備對實體製程的量測與回饋閉環。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">甲乙丁可具有實體量測與計算回饋；區塊鏈帳本本身不構成 CPS。它仍可作為 CPS 的追溯元件，不能推成兩者完全不相容。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 31,
@@ -1332,7 +1412,8 @@
       "d8c129afa3bb25f8",
       "86e285241a1b8372"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給具自主性的資料驅動系統，應辨認在既定目標及允許範圍內執行補救的配置／回饋功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自主性縮成只告警或永遠等人工。</p>\n<p class=\"study-paragraph\">相反地，也不能把題內「最佳」理解成對任何未知失控都保證找出全域最優措施。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">題目已給具自主性的資料驅動系統，應辨認在既定目標及允許範圍內執行補救的配置／回饋功能。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將自主性縮成只告警或永遠等人工。</p>\n<p class=\"study-paragraph\">相反地，也不能把題內「最佳」理解成對任何未知失控都保證找出全域最優措施。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告指自主系統在已驗證規則與允許範圍內採取補救。未知失控仍可能需安全停機或人工介入，「最佳」不代表任何情況都保證全域最優。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 32,
@@ -1349,7 +1430,8 @@
       "d9e0756895300234",
       "83ffa8171e64de5b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：整棵樹可以依不同節點使用多個特徵。</p>\n<p class=\"study-paragraph\">例如先判斷溫度，再判斷振動。</p>\n<p class=\"study-paragraph\">單一節點測一個特徵，不等於整棵樹只能輸入一維資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將節點的單一條件誤推成模型的單一維度。</p>\n<p class=\"study-paragraph\">「容易理解」也不表示深樹永遠簡單或訓練耗時固定。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：整棵樹可以依不同節點使用多個特徵。</p>\n<p class=\"study-paragraph\">例如先判斷溫度，再判斷振動。</p>\n<p class=\"study-paragraph\">單一節點測一個特徵，不等於整棵樹只能輸入一維資料。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將節點的單一條件誤推成模型的單一維度。</p>\n<p class=\"study-paragraph\">「容易理解」也不表示深樹永遠簡單或訓練耗時固定。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">節點可依不同特徵逐層判斷，整棵樹不限一維。樹深、資料量及實作影響計算量，不能把其他選項的易讀、快速當成無條件保證。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 33,
@@ -1369,7 +1451,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題辨認持續監測及性能預測。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題辨認持續監測及性能預測。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">持續狀態監測與性能預測提供故障前處置依據。被動修復及售後紀錄可以存在，但不足以代表題目要求的 IMS 預測策略。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 34,
@@ -1388,7 +1471,8 @@
       "1486fa7138a4a65d",
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題的 MES 與產品研發責任，另在單元六辨析。</p>\n<p class=\"study-paragraph\">反向題：MES 支援執行、追溯、品質及換線協調。</p>\n<p class=\"study-paragraph\">新產品本體設計主要屬工程研發及 CAD／PLM。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 MES 會使用產品版次或製程文件，就認為它直接設計全新產品。</p>\n<p class=\"study-paragraph\">使用工程資料與創建設計是不同責任。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題的 MES 與產品研發責任，另在單元六辨析。</p>\n<p class=\"study-paragraph\">反向題：MES 支援執行、追溯、品質及換線協調。</p>\n<p class=\"study-paragraph\">新產品本體設計主要屬工程研發及 CAD／PLM。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">因 MES 會使用產品版次或製程文件，就認為它直接設計全新產品。</p>\n<p class=\"study-paragraph\">使用工程資料與創建設計是不同責任。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MES 支援執行、換線協調、追蹤與品質，產品本體設計主要在研發及 CAD／PLM。使用設計資料不等於直接創造全新產品。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 35,
@@ -1408,7 +1492,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題辨認支援預測的資料探勘能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題辨認支援預測的資料探勘能力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只背 IMS 縮寫，卻混淆維修策略、監測作業與分析技術。</p>\n<p class=\"study-paragraph\">固定週期保養可有價值，但不等同依設備狀態預測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">資料探勘能由狀態與歷史資料建立預測線索，支援 IMS。忽略商務連結、減少必要訓練或只作被動修復，不符合此能力發展。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 36,
@@ -1426,7 +1511,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">稼動、運轉效率與預防保養可分別減少時間／速度損失及突發故障，所以題內三項皆可能支持生產力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只選最熟悉的單一方法。</p>\n<p class=\"study-paragraph\">實務仍應核對瓶頸與需求，非瓶頸稼動提高不必然增加全線交付。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">稼動、運轉效率與預防保養可分別減少時間／速度損失及突發故障，所以題內三項皆可能支持生產力。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只選最熟悉的單一方法。</p>\n<p class=\"study-paragraph\">實務仍應核對瓶頸與需求，非瓶頸稼動提高不必然增加全線交付。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">減少時間、速度及故障損失都可能提升生產力，因此題給三項皆有助益。對全線的實際效果仍須核對瓶頸與需求，不是所有設備忙碌即有更多交付。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 37,
@@ -1443,7 +1529,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">換模換線改善直接縮短停機設定時間，在相同負荷口徑下提高 Availability。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把多機作業的人員配置改善直接當作設備稼動改善，未說明是否真的減少該設備停機。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">換模換線改善直接縮短停機設定時間，在相同負荷口徑下提高 Availability。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把多機作業的人員配置改善直接當作設備稼動改善，未說明是否真的減少該設備停機。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">縮短換模換線可直接減少納入負荷時間的停機，改善 A。多機作業或設計變更需另證明減少了設備停機，不能只憑名稱推斷。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 38,
@@ -1458,7 +1545,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：對照題內日報欄位，分清工序、實際加工量、人員識別及不良個數。</p>\n<p class=\"study-paragraph\">產品識別應用料號／產品代碼。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因「工」字就把工號當產品代碼。</p>\n<p class=\"study-paragraph\">企業若用工號表示其他識別，需依資料字典讀取，不能只靠欄名猜測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">反向題：對照題內日報欄位，分清工序、實際加工量、人員識別及不良個數。</p>\n<p class=\"study-paragraph\">產品識別應用料號／產品代碼。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只因「工」字就把工號當產品代碼。</p>\n<p class=\"study-paragraph\">企業若用工號表示其他識別，需依資料字典讀取，不能只靠欄名猜測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">依題內日報語境，工號不是產品代碼，產品應有料號識別。實際企業欄位可自訂，串接前仍須依資料字典確認工號代表人員、工單或其他識別。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 39,
@@ -1475,7 +1563,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">Homing 建立已知位置參考，供後續定位使用。</p>\n<p class=\"study-paragraph\">檢查復歸完成狀態及允許啟動條件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把回原點當加速、故障清除或進維修模式。</p>\n<p class=\"study-paragraph\">參考點建立也不會自動校正所有治具與工具誤差。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">Homing 建立已知位置參考，供後續定位使用。</p>\n<p class=\"study-paragraph\">檢查復歸完成狀態及允許啟動條件。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把回原點當加速、故障清除或進維修模式。</p>\n<p class=\"study-paragraph\">參考點建立也不會自動校正所有治具與工具誤差。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">復歸建立軸的已知參考位置，支援後續定位；原題「確保精度」不等於自動校正全部磨耗、治具與工具誤差。復歸後仍可能需要定位驗證。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 40,
@@ -1492,7 +1581,8 @@
       "35fbb1e1e2cef464",
       "2cac8123a3ab738b"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">六軸關節型手臂以多軸協調調整空間位置與姿態，適合需要方向變換的任務。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將其誤限為平面或堆高用途。</p>\n<p class=\"study-paragraph\">自由度高不代表必然達到所有精度、負載、可達性或無碰撞要求。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">六軸關節型手臂以多軸協調調整空間位置與姿態，適合需要方向變換的任務。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將其誤限為平面或堆高用途。</p>\n<p class=\"study-paragraph\">自由度高不代表必然達到所有精度、負載、可達性或無碰撞要求。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">六軸可協調位置與姿態，並不限平面或堆高。自由度多不保證任意點可達、無奇異點或無碰撞，仍須核對負載及路徑。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 41,
@@ -1506,7 +1596,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">拉式由下游消耗／需求授權上游補充，需有數量與在製限制。</p>\n<p class=\"study-paragraph\">電子訊息也可承載拉動訊號。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將裝電子看板或改小批量直接等同拉式，卻未改變投產觸發規則。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">拉式由下游消耗／需求授權上游補充，需有數量與在製限制。</p>\n<p class=\"study-paragraph\">電子訊息也可承載拉動訊號。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將裝電子看板或改小批量直接等同拉式，卻未改變投產觸發規則。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">拉式以實際下游消耗授權補充並限制 WIP。小批量、標準作業或看板畫面本身不等於拉式，須查投產與補貨的觸發規則。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 42,
@@ -1520,7 +1611,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">OEE 的三項是時間稼動、性能及品質比率，均無量綱。人機料的分類或三個時間原始值，都不是 A、P、Q 的替代組合。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 43,
@@ -1534,7 +1626,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">P 比較實際運轉期間的產出速度與理想／標準速度，公式為理想週期 × 總產出 ÷ 運轉時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「有沒有開動」的 A，或「好不好」的 Q 當成速度表現。</p>\n<p class=\"study-paragraph\">運轉時間不可再扣一次已歸為速度損失的微停。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">P 比較實際運轉期間的產出速度與理想／標準速度，公式為理想週期 × 總產出 ÷ 運轉時間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把「有沒有開動」的 A，或「好不好」的 Q 當成速度表現。</p>\n<p class=\"study-paragraph\">運轉時間不可再扣一次已歸為速度損失的微停。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">P＝理想週期×總產出÷運轉時間，衡量運轉時的速度損失。是否運轉是 A，首次合格比例是 Q；同一損失不可在多個因子重複扣。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 44,
@@ -1548,7 +1641,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">A＝運轉時間 ÷ 預先定義的負荷時間。</p>\n<p class=\"study-paragraph\">先固定哪些時段納入生產計畫。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把修理時間本身當比率，或以良品數作時間指標。</p>\n<p class=\"study-paragraph\">不同班表排除口徑也不能直接比較。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">A＝運轉時間 ÷ 預先定義的負荷時間。</p>\n<p class=\"study-paragraph\">先固定哪些時段納入生產計畫。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把修理時間本身當比率，或以良品數作時間指標。</p>\n<p class=\"study-paragraph\">不同班表排除口徑也不能直接比較。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">A 的分母須先定義為計畫生產或負荷時間，再以運轉時間相除。修理分鐘、良品件數及品質比例都不是同一時間指標。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 45,
@@ -1564,7 +1658,8 @@
       "13e15faebada86a5",
       "3ec5918af508c042"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">公告選擇生產方法／策略差異。</p>\n<p class=\"study-paragraph\">它能影響換線、速度及作業損失。</p>\n<p class=\"study-paragraph\">工程判讀還須分解 A、P、Q 並核對產品與期間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只憑操作者、設備新舊或所在產線便斷定原因。</p>\n<p class=\"study-paragraph\">僅知兩台效率不同，仍不足以證明唯一根因。</p>\n<p class=\"study-paragraph\">題內答案是選項判讀方向。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">公告選擇生產方法／策略差異。</p>\n<p class=\"study-paragraph\">它能影響換線、速度及作業損失。</p>\n<p class=\"study-paragraph\">工程判讀還須分解 A、P、Q 並核對產品與期間。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">只憑操作者、設備新舊或所在產線便斷定原因。</p>\n<p class=\"study-paragraph\">僅知兩台效率不同，仍不足以證明唯一根因。</p>\n<p class=\"study-paragraph\">題內答案是選項判讀方向。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 D 保留，但不同操作者、設備狀態與產線條件也可能影響效率。只知兩台相似而效率不同，無法證明唯一根因，須分解 A、P、Q 並核對方法。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 46,
@@ -1581,7 +1676,8 @@
       "13e15faebada86a5",
       "a5f7a3a641c7174f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">保留投入 100 件分母：第一次合格 90 件，重工後最終合格 100 件，因此直行率 90%、最終良品率 100%。</p>\n<p class=\"study-paragraph\">另第 46 題的「最終良品率」口徑，不能不經定義便搬進採首次合格率的 OEE。</p>\n<p class=\"study-paragraph\">同一批產品可以最終全部交付，仍保留首次品質與重工時間損失。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將重工 10 件再計為新投入，或因全部修好就把首次品質也改為 100%。</p>\n<p class=\"study-paragraph\">額外 10 分鐘是時間損失，不是件數分母。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">保留投入 100 件分母：第一次合格 90 件，重工後最終合格 100 件，因此直行率 90%、最終良品率 100%。</p>\n<p class=\"study-paragraph\">另第 46 題的「最終良品率」口徑，不能不經定義便搬進採首次合格率的 OEE。</p>\n<p class=\"study-paragraph\">同一批產品可以最終全部交付，仍保留首次品質與重工時間損失。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將重工 10 件再計為新投入，或因全部修好就把首次品質也改為 100%。</p>\n<p class=\"study-paragraph\">額外 10 分鐘是時間損失，不是件數分母。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">投入仍為 100 件，一次合格 90、最終合格 100，故直行率 90%、最終良率 100%。重工 10 分鐘不是件數分母，重工件也不算新增投入。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 47,
@@ -1597,7 +1693,8 @@
       "13e15faebada86a5",
       "a5f7a3a641c7174f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">按題內順序加工時間相加，單件總加工時間為 2＋3＋4＝9 分鐘。</p>\n<p class=\"study-paragraph\">此處沒有另給評比／寬放資料，不自行追加。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將最長站 4 分鐘誤當單件總時間。</p>\n<p class=\"study-paragraph\">若三站獨立且可重疊流水，4 分鐘才是理想穩態節拍，首件仍需依序通過。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">按題內順序加工時間相加，單件總加工時間為 2＋3＋4＝9 分鐘。</p>\n<p class=\"study-paragraph\">此處沒有另給評比／寬放資料，不自行追加。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">將最長站 4 分鐘誤當單件總時間。</p>\n<p class=\"study-paragraph\">若三站獨立且可重疊流水，4 分鐘才是理想穩態節拍，首件仍需依序通過。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題給三項依序時間相加為 9 分鐘，無資料可再加評比或寬放。4 分鐘是特定流水並行條件下的穩態瓶頸週期，不是單件三工序總時間。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 48,
@@ -1611,7 +1708,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">OEE 先辨三個無因次比率，再相乘：時間稼動率 A、性能稼動率 P、品質率 Q。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">以時間、速度、件數的原始數值直接相乘，量綱無法構成可比較的效率百分比。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">OEE＝A×P×Q，以小數比率相乘後轉百分比。把時間、投入件數或成本原值直接相乘，無法得到一致的效率量綱。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 49,
@@ -1627,7 +1725,8 @@
       "13e15faebada86a5",
       "3ec5918af508c042"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">良率 95% 與 A＝60% 分別描述品質和時間。</p>\n<p class=\"study-paragraph\">題意主要指向頻繁停機／待機，而非先假設加工精度差。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到效率不佳就一律改善品質，或忽略題目已排除的原料／設計變動。</p>\n<p class=\"study-paragraph\">單靠比率仍不能再分辨故障、待料或換線，須查停機明細。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">良率 95% 與 A＝60% 分別描述品質和時間。</p>\n<p class=\"study-paragraph\">題意主要指向頻繁停機／待機，而非先假設加工精度差。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">看到效率不佳就一律改善品質，或忽略題目已排除的原料／設計變動。</p>\n<p class=\"study-paragraph\">單靠比率仍不能再分辨故障、待料或換線，須查停機明細。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">A＝60% 表示計畫時間中僅六成運轉，優先查停機與待機損失。Q＝95% 不能解釋時間損失；故障、待料或換線的根因仍須事件明細。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 50,
@@ -1641,7 +1740,8 @@
     "noteIds": [
       "13e15faebada86a5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">即時、可視與異常反應的作用是較快看見並處理問題。</p>\n<p class=\"study-paragraph\">需把訊息接到責任人與處置流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把庫存增加當核心效益，或認為可視化能降低系統整合及品質穩定要求。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">即時、可視與異常反應的作用是較快看見並處理問題。</p>\n<p class=\"study-paragraph\">需把訊息接到責任人與處置流程。</p></section><section class=\"question-mistakes\"><h3>常見誤選理由</h3><p class=\"study-paragraph\">把庫存增加當核心效益，或認為可視化能降低系統整合及品質穩定要求。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">即時呈現與監控能縮短異常發現及反應時間。仍需資料整合與品質要求，不能藉可視化增加無需求庫存或取消後續處置。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 1,
@@ -1656,7 +1756,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">反向題的 A 把現場執行與企業規劃混為一談。MES 應與 ERP 交換工單與實績；品質、維護及資料決策都可受智慧製造支援。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 2,
@@ -1671,7 +1772,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 1、2 題均公告 A：ERP 管企業資源與營運計畫，MES 管現場執行、資料及實績，兩者交換資料，不能宣稱互相全面取代。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">MES 的核心是生產執行及資料處理，可關聯機台、工單與品質。系統可依核准規則提供決策，D 若指無邊界自主決策則過廣，不能取代權責設計。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 3,
@@ -1686,7 +1788,8 @@
       "ba3e67157f7f1091",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題（C）的單次溫度讀值屬感測。</p>\n<p class=\"study-paragraph\">溫度計讀值是感測；從歷史讀值找故障前兆才涉及資料分析／探勘。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題（C）的單次溫度讀值屬感測。</p>\n<p class=\"study-paragraph\">溫度計讀值是感測；從歷史讀值找故障前兆才涉及資料分析／探勘。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">單次紅外測溫是感測，尚未從資料中挖掘模式。推薦及推播可使用探勘結果；量測紀錄後續用於預測故障時，才進入另一項分析工作。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 4,
@@ -1701,7 +1804,8 @@
       "b107003456cacf5c",
       "43022f484e098526"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題（C）以 SQDCM 判優先順序。</p>\n<p class=\"study-paragraph\">活動排序以安全、品質、交期、成本、士氣（SQDCM）判讀；趕產量不能跳過必要安全與品質確認。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題（C）以 SQDCM 判優先順序。</p>\n<p class=\"study-paragraph\">活動排序以安全、品質、交期、成本、士氣（SQDCM）判讀；趕產量不能跳過必要安全與品質確認。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題內採 SQDCM：安全、品質、交期、成本、士氣。這是現場優先原則的教學口徑，不能用交期或成本目標跳過必要安全與品質確認。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 5,
@@ -1715,7 +1819,8 @@
     "noteIds": [
       "ba3e67157f7f1091"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 5 題（D）的 CSV 是文字資料格式。</p>\n<p class=\"study-paragraph\">SQL Server／Oracle 是資料庫平台，C# 是程式語言，可支援分析流程，並非三種探勘演算法。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 5 題（D）的 CSV 是文字資料格式。</p>\n<p class=\"study-paragraph\">SQL Server／Oracle 是資料庫平台，C# 是程式語言，可支援分析流程，並非三種探勘演算法。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">CSV 是儲存表格資料的文字格式；SQL Server、Oracle、C# 則可支援分析流程。CSV 能作輸入資料，但不是可自行執行探勘的軟體工具。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 6,
@@ -1731,7 +1836,8 @@
       "8c89ef016f6a5f9c",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 6 題（公告 C）的 90 秒代回得 84.92%，不是精確等式。</p>\n<p class=\"study-paragraph\">每次試選項都要重找最大 CT。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 6 題（公告 C）的 90 秒代回得 84.92%，不是精確等式。</p>\n<p class=\"study-paragraph\">每次試選項都要重找最大 CT。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">前六站合計 445 秒。最後站取 90 時，總和 535、最大站 90，535÷(7×90)＝84.92%，可近似 85%。選 110 會改變最大站，不能仍拿 90 當分母。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 7,
@@ -1746,7 +1852,9 @@
       "fbb2b5f9f54d0318",
       "426859ce978f22c3"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 7 題（C）採減少重工作答。</p>\n<p class=\"study-paragraph\">JIT 的拉動仍需換線能力與可靠供料，不能保證任意需求變更都能立即處理。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 7 題（C）採減少重工作答。</p>\n<p class=\"study-paragraph\">JIT 的拉動仍需換線能力與可靠供料，不能保證任意需求變更都能立即處理。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 C 保留；JIT 配合源頭品質可減少重工，換線與小批量也可能提升反應彈性，故 B 不宜一概說成錯誤。原題未給可排除 B 的條件，不能推成 JIT 沒有彈性效益。</p></section>",
+    "sourcePage": 2,
+    "note": "公告 C 保留；JIT 配合源頭品質可減少重工，換線與小批量也可能提升反應彈性，故 B 不宜一概說成錯誤。原題未給可排除 B 的條件，不能推成 JIT 沒有彈性效益。"
   },
   {
     "question": 8,
@@ -1763,7 +1871,8 @@
       "426859ce978f22c3",
       "05e26e60cb6853e7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題公告 A，但「減少供應商數量」有情境差異，C 的推式生產亦與典型拉動原則衝突，保留用語疑義。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題公告 A，但「減少供應商數量」有情境差異，C 的推式生產亦與典型拉動原則衝突，保留用語疑義。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，但 C 的推式也與典型精實拉動衝突；供應商減量則有合作集中與韌性取捨。題面不足以支持唯一反向答案，應分別學習供應策略與推拉邏輯。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 9,
@@ -1779,7 +1888,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 9 題（B）問的是節拍、順序與標準在製量三要素。</p>\n<p class=\"study-paragraph\">人員是執行者，未列入該三要素不代表不用訓練。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 9 題（B）問的是節拍、順序與標準在製量三要素。</p>\n<p class=\"study-paragraph\">人員是執行者，未列入該三要素不代表不用訓練。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">標準作業三要素是節拍、作業順序及標準在製量，故選 a、c、d。人員是執行者而非此組三要素名稱，並不代表可以省略訓練或人因評估。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 10,
@@ -1793,7 +1903,8 @@
     "noteIds": [
       "b107003456cacf5c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 10 題（D）的 PDCA 不應只檢查可見表象，還要驗證原因、對策與再發防止。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 10 題（D）的 PDCA 不應只檢查可見表象，還要驗證原因、對策與再發防止。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">PDCA 的檢查不能只停留可見表象，須依指標驗證原因、對策與再發防止。看得見的項目仍可檢查，D 的限制性描述才是問題。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 11,
@@ -1808,7 +1919,8 @@
       "ba3e67157f7f1091",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 11 題（C）不能把「具備即時監控」推成「良率立即提高」。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 11 題（C）不能把「具備即時監控」推成「良率立即提高」。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">即時監控能提供改善依據，良率是否提高還需方法、處置與驗證。C 若解成必然立即改善就不成立，不能反過來說智慧製造不能提升良率。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 12,
@@ -1823,7 +1935,8 @@
       "8770ff84a92a36cf",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">感知、計算、通訊與控制緊密連到實體過程，對應 CPS。單有網路、雲端運算或大量資料，尚不足以完整說明計算與實體回饋的耦合。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 13,
@@ -1839,7 +1952,8 @@
       "8770ff84a92a36cf",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告取 b、c、d；Zigbee 通常承擔通訊，RFID 可作識別採集，a 將兩者一概歸感知不妥。雲端可支援運算，但不是所有三層 IoT 都必有固定第四層。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 14,
@@ -1854,7 +1968,8 @@
     "noteIds": [
       "ba3e67157f7f1091"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題公告 C 是常用技術的相對分類，區塊鏈並非絕對不能用於製造追溯。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題公告 C 是常用技術的相對分類，區塊鏈並非絕對不能用於製造追溯。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告比較工廠的典型常用技術，並非禁止使用區塊鏈。帳本可支援追溯，但不會單獨完成即時控制或實體回饋。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 15,
@@ -1870,7 +1985,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 15 題（公告 D）中，ETO 要先完成設計與工程確認，不能接單後直接略過設計開工。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 15 題（公告 D）中，ETO 要先完成設計與工程確認，不能接單後直接略過設計開工。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">ETO 的訂單觸發設計與工程確認，再進入採購製造。直接跳過設計開工不符合其特徵；ATO 組模組、MTO 接單製造、MTS 預備成品要分清。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 16,
@@ -1884,7 +2000,8 @@
     "noteIds": [
       "a72ce86e439858e5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 16 題（A）對照資料驅動、可靠性與混合模型。</p>\n<p class=\"study-paragraph\">物件建模可描述軟體結構，單憑這個名稱不能推出故障機率或衰退過程。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 16 題（A）對照資料驅動、可靠性與混合模型。</p>\n<p class=\"study-paragraph\">物件建模可描述軟體結構，單憑這個名稱不能推出故障機率或衰退過程。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">資料驅動、可靠性與混合模型可描述劣化與預測。物件建模主要組織軟體或系統結構，名稱本身不代表已有故障機率或壽命模型。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 17,
@@ -1899,7 +2016,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 17 題（B）以人員工時、RFID、條碼為現場資料來源，上一批售價不是本題的生產採集項目。</p>\n<p class=\"study-paragraph\">但不代表跨系統分析永遠不能使用價格。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 17 題（B）以人員工時、RFID、條碼為現場資料來源，上一批售價不是本題的生產採集項目。</p>\n<p class=\"study-paragraph\">但不代表跨系統分析永遠不能使用價格。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">人員工時、出席、RFID 及條碼可形成現場生產事件。上一批售價不屬本題的現場採集來源，但跨系統成本分析仍可能另用價格。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 18,
@@ -1915,7 +2033,8 @@
       "d14b42529a26a414",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 18 題（D）以瓶頸決定系統產出，非瓶頸須配合投料。</p>\n<p class=\"study-paragraph\">非瓶頸改善若只是堆更多 WIP，不會直接提高出貨，但若能防止瓶頸缺料或解除其前置限制，仍可能有益，不能把「無影響」擴為所有情境。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 18 題（D）以瓶頸決定系統產出，非瓶頸須配合投料。</p>\n<p class=\"study-paragraph\">非瓶頸改善若只是堆更多 WIP，不會直接提高出貨，但若能防止瓶頸缺料或解除其前置限制，仍可能有益，不能把「無影響」擴為所有情境。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">瓶頸限制整體產出，投料須配合其能力。C 應限於不影響瓶頸的局部效率提升；若非瓶頸改善可避免瓶頸飢餓，仍可能改善整線。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 19,
@@ -1931,7 +2050,8 @@
       "98a1cf67a9e08182",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 19 題公告 D，以小時安排晶圓現場。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 19 題公告 D，以小時安排晶圓現場。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告將晶圓小排程歸到小時粒度。實際最小單位應依派工反應、設備事件及系統需求決定，不是全半導體業禁止更細時間。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 20,
@@ -1946,7 +2066,8 @@
     "noteIds": [
       "ba3e67157f7f1091"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 20 題公告 B 著重傳統性能品質控制與自省、預測、自重組等進階能力的比較，品質控制並未因此變得不重要。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 20 題公告 B 著重傳統性能品質控制與自省、預測、自重組等進階能力的比較，品質控制並未因此變得不重要。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告以自省、預測及重組等進階屬性作相對比較。性能及品質控制仍是智慧製造的重要用途，不能由反向答案推出其不被包含。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 21,
@@ -1961,7 +2082,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 21 題（B）問資源短缺後的例外處理與工單重排。</p>\n<p class=\"study-paragraph\">缺料造成原工單延後，系統先改工單優先序，再派搬運車補料。前者對應例外管理與工單管理，後者對應物料搬運管理。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 21 題（B）問資源短缺後的例外處理與工單重排。</p>\n<p class=\"study-paragraph\">缺料造成原工單延後，系統先改工單優先序，再派搬運車補料。前者對應例外管理與工單管理，後者對應物料搬運管理。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">資源短缺形成例外，重排訂單屬工單管理；兩者共同對應 b、c。搬運路徑可由相關子系統執行，不等於只需庫存查詢或工作站主檔。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 22,
@@ -1977,7 +2099,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 22 題（D）須同時核對使用訊號、前置需求及箱數。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 22 題（D）須同時核對使用訊號、前置需求及箱數。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">看板以消耗訊號控制補充，數量需涵蓋前置耗用與核定安全量。箱量與看板數共同限制流動量，不能只增加卡片而宣稱仍維持同一 WIP 上限。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 23,
@@ -1993,7 +2116,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 23 題（D）中，Q 固定的是訂購量，P 固定的是檢查期間。</p>\n<p class=\"study-paragraph\">不是兩者都固定日期、固定數量。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 23 題（D）中，Q 固定的是訂購量，P 固定的是檢查期間。</p>\n<p class=\"study-paragraph\">不是兩者都固定日期、固定數量。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">Q 模式以庫存位置達觸發點訂固定量，P 模式在固定週期檢查後決定補量。庫存位置須考慮在途與欠交，不宜只看貨架現有數量。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 24,
@@ -2010,7 +2134,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（D）所述「固定且均勻」應讀為確定、穩定的耗用率，不是需求服從機率上的均勻分布。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（D）所述「固定且均勻」應讀為確定、穩定的耗用率，不是需求服從機率上的均勻分布。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">基本 EOQ 採已知穩定耗用、固定單價與固定前置時間。原題「均勻分布」應讀為均勻耗用率，不是隨機需求服從均勻機率分布。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 25,
@@ -2026,7 +2151,8 @@
       "98a1cf67a9e08182",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題公告 C，以日安排須高溫、併批的鍛造。</p>\n<p class=\"study-paragraph\">判讀時先找換線成本、批次不可拆性與反應頻率，再選能保留限制的時間粒度。</p>\n<p class=\"study-paragraph\">這是該題情境的作答分類，不是「半導體一律只能小時、鍛造一律不能小時」的工程標準。</p>\n<p class=\"study-paragraph\">換成廠內詳細派工，仍可能需要更細的事件時間。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題公告 C，以日安排須高溫、併批的鍛造。</p>\n<p class=\"study-paragraph\">判讀時先找換線成本、批次不可拆性與反應頻率，再選能保留限制的時間粒度。</p>\n<p class=\"study-paragraph\">這是該題情境的作答分類，不是「半導體一律只能小時、鍛造一律不能小時」的工程標準。</p>\n<p class=\"study-paragraph\">換成廠內詳細派工，仍可能需要更細的事件時間。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題內以鍛造的加熱及併批情境採日粒度。詳細機台派工仍可能記小時或事件時點，不能從公告分類推成產業通用的最低時間解析度。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 26,
@@ -2040,7 +2166,8 @@
     "noteIds": [
       "c445f8c6b5bd35ff"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 26 題（C）否定不定義操作程序就能提高熟練度。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 26 題（C）否定不定義操作程序就能提高熟練度。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">OEE 可揭露損失，改善仍須明確方法、訓練及操作程序。收集到數字不會自動使作業熟練，也不會自行消除故障。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 27,
@@ -2055,7 +2182,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題（A）問閥門控制，判斷層級不同。</p>\n<p class=\"study-paragraph\">流體閥門的開關指令則屬設備／製程控制，不能只因它位於某工作站就歸入工作站排程。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題（A）問閥門控制，判斷層級不同。</p>\n<p class=\"study-paragraph\">流體閥門的開關指令則屬設備／製程控制，不能只因它位於某工作站就歸入工作站排程。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">閥門直接開關是設備／製程控制；工單優先序、工作站資源及搬運任務屬不同管理功能。實體位置在工作站內，不等於該動作就是工作站排程。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 28,
@@ -2073,7 +2201,8 @@
       "c6f0a4705824f0f2",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題公告 C 約 67%，本章上方保留 62.5%／60.98% 的條件驗算差異，不能為湊答案混用分母。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題公告 C 約 67%，本章上方保留 62.5%／60.98% 的條件驗算差異，不能為湊答案混用分母。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">三班扣休息後為 3×410＝1230 分鐘；再排除維護得 1200。若 100 秒為理想 CT，450 良品需理想 750 分鐘，OEE 分別為 60.98% 或 62.5%，均非公告約 67%。不補造數值湊 C。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 29,
@@ -2089,7 +2218,8 @@
       "8fafb02314e04cb9",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（公告 A）以 30 分鐘服務窗計人工負荷 <span class=\"math-inline\">$7×10÷(30×0.9)=2.59$</span>，故至少 3 人。</p>\n<p class=\"study-paragraph\">這能重現公告選項，但連續運轉仍須用人機時序驗證，尤其要釐清 30 分鐘是否包含上機操作。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（公告 A）以 30 分鐘服務窗計人工負荷 <span class=\"math-inline\">$7×10÷(30×0.9)=2.59$</span>，故至少 3 人。</p>\n<p class=\"study-paragraph\">這能重現公告選項，但連續運轉仍須用人機時序驗證，尤其要釐清 30 分鐘是否包含上機操作。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">採題內 30 分鐘服務窗，人工負荷 7×10÷(30×0.9)＝2.59，向上取整為 3。此為負荷估算，連續運轉還須釐清操作是否占機台週期及驗證人機時序。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 30,
@@ -2106,7 +2236,8 @@
       "53786c778c18f9be",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（B）採每班 5 人，淨工時每班 <span class=\"math-inline\">$480-70=410$</span> 分鐘，週量為 <span class=\"math-inline\">$410×60×2×5×5×0.9÷150=7380$</span> 件，約 7K。</p>\n<p class=\"study-paragraph\">不能把「5 人總編制」直接當作每班 5 人。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（B）採每班 5 人，淨工時每班 <span class=\"math-inline\">$480-70=410$</span> 分鐘，週量為 <span class=\"math-inline\">$410×60×2×5×5×0.9÷150=7380$</span> 件，約 7K。</p>\n<p class=\"study-paragraph\">不能把「5 人總編制」直接當作每班 5 人。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">按每班 5 人及每件 150 人秒，410×60×2×5×5×0.9÷150＝7380 件，近似 7K。若 5 人是兩班總編制，或 150 秒是整線出件間隔，不能照此乘人數。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 31,
@@ -2121,7 +2252,8 @@
       "c0424530e5cd8d40",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（D）中維修人數不屬 RPN 的 S、O、D。</p>\n<p class=\"study-paragraph\">檢出度分數越高通常表示越難在流出前檢出，不是檢測能力越強。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（D）中維修人數不屬 RPN 的 S、O、D。</p>\n<p class=\"study-paragraph\">檢出度分數越高通常表示越難在流出前檢出，不是檢測能力越強。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">傳統 RPN＝S×O×D，維修人數不是風險係數。D 分數高通常表示難以檢出；RPN 也不是能取代嚴重度與適用行動規則的唯一排序依據。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 32,
@@ -2136,7 +2268,8 @@
       "b107003456cacf5c",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）顯示計畫、實績與異常，屬製造狀態可視化。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）顯示計畫、實績與異常，屬製造狀態可視化。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">計畫、目標、實績與異常共同描述製造狀態。位置標示、SOP 展示及人員 KPI 可在看板出現，但均未完整回答本題顯示內容。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 33,
@@ -2151,7 +2284,8 @@
       "8c89ef016f6a5f9c",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（C）以瓶頸 50 秒計算 <span class=\"math-inline\">$8×3600÷50=576$</span> 件，不能把四站時間相加當出件間隔。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（C）以瓶頸 50 秒計算 <span class=\"math-inline\">$8×3600÷50=576$</span> 件，不能把四站時間相加當出件間隔。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">穩態瓶頸為 50 秒，8×3600÷50＝576 件為理論能力。若從空線起算當班已完成數，首件須 193 秒，會少於此穩態上限，兩種口徑需分開。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 34,
@@ -2165,7 +2299,8 @@
     "noteIds": [
       "a72ce86e439858e5"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（D）要區分描述既有良率以估設備量，與由歷史、預測、設計知識主動避免顯性及隱性問題。</p>\n<p class=\"study-paragraph\">前者有用，只是未充分表達題目所指的主動改善方向。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（D）要區分描述既有良率以估設備量，與由歷史、預測、設計知識主動避免顯性及隱性問題。</p>\n<p class=\"study-paragraph\">前者有用，只是未充分表達題目所指的主動改善方向。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告比較的是從顯性處理走向隱性預測與設計預防。以良率估設備量仍有管理用途，但不足以單獨代表題內主動避免問題的發展方向。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 35,
@@ -2181,7 +2316,8 @@
       "c445f8c6b5bd35ff",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題（D）否定 OEE 越低良品越多，須在相同時間與理想速度下比較。</p>\n<p class=\"study-paragraph\">需求減少時調整排產，不必故意增加故障或慢速。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 35 題（D）否定 OEE 越低良品越多，須在相同時間與理想速度下比較。</p>\n<p class=\"study-paragraph\">需求減少時調整排產，不必故意增加故障或慢速。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">同一計畫時間及理想週期下，OEE 較低不會產出更多良品。B 的需求過剩情境應調整排產，不應故意增加故障或慢速來壓低 OEE。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 36,
@@ -2197,7 +2333,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（D）則把精實延伸至採購、供應、物流、倉庫與顧客，不能只改善廠內機台。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（D）則把精實延伸至採購、供應、物流、倉庫與顧客，不能只改善廠內機台。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">精實供應鏈涵蓋採購、供應商、物流、倉庫、製造與顧客需求。只優化廠內機台而把等待移給上下游，不能證明全鏈改善。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 37,
@@ -2212,7 +2349,8 @@
       "d14b42529a26a414",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 37 題（公告 D）包含交期、流程時間與閒置時間。</p>\n<p class=\"study-paragraph\">三者可能互相牴觸，排程前要先決定優先級，不能認為同一規則同時使全部指標最佳。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 37 題（公告 D）包含交期、流程時間與閒置時間。</p>\n<p class=\"study-paragraph\">三者可能互相牴觸，排程前要先決定優先級，不能認為同一規則同時使全部指標最佳。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">交期、流程時間及閒置皆可用來衡量排程，但可能互相牴觸。須先訂優先目標與限制，不能假設一條派工法則同時使三者最優。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 38,
@@ -2228,7 +2366,8 @@
       "8e9dddddf11dbbd8",
       "426859ce978f22c3"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題公告 A，題幹寫 SMRT。</p>\n<p class=\"study-paragraph\">通行 SMART 目標包含明確、可衡量、可達成、相關及期限，「可塑性」不是此組縮寫要素。</p>\n<p class=\"study-paragraph\">上述字母是該份公告作答參考，技術判斷仍須保留題設邊界。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題公告 A，題幹寫 SMRT。</p>\n<p class=\"study-paragraph\">通行 SMART 目標包含明確、可衡量、可達成、相關及期限，「可塑性」不是此組縮寫要素。</p>\n<p class=\"study-paragraph\">上述字母是該份公告作答參考，技術判斷仍須保留題設邊界。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">原題保留 SMRT 字樣，常見目標原則寫作 SMART。可塑性不屬常見縮寫要素；具體、可衡量、可達成、相關及期限應依採用定義說明。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 39,
@@ -2243,7 +2382,8 @@
       "d14b42529a26a414",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（C）中的增加投資是決策手段，並非排程本身的效能指標。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（C）中的增加投資是決策手段，並非排程本身的效能指標。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">提高投資額是可能採取的手段，非排程結果本身。設備利用、流程時間與交期服務可作績效，但仍須避免為局部利用率製造過量庫存。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 40,
@@ -2259,7 +2399,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（C）須區分「閒置的多餘產能」與「已實際超量生產」。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（C）須區分「閒置的多餘產能」與「已實際超量生產」。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">有餘裕產能不等於已經過量生產；超過需求時點或數量實際投產才形成過量。運輸與動作的分類須看跨流程搬運或作業內伸取，名稱不可混用。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 41,
@@ -2274,7 +2415,8 @@
     "noteIds": [
       "c445f8c6b5bd35ff"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 41 題公告 A，但其「節拍不能作為計畫基礎」的讀法有疑義。</p>\n<p class=\"study-paragraph\">依 <a href=\"https://www.lean.org/lexicon-terms/takt-time/\" class=\"study-link\">LEI 的 Takt 定義</a>，TT 正是以需求與可用時間連結生產的依據，<span class=\"math-inline\">$CT\\le TT$</span> 是滿足需求的設計條件，並非任何現況都自然成立。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 41 題公告 A，但其「節拍不能作為計畫基礎」的讀法有疑義。</p>\n<p class=\"study-paragraph\">依 <a href=\"https://www.lean.org/lexicon-terms/takt-time/\" class=\"study-link\">LEI 的 Takt 定義</a>，TT 正是以需求與可用時間連結生產的依據，<span class=\"math-inline\">$CT\\le TT$</span> 是滿足需求的設計條件，並非任何現況都自然成立。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，但 TT 本來可連結需求與計畫。CT≤TT 是滿足需求時要驗證的條件，並非所有現況自然成立；原題不足以把 A 當作通用錯誤敘述。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 42,
@@ -2290,7 +2432,8 @@
       "c53a9e0f8c2880ac",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題公告 A。</p>\n<p class=\"study-paragraph\">WMS 仍可與 MES 整合，不能由此推成「MES 不可連 WMS」。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題公告 A。</p>\n<p class=\"study-paragraph\">WMS 仍可與 MES 整合，不能由此推成「MES 不可連 WMS」。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，但 MES 可以經受控介面與 WMS 交換領料及庫存資訊。是否為題內「基本功能」與能否整合是不同問題，不能教成兩者禁止連線。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 43,
@@ -2307,7 +2450,8 @@
       "426859ce978f22c3",
       "272aaea4ea75dee0"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）把共同設計製造寫成 JBM。</p>\n<p class=\"study-paragraph\">通常對應的詞是 JDM，應辨識縮寫與設計責任，不能把它當作 MTO 的同義詞。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）把共同設計製造寫成 JBM。</p>\n<p class=\"study-paragraph\">通常對應的詞是 JDM，應辨識縮寫與設計責任，不能把它當作 MTO 的同義詞。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">共同設計製造通常縮寫 JDM，原題 C 寫 JBM。OEM、ODM、OBM 的區別要看設計與品牌責任，不可僅因同為代工就當成相同契約。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 44,
@@ -2322,7 +2466,8 @@
     "noteIds": [
       "160086ac6e5cef4a"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 44 題公告 C 將自動供料排除於該題的智慧應用。</p>\n<p class=\"study-paragraph\">固定時序供料確可能只是自動化，但依 WIP、料況及異常動態調整的供料也可屬智慧製造。</p>\n<p class=\"study-paragraph\">作答保留公告字母，實務辨識則查輸入、規則、授權及執行結果，不能一律把所有自動供料列為非智慧應用。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 44 題公告 C 將自動供料排除於該題的智慧應用。</p>\n<p class=\"study-paragraph\">固定時序供料確可能只是自動化，但依 WIP、料況及異常動態調整的供料也可屬智慧製造。</p>\n<p class=\"study-paragraph\">作答保留公告字母，實務辨識則查輸入、規則、授權及執行結果，不能一律把所有自動供料列為非智慧應用。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 C 保留。單純固定時序供料可以只是自動化；依現場 WIP、料況與異常動態調整供料，也可屬智慧製造，原題未交代足夠界線。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 45,
@@ -2338,7 +2483,8 @@
       "53786c778c18f9be",
       "c3340a366002402c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（C）用相同班次口徑，所需每班人數 <span class=\"math-inline\">$\\lceil1000×500÷(410×60×2×5×0.9)\\rceil=3$</span>。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（C）用相同班次口徑，所需每班人數 <span class=\"math-inline\">$\\lceil1000×500÷(410×60×2×5×0.9)\\rceil=3$</span>。</p>\n<p class=\"study-paragraph\">第 30、45 題以上採能重現公告選項的作答模型：將 150／500 秒視為每件所需人工秒，且人力可配置相容的平行作業及資源。</p>\n<p class=\"study-paragraph\">若題中 Process Time／CT 實際只是串聯整線的出件間隔或共享設備週期，便不能只乘人數推算產能。</p>\n<p class=\"study-paragraph\">須另有人工工作量、設備容量與人機時序資料，才足以確認現場人數。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">以每件 500 人秒及可平行配置人力估算，每班人數至少 ceil[1000×500÷(410×60×2×5×0.9)]＝3。此為每班配置，兩班總編制及設備能力須另核對。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 46,
@@ -2352,7 +2498,8 @@
     "noteIds": [
       "c0424530e5cd8d40"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）不能靠末端全檢保證所有品質，還須源頭控制與適用量測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）不能靠末端全檢保證所有品質，還須源頭控制與適用量測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">末端全檢仍受量測、檢出能力及漏檢風險限制，不能保證品質完善。應配合源頭設計、控制計畫及製程監控；FMEA 也是預防分析而非品質保證書。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 47,
@@ -2369,7 +2516,8 @@
       "c3340a366002402c",
       "562fd0a337d0c57a"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（B）的 4M 是人、機、料、法，「管理」不能取代材料。</p>\n<p class=\"study-paragraph\">主管點檢應確認製程受控與必要處置，不以重複簽名為目的。</p>\n<p class=\"study-paragraph\">連續多點落在中心線同側即使未超 UCL 也可能有非隨機偏移。</p>\n<p class=\"study-paragraph\">7、8 點等門檻須依採用的判異規則確認，不可單憑「在界限內」宣稱正常。</p>\n<p class=\"study-paragraph\">可參考 <a href=\"https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc32.htm\" class=\"study-link\">NIST 管制圖判讀</a>。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（B）的 4M 是人、機、料、法，「管理」不能取代材料。</p>\n<p class=\"study-paragraph\">主管點檢應確認製程受控與必要處置，不以重複簽名為目的。</p>\n<p class=\"study-paragraph\">連續多點落在中心線同側即使未超 UCL 也可能有非隨機偏移。</p>\n<p class=\"study-paragraph\">7、8 點等門檻須依採用的判異規則確認，不可單憑「在界限內」宣稱正常。</p>\n<p class=\"study-paragraph\">可參考 <a href=\"https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc32.htm\" class=\"study-link\">NIST 管制圖判讀</a>。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">a 的 4M 應為人、機、料、法；c 的點檢不只重複確認；d 的同側連串可為非隨機訊號。連串門檻依採用規則，不可只因未超 UCL 就判正常。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 48,
@@ -2383,7 +2531,8 @@
     "noteIds": [
       "b107003456cacf5c"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">搬運車、電子看板及機器手臂分別支援物流、資訊可視與作業執行。都可用於智慧工廠，但裝上設備本身不代表系統已形成資料與處置閉環。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 49,
@@ -2398,7 +2547,8 @@
       "b107003456cacf5c",
       "7a3b4fe3fc0816c7"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 48、49 題（皆 D）涵蓋設備、供料、停線及數量資訊，不能把「裝了一塊螢幕」當成現場閉迴路完成。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">現況數量、準時供料及異常停線各支持現場管理。需確認事件來源、責任與恢復結果，不能只用畫面有顯示來認定管理流程完成。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 50,
@@ -2413,7 +2563,8 @@
       "b36da53da6e68237",
       "374673f073b7e549"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 50 題公告 B，因為檢查碼不能適用所有情況。</p>\n<p class=\"study-paragraph\">依序核對格式／範圍、料號與設備是否存在、工單及工序狀態是否合法、必要檢驗是否完成，再查事件重複與欄位完整性。</p>\n<p class=\"study-paragraph\">正確檢查碼只能支持編碼完整性，不能證明產品真的完成檢驗、資料來源有權限或數量正確。</p>\n<p class=\"study-paragraph\">必須搭配業務狀態與對帳證據。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 50 題公告 B，因為檢查碼不能適用所有情況。</p>\n<p class=\"study-paragraph\">依序核對格式／範圍、料號與設備是否存在、工單及工序狀態是否合法、必要檢驗是否完成，再查事件重複與欄位完整性。</p>\n<p class=\"study-paragraph\">正確檢查碼只能支持編碼完整性，不能證明產品真的完成檢驗、資料來源有權限或數量正確。</p>\n<p class=\"study-paragraph\">必須搭配業務狀態與對帳證據。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">檢查碼僅能攔截部分編碼錯誤，不能證明品號重要性、來源授權或檢驗真的完成。格式、主檔存在、狀態合法、完整性及防重送須各自校驗。</p></section>",
+    "sourcePage": 10
   },
   {
     "question": 1,
@@ -2429,7 +2580,8 @@
       "19824cca059b976f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 1 題（公告 A）選偏振相機，是利用反射偏振差異建立液體對比，不是其他波段永遠看不到液體。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 1 題（公告 A）選偏振相機，是利用反射偏振差異建立液體對比，不是其他波段永遠看不到液體。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">偏振成像可利用反射差異提高液體對比，但效果依液體、容器、光源及背景而定。其他相機也可能在適當條件下檢液，原題不能讀成偏振是唯一可行技術。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 2,
@@ -2444,7 +2596,8 @@
       "19824cca059b976f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 2 題（C）不能由焦距長便推出景深大。</p>\n<p class=\"study-paragraph\">光圈開大、f 值變小通常增加進光量，卻不等於景深增加。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 2 題（C）不能由焦距長便推出景深大。</p>\n<p class=\"study-paragraph\">光圈開大、f 值變小通常增加進光量，卻不等於景深增加。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">景深還受光圈、距離及允許模糊等條件影響，不能因焦距變大就直接說景深增加。大光圈表示較小 f 值及更多進光，與大景深不同。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 3,
@@ -2459,7 +2612,8 @@
     "noteIds": [
       "5c7abec2d7264fda"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題公告 A 對應常見 24 V 控制電壓，許多控制迴路使用 24 V DC，但設備也可能採其他電壓，選型仍看端子及原廠規格。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 3 題公告 A 對應常見 24 V 控制電壓，許多控制迴路使用 24 V DC，但設備也可能採其他電壓，選型仍看端子及原廠規格。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">24 V DC 是常見控制迴路電壓，並非所有設備的唯一額定值。110／220 V 常見於供電，但實際須查銘牌、端子及設計文件，不能直接互接。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 4,
@@ -2474,7 +2628,8 @@
     "noteIds": [
       "14d1adc0bb2de356"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題公告 B，採政府與企業推動服務平台的敘事。</p>\n<p class=\"study-paragraph\">這不是禁止個人或消費者創造 IoT 應用的定義。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 4 題公告 B，採政府與企業推動服務平台的敘事。</p>\n<p class=\"study-paragraph\">這不是禁止個人或消費者創造 IoT 應用的定義。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告採政府與企業推動平台服務的敘事。IoT 的技術定義不排除個人、家庭或消費者應用，也不能單憑驅動者區分所有網際網路與物聯網服務。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 5,
@@ -2489,7 +2644,8 @@
       "2da99d1b0505a704",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 5 題（公告 D）中的 BMP 是影像格式。</p>\n<p class=\"study-paragraph\">INI 可記設定，JSON／XML 可表示結構資料，但格式本身不定義設備間的傳送時序。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 5 題（公告 D）中的 BMP 是影像格式。</p>\n<p class=\"study-paragraph\">INI 可記設定，JSON／XML 可表示結構資料，但格式本身不定義設備間的傳送時序。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">BMP 是影像格式，JSON／XML 可表達結構化資料，INI 常記設定。題目比較用途，並不是說影像檔不能交換；格式也不等於傳輸協定。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 6,
@@ -2504,7 +2660,8 @@
       "19824cca059b976f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 6 題（B）將點光源與特殊平行照明用途混用，選光時應依反光、陰影與輪廓需求試樣。</p>\n<p class=\"study-paragraph\">鏡頭與光圈關係可對照 <a href=\"https://docs.baslerweb.com/optimizing-image-quality\" class=\"study-link\">Basler 影像品質說明</a>。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 6 題（B）將點光源與特殊平行照明用途混用，選光時應依反光、陰影與輪廓需求試樣。</p>\n<p class=\"study-paragraph\">鏡頭與光圈關係可對照 <a href=\"https://docs.baslerweb.com/optimizing-image-quality\" class=\"study-link\">Basler 影像品質說明</a>。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">點光源的名稱不能直接保證大面積均勻平行照明；需搭配光學設計。其他光源同樣須實測反射、陰影與對比，平行光也不保證消除所有反光。</p></section>",
+    "sourcePage": 1
   },
   {
     "question": 7,
@@ -2519,7 +2676,8 @@
       "470b96e4ef1b833f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 7 題（B）不能把所有工業手臂說成速度慢。</p>\n<p class=\"study-paragraph\">快慢應與負載、路徑及精度條件比較。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 7 題（B）不能把所有工業手臂說成速度慢。</p>\n<p class=\"study-paragraph\">快慢應與負載、路徑及精度條件比較。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">把工業手臂普遍描述為速度慢並不恰當，速度須與路徑、負載及精度一同比較。高精度、急停與重複作業也須依實際機器及整體應用驗證。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 8,
@@ -2533,7 +2691,8 @@
     "noteIds": [
       "5c7abec2d7264fda"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題（C）以熱絲／熱動原理判斷過載繼電器，其目的為過電流發熱保護，不能把過載保護當作短路保護的替代。</p>\n<p class=\"study-paragraph\">可參照 <a href=\"https://eshop.se.com/in/blog/post/what-is-a-thermal-overload-relay.html\" class=\"study-link\">Schneider 熱過載繼電器說明</a>。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 8 題（C）以熱絲／熱動原理判斷過載繼電器，其目的為過電流發熱保護，不能把過載保護當作短路保護的替代。</p>\n<p class=\"study-paragraph\">可參照 <a href=\"https://eshop.se.com/in/blog/post/what-is-a-thermal-overload-relay.html\" class=\"study-link\">Schneider 熱過載繼電器說明</a>。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">熱動過載保護利用電流造成的發熱反應，適合辨認持續過載。它不是短路保護的替代，仍應按設備規格配置相應保護元件。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 9,
@@ -2549,7 +2708,8 @@
       "add1f2f55c35749f",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 9 題（公告 A）把歷史故障、保養資料及迴歸分析歸為預測保養。</p>\n<p class=\"study-paragraph\">B 是故障後修、C 是事先固定計畫、D 是免保養。</p>\n<p class=\"study-paragraph\">實務分類還須問分析結果是否隨設備狀態預測失效時點：若只用歷史平均壽命設定固定年保養，仍可能是經統計設計的 PM，不能一概稱為 PdM。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 9 題（公告 A）把歷史故障、保養資料及迴歸分析歸為預測保養。</p>\n<p class=\"study-paragraph\">B 是故障後修、C 是事先固定計畫、D 是免保養。</p>\n<p class=\"study-paragraph\">實務分類還須問分析結果是否隨設備狀態預測失效時點：若只用歷史平均壽命設定固定年保養，仍可能是經統計設計的 PM，不能一概稱為 PdM。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告以歷史資料及分析歸入預測保養。若只依平均故障間隔訂固定週期，實務也可能是經分析設計的預防保養；須查是否用狀態推估失效窗口。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 10,
@@ -2564,7 +2724,8 @@
       "188f8dbd2bf72589",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 10 題（D）的治具不是題目所列資料採集鏈基本元件，感測器、網路與資料庫分別取得、傳輸、保存資料。</p>\n<p class=\"study-paragraph\">裝有感測器的智慧治具仍可提供資料。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 10 題（D）的治具不是題目所列資料採集鏈基本元件，感測器、網路與資料庫分別取得、傳輸、保存資料。</p>\n<p class=\"study-paragraph\">裝有感測器的智慧治具仍可提供資料。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">感測器、網路及資料庫分別採集、傳遞及保存資料，普通治具不具這些基本功能。智慧治具若內建感測器，仍可能成為資料來源。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 11,
@@ -2579,7 +2740,8 @@
       "22399cc1d910c628",
       "426859ce978f22c3"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 11 題（A）以零件族與機器群歸併判為 GT。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 11 題（A）以零件族與機器群歸併判為 GT。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">依工件族與機器群組織生產是群組技術，可支援單元配置。自動化與 AI 是較廣技術名稱，並未直接表達這個分族原則。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 12,
@@ -2594,7 +2756,8 @@
       "22399cc1d910c628",
       "426859ce978f22c3"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 12 題（A）以建立幾何模型判為 CAD。</p>\n<p class=\"study-paragraph\">產生加工刀路屬 CAM 範疇。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 12 題（A）以建立幾何模型判為 CAD。</p>\n<p class=\"study-paragraph\">產生加工刀路屬 CAM 範疇。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">幾何模型是 CAD 的基礎，後續可進行分析或銜接製造。刀路與加工指令屬 CAM 等工作，不宜把所有製程規劃當作 CAD 的最基礎任務。</p></section>",
+    "sourcePage": 2
   },
   {
     "question": 13,
@@ -2609,7 +2772,8 @@
     "noteIds": [
       "65748451fd310c0e"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 13 題公告 B，以「工廠內典型應用」排除車流辨識。</p>\n<p class=\"study-paragraph\">車流仍是電腦視覺應用，不能理解成相機無法辨車。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 13 題公告 B，以「工廠內典型應用」排除車流辨識。</p>\n<p class=\"study-paragraph\">車流仍是電腦視覺應用，不能理解成相機無法辨車。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告以工廠內典型場域排除車流辨識。車流辨識本身仍是電腦視覺，且可能用於廠內物流，不能從題目分類推出相機無此能力。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 14,
@@ -2624,7 +2788,8 @@
       "5c7abec2d7264fda",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題（A）區分安裝俯仰姿態與元件線性度、解析度、重複性。</p>\n<p class=\"study-paragraph\">安裝誤差雖非該題本體分類，仍會影響系統量測。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 14 題（A）區分安裝俯仰姿態與元件線性度、解析度、重複性。</p>\n<p class=\"study-paragraph\">安裝誤差雖非該題本體分類，仍會影響系統量測。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">本題將俯仰姿態視為安裝／幾何誤差，與元件線性度、解析度及重複性分類區別。姿態仍會影響整體量測，不代表可以忽略安裝誤差。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 15,
@@ -2639,7 +2804,8 @@
       "fd0ebfd1ddcdd111",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 15 題（D）包含 IoT、邊緣運算與分析。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 15 題（D）包含 IoT、邊緣運算與分析。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">IoT 取得連結，邊緣處理靠近資料源，大數據分析支援模式與決策。三者可互補，但不表示每一個小型應用都必須同時採購全部技術。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 16,
@@ -2654,7 +2820,8 @@
       "14d1adc0bb2de356",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 16 題（A）指出傳輸遭攻擊及機密外洩風險，B、C、D 則過度推論成免監控、不會分析或免維修。</p>\n<p class=\"study-paragraph\">連線後應確認設備身分、最小權限、傳輸保護與更新責任。</p>\n<p class=\"study-paragraph\">即時監控取得的是資訊，不會自動代替現場維護或批准遠端控制。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 16 題（A）指出傳輸遭攻擊及機密外洩風險，B、C、D 則過度推論成免監控、不會分析或免維修。</p>\n<p class=\"study-paragraph\">連線後應確認設備身分、最小權限、傳輸保護與更新責任。</p>\n<p class=\"study-paragraph\">即時監控取得的是資訊，不會自動代替現場維護或批准遠端控制。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">增加連線會擴大攻擊面與資料外洩風險，需身分、權限、分段及適當傳輸保護。連線本身不會免除監控、維護或操作責任。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 17,
@@ -2669,7 +2836,8 @@
       "09f85b798ace92ba",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 17 題（公告 C）以 <span class=\"math-inline\">$1200÷0.8=1500$</span> 件反推滿負荷能力。</p>\n<p class=\"study-paragraph\">不能再乘 80% 得到較小值。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L22 第 17 題（公告 C）以 <span class=\"math-inline\">$1200÷0.8=1500$</span> 件反推滿負荷能力。</p>\n<p class=\"study-paragraph\">不能再乘 80% 得到較小值。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">利用率＝實際量÷滿負荷量，故滿負荷量 1200÷0.8＝1500。若再乘 0.8 反而縮小能力，與回推分母的目的相反。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 18,
@@ -2684,7 +2852,8 @@
       "6c490472828fde67",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 18 題（C）的連續輸送假設下，出件週期 <span class=\"math-inline\">$1\\text{ m}÷1\\text{ m/min}=1$</span> min/件。</p>\n<p class=\"study-paragraph\">4 m 線長給的是單件通過時間 4 min。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 18 題（C）的連續輸送假設下，出件週期 <span class=\"math-inline\">$1\\text{ m}÷1\\text{ m/min}=1$</span> min/件。</p>\n<p class=\"study-paragraph\">4 m 線長給的是單件通過時間 4 min。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">工件間距 1 m 除速度 1 m/min，出件週期為 1 分鐘／件；4 m 線長對應通過時間 4 分鐘。還需工站能配合輸送節奏，不能僅憑線長推產能。</p></section>",
+    "sourcePage": 3
   },
   {
     "question": 19,
@@ -2700,7 +2869,8 @@
       "4b76455e7e173fef",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 19 題（B）有 8 站各 1 人，理想 1 min/件。</p>\n<p class=\"study-paragraph\">依題意把效率與平衡率視為不同損失，基本派工為 <span class=\"math-inline\">$200×1×8÷(0.9×0.9)=1975.31$</span> 人分。</p>\n<p class=\"study-paragraph\">不良可完全修復，重工另加 <span class=\"math-inline\">$200×0.01×5=10$</span> 人分，合計 1985.31，選最接近的 1990。</p>\n<p class=\"study-paragraph\">不能省略 8 人、不能再除 99% 把同一品質損失重複膨脹。</p>\n<p class=\"study-paragraph\">若現場的「長期效率」已含線平衡或重工，此分解就需重定義。</p>\n<p class=\"study-paragraph\">題目只要求總派工估算，尚不能證明瓶頸與重工人員日曆一定足夠。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 19 題（B）有 8 站各 1 人，理想 1 min/件。</p>\n<p class=\"study-paragraph\">依題意把效率與平衡率視為不同損失，基本派工為 <span class=\"math-inline\">$200×1×8÷(0.9×0.9)=1975.31$</span> 人分。</p>\n<p class=\"study-paragraph\">不良可完全修復，重工另加 <span class=\"math-inline\">$200×0.01×5=10$</span> 人分，合計 1985.31，選最接近的 1990。</p>\n<p class=\"study-paragraph\">不能省略 8 人、不能再除 99% 把同一品質損失重複膨脹。</p>\n<p class=\"study-paragraph\">若現場的「長期效率」已含線平衡或重工，此分解就需重定義。</p>\n<p class=\"study-paragraph\">題目只要求總派工估算，尚不能證明瓶頸與重工人員日曆一定足夠。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">基本派工 200×8÷(0.9×0.9)＝1975.31 人分，另加 200×1%×5＝10 人分，合計 1985.31，最接近 1990。兩項效率及重工須確為不同損失，才可分別計入。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 20,
@@ -2715,7 +2885,8 @@
       "8770ff84a92a36cf",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L21 第 13 題（A）和 L22 第 20 題（C）採「感知／網路／應用」模型。</p>\n<p class=\"study-paragraph\">RFID 可取得標識，Zigbee、Bluetooth、Wi-Fi 承擔通訊。</p>\n<p class=\"study-paragraph\">網路、傳輸、應用是其他分層術語，缺少感知層時不符合此題模型。</p>\n<p class=\"study-paragraph\">雲端可提供運算服務，並非每套 IoT 都要額外架一個雲端層。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題內三層模型應是感知、網路及應用；C 的名稱漏了感知。IoT 可有其他分層，不應把特定三層模型當成所有系統的唯一架構。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 21,
@@ -2730,7 +2901,8 @@
       "8770ff84a92a36cf",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> L21 第 12 題（公告 C）與 L22 第 21 題（C）都以感知、計算、通訊、控制辨認 CPS，不能把某一健康照護應用當成系統的唯一目標。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">CPS 是運算、通訊與實體控制的整合，健康照護只是應用之一。連結網路與實體的橋樑概念不能限縮成唯一產業目標。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 22,
@@ -2745,7 +2917,8 @@
       "be7f7c0e7a2e934e",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 22 題（B）不能假設管理不佳而成本不變。</p>\n<p class=\"study-paragraph\">劣化可能連帶造成品質、交期與安全問題。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 22 題（B）不能假設管理不佳而成本不變。</p>\n<p class=\"study-paragraph\">劣化可能連帶造成品質、交期與安全問題。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">管理不佳可能增加修復、報廢與停機成本，也影響交期及安全。題目不能保證各項損失每次都發生，但成本維持不變不是合理的普遍推論。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 23,
@@ -2760,7 +2933,8 @@
       "2da99d1b0505a704",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 23 題（D）的 MQTT 正式等級只有 QoS 0／1／2：「多傳幾次」不是第四級。</p>\n<p class=\"study-paragraph\">QoS 1 可能重複，QoS 2 的交付語意也不會自動涵蓋資料庫交易。</p>\n<p class=\"study-paragraph\">完工數仍需事件 ID 與業務去重。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 23 題（D）的 MQTT 正式等級只有 QoS 0／1／2：「多傳幾次」不是第四級。</p>\n<p class=\"study-paragraph\">QoS 1 可能重複，QoS 2 的交付語意也不會自動涵蓋資料庫交易。</p>\n<p class=\"study-paragraph\">完工數仍需事件 ID 與業務去重。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">正式等級為 QoS 0／1／2，D 不是第四級。QoS 1 可重複；QoS 2 的協定交付語意仍不等於下游資料庫業務交易自動只執行一次。</p></section>",
+    "sourcePage": 4
   },
   {
     "question": 24,
@@ -2775,7 +2949,8 @@
       "be7f7c0e7a2e934e",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（A）以預防活動支持生產連續性，並非降低維修效率。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 24 題（A）以預防活動支持生產連續性，並非降低維修效率。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">預防保養目標是減少突發失效並支持生產連續性，A 的降低效率方向相反。保養仍需規劃停機與成本，不能推成任何加做保養都必定有利。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 25,
@@ -2790,7 +2965,8 @@
       "188f8dbd2bf72589",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題（A）的整合重點是跨來源建立一致語意與關聯，並非把來源再分散到多個儲存庫。</p>\n<p class=\"study-paragraph\">清理確認品質、轉換支援分析，一般化如「機台→產線→工廠」提升概念層級。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 25 題（A）的整合重點是跨來源建立一致語意與關聯，並非把來源再分散到多個儲存庫。</p>\n<p class=\"study-paragraph\">清理確認品質、轉換支援分析，一般化如「機台→產線→工廠」提升概念層級。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">整合的核心是跨來源建立一致關聯與語意，並非資料放在幾個實體儲存庫。分散或聯邦架構也能整合，不能把公告 A 倒推成所有整合必須只用單庫。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 26,
@@ -2805,7 +2981,8 @@
       "188f8dbd2bf72589",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 26 題（C）的電子商務全球化屬業務模式，不能直接當作探勘分析步驟。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 26 題（C）的電子商務全球化屬業務模式，不能直接當作探勘分析步驟。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">電子商務全球化是業務發展方向，不是探勘分析本身的直接任務。分析可支援決策、顧客理解及隱私研究，仍須具體資料及方法，並非自動實現。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 27,
@@ -2822,7 +2999,8 @@
       "fe61bb30de9aac87",
       "0e29db8e337897e1"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題公告 D 將溫度量測與一般可見光視覺分類區別。</p>\n<p class=\"study-paragraph\">紅外熱像具測溫應用，須核對波段、校正及發射率。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 27 題公告 D 將溫度量測與一般可見光視覺分類區別。</p>\n<p class=\"study-paragraph\">紅外熱像具測溫應用，須核對波段、校正及發射率。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告採一般可見光工業視覺的分類，並非所有影像技術都不能測溫。紅外熱像可測溫，但須校正、發射率與適用波段，不能用普通 RGB 色彩直接當溫度。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 28,
@@ -2837,7 +3015,8 @@
       "65748451fd310c0e",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題（D）的 ToF 依飛行時間、立體視覺依視差、結構光依投射圖案重建深度，三者不能只用「3D」互相代換。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 28 題（D）的 ToF 依飛行時間、立體視覺依視差、結構光依投射圖案重建深度，三者不能只用「3D」互相代換。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">ToF 依傳播時間，立體視覺依多視角幾何，結構光依投影變形求深度。三者皆可支援感測，應依材質、遮蔽、精度及環境光選型。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 29,
@@ -2852,7 +3031,8 @@
       "470b96e4ef1b833f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（C）少量多樣可能使程式、治具及換線成本超過效益。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 29 題（C）少量多樣可能使程式、治具及換線成本超過效益。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">少量多樣使程式、治具及重新配置成本更重要。面積、停線與檢修效果依方案不同，不能把其他選項的結果當成工業機器人必然特性。</p></section>",
+    "sourcePage": 5
   },
   {
     "question": 30,
@@ -2867,7 +3047,8 @@
       "470b96e4ef1b833f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（A）以人形／關節型手臂的姿態與範圍對應噴塗，但還需核對專用規格。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 30 題（A）以人形／關節型手臂的姿態與範圍對應噴塗，但還需核對專用規格。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">題內人形臂按關節型姿態與較大噴塗範圍判讀，不要求外形像人。實際還須驗證工作空間、負載、噴塗品質及場域專用規格。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 31,
@@ -2882,7 +3063,8 @@
       "97551200c90b70e5",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（C）採分散式控制以分配控制與整合責任，雲端集中監控不能直接取代現場所需的響應期限及失效行為。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 31 題（C）採分散式控制以分配控制與整合責任，雲端集中監控不能直接取代現場所需的響應期限及失效行為。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告採分散式控制分配現場控制負荷，集中監控可與之共存。是否最適仍依期限、耦合、可靠性及失效行為，不能認為分散一律優於集中。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 32,
@@ -2897,7 +3079,8 @@
       "470b96e4ef1b833f",
       "fe61bb30de9aac87"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）將固定工件位置、結構式環境、程式化流程相連。</p>\n<p class=\"study-paragraph\">固定教點不具備自動容忍任意位置偏移的能力，需額外定位、視覺或力控回饋。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 32 題（D）將固定工件位置、結構式環境、程式化流程相連。</p>\n<p class=\"study-paragraph\">固定教點不具備自動容忍任意位置偏移的能力，需額外定位、視覺或力控回饋。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">固定教點依賴可重現的工件位置、流程及環境，所以三項相互關聯。要容忍位置偏差需額外定位或感知，不會因程式固定就自動適應。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 33,
@@ -2912,7 +3095,8 @@
       "97551200c90b70e5",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（B）否定「對所有複雜環境均無適應性」。</p>\n<p class=\"study-paragraph\">能否適應仍受模型、資料與控制範圍限制。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 33 題（B）否定「對所有複雜環境均無適應性」。</p>\n<p class=\"study-paragraph\">能否適應仍受模型、資料與控制範圍限制。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">智慧控制可結合學習與傳統控制來改善適應性，B 的一概否定不成立。適應範圍仍受資料、模型與安全界線限制，不能保證任意未知環境都有效。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 34,
@@ -2928,7 +3112,8 @@
       "97551200c90b70e5",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（C）否定基因演算法不能處理大型非線性問題。</p>\n<p class=\"study-paragraph\">它用族群、適應度、選擇、交配及突變搜尋候選解，可求近似優良方案，卻不保證有限時間每次得到全域最佳。</p>\n<p class=\"study-paragraph\">不要把「為尋找最佳解而設計」讀成「已保證找到最佳解」。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 34 題（C）否定基因演算法不能處理大型非線性問題。</p>\n<p class=\"study-paragraph\">它用族群、適應度、選擇、交配及突變搜尋候選解，可求近似優良方案，卻不保證有限時間每次得到全域最佳。</p>\n<p class=\"study-paragraph\">不要把「為尋找最佳解而設計」讀成「已保證找到最佳解」。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">基因演算法可搜尋大型非線性問題的候選解，故 C 的全面否定不妥。搜尋全域最優是目標，不代表有限運算每次都能保證找到，須檢查可行性與收斂。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 35,
@@ -2943,7 +3128,8 @@
       "b434a42915ea2c0e",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 35 題（A）是 IaaS：供應者管底層基礎設施，客戶仍管作業系統與部署應用。</p>\n<p class=\"study-paragraph\">PaaS 再由供應者接管執行平台，SaaS 提供已完成的軟體服務。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/publications/nist-definition-cloud-computing\" class=\"study-link\">NIST 雲端服務模型</a>。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 35 題（A）是 IaaS：供應者管底層基礎設施，客戶仍管作業系統與部署應用。</p>\n<p class=\"study-paragraph\">PaaS 再由供應者接管執行平台，SaaS 提供已完成的軟體服務。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/publications/nist-definition-cloud-computing\" class=\"study-link\">NIST 雲端服務模型</a>。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">客戶仍負責作業系統、中介與應用，對應 IaaS；PaaS 由供應端再管理執行平台，SaaS 提供應用。不要把「不管底層」誤讀成客戶什麼都不用管。</p></section>",
+    "sourcePage": 6
   },
   {
     "question": 36,
@@ -2958,7 +3144,8 @@
       "add1f2f55c35749f",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（B）否定「不能透過網路監控」。</p>\n<p class=\"study-paragraph\">智慧維護是從狀態、診斷走向衰退預測與處置，不等於保證不故障。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/el/applied-economics-office/manufacturing/topics-manufacturing/manufacturing-machinery-maintenance\" class=\"study-link\">NIST 維護分類</a>。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 36 題（B）否定「不能透過網路監控」。</p>\n<p class=\"study-paragraph\">智慧維護是從狀態、診斷走向衰退預測與處置，不等於保證不故障。</p>\n<p class=\"study-paragraph\">可對照 <a href=\"https://www.nist.gov/el/applied-economics-office/manufacturing/topics-manufacturing/manufacturing-machinery-maintenance\" class=\"study-link\">NIST 維護分類</a>。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">網路監控可支援智慧維護，所以 B 的不能不成立。核心在狀態、劣化預測及處置閉環，具備網路或 P2P 名稱本身不保證預測有效。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 37,
@@ -2975,7 +3162,8 @@
       "a871d706309fe38f",
       "6db10c4f12f211a4"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 37 題公告 A 將 MES 描述為封閉架構，但 MES 的職能定義不能推出「所有產品必須封閉」。</p>\n<p class=\"study-paragraph\">現代系統是否開放，要看 API、資料模型、介面與供應商契約。</p>\n<p class=\"study-paragraph\">其餘選項提到特定 GUI 或一概採主從式，也不能當作跨世代必要條件。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 37 題公告 A 將 MES 描述為封閉架構，但 MES 的職能定義不能推出「所有產品必須封閉」。</p>\n<p class=\"study-paragraph\">現代系統是否開放，要看 API、資料模型、介面與供應商契約。</p>\n<p class=\"study-paragraph\">其餘選項提到特定 GUI 或一概採主從式，也不能當作跨世代必要條件。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，MES 的製造執行職能不要求所有產品封閉。特定 GUI、主從式或封閉式均非跨世代必要條件；實務應查 API、資料模型及整合契約。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 38,
@@ -2991,7 +3179,8 @@
       "aed1fd449aaeb162",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題（A）以分層邊緣及串流處理分攤高負載，增加容量只解決儲存問題，區塊鏈也不能直接消除運算瓶頸。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 38 題（A）以分層邊緣及串流處理分攤高負載，增加容量只解決儲存問題，區塊鏈也不能直接消除運算瓶頸。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">邊緣分層及串流處理分配計算負荷並縮短資料路徑。只加儲存、採區塊鏈或任意降採樣，都不能直接證明滿足即時性與資料品質要求。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 39,
@@ -3007,7 +3196,8 @@
       "426859ce978f22c3",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（A）的固定途程、單一產品適合流線型，不能只看到「接單」便選零工型。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 39 題（A）的固定途程、單一產品適合流線型，不能只看到「接單」便選零工型。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">單一品種、固定途程與順序符合流線型配置。是否接單與車間配置是不同維度，不能把「訂單式」直接當成流程布局。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 40,
@@ -3022,7 +3212,8 @@
       "09f85b798ace92ba",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（A）效率是 <span class=\"math-inline\">$3600÷4000=90\\%$</span>，利用率是 <span class=\"math-inline\">$3600÷6000=60\\%$</span>。</p>\n<p class=\"study-paragraph\"><span class=\"math-inline\">$4000÷6000≈67\\%$</span> 只是有效對設計產能比，不能冒充實際利用率。</p>\n<p class=\"study-paragraph\">數字即使都能算出百分比，仍須標記分子分母。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 40 題（A）效率是 <span class=\"math-inline\">$3600÷4000=90\\%$</span>，利用率是 <span class=\"math-inline\">$3600÷6000=60\\%$</span>。</p>\n<p class=\"study-paragraph\"><span class=\"math-inline\">$4000÷6000≈67\\%$</span> 只是有效對設計產能比，不能冒充實際利用率。</p>\n<p class=\"study-paragraph\">數字即使都能算出百分比，仍須標記分子分母。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">效率 3600÷4000＝90%，利用率 3600÷6000＝60%。4000÷6000 約 67% 是有效對設計能力比，不是實際效率或利用率。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 41,
@@ -3039,7 +3230,8 @@
       "6c490472828fde67",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 41 題（B）為 <span class=\"math-inline\">$TT=480÷50=9.6$</span> 分鐘、理論最少站數 <span class=\"math-inline\">$\\lceil72÷9.6\\rceil=8$</span>。</p>\n<p class=\"study-paragraph\">向上取整只給下限，仍要驗先行關係。</p>\n<p class=\"study-paragraph\">第 41 題（B）另以 <span class=\"math-inline\">$TT=9.6$</span> 分鐘與總作業 72 分鐘求至少 8 站，不能把「每站指定一步驟」誤當作必須 10 站，也不能保證下限就能合法排完。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">L22 第 41 題（B）為 <span class=\"math-inline\">$TT=480÷50=9.6$</span> 分鐘、理論最少站數 <span class=\"math-inline\">$\\lceil72÷9.6\\rceil=8$</span>。</p>\n<p class=\"study-paragraph\">向上取整只給下限，仍要驗先行關係。</p>\n<p class=\"study-paragraph\">第 41 題（B）另以 <span class=\"math-inline\">$TT=9.6$</span> 分鐘與總作業 72 分鐘求至少 8 站，不能把「每站指定一步驟」誤當作必須 10 站，也不能保證下限就能合法排完。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">需求週期 480÷50＝9.6 分鐘，理論站數 ceil(72÷9.6)＝8。八站只給容量下限，需檢查每個不可分作業與先行關係，不能保證一定可分配成功。</p></section>",
+    "sourcePage": 7
   },
   {
     "question": 42,
@@ -3054,7 +3246,8 @@
       "6c490472828fde67",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題（B）串聯線由最慢站限制穩態出件，並非各站平均。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 42 題（B）串聯線由最慢站限制穩態出件，並非各站平均。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">各站獨立可並行、無其他限制時，最慢站決定穩態出件間隔。若有阻塞、飢餓、停機或批次轉移，實際週期還可能更長。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 43,
@@ -3069,7 +3262,8 @@
       "0fd895b32422fc0f",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）判點檢方法時，須核對部位、判定標準、工具、週期及責任。</p>\n<p class=\"study-paragraph\">眼耳等觀察可以補充，軸承振動、絕緣及精度仍須適當儀器。</p>\n<p class=\"study-paragraph\">「味」尤其不應被理解為用口嘗試工業介質。</p>\n<p class=\"study-paragraph\">操作員日常點檢、維修人員專業點檢及故障後復歸驗證，也不能以一張簽名表互相取代。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 43 題（C）判點檢方法時，須核對部位、判定標準、工具、週期及責任。</p>\n<p class=\"study-paragraph\">眼耳等觀察可以補充，軸承振動、絕緣及精度仍須適當儀器。</p>\n<p class=\"study-paragraph\">「味」尤其不應被理解為用口嘗試工業介質。</p>\n<p class=\"study-paragraph\">操作員日常點檢、維修人員專業點檢及故障後復歸驗證，也不能以一張簽名表互相取代。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">點檢需明定部位、標準、工具與責任，不能只依感官替代量測。原題五感中的「味」不應成為嘗試工業物質的操作指示，須依適用安全程序。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 44,
@@ -3086,7 +3280,8 @@
       "fe61bb30de9aac87",
       "0e29db8e337897e1"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 44 題公告 A 排除工業相機，但相機包含影像感測器，本章圖中仍列為感知設備，保留分類用語疑義。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 44 題公告 A 排除工業相機，但相機包含影像感測器，本章圖中仍列為感知設備，保留分類用語疑義。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">公告 A 保留，但工業相機含影像感測器，廣義上是感知設備。題面未指定狹義分類，不能由 A 推成工業相機完全不屬感測應用。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 45,
@@ -3102,7 +3297,8 @@
       "2da99d1b0505a704",
       "a871d706309fe38f"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（A）同網段不等於同 IP。</p>\n<p class=\"study-paragraph\">兩端用相同 IP 會位址衝突，RS-232 則是通訊介面，並非一組 IP 設定。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 45 題（A）同網段不等於同 IP。</p>\n<p class=\"study-paragraph\">兩端用相同 IP 會位址衝突，RS-232 則是通訊介面，並非一組 IP 設定。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">同一一般區域網路中兩台主機不能配置相同 IP。B 的「網域」須釐清為網段、DNS 或帳號網域；不同子網仍可經路由及規則通訊，不必一律相同。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 46,
@@ -3118,7 +3314,8 @@
       "fd0ebfd1ddcdd111",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）的物件 UID 與網路傳輸描述是 IoT，並非 AI 定義。</p>\n<p class=\"study-paragraph\">監督與非監督是 ML 類型，但不能把它們當成唯一兩類而排除強化學習。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 46 題（C）的物件 UID 與網路傳輸描述是 IoT，並非 AI 定義。</p>\n<p class=\"study-paragraph\">監督與非監督是 ML 類型，但不能把它們當成唯一兩類而排除強化學習。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">UID 與網路物件互連描述 IoT，不能拿來定義 AI。監督、非監督是 ML 類型但不是完整列舉，強化學習不能因此被排除。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 47,
@@ -3133,7 +3330,8 @@
       "fd0ebfd1ddcdd111",
       "aed1fd449aaeb162"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（C）描述的是企業資源整合軟體 ERP，與 CPS 實體回饋不同。</p>\n<p class=\"study-paragraph\">5C 可依連線、轉換、網宇、認知、配置逐層查證，不能只背五個 C。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 47 題（C）描述的是企業資源整合軟體 ERP，與 CPS 實體回饋不同。</p>\n<p class=\"study-paragraph\">5C 可依連線、轉換、網宇、認知、配置逐層查證，不能只背五個 C。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">C 的企業財務、供應鏈、人資整合描述 ERP；CPS 強調運算與實體過程耦合。5C 是可參照的研究架構，不是每套 CPS 必須逐字具備的認證清單。</p></section>",
+    "sourcePage": 8
   },
   {
     "question": 48,
@@ -3148,7 +3346,8 @@
       "34545225595d5cff",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 48 題（A）重視 TPS 的可動率，即需要設備時是否能正常運轉。</p>\n<p class=\"study-paragraph\">接單不足造成稼動率低，不等同設備不可靠。</p>\n<p class=\"study-paragraph\">應維持需要時可用、按實際需求排產，再分解停機、慢速及品質損失，不能為增加利用率而先做無需求的庫存。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\"> 第 48 題（A）重視 TPS 的可動率，即需要設備時是否能正常運轉。</p>\n<p class=\"study-paragraph\">接單不足造成稼動率低，不等同設備不可靠。</p>\n<p class=\"study-paragraph\">應維持需要時可用、按實際需求排產，再分解停機、慢速及品質損失，不能為增加利用率而先做無需求的庫存。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">TPS 可動率重視需要時能否正常運轉，與按需求安排的稼動程度不同。需求不足時不應為提高利用率而過量製造，須先維持需要時可用。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 49,
@@ -3163,7 +3362,8 @@
       "6c490472828fde67",
       "02f3fa3c812dbd78"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 49 題（C）以需求求 <span class=\"math-inline\">$8×3600÷480=60$</span> 秒/件，是 TT，不是已量得的機台 CT。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 49 題（C）以需求求 <span class=\"math-inline\">$8×3600÷480=60$</span> 秒/件，是 TT，不是已量得的機台 CT。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">依題內 8 小時可用時間，8×3600÷480＝60 秒／件。這是需求節拍而非量到的設備週期；若另有計畫休息須依時間口徑重算。</p></section>",
+    "sourcePage": 9
   },
   {
     "question": 50,
@@ -3179,6 +3379,7 @@
       "be7f7c0e7a2e934e",
       "1439b0a356221599"
     ],
-    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 50 題（B）中，反應性維護的直接目標是故障後恢復功能，庫存管理不能代替此定義。</p>\n<p class=\"study-paragraph\">需備品也不等於該策略會自動優化庫存。</p>\n<p class=\"study-paragraph\">題目其他選項提到的「3 至 4 倍」只能保留為原題說法，跨設備比較應實算修復、停機、備品與監測成本。</p></section>"
+    "details": "<section class=\"question-reasoning\"><h3>判斷步驟</h3><p class=\"study-paragraph\">第 50 題（B）中，反應性維護的直接目標是故障後恢復功能，庫存管理不能代替此定義。</p>\n<p class=\"study-paragraph\">需備品也不等於該策略會自動優化庫存。</p>\n<p class=\"study-paragraph\">題目其他選項提到的「3 至 4 倍」只能保留為原題說法，跨設備比較應實算修復、停機、備品與監測成本。</p></section>\n<section class=\"question-check\"><h3>結果檢核</h3><p class=\"study-paragraph\">反應性維護在故障後恢復功能，並不以驅動庫存管理為定義。停機與修復成本須實算，原題所述 3 至 4 倍不能當成跨設備固定比率。</p></section>",
+    "sourcePage": 9
   }
 ]

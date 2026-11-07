@@ -8,10 +8,12 @@
   const DAY = 86400000;
   const catalogs = new WeakMap();
   const MODES = ['mission', 'quick', 'review', 'exam'];
-  const questionRevision = 'questions-2026-11-05', legacyRevision = 'legacy-v1';
-  const revisionOf = (run, state) => run?.questionRevision === legacyRevision ||
-    !run?.questionRevision && state?.questionRevision !== questionRevision ? legacyRevision : questionRevision;
-  const questionFor = (question, run) => run?.questionRevision === legacyRevision ? question?.legacy || question : question;
+  const questionRevision = 'questions-2026-11-07', previousRevision = 'questions-2026-11-05', legacyRevision = 'legacy-v1';
+  const revisionOf = (run, state) => {
+    const revision = run?.questionRevision || state?.questionRevision;
+    return [questionRevision, previousRevision, legacyRevision].includes(revision) ? revision : legacyRevision;
+  };
+  const questionFor = (question, run) => run?.questionRevision === legacyRevision ? question?.legacy || question : question?.versions?.[run?.questionRevision] || question;
   const record = value => value && typeof value === 'object' && !Array.isArray(value);
   const finite = (value, max = Number.MAX_SAFE_INTEGER) => typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= max ? value : 0;
   function fingerprint(q) {
@@ -280,5 +282,5 @@
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,questionRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,questionRevision,previousRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
 });

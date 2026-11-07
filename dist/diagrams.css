@@ -28,17 +28,20 @@
   border-radius: 8px; background: #fff; color: var(--green);
 }
 .diagram-viewport { max-width: 100%; overflow: auto; padding: 20px; }
-.mermaid-rendered { width: max-content; min-width: 100%; }
-.mermaid-rendered svg { display: block; margin: 0 auto; }
+.mermaid-rendered { width: 100%; min-width: 0; }
+.mermaid-rendered svg { display: block; width: 100%; max-width: var(--diagram-width); height: auto; margin: 0 auto; }
 .mermaid-rendered foreignObject { overflow: visible; }
+.mermaid-rendered foreignObject p { margin: 0; line-height: inherit; }
 .diagram-error { padding: 14px; background: #fff8e6; border-radius: 10px; }
 .diagram-error summary { cursor: pointer; }
 .diagram-dialog {
-  width: calc(100vw - 32px); max-width: 1500px; max-height: 94dvh;
+  width: calc(100vw - 32px); max-width: none; max-height: 94dvh;
   padding: 20px; border: 1px solid var(--line); border-radius: 16px; color: var(--ink);
 }
 .diagram-dialog::backdrop { background: #122e29bb; }
 .diagram-dialog .diagram-viewport { max-height: 75dvh; margin-top: 12px; }
+.diagram-dialog .mermaid-rendered { width: max-content; min-width: 100%; }
+.diagram-dialog .mermaid-rendered svg { width: var(--diagram-width); max-width: none; }
 .diagram-dialog h2 { display: inline-block; margin-right: 20px; }
 @media (max-width: 900px) { .material-hero { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 600px) {

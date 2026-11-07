@@ -25,6 +25,12 @@ function load(bank, root) {
 module.exports = function enrich(bank, root) {
   const authored = load(bank, root);
   const legacy = JSON.parse(fs.readFileSync(path.join(root, 'content/question-legacy.json'), 'utf8'));
+  const previous = JSON.parse(fs.readFileSync(path.join(root, 'content/question-revisions.json'), 'utf8'));
+  assert.equal(previous.revision, E.previousRevision, 'Historical snapshot revision must match the engine');
+  for (const [id, snapshot] of Object.entries(previous.questions)) {
+    assert.equal(snapshot.question.id, id, 'Historical snapshot ID');
+    assert.equal(crypto.createHash('sha256').update(JSON.stringify(snapshot.question)).digest('hex'), snapshot.sha256, `${id}: historical snapshot changed`);
+  }
   const catalog = E.catalog(bank), byId = new Map(bank.map(question => [question.id, question]));
   const hash = question => crypto.createHash('sha256').update(E.fingerprint(question)).digest('hex');
   for (const q of catalog.unique) assert.ok(authored[q.id], `${q.id}: missing detailed explanation; complete all question analyses before building`);
@@ -50,7 +56,7 @@ module.exports = function enrich(bank, root) {
       assert.ok(!detail.options.some(line => /其他選項均為|與題意核心概念不符|一般干擾項/.test(line)), `${id}: no boilerplate`);
     } else assert.ok(Array.isArray(detail.pitfalls) && detail.pitfalls.length, `${id}: numeric pitfalls`);
   }
-  return bank.map(question => {
+  const enriched = bank.map(question => {
     const detail = { ...authored[catalog.aliases.get(question.id)] };
     delete detail.fingerprint;
     const original = legacy.questions[question.id];
@@ -63,7 +69,15 @@ module.exports = function enrich(bank, root) {
         historical = { ...original, analysis: { ...detail, options: original.options.map(option => detail.options[question.options.indexOf(option)]) } };
       }
     }
-    return { ...question, analysis: detail, ...(historical ? { legacy: historical } : {}) };
+    const snapshot = previous.questions[question.id]?.question;
+    return { ...question, analysis: detail, ...(historical ? { legacy: historical } : {}), ...(snapshot ? { versions: { [previous.revision]: snapshot } } : {}) };
   });
+  const priorDigest = crypto.createHash('sha256').update(JSON.stringify(enriched.map(question => {
+    const historical = { ...E.questionFor(question, { questionRevision: previous.revision }) };
+    delete historical.legacy; delete historical.versions;
+    return [question.id, crypto.createHash('sha256').update(JSON.stringify(historical)).digest('hex')];
+  }))).digest('hex');
+  assert.equal(priorDigest, previous.bankFingerprint, 'Previous revision content changed; preserve all affected IDs and aliases with snapshots');
+  return enriched;
 };
 module.exports.load = load;

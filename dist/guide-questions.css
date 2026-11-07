@@ -1,4 +1,5 @@
 .exam-catalog { max-width: 1000px; margin: auto; }
+.exam-reading .reader-heading .btn { min-width: 0; max-width: 100%; white-space: normal; overflow-wrap: anywhere; text-align: left; }
 .exam-search-tools { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .exam-search-tools .library-search { flex: 1; min-width: 220px; }
 .exam-search-tools .library-select { min-width: 0; max-width: 100%; }

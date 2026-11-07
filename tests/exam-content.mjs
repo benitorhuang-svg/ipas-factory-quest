@@ -12,6 +12,7 @@ const questions = read('content/official-questions.json');
 const index = read('docs/歷屆試題與解題技巧/115第一次試題教材對照索引.json');
 const notes = read('content/official-exam-notes.json');
 const noteIndex = new Map(notes.map(note => [note.id, note]));
+const checks = Object.assign({}, ...index.subjects.map(subject => read(`content/official-question-checks/${subject.subject}.json`)));
 assert.equal(questions.length, 200);
 assert.equal(new Set(questions.map(question => question.id)).size, 200);
 for (const subject of index.subjects) for (const entry of subject.questions) {
@@ -20,7 +21,7 @@ for (const subject of index.subjects) for (const entry of subject.questions) {
   assert.equal(question.concept, entry.concept);
   assert.equal(question.materialCode, entry.topicCode);
   assert.ok(question.details.length > 100);
-  assert.equal(question.note, entry.note);
+  assert.equal(question.note, entry.note || (checks[question.id][1] === 'ambiguous' ? checks[question.id][2] : undefined));
   for (const id of question.noteIds) assert.ok(noteIndex.get(id).questionIds.includes(question.id));
   const chapter = chapters.find(chapter => chapter.topicCode === entry.topicCode);
   assert.ok(chapter.details.includes(`href="#/guide/questions/${question.id}"`));

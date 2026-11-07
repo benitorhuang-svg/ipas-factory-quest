@@ -40,7 +40,7 @@ function quizView() {
           <button class="btn btn-small" aria-label="暫存離開" data-action="nav" data-view="home">${icon('save')}<span>暫存離開</span></button>
         </div>
       </div>
-      ${run.questionRevision === E.legacyRevision ? '<p class="section-description">此份作答保留原題目與選項；新任務採用新版題庫。</p>' : ''}
+      ${run.questionRevision && run.questionRevision !== E.questionRevision ? '<p class="section-description">此份作答保留原題目與選項；新任務採用新版題庫。</p>' : ''}
       ${run.mode === 'exam' ? `<div class="exam-warning">${run.difficulty === 'hardcore' ? '【魔鬼挑戰】鎖定高難度考點與陷阱，強化連續計算與實務情境判讀。共 50 題單選、75 分鐘。時間到自動交卷。' : '【全真標準】依單元與題型權重組卷，模擬正式考試節奏。共 50 題單選、75 分鐘。時間到自動交卷。'}</div>` : ''}
       <div class="quiz-status">
         <div class="quiz-status-line">
@@ -146,7 +146,7 @@ function resultView(id) {
             <div class="feedback-meta">
               ${icon(item.correct ? 'circlecheck' : 'cross')}
               <span>第${i + 1}題 · ${q.unit} · ${item.correct ? '答對' : '待加強'}</span>
-              ${r.questionRevision === E.legacyRevision ? '<span class="tag tag-green">原版試卷</span>' : ''}
+              ${r.questionRevision && r.questionRevision !== E.questionRevision ? '<span class="tag tag-green">原版試卷</span>' : ''}
               ${q.difficulty ? `<span class="tag-diff tag-${q.difficulty}">${q.difficulty === 'hard' ? '🔥 困難' : q.difficulty === 'medium' ? '⚡ 進階' : '🌱 基礎'}</span>` : ''}
               ${q.skill ? `<span class="tag-skill tag-${q.skill}">${q.skill === 'calculation' ? '📐 計算' : q.skill === 'scenario' ? '🏭 情境' : '💡 觀念'}</span>` : ''}
             </div>

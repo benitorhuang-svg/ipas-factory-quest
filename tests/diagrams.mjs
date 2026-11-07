@@ -56,7 +56,7 @@ assert.equal(calls, 1, 'Concurrent jobs must not render the same block twice');
 assert.equal(peak, 1, 'Mermaid parser must stay serialized');
 assert.equal(host.querySelectorAll('.study-diagram svg').length, 1);
 assert.equal(host.querySelector('.mermaid'), null);
-assert.equal(host.querySelector('svg').style.width, '840px');
+assert.equal(host.querySelector('svg').style.getPropertyValue('--diagram-width'), '840px');
 assert.equal(host.querySelectorAll('.diagram-toolbar button').length, 1);
 host.querySelector('.diagram-toolbar button').click();
 assert.ok(window.document.querySelector('dialog[open]'));

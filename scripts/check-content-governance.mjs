@@ -23,9 +23,11 @@ for (const question of unique) {
 }
 const pending = reviews.filter(review => review.review.status === 'pending').length;
 if (process.argv.includes('--report')) {
-  const lines = ['# 題庫來源與單元覆蓋', '', '由 npm run report:content 產生；此表只證明單元連結與內容指紋，不代表逐題答案或官方能力點已完成審核。', '', `保留 ${bank.length} 筆來源、${unique.length} 道不同內容；${pending} 道待人工複核。`, '', '| 單元 | 教材 | 來源筆數 | 不同內容 | 已審核 |', '| --- | --- | ---: | ---: | ---: |'];
+  const agent = read('content/exam-analysis-review.json');
+  const official = read('content/official-question-review.json');
+  const lines = ['# 題庫來源與單元覆蓋', '', '由 npm run report:content 產生；來源覆蓋、代理內容審查與獨立人工複核分開記錄，不據此推定官方能力點全覆蓋。', '', `保留 ${bank.length} 筆來源、${unique.length} 道不同內容。本輪代理複核 ${agent.questions.length} 道練習題，另逐題核對 ${Object.keys(official.questions).length} 道公告試題，見 docs/QUESTION_DEPTH_REVIEW.md。`, '', `審核欄位仍有 ${pending} 筆 pending；既有 reviewed 記錄不代表本輪取得獨立人工或官方簽核。`, '', '| 單元 | 教材 | 來源筆數 | 不同內容 | 既有 reviewed 記錄 |', '| --- | --- | ---: | ---: | ---: | ---: |'];
   for (const unit of units) lines.push(`| ${unit.id} ${unit.title} | ${unit.topicCode} | ${bank.filter(q => q.unit === unit.id).length} | ${unique.filter(q => q.unit === unit.id).length} | ${reviews.filter(r => r.unitId === unit.id && r.review.status === 'reviewed').length} |`);
-  lines.push('', '逐題台帳：content/question-reviews.json；重複 ID 對照：content/question-aliases.json。', '', '細項 competencyPoints、difficulty、reviewer、reviewedAt 保持待填；不得由單元覆蓋自動推定官方考綱全覆蓋。', '');
+  lines.push('', '來源狀態台帳：content/question-reviews.json；代理審查台帳：content/exam-analysis-review.json、content/official-question-review.json；重複 ID 對照：content/question-aliases.json。', '', '既有能力點、難度及 reviewer 欄位保留原狀，變動題目重新設為 pending；不由建置自動填造獨立人工審查。', '');
   fs.writeFileSync('docs/QUESTION_COVERAGE.md', lines.join('\n'));
 }
 console.log(`PASS: ${unique.length} question fingerprints, source paths and material links; ${pending} explicitly pending human reviews.`);

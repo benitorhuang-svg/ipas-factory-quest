@@ -1,7 +1,28 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const { JSDOM } = require('jsdom');
 const { escape: esc, contextReferences, focus, note } = require('./exam-analysis.cjs');
+
+function applyReviews(output, index, root) {
+  const audit = JSON.parse(fs.readFileSync(path.join(root, 'content/official-question-review.json'), 'utf8'));
+  const digest = value => crypto.createHash('sha256').update(value).digest('hex');
+  const checks = Object.assign({}, ...index.subjects.map(subject => {
+    if (digest(fs.readFileSync(path.join(root, subject.source))) !== audit.sources[subject.subject] || subject.sha256 !== audit.sources[subject.subject]) throw new Error(`Changed official PDF: ${subject.subject}; review it again`);
+    return JSON.parse(fs.readFileSync(path.join(root, `content/official-question-checks/${subject.subject}.json`), 'utf8'));
+  }));
+  if (Object.keys(checks).length !== output.length || Object.keys(audit.questions).length !== output.length) throw new Error('Official review coverage does not match question count');
+  for (const question of output) {
+    const check = checks[question.id], receipt = audit.questions[question.id];
+    const signature = digest(JSON.stringify(question));
+    if (!Array.isArray(check) || check.length !== 3 || check[0] !== question.officialAnswer || !['retained', 'qualified', 'ambiguous'].includes(check[1]) || typeof check[2] !== 'string' || !check[2].trim()) throw new Error(`Missing or invalid official check: ${question.id}`);
+    if (signature !== receipt?.[0] || !Number.isInteger(receipt[1]) || receipt[1] < 1) throw new Error(`Changed official explanation: ${question.id}; review it again`);
+    if (digest(JSON.stringify(check)) !== receipt[2]) throw new Error(`Changed official check: ${question.id}; review it again`);
+    question.sourcePage = receipt[1];
+    question.details += `\n<section class="question-check"><h3>結果檢核</h3><p class="study-paragraph">${esc(check[2])}</p></section>`;
+    if (check[1] === 'ambiguous' && !question.note) question.note = check[2];
+  }
+}
 
 // Keep imported receipts intact and retain complete paragraphs as shared context.
 module.exports = function prepareExamContent(materials, root) {
@@ -91,5 +112,7 @@ module.exports = function prepareExamContent(materials, root) {
     return { ...meta, topicCode: `EXAM-${question.id}`, materialCode: topicCode, noteIds: [...new Set(noteIds)],
       details: `<section class="question-reasoning"><h3>判斷步驟</h3>${paragraphs(reasoning)}</section>${mistakes.length ? `<section class="question-mistakes"><h3>常見誤選理由</h3>${paragraphs(mistakes)}</section>` : ''}` };
   });
+  applyReviews(output, index, root);
   return { questions: output, subjects, notes: [...notes.values()] };
 };
+module.exports.applyReviews = applyReviews;

@@ -12,10 +12,12 @@ test('chapter cores link to the official question explanation, including offline
   await page.locator('.reader-article a[href="#/guide/questions/L12-7"]').click();
   await expect(page.locator('.reader-article')).toContainText('常見誤選理由');
   await expect(page.locator('.reader-article')).toContainText('將時間、產量及品質整合的 OEE 模組');
-  await expect(page.getByRole('link', { name: '對照公告試題 PDF' })).toHaveAttribute('href', /L12.*\.pdf$/);
+  await expect(page.getByRole('link', { name: /對照公告試題 PDF/ })).toHaveAttribute('href', /L12.*\.pdf#page=2$/);
+  await expect(page.locator('.question-check')).toContainText('時間、產量及品質');
   await context.setOffline(true);
   await go(page, 'guide/questions/L12-46');
   await expect(page.locator('.reader-article')).toContainText('第一次合格 90 件');
+  await expect(page.locator('.question-check')).toContainText('重工 10 分鐘不是件數分母');
   await page.reload();
   await expect(page.locator('.reader-article')).toContainText('第一次合格 90 件');
   await page.setViewportSize({ width: 390, height: 844 });

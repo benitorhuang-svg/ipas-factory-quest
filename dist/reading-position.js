@@ -93,7 +93,7 @@
       for (const name of ['wheel', 'touchstart', 'pointerdown', 'keydown']) listen(window, name, stopRestoring, { passive: true });
       listen(window, 'pagehide', () => { measure(record); persist(); });
       listen(document, 'visibilitychange', () => { if (document.hidden) { measure(record); persist(); } });
-      const media = window.matchMedia?.('(min-width: 1360px)');
+      const media = window.matchMedia?.('(min-width: 1600px)');
       const disclosure = root.querySelector('.reader-sections');
       if (media && disclosure) {
         const change = () => { disclosure.open = media.matches; };

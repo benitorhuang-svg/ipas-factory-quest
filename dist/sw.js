@@ -1,4 +1,4 @@
-// Cache revision: 5cf6fd6ba6a69384
+// Cache revision: 07c7ca87ab4db2a4
 importScripts('precache.js');
 const SCOPE = new URL(self.registration.scope);
 const PREFIX = 'factory-quest-pwa-' + encodeURIComponent(SCOPE.pathname) + '-';

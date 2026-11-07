@@ -1148,10 +1148,18 @@
       "unit": "L116",
       "kind": "number",
       "examEligible": false,
-      "questionFingerprint": "6077ec7c48cdf745d37f9a3a5565aa4a6aedfa2b1965f3d2b8f82c8f94d26f2f",
-      "analysisFingerprint": "6f4d11ec3df4b2ad39ecb11ed6ee9d16454d28dcb0a7866c681799a58379c7af",
+      "questionFingerprint": "d7f5ee77a40395671a4a7a0a8aa34f1b3c9a9317d8110248841c6422192f1f95",
+      "analysisFingerprint": "6e1663f78ff71c218c195cb301e2d7247bd258b2d2e3b4ebe80a0b855b7c0c13",
       "decision": "retained",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "6077ec7c48cdf745d37f9a3a5565aa4a6aedfa2b1965f3d2b8f82c8f94d26f2f",
+        "previousAnalysisFingerprint": "6f4d11ec3df4b2ad39ecb11ed6ee9d16454d28dcb0a7866c681799a58379c7af",
+        "changedQuestionFields": [
+          "tolerance"
+        ]
+      }
     },
     {
       "id": "L111-B01",
@@ -1632,10 +1640,19 @@
       "unit": "L113",
       "kind": "choice",
       "examEligible": true,
-      "questionFingerprint": "0f83b6a0275d808c283bb9a3ddcb125db5d060493cf95e0cf7d2d505780de79b",
-      "analysisFingerprint": "f9e462de52b725b15a4a3b16f5f50373dbc9dc18eb525885bf562d34caccc86b",
+      "questionFingerprint": "4765a1bfc18189d9e40d9f193501ebc221c3f56e61233159eae9aa7a2ddf7d48",
+      "analysisFingerprint": "89a4e4093222e96f0cc233c6ab8d043c264bde00ac7c6b6023d26c9d6ad82f0e",
       "decision": "expanded",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "0f83b6a0275d808c283bb9a3ddcb125db5d060493cf95e0cf7d2d505780de79b",
+        "previousAnalysisFingerprint": "f9e462de52b725b15a4a3b16f5f50373dbc9dc18eb525885bf562d34caccc86b",
+        "changedQuestionFields": [
+          "stem",
+          "options"
+        ]
+      }
     },
     {
       "id": "L113-B12",
@@ -1674,10 +1691,18 @@
       "unit": "L113",
       "kind": "choice",
       "examEligible": true,
-      "questionFingerprint": "9a32e7ec33608bd15862a1a3eb28db1b402930829475878cacb73a811f6c9fb7",
-      "analysisFingerprint": "3c12a6206c18e3a90d0974a9efed33a99fe9d54834af32a1fa975c5ca384c605",
+      "questionFingerprint": "50352890c7c7f7e92ae105033bef642e939bcfbce2c9b36307ca77c3bcc9deea",
+      "analysisFingerprint": "1b51e57ecf36e1f3e2a556f518f9ce2a0f033087e352b376d693f8ee8c2be67f",
       "decision": "expanded",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "9a32e7ec33608bd15862a1a3eb28db1b402930829475878cacb73a811f6c9fb7",
+        "previousAnalysisFingerprint": "3c12a6206c18e3a90d0974a9efed33a99fe9d54834af32a1fa975c5ca384c605",
+        "changedQuestionFields": [
+          "options"
+        ]
+      }
     },
     {
       "id": "L113-B16",
@@ -1756,10 +1781,18 @@
       "unit": "L113",
       "kind": "choice",
       "examEligible": true,
-      "questionFingerprint": "b18b2a7ffb88b73aa95088008688c8b09b032bcf797ff990fc340a76f470c0ec",
-      "analysisFingerprint": "58d8d6fbaf0cb03f937ebc9c2d1305c4326c23ff8721acfa9858879a4ca9c80f",
+      "questionFingerprint": "95cf40ae3e6fb606ba8c1acbd9e5dfeed80273628e5393539b6fbbe8a2b7f468",
+      "analysisFingerprint": "1ae0ee5ab51f4eb9a019d84eb535c57fea93da280c5cf11d57d5435b5e6db0c3",
       "decision": "expanded",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "b18b2a7ffb88b73aa95088008688c8b09b032bcf797ff990fc340a76f470c0ec",
+        "previousAnalysisFingerprint": "58d8d6fbaf0cb03f937ebc9c2d1305c4326c23ff8721acfa9858879a4ca9c80f",
+        "changedQuestionFields": [
+          "options"
+        ]
+      }
     },
     {
       "id": "L113-B24",
@@ -2627,11 +2660,17 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "4306250116d7b397b18176562426ef11d7126fe789ef1b49fd0af062469b83ae",
-      "analysisFingerprint": "dc5275628b61fed0246d224298f46faa7a9100ac81b1745f1650c78237e4085c",
+      "analysisFingerprint": "2252ef977c2f154f1449e216677e094975474b5efb844692a70b70888f9567f5",
       "decision": "clarified",
       "changedQuestionFields": [
         "options"
-      ]
+      ],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "4306250116d7b397b18176562426ef11d7126fe789ef1b49fd0af062469b83ae",
+        "previousAnalysisFingerprint": "dc5275628b61fed0246d224298f46faa7a9100ac81b1745f1650c78237e4085c",
+        "changedQuestionFields": []
+      }
     },
     {
       "id": "L122-05",
@@ -3319,11 +3358,17 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "85a3b86f0810767930376a75de89bb3c0c93000d0de248c466491cf0efed5dbe",
-      "analysisFingerprint": "699529435529158fa44624f4b1392f88f153c5d5f23ad783f97b9af749105021",
+      "analysisFingerprint": "3ce487442014ffbf10af49c81fdf7684d9e6e3aa6fcae3345194008de3095805",
       "decision": "clarified",
       "changedQuestionFields": [
         "options"
-      ]
+      ],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "85a3b86f0810767930376a75de89bb3c0c93000d0de248c466491cf0efed5dbe",
+        "previousAnalysisFingerprint": "699529435529158fa44624f4b1392f88f153c5d5f23ad783f97b9af749105021",
+        "changedQuestionFields": []
+      }
     },
     {
       "id": "L122-B28",
@@ -3680,10 +3725,18 @@
       "unit": "L124",
       "kind": "choice",
       "examEligible": true,
-      "questionFingerprint": "6346d902f9d5b296a29b0f851fc2f7bcb561f4450d6e7b50097d9f5dc1b70e64",
-      "analysisFingerprint": "cf8d564dee6b5302eaaa7d301b03a67c316d9e49e45af71b6e259dc886d33639",
+      "questionFingerprint": "3d694e619cee54a3dd4135a3830b9114faee336564dcc01a8421eb82983dec34",
+      "analysisFingerprint": "fc6facfb82cfee63c37031162d6063b44938d58769ccd341e229ed626c143a09",
       "decision": "expanded",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "6346d902f9d5b296a29b0f851fc2f7bcb561f4450d6e7b50097d9f5dc1b70e64",
+        "previousAnalysisFingerprint": "cf8d564dee6b5302eaaa7d301b03a67c316d9e49e45af71b6e259dc886d33639",
+        "changedQuestionFields": [
+          "options"
+        ]
+      }
     },
     {
       "id": "L124-B14",
@@ -3816,10 +3869,19 @@
       "unit": "L125",
       "kind": "choice",
       "examEligible": true,
-      "questionFingerprint": "283dc709d8ad364319ecc19497a36e3dc1ca56be35ec5dc3f04f280028fa6620",
-      "analysisFingerprint": "50fcc04f5777677f79e511d692c07cbc67b0c15ef1720642aa105593b438e521",
+      "questionFingerprint": "6667695291b50bab066964b6ecd651aa2365f4389c87435ec32972bf1be45ac3",
+      "analysisFingerprint": "b3a6f05686ee4dc05b58cd1f8764dff0032a10c612d3a0da3b4504da98a73b75",
       "decision": "expanded",
-      "changedQuestionFields": []
+      "changedQuestionFields": [],
+      "followup": {
+        "reviewedAt": "2026-11-07",
+        "previousQuestionFingerprint": "283dc709d8ad364319ecc19497a36e3dc1ca56be35ec5dc3f04f280028fa6620",
+        "previousAnalysisFingerprint": "50fcc04f5777677f79e511d692c07cbc67b0c15ef1720642aa105593b438e521",
+        "changedQuestionFields": [
+          "stem",
+          "options"
+        ]
+      }
     },
     {
       "id": "L125-B03",
@@ -4230,5 +4292,11 @@
       "decision": "expanded",
       "changedQuestionFields": []
     }
-  ]
+  ],
+  "followup": {
+    "reviewedAt": "2026-11-07",
+    "reviewer": "Codex",
+    "type": "agent-content-review",
+    "scope": "All 416 stems, options, answer keys and result checks reread; existing full-analysis receipts retained except the eight explicitly rechecked changes. Independent human review is separate."
+  }
 }

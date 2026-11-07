@@ -58,7 +58,13 @@ try {
   fs.mkdirSync(path.join(fixture, 'content'), { recursive: true });
   fs.copyFileSync('content/question-explanations.json', path.join(fixture, 'content/question-explanations.json'));
   fs.copyFileSync('content/question-legacy.json', path.join(fixture, 'content/question-legacy.json'));
+  fs.copyFileSync('content/question-revisions.json', path.join(fixture, 'content/question-revisions.json'));
   fs.cpSync('content/question-explanations', path.join(fixture, 'content/question-explanations'), { recursive: true });
+  const versions = read('content/question-revisions.json');
+  delete versions.questions['L125-B05'];
+  fs.writeFileSync(path.join(fixture, 'content/question-revisions.json'), JSON.stringify(versions));
+  assert.throws(() => enrich(bank, fixture), /Previous revision content changed/, 'Changed aliases must not fall through to the latest wording');
+  fs.copyFileSync('content/question-revisions.json', path.join(fixture, 'content/question-revisions.json'));
   const file = path.join(fixture, 'content/question-explanations/L111.json');
   const entries = read(file); delete entries['L111-01'];
   fs.writeFileSync(file, JSON.stringify(entries));
