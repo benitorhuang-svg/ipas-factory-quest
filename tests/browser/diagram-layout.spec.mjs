@@ -11,7 +11,7 @@ async function expectCompleteDiagram(figure) {
       overflow: viewport.scrollWidth - viewport.clientWidth,
       left: graphic.left - frame.left, right: frame.right - graphic.right,
       width: graphic.width,
-      labelOverflow: Math.max(0, ...[...svg.querySelectorAll('.node foreignObject')].map(label => {
+      labelOverflow: Math.max(0, ...[...svg.querySelectorAll('foreignObject')].map(label => {
         const text = label.querySelector('p');
         return text ? text.getBoundingClientRect().height - label.getBoundingClientRect().height : 0;
       })),
@@ -81,4 +81,6 @@ test('diagram adapts when the desktop sidebar expands and the viewport changes',
   await expectCompleteDiagram(figure);
   await page.setViewportSize({ width: 1920, height: 1080 });
   await expectCompleteDiagram(figure);
+  await page.addStyleTag({ content: '.mermaid-rendered foreignObject p { letter-spacing: 0.6px; }' });
+  for (const item of await page.locator('.study-diagram').all()) await expectCompleteDiagram(item);
 });

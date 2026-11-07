@@ -18,7 +18,7 @@
         actorBkg: '#eef5e6', actorBorder: '#88a96f', actorTextColor: '#174b3e',
         noteBkgColor: '#fff9e6', noteTextColor: '#7c5e10', noteBorderColor: '#e2ca70',
       },
-      themeCSS: 'foreignObject > div { display:inline-block !important; width:max-content; max-width:280px; white-space:normal !important; overflow-wrap:normal; line-height:1.6; } .nodeLabel p { margin:0; }',
+      themeCSS: '.label div, .cluster-label div { display:inline-block !important; width:max-content; max-width:280px; white-space:normal !important; overflow-wrap:normal; line-height:1.65 !important; text-align:center; } .node .nodeLabel, .cluster-label .nodeLabel, span.edgeLabel { display:block; padding:5px 20px; box-sizing:border-box; line-height:1.65 !important; } .nodeLabel p, .edgeLabel p { margin:0; line-height:inherit !important; }',
       flowchart: { curve: 'linear', nodeSpacing: 44, rankSpacing: 60, padding: 22, wrappingWidth: 280, useMaxWidth: false },
       sequence: { wrap: true, useMaxWidth: false, width: 190, actorMargin: 56, messageMargin: 44 },
     });

@@ -31,6 +31,8 @@
 .mermaid-rendered { width: 100%; min-width: 0; }
 .mermaid-rendered svg { display: block; width: 100%; max-width: var(--diagram-width); height: auto; margin: 0 auto; }
 .mermaid-rendered foreignObject { overflow: visible; }
+.mermaid-rendered foreignObject > div { display: block !important; width: 100% !important; max-width: none !important; text-align: center; }
+.mermaid-rendered .node .nodeLabel, .mermaid-rendered .cluster-label .nodeLabel, .mermaid-rendered span.edgeLabel { padding-inline: 2px !important; }
 .mermaid-rendered foreignObject p { margin: 0; line-height: inherit; }
 .diagram-error { padding: 14px; background: #fff8e6; border-radius: 10px; }
 .diagram-error summary { cursor: pointer; }

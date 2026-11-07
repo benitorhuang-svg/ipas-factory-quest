@@ -76,6 +76,9 @@ try {
     local[material.topicCode] = payload.details;
     dom.window.close();
   }
+  for (const file of fs.readdirSync(target)) {
+    if (file.endsWith('.svg') && !entries[file.slice(0, -4)]) fs.unlinkSync(path.join(target, file));
+  }
   fs.writeFileSync(path.join(target, 'manifest.json'), JSON.stringify({ revision, count, entries }, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'materials-local.js'), `window.FactoryLocalMaterials = ${JSON.stringify(local)};\n`);
   console.log(`Built ${count} pre-rendered diagrams (${rendered} rendered, ${count - rendered} reused); Mermaid sources preserved.`);
