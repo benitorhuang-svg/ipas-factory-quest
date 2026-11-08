@@ -6,70 +6,64 @@ const bank = [1, 2].flatMap(id => JSON.parse(fs.readFileSync(`content/questions-
 const DAY = 86400000, now = 20 * DAY;
 const entry = (correct, count = 1, dueAt = now - DAY) => ({ attempts: count, correctCount: correct ? count : 0, lastCorrect: correct, lastSeen: now - 4 * DAY, dueAt });
 const target = bank.find(q => q.id === 'L111-01');
-let state = { ...E.emptyState(), ledger: { [target.id]: entry(true) } };
+const correctState = { ...E.emptyState(), earnedCorrectIds: [target.id], ledger: { [target.id]: entry(true) } };
+assert.deepEqual(E.reviewIds(correctState, bank, now + 100 * DAY), [], 'Old correct reminders never become review tasks');
+assert.deepEqual(E.select(bank, { mode: 'review', state: correctState }), []);
+const state = { ...correctState, ledger: { ...correctState.ledger, 'L111-02': entry(false, 1, now + DAY) } };
+assert.deepEqual(E.reviewIds(state, bank), ['L111-02'], 'Only mistakes enter review, including newly wrong answers');
+assert.deepEqual(E.reviewPlan(state, bank).questions.map(q => q.id), ['L111-02'], 'Retry the actual wrong question');
+const question = bank.find(q => q.id === 'L111-02');
+const run = { id: 'retry', mode: 'review', questionIds: [question.id], answers: { [question.id]: question.answer }, startedAt: now };
+const restored = E.restore({ ...state, active: run }, bank);
+assert.deepEqual(restored.active.questionIds, run.questionIds, 'Reload and backup preserve drafts');
+const graded = E.grade(restored, restored.active, bank, now);
+assert.deepEqual(E.reviewIds(graded.state, bank, now + 100 * DAY), []);
+assert.equal(graded.state.ledger[question.id].dueAt, 0);
+assert.equal(graded.state.ledger[target.id].attempts, 1, 'Grading never changes unrelated questions');
+assert.equal(graded.report.earnedXP, 10);
+assert.equal(E.grade(graded.state, restored.active, bank, now).state, graded.state, 'Duplicate submission is idempotent');
+assert.deepEqual(E.reviewIds(E.restore(JSON.parse(JSON.stringify(graded.state)), bank), bank), []);
+const failed = E.grade(state, { ...run, id: 'failed', answers: {} }, bank, now).state;
+assert.deepEqual(E.reviewIds(failed, bank), [question.id], 'A repeated mistake stays in review');
+const regressed = E.grade(graded.state, { ...run, id: 'regressed', mode: 'quick', answers: {} }, bank, now + DAY).state;
+assert.deepEqual(E.reviewIds(regressed, bank), [question.id], 'A later mistake reopens a mastered question');
+
+// Legacy replacement metadata must not reschedule questions, while the draft survives.
+const legacyRun = { ...run, reviewTargets: { [question.id]: target.id } };
+assert.deepEqual(E.restore({ ...state, active: legacyRun }, bank).active.questionIds, run.questionIds);
+assert.deepEqual(E.grade(state, legacyRun, bank, now).state.ledger[target.id], state.ledger[target.id]);
+
 let value = 42;
 const random = () => ((value = (value * 1664525 + 1013904223) >>> 0) / 4294967296);
-const plan = E.reviewPlan(state, bank, now, random);
-const replacement = plan.questions[0];
-assert.notEqual(replacement.id, target.id);
-assert.equal(replacement.unit, target.unit); assert.equal(replacement.skill, target.skill);
-assert.equal(plan.targets[replacement.id], target.id);
-const run = { id: 'rotation', mode: 'review', questionIds: [replacement.id], reviewTargets: plan.targets, answers: { [replacement.id]: replacement.answer }, startedAt: now };
-const restored = E.restore({ ...state, active: run }, bank);
-assert.deepEqual(restored.active.reviewTargets, plan.targets, 'Reload and backup preserve the due reminder mapping');
-const graded = E.grade(restored, restored.active, bank, now);
-assert.equal(E.reviewIds(graded.state, bank, now).length, 0);
-assert.equal(graded.state.ledger[target.id].attempts, 1, 'A replacement must not fabricate an answer for the original');
-assert.equal(graded.state.ledger[target.id].lastSeen, state.ledger[target.id].lastSeen);
-assert.equal(graded.state.ledger[target.id].dueAt, now + 3 * DAY);
-assert.equal(graded.state.ledger[replacement.id].correctCount, 1);
-assert.equal(graded.report.earnedXP, 10, 'XP is earned only for the actual new answer');
-assert.equal(E.grade(graded.state, restored.active, bank, now).state, graded.state, 'Duplicate submit remains idempotent');
-assert.equal(E.restore(JSON.parse(JSON.stringify(graded.state)), bank).ledger[target.id].dueAt, now + 3 * DAY);
-const failed = E.grade(state, { ...run, id: 'failed', answers: {} }, bank, now).state;
-assert.equal(failed.ledger[target.id].dueAt, state.ledger[target.id].dueAt);
-assert.ok(E.reviewIds(failed, bank, now).includes(target.id), 'A failed replacement keeps the original reminder');
-assert.equal(E.wrongIds(failed, bank)[0], replacement.id);
-assert.equal(E.reviewPlan(failed, bank, now, random).questions[0].id, replacement.id, 'Mistakes are retried first');
-
-const pool = E.catalog(bank).unique.filter(q => q.unit === target.unit && q.skill === target.skill);
-for (const q of pool.filter(q => q.id !== target.id)) state.ledger[q.id] = entry(true, 5, now + DAY);
-assert.equal(E.reviewPlan(state, bank, now, random).questions[0].id, target.id, 'Fall back to the original when no eligible variant remains');
-state.ledger[target.id] = entry(false);
-assert.equal(E.reviewPlan(state, bank, now, random).questions[0].id, target.id, 'Wrong answers keep their direct retry');
-assert.deepEqual(E.reviewPlan(E.emptyState(), bank, now, random).questions, []);
-
-const synthetic = Array.from({ length: 12 }, (_, i) => ({ ...target, id: `test-${i}`, stem: `Unique practice ${i}` }));
-const weighted = { ...E.emptyState(), ledger: Object.fromEntries(synthetic.map((q, i) => [q.id, entry(true, i === 11 ? 9 : 1, i < 10 ? 1 : 2)])) };
+const synthetic = Array.from({ length: 60 }, (_, i) => ({ ...target, id: `test-${i}`, stem: `Unique practice ${i}`, skill: 'concept' }));
+const weighted = { ...E.emptyState(), ledger: Object.fromEntries(synthetic.map((q, i) => [q.id, entry(true, i < 30 ? 1 : 9)])) };
 let lowCorrect = 0, highCorrect = 0;
-for (let i = 0; i < 1000; i++) {
-  const next = E.reviewPlan(weighted, synthetic, now, random);
-  assert.equal(next.questions.length, 10);
-  assert.equal(new Set(next.questions.map(E.fingerprint)).size, 10, 'No repeated content in a batch');
-  if (next.questions[0].id === 'test-10') lowCorrect++;
-  if (next.questions[0].id === 'test-11') highCorrect++;
+for (let i = 0; i < 500; i++) {
+  const selected = E.select(synthetic, { mode: 'quick', unitId: target.unit, state: weighted }, random);
+  assert.equal(new Set(selected.map(E.fingerprint)).size, 5);
+  for (const q of selected) if (Number(q.id.slice(5)) < 30) lowCorrect++; else highCorrect++;
 }
-assert.ok(lowCorrect > highCorrect * 10, `Correct-answer frequency reduces weight: ${lowCorrect} vs ${highCorrect}`);
+assert.ok(lowCorrect > highCorrect * 10, `Correct-answer frequency reduces practice weight: ${lowCorrect} vs ${highCorrect}`);
+const wrongWeighted = { ...weighted, ledger: Object.fromEntries(synthetic.map((q, i) => [q.id, { ...entry(true, 9), lastCorrect: i >= 30 }])) };
+let mistakes = 0;
+for (let i = 0; i < 100; i++) mistakes += E.select(synthetic, { mode: 'quick', unitId: target.unit, state: wrongWeighted }, random).filter(q => Number(q.id.slice(5)) < 30).length;
+assert.ok(mistakes > 450, 'A later mistake restores full weight despite earlier correct answers');
 
-// Complete several batches: each due slot uses a different unseen question while available.
-state = { ...E.emptyState(), ledger: { [target.id]: entry(true) } };
-let time = now;
-const seen = new Set([target.id]);
-for (let i = 0; i < Math.min(5, pool.length - 1); i++) {
-  const next = E.reviewPlan(state, bank, time, random), question = next.questions[0];
-  assert.ok(!seen.has(question.id), 'Prefer unseen content across completed reviews');
-  seen.add(question.id);
-  const answers = Object.fromEntries(next.questions.map(q => [q.id, q.answer]));
-  state = E.grade(state, { id: `round-${i}`, mode: 'review', questionIds: next.questions.map(q => q.id), reviewTargets: next.targets, answers }, bank, time).state;
-  assert.equal(E.reviewIds(state, bank, time).length, 0);
-  time += 3 * DAY;
+// Practice must reach every unique question across all units in both modes.
+for (const mode of ['quick', 'mission']) for (const unitId of E.UNITS) {
+  let progress = E.emptyState();
+  const pool = E.catalog(bank).unique.filter(q => q.unit === unitId), seen = new Set();
+  for (let round = 0; round < pool.length && seen.size < pool.length; round++) {
+    const selected = E.select(bank, { mode, unitId, state: progress }, random);
+    for (const q of selected) seen.add(q.id);
+    progress = E.grade(progress, { id: `${mode}-${unitId}-${round}`, mode, unitId, questionIds: selected.map(q => q.id), answers: Object.fromEntries(selected.map(q => [q.id, q.answer])) }, bank, now + round).state;
+    progress = E.restore(JSON.parse(JSON.stringify(progress)), bank);
+  }
+  assert.equal(seen.size, pool.length, `${mode}/${unitId}: cover every question after grading and reload`);
 }
-
-const unrelated = bank.find(q => q.unit !== target.unit);
-const forged = E.restore({ ...E.emptyState(), ledger: { [unrelated.id]: entry(true) }, active: { ...run, reviewTargets: { [replacement.id]: unrelated.id } } }, bank);
-assert.deepEqual(forged.active.reviewTargets, {}, 'Import cannot postpone an unrelated unit');
-const wrongTarget = E.restore({ ...E.emptyState(), ledger: { [target.id]: entry(false) }, active: run }, bank);
-assert.deepEqual(wrongTarget.active.reviewTargets, {}, 'Import cannot resolve a wrong original using a replacement');
-const legacyRun = E.restore({ ...E.emptyState(), active: { ...run, reviewTargets: undefined } }, bank).active;
-assert.ok(legacyRun); assert.equal(legacyRun.reviewTargets, undefined, 'Existing drafts remain compatible');
-console.log(`PASS: fresh review rotation; ${lowCorrect}:${highCorrect} weighted draws; wrong priority; cooldown; reload/import; grading/XP; repeated batches.`);
+const unseen = synthetic.slice(0, 5), practiced = synthetic.slice(5);
+const withHistory = { ...E.emptyState(), ledger: Object.fromEntries(practiced.map(q => [q.id, entry(false)])) };
+assert.deepEqual(new Set(E.select(synthetic, { mode: 'quick', unitId: target.unit, state: withHistory }, random).map(q => q.id)), new Set(unseen.map(q => q.id)), 'Unseen questions take priority within each skill');
+const manyWrong = { ...E.emptyState(), ledger: Object.fromEntries(synthetic.map((q, i) => [q.id, { ...entry(false), lastSeen: i }])) };
+assert.deepEqual(E.reviewPlan(manyWrong, synthetic).questions.map(q => q.id), synthetic.slice(0, 10).map(q => q.id), 'Review batches retry the oldest ten mistakes');
+console.log(`PASS: wrong-only review, legacy drafts, XP/reload, ${lowCorrect}:${highCorrect} weighted draws, mistake priority, and complete coverage of all 416 questions in both practice modes.`);

@@ -7,14 +7,17 @@
     const wrong = E.reviewIds(state, bank).length;
     const targetUnit = active ? activeUnit : (!wrong ? next : null);
     const subset = units.filter(unit => filter === 'all' || unit.subject === filter);
+    const practice = E.practiceStats(state, bank);
     return `<section class="dashboard-next" aria-labelledby="next-title">
       <div class="dashboard-next-copy"><div class="eyebrow">${active ? '繼續上次進度' : '下一個學習任務'}</div>
         <h2 id="next-title">${esc(targetUnit ? `${targetUnit.id} · ${targetUnit.title}` : (active ? (active.mode === 'exam' ? '計時模擬測驗' : '到期複習') : '今日到期複習'))}</h2>
-        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題待複習：錯題優先重練，到期題優先換新題。` : esc(next.takeaway)}</p>
+        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題錯題待複習：重練上次答錯的原題，答對立即移出。` : esc(next.takeaway)}</p>
         <div class="dashboard-next-actions"><button class="btn btn-primary" data-action="${active ? 'resume' : wrong ? 'review' : 'unit'}" ${active || wrong ? '' : `data-unit="${next.id}"`}>${active ? '繼續作答' : wrong ? '開始今日複習' : '開始本章練習'}${icon('arrow')}</button><a class="text-link" href="#/guide/materials/${activeUnit?.topicCode || next.topicCode}">先讀講義</a></div>
       </div><div class="dashboard-next-symbol" aria-hidden="true">${icon('factory')}<span>FACTORY<br>QUEST</span></div>
     </section>
     <dl class="dashboard-metrics" aria-label="學習概況">
+      <div data-stat="practiced"><dt>已練習題目</dt><dd>${fmt(practice.practiced)}<small> / ${practice.total} 題</small></dd></div>
+      <div data-stat="attempts"><dt>累計答題次數</dt><dd>${fmt(practice.attempts)}<small> 次</small></dd></div>
       <div><dt>已通關單元</dt><dd>${state.passedUnits.length}<small> / ${units.length}</small></dd></div>
       <div><dt>累積經驗</dt><dd>${fmt(state.xp)}<small> XP</small></dd></div>
       <div><dt>今日待複習</dt><dd><a href="#/repair">${wrong}<small> 題${icon('arrow')}</small></a></dd></div>

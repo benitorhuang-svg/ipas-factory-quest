@@ -64,29 +64,52 @@ test('local file entry loads split materials without an HTTP server', async ({ p
   await expect(page.locator('.katex').first()).toBeVisible();
   expect(errors).toEqual([]);
 });
-test('due review rotates questions and survives reload', async ({ page, context, browserName }) => {
+test('old correct reminders show no review tasks', async ({ page }) => {
   await page.addInitScript(() => { if (!localStorage.getItem('factory-quest-ipas-v1')) localStorage.setItem('factory-quest-ipas-v1', JSON.stringify({
     version: 1, earnedCorrectIds: ['L111-01'], passedUnits: [], best: {}, history: [], studyDates: [], active: null,
     ledger: { 'L111-01': { attempts: 1, correctCount: 1, lastCorrect: true, lastSeen: Date.now() - 4 * 86400000, dueAt: Date.now() - 86400000 } },
   })); });
   await ready(page);
+  await expect(page.locator('.dashboard-metrics')).toContainText('0 題');
+  await go(page, 'repair');
+  await expect(page.locator('.empty h2')).toHaveText('目前沒有待複習的錯題');
+  await expect(page.locator('[data-action=review]')).toHaveCount(0);
+  await page.locator('.empty a').click();
+  await start(page);
+  expect((await state(page)).active.questionIds).not.toContain('L111-01');
+  expect((await state(page)).xp).toBe(10);
+});
+
+test('wrong-only review retries the original and survives reload', async ({ page, context, browserName }, info) => {
+  await page.addInitScript(() => { if (!localStorage.getItem('factory-quest-ipas-v1')) localStorage.setItem('factory-quest-ipas-v1', JSON.stringify({
+    version: 1, earnedCorrectIds: ['L111-01'], passedUnits: [], best: {}, history: [], studyDates: [], active: null,
+    ledger: {
+      'L111-01': { attempts: 1, correctCount: 1, lastCorrect: true, lastSeen: Date.now() - 4 * 86400000, dueAt: Date.now() - 86400000 },
+      'L111-02': { attempts: 1, correctCount: 0, lastCorrect: false, lastSeen: Date.now() - 86400000, dueAt: Date.now() },
+    },
+  })); });
+  await ready(page);
   await go(page, 'repair');
   await expect(page.getByRole('heading', { name: '到期複習', exact: true })).toBeVisible();
-  await expect(page.locator('.repair-summary')).toContainText('0 題待加強 · 1 題已到期');
+  await expect(page.locator('.repair-summary')).toContainText('1 題錯題待複習');
+  await expect(page.locator('.repair-card')).toHaveCount(1);
+  await page.screenshot({ path: info.outputPath('wrong-only-review.png'), fullPage: false });
   await page.locator('.repair-summary [data-action=review]').click();
   await expect(page.locator('.question-card')).toHaveCount(1);
   const run = (await state(page)).active, id = run.questionIds[0];
-  expect(id).not.toBe('L111-01');
-  expect(run.reviewTargets[id]).toBe('L111-01');
+  expect(id).toBe('L111-02');
+  expect(run.reviewTargets).toBeUndefined();
   if (browserName === 'chromium') await context.setOffline(true);
   await page.reload();
   await expect(page.locator('.question-card')).toHaveCount(1);
-  expect((await state(page)).active.reviewTargets).toEqual(run.reviewTargets);
+  expect((await state(page)).active.questionIds).toEqual(run.questionIds);
   const question = await page.evaluate(id => window.FACTORY_QUEST_DATA.questions.find(q => q.id === id), id);
   if (question.kind === 'choice') await page.locator(`[data-answer="${id}"][value="${question.answer}"]`).check();
   else await page.locator(`[data-answer="${id}"]`).fill(String(question.answer));
   await page.locator('#submit-run').click(); await expect(page.locator('.result-hero')).toBeVisible();
-  await go(page, 'repair'); await expect(page.locator('.empty h2')).toHaveText('今日複習已完成');
+  await go(page, 'repair'); await expect(page.locator('.empty h2')).toHaveText('目前沒有待複習的錯題');
+  await page.screenshot({ path: info.outputPath('review-complete.png'), fullPage: false });
   expect((await state(page)).ledger['L111-01'].attempts).toBe(1);
   expect((await state(page)).ledger[id].correctCount).toBe(1);
+  expect((await state(page)).ledger[id].dueAt).toBe(0);
 });

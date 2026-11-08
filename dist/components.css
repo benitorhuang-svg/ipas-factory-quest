@@ -32,6 +32,15 @@ button, a, input, select, textarea, summary { touch-action: manipulation; }
 .stat-label { font-size: 12px; color: #657664; }
 .stat-value { font-size: 26px; }
 .stat-value small { font-size: 12px; }
+.practice-count-note { margin: -16px 0 22px; }
+.practice-breakdown { margin-bottom: 22px; }
+.practice-breakdown > summary { cursor: pointer; font-size: 15px; font-weight: 600; padding: 8px 0; }
+.practice-table-wrap { overflow-x: auto; margin-top: 14px; }
+.practice-breakdown table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+.practice-breakdown caption { text-align: left; color: var(--muted); padding-bottom: 12px; }
+.practice-breakdown th, .practice-breakdown td { padding: 12px 10px; border-bottom: 1px solid var(--line); }
+.practice-breakdown td, .practice-breakdown thead th { white-space: nowrap; }
+.practice-breakdown tbody th { min-width: 180px; font-weight: 500; }
 .pdf-meta small { font-size: 12px; }
 .toast { left: calc(50% + 108px); }
 .badge { opacity: 1; }

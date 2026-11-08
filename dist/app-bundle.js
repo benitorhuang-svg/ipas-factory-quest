@@ -209,41 +209,31 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     }
     return [...entries];
   }
-  function reviewIds(state, bank, now = Date.now()) {
-    return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect || (e.dueAt > 0 && e.dueAt <= now))
-      .sort((a, b) => Number(a[1].lastCorrect) - Number(b[1].lastCorrect) || a[1].dueAt - b[1].dueAt).map(([id]) => id);
+  function reviewIds(state, bank) {
+    return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect)
+      .sort((a, b) => a[1].lastSeen - b[1].lastSeen).map(([id]) => id);
   }
-  function reviewPlan(state, bank, now = Date.now(), random = Math.random) {
-    const { unique } = catalog(bank), entries = new Map(reviewEntries(state, bank));
-    const mastered = new Set(masteredIds(state, bank));
-    const qmap = new Map(unique.map(q => [q.id, q]));
-    const due = reviewIds(state, bank, now), reserved = new Set(due.slice(0, 10));
-    const questions = [], targets = {}, used = new Set();
-    for (const targetId of due.slice(0, 10)) {
-      const target = qmap.get(targetId);
-      if (!target) continue;
-      let question = target;
-      if (entries.get(targetId).lastCorrect) {
-        const pool = unique.filter(q => q.unit === target.unit && q.skill === target.skill &&
-          !used.has(q.id) && !reserved.has(q.id) &&
-          (!entries.get(q.id)?.lastCorrect || (entries.get(q.id).dueAt > 0 && entries.get(q.id).dueAt <= now)));
-        const unseen = pool.filter(q => !entries.has(q.id) && !mastered.has(q.id));
-        const candidates = unseen.length ? unseen : pool;
-        if (candidates.length) {
-          const weights = candidates.map(q => 1 / (1 + (entries.get(q.id)?.correctCount || (mastered.has(q.id) ? 1 : 0))) ** 2);
-          let draw = random() * weights.reduce((sum, weight) => sum + weight, 0);
-          question = candidates[candidates.length - 1];
-          for (let i = 0; i < candidates.length; i++) {
-            draw -= weights[i];
-            if (draw < 0) { question = candidates[i]; break; }
-          }
-        }
-      }
-      used.add(question.id);
-      questions.push(question);
-      if (question.id !== targetId) targets[question.id] = targetId;
-    }
-    return { questions, targets };
+  function reviewPlan(state, bank) {
+    const qmap = new Map(catalog(bank).unique.map(q => [q.id, q]));
+    return { questions: reviewIds(state, bank).slice(0, 10).map(id => qmap.get(id)) };
+  }
+  function practiceStats(state, bank, unitId = null) {
+    const pool = catalog(bank).unique.filter(q => !unitId || q.unit === unitId);
+    const entries = new Map(reviewEntries(state, bank));
+    const attempts = pool.map(q => entries.get(q.id)?.attempts || 0);
+    const practiced = attempts.filter(count => count > 0).length;
+    return { total: pool.length, practiced, unseen: pool.length - practiced, attempts: attempts.reduce((sum, count) => sum + count, 0) };
+  }
+  function practiceOrder(pool, state, bank, random) {
+    const entries = new Map(reviewEntries(state, bank)), mastered = new Set(masteredIds(state, bank));
+    return pool.map(q => {
+      const entry = entries.get(q.id), seen = entry?.attempts > 0 || mastered.has(q.id);
+      const count = entry?.correctCount || (mastered.has(q.id) ? 1 : 0);
+      const attempts = Math.max(entry?.attempts || 0, count);
+      const masteryWeight = entry?.lastCorrect === false ? 1 : 1 / (1 + count) ** 2;
+      const weight = masteryWeight / (1 + attempts) ** 2;
+      return { q, seen: Number(seen), rank: -Math.log(1 - random()) / weight };
+    }).sort((a, b) => a.seen - b.seen || a.rank - b.rank).map(item => item.q);
   }
   function dateKey(time = Date.now()) {
     const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(time));
@@ -271,10 +261,10 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     for (const q of chosen) for (const pair of EXCLUSIONS) if (pair.includes(q.id)) pair.forEach(x => { if (x !== q.id) blocked.add(x); });
     return items.filter(q => !blocked.has(q.id));
   }
-  function pickSafe(candidates, count, random, chosen) {
+  function pickSafe(candidates, count, random, chosen, ordered = false) {
     if (count <= 0) return [];
     const out = [];
-    for (const q of shuffle(candidates, random)) {
+    for (const q of ordered ? candidates : shuffle(candidates, random)) {
       if (filterExclusions([q], [...chosen, ...out]).length) {
         out.push(q);
         if (out.length === count) break;
@@ -293,46 +283,48 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
       const pickedAll = [];
       for (let i = 0; i < units.length; i++) {
         const unit = units[i], count = counts[i] || 8;
-        const pool = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        const candidates = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        const ordered = !!spec.state;
+        const pool = ordered ? practiceOrder(candidates, spec.state, source, random) : candidates;
         if (pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
         if (isHardcore) {
           const picked = [];
           const tiers = [q => q.skill === 'calculation', q => q.difficulty === 'hard', q => q.skill === 'scenario', () => true];
           for (const accepts of tiers) {
             const candidates = pool.filter(q => accepts(q) && !picked.includes(q));
-            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked]));
+            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked], ordered));
           }
           pickedAll.push(...picked);
         } else {
           const calcs = pool.filter(q => q.skill === 'calculation');
           const scenarios = pool.filter(q => q.skill === 'scenario');
           const picked = [];
-          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked]));
+          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked], ordered));
           const wantScenarios = Math.min(count - picked.length, Math.min(3, scenarios.length));
-          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked]));
+          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked], ordered));
           const remaining = pool.filter(q => !picked.includes(q));
-          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked]));
+          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked], ordered));
           pickedAll.push(...picked);
         }
       }
       return shuffle(pickedAll, random);
     }
     if (spec.mode === 'review') {
-      if (spec.state) return reviewPlan(spec.state, source, spec.now, random).questions;
+      if (spec.state) return reviewPlan(spec.state, source).questions;
       const ids = [...new Set((spec.wrongIds || []).map(id => aliases.get(id)))];
       const map = new Map(bank.map(q => [q.id, q]));
       return ids.map(id => map.get(id)).filter(Boolean).slice(0, 10);
     }
-    const pool = shuffle(bank.filter(q=>q.unit===spec.unitId),random);
+    const pool = practiceOrder(bank.filter(q=>q.unit===spec.unitId), spec.state || emptyState(), source, random);
     const limit = spec.mode === 'quick' ? 5 : 10;
     const counts = spec.mode === 'quick' ? {concept:2,scenario:2,calculation:1} : {concept:4,scenario:4,calculation:2};
     const picked = [];
     for(const [skill,count] of Object.entries(counts)) {
-      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked));
+      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked, true));
     }
     const ids = new Set(picked.map(q=>q.id));
     const remaining = pool.filter(q => !ids.has(q.id));
-    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked));
+    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked, true));
     return shuffle(picked.slice(0,limit),random);
   }
   function restore(raw, bank) {
@@ -376,18 +368,6 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
       s.active={id:a.id,questionRevision:revisionOf(a, raw),mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,difficulty:['standard','hardcore','hard'].includes(a.difficulty)?a.difficulty:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
-      if (a.mode === 'review' && record(a.reviewTargets)) {
-        const entries = new Map(reviewEntries(s, bank)), targets = new Set();
-        s.active.reviewTargets = {};
-        for (const id of s.active.questionIds) {
-          const targetId = a.reviewTargets[id], target = qmap.get(targetId), q = qmap.get(id);
-          if (target && id !== targetId && !s.active.questionIds.includes(targetId) && !targets.has(targetId) &&
-              q.unit === target.unit && q.skill === target.skill && entries.get(targetId)?.lastCorrect &&
-              entries.get(targetId).dueAt > 0 && entries.get(targetId).dueAt <= a.startedAt) {
-            s.active.reviewTargets[id] = targetId; targets.add(targetId);
-          }
-        }
-      }
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
         const answer = safeAnswer(id, value, s.active.questionRevision);
@@ -412,21 +392,10 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
       const q=questionFor(map.get(id),run), answer=run.answers[id], ok=correct(q,answer);
       const ledgerId = aliases.get(id);
       const old=previousEntries.get(ledgerId) || {attempts:0,correctCount:0};
-      s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
+      s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:ok?0:now};
       if(ok&&!earnedContent.has(aliases.get(id))){earned.add(id);earnedContent.add(aliases.get(id));earnedXP+=10;}
       return {id,answer:answer===undefined?null:answer,correct:ok};
     });
-    if (run.mode === 'review' && record(run.reviewTargets)) {
-      const entries = new Map(reviewEntries(s, bank)), targets = new Set();
-      for (const result of results.filter(result => result.correct)) {
-        const q = map.get(result.id), targetId = run.reviewTargets[result.id], target = map.get(targetId);
-        const entry = entries.get(targetId);
-        if (target && !ids.includes(targetId) && !targets.has(targetId) && q.unit === target.unit &&
-            q.skill === target.skill && entry?.lastCorrect && entry.dueAt > 0 && entry.dueAt <= now) {
-          entry.dueAt = now + 3 * DAY; targets.add(targetId);
-        }
-      }
-    }
     const count=results.filter(x=>x.correct).length,score=Math.round(count/ids.length*100);
     let newBadge=false;
     if(run.mode==='mission' && UNITS.includes(run.unitId)) {
@@ -448,7 +417,7 @@ window.FactoryOfflineChapters = [{"topicCode":"APPX01","title":"核心公式與�
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,questionRevision,previousRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,questionRevision,previousRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,practiceStats,masteredIds,catalog,fingerprint,streak,level};
 });
 ;
 /* Source: persistence.js */
@@ -1033,19 +1002,15 @@ function start(mode, unitId = null, subject = null, force = false, difficulty = 
       `);
       return;
     }
-    let qs, reviewTargets;
+    let qs;
     try {
-      if (mode === 'review') {
-        const plan = E.reviewPlan(ctx.state, bank);
-        qs = plan.questions;
-        reviewTargets = plan.targets;
-      } else qs = E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
+      qs = E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
     } catch (e) {
       toast(e.message);
       return;
     }
     if (!qs.length) {
-      toast(mode === 'review' ? '目前沒有待加強或到期複習題目。' : '題庫尚未準備完成。');
+      toast(mode === 'review' ? '目前沒有需要複習的錯題，可繼續單元練習。' : '題庫尚未準備完成。');
       return;
     }
     closeModal();
@@ -1057,7 +1022,6 @@ function start(mode, unitId = null, subject = null, force = false, difficulty = 
       subject,
       difficulty: difficulty || null,
       questionIds: qs.map(q => q.id),
-      ...(reviewTargets ? { reviewTargets } : {}),
       answers: {},
       startedAt: Date.now()
     };
@@ -1244,6 +1208,12 @@ document.addEventListener('click', e => {
       case 'question-page':
         window.FactoryQuestionCatalog.paginate(Number(b.dataset.page));
         break;
+      case 'practice-clear':
+        window.FactoryPracticeDetails.update(true);
+        break;
+      case 'practice-page':
+        window.FactoryPracticeDetails.paginate(Number(b.dataset.page));
+        break;
       case 'close':
         closeModal();
         break;
@@ -1301,6 +1271,7 @@ document.addEventListener('click', e => {
     }
   });
 document.addEventListener('change', e => {
+    if (['practice-detail-unit', 'practice-detail-status'].includes(e.target.id)) window.FactoryPracticeDetails.update();
     if (['exam-question-subject', 'exam-question-notes'].includes(e.target.id)) window.FactoryQuestionCatalog.update();
     if (e.target.id === 'exam-question-jump') go('guide', 'questions', e.target.value);
     if (e.target.id === 'library-group') window.FactoryGuide.filterCatalog();
@@ -1311,6 +1282,7 @@ document.addEventListener('change', e => {
     }
   });
 document.addEventListener('input', e => {
+    if (e.target.id === 'practice-detail-search') { window.FactoryPracticeDetails.update(); return; }
     if (e.target.id === 'exam-question-search') { window.FactoryQuestionCatalog.update(); return; }
     if (e.target.id === 'library-search') {
       window.FactoryGuide.filterCatalog();
@@ -1353,14 +1325,17 @@ window.FactoryControls = { bind };
     const wrong = E.reviewIds(state, bank).length;
     const targetUnit = active ? activeUnit : (!wrong ? next : null);
     const subset = units.filter(unit => filter === 'all' || unit.subject === filter);
+    const practice = E.practiceStats(state, bank);
     return `<section class="dashboard-next" aria-labelledby="next-title">
       <div class="dashboard-next-copy"><div class="eyebrow">${active ? '繼續上次進度' : '下一個學習任務'}</div>
         <h2 id="next-title">${esc(targetUnit ? `${targetUnit.id} · ${targetUnit.title}` : (active ? (active.mode === 'exam' ? '計時模擬測驗' : '到期複習') : '今日到期複習'))}</h2>
-        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題待複習：錯題優先重練，到期題優先換新題。` : esc(next.takeaway)}</p>
+        <p>${active ? `已完成 ${active.questionIds.filter(id => qmap.has(id) && E.hasAnswer(qmap.get(id), active.answers[id])).length} / ${active.questionIds.length} 題，接著完成這次練習。` : wrong ? `${wrong} 題錯題待複習：重練上次答錯的原題，答對立即移出。` : esc(next.takeaway)}</p>
         <div class="dashboard-next-actions"><button class="btn btn-primary" data-action="${active ? 'resume' : wrong ? 'review' : 'unit'}" ${active || wrong ? '' : `data-unit="${next.id}"`}>${active ? '繼續作答' : wrong ? '開始今日複習' : '開始本章練習'}${icon('arrow')}</button><a class="text-link" href="#/guide/materials/${activeUnit?.topicCode || next.topicCode}">先讀講義</a></div>
       </div><div class="dashboard-next-symbol" aria-hidden="true">${icon('factory')}<span>FACTORY<br>QUEST</span></div>
     </section>
     <dl class="dashboard-metrics" aria-label="學習概況">
+      <div data-stat="practiced"><dt>已練習題目</dt><dd>${fmt(practice.practiced)}<small> / ${practice.total} 題</small></dd></div>
+      <div data-stat="attempts"><dt>累計答題次數</dt><dd>${fmt(practice.attempts)}<small> 次</small></dd></div>
       <div><dt>已通關單元</dt><dd>${state.passedUnits.length}<small> / ${units.length}</small></dd></div>
       <div><dt>累積經驗</dt><dd>${fmt(state.xp)}<small> XP</small></dd></div>
       <div><dt>今日待複習</dt><dd><a href="#/repair">${wrong}<small> 題${icon('arrow')}</small></a></dd></div>
@@ -1394,7 +1369,7 @@ window.FactoryControls = { bind };
         <ul class="topic-list">${unit.topics.map(topic => `<li>${icon('check')}${esc(topic)}</li>`).join('')}</ul>
         <div class="unit-practice-actions"><button class="btn btn-primary" data-action="start" data-unit="${id}" data-mode="mission">開始 10 題闖關${icon('arrow')}</button><button class="btn" data-action="start" data-unit="${id}" data-mode="quick">5 題快練</button></div>
         <p class="unit-best">${best !== undefined ? `目前最佳 ${best} 分${state.passedUnits.includes(id) ? ` · 已取得${esc(unit.badge)}` : ''}` : '自由挑戰，依自己的步調開始。'}</p>
-        <details class="unit-rules"><summary>通關與計分規則</summary><p>10 題闖關達 80 分即可通關；首次通關加 50 XP。5 題快練用於回想觀念，不授予通關徽章。</p></details>
+        <details class="unit-rules"><summary>選題、通關與計分規則</summary><p>保留觀念、情境與計算題比例，同類型優先抽未練題；已練題中，練習次數較少的題目會提高抽中機率，答對越多次則降低權重。答錯題加入到期複習，答對後移出。10 題闖關達 80 分即可通關；首次通關加 50 XP。5 題快練用於回想觀念，不授予通關徽章。</p></details>
       </section><section class="panel unit-study" aria-labelledby="unit-study-title">
         <h2 id="unit-study-title">先理解，再練習</h2><p>${esc(unit.takeaway)}</p>
         <a class="unit-study-link" href="#/guide/materials/${unit.topicCode}">${icon('book')}精讀講義${icon('arrow')}</a>
@@ -1444,13 +1419,12 @@ window.FactoryControls = { bind };
   function render({ state, bank, E, qmap, units, esc, icon, footer }) {
     const list = E.reviewIds(state, bank).map(id => qmap.get(id)).filter(Boolean);
     const entries = new Map(E.reviewEntries(state, bank));
-    const wrongCount = list.filter(q => !entries.get(q.id).lastCorrect).length;
-    if (!list.length) return `<div class="empty">${icon('circlecheck')}<h2>今日複習已完成</h2><p>待加強與到期題會集中在這裡；下次優先換新題，答對題降低出現權重。</p><a class="btn btn-primary" href="#/home">開始單元練習${icon('arrow')}</a></div>${footer()}`;
-    return `<section class="repair-summary"><div><h2>${list.length} 題待複習</h2><p>${wrongCount} 題待加強 · ${list.length - wrongCount} 題已到期。錯題優先重練；到期題從同單元、同類型優先換新題，已答對題降低出現權重。每次最多 10 題，答對後三天再複習。</p></div><button class="btn btn-primary" data-action="review">開始今日複習${icon('arrow')}</button></section>
+    if (!list.length) return `<div class="empty">${icon('circlecheck')}<h2>目前沒有待複習的錯題</h2><p>答錯的題目會加入這裡，答對後移出。繼續單元練習時，同類型優先抽未練題，已答對題降低出現權重，逐步練完整個題庫。</p><a class="btn btn-primary" href="#/home">開始單元練習${icon('arrow')}</a></div>${footer()}`;
+    return `<section class="repair-summary"><div><h2>${list.length} 題錯題待複習</h2><p>只複習上次答錯的原題，每次最多 10 題；答對立即移出，答錯保留。單元練習同類型優先抽未練題，已答對題降低出現權重。</p></div><button class="btn btn-primary" data-action="review">開始錯題複習${icon('arrow')}</button></section>
       <div class="review-groups">${units.map(unit => {
         const questions = list.filter(q => q.unit === unit.id);
         if (!questions.length) return '';
-        return `<details class="review-group" ${list.length <= 10 ? 'open' : ''}><summary><span>${unit.id}</span><strong>${esc(unit.title)}</strong><small>${questions.length} 題</small>${icon('chevrondown')}</summary><div>${questions.map(q => `<article class="repair-card"><div><small>${entries.get(q.id).lastCorrect ? '到期參考題 · 作答時優先換新題' : '上次答錯 · 優先重練'} · 已練習 ${entries.get(q.id).attempts || 1} 次</small><h3>${esc(q.stem)}</h3></div><button class="btn btn-small" data-action="poster" data-unit="${unit.id}" aria-label="查看 ${unit.id} 複習圖">${icon('book')}複習圖</button></article>`).join('')}</div></details>`;
+        return `<details class="review-group" ${list.length <= 10 ? 'open' : ''}><summary><span>${unit.id}</span><strong>${esc(unit.title)}</strong><small>${questions.length} 題</small>${icon('chevrondown')}</summary><div>${questions.map(q => `<article class="repair-card"><div><small>上次答錯 · 重練原題 · 已練習 ${entries.get(q.id).attempts || 1} 次</small><h3>${esc(q.stem)}</h3></div><button class="btn btn-small" data-action="poster" data-unit="${unit.id}" aria-label="查看 ${unit.id} 複習圖">${icon('book')}複習圖</button></article>`).join('')}</div></details>`;
       }).join('')}</div>${footer()}`;
   }
   window.FactoryReview = { render };
@@ -1526,18 +1500,104 @@ return examView(subTab);
 window.FactoryExam = { render };
 })();
 ;
+/* Source: practice-details.js */
+(function () {
+  'use strict';
+  const key = 'factory-practice-details-v1', size = 20;
+  const filters = { query: '', unit: 'all', status: 'all', page: 0 };
+  const statuses = { all: '全部狀態', practiced: '已練習', unseen: '未練習', wrong: '最近答錯', correct: '最近答對' };
+  let context;
+  try {
+    const saved = JSON.parse(window.sessionStorage.getItem(key));
+    if (typeof saved?.query === 'string') filters.query = saved.query.slice(0, 120);
+    if (saved?.unit === 'all' || window.FactoryEngine.UNITS.includes(saved?.unit)) filters.unit = saved.unit;
+    if (Object.hasOwn(statuses, saved?.status)) filters.status = saved.status;
+    if (Number.isInteger(saved?.page) && saved.page >= 0 && saved.page < 100) filters.page = saved.page;
+  } catch {}
+  const normalize = text => String(text).normalize('NFKC').trim().toLowerCase();
+  function rows() {
+    const { E, state, bank } = context;
+    const entries = new Map(E.reviewEntries(state, bank)), { unique, aliases } = E.catalog(bank);
+    const query = normalize(filters.query), alias = aliases.get(query.toUpperCase());
+    return unique.map(q => {
+      const entry = entries.get(q.id), attempts = entry?.attempts || 0, correct = entry?.correctCount || 0;
+      return { q, attempts, correct, wrong: attempts - correct, status: attempts ? (entry.lastCorrect ? 'correct' : 'wrong') : 'unseen' };
+    }).filter(row => {
+      if (filters.unit !== 'all' && row.q.unit !== filters.unit) return false;
+      if (filters.status === 'practiced' ? !row.attempts : filters.status !== 'all' && row.status !== filters.status) return false;
+      const title = context.units.find(unit => unit.id === row.q.unit)?.title || '';
+      const text = normalize(`${row.q.id} ${row.q.unit} ${title} ${row.q.stem}`);
+      return row.q.id === alias || query.split(/\s+/).every(word => text.includes(word));
+    });
+  }
+  function results() {
+    const { esc, fmt } = context, matches = rows();
+    const pages = Math.max(1, Math.ceil(matches.length / size));
+    filters.page = Math.min(filters.page, pages - 1);
+    const start = filters.page * size, page = matches.slice(start, start + size);
+    return `<p id="practice-detail-count" role="status" tabindex="-1">${matches.length ? `顯示 ${start + 1}–${start + page.length}／${matches.length} 題` : '找不到符合條件的題目'}</p>
+      <ol class="practice-question-list" start="${start + 1}">${page.map(row => `<li class="practice-question-card" data-practice-question="${esc(row.q.id)}">
+        <div><div class="practice-question-meta">${esc(row.q.id)} · ${esc(context.units.find(unit => unit.id === row.q.unit)?.title || row.q.unit)}</div><h3>${esc(row.q.stem)}</h3></div>
+        <dl class="practice-question-counts"><div><dt>練習次數</dt><dd>${fmt(row.attempts)}<small> 次</small></dd></div><div><dt>答對</dt><dd>${fmt(row.correct)}<small> 次</small></dd></div><div><dt>答錯</dt><dd>${fmt(row.wrong)}<small> 次</small></dd></div><div><dt>最近結果</dt><dd><span class="practice-status practice-status--${row.status}">${statuses[row.status]}</span></dd></div></dl>
+      </li>`).join('')}</ol>
+      ${matches.length ? `<nav class="practice-detail-pagination" aria-label="逐題練習明細分頁"><button class="btn btn-small" data-action="practice-page" data-page="${filters.page - 1}" ${filters.page === 0 ? 'disabled' : ''}>上一頁</button><span>第 ${filters.page + 1}／${pages} 頁</span><button class="btn btn-small" data-action="practice-page" data-page="${filters.page + 1}" ${filters.page + 1 >= pages ? 'disabled' : ''}>下一頁</button></nav>` : '<button class="btn btn-small" data-action="practice-clear">清除篩選</button>'}`;
+  }
+  function persist() { try { window.sessionStorage.setItem(key, JSON.stringify(filters)); } catch {} }
+  function render(ctx) {
+    context = ctx;
+    const { units, esc } = ctx;
+    return `<details class="panel practice-details" open><summary>逐題練習明細</summary>
+      <p class="backup-note">查看每道題的累計練習、答對與答錯次數，以及最近一次作答結果。只計已交卷紀錄，相同內容合併顯示。</p>
+      <div class="practice-detail-tools"><div class="practice-detail-field"><label for="practice-detail-search">搜尋題目</label><input id="practice-detail-search" type="search" maxlength="120" placeholder="輸入題號或題目關鍵字" value="${esc(filters.query)}"></div>
+        <div class="practice-detail-field"><label for="practice-detail-unit">單元</label><select id="practice-detail-unit"><option value="all">全部單元</option>${units.map(unit => `<option value="${unit.id}" ${unit.id === filters.unit ? 'selected' : ''}>${unit.id} · ${esc(unit.title)}</option>`).join('')}</select></div>
+        <div class="practice-detail-field"><label for="practice-detail-status">作答狀態</label><select id="practice-detail-status">${Object.entries(statuses).map(([value, label]) => `<option value="${value}" ${value === filters.status ? 'selected' : ''}>${label}</option>`).join('')}</select></div>
+        <button class="btn btn-small" data-action="practice-clear">清除篩選</button></div>
+      <div id="practice-detail-results">${results()}</div></details>`;
+  }
+  function update(reset = false) {
+    const host = document.getElementById('practice-detail-results');
+    if (!host) return;
+    const search = document.getElementById('practice-detail-search'), unit = document.getElementById('practice-detail-unit'), status = document.getElementById('practice-detail-status');
+    filters.query = reset ? '' : search.value; filters.unit = reset ? 'all' : unit.value; filters.status = reset ? 'all' : status.value; filters.page = 0;
+    search.value = filters.query; unit.value = filters.unit; status.value = filters.status;
+    host.innerHTML = results(); persist();
+    if (reset) search.focus();
+  }
+  function paginate(page) {
+    const host = document.getElementById('practice-detail-results');
+    if (!host || !Number.isInteger(page) || page < 0 || page >= Math.ceil(rows().length / size)) return;
+    filters.page = page;
+    host.innerHTML = results(); persist();
+    const count = document.getElementById('practice-detail-count');
+    count.focus({ preventScroll: true }); count.scrollIntoView({ block: 'nearest' });
+  }
+  window.FactoryPracticeDetails = { render, update, paginate };
+})();
+;
 /* Source: view-progress.js */
 (function () { 'use strict';
 function render(ctx) {
 const { E, state, units, bank, fmt, icon, esc, footer, modeName } = ctx;
 function progressView() {
     const history = [...state.history].reverse();
+    const practice = E.practiceStats(state, bank);
     return `
-      <div class="stats-row">
+      <div class="stats-row" aria-label="累計學習統計">
+        <div class="stat" data-stat="practiced"><span class="stat-icon">${icon('book')}</span><div><div class="stat-label">已練習題目</div><div class="stat-value number">${fmt(practice.practiced)}<small>／${practice.total} 題</small></div></div></div>
+        <div class="stat" data-stat="attempts"><span class="stat-icon">${icon('chart')}</span><div><div class="stat-label">累計答題次數</div><div class="stat-value number">${fmt(practice.attempts)}<small>次</small></div></div></div>
+        <div class="stat" data-stat="unseen"><span class="stat-icon">${icon('flag')}</span><div><div class="stat-label">尚未練習題目</div><div class="stat-value number">${fmt(practice.unseen)}<small>題</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('star')}</span><div><div class="stat-label">累積經驗 · ${esc(E.level(state.xp))}</div><div class="stat-value number">${fmt(state.xp)}<small>XP</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('flame')}</span><div><div class="stat-label">連續學習</div><div class="stat-value number">${E.streak(state)}<small>天</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('check')}</span><div><div class="stat-label">已答對不同題目</div><div class="stat-value number">${E.masteredIds(state, bank).length}<small>／${E.catalog(bank).unique.length}</small></div></div></div>
       </div>
+      <p class="backup-note practice-count-note">統計所有模式的已交卷作答，未交卷不計入；同一道題重練三次，計為 1 題已練習、3 次作答。相同內容題目合併，次數依各題保留的累計紀錄計算。</p>
+      <details class="panel practice-breakdown"><summary>各單元練習統計</summary><div class="practice-table-wrap"><table>
+        <caption>已交卷的練習題目與答題次數</caption><thead><tr><th scope="col">單元</th><th scope="col">已練習／總題數</th><th scope="col">未練習</th><th scope="col">答題次數</th></tr></thead>
+        <tbody>${units.map(unit => {
+          const counts = E.practiceStats(state, bank, unit.id);
+          return `<tr><th scope="row"><a href="#/unit/${unit.id}">${unit.id} · ${esc(unit.title)}</a></th><td>${counts.practiced}／${counts.total} 題</td><td>${counts.unseen} 題</td><td>${fmt(counts.attempts)} 次</td></tr>`;
+        }).join('')}</tbody></table></div></details>
+      ${window.FactoryPracticeDetails.render(ctx)}
       <div class="progress-grid">
         <section class="panel">
           <h2 class="medal-title">${icon('badge')}部門成就徽章</h2>

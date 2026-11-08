@@ -67,6 +67,12 @@ document.addEventListener('click', e => {
       case 'question-page':
         window.FactoryQuestionCatalog.paginate(Number(b.dataset.page));
         break;
+      case 'practice-clear':
+        window.FactoryPracticeDetails.update(true);
+        break;
+      case 'practice-page':
+        window.FactoryPracticeDetails.paginate(Number(b.dataset.page));
+        break;
       case 'close':
         closeModal();
         break;
@@ -124,6 +130,7 @@ document.addEventListener('click', e => {
     }
   });
 document.addEventListener('change', e => {
+    if (['practice-detail-unit', 'practice-detail-status'].includes(e.target.id)) window.FactoryPracticeDetails.update();
     if (['exam-question-subject', 'exam-question-notes'].includes(e.target.id)) window.FactoryQuestionCatalog.update();
     if (e.target.id === 'exam-question-jump') go('guide', 'questions', e.target.value);
     if (e.target.id === 'library-group') window.FactoryGuide.filterCatalog();
@@ -134,6 +141,7 @@ document.addEventListener('change', e => {
     }
   });
 document.addEventListener('input', e => {
+    if (e.target.id === 'practice-detail-search') { window.FactoryPracticeDetails.update(); return; }
     if (e.target.id === 'exam-question-search') { window.FactoryQuestionCatalog.update(); return; }
     if (e.target.id === 'library-search') {
       window.FactoryGuide.filterCatalog();

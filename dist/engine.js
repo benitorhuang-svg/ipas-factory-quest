@@ -43,41 +43,31 @@
     }
     return [...entries];
   }
-  function reviewIds(state, bank, now = Date.now()) {
-    return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect || (e.dueAt > 0 && e.dueAt <= now))
-      .sort((a, b) => Number(a[1].lastCorrect) - Number(b[1].lastCorrect) || a[1].dueAt - b[1].dueAt).map(([id]) => id);
+  function reviewIds(state, bank) {
+    return reviewEntries(state, bank).filter(([, e]) => !e.lastCorrect)
+      .sort((a, b) => a[1].lastSeen - b[1].lastSeen).map(([id]) => id);
   }
-  function reviewPlan(state, bank, now = Date.now(), random = Math.random) {
-    const { unique } = catalog(bank), entries = new Map(reviewEntries(state, bank));
-    const mastered = new Set(masteredIds(state, bank));
-    const qmap = new Map(unique.map(q => [q.id, q]));
-    const due = reviewIds(state, bank, now), reserved = new Set(due.slice(0, 10));
-    const questions = [], targets = {}, used = new Set();
-    for (const targetId of due.slice(0, 10)) {
-      const target = qmap.get(targetId);
-      if (!target) continue;
-      let question = target;
-      if (entries.get(targetId).lastCorrect) {
-        const pool = unique.filter(q => q.unit === target.unit && q.skill === target.skill &&
-          !used.has(q.id) && !reserved.has(q.id) &&
-          (!entries.get(q.id)?.lastCorrect || (entries.get(q.id).dueAt > 0 && entries.get(q.id).dueAt <= now)));
-        const unseen = pool.filter(q => !entries.has(q.id) && !mastered.has(q.id));
-        const candidates = unseen.length ? unseen : pool;
-        if (candidates.length) {
-          const weights = candidates.map(q => 1 / (1 + (entries.get(q.id)?.correctCount || (mastered.has(q.id) ? 1 : 0))) ** 2);
-          let draw = random() * weights.reduce((sum, weight) => sum + weight, 0);
-          question = candidates[candidates.length - 1];
-          for (let i = 0; i < candidates.length; i++) {
-            draw -= weights[i];
-            if (draw < 0) { question = candidates[i]; break; }
-          }
-        }
-      }
-      used.add(question.id);
-      questions.push(question);
-      if (question.id !== targetId) targets[question.id] = targetId;
-    }
-    return { questions, targets };
+  function reviewPlan(state, bank) {
+    const qmap = new Map(catalog(bank).unique.map(q => [q.id, q]));
+    return { questions: reviewIds(state, bank).slice(0, 10).map(id => qmap.get(id)) };
+  }
+  function practiceStats(state, bank, unitId = null) {
+    const pool = catalog(bank).unique.filter(q => !unitId || q.unit === unitId);
+    const entries = new Map(reviewEntries(state, bank));
+    const attempts = pool.map(q => entries.get(q.id)?.attempts || 0);
+    const practiced = attempts.filter(count => count > 0).length;
+    return { total: pool.length, practiced, unseen: pool.length - practiced, attempts: attempts.reduce((sum, count) => sum + count, 0) };
+  }
+  function practiceOrder(pool, state, bank, random) {
+    const entries = new Map(reviewEntries(state, bank)), mastered = new Set(masteredIds(state, bank));
+    return pool.map(q => {
+      const entry = entries.get(q.id), seen = entry?.attempts > 0 || mastered.has(q.id);
+      const count = entry?.correctCount || (mastered.has(q.id) ? 1 : 0);
+      const attempts = Math.max(entry?.attempts || 0, count);
+      const masteryWeight = entry?.lastCorrect === false ? 1 : 1 / (1 + count) ** 2;
+      const weight = masteryWeight / (1 + attempts) ** 2;
+      return { q, seen: Number(seen), rank: -Math.log(1 - random()) / weight };
+    }).sort((a, b) => a.seen - b.seen || a.rank - b.rank).map(item => item.q);
   }
   function dateKey(time = Date.now()) {
     const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(time));
@@ -105,10 +95,10 @@
     for (const q of chosen) for (const pair of EXCLUSIONS) if (pair.includes(q.id)) pair.forEach(x => { if (x !== q.id) blocked.add(x); });
     return items.filter(q => !blocked.has(q.id));
   }
-  function pickSafe(candidates, count, random, chosen) {
+  function pickSafe(candidates, count, random, chosen, ordered = false) {
     if (count <= 0) return [];
     const out = [];
-    for (const q of shuffle(candidates, random)) {
+    for (const q of ordered ? candidates : shuffle(candidates, random)) {
       if (filterExclusions([q], [...chosen, ...out]).length) {
         out.push(q);
         if (out.length === count) break;
@@ -127,46 +117,48 @@
       const pickedAll = [];
       for (let i = 0; i < units.length; i++) {
         const unit = units[i], count = counts[i] || 8;
-        const pool = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        const candidates = bank.filter(q => q.unit === unit && q.kind === 'choice');
+        const ordered = !!spec.state;
+        const pool = ordered ? practiceOrder(candidates, spec.state, source, random) : candidates;
         if (pool.length < count) throw new Error(`${unit} 的模擬題數不足`);
         if (isHardcore) {
           const picked = [];
           const tiers = [q => q.skill === 'calculation', q => q.difficulty === 'hard', q => q.skill === 'scenario', () => true];
           for (const accepts of tiers) {
             const candidates = pool.filter(q => accepts(q) && !picked.includes(q));
-            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked]));
+            picked.push(...pickSafe(candidates, count - picked.length, random, [...pickedAll, ...picked], ordered));
           }
           pickedAll.push(...picked);
         } else {
           const calcs = pool.filter(q => q.skill === 'calculation');
           const scenarios = pool.filter(q => q.skill === 'scenario');
           const picked = [];
-          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked]));
+          if (calcs.length) picked.push(...pickSafe(calcs, 1, random, [...pickedAll, ...picked], ordered));
           const wantScenarios = Math.min(count - picked.length, Math.min(3, scenarios.length));
-          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked]));
+          picked.push(...pickSafe(scenarios, wantScenarios, random, [...pickedAll, ...picked], ordered));
           const remaining = pool.filter(q => !picked.includes(q));
-          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked]));
+          picked.push(...pickSafe(remaining, count - picked.length, random, [...pickedAll, ...picked], ordered));
           pickedAll.push(...picked);
         }
       }
       return shuffle(pickedAll, random);
     }
     if (spec.mode === 'review') {
-      if (spec.state) return reviewPlan(spec.state, source, spec.now, random).questions;
+      if (spec.state) return reviewPlan(spec.state, source).questions;
       const ids = [...new Set((spec.wrongIds || []).map(id => aliases.get(id)))];
       const map = new Map(bank.map(q => [q.id, q]));
       return ids.map(id => map.get(id)).filter(Boolean).slice(0, 10);
     }
-    const pool = shuffle(bank.filter(q=>q.unit===spec.unitId),random);
+    const pool = practiceOrder(bank.filter(q=>q.unit===spec.unitId), spec.state || emptyState(), source, random);
     const limit = spec.mode === 'quick' ? 5 : 10;
     const counts = spec.mode === 'quick' ? {concept:2,scenario:2,calculation:1} : {concept:4,scenario:4,calculation:2};
     const picked = [];
     for(const [skill,count] of Object.entries(counts)) {
-      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked));
+      picked.push(...pickSafe(pool.filter(q => q.skill === skill), count, random, picked, true));
     }
     const ids = new Set(picked.map(q=>q.id));
     const remaining = pool.filter(q => !ids.has(q.id));
-    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked));
+    picked.push(...pickSafe(remaining, Math.max(0, limit - picked.length), random, picked, true));
     return shuffle(picked.slice(0,limit),random);
   }
   function restore(raw, bank) {
@@ -210,18 +202,6 @@
     const a=raw.active;
     if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
       s.active={id:a.id,questionRevision:revisionOf(a, raw),mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,difficulty:['standard','hardcore','hard'].includes(a.difficulty)?a.difficulty:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
-      if (a.mode === 'review' && record(a.reviewTargets)) {
-        const entries = new Map(reviewEntries(s, bank)), targets = new Set();
-        s.active.reviewTargets = {};
-        for (const id of s.active.questionIds) {
-          const targetId = a.reviewTargets[id], target = qmap.get(targetId), q = qmap.get(id);
-          if (target && id !== targetId && !s.active.questionIds.includes(targetId) && !targets.has(targetId) &&
-              q.unit === target.unit && q.skill === target.skill && entries.get(targetId)?.lastCorrect &&
-              entries.get(targetId).dueAt > 0 && entries.get(targetId).dueAt <= a.startedAt) {
-            s.active.reviewTargets[id] = targetId; targets.add(targetId);
-          }
-        }
-      }
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];
         const answer = safeAnswer(id, value, s.active.questionRevision);
@@ -246,21 +226,10 @@
       const q=questionFor(map.get(id),run), answer=run.answers[id], ok=correct(q,answer);
       const ledgerId = aliases.get(id);
       const old=previousEntries.get(ledgerId) || {attempts:0,correctCount:0};
-      s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:now+(ok?3:1)*DAY};
+      s.ledger[ledgerId]={attempts:old.attempts+1,correctCount:old.correctCount+(ok?1:0),lastCorrect:ok,lastSeen:now,dueAt:ok?0:now};
       if(ok&&!earnedContent.has(aliases.get(id))){earned.add(id);earnedContent.add(aliases.get(id));earnedXP+=10;}
       return {id,answer:answer===undefined?null:answer,correct:ok};
     });
-    if (run.mode === 'review' && record(run.reviewTargets)) {
-      const entries = new Map(reviewEntries(s, bank)), targets = new Set();
-      for (const result of results.filter(result => result.correct)) {
-        const q = map.get(result.id), targetId = run.reviewTargets[result.id], target = map.get(targetId);
-        const entry = entries.get(targetId);
-        if (target && !ids.includes(targetId) && !targets.has(targetId) && q.unit === target.unit &&
-            q.skill === target.skill && entry?.lastCorrect && entry.dueAt > 0 && entry.dueAt <= now) {
-          entry.dueAt = now + 3 * DAY; targets.add(targetId);
-        }
-      }
-    }
     const count=results.filter(x=>x.correct).length,score=Math.round(count/ids.length*100);
     let newBadge=false;
     if(run.mode==='mission' && UNITS.includes(run.unitId)) {
@@ -282,5 +251,5 @@
     let count=0;while(dates.has(dateKey(cursor))){count++;cursor-=DAY;}return count;
   }
   function level(xp) {return xp>=3000?'智慧工廠總監':xp>=1800?'智慧工廠廠長':xp>=1000?'營運領航員':xp>=500?'製造工程師':xp>=150?'產線實習生':'見習廠長';}
-  return {UNITS,questionRevision,previousRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,masteredIds,catalog,fingerprint,streak,level};
+  return {UNITS,questionRevision,previousRevision,legacyRevision,questionFor,dateKey,emptyState,parseNumber,hasAnswer,correct,shuffle,select,restore,grade,wrongIds,reviewIds,reviewEntries,reviewPlan,practiceStats,masteredIds,catalog,fingerprint,streak,level};
 });

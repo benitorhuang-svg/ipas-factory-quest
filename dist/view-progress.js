@@ -3,12 +3,24 @@ function render(ctx) {
 const { E, state, units, bank, fmt, icon, esc, footer, modeName } = ctx;
 function progressView() {
     const history = [...state.history].reverse();
+    const practice = E.practiceStats(state, bank);
     return `
-      <div class="stats-row">
+      <div class="stats-row" aria-label="累計學習統計">
+        <div class="stat" data-stat="practiced"><span class="stat-icon">${icon('book')}</span><div><div class="stat-label">已練習題目</div><div class="stat-value number">${fmt(practice.practiced)}<small>／${practice.total} 題</small></div></div></div>
+        <div class="stat" data-stat="attempts"><span class="stat-icon">${icon('chart')}</span><div><div class="stat-label">累計答題次數</div><div class="stat-value number">${fmt(practice.attempts)}<small>次</small></div></div></div>
+        <div class="stat" data-stat="unseen"><span class="stat-icon">${icon('flag')}</span><div><div class="stat-label">尚未練習題目</div><div class="stat-value number">${fmt(practice.unseen)}<small>題</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('star')}</span><div><div class="stat-label">累積經驗 · ${esc(E.level(state.xp))}</div><div class="stat-value number">${fmt(state.xp)}<small>XP</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('flame')}</span><div><div class="stat-label">連續學習</div><div class="stat-value number">${E.streak(state)}<small>天</small></div></div></div>
         <div class="stat"><span class="stat-icon">${icon('check')}</span><div><div class="stat-label">已答對不同題目</div><div class="stat-value number">${E.masteredIds(state, bank).length}<small>／${E.catalog(bank).unique.length}</small></div></div></div>
       </div>
+      <p class="backup-note practice-count-note">統計所有模式的已交卷作答，未交卷不計入；同一道題重練三次，計為 1 題已練習、3 次作答。相同內容題目合併，次數依各題保留的累計紀錄計算。</p>
+      <details class="panel practice-breakdown"><summary>各單元練習統計</summary><div class="practice-table-wrap"><table>
+        <caption>已交卷的練習題目與答題次數</caption><thead><tr><th scope="col">單元</th><th scope="col">已練習／總題數</th><th scope="col">未練習</th><th scope="col">答題次數</th></tr></thead>
+        <tbody>${units.map(unit => {
+          const counts = E.practiceStats(state, bank, unit.id);
+          return `<tr><th scope="row"><a href="#/unit/${unit.id}">${unit.id} · ${esc(unit.title)}</a></th><td>${counts.practiced}／${counts.total} 題</td><td>${counts.unseen} 題</td><td>${fmt(counts.attempts)} 次</td></tr>`;
+        }).join('')}</tbody></table></div></details>
+      ${window.FactoryPracticeDetails.render(ctx)}
       <div class="progress-grid">
         <section class="panel">
           <h2 class="medal-title">${icon('badge')}部門成就徽章</h2>

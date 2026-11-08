@@ -11,7 +11,7 @@
         <ul class="topic-list">${unit.topics.map(topic => `<li>${icon('check')}${esc(topic)}</li>`).join('')}</ul>
         <div class="unit-practice-actions"><button class="btn btn-primary" data-action="start" data-unit="${id}" data-mode="mission">開始 10 題闖關${icon('arrow')}</button><button class="btn" data-action="start" data-unit="${id}" data-mode="quick">5 題快練</button></div>
         <p class="unit-best">${best !== undefined ? `目前最佳 ${best} 分${state.passedUnits.includes(id) ? ` · 已取得${esc(unit.badge)}` : ''}` : '自由挑戰，依自己的步調開始。'}</p>
-        <details class="unit-rules"><summary>通關與計分規則</summary><p>10 題闖關達 80 分即可通關；首次通關加 50 XP。5 題快練用於回想觀念，不授予通關徽章。</p></details>
+        <details class="unit-rules"><summary>選題、通關與計分規則</summary><p>保留觀念、情境與計算題比例，同類型優先抽未練題；已練題中，練習次數較少的題目會提高抽中機率，答對越多次則降低權重。答錯題加入到期複習，答對後移出。10 題闖關達 80 分即可通關；首次通關加 50 XP。5 題快練用於回想觀念，不授予通關徽章。</p></details>
       </section><section class="panel unit-study" aria-labelledby="unit-study-title">
         <h2 id="unit-study-title">先理解，再練習</h2><p>${esc(unit.takeaway)}</p>
         <a class="unit-study-link" href="#/guide/materials/${unit.topicCode}">${icon('book')}精讀講義${icon('arrow')}</a>
