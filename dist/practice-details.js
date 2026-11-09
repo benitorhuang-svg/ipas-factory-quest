@@ -34,7 +34,7 @@
     const start = filters.page * size, page = matches.slice(start, start + size);
     return `<p id="practice-detail-count" role="status" tabindex="-1">${matches.length ? `顯示 ${start + 1}–${start + page.length}／${matches.length} 題` : '找不到符合條件的題目'}</p>
       <ol class="practice-question-list" start="${start + 1}">${page.map(row => `<li class="practice-question-card" data-practice-question="${esc(row.q.id)}">
-        <div><div class="practice-question-meta">${esc(row.q.id)} · ${esc(context.units.find(unit => unit.id === row.q.unit)?.title || row.q.unit)}</div><h3>${esc(row.q.stem)}</h3></div>
+        <div><div class="practice-question-meta">${esc(row.q.id)} · ${esc(context.units.find(unit => unit.id === row.q.unit)?.title || row.q.unit)}</div><h3><button type="button" class="practice-question-start" data-action="practice-start" data-question="${esc(row.q.id)}"><span>${esc(row.q.stem)}</span><small>${row.attempts ? '再次練習' : '開始作答'} →</small></button></h3></div>
         <dl class="practice-question-counts"><div><dt>練習次數</dt><dd>${fmt(row.attempts)}<small> 次</small></dd></div><div><dt>答對</dt><dd>${fmt(row.correct)}<small> 次</small></dd></div><div><dt>答錯</dt><dd>${fmt(row.wrong)}<small> 次</small></dd></div><div><dt>最近結果</dt><dd><span class="practice-status practice-status--${row.status}">${statuses[row.status]}</span></dd></div></dl>
       </li>`).join('')}</ol>
       ${matches.length ? `<nav class="practice-detail-pagination" aria-label="逐題練習明細分頁"><button class="btn btn-small" data-action="practice-page" data-page="${filters.page - 1}" ${filters.page === 0 ? 'disabled' : ''}>上一頁</button><span>第 ${filters.page + 1}／${pages} 頁</span><button class="btn btn-small" data-action="practice-page" data-page="${filters.page + 1}" ${filters.page + 1 >= pages ? 'disabled' : ''}>下一頁</button></nav>` : '<button class="btn btn-small" data-action="practice-clear">清除篩選</button>'}`;
@@ -44,7 +44,7 @@
     context = ctx;
     const { units, esc } = ctx;
     return `<details class="panel practice-details" open><summary>逐題練習明細</summary>
-      <p class="backup-note">查看每道題的累計練習、答對與答錯次數，以及最近一次作答結果。只計已交卷紀錄，相同內容合併顯示。</p>
+      <p class="backup-note">點選題目即可進行單題練習，交卷後查看解析並更新次數。只計已交卷紀錄，相同內容合併顯示。</p>
       <div class="practice-detail-tools"><div class="practice-detail-field"><label for="practice-detail-search">搜尋題目</label><input id="practice-detail-search" type="search" maxlength="120" placeholder="輸入題號或題目關鍵字" value="${esc(filters.query)}"></div>
         <div class="practice-detail-field"><label for="practice-detail-unit">單元</label><select id="practice-detail-unit"><option value="all">全部單元</option>${units.map(unit => `<option value="${unit.id}" ${unit.id === filters.unit ? 'selected' : ''}>${unit.id} · ${esc(unit.title)}</option>`).join('')}</select></div>
         <div class="practice-detail-field"><label for="practice-detail-status">作答狀態</label><select id="practice-detail-status">${Object.entries(statuses).map(([value, label]) => `<option value="${value}" ${value === filters.status ? 'selected' : ''}>${label}</option>`).join('')}</select></div>

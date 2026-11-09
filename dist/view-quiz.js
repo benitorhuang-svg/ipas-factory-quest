@@ -31,7 +31,7 @@ function quizView() {
     return `
       <div class="quiz-top">
         <div>
-          <h1>${run.mode === 'exam' ? (run.difficulty === 'hardcore' ? '魔鬼高難衝刺模擬考' : '全真標準模擬考') : (unit ? unit.room : modeName(run))}</h1>
+          <h1>${run.mode === 'quick' && qs.length === 1 ? '單題練習' : run.mode === 'exam' ? (run.difficulty === 'hardcore' ? '魔鬼高難衝刺模擬考' : '全真標準模擬考') : (unit ? unit.room : modeName(run))}</h1>
           <p>${run.unitId ? run.unitId + ' · ' : ''}${modeName(run)} · 答完統一交卷與解析</p>
         </div>
         <div class="button-row">
@@ -132,6 +132,8 @@ function resultView(id) {
         </div>
       </div>
       <div class="result-actions">
+        ${r.mode === 'unseen' ? `${E.practiceStats(state, bank).unseen ? '<button class="btn btn-primary" data-action="start" data-mode="unseen">繼續練習未練題目</button>' : ''}<a class="btn" href="#/progress">回到成長紀錄</a>` : ''}
+        ${r.mode === 'quick' && r.total === 1 ? '<a class="btn" href="#/progress">回到練習明細</a>' : ''}
         ${E.reviewIds(state, bank).length ? `<button class="btn btn-primary" data-action="review">${icon('wrench')}繼續複習</button><a class="btn" href="#/home">回到總覽</a>` : `<a class="btn btn-primary" href="#/home">${icon('home')}繼續下一個單元</a>`}
         ${u ? `<a class="btn" href="#/guide/materials/${u.topicCode}">${icon('book')}閱讀本章講義</a>` : ''}
       </div>

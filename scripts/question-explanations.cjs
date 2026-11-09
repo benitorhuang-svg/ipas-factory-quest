@@ -46,6 +46,29 @@ module.exports = function enrich(bank, root) {
     assert.ok(detail.steps.length >= 2, `${id}: reasoning must have multiple steps`);
     assert.equal(new Set(detail.steps).size, detail.steps.length, `${id}: repeated reasoning`);
     assert.ok(!detail.steps.some(step => detail.check.includes(step)), `${id}: repeated check`);
+    if (detail.visual) {
+      const visual = detail.visual;
+      assert.ok(['mps', 'capacity', 'backward', 'standard-time'].includes(visual.type), `${id}: supported explanation visual`);
+      if (visual.type === 'standard-time') assert.ok(Number.isFinite(visual.normal) && visual.normal > 0 && Number.isFinite(visual.allowanceRate) && visual.allowanceRate > 0 && visual.allowanceRate < 1, `${id}: normal time and allowance as a fraction of standard time`);
+      if (visual.type === 'mps') assert.ok(typeof visual.product === 'string' && visual.product.trim() && typeof visual.period === 'string' && visual.period.trim() && Number.isFinite(visual.quantity) && visual.quantity > 0, `${id}: MPS product, quantity and period`);
+      if (visual.type === 'capacity') assert.ok(Number.isFinite(visual.available) && visual.available > 0 && Number.isFinite(visual.required) && visual.required > visual.available, `${id}: capacity overload example`);
+      if (visual.type === 'backward') assert.ok(Number.isFinite(visual.due) && Number.isFinite(visual.duration) && visual.duration > 0 && visual.due >= visual.duration, `${id}: backward scheduling example`);
+    }
+    if (detail.criticalRatio) {
+      const { available, required } = detail.criticalRatio;
+      assert.ok(Number.isFinite(available) && available >= 0 && Number.isFinite(required) && required > 0, `${id}: critical ratio needs nonnegative available time and positive remaining work`);
+    }
+    if (detail.scheduleComparison) {
+      const { jobs, sequences, takeaway } = detail.scheduleComparison;
+      assert.ok(Array.isArray(jobs) && jobs.length === 2, `${id}: two-job schedule comparison`);
+      const ids = jobs.map(job => job.id);
+      assert.equal(new Set(ids).size, jobs.length, `${id}: unique schedule jobs`);
+      assert.ok(jobs.every(job => typeof job.id === 'string' && job.id.trim() && Number.isFinite(job.duration) && job.duration > 0 && Number.isFinite(job.due) && job.due >= 0), `${id}: schedule job data`);
+      assert.ok(Array.isArray(sequences) && sequences.length === 2, `${id}: two schedule orders`);
+      assert.ok(sequences.every(row => typeof row.label === 'string' && row.label.trim() && Array.isArray(row.order) && row.order.length === ids.length && new Set(row.order).size === ids.length && row.order.every(job => ids.includes(job))), `${id}: schedule order must include every job once`);
+      assert.notDeepEqual(sequences[0].order, sequences[1].order, `${id}: compare different orders`);
+      assert.ok(typeof takeaway === 'string' && takeaway.trim(), `${id}: schedule takeaway`);
+    }
     for (const reference of detail.references || []) {
       assert.ok(reference.title?.trim() && /^https:\/\//.test(reference.url), `${id}: reference`);
     }

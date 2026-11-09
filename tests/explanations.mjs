@@ -125,5 +125,58 @@ for (const q of enriched) {
 }
 doc.body.innerHTML = X.render({ esc, icon: () => '' }, { hint: '<img src=x onerror=alert(1)>', explanation: '【破題關鍵】<script>bad</script>\n【正解解析】<b>data</b>\n【重點辨析】<iframe></iframe>' });
 assert.equal(doc.querySelectorAll('script,img,iframe,b').length, 0, 'Explanation text is always escaped');
+const scheduling = enriched.find(q => q.id === 'L111-B26');
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, scheduling);
+const schedules = [...doc.querySelectorAll('.gantt-card')];
+assert.equal(schedules.length, 2);
+assert.deepEqual(schedules.map(card => card.querySelector('.gantt-maximum strong').textContent), ['2 小時', '4 小時']);
+assert.deepEqual(schedules.map(card => [...card.querySelectorAll('.gantt-bar')].map(bar => [bar.textContent, bar.style.left, bar.style.width])), [
+  [['甲', '0%', '60%'], ['乙', '60%', '20%']], [['乙', '0%', '20%'], ['甲', '20%', '60%']],
+]);
+assert.deepEqual(schedules.map(card => [...card.querySelectorAll('.gantt-calculations li')].map(item => item.textContent)), [
+  ['甲6 − 4 ＝ +2逾期 2 小時（本排程最大值）', '乙8 − 10 ＝ −2提早 2 小時'],
+  ['甲8 − 4 ＝ +4逾期 4 小時（本排程最大值）', '乙2 − 10 ＝ −8提早 8 小時'],
+]);
+const early = structuredClone(scheduling);
+early.analysis.scheduleComparison.jobs.forEach(job => { job.due += 20; });
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, early);
+assert.deepEqual([...doc.querySelectorAll('.gantt-maximum strong')].map(item => item.textContent), ['-18 小時', '-16 小時'], 'Maximum lateness must retain negative values when all jobs finish early');
+const unsafe = structuredClone(scheduling);
+unsafe.analysis.scheduleComparison.sequences[0].label = '<img src=x onerror=alert(1)>';
+unsafe.analysis.scheduleComparison.takeaway = '<script>bad</script>';
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, unsafe);
+assert.equal(doc.querySelectorAll('img,script').length, 0, 'Schedule labels and takeaway are escaped');
+
+const critical = enriched.find(q => q.id === 'L111-B27');
+for (const [available, ratio, verdict] of [[8, '0.8', '時間不足 2 小時'], [10, '1', '時間剛好，沒有餘裕'], [12, '1.2', '有 2 小時餘裕']]) {
+  const question = structuredClone(critical);
+  question.analysis.criticalRatio.available = available;
+  doc.body.innerHTML = X.render({ esc, icon: () => '' }, question);
+  assert.equal(doc.querySelector('.cr-formula strong').textContent, `${available} ÷ 10 ＝ ${ratio}`);
+  assert.equal(doc.querySelector('.cr-verdict strong').textContent, verdict);
+  assert.equal(doc.querySelector('.cr-shortage')?.textContent || '', available < 10 ? '＋2' : '');
+  assert.equal(doc.querySelectorAll('.cr-guide li').length, 3);
+  const label = doc.querySelector('[role=img]').getAttribute('aria-label');
+  assert.ok(label.includes(verdict), 'Accessible diagram includes time shortfall or slack');
+  assert.equal(doc.querySelector('.cr-available').style.width, available < 10 ? '80%' : '100%');
+}
+
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, enriched.find(q => q.id === 'L111-01'));
+assert.deepEqual([...doc.querySelectorAll('.planning-main dd')].map(node => node.textContent), ['甲型成品', '200 件', '第 1 週']);
+assert.equal(doc.querySelectorAll('.planning-downstream > div').length, 2, 'MRP and RCCP use the MPS as parallel planning inputs');
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, enriched.find(q => q.id === 'L111-11'));
+assert.equal(doc.querySelector('.capacity-limit').style.left, '50%');
+assert.equal(doc.querySelector('.visual-overload').style.width, '50%');
+assert.deepEqual([...doc.querySelectorAll('.capacity-metrics strong')].map(node => node.textContent), ['16 ÷ 8 × 100% ＝ 200%', '16 − 8 ＝ 8 小時']);
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, enriched.find(q => q.id === 'L111-19'));
+assert.equal(doc.querySelector('.backward-start').textContent, '26');
+assert.equal(doc.querySelector('.backward-start').style.left, '65%');
+assert.equal(doc.querySelector('.visual-required').style.width, '35%');
+const unsafeVisual = structuredClone(enriched.find(q => q.id === 'L111-01'));
+unsafeVisual.analysis.visual.product = '<img src=x onerror=alert(1)>';
+unsafeVisual.analysis.visual.period = '<script>bad</script>';
+doc.body.innerHTML = X.render({ esc, icon: () => '' }, unsafeVisual);
+assert.equal(doc.querySelectorAll('img,script').length, 0, 'Visual labels are escaped');
+
 dom.window.close();
 console.log(`PASS: ${bank.length} records, ${unique.length} authored analyses and all ${examPool.length} mock-exam questions; 400 standard/hardcore mock draws, all 24 option orders, identity and stale-content guards.`);

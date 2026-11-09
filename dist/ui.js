@@ -42,6 +42,8 @@ const paths = {
 const icon = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.factory}</svg>`;
 const fmt = n => new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 3 }).format(n);
 function modeName(r) {
+    if (r.mode === 'unseen') return '未練題目練習';
+    if (r.mode === 'quick' && (r.questionIds?.length || r.total) === 1) return '單題練習';
     return r.mode === 'exam' ? '科目' + (r.subject === 1 ? '一' : '二') + '模擬' : r.mode === 'review' ? '到期複習' : r.mode === 'quick' ? '5題快練' : '10題闖關';
   }
 function footer() {

@@ -7,7 +7,7 @@
   const UNITS = ['L111','L112','L113','L114','L115','L116','L121','L122','L123','L124','L125','L126'];
   const DAY = 86400000;
   const catalogs = new WeakMap();
-  const MODES = ['mission', 'quick', 'review', 'exam'];
+  const MODES = ['mission', 'quick', 'review', 'exam', 'unseen'];
   const questionRevision = 'questions-2026-11-07', previousRevision = 'questions-2026-11-05', legacyRevision = 'legacy-v1';
   const revisionOf = (run, state) => {
     const revision = run?.questionRevision || state?.questionRevision;
@@ -110,6 +110,11 @@
     const source = bank;
     const { unique, aliases } = catalog(bank);
     bank = unique;
+    if (spec.mode === 'unseen') {
+      const entries = new Map(reviewEntries(spec.state || emptyState(), source));
+      const pool = bank.filter(q => !(entries.get(q.id)?.attempts > 0));
+      return pickSafe(pool, 10, random, []);
+    }
     if (spec.mode === 'exam') {
       const units = UNITS.filter(u => spec.subject === 1 ? u.startsWith('L11') : u.startsWith('L12'));
       const counts = [9, 9, 8, 8, 8, 8];
@@ -200,7 +205,7 @@
     }
     s.history = [...history.values()];
     const a=raw.active;
-    if(a && ['mission','quick','review','exam'].includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
+    if(a && MODES.includes(a.mode) && typeof a.id==='string' && Array.isArray(a.questionIds) && a.questionIds.length>0 && a.questionIds.length<=50 && a.questionIds.every(id=>known.has(id)) && Number.isFinite(a.startedAt) && a.startedAt>0 && !s.history.some(r=>r.runId===a.id)) {
       s.active={id:a.id,questionRevision:revisionOf(a, raw),mode:a.mode,unitId:UNITS.includes(a.unitId)?a.unitId:null,subject:[1,2].includes(a.subject)?a.subject:null,difficulty:['standard','hardcore','hard'].includes(a.difficulty)?a.difficulty:null,questionIds:[...new Set(a.questionIds)],answers:{},startedAt:a.startedAt};
       for(const id of s.active.questionIds) {
         const value=a.answers?.[id];

@@ -36,6 +36,8 @@
     "fingerprint": "3f95eedee889689bcea8e85a7e41965c372b000f3abedfabf97ea13bc9b65be0"
   },
   "L111-19": {
+    "visual": { "type": "backward", "due": 40, "duration": 14 },
+    "references": [{ "title": "Microsoft Learn：Operations scheduling 的逆排程方向", "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/production-control/operations-scheduling#scheduling-direction-and-date" }],
     "focus": [
       "逆排程由指定完工時點往前扣除總前置時間。"
     ],
@@ -250,6 +252,11 @@
     "fingerprint": "2b39766668e919c7404f208f695a49634b03538565ff8eb13428e9e1b6a9d104"
   },
   "L114-08": {
+    "visual": {
+      "type": "standard-time",
+      "normal": 80,
+      "allowanceRate": 0.2
+    },
     "focus": [
       "寬放占標準時間的 20%，表示正常時間只占標準時間的 80%。"
     ],

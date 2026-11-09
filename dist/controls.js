@@ -73,6 +73,9 @@ document.addEventListener('click', e => {
       case 'practice-page':
         window.FactoryPracticeDetails.paginate(Number(b.dataset.page));
         break;
+      case 'practice-start':
+        start('quick', null, null, false, null, b.dataset.question);
+        break;
       case 'close':
         closeModal();
         break;
@@ -83,7 +86,7 @@ document.addEventListener('click', e => {
         start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, false, b.dataset.difficulty || null);
         break;
       case 'force-start':
-        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true, b.dataset.difficulty || null);
+        start(b.dataset.mode, b.dataset.unit || null, Number(b.dataset.subject) || null, true, b.dataset.difficulty || null, b.dataset.question || null);
         break;
       case 'resume':
         closeModal();

@@ -10,6 +10,10 @@
 .practice-question-card > div { min-width: 0; }
 .practice-question-meta { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
 .practice-question-card h3 { font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; font-weight: 500; }
+.practice-question-start { display: block; width: 100%; min-height: 44px; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; font: inherit; cursor: pointer; }
+.practice-question-start small { display: block; margin-top: 6px; color: var(--green); font-size: 12px; font-weight: 600; }
+.practice-question-start:hover > span, .practice-question-start:focus-visible > span { text-decoration: underline; text-underline-offset: 4px; }
+.practice-question-start:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; border-radius: 4px; }
 .practice-question-counts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0; }
 .practice-question-counts dt { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
 .practice-question-counts dd { margin: 0; font: 600 20px/1.5 'Space Grotesk', system-ui, sans-serif; }
@@ -31,3 +35,9 @@
   .practice-status { padding: 4px; font-size: 10px; }
   .practice-detail-pagination { gap: 12px; }
 }
+.stat-start { width: 100%; color: var(--ink); text-align: left; }
+.stat-start .stat-label, .stat-start .stat-value, .stat-start-hint { display: block; }
+.stat-start-hint { margin-top: 4px; color: var(--green); font-size: 11px; }
+.stat-start:hover:not(:disabled) { border-color: var(--green); background: #f6faf1; }
+.stat-start:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.stat-start:disabled { opacity: 1; cursor: default; }

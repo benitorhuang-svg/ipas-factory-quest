@@ -117,7 +117,8 @@
       document.getElementById('content').focus({ preventScroll: true });
       const returningToLibrary = /^guide\/materials\//.test(previousPath) && /^guide\/(materials)?\/$/.test(path)
         || /^guide\/questions\/.+/.test(previousPath) && path === 'guide/questions/';
-      window.scrollTo({ top: returningToLibrary ? scrollPositions.get(path) || 0 : 0, behavior: 'instant' });
+      const returningToPractice = path === 'progress//' && /^(quiz|result)\//.test(previousPath);
+      window.scrollTo({ top: returningToLibrary || returningToPractice ? scrollPositions.get(path) || 0 : 0, behavior: 'instant' });
     } else if (!changed) {
       const target = filterValue !== null ? document.querySelector(`[data-action="filter"][data-filter="${filterValue}"]`) : document.getElementById(focusId);
       target?.focus({ preventScroll: true });

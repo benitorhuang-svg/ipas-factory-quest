@@ -8,7 +8,11 @@ const source = [1, 2].flatMap(s => read(`content/questions-subject${s}.json`));
 const bank = require('../scripts/question-explanations.cjs')(source, process.cwd());
 const previous = read('content/question-revisions.json');
 assert.equal(previous.revision, E.previousRevision);
-assert.equal(Object.keys(previous.questions).length, 9);
+assert.equal(Object.keys(previous.questions).length, 15);
+assert.ok(previous.questions['L114-08'], 'Standard-time diagram retains the previous text-only analysis');
+for (const id of ['L111-01', 'L111-11', 'L111-19']) assert.ok(previous.questions[id], `${id}: diagram retains the previous text-only analysis`);
+assert.ok(previous.questions['L111-B27'], 'CR diagram retains the previous text-only analysis');
+assert.ok(previous.questions['L111-B26'], 'Gantt explanation retains the previous text-only analysis');
 assert.ok(previous.questions['L125-B05'], 'Changed aliases also need historical snapshots');
 const digest = value => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 assert.equal(digest(bank.map(q => {
@@ -46,4 +50,4 @@ const mixed = E.restore({ ...restored, history: [...restored.history, { runId: '
 assert.equal(mixed.history[0].questionRevision, E.previousRevision);
 assert.equal(mixed.history[1].questionRevision, E.legacyRevision);
 assert.equal(mixed.history[1].score, 100);
-console.log('PASS: all 476 pre-edit question digests, previous-revision drafts/reports, nine snapshots including aliases, mixed revisions, grading, tolerance and XP retain their original meaning.');
+console.log('PASS: all 476 pre-edit question digests, previous-revision drafts/reports, fifteen snapshots including aliases, mixed revisions, grading, tolerance and XP retain their original meaning.');

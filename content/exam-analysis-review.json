@@ -19,7 +19,9 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "1a55cd1d29bb05f43960850c06d974bdc362cb5539261e336d12fb44a943c8de",
-      "analysisFingerprint": "0def338085106203274698c4b0fb08fe6edcc8c8ec0a06f96a2724441c1d23bd",
+      "analysisFingerprint": "1b037b1ed9f8c0c101ed31854813ee4f719b43641171642df96cb3f74b849f4f",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "加入與原解析數據一致的流程圖或時間圖；重算例題數值，保留題幹、選項與答案，附規劃或排程來源。",
       "decision": "expanded",
       "changedQuestionFields": []
     },
@@ -119,7 +121,9 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "107532a96d28cbee82ffd088d3937fcb188658fa4d3c18d84ec34df4d8ccaf8f",
-      "analysisFingerprint": "139e3ccee9f2fd36a4577a65b6477f85be002bf409d90f4fccb406c7b77f9dce",
+      "analysisFingerprint": "cdf086c4c32fea67364796c027d52a8892163a43ad4e1db90942795ecb32821c",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "加入與原解析數據一致的流程圖或時間圖；重算例題數值，保留題幹、選項與答案，附規劃或排程來源。",
       "decision": "expanded",
       "changedQuestionFields": []
     },
@@ -199,7 +203,9 @@
       "kind": "number",
       "examEligible": false,
       "questionFingerprint": "b8fcc291b18e49effcf52cb24183f5867bd1e1b7bbba7af397e4b108e183f7ed",
-      "analysisFingerprint": "18bbc1c984d9320a76b45c76dd57ba2eb88c1f0e001b44370c06322446b4e16a",
+      "analysisFingerprint": "05756d5ec6a60119141d43743a80522804d9baba3cb490b76c832bec61a0d23a",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "加入與原解析數據一致的流程圖或時間圖；重算例題數值，保留題幹、選項與答案，附規劃或排程來源。",
       "decision": "retained",
       "changedQuestionFields": []
     },
@@ -689,7 +695,9 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "f58cfc961032575de7e2b50d89e578168a424f89095010ef95e68bfd47649352",
-      "analysisFingerprint": "4c502aedaba135143ef76dadb0157d4a28ad898d9bd326da02879f1923bc2d68",
+      "analysisFingerprint": "7e269b1ca182142f2e6ce4c93d0d888e06d6e3b04374628f86d3dc91d758f8b4",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "加入標準時間組成圖；依題設以標準時間為寬放率分母，核對 80÷0.8＝100 秒、寬放 20 秒與 80%／20% 比例，保留原題幹與答案。",
       "decision": "retained",
       "changedQuestionFields": []
     },
@@ -1339,7 +1347,9 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "56ba8d0c5c10e5a9c28c846384e7923e8c444aaee622e6e33faff86b331c507e",
-      "analysisFingerprint": "1a9c6a8563e9dcf6367da9b94b84eb0c4fd3262f16bc76bc2d0bb0f1ae46ae26",
+      "analysisFingerprint": "de6a243ae3b422cdb08eee9e2cc404d9dfbfd4f88c4ddebf689ef3191e3bc7f9",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "以兩種順序重算完工時點與 lateness，核對最大值 2 與 4 小時；加入甘特圖、甲至少逾期 2 小時的下界解釋，以及波昂大學 EDD 講義來源。",
       "decision": "clarified",
       "changedQuestionFields": [
         "stem"
@@ -1351,7 +1361,9 @@
       "kind": "choice",
       "examEligible": true,
       "questionFingerprint": "0cada2392deb261a2b2b5fc42f045e2e9db6dd13fccb6a2b610507424ffc6f50",
-      "analysisFingerprint": "ae4bc1bc724265093eee04c465a78d88ecf13449873a839bd6cbc42a32f758b8",
+      "analysisFingerprint": "e73ed626aecf5c2c70a266eba521c3abccd5f6ba74705ddab1fdef3cfa4ce66d",
+      "reviewedAt": "2026-11-09",
+      "reviewNote": "核對 CR 分子與分母、8 ÷ 10＝0.8 與不足 2 小時；加入同刻度時間對照圖及三種 CR 判讀，釐清時間覆蓋比例不是完成率或準時機率。",
       "decision": "expanded",
       "changedQuestionFields": []
     },

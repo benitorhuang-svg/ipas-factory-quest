@@ -5,8 +5,11 @@ function runQuestions() {
     return (ctx.state.active?.questionIds || []).map(id => E.questionFor(qmap.get(id), ctx.state.active)).filter(Boolean);
   }
 
-function start(mode, unitId = null, subject = null, force = false, difficulty = null) {
+function start(mode, unitId = null, subject = null, force = false, difficulty = null, questionId = null) {
     if (!ctx.canEdit()) return;
+    const selected = questionId ? qmap.get(E.catalog(bank).aliases.get(questionId)) : null;
+    if (questionId && !selected) { toast('找不到這道題目，請重新選擇。'); return; }
+    if (selected) { mode = 'quick'; unitId = selected.unit; subject = null; difficulty = null; questionId = selected.id; }
     if (ctx.state.active && !force) {
       modal(`
         <button class="modal-close" data-action="close" aria-label="關閉">${icon('cross')}</button>
@@ -14,20 +17,20 @@ function start(mode, unitId = null, subject = null, force = false, difficulty = 
         <p>可以接著完成目前作答，或放下未交卷的答案，開啟新的挑戰。已交卷的成績與徽章會保留。</p>
         <div class="button-row">
           <button class="btn btn-primary" data-action="resume">繼續原任務</button>
-          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}" data-difficulty="${difficulty || ''}">開始新任務</button>
+          <button class="btn" data-action="force-start" data-mode="${mode}" data-unit="${unitId || ''}" data-subject="${subject || ''}" data-difficulty="${difficulty || ''}" data-question="${questionId || ''}">開始新任務</button>
         </div>
       `);
       return;
     }
     let qs;
     try {
-      qs = E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
+      qs = selected ? [selected] : E.select(bank, { mode, unitId, subject, difficulty, state: ctx.state });
     } catch (e) {
       toast(e.message);
       return;
     }
     if (!qs.length) {
-      toast(mode === 'review' ? '目前沒有需要複習的錯題，可繼續單元練習。' : '題庫尚未準備完成。');
+      toast(mode === 'unseen' ? '所有題目都已練習過了，可繼續單元練習或錯題複習。' : mode === 'review' ? '目前沒有需要複習的錯題，可繼續單元練習。' : '題庫尚未準備完成。');
       return;
     }
     closeModal();
